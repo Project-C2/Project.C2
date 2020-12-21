@@ -15,6 +15,12 @@ execute if score @s CT1 matches 960..979 run replaceitem entity @s hotbar.1 mine
 execute if score @s CT1 matches 980..999 run replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 11
 execute if score @s CT1 matches 1000..1019 run replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 10
 
+#myチームに他プレイヤーがいる時にセリフ吐くやつ
+tag @s add 105_3
+execute if entity @s[team=Red] if entity @a[team=Red,tag=!105_3,scores={jobNumber=105},limit=1] run say お神輿～ お神輿～
+execute if entity @s[team=Blue] if entity @a[team=Blue,tag=!105_3,scores={jobNumber=105},limit=1] run say お神輿～ お神輿～
+tag @s remove 105_3
+
 scoreboard players set @s counter_1 40
 data merge block -112 61 -62 {auto:1b}
 tag @s remove SkillReady1

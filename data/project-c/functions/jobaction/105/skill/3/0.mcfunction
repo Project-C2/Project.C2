@@ -1,4 +1,4 @@
-scoreboard players set @s CT3 1170
+scoreboard players set @s CT3 1160
 replaceitem entity @s hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 2
 scoreboard players add @s counter_5 1
 execute if score @s counter_5 matches 2.. run scoreboard players set @s counter_5 0
@@ -13,7 +13,7 @@ playsound minecraft:entity.wither.ambient player @a ~ ~ ~ 1.2 0.9
 execute unless entity @s[scores={counter=1..}] run tag @s add 105_3
 execute if entity @s[team=Red,tag=105_3] if entity @a[team=Red,tag=!105_3,scores={jobNumber=105},limit=1] run say 祭りだ！ 祭りだ！
 execute if entity @s[team=Blue,tag=105_3] if entity @a[team=Blue,tag=!105_3,scores={jobNumber=105},limit=1] run say 祭りだ！ 祭りだ！
-execute if entity @s[tag=105_3] run scoreboard players set @s counter 60
+execute if entity @s[tag=105_3] run scoreboard players set @s counter 200
 execute if entity @s[tag=105_3] run tag @s remove 105_3
 
 particle minecraft:poof ~ ~ ~ 0 0 0 0.1 5

@@ -25,4 +25,4 @@ kill @e[tag=105vector]
 
 tag @e[tag=first] remove first
 scoreboard players add #105- counter 1
-execute unless score #105- counter matches 10.. run function project-c:jobaction/105/skill/2/0a_r
+execute unless score #105- counter matches 6.. run function project-c:jobaction/105/skill/2/0a_r
