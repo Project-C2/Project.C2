@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:soul_sand",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "魂の呼び声","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "タイプ：パッシブ","italic": false,"color": "green"},
+                {"text": "トリガ：デス","italic": false,"color": "yellow"},
+                {"text": "クールタイム：30秒","italic": false,"color": "aqua"},
+                {"text": "死亡地点に自身の魂が5秒間留まる","italic": false,"color": "dark_purple"},
+                {"text": "半径5m以内の敵の体力を蝕む","italic": false,"color": "dark_purple"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,106_skill:22,106_skill_slot:0}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

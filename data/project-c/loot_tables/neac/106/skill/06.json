@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:smooth_stone",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "ウォール","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "タイプ：アクティブ","italic": false,"color": "green"},
+                {"text": "トリガ：スニーク","italic": false,"color": "yellow"},
+                {"text": "クールタイム：15秒","italic": false,"color": "aqua"},
+                {"text": "前方に破壊不能な5x5の壁を生成する","italic": false,"color": "dark_purple"},
+                {"text": "壁は設置後3秒で消滅する","italic": false,"color": "dark_purple"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,106_skill:19,106_skill_slot:0}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
