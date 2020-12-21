@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.1 minecraft:trident{display:{Name:"{\"text\":\"リップタイド\",\"color\":\"dark_blue\",\"italic\":\"false\",\"underlined\":\"true\"}",Lore:["{\"text\":\"§e発動:水場もしくは雨の当たる場所で右クリック\"}","{\"text\":\"§f自身が前方へ飛び出し体当たりを行う。\"}","{\"text\":\"§aCT:10\"}"]},HideFlags:0,Unbreakable:1b,Enchantments:[{id:"minecraft:riptide",lvl:3}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;-1294340691,1088831886,-1706869041,496515957],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.4,Operation:0,UUID:[I;-1294340691,1088831886,-1706869041,496515957],Slot:"mainhand"}]} 1
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady1

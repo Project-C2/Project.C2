@@ -1,0 +1,1 @@
+execute unless predicate project-c:wnkm_job/031/nighttime as @a[scores={jobNumber=31},tag=Battle,gamemode=!spectator] at @s if predicate project-c:wnkm_job/031/daylight run function project-c:jobaction/031/day

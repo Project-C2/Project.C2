@@ -1,0 +1,14 @@
+#scoreboard 
+scoreboard objectives add playerKills minecraft.custom:minecraft.player_kills
+
+#ゲーム開始時に入れて欲しいもの
+#tag リセット/ score リセット / 最大体力設定
+tag @a[scores={jobNumber=88}] remove 088-S3-used
+scoreboard players reset @a[scores={jobNumber=88}] playerKills
+execute as @a[scores={jobNumber=88}] at @s run attribute @s minecraft:generic.max_health base set 20
+
+#コマブロ
+#メインの中身
+execute as @e[scores={jobNumber=88}] at @s run function project-c:jobaction/088/main
+#3スキルの中身
+execute as @a[tag=088-S3-used,scores={counter_4=1..}] at @s run function project-c:jobaction/088/skill/3/1

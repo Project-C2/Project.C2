@@ -1,0 +1,3 @@
+execute if entity @a[nbt={SelectedItem:{tag:{018bread:1b}}},predicate=project-c:wnkm_job/is_sneaking,limit=1] as @a[nbt={SelectedItem:{tag:{018bread:1b}}},predicate=project-c:wnkm_job/is_sneaking] at @s run function project-c:jobaction/018/skill/3/use
+
+execute unless entity @a[nbt={Inventory:[{tag:{018bread:1b}}]},limit=1] unless entity @e[type=item,nbt={Item:{tag:{018bread:1b}}},limit=1] run data merge block ~ ~ ~ {auto:0b}

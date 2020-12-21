@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.1 minecraft:chest{display:{Name:'{"text":"スケルポン","color":"gold","bold":true,"italic":false}',Lore:['{"text":"チェスト開けたらスケルトンがポーンｗｗｗ","color":"gold","bold":true,"underlined":true,"italic":false}','""','[{"text":"発動: 地面に立ってスニーク","color":"yellow","italic":false},{"text":" / ","color":"gray"},{"text":"CT: 25s","color":"green","italic":false}]','{"text":"その場にチェストを設置する。","color":"white","italic":false}','{"text":"人参付きの棒を右クリックするとチェストが開き、","color":"white","italic":false}','{"text":"特殊な訓練を受けたスケルトンを召喚する。","color":"white","italic":false}']}} 1
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady1

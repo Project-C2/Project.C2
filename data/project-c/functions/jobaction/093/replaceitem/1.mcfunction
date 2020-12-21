@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.1 minecraft:water_bucket{display:{Name:'{"text":"トライデントスプリンクラー","color":"aqua","bold":true,"italic":false}',Lore:['{"text":"発動:右クリック","color":"yellow","italic":false}','{"text":"ダメージ判定のないトライデントを投擲し、","color":"white","italic":false}','{"text":"着弾点から周囲にトライデントを拡散する。","color":"white","italic":false}','{"text":"CT:15","color":"green","italic":false}']},Enchantments:[{}]} 1
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady1

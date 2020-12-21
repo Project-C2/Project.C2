@@ -1,0 +1,2 @@
+execute as @e[tag=041-trap,tag=041-red] unless entity @s[tag=041-cardinal] if entity @s[nbt={inGround:1b}] at @s if entity @e[distance=..3,team=Blue,tag=Battle] run kill @s
+execute as @e[tag=041-trap,tag=041-blue] unless entity @s[tag=041-cardinal] if entity @s[nbt={inGround:1b}] at @s if entity @e[distance=..3,team=Red,tag=Battle] run kill @s

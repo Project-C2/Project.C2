@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{display:{Name:"{\"text\":\"Drill Charge\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"チャージ:右クリック/発動:もう一度右クリック\",\"color\":\"yellow\",\"italic\":false}","{\"text\":\"ドリルをチャージし、前方へ突撃する。\",\"color\":\"white\",\"italic\":false}","{\"text\":\"チャージ秒数で攻撃持続時間が延びる。\",\"color\":\"white\",\"italic\":false}","{\"text\":\"発動時1秒間無敵時間が発生。\",\"color\":\"white\",\"italic\":false}","{\"text\":\"CT:10\",\"color\":\"green\",\"italic\":false}"]}} 1
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady1

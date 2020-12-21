@@ -1,0 +1,7 @@
+{
+    "criteria": {
+        "flag": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

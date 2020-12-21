@@ -1,0 +1,3 @@
+execute if entity @s[scores={CT1=1200..,useLinger=1..},tag=Having37-1,tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/037/skill/1/0
+execute if entity @s[scores={CT2=1200..,useSplash=1..},tag=Having37-2,tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/037/skill/2/0
+execute if entity @s[scores={CT3=1200..,usePotion=1..},tag=Having37-3,tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/037/skill/3/0

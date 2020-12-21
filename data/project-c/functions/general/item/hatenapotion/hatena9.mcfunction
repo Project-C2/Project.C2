@@ -1,0 +1,1 @@
+scoreboard players set @e[tag=HatenaPotion] DeathMagic 310

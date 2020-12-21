@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.1 minecraft:quartz{display:{Name:"[\"\",{\"text\":\"x\",\"obfuscated\":true,\"color\":\"dark_purple\"},{\"text\":\"呪い\",\"italic\":true,\"color\":\"light_purple\",\"obfuscated\":false},{\"text\":\"の\",\"obfuscated\":false},{\"text\":\"デコイ人形\",\"color\":\"gray\",\"obfuscated\":false},{\"text\":\"x\",\"italic\":false,\"obfuscated\":true,\"color\":\"dark_purple\"}]",Lore:["§f発動:地上でスニーク§r","§f効果:§r§5呪われたデコイ人形を召喚する。§r","§5デコイ人形は最寄りの敵に向かい、呪いをかける§r","","§8CT:20s§r"]},ench:[{id:71,lvl:1}],HideFlags:63} 1
+execute if entity @s run playsound minecraft:block.shulker_box.close master @s 0 0 0 0.5 2 0.5
+tag @s add SkillReady1

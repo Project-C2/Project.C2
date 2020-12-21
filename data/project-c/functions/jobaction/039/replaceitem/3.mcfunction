@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.3 minecraft:wither_skeleton_skull{display:{Name:"{\"text\":\"トランス\"}",Lore:["{\"text\":\"発動:最大チャージ状態で攻撃\"}","{\"text\":\"敵の残HPが多いほど、\"}","{\"text\":\"敵に大きなダメージと強力なバフを与える。\"}"]},AttributeModifiers:[{Name:"HaruEditor",UUID:[I;299986444,-83341408,-1118315636,-202831999],Operation:0,AttributeName:"generic.attack_damage",Amount:-0.9d,Slot:"mainhand"}],HideFlags:2,039trans_weapon:1b} 1
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady3

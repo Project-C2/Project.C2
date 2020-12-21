@@ -1,0 +1,9 @@
+execute if score @s counter matches 10 run execute rotated ~8 0 run particle minecraft:poof ^ ^ ^1.0 0 0.1 0 0.5 0 force @a
+execute if score @s counter matches 11 run execute rotated ~16 0 run particle minecraft:poof ^ ^ ^1.2 0 0.2 0 0.5 0 force @a
+execute if score @s counter matches 11 run execute rotated ~24 0 run particle minecraft:poof ^ ^ ^1.4 0 0.3 0 0.5 0 force @a
+execute if score @s counter matches 12 run execute rotated ~32 0 run particle minecraft:poof ^ ^ ^1.6 0 0.4 0 0.5 0 force @a
+execute if score @s counter matches 12 run execute rotated ~40 0 run particle minecraft:poof ^ ^ ^1.8 0 0.5 0 0.5 0 force @a
+execute if score @s counter matches 13 run execute rotated ~48 0 run particle minecraft:poof ^ ^ ^2.0 0 0.6 0 0.5 0 force @a
+execute if score @s counter matches 13 run execute rotated ~56 0 run particle minecraft:poof ^ ^ ^2.2 0 0.7 0 0.5 0 force @a
+execute if score @s counter matches 14 run execute rotated ~64 0 run particle minecraft:poof ^ ^ ^2.4 0 0.8 0 0.5 0 force @a
+execute if score @s counter matches 14 run execute rotated ~72 0 run particle minecraft:poof ^ ^ ^2.6 0 0.9 0 0.5 0 force @a

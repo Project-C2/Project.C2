@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "deflected_projectile": {
+        "trigger": "minecraft:effects_changed",
+        "conditions": {
+          "effects":{
+            "instant_damage": {}
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "project-c:jobaction/095/skill/4/ec"
+    }
+  }

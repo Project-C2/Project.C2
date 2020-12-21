@@ -1,0 +1,4 @@
+replaceitem entity @s hotbar.2 crying_obsidian{display:{Name:'[{"text":"Teufel Vertrag","italic":true,"color":"dark_purple","underlined":true,"bold":true}]',Lore:['[{"text":"悪魔との契約により"}]','[{"text":"闇はさらに深化する","italic":true},{"text":"","italic":false}]','[{"text":"","italic":false}]','[{"text":"発動: パッシブ","italic":false,"color":"yellow"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"CT: 1.5s","italic":false,"color":"green"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"効果:","italic":false,"color":"white"}]','[{"text":" 通常攻撃が成功するとシールドを獲得し","italic":false,"color":"white"}]','[{"text":" 第一スキルのCTをリセットする","italic":false,"color":"white"}]']},Enchantments:[{id:"soul_speed",lvl:1}],HideFlags:63} 1
+
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady2

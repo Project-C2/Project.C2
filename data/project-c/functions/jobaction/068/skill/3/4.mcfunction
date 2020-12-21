@@ -1,0 +1,28 @@
+scoreboard players set @s counter_3 25
+function project-c:general/generaterandom3
+
+execute if score @s counter_3 matches 0 run summon armor_stand ~2 ~4 ~-2 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 1 run summon armor_stand ~2 ~4 ~-1 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 2 run summon armor_stand ~2 ~4 ~ {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 3 run summon armor_stand ~2 ~4 ~1 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 4 run summon armor_stand ~2 ~4 ~2 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 5 run summon armor_stand ~1 ~4 ~-2 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 6 run summon armor_stand ~1 ~4 ~-1 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 7 run summon armor_stand ~1 ~4 ~ {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 8 run summon armor_stand ~1 ~4 ~1 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 9 run summon armor_stand ~1 ~4 ~2 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 10 run summon armor_stand ~ ~4 ~-2 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 11 run summon armor_stand ~ ~4 ~-1 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 12 run summon armor_stand ~ ~4 ~ {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 13 run summon armor_stand ~ ~4 ~1 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 14 run summon armor_stand ~ ~4 ~2 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 15 run summon armor_stand ~-1 ~4 ~-2 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 16 run summon armor_stand ~-1 ~4 ~-1 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 17 run summon armor_stand ~-1 ~4 ~ {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 18 run summon armor_stand ~-1 ~4 ~1 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 19 run summon armor_stand ~-1 ~4 ~2 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 20 run summon armor_stand ~-2 ~4 ~-2 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 21 run summon armor_stand ~-2 ~4 ~-1 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 22 run summon armor_stand ~-2 ~4 ~ {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 23 run summon armor_stand ~-2 ~4 ~1 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}
+execute if score @s counter_3 matches 24 run summon armor_stand ~-2 ~4 ~2 {Invisible:1,Motion:[0.0d,-1.0d,0.0d],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b}],Tags:["fovosbullet"]}

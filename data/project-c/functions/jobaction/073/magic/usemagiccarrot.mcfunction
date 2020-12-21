@@ -1,0 +1,21 @@
+execute if entity @s[scores={Mana=50..,subcounter=1}] run function project-c:jobaction/073/magic/magicdamage1
+execute if entity @s[scores={Mana=75..,subcounter=2}] run function project-c:jobaction/073/magic/magicdamage2
+execute if entity @s[scores={Mana=125..,subcounter=3}] run function project-c:jobaction/073/magic/magicdamage3
+execute if entity @s[scores={Mana=65..,subcounter=4}] run function project-c:jobaction/073/magic/firedamage1
+execute if entity @s[scores={Mana=100..,subcounter=5}] run function project-c:jobaction/073/magic/firedamage2
+execute if entity @s[scores={Mana=140..,subcounter=6}] run function project-c:jobaction/073/magic/firedamage3
+execute if entity @s[scores={Mana=80..,subcounter=7}] run function project-c:jobaction/073/magic/lightningdamage1
+execute if entity @s[scores={Mana=120..,subcounter=8}] run function project-c:jobaction/073/magic/lightningdamage2
+execute if entity @s[scores={Mana=180..,subcounter=9}] run function project-c:jobaction/073/magic/lightningdamage3
+execute if entity @s[scores={Mana=100..,subcounter=10}] run function project-c:jobaction/073/magic/haste1
+
+execute if entity @s[scores={Mana=150..,subcounter=11}] run function project-c:jobaction/073/magic/haste2
+execute if entity @s[scores={Mana=110..,subcounter=12}] run function project-c:jobaction/073/magic/jump1
+execute if entity @s[scores={Mana=160..,subcounter=13}] run function project-c:jobaction/073/magic/jump2
+execute if entity @s[scores={Mana=150..,subcounter=14}] run function project-c:jobaction/073/magic/heal1
+execute if entity @s[scores={Mana=250..,subcounter=15}] run function project-c:jobaction/073/magic/heal2
+execute if entity @s[scores={Mana=100..,subcounter=16}] run function project-c:jobaction/073/magic/slow1
+execute if entity @s[scores={Mana=150..,subcounter=17}] run function project-c:jobaction/073/magic/slow2
+execute if entity @s[scores={Mana=200..,subcounter=18}] run function project-c:jobaction/073/magic/slow3
+execute if entity @s[scores={Mana=200..,subcounter=19}] run function project-c:jobaction/073/magic/darkdamage1
+execute if entity @s[scores={Mana=350..,subcounter=20}] run function project-c:jobaction/073/magic/darkdamage2

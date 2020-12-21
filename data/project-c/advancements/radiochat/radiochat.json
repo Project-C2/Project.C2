@@ -1,0 +1,24 @@
+{
+	"parent":"project-c:radiochat/initialization",
+	"display":{
+		"icon":{
+			"item":"minecraft:beacon"
+		},
+		"title":{
+			"text":"ラジオチャット"
+		},
+		"description":{
+			"text":"インベントリ変更検知"
+		},
+		"show_toast":false,
+		"announce_to_chat":false
+		},
+	"criteria":{
+		"dummy":{
+			"trigger":"inventory_changed"
+		}
+	},
+	"rewards":{
+		"function":"project-c:radiochat/general/tickbuffer"
+	}
+}

@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "deflected_projectile": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "type": {
+              "is_projectile": true,
+              "direct_entity": {
+                "type": "minecraft:trident",
+                "nbt": "{Tags:[\"095trident\"]}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "project-c:jobaction/095/skill/1/hit"
+    }
+  }

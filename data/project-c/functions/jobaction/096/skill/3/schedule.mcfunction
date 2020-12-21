@@ -1,0 +1,2 @@
+execute if entity @e[tag=096_3operate,limit=1] as @e[tag=096_3operate] at @s run function project-c:jobaction/096/skill/3/1
+execute if entity @e[tag=096_3operate,limit=1] run schedule function project-c:jobaction/096/skill/3/schedule 1t replace

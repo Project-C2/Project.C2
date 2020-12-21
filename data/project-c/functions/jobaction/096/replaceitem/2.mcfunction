@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.2 minecraft:netherite_sword{display:{Name:'{"text":"逆風剣・黒月","color":"dark_purple","underlined":true,"italic":false}',Lore:['{"text":"--------------------------------","italic":false,"color":"gray"}','{"text":"右クリック / CT:15","color":"aqua","italic":false}','{"text":"後方にバックステップし、着地点に黒月を顕現。","color":"white","italic":false}','{"text":"黒月は発光した敵を滅ぼす力を持つ。","color":"white","italic":false}','{"text":"鞭变化による跳躍から着地するまでに発動すると、","color":"white","italic":false}','{"text":"着地時に追加攻撃を発動する。","color":"white","italic":false}','{"text":"--------------------------------","italic":false,"color":"gray"}',]},Enchantments:[{}],AttributeModifiers:[{}]} 1
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady2

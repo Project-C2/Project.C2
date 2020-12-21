@@ -1,0 +1,9 @@
+execute as @e[tag=ConsumableItem1-1] at @s run summon item ~0 ~51 ~0 {Tags:["isItem","Item1"],Age:0s,PickupDelay:0s,Item:{tag:{display:{Name:"{\"text\":\"治癒のスプラッシュポーション\",\"color\":\"white\",\"italic\":false}",Lore:["{\"text\":\"§7投げつけると傷が治る、ありふれたポーション。\"}","{\"text\":\"§5§oTier:1\"}"]},Potion:"minecraft:strong_healing",HideFlags:32,isItem:1b,Tier:1b,ItemID:1},id:"minecraft:splash_potion",Count:1b}}
+
+execute as @e[tag=ConsumableItem1-2] at @s run summon item ~0 ~51 ~0 {Tags:["isItem","Item1"],Age:0s,PickupDelay:0s,Item:{tag:{display:{Name:"{\"text\":\"負傷のスプラッシュポーション\",\"color\":\"white\",\"italic\":false}",Lore:["{\"text\":\"§7投げつけると傷つく、ありふれたポーション。\"}","{\"text\":\"§5§oTier:1\"}"]},Potion:"minecraft:harming",HideFlags:32,isItem:1b,Tier:1b,ItemID:2},id:"minecraft:splash_potion",Count:1b}}
+
+execute as @e[tag=ConsumableItem1-3] at @s run summon item ~0 ~51 ~0 {Tags:["isItem","Item1"],Age:0s,PickupDelay:0s,Item:{tag:{display:{Name:"{\"text\":\"力のスプラッシュポーション\",\"color\":\"white\",\"italic\":false}",Lore:["{\"text\":\"§7投げつけると力が湧く、ありふれたポーション。\"}","{\"text\":\"§5§oTier:1\"}"]},CustomPotionEffects:[{Id:5b,Amplifier:0b,Duration:600,ShowParticles:1b}],HideFlags:32,CustomPotionColor:9895936,isItem:1b,Tier:1b,ItemID:3},id:"minecraft:splash_potion",Count:1b}}
+
+execute as @e[tag=ConsumableItem1-4] at @s run summon item ~0 ~51 ~0 {Tags:["isItem","Item1"],Age:0s,PickupDelay:0s,Item:{tag:{display:{Name:"{\"text\":\"疲労のスプラッシュポーション\",\"color\":\"white\",\"italic\":false}",Lore:["{\"text\":\"§7投げつけると力が抜ける、ありふれたポーション。\"}","{\"text\":\"§5§oTier:1\"}"]},CustomPotionEffects:[{Id:4b,Amplifier:2b,Duration:300,ShowParticles:1b}],HideFlags:32,CustomPotionColor:4866561,isItem:1b,Tier:1b,ItemID:4},id:"minecraft:splash_potion",Count:1b}}
+
+kill @e[tag=Tier1]

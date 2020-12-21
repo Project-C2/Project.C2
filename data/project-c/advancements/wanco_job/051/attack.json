@@ -1,0 +1,28 @@
+{
+    "criteria": {
+      "deflected_projectile": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "dealt": {
+                "min": 2.8
+            },
+            "type": {
+              "direct_entity": {
+                "type": "minecraft:player",
+                "equipment": {
+                    "mainhand": {
+                        "item": "minecraft:iron_sword",
+                        "nbt": "{051weapon:1b}"
+                    }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "project-c:jobaction/051/melee"
+    }
+  }

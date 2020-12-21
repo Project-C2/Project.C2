@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "農民のパン","color": "gold","bold": true,"italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"発動:スニーク","color":"yellow","italic":false},
+                  {"text":"自身のHPを4だけ回復する。","color":"white","italic":false}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "horse.jump_strength",
+                      "attribute": "horse.jump_strength",
+                      "operation": "addition",
+                      "amount": 0,
+                      "slot": "mainhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{018bread:1b,isItem:1b,Tier:1b,HideFlags:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

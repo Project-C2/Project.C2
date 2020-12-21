@@ -1,0 +1,1 @@
+advancement revoke @s only project-c:radiochat/tickbuffer

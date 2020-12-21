@@ -1,0 +1,25 @@
+{
+    "criteria": {
+      "deflected_projectile": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "dealt": {
+                "min": 0.1
+            },
+            "type": {
+              "direct_entity": {
+                "type": "minecraft:player",
+                "equipment": {
+                    "mainhand": {
+                        "item": "minecraft:wither_skeleton_skull",
+                        "nbt": "{039trans_weapon:1b}"
+                    }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "hurt": {
+            "trigger": "minecraft:player_hurt_entity"
+        }
+    },
+    "rewards": {
+        "function": "project-c:addealt"
+        
+    }
+}

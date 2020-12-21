@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "flag": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}{
+    "criteria": {
+        "flag": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

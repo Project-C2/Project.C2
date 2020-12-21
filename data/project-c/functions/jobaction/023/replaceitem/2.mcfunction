@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.2 minecraft:end_crystal{display:{Name:"{\"text\":\"Circle Magic\",\"italic\":false}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§fその場に敵から見えない魔法陣を設置。\"}","{\"text\":\"§7無(CT:60):設置から3秒後、味方を守護する結界を展開。\"}","{\"text\":\"§b氷(CT:30):罠として発動し、魔法陣上の敵を凍結させる。\"}","{\"text\":\"§d闇(CT:60):設置から3秒後、敵に呪詛を唱える結界を展開。\"}","{\"text\":\"§c火(CT:30):設置から3秒後、無数の炎のレーザーを発射する。\"}","{\"text\":\"§a風(CT:20):罠として発動し、魔法陣上の敵の速度を一瞬だけ極大上昇。\"}","{\"text\":\"§2共通CT:3\"}"]},Unbreakable:1b} 1
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady2

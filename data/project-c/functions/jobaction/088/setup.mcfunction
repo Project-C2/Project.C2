@@ -1,0 +1,1 @@
+setblock -49 2 89 repeating_command_block[facing=south]{auto: 1b, powered: 0b, CustomName: '{"text":"@"}', Command: "execute as @a[scores={jobNumber=88},tag=088-S1-particle] at @s run function project-c:jobaction/088/skill/1/2", x: -49, y: 2, z: 89, id: "minecraft:command_block", TrackOutput: 1b}
