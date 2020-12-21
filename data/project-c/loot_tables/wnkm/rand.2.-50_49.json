@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "name": "wnkm.rand.1",
+                  "attribute": "generic.attack_speed",
+                  "operation": "addition",
+                  "amount": {
+                    "min": -50,
+                    "max": 49
+                  },
+                  "slot": "mainhand"
+                },
+                {
+                  "name": "wnkm.rand.2",
+                  "attribute": "generic.attack_speed",
+                  "operation": "addition",
+                  "amount": {
+                    "min": -50,
+                    "max": 49
+                  },
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{wnkm.randomItem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
