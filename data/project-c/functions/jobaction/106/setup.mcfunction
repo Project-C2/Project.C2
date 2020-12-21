@@ -8,6 +8,7 @@ scoreboard objectives add 106-weapon-page dummy
 scoreboard objectives add 106-support-page dummy
 scoreboard objectives add 106-skill-page dummy
 scoreboard objectives add drop2 minecraft.custom:minecraft.drop
+scoreboard objectives add shield minecraft.custom:minecraft.damage_blocked_by_shield
 
 
 #drop処理用

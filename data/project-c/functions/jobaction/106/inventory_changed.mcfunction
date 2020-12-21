@@ -11,6 +11,7 @@ execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/sk
 
 execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/auxiliary/setup
 
+replaceitem entity @s[tag=106_drop] hotbar.4 minecraft:gray_stained_glass_pane{display:{Name:'{"text":"特殊枠"}',Lore:['{"text":"ここに特殊枠を追加します"}']}} 1
 
 #Tag削除
 tag @s[tag=106_page_setup] remove 106_page_setup
