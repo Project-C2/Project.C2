@@ -10,15 +10,16 @@ scoreboard objectives add shield minecraft.custom:minecraft.damage_blocked_by_sh
 
 
 #drop処理用
-setblock -55 28 -122 minecraft:command_block[facing=south,conditional=false]{Command:"data merge block ~ ~ ~ {auto:0b}",TrackOutput:0b} destroy
-setblock -55 28 -121 minecraft:chain_command_block[facing=south,conditional=false]{auto:1b,Command:"execute as @a[scores={jobNumber=106,drop=1..}] run scoreboard players reset @s drop",TrackOutput:0b} destroy
-setblock -70 17 -115 minecraft:chain_command_block[facing=north,conditional=false]{auto:1b,Command:"execute if entity @p[scores={jobNumber=106,drop=1..}] run data merge block -55 28 -122 {auto:1b}",TrackOutput:0b} destroy
+#setblock -70 17 -115 minecraft:chain_command_block[facing=north,conditional=false]{auto:1b,Command:"execute if entity @a[scores={jobNumber=106,drop=1..},limit=1] as @a[scores={jobNumber=106,drop=1..}] run function project-c:jobaction/106/change",TrackOutput:0b} destroy
 #スキル系処理用
 setblock -102 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[scores={jobNumber=106},limit=1] as @e[scores={jobNumber=106}] at @s run function project-c:jobaction/106/main",TrackOutput:0b} destroy
-setblock -100 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=103fireball1,limit=1] as @e[tag=103fireball1] at @s run function project-c:jobaction/106/skill/1/1",TrackOutput:0b} destroy
-setblock -100 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=103fireball1,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
-setblock -98 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=103fireball2,limit=1] as @e[tag=103fireball2] at @s run function project-c:jobaction/106/skill/2/3",TrackOutput:0b} destroy
-setblock -98 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=103fireball2,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
-setblock -96 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=103fireball4,limit=1] as @e[tag=103fireball4] at @s run function project-c:jobaction/106/skill/2/6",TrackOutput:0b} destroy
-setblock -96 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=103fireball4,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
+
+#setblock -100 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=103fireball1,limit=1] as @e[tag=103fireball1] at @s run function project-c:jobaction/106/skill/1/1",TrackOutput:0b} destroy
+#setblock -100 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=103fireball1,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
+
+#setblock -98 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=103fireball2,limit=1] as @e[tag=103fireball2] at @s run function project-c:jobaction/106/skill/2/3",TrackOutput:0b} destroy
+#setblock -98 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=103fireball2,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
+
+#setblock -96 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=103fireball4,limit=1] as @e[tag=103fireball4] at @s run function project-c:jobaction/106/skill/2/6",TrackOutput:0b} destroy
+#setblock -96 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=103fireball4,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
 
