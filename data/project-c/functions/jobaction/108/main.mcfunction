@@ -20,3 +20,4 @@ execute if score @s deathCountExt matches 1.. run function project-c:jobaction/1
 
 scoreboard players reset @s score
 scoreboard players set @s sneak 0
+scoreboard players set @s deathCountExt 0
