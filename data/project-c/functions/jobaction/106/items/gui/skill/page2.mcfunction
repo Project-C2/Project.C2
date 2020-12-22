@@ -3,7 +3,7 @@ tag @s[tag=!106_gui_item,nbt={Inventory:[{Slot:30b,tag:{106_gui_item:30,106_skil
 clear @s[tag=!106_gui_item] #project-c:neac/all{106_gui_item:30,106_skill_page:2}
 execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] at @s run playsound minecraft:ui.loom.select_pattern master @s ~ ~ ~ 1 2 1
 tag @s[tag=!106_gui_item,tag=!106_page_setup] add 106_page_setup_ready
-scoreboard players set @s[tag=!106_gui_item,tag=!106_page_setup] 106-skill-page 1
+scoreboard players set @s[tag=!106_gui_item,tag=!106_page_setup] counter_7 1
 replaceitem entity @s[tag=!106_gui_item] container.30 minecraft:paper{106_gui_item:30,106_skill_page:2,display:{Name:'{"text":"前ページへ","italic":false}'}}
 #replaceitem entity @s[tag=106_page_setup] container.30 minecraft:air
 tag @s[tag=106_gui_item] remove 106_gui_item
@@ -13,7 +13,7 @@ tag @s[tag=!106_gui_item,nbt={Inventory:[{Slot:35b,tag:{106_gui_item:35,106_skil
 clear @s[tag=!106_gui_item] #project-c:neac/all{106_gui_item:35,106_skill_page:2}
 execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] at @s run playsound minecraft:ui.loom.select_pattern master @s ~ ~ ~ 1 2 1
 tag @s[tag=!106_gui_item,tag=!106_page_setup] add 106_page_setup_ready
-scoreboard players set @s[tag=!106_gui_item,tag=!106_page_setup] 106-skill-page 3
+scoreboard players set @s[tag=!106_gui_item,tag=!106_page_setup] counter_7 3
 replaceitem entity @s[tag=!106_gui_item] container.35 minecraft:paper{106_gui_item:35,106_skill_page:2,display:{Name:'{"text":"次ページへ","italic":false}'}}
 #replaceitem entity @s[tag=106_page_setup] container.35 minecraft:air
 tag @s[tag=106_gui_item] remove 106_gui_item
@@ -30,7 +30,7 @@ tag @s[tag=!106_gui_item,nbt={Inventory:[{Slot:31b,tag:{106_gui_item:31,106_skil
 clear @s[tag=!106_gui_item] #project-c:neac/all{106_gui_item:31,106_skill_page:2}
 execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
 execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run tag @s add 106_skill_page_setup
-execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run scoreboard players set @s 106-tab 305
+execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run scoreboard players set @s counter_6 305
 execute if entity @s if score @s counter_3 matches 5 run tag @s add 106_selecting
 execute if entity @s if score @s counter_4 matches 5 run tag @s add 106_selecting
 execute if entity @s if score @s counter_5 matches 5 run tag @s add 106_selecting
@@ -54,7 +54,7 @@ tag @s[tag=!106_gui_item,nbt={Inventory:[{Slot:32b,tag:{106_gui_item:32,106_skil
 clear @s[tag=!106_gui_item] #project-c:neac/all{106_gui_item:32,106_skill_page:2}
 execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
 execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run tag @s add 106_skill_page_setup
-execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run scoreboard players set @s 106-tab 306
+execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run scoreboard players set @s counter_6 306
 execute if entity @s if score @s counter_3 matches 6 run tag @s add 106_selecting
 execute if entity @s if score @s counter_4 matches 6 run tag @s add 106_selecting
 execute if entity @s if score @s counter_5 matches 6 run tag @s add 106_selecting
@@ -78,7 +78,7 @@ tag @s[tag=!106_gui_item,nbt={Inventory:[{Slot:33b,tag:{106_gui_item:33,106_skil
 clear @s[tag=!106_gui_item] #project-c:neac/all{106_gui_item:33,106_skill_page:2}
 execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
 execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run tag @s add 106_skill_page_setup
-execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run scoreboard players set @s 106-tab 307
+execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run scoreboard players set @s counter_6 307
 execute if entity @s if score @s counter_3 matches 7 run tag @s add 106_selecting
 execute if entity @s if score @s counter_4 matches 7 run tag @s add 106_selecting
 execute if entity @s if score @s counter_5 matches 7 run tag @s add 106_selecting
@@ -102,7 +102,7 @@ tag @s[tag=!106_gui_item,nbt={Inventory:[{Slot:34b,tag:{106_gui_item:34,106_skil
 clear @s[tag=!106_gui_item] #project-c:neac/all{106_gui_item:34,106_skill_page:2}
 execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
 execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run tag @s add 106_skill_page_setup
-execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run scoreboard players set @s 106-tab 308
+execute if entity @s[tag=!106_gui_item,tag=!106_page_setup] run scoreboard players set @s counter_6 308
 execute if entity @s if score @s counter_3 matches 8 run tag @s add 106_selecting
 execute if entity @s if score @s counter_4 matches 8 run tag @s add 106_selecting
 execute if entity @s if score @s counter_5 matches 8 run tag @s add 106_selecting

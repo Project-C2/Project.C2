@@ -75,6 +75,7 @@ execute if entity @s[tag=!106_gui_item] run loot replace block 0 0 0 container.0
 execute if entity @s[tag=!106_gui_item] run data modify block 0 0 0 Items[0].tag.106_support_page set value 1
 execute if entity @s[tag=!106_gui_item] run data modify block 0 0 0 Items[0].tag.106_gui_item set value 33
 execute if entity @s[tag=!106_gui_item] run data remove block 0 0 0 Items[0].tag.106_support
+execute if entity @s[tag=!106_gui_item] run data remove block 0 0 0 Items[0].tag.display.Lore[4]
 execute if entity @s[tag=!106_gui_item,tag=106_selecting] run loot replace block 0 0 0 container.1 loot project-c:neac/106/selecting_insert
 execute if entity @s[tag=!106_gui_item,tag=106_selecting] run data modify block 0 0 0 Items[0].tag.display.Name set from block 0 0 0 Items[1].tag.display.Name
 execute if entity @s[tag=!106_gui_item,tag=106_selecting] run data modify block 0 0 0 Items[0].tag.Enchantments set value [{}]

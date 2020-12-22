@@ -36,9 +36,9 @@ execute if entity @s[tag=using] run function project-c:jobaction/106/items/skill
 tag @s[tag=using] remove using
 
 
-execute if score @s counter_3 matches 4 if score @s CT1 matches 1200.. run tag @s add using
-execute if score @s counter_4 matches 4 if score @s CT2 matches 1200.. run tag @s add using
-execute if score @s counter_5 matches 4 if score @s CT3 matches 1200.. run tag @s add using
+execute if score @s[tag=!SkillDelay1] counter_3 matches 4 if score @s CT1 matches 1200.. run tag @s add using
+execute if score @s[tag=!SkillDelay2] counter_4 matches 4 if score @s CT2 matches 1200.. run tag @s add using
+execute if score @s[tag=!SkillDelay3] counter_5 matches 4 if score @s CT3 matches 1200.. run tag @s add using
 execute if entity @s[tag=using] run function project-c:jobaction/106/items/skill/04/set
 tag @s[tag=using] remove using
 
@@ -75,4 +75,11 @@ execute if score @s counter_3 matches 9 if score @s CT1 matches 1200.. run tag @
 execute if score @s counter_4 matches 9 if score @s CT2 matches 1200.. run tag @s add using
 execute if score @s counter_5 matches 9 if score @s CT3 matches 1200.. run tag @s add using
 execute if entity @s[tag=using] run function project-c:jobaction/106/items/skill/09/set
+tag @s[tag=using] remove using
+
+
+execute if score @s counter_3 matches 10 if score @s CT1 matches 1200.. run tag @s add using
+execute if score @s counter_4 matches 10 if score @s CT2 matches 1200.. run tag @s add using
+execute if score @s counter_5 matches 10 if score @s CT3 matches 1200.. run tag @s add using
+execute if entity @s[tag=using] run function project-c:jobaction/106/items/skill/10/set
 tag @s[tag=using] remove using

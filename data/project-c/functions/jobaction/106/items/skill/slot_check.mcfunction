@@ -12,6 +12,7 @@ execute if score #106_skill counter matches 6 run loot replace block 0 0 0 conta
 execute if score #106_skill counter matches 7 run loot replace block 0 0 0 container.0 loot project-c:neac/106/skill/07
 execute if score #106_skill counter matches 8 run loot replace block 0 0 0 container.0 loot project-c:neac/106/skill/08
 execute if score #106_skill counter matches 9 run loot replace block 0 0 0 container.0 loot project-c:neac/106/skill/09
+execute if score #106_skill counter matches 10 run loot replace block 0 0 0 container.0 loot project-c:neac/106/skill/10
 
 
 execute if score #106_slot_pos counter matches 1 if score @s CT1 matches 1200.. run data modify block 0 0 0 Items[0].tag.skill_slot set value 1

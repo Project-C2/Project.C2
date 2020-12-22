@@ -23,7 +23,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:61,Unbreakable:1b,106_support:6}"
+              "tag": "{HideFlags:61,Unbreakable:1b,106_support:2}"
             }
           ]
         }

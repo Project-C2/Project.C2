@@ -17,7 +17,7 @@ replaceitem entity @s[tag=106_skill_page_setup] container.34 minecraft:air
 replaceitem entity @s[tag=106_skill_page_setup] container.35 minecraft:air
 tag @s[tag=106_gui_item] remove 106_gui_item
 
-scoreboard players operation #106_select_skill counter = @s 106-tab
+scoreboard players operation #106_select_skill counter = @s counter_6
 scoreboard players operation #106_select_skill counter %= #100 counter
 
 
@@ -51,7 +51,7 @@ execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_select
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] if score @s counter_4 = #106_select_skill counter run scoreboard players operation @s counter_4 = @s counter_3
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] if score @s counter_5 = #106_select_skill counter run scoreboard players operation @s counter_5 = @s counter_3
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run scoreboard players operation @s counter_3 = #106_select_skill counter
-execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run scoreboard players set @s 106-tab 3
+execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run scoreboard players set @s counter_6 3
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run tag @s add 106_gui_all_setup
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run tag @s add 106_page_setup
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run tag @s add 106_skill_no_drop
@@ -73,7 +73,7 @@ execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_select
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] if score @s counter_3 = #106_select_skill counter run scoreboard players operation @s counter_3 = @s counter_4
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] if score @s counter_5 = #106_select_skill counter run scoreboard players operation @s counter_5 = @s counter_4
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run scoreboard players operation @s counter_4 = #106_select_skill counter
-execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run scoreboard players set @s 106-tab 3
+execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run scoreboard players set @s counter_6 3
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run tag @s add 106_gui_all_setup
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run tag @s add 106_page_setup
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run tag @s add 106_skill_no_drop
@@ -95,7 +95,7 @@ execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_select
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] if score @s counter_3 = #106_select_skill counter run scoreboard players operation @s counter_3 = @s counter_5
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] if score @s counter_4 = #106_select_skill counter run scoreboard players operation @s counter_4 = @s counter_5
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run scoreboard players operation @s counter_5 = #106_select_skill counter
-execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run scoreboard players set @s 106-tab 3
+execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run scoreboard players set @s counter_6 3
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run tag @s add 106_gui_all_setup
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run tag @s add 106_page_setup
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup,tag=!106_selecting] run tag @s add 106_skill_no_drop
@@ -111,7 +111,7 @@ tag @s[tag=106_gui_item] remove 106_gui_item
 tag @s[tag=!106_gui_item,nbt={Inventory:[{Slot:35b,tag:{106_gui_item:35,106_select_skill_page:1}}]}] add 106_gui_item
 clear @s[tag=!106_gui_item] minecraft:barrier{106_gui_item:35,106_select_skill_page:1}
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup] at @s run playsound minecraft:ui.loom.select_pattern master @s ~ ~ ~ 1 2
-execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup] run scoreboard players set @s 106-tab 3
+execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup] run scoreboard players set @s counter_6 3
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup] run tag @s add 106_gui_all_setup
 execute if entity @s[tag=!106_gui_item,tag=!106_skill_page_setup] run tag @s add 106_page_setup
 replaceitem entity @s[tag=!106_gui_item] container.35 minecraft:barrier{106_gui_item:35,106_select_skill_page:1,display:{Name:'{"text":"戻る","italic":false,"color":"red"}'}}

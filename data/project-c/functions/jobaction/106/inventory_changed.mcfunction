@@ -5,7 +5,7 @@ function project-c:jobaction/106/items/gui/main
 
 execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/weapon
 
-execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/support
+execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/support/setup
 
 execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/skill/setup
 

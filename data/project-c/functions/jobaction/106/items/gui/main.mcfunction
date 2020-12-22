@@ -1,6 +1,6 @@
 
 scoreboard players set #106-tab counter 0
-scoreboard players operation #106-tab counter = @s 106-tab
+scoreboard players operation #106-tab counter = @s counter_6
 scoreboard players operation #106-tab counter /= #100 counter
 execute if score #106-tab counter matches 0 run function project-c:jobaction/106/items/gui/weapon/open
 execute if score #106-tab counter matches 0 run function project-c:jobaction/106/items/gui/support/open

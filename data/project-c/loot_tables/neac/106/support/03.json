@@ -38,7 +38,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,106_support:9}"
+              "tag": "{HideFlags:63,106_support:3}"
             }
           ]
         }
