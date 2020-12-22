@@ -10,7 +10,8 @@ execute if entity @s[team=blue] run tell @a[team=red,distance=..6] ちぇるら�
 
 schedule function project-c:jobaction/108/skill/1/schedule_loop 1t replace
 
+particle minecraft:enchant ~ ~1 ~ 1 1 1 0.5 500 normal
+playsound minecraft:entity.witch.celebrate master @a ~ ~ ~ 1 1.5
+
 tag @s remove SkillReady1
 scoreboard players set @s usedSkill 1
-
-

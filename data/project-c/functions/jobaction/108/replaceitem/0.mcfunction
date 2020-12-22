@@ -1,2 +1,2 @@
-
+replaceitem entity @s hotbar.0 shulker_shell{display:{Name:"{\"text\":\"グローブ\",\"italic\":\"false\"}",Lore:['{"text":"ちぇるーん★。","italic":"false","color":"white"}']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;1,1,1,1],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.4,Operation:0,UUID:[I;1,1,1,1],Slot:"mainhand"}]} 1
 scoreboard players reset @s drop
