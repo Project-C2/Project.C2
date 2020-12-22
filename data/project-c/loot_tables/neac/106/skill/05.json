@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:observer",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "偵察","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "タイプ：アクティブ","italic": false,"color": "green"},
+                {"text": "トリガ：ジャンプ","italic": false,"color": "yellow"},
+                {"text": "クールタイム：1分","italic": false,"color": "aqua"},
+                {"text": "スペクテイターとなり、周囲の状況を観察する","italic": false,"color": "dark_purple"},
+                {"text": "発動場所にはダミーが設置され、","italic": false,"color": "dark_purple"},
+                {"text": "真下を向く・20秒経過する・ダミーが攻撃される","italic": false,"color": "dark_purple"},
+                {"text": "のいずれかを満たすと発動位置へ戻る","italic": false,"color": "dark_purple"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,106_skill:5,106_skill_slot:0}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
