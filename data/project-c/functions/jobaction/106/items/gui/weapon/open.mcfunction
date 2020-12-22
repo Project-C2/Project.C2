@@ -13,8 +13,7 @@ replaceitem entity @s[tag=106_weapon_gui_reset] container.27 minecraft:iron_swor
 
 
 tag @s[scores={106-tab=1}] add 106_weapon_view
-execute if entity @s[tag=106_weapon_view,scores={106-weapon-page=1}] run function project-c:jobaction/106/items/gui/weapon/page1
-execute if entity @s[tag=106_weapon_view,scores={106-weapon-page=2}] run function project-c:jobaction/106/items/gui/weapon/page2
+execute if entity @s[tag=106_weapon_view] run function project-c:jobaction/106/items/gui/weapon/page1
 
 
 

@@ -4,8 +4,6 @@ give @p oak_sign{display:{Name:'"106-ジョブマスター"'},BlockEntityTag:{Te
 #動作必須コマブロ群
 execute unless block 0 0 0 shulker_box run setblock 0 0 0 shulker_box
 scoreboard objectives add 106-tab dummy
-scoreboard objectives add 106-weapon-page dummy
-scoreboard objectives add 106-support-page dummy
 scoreboard objectives add 106-skill-page dummy
 scoreboard objectives add drop2 minecraft.custom:minecraft.drop
 scoreboard objectives add shield minecraft.custom:minecraft.damage_blocked_by_shield

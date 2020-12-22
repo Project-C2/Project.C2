@@ -13,8 +13,7 @@ replaceitem entity @s[tag=106_support_gui_reset] container.28 minecraft:golden_s
 
 
 tag @s[scores={106-tab=2}] add 106_support_view
-execute if entity @s[tag=106_support_view,scores={106-support-page=1}] run function project-c:jobaction/106/items/gui/support/page1
-execute if entity @s[tag=106_support_view,scores={106-support-page=2}] run function project-c:jobaction/106/items/gui/support/page2
+execute if entity @s[tag=106_support_view] run function project-c:jobaction/106/items/gui/support/page1
 
 
 
