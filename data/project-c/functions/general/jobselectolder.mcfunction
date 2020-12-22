@@ -244,6 +244,50 @@ data merge block 117 2 89 {auto:0b}
 execute if entity @a[scores={jobNumber=102},limit=1] run data merge block 117 2 89 {auto:1b}
 data merge block 129 2 89 {auto:0b}
 execute if entity @a[scores={jobNumber=103},limit=1] run data merge block 129 2 89 {auto:1b}
+data merge block -126 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=104},limit=1] run data merge block -126 61 -62 {auto:1b}
+data merge block -114 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=105},limit=1] run data merge block -114 61 -62 {auto:1b}
+data merge block -102 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=106},limit=1] run data merge block -102 61 -62 {auto:1b}
+data merge block -90 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=107},limit=1] run data merge block -90 61 -62 {auto:1b}
+data merge block -78 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=108},limit=1] run data merge block -78 61 -62 {auto:1b}
+data merge block -66 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=109},limit=1] run data merge block -66 61 -62 {auto:1b}
+data merge block -54 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=110},limit=1] run data merge block -54 61 -62 {auto:1b}
+data merge block -42 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=111},limit=1] run data merge block -42 61 -62 {auto:1b}
+data merge block -30 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=112},limit=1] run data merge block -30 61 -62 {auto:1b}
+data merge block -18 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=113},limit=1] run data merge block -18 61 -62 {auto:1b}
+data merge block -6 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=114},limit=1] run data merge block -6 61 -62 {auto:1b}
+data merge block 6 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=115},limit=1] run data merge block 6 61 -62 {auto:1b}
+data merge block 18 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=116},limit=1] run data merge block 18 61 -62 {auto:1b}
+data merge block 30 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=117},limit=1] run data merge block 30 61 -62 {auto:1b}
+data merge block 42 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=118},limit=1] run data merge block 42 61 -62 {auto:1b}
+data merge block 54 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=119},limit=1] run data merge block 54 61 -62 {auto:1b}
+data merge block 66 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=120},limit=1] run data merge block 66 61 -62 {auto:1b}
+data merge block 78 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=121},limit=1] run data merge block 78 61 -62 {auto:1b}
+data merge block 90 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=122},limit=1] run data merge block 90 61 -62 {auto:1b}
+data merge block 102 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=123},limit=1] run data merge block 102 61 -62 {auto:1b}
+data merge block 114 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=124},limit=1] run data merge block 114 61 -62 {auto:1b}
+data merge block 126 61 -62 {auto:0b}
+execute if entity @a[scores={jobNumber=125},limit=1] run data merge block 126 61 -62 {auto:1b}
 
 execute if entity @a[scores={jobNumber=73},tag=JobChanged,limit=1] as @a[scores={jobNumber=73},tag=JobChanged] at @s run scoreboard players set @s MagicFatigue 0
 execute if entity @a[scores={jobNumber=73},tag=JobChanged,limit=1] as @a[scores={jobNumber=73},tag=JobChanged] at @s run function project-c:jobaction/073/changejob
