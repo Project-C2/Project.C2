@@ -1,9 +1,8 @@
-#実行者     -> jobNumber = 108
+ #実行者     -> jobNumber = 108
 #実行地点   -> 実行者
 
 
 scoreboard players reset @s usedSkill
-
 
 execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-c:jobaction/108/replaceitem/1
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/108/replaceitem/2
@@ -20,3 +19,4 @@ execute if score @s deathCountExt matches 1.. run function project-c:jobaction/1
 
 scoreboard players set @s sneak 0
 scoreboard players set @s deathCountExt 0
+scoreboard players set @s CT3 1200
