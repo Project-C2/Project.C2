@@ -39,10 +39,10 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"断チ�
 
 function project-c:jobaction/100/actbar
 
-execute if entity @s[scores={adDealt=1..}] run scoreboard players add @a counter 1
+execute if entity @s[scores={adDealt=1..}] run scoreboard players add @s counter 1
 execute if entity @s[scores={adDealt=1..}] run playsound minecraft:entity.ender_dragon.hurt master @a ~ ~ ~ 2 1
 execute if entity @s[scores={adDealt=1..}] run particle minecraft:dust 0 1 0 1 ~ ~1 ~ 0.3 0.3 0.3 1 10
-execute if entity @s[scores={adDealt=1..,counter=9}] run scoreboard players set @a counter 1
+execute if entity @s[scores={adDealt=1..,counter=9}] run scoreboard players set @s counter 1
 
 scoreboard players remove @s[scores={subcounter=1..}] subcounter 1
 execute if entity @s[scores={subcounter=1..}] run execute as @e[tag=100fire,distance=..5,limit=1] at @s run teleport @a[scores={jobNumber=100,subcounter=1..},limit=1,sort=nearest] ~ ~ ~
