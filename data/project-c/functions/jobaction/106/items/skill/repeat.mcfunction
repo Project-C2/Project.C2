@@ -1,8 +1,8 @@
 #スキル使用処理
 
 
-execute if entity @s[tag=neac_fall_damage_nullification_execute_remove] run effect clear @s slow_falling
-execute if entity @s[tag=neac_fall_damage_nullification_execute_remove] run tag @s remove neac_fall_damage_nullification_execute_remove
+execute if entity @e[tag=neac_fall_damage_nullification_execute_remove,limit=1] as @e[tag=neac_fall_damage_nullification_execute_remove] run effect clear @s slow_falling
+execute if entity @e[tag=neac_fall_damage_nullification_execute_remove,limit=1] as @e[tag=neac_fall_damage_nullification_execute_remove] run tag @s remove neac_fall_damage_nullification_execute_remove
 
 
 

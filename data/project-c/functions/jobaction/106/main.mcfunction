@@ -24,12 +24,11 @@ execute if entity @s[scores={counter_1=..0}] run function project-c:jobaction/10
 
 execute if entity @s[advancements={project-c:neac/inventory_changed=true}] run function project-c:jobaction/106/inventory_changed
 
-
+execute if entity @s[scores={drop2=1..}] run function project-c:jobaction/106/drop
 
 execute if entity @s[gamemode=!spectator] run function project-c:jobaction/106/items/skill/use_check
 
 
-execute if entity @s[scores={drop2=1..}] run function project-c:jobaction/106/drop
 
 
 #ダッシュトリガーチェンジ
