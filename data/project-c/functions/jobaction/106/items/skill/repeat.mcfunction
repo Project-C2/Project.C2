@@ -46,4 +46,9 @@ execute if entity @e[type=minecraft:area_effect_cloud,tag=106_soul_curse,limit=1
 execute if entity @p[scores={jobNumber=106,counter_9=1..}] as @a[scores={jobNumber=106,counter_9=1..}] at @s run function project-c:jobaction/106/items/skill/09/proc
 
 
+#ボム
+execute if entity @e[type=minecraft:creeper,tag=106_bomb,limit=1] as @e[type=minecraft:creeper,tag=106_bomb] at @s run function project-c:jobaction/106/items/skill/11/fuse_timer
+
+
+
 execute if entity @p[tag=106_skill_no_drop] as @a[tag=106_skill_no_drop] run tag @s remove 106_skill_no_drop

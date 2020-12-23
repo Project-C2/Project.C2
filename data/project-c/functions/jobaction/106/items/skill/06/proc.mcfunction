@@ -1,7 +1,7 @@
 #スキル6
 scoreboard players add @s counter 1
 
-execute if score @s counter matches 60 if entity @s[tag=106_wall_center] run playsound minecraft:item.shield.break master @a ~ ~ ~ 1 0.7
-execute if score @s counter matches 60 if entity @s[type=shulker] run particle block smooth_stone ~ ~0.5 ~ 0.2 0.2 0.2 0 2 force
-execute if score @s counter matches 60 run tp @s ~ ~-512 ~
-execute if score @s counter matches 60 run kill @s
+execute if score @s counter matches 100 if entity @s[tag=106_wall_center] run playsound minecraft:item.shield.break master @a ~ ~ ~ 1 0.7
+execute if score @s counter matches 100 if entity @s[type=shulker] run particle block smooth_stone ~ ~0.5 ~ 0.2 0.2 0.2 0 2 force
+execute if score @s counter matches 100 run tp @s ~ ~-512 ~
+execute if score @s counter matches 100 run kill @s

@@ -26,7 +26,7 @@ execute if entity @s[advancements={project-c:neac/inventory_changed=true}] run f
 
 
 
-function project-c:jobaction/106/items/skill/use_check
+execute if entity @s[gamemode=!spectator] run function project-c:jobaction/106/items/skill/use_check
 
 
 execute if entity @s[scores={drop2=1..}] run function project-c:jobaction/106/drop
