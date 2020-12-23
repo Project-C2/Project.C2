@@ -15,7 +15,7 @@ execute if entity @s[tag=using] if entity @e[tag=106_auxiliary_check,limit=1] ru
 execute if entity @s[tag=106_auxiliary_replace] run function project-c:jobaction/106/items/skill/04/auxiliary/set
 
 #Tagの削除
-execute if entity @e[type=minecraft:armor_stand,tag=sprink_arrow,tag=106_auxiliary_check,limit=1] as @e[type=minecraft:armor_stand,tag=sprink_arrow,tag=106_auxiliary_check] run tag @s remove 106_auxiliary_check
+execute if entity @e[type=minecraft:armor_stand,tag=106_sprink_arrow,tag=106_auxiliary_check,limit=1] as @e[type=minecraft:armor_stand,tag=106_sprink_arrow,tag=106_auxiliary_check] run tag @s remove 106_auxiliary_check
 execute if entity @s[tag=using] run tag @s remove using
 execute if entity @s[tag=106_auxiliary_replace] run tag @s remove 106_auxiliary_replace
 scoreboard players reset #106_slot_pos
