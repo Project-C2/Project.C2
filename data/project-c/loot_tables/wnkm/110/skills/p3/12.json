@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "矢筒-榴弾の矢","color":"green","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"右クリック / CT:20","italic":false,"color":"aqua"},
+                  {"text":"榴弾の矢を2本取り出す。","italic":false,"color":"white"},
+                  {"text":"効果:着弾地点を爆破する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 64
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110skillID:12b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:36,CustomPotionColor:43520,CustomPotionEffects:[{Id:27b,Amplifier:110b,Duration:9}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

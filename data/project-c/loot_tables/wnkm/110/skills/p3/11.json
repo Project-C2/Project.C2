@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "矢筒-鋼鉄の矢","color":"white","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"右クリック / CT:20","italic":false,"color":"aqua"},
+                  {"text":"鋼鉄の矢を4本取り出す。","italic":false,"color":"white"},
+                  {"text":"効果:威力+50%","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 64
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110skillID:11b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:36,CustomPotionColor:11184810,CustomPotionEffects:[{Id:27b,Amplifier:110b,Duration:9}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
