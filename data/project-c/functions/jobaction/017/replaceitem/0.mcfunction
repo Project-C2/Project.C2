@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.0 minecraft:golden_sword{display:{Name:'{"text":"リドル"}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:5,Operation:0,UUID:[I;698055356,918765947,-1292395507,1073461589],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.4,Operation:0,UUID:[I;698055356,918765947,-1292395507,1073461589],Slot:"mainhand"}],Unbreakable:1b} 1
+
+scoreboard players reset @s drop

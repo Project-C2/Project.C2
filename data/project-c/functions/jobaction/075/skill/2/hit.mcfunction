@@ -5,6 +5,7 @@ execute if score @s counter_2 matches 1501.. run effect give @e[tag=hit] glowing
 execute if score @s counter_2 matches 1001..1500 run effect give @e[tag=hit] glowing 6 0
 execute if score @s counter_2 matches 501..1000 run effect give @e[tag=hit] glowing 4 0
 execute if score @s counter_2 matches ..500 run effect give @e[tag=hit] glowing 2 0
+effect give @e[tag=hit] absorption 1 0 true
 effect give @e[tag=hit] instant_damage 1 0 true
 effect give @e[tag=hit,distance=..1.5] instant_damage 1 2 true
 effect give @e[tag=hit,distance=1.5..2.25] instant_damage 1 1 true
