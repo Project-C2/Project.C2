@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:green_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "ダッシュブースト","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "タイプ：パッシブ","italic": false,"color": "green"},
+                {"text": "トリガ：スニーク≫リリース","italic": false,"color": "yellow"},
+                {"text": "クールタイム：10～30秒","italic": false,"color": "aqua"},
+                {"text": "移動速度を上昇させる","italic": false,"color": "dark_purple"},
+                {"text": "スニーク長押しで2段階チャージでき、","italic": false,"color": "dark_purple"},
+                {"text": "チャージ量に応じて効果が上昇する","italic": false,"color": "dark_purple"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,106_skill:9,106_skill_slot:0}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

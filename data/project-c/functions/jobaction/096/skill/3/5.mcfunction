@@ -2,7 +2,7 @@
 scoreboard players remove @s CT3 60
 replaceitem entity @s hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 6
 effect give @s minecraft:levitation 1 2
-replaceitem entity @s armor.feet minecraft:chainmail_boots{Enchantments:[{id:"binding_curse",lvl:1s},{id:"blast_protection",lvl:8s}],AttributeModifiers:[{}]}
+replaceitem entity @s armor.feet minecraft:chainmail_boots{Enchantments:[{id:"binding_curse",lvl:1s},{id:"blast_protection",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"096",Slot:"feet",UUID:[I;0,96,0,96],Amount:1d,Operation:0}],Unbreakable:1b}
 
 tag @s add 096chainjump_p
 tag @s add 096_jumped

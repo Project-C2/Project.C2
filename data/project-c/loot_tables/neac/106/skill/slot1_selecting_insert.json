@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "block": "0 0 0",
+                  "nbt": "Items[0].tag.display.Name",
+                  "interpret": true
+                },
+                {"text": " "},{"text": "スロット1に選択中","italic": false,"color": "dark_aqua"}
+              ],
+              "entity": "this"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

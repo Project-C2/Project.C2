@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:popped_chorus_fruit",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "ショートテレポート","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "タイプ：アクティブ","italic": false,"color": "green"},
+                {"text": "トリガ：ジャンプ","italic": false,"color": "yellow"},
+                {"text": "クールタイム：25秒","italic": false,"color": "aqua"},
+                {"text": "7.5m前方にテレポートする","italic": false,"color": "dark_purple"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,106_skill:10,106_skill_slot:0}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

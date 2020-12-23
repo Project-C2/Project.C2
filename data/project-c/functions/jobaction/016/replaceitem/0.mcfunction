@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.0 minecraft:diamond_sword{display:{Name:'{"text":"せいどうのつるぎ"}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;220450125,-981512901,-1103438748,1850377202],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.4,Operation:0,UUID:[I;220450125,-981512901,-1103438748,1850377202],Slot:"mainhand"}],Unbreakable:1b} 1
+
+scoreboard players reset @s drop
