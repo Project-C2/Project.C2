@@ -9,7 +9,7 @@ execute store result score #dummy CT2 run data get entity @e[tag=067dummyStand,l
 execute store result score #dummy CT3 run data get entity @e[tag=067dummyStand,limit=1] Pos[2] 100
 kill @e[tag=067dummyStand]
 
-execute anchored eyes run summon minecraft:arrow ^ ^-0.3 ^0.1 {Tags:["067slast","067dummyArrow"],life:1200s,damage:6.0d,NoGravity:1b,crit:1b,SoundEvent:"minecraft:ui.toast.out",Color:-1,PierceLevel:127b}
+execute anchored eyes run summon minecraft:arrow ^ ^-0.3 ^0.1 {Tags:["067slast","067dummyArrow"],life:1200s,damage:6.0d,OwnerUUIDLeast:1L,OwnerUUIDMost:1L,NoGravity:1b,crit:1b,SoundEvent:"minecraft:ui.toast.out",Color:-1,PierceLevel:127b}
 execute as @e[tag=067dummyArrow] store result entity @s Motion[0] double 0.015 run scoreboard players get #dummy CT1
 execute as @e[tag=067dummyArrow] store result entity @s Motion[1] double 0.015 run scoreboard players get #dummy CT2
 execute as @e[tag=067dummyArrow] store result entity @s Motion[2] double 0.015 run scoreboard players get #dummy CT3
@@ -19,7 +19,8 @@ particle minecraft:angry_villager ~ ~ ~1 1 1 1 1 40
 playsound minecraft:entity.player.attack.strong master @a ~ ~1 ~ 1.2 0.7
 playsound minecraft:entity.player.attack.knockback master @a ~ ~1 ~ 1.2 0.7
 playsound minecraft:entity.player.attack.crit master @a ~ ~1 ~ 1.2 0.8
-data modify entity @e[tag=067dummyArrow,limit=1] Owner set from entity @s UUID
+data modify entity @e[tag=067dummyArrow,limit=1] OwnerUUIDMost set from entity @s UUIDMost
+data modify entity @e[tag=067dummyArrow,limit=1] OwnerUUIDLeast set from entity @s UUIDLeast
 tag @e[tag=067dummyArrow] remove 067dummyArrow
 scoreboard players reset #dummy
 

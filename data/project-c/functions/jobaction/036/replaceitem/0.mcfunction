@@ -1,4 +1,0 @@
-replaceitem entity @s hotbar.0 minecraft:diamond_sword{display:{Name:'{"text":"クラウ・ソラス"}',Lore:['{"text":"攻撃すると色を蓄積させる。"}','{"text":"7色纏う事により、次の攻撃にスタン効果を付与する。"}']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;-1178308210,-1489876253,-2050657520,-215424801],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.0,Operation:0,UUID:[I;-1178308210,-1489876253,-2050657520,-215424801],Slot:"mainhand"}],Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:1} 1
-replaceitem entity @s weapon.offhand minecraft:quartz{display:{Name:'{"text":"虹魔神斬"}',Lore:['{"text":"発動:攻撃"}','{"text":"効果:七色揃いし時、対象の精神を崩壊させる"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:1b} 1
-
-scoreboard players reset @s drop

@@ -1,2 +1,2 @@
-execute as @e[type=minecraft:potion,tag=!067-2] if data entity @s {Item:{id:"minecraft:lingering_potion",tag:{CustomPotionEffects:[{Duration:1,Id:31b,Amplifier:67b}]}}} run tag @s add 067-checked
-execute if entity @e[tag=067-checked,limit=1] run function project-c:jobaction/067/skill/2/0
+execute as @e[type=minecraft:potion] if data entity @s {id:"minecraft:lingering_potion",tag:{CustomPotionEffects:[{Duration:1,Id:31b,Amplifier:67b}]}} run tag @s add 067-checked
+execute if entity @e[tag=067-checked] run function project-c:jobaction/067/skill/2/0

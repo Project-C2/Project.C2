@@ -28,7 +28,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Bloody B
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Bloody Force\",\"color\":\"dark_red\",\"bold\":true}"}}}},scores={CT3=1200..,useCarrotStick=1..,subcounter=45..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/031/skill/3/02
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{031S3:1b}}},scores={drop2=1..},gamemode=!spectator] unless entity @s[tag=!SkillReady2,tag=!SkillReady3] run function project-c:jobaction/031/skill/3/-
+execute if entity @s[nbt={SelectedItem:{tag:{031S3:1b}}},scores={drop=1..},gamemode=!spectator] unless entity @s[tag=!SkillReady2,tag=!SkillReady3] run function project-c:jobaction/031/skill/3/-
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Blood Blade\",\"color\":\"dark_red\",\"underlined\":true}"}}}},scores={counter=..0,useCarrotStick=1..,subcounter=5..},gamemode=!spectator] run function project-c:jobaction/031/skill/0/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Blood Blade\",\"color\":\"dark_red\",\"underlined\":true}"}}}},scores={counter=..0,damageDealt=1..},gamemode=!spectator] run scoreboard players operation @s damageDealt /= #031-15 counter
@@ -51,4 +51,4 @@ effect give @s[scores={sneak=1..}] minecraft:slow_falling 1 0 true
 scoreboard players set @s[scores={sneak=1..}] sneak 0
 title @s actionbar [{"text":"吸血ゲージ","color":"red","underlined":true,"bold":true},{"text":":","color":"gold","underlined":false},{"score":{"name":"@s","objective":"subcounter"},"color":"dark_red"}]
 
-scoreboard players reset @s[scores={drop2=1..}] drop2
+

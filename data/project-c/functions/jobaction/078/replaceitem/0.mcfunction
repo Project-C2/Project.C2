@@ -2,5 +2,3 @@ replaceitem entity @s[scores={counter_3=0}] hotbar.0 minecraft:prismarine_shard{
 replaceitem entity @s[scores={counter_3=1}] hotbar.0 minecraft:prismarine_shard{display:{Name:"{\"text\":\"MINCE\",\"color\":\"gold\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f8方向のお客様に包丁を提供する。\"}","{\"text\":\"§fBOOMERANGS BACK\",\"italic\":\"false\"}"]},HideFlags:63b,Enchantments:[{id:"minecraft:infinity",lvl:1}]} 1
 
 replaceitem entity @s weapon.offhand minecraft:snowball
-
-scoreboard players reset @s drop

@@ -1,5 +1,5 @@
-scoreboard players set @s CT2 940
-replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 13
+scoreboard players set @s CT2 960
+replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 12
 
 execute positioned ^ ^ ^2.5 run summon area_effect_cloud ~ ~0.5 ~ {Tags:["095-2AEC","this"],Duration:15,Radius:0.0f}
 execute if entity @s[team=Red] run tag @e[tag=this,limit=1] add 095Red
