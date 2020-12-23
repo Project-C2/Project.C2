@@ -15,7 +15,7 @@
             {
                 "function": "minecraft:set_lore",
                 "lore": [
-                  {"text":"近接ダメージを20%増加させる。","italic":false,"color":"white"},
+                  {"text":"近接ダメージを15%増加させる。","italic":false,"color":"white"},
                   {"text":"加護はホットバーに入れる事で自動発動。","italic":false,"color":"light_purple"},
                   {"text":"加護を装備した場合、レリックが自動的に解除される。","italic":false,"color":"dark_purple"}
                 ]
