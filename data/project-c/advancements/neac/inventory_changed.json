@@ -1,7 +1,0 @@
-{
-    "criteria": {
-      "root": {
-        "trigger": "minecraft:inventory_changed"
-      }
-    }
-  }
