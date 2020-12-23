@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "(スロット3)","italic": false,"color": "blue"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
