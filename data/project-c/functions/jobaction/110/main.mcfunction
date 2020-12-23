@@ -6,22 +6,24 @@
 #counter_2    -> スキル1のスキル番号
 #counter_3    -> スキル2のスキル番号
 #counter_4    -> スキル3のスキル番号
-#counter_5    -> 
-#counter_6    -> 
-#counter_7    -> 
-#counter_8    -> 
+#counter_5    -> インベントリGUIの選択種類
+#counter_6    -> 空き
+#counter_7    -> インベントリGUIの選択ページ(加護)
+#counter_8    -> インベントリGUIの選択ページ(魔法)
 #counter_9    -> 加護のスキル番号
 #subcounter   -> 
 
 
 scoreboard players reset @s usedSkill
 
+execute unless score @s counter_5 matches 1..3 run function project-c:jobaction/110/first
+execute if entity @s[scores={drop2=1..}] run tag @s add 110drop
 execute if entity @s[tag=!Battle,advancements={project-c:neac/inventory_changed=true}] run function project-c:jobaction/110/inventory_changed
+execute if entity @s[tag=110drop] unless entity @s[scores={drop2=1..}] run tag @s remove 110drop
 
 execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-c:jobaction/110/replaceitem/1
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/110/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/110/replaceitem/3
-execute if entity @s[tag=110_skill_setup] run function project-c:jobaction/110/items/skill/setup
 
 
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
