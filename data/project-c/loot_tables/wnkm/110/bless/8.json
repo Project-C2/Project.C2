@@ -34,7 +34,7 @@
             },
             {
                 "function": "minecraft:set_nbt",
-                "tag": "{110blessID:8b,110blessItem:1b,Unbreakable:1b,HideFlags:4}"
+                "tag": "{110blessID:8b,110blessItem:1b,Unbreakable:1b,HideFlags:6}"
             }
           ]
         }
