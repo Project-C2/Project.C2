@@ -6,7 +6,3 @@ execute if score @s stockcounter matches ..30 run give @s minecraft:pink_dye{dis
 execute if score @s stockcounter matches 30.. run scoreboard players set @s stockcounter 30
 function project-c:jobaction/108/update_attack_damage/01
 
-
-scoreboard players set @s 108-AttackFlag1 0
-scoreboard players set @s 108-AttackFlag2 0
-scoreboard players set @s 108-AttackFlag3 0
