@@ -11,7 +11,7 @@
 #counter_7    -> インベントリGUIの選択ページ(加護)
 #counter_8    -> インベントリGUIの選択ページ(魔法)
 #counter_9    -> 加護のスキル番号
-#subcounter   -> 
+#subcounter   -> インベントリGUIの魔法でスロット選択する時の何か
 
 
 scoreboard players reset @s usedSkill

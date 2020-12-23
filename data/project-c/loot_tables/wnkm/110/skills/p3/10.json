@@ -23,10 +23,6 @@
                 ]
             },
             {
-              "function": "minecraft:set_count",
-              "count": 64
-            },
-            {
                 "function": "minecraft:set_nbt",
                 "tag": "{110skillID:10b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:36,CustomPotionColor:11141290,CustomPotionEffects:[{Id:27b,Amplifier:110b,Duration:9}]}"
             }
