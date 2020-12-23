@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "展開装置","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "タイプ：アクティブ","italic": false,"color": "green"},
+                {"text": "トリガ：ライトクリック","italic": false,"color": "yellow"},
+                {"text": "自身が発射したスプリンクラーを展開する","italic": false,"color": "dark_purple"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,106_auxiliary_skill:4b,106_skill_slot:0}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
