@@ -1,4 +1,4 @@
-
+data modify block 0 0 0 Items[0].tag.106_item set value 1
 
 execute if score #106_slot_pos counter matches 0 run loot replace entity @s container.0 1 mine 0 0 0 air{inv_copy:1b}
 execute if score #106_slot_pos counter matches 1 run loot replace entity @s container.1 1 mine 0 0 0 air{inv_copy:1b}

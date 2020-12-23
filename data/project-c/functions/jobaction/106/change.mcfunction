@@ -13,3 +13,5 @@ scoreboard players set @s counter_9 0
 scoreboard players set @s shieldBlock 0
 tag @s add 106_change_setup
 function project-c:jobaction/106/change_keep
+
+function project-c:jobaction/106/items/gui/set

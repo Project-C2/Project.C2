@@ -25,7 +25,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,106_skill:4,106_skill_slot:0}"
+              "tag": "{HideFlags:63,106_skill:4,106_item:0}"
             }
           ]
         }
