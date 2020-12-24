@@ -10,9 +10,7 @@ execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-
 
 execute if entity @s[tag=SkillReady1,scores={sneak=1..},gamemode=!spectator] run function project-c:jobaction/088/skill/1/0
 execute if entity @s[tag=SkillReady2,scores={damageDealt=1..}] run function project-c:jobaction/088/skill/2/0
-execute if entity @s[tag=SkillReady3,tag=!088-S3-used,scores={deathCount=1..}] run function project-c:jobaction/088/skill/3/0
 
-#kill @e[tag=088-1-position,sort=nearest,limit=1,tag=!088-S1-stand]
 execute if entity @s run summon area_effect_cloud ~ ~ ~ {NoGravity:1b,CustomNameVisible:0b,Radius:0f,Duration:2,Tags:["088-1-position","INI"]}
 scoreboard players operation @e[tag=088-1-position,tag=INI,sort=nearest,limit=1] playerNumber = @s playerNumber
 tag @e[tag=088-1-position,tag=INI,sort=nearest,limit=1] remove INI
