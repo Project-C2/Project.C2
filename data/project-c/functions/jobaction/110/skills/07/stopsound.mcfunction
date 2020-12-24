@@ -1,1 +1,0 @@
-stopsound @a block minecraft:entity.generic.explode

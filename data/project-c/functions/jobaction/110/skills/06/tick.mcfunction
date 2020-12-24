@@ -1,1 +1,0 @@
-execute as @e[tag=110shulkerPassenged] unless data entity @s {Passengers:[{id:"minecraft:shulker"}]} run kill @s
