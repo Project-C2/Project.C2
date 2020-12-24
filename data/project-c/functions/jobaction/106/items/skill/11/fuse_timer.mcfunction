@@ -12,21 +12,9 @@ function project-c:jobaction/106/fall_damage_nullification
 
 execute if score @s counter matches 200.. run function project-c:jobaction/106/items/skill/11/fuse
 
-execute if score @s counter_3 matches ..0 run function project-c:jobaction/106/items/skill/11/replace/check
 
+execute store result score #106_health counter run data get entity @s Health 10
+execute if score #106_health counter matches ..9800 run function project-c:jobaction/106/items/skill/11/replace/check
+execute if score #106_health counter matches ..9800 run kill @s
 
-
-
-execute if entity @s[nbt=!{Health:1000f}] run function project-c:jobaction/106/items/skill/11/bomb_receive
-
-execute if score @s counter_6 matches 1.. run scoreboard players operation @s counter_5 -= @s counter_6
-execute if score @s counter_5 matches -2147483648..-1 run scoreboard players reset @s counter_5
-scoreboard players operation @s counter_6 += @s counter_5
-
-scoreboard players operation @s counter_3 -= @s counter_5
-
-execute if score @s counter_3 > @s counter_4 run scoreboard players operation @s counter_3 = @s counter_4
-
-execute if entity @s[scores={counter_6=1..}] if data entity @s {HurtTime:1s} run scoreboard players reset @s counter_6
-execute if entity @s[scores={counter_6=1..}] if data entity @s {HurtTime:0s} run scoreboard players reset @s counter_6
-
+scoreboard players reset #106_health

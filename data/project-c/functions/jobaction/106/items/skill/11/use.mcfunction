@@ -20,9 +20,6 @@ attribute @e[tag=number_operation,limit=1] generic.movement_speed base set 0
 attribute @e[tag=number_operation,limit=1] generic.follow_range base set 0
 execute as @e[tag=number_operation,limit=1] store result score @s counter_1 run data get entity @s Rotation[0] 100000
 execute as @e[tag=number_operation,limit=1] store result score @s counter_2 run data get entity @s Rotation[1] 100000
-scoreboard players set @e[tag=number_operation,limit=1] counter_3 200
-scoreboard players set @e[tag=number_operation,limit=1] counter_4 200
-scoreboard players operation @e[tag=number_operation,limit=1] playerNumber = @s playerNumber
 scoreboard players operation @e[tag=number_operation,limit=1] playerNumber = @s playerNumber
 execute if entity @s[team=Red] run team join Red @e[tag=number_operation,limit=1]
 execute if entity @s[team=Blue] run team join Blue @e[tag=number_operation,limit=1]

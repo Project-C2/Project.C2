@@ -9,7 +9,7 @@ execute if entity @e[tag=neac_fall_damage_nullification_execute_remove,limit=1] 
 
 #レリーヴストーン
 execute if entity @e[scores={106-relieveD=1..},limit=1] as @e[scores={106-relieveD=1..}] at @s run function project-c:jobaction/106/items/skill/01/proc1
-execute if entity @p[gamemode=!spectator,scores={jobNumber=106,Mana=1..}] as @a[gamemode=!spectator,scores={jobNumber=106,Mana=1..}] at @s run function project-c:jobaction/106/items/skill/01/proc2
+execute if entity @p[gamemode=!spectator,scores={jobNumber=106,subcounter=1..}] as @a[gamemode=!spectator,scores={jobNumber=106,subcounter=1..}] at @s run function project-c:jobaction/106/items/skill/01/proc2
 
 
 
