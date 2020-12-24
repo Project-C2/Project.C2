@@ -17,15 +17,15 @@
                 "lore": [
                   {"text":"魔力で弾丸を形成して発射する拳銃。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"-reload- 装填時間:5s or 6s","italic":false,"color":"aqua"},
+                  {"text":"-reload- 装填時間:8s or 10s","italic":false,"color":"aqua"},
                   {"translate":"ドロップ(%s)キーを押すか残弾が0になると発動。","with":[{"keybind":"key.drop"}],"italic":false,"color":"white"},
-                  {"text":"魔力の弾丸を6発分装填する。","italic":false,"color":"white"},
+                  {"text":"魔力の弾丸を5発分装填する。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
                 ]
             },
             {
                 "function": "minecraft:set_nbt",
-                "tag": "{110skillID:13b,110skill:1b,110skillSlot:-1b,110Ammo:6,110AmmoMax:6,Damage:1,HideFlags:4,AttributeModifiers:[{}]}"
+                "tag": "{110skillID:13b,110skill:1b,110skillSlot:-1b,110Ammo:5,110AmmoMax:5,Damage:1,HideFlags:4,AttributeModifiers:[{}]}"
             }
           ]
         }

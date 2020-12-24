@@ -4,12 +4,12 @@ execute at @s anchored eyes positioned ^ ^ ^1 run playsound minecraft:entity.zom
 execute at @s anchored eyes positioned ^ ^ ^1 run particle minecraft:crit ~ ~ ~ 0 0 0 2 40 normal @a
 execute at @s anchored eyes positioned ^ ^ ^1 run particle minecraft:crit ~ ~ ~ 0 0 0 2 10 force @a
 
-execute positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^4.5 {Tags:["110vector"],Duration:1}
-execute at @s anchored eyes positioned ^ ^ ^1 run summon spectral_arrow ~ ~ ~ {Tags:["110mana-gun","this","Arrow"],life:1200s,damage:0.7d,Duration:0}
-data modify entity @e[type=spectral_arrow,tag=this,limit=1,sort=nearest] Motion set from entity @e[tag=110vector,limit=1] Pos
-data modify entity @e[type=spectral_arrow,tag=this,limit=1,sort=nearest] Owner set from entity @s UUID
+execute at @s anchored eyes positioned ^ ^ ^1 run summon armor_stand ~ ~ ~ {Tags:["110mana-gun","this"],Invisible:1b,Marker:1b,NoGravity:1b}
+execute at @s anchored eyes positioned ^ ^ ^1 run tp @e[tag=this,limit=1] ~ ~ ~ ~ ~
+scoreboard players operation @e[tag=this,limit=1] playerNumber = @s playerNumber
+execute if entity @s[team=Red] run team join RedDummy @e[tag=this,limit=1]
+execute if entity @s[team=Blue] run team join BlueDummy @e[tag=this,limit=1]
 tag @e[tag=this] remove this
-kill @e[tag=110vector]
 scoreboard players set #110-recoil counter_1 -720
 function project-c:jobaction/110/operation/recoil
 

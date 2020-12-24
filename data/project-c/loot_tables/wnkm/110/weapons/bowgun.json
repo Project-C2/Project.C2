@@ -23,7 +23,7 @@
                   {"text":"一度の装填で同種の矢を全て装填する。","italic":false,"color":"white"},
                   {"text":"装填した矢が尽きるまで自動的にリロードする。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":" 威力 1.0","italic":false,"color":"green"}
+                  {"text":" 威力 0.8","italic":false,"color":"green"}
                 ]
             },
             {
