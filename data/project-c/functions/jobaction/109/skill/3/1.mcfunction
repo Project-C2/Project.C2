@@ -16,7 +16,6 @@ execute if entity @s[scores={counter_4=2}] run playsound minecraft:item.trident.
 execute if entity @s[scores={counter_4=2..31}] run particle minecraft:firework ~ ~ ~ 1 1 1 0.1 20 normal @a
 execute if entity @s[scores={counter_4=2..31}] run particle minecraft:firework ~ ~ ~ 1 1 1 0.1 5 force @a
 execute if entity @s[scores={counter_4=32}] run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 4 1.2
-execute if entity @s[scores={counter_4=32}] run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 4 1.2
 execute if entity @s[scores={counter_4=32}] run particle minecraft:firework ~ ~1 ~ 0 0 0 1 1000 normal @a
 execute if entity @s[scores={counter_4=32}] run particle minecraft:firework ~ ~1 ~ 0 0 0 1 250 force @a
 execute if entity @s[scores={counter_4=..12}] run effect give @s slowness 1 7 true
