@@ -51,8 +51,8 @@ scoreboard players add @e[tag=061-Bullet] counter_2 1
 execute as @e[tag=061-Bullet] at @s run particle flame ~ ~ ~ 0 0 0 0.1 5 force @a
 kill @e[tag=061-Bullet,scores={counter_2=4..}]
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ENV-スーツ\",\"color\":\"blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={useCarrotStick=1..},gamemode=!spectator] run scoreboard players add @s Mana 1
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ENV-スーツ\",\"color\":\"blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={useCarrotStick=1..},gamemode=!spectator] run playsound minecraft:entity.arrow.hit_player master @a ~ ~ ~ 1 1
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ENV-スーツ","color":"blue","italic":false,"underlined":false}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f常時低速落下を付与する。"}','{"text":"§f使用でオンオフを切り替える。"}']},HideFlags:1,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},scores={useCarrotStick=1..},gamemode=!spectator] run scoreboard players add @s Mana 1
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ENV-スーツ","color":"blue","italic":false,"underlined":false}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f常時低速落下を付与する。"}','{"text":"§f使用でオンオフを切り替える。"}']},HideFlags:1,Enchantments:[{id:"minecraft:infinity",lvl:1}]}}},scores={useCarrotStick=1..},gamemode=!spectator] run playsound minecraft:entity.arrow.hit_player master @a ~ ~ ~ 1 1
 effect give @s[scores={Mana=1..}] slow_falling 1 0
 effect give @s[scores={Mana=1..}] jump_boost 1 1
 scoreboard players set @s[scores={Mana=2..}] Mana 0
