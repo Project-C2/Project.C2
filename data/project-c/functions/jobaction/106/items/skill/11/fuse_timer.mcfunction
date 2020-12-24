@@ -2,7 +2,6 @@
 
 scoreboard players add @s counter 1
 
-#tellraw NeAc [{"text":"C:"},{"score":{"name":"@s","objective": "counter"}},{"text":"  HP:"},{"score":{"name":"@s","objective": "counter_3"}},{"text":"   maxHP:"},{"score":{"name":"@s","objective": "counter_4"}},{"text":"   ?1:"},{"score":{"name":"@s","objective": "counter_5"}},{"text":"   ?2:"},{"score":{"name":"@s","objective": "counter_6"}}]
 execute if entity @s[team=Red] run particle dust 1 0 0 1 ~ ~1 ~ 0.3 0.3 0.3 0 2 force @a
 execute if entity @s[team=Blue] run particle dust 0 0 1 1 ~ ~1 ~ 0.3 0.3 0.3 0 2 force @a
 
