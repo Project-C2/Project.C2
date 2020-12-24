@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light_blue_stained_glass_pane",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "スロット3","color": "yellow","italic": false}
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110GUI:1b,110GUISlot:6b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
