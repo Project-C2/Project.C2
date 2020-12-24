@@ -51,4 +51,3 @@ effect clear @a minecraft:health_boost
 
 tag @a[scores={jobNumber=88}] remove 088-S3-used
 scoreboard players reset @a[scores={jobNumber=88}] playerKills
-execute as @a[scores={jobNumber=88}] at @s run attribute @s minecraft:generic.max_health base set 30
