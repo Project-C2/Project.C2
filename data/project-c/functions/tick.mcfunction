@@ -1,5 +1,5 @@
-function project-c:general/cooltimecounter
-function project-c:general/delaycounter
+execute as @a run function project-c:general/cooltimecounter
+#function project-c:general/delaycounter
 function project-c:general/0-luckeffection
 function project-c:general/relic/reliceffect
 #function project-c:radiochat/general/inventorywatcher
