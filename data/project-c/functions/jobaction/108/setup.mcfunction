@@ -12,9 +12,9 @@ scoreboard players set #8 counter 8
 ##コマンドブロック設置
 
 ##ドロップ検知用
-setblock -55 31 -122 minecraft:command_block[facing=south,conditional=false]{Command:"data merge block ~ ~ ~ {auto:0b}",TrackOutput:0b} destroy
-setblock -55 31 -121 minecraft:chain_command_block[facing=south,conditional=false]{auto:1b,Command:"execute as @a[scores={jobNumber=108,drop=1..}] run function project-c:jobaction/108/replaceitem/0",TrackOutput:0b} destroy
-setblock -70 17 -117 minecraft:chain_command_block[facing=north,conditional=false]{auto:1b,Command:"execute if entity @p[scores={jobNumber=108,drop=1..}] run data merge block -55 31 -122 {auto:1b}",TrackOutput:0b} destroy
+#setblock -55 31 -122 minecraft:command_block[facing=south,conditional=false]{Command:"data merge block ~ ~ ~ {auto:0b}",TrackOutput:0b} destroy
+#setblock -55 31 -121 minecraft:chain_command_block[facing=south,conditional=false]{auto:1b,Command:"execute as @a[scores={jobNumber=108,drop=1..}] run function project-c:jobaction/108/replaceitem/0",TrackOutput:0b} destroy
+#setblock -70 17 -117 minecraft:chain_command_block[facing=north,conditional=false]{auto:1b,Command:"execute if entity @p[scores={jobNumber=108,drop=1..}] run data merge block -55 31 -122 {auto:1b}",TrackOutput:0b} destroy
 
 ##スキル系処理用
 setblock -78 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @p[scores={jobNumber=108}] as @e[scores={jobNumber=108}] at @s run function project-c:jobaction/108/main",TrackOutput:0b,auto:1b} destroy
