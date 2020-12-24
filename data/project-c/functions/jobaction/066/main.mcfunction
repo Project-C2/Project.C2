@@ -21,7 +21,7 @@ scoreboard players remove @s[scores={stockcounter=1..},gamemode=!spectator] stoc
 execute if entity @s[scores={CT1=1200..,sneak=1..,Mana=1..},gamemode=!spectator] run scoreboard players add @s Mana 1
 execute if entity @s[scores={CT1=1200..,sneak=0,Mana=1..},gamemode=!spectator] run function project-c:jobaction/066/skill/1/2
 
-execute as @e[tag=066-dagger,tag=!066-daggerWorld,tag=!066-daggerW] at @s unless entity @a[scores={jobNumber=66,counter_2=1..}] run teleport @s[scores={counter=5..}] ^ ^ ^1 ~ ~
+execute as @e[tag=066-dagger,tag=!066-daggerWorld,tag=!066-daggerW] at @s unless entity @a[scores={jobNumber=66,counter_2=1..}] run teleport @s[scores={counter=5..}] ^ ^ ^1.3 ~ ~
 execute as @e[tag=066-dagger,tag=!066-daggerWorld,tag=!066-daggerW] at @s unless entity @a[scores={jobNumber=66,counter_2=0}] run teleport @s[scores={counter=5..}] ^ ^ ^0.05 ~ ~
 execute as @e[tag=066-dagger,tag=!066-daggerWorld,tag=!066-daggerW] at @s unless entity @a[scores={jobNumber=66,counter_2=0}] run scoreboard players remove @s[scores={counter=6..}] counter 1
 
