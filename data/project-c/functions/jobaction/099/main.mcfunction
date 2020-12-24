@@ -94,4 +94,5 @@ scoreboard players reset @s[scores={damageDealt=1..}] damageDealt
 scoreboard players reset @s[scores={sneak=1..}] sneak
 #execute if entity @s[tag=099-S2-in-area-own] run say a
 execute if entity @s[tag=099-S2-in-area-own] run tag @s remove 099-S2-in-area-own
+execute if entity @s[tag=099_death] run scoreboard players set @s OutCombat 500
 execute if entity @s[tag=099_death] run tag @s remove 099_death
