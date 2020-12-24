@@ -20,9 +20,9 @@
                   {"text":"燃え盛る火の玉を放って攻撃。","italic":false,"color":"white"},
                   {"text":"ブロックに着弾し小爆破を起こす。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"CT:4","italic":false,"color":"aqua"},
-                  {"text":"追加入力の効果として発動。","italic":false,"color":"white"},
+                  {"text":"追加入力効果 / 右クリック / CT:4","italic":false,"color":"aqua"},
                   {"text":"左右から敵を自動的に狙う火の玉を発射。","italic":false,"color":"white"},
+                  {"text":"","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
                 ]
             },
