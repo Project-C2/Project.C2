@@ -1,6 +1,6 @@
 scoreboard players add @s counter 1
-execute if score @s counter matches 0.. run scoreboard players operation #110- playerNumber = @s playerNumber
-execute if score @s counter matches 0.. as @e[tag=110drainplant-hitting] if score @s playerNumber = #110- playerNumber run tag @s add hit
+execute if score @s counter matches 0.. run scoreboard players operation #110-- playerNumber = @s playerNumber
+execute if score @s counter matches 0.. as @e[tag=110drainplant-hitting] if score @s playerNumber = #110-- playerNumber run tag @s add hit
 execute if score @s counter matches 0.. run scoreboard players add @s subcounter 1
 execute if score @s counter matches 0.. if score @s subcounter matches 5.. run function project-c:jobaction/110/skills/03/hit2
 execute if score @s counter matches 0.. run scoreboard players reset #110- playerNumber

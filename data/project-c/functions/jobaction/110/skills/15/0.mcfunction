@@ -1,4 +1,4 @@
-scoreboard players set #110- counter_3 1000
+scoreboard players set #110- counter_3 1040
 summon minecraft:armor_stand ~ ~1.6 ~ {Tags:["this","110horming_missile"],Marker:1b,NoGravity:1b,Invisible:1b}
 
 execute anchored eyes positioned ^ ^ ^ run tp @e[tag=this,limit=1] ~ ~-0.65 ~ ~ ~

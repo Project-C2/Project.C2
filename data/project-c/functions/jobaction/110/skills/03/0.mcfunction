@@ -1,5 +1,6 @@
 scoreboard players set #110- counter_3 1020
-summon minecraft:armor_stand ~ ~0.2 ~ {Tags:["this","110drainplant"],Marker:1b,NoGravity:1b,Invisible:1b}
+summon minecraft:area_effect_cloud ~ ~0.2 ~ {Tags:["this","110drainplant"],Duration:200}
+data modify entity @e[tag=this,limit=1,sort=nearest] Owner set from entity @s UUID
 execute positioned ~ ~1 ~ run tp @e[tag=this,limit=1] ~ ~ ~ ~ 0
 execute as @e[tag=this] at @s run function project-c:jobaction/110/skills/03/check
 execute if entity @s[team=Red] run tag @e[tag=this] add 110drainplantR

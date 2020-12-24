@@ -7,6 +7,7 @@ execute as @a[tag=110drainplant_user] if score @s playerNumber = @e[tag=110,limi
 tag @s remove 110
 execute at @a[tag=110user] run summon area_effect_cloud ~ ~0.5 ~ {Tags:["this"],Particle:"heart",Age:4,Duration:5,WaitTime:1,Radius:1f,Effects:[{Id:6b,Amplifier:0b,Duration:1}]}
 execute as @e[tag=this] run data modify entity @s Owner set from entity @a[tag=110user,limit=1] UUID
+tag @e[tag=this] remove this
 
 summon armor_stand ~ ~ ~ {Tags:["this","110drainplant_hit_stand"],Invisible:1b,Marker:1b,NoGravity:1b}
 scoreboard players operation @e[tag=this,limit=1] playerNumber = @e[tag=hit,limit=1,sort=nearest] playerNumber

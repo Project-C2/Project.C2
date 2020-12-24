@@ -16,10 +16,10 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / -ミサイル発射- CT:10","italic":false,"color":"aqua"},
+                  {"text":"右クリック / -ミサイル発射- CT:8","italic":false,"color":"aqua"},
                   {"text":"自身の向いている方向に進むミサイルを発射する。","italic":false,"color":"white"},
                   {"text":"ブロックに当たると爆発する。","italic":false,"color":"white"},
-                  {"text":"発射から0.6秒以内は爆発力が低い。","italic":false,"color":"white"},
+                  {"text":"発射から1.0秒毎に爆発力が増加する。。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
                 ]
             },

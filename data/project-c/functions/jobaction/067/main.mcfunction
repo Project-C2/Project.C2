@@ -18,7 +18,7 @@ execute if entity @s[scores={sprint=1..}] run scoreboard players operation @s su
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ステップ&デストロイ\",\"color\":\"white\",\"italic\":false}"},destroyMode:0b}}},scores={CT1=1200..,subcounter=1..,jump=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/067/skill/1/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ステップ&デストロイ\",\"color\":\"white\",\"italic\":false}"},destroyMode:1b}}},scores={damageDealt=1..},gamemode=!spectator] run function project-c:jobaction/067/skill/1/2
 execute if entity @s[scores={CT2=1200..,useLinger=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/067/skill/2/check
-execute if entity @s[scores={CT3=1200..,sneak=..0,shieldBlock=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/067/skill/3/0
+execute if entity @s[scores={CT3=1200..,shieldBlock=1..},tag=SkillReady3,gamemode=!spectator] unless score @s sneak matches 1.. run function project-c:jobaction/067/skill/3/0
 
 execute if score @s counter_1 matches 1.. run function project-c:jobaction/067/skill/1/1
 
@@ -34,5 +34,5 @@ scoreboard players reset @s[scores={sprint=1..}] sprint
 scoreboard players reset @s[scores={jump=1..}] jump
 execute if entity @s[scores={counter_3=1..}] unless entity @s[scores={sneak=1..}] run scoreboard players reset @s counter_3
 execute if entity @s[scores={sneak=1..,counter_2=1..}] run scoreboard players add @s counter_3 1
-scoreboard players set @s[scores={sneak=1..}] sneak 0
+scoreboard players reset @s[scores={sneak=1..}] sneak
 scoreboard players set @s[scores={useLinger=1..}] useLinger 0
