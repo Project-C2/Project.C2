@@ -19,7 +19,7 @@
               "lore": [
                 {"text": "タイプ：アクティブ","italic": false,"color": "green"},
                 {"text": "トリガ：ジャンプ","italic": false,"color": "yellow"},
-                {"text": "クールタイム：25秒","italic": false,"color": "aqua"},
+                {"text": "クールタイム：15秒","italic": false,"color": "aqua"},
                 {"text": "7.5m前方にテレポートする","italic": false,"color": "dark_purple"}
               ]
             },
