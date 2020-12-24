@@ -29,10 +29,10 @@ execute if entity @s[tag=skill1_use] run scoreboard players operation #106_CT co
 execute if entity @s[tag=skill2_use] run scoreboard players operation #106_CT counter *= #106_playerCount counter
 execute if entity @s[tag=skill3_use] run scoreboard players operation #106_CT counter *= #106_playerCount counter
 
-execute if score #106_playerCount counter matches 1..2 as @a[tag=guard_fort_target] run effect give @s resistance 7 0
-execute if score #106_playerCount counter matches 3..4 as @a[tag=guard_fort_target] run effect give @s resistance 7 1
-execute if score #106_playerCount counter matches 5..6 as @a[tag=guard_fort_target] run effect give @s resistance 7 2
-execute if score #106_playerCount counter matches 7.. as @a[tag=guard_fort_target] run effect give @s resistance 7 3
+execute if score #106_playerCount counter matches 1 as @a[tag=guard_fort_target] run effect give @s resistance 7 0
+execute if score #106_playerCount counter matches 2 as @a[tag=guard_fort_target] run effect give @s resistance 7 1
+execute if score #106_playerCount counter matches 3 as @a[tag=guard_fort_target] run effect give @s resistance 7 2
+execute if score #106_playerCount counter matches 4.. as @a[tag=guard_fort_target] run effect give @s resistance 7 3
 
 execute if entity @p[tag=guard_fort_target] as @a[tag=guard_fort_target] run tag @s remove guard_fort_target
 

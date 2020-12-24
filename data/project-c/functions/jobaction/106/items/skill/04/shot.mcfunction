@@ -33,6 +33,6 @@ execute unless entity @s[tag=kill] if score @s counter_1 matches 800.. run funct
 #execute if entity @s[tag=kill] run teleport @s ~ ~-512 ~
 #execute if entity @s[tag=kill] run kill @s
 
-execute unless entity @s[tag=kill] at @s if score @s counter_2 matches ..10 positioned ^ ^ ^0.1 run function project-c:jobaction/106/items/skill/04/shot
-execute unless entity @s[tag=kill] unless score @s counter_2 matches ..10 run playsound minecraft:item.bucket.fill master @a ~ ~ ~ 1 2
-execute unless entity @s[tag=kill] unless score @s counter_2 matches ..10 run scoreboard players set @s counter_2 0
+execute unless entity @s[tag=kill] at @s if score @s counter_2 matches ..20 positioned ^ ^ ^0.1 run function project-c:jobaction/106/items/skill/04/shot
+execute unless entity @s[tag=kill] unless score @s counter_2 matches ..20 run playsound minecraft:item.bucket.fill master @a ~ ~ ~ 1 2
+execute unless entity @s[tag=kill] unless score @s counter_2 matches ..20 run scoreboard players set @s counter_2 0

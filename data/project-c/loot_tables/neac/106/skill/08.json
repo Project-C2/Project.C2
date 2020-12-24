@@ -19,7 +19,7 @@
               "lore": [
                 {"text": "タイプ：パッシブ","italic": false,"color": "green"},
                 {"text": "トリガ：デス","italic": false,"color": "yellow"},
-                {"text": "クールタイム：30秒","italic": false,"color": "aqua"},
+                {"text": "クールタイム：15秒","italic": false,"color": "aqua"},
                 {"text": "死亡地点に自身の魂が5秒間留まる","italic": false,"color": "dark_purple"},
                 {"text": "半径5m以内の敵の体力を蝕む","italic": false,"color": "dark_purple"}
               ]

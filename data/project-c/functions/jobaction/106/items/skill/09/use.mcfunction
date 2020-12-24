@@ -8,9 +8,9 @@ execute if entity @s[tag=106_dash_lv3] run tag @s remove 106_dash_lv2
 execute if entity @s[tag=106_dash_lv3] run tag @s remove 106_dash_lv1
 execute if entity @s[tag=106_dash_lv2] run tag @s remove 106_dash_lv1
 
-execute if entity @s[tag=106_dash_lv1] run scoreboard players set #106_CT counter 200
-execute if entity @s[tag=106_dash_lv2] run scoreboard players set #106_CT counter 400
-execute if entity @s[tag=106_dash_lv3] run scoreboard players set #106_CT counter 600
+execute if entity @s[tag=106_dash_lv1] run scoreboard players set #106_CT counter 60
+execute if entity @s[tag=106_dash_lv2] run scoreboard players set #106_CT counter 100
+execute if entity @s[tag=106_dash_lv3] run scoreboard players set #106_CT counter 200
 
 
 scoreboard players set @s counter_9 5

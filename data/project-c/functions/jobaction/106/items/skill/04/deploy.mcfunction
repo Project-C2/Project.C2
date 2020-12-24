@@ -1,7 +1,6 @@
 #スキル4
-summon minecraft:area_effect_cloud ~ ~ ~ {Duration:60,Tags:["106_sprink_arrow_aec","number_operation"]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Duration:80,Tags:["106_sprink_arrow_aec","number_operation"]}
 scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=106_sprink_arrow_aec,tag=number_operation] playerNumber = @s playerNumber
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=106_sprink_arrow_aec,tag=number_operation] team_number = @s team_number
 tag @e[type=minecraft:area_effect_cloud,tag=106_sprink_arrow_aec,tag=number_operation] remove number_operation
 
 particle minecraft:explosion ~ ~ ~ 0 0 0 0 1 force

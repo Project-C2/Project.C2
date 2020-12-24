@@ -5,7 +5,7 @@ execute if score @s counter_5 matches 8 run tag @s add skill3_use
 #===================================================================
 
 
-scoreboard players set #106_CT counter 600
+scoreboard players set #106_CT counter 300
 
 
 function project-c:jobaction/106/items/skill/bulk

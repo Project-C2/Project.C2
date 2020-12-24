@@ -20,7 +20,7 @@ execute if score @s[tag=tp_ok] counter_5 matches 10 run tag @s add skill3_use
 #===================================================================
 
 
-execute if entity @s[tag=tp_ok] run scoreboard players set #106_CT counter 500
+execute if entity @s[tag=tp_ok] run scoreboard players set #106_CT counter 300
 
 execute if entity @s[tag=tp_ok] run function project-c:jobaction/106/items/skill/bulk
 

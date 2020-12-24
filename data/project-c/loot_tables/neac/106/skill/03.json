@@ -21,7 +21,7 @@
                 {"text": "トリガ：スニーク","italic": false,"color": "yellow"},
                 {"text": "クールタイム：20秒","italic": false,"color": "aqua"},
                 {"text": "灯火を設置する","italic": false,"color": "dark_purple"},
-                {"text": "設置5秒後、無敵を解除して作動を始め、","italic": false,"color": "dark_purple"},
+                {"text": "設置3秒後、無敵を解除して作動を始め、","italic": false,"color": "dark_purple"},
                 {"text": "周囲13mの敵に向けて火矢を放つ","italic": false,"color": "dark_purple"}
               ]
             },

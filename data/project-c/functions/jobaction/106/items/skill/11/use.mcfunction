@@ -5,7 +5,7 @@ execute if score @s counter_5 matches 11 run tag @s add skill3_use
 #===================================================================
 
 
-scoreboard players set #106_CT counter 400
+scoreboard players set #106_CT counter 200
 
 
 function project-c:jobaction/106/items/skill/bulk
@@ -14,7 +14,7 @@ function project-c:jobaction/106/items/skill/bulk
 playsound minecraft:block.dispenser.dispense master @a ~ ~ ~ 1 1.2
 playsound minecraft:block.dispenser.dispense master @a ~ ~ ~ 1 1.2
 particle minecraft:block green_stained_glass ~ ~1 ~ 0 0 0 0.2 30
-summon minecraft:creeper ~ ~ ~ {CustomName:'{"text":"ボム"}',Tags:["106_bomb","number_operation"],ignited:1b,ExplosionRadius:2b,Fuse:10000s}
+summon minecraft:creeper ~ ~ ~ {CustomName:'{"text":"ボム"}',Tags:["106_bomb","number_operation","Battle"],ignited:1b,ExplosionRadius:2b,Fuse:10000s}
 
 attribute @e[tag=number_operation,limit=1] generic.movement_speed base set 0
 attribute @e[tag=number_operation,limit=1] generic.follow_range base set 0

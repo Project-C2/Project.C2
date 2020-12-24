@@ -5,7 +5,7 @@ execute if score @s counter_5 matches 5 run tag @s add skill3_use
 #===================================================================
 
 
-scoreboard players set #106_CT counter 600
+scoreboard players set #106_CT counter 300
 
 
 function project-c:jobaction/106/items/skill/bulk
@@ -17,7 +17,7 @@ playsound minecraft:ui.stonecutter.take_result master @a ~ ~ ~ 1 1.2
 particle minecraft:squid_ink ~ ~1 ~ 0 0.3 0 0.1 10 force
 
 
-summon minecraft:pillager ~ ~ ~ {CustomName:'{"text":""}',CustomNameVisible:1b,Tags:["106_reconnaissance_stand","number_operation"],Silent:1b}
+summon minecraft:pillager ~ ~ ~ {CustomName:'{"text":""}',CustomNameVisible:1b,Tags:["106_reconnaissance_stand","number_operation","Battle"],Silent:1b}
 
 tp @e[type=minecraft:pillager,tag=number_operation,tag=106_reconnaissance_stand] ~ ~ ~ ~ ~
 loot replace block 0 0 0 container.0 loot project-c:neac/player_name
