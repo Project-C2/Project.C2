@@ -41,8 +41,8 @@ execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/110/replaceitem/3
 
 execute if entity @s[nbt={SelectedItem:{tag:{110weapon:1b,110weaponID:3b}}}] if score @s stockcounter matches 1.. run function project-c:jobaction/110/weapons/3/highlight
-execute if entity @s[nbt={SelectedItem:{tag:{110weapon:1b,110weaponID:5b}}},scores={sneak=1..}] unless score @s counter matches 1.. run function project-c:jobaction/110/weapons/5/p_charge
-execute if score @s sneak matches 1.. unless entity @s[nbt={SelectedItem:{tag:{110weapon:1b}}}] run scoreboard players reset @s sneak
+execute if entity @s[nbt={SelectedItem:{tag:{110weapon:1b,110weaponID:5b}},Inventory:[{tag:{110ArrowItem:1b}}]},scores={sneak=1..}] unless score @s counter matches 1.. run function project-c:jobaction/110/weapons/5/p_charge
+execute if score @s sneak matches 1.. unless entity @s[nbt={SelectedItem:{tag:{110weapon:1b,110weaponID:5b}},Inventory:[{tag:{110ArrowItem:1b}}]}] run scoreboard players reset @s sneak
 execute if entity @s[scores={useCarrotStick=1..}] run function project-c:jobaction/110/use_rod
 execute if entity @s[scores={useLinger=1..}] run function project-c:jobaction/110/use_linger
 scoreboard players set @s[scores={crossbow=1..}] crossbow 0
