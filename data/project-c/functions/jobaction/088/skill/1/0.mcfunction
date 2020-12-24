@@ -26,6 +26,7 @@ playsound minecraft:entity.enderman.teleport master @a ~ ~ ~ 1 1.5
 
 execute if entity @s[tag=088-S3-used] run scoreboard players add @s CT1 30
 execute if score @s counter matches -1 run tellraw @s {"text":"\u79fb\u52d5\u5148\u304c\u898b\u3064\u304b\u3089\u306a\u3044\uff01","color":"#D5AA3A"}
+execute if score @s counter matches -1 run scoreboard players add @s CT1 30
 
 #パーティクル表示用
 effect give @s bad_omen 1 88 true
