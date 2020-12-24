@@ -2,12 +2,11 @@
 data remove block 0 0 0 Items[]
 data modify block 0 0 0 Items[{Slot:0b}] merge value {id:"minecraft:compass",Count:1b,tag:{CT:0,display:{Name:'"CoolTime"'}}}
 
-scoreboard players set #CT counter_2 1200
+scoreboard players set #CT counter_2 1219
 
 execute if score #CT counter matches 1 run scoreboard players operation #CT counter_2 -= @s CT1
 execute if score #CT counter matches 2 run scoreboard players operation #CT counter_2 -= @s CT2
 execute if score #CT counter matches 3 run scoreboard players operation #CT counter_2 -= @s CT3
-scoreboard players add #CT counter_2 20
 
 scoreboard players operation #CT counter_2 /= #20 counter
 
