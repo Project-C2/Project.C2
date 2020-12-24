@@ -1,7 +1,10 @@
-execute unless entity @s[tag=110geometric] run summon minecraft:area_effect_cloud ~ ~0.5 ~ {Tags:["110dmgAEC"],Particle:"lava",Duration:5,Age:4,WaitTime:1,Radius:2.4f,Effects:[{Id:11b,Amplifier:0b,Duration:1},{Id:7b,Amplifier:1b,Duration:1}]}
-execute if entity @s[tag=110geometric] run summon minecraft:area_effect_cloud ~ ~0.5 ~ {Tags:["110dmgAEC"],Particle:"lava",Duration:5,Age:4,WaitTime:1,Radius:2.4f,Effects:[{Id:7b,Amplifier:1b,Duration:1}]}
-data modify entity @e[tag=110dmgAEC,limit=1,sort=nearest] Owner set from entity @s Owner
-tag @e[tag=110dmgAEC] remove 110dmgAEC
+execute if entity @s[tag=110fireballR] run tag @e[tag=Battle,team=!Red,distance=..2.4] add hit
+execute if entity @s[tag=110fireballB] run tag @e[tag=Battle,team=!Blue,distance=..2.4] add hit
+execute if entity @e[tag=hit,limit=1] run tag @s add 110
+execute if entity @e[tag=hit,limit=1] at @e[tag=hit] run function project-c:jobaction/110/skills/01/hit-entity
+execute if entity @e[tag=hit,limit=1] run tag @e[tag=hit] remove hit
+execute if entity @s[tag=110] run tag @s remove 110
+
 particle minecraft:explosion ~ ~ ~ 0.3 0.3 0.3 1 8 normal @a
 particle minecraft:explosion ~ ~ ~ 0.3 0.3 0.3 1 2 force @a
 particle minecraft:flame ~ ~ ~ 0 0 0 0.25 80 normal @a

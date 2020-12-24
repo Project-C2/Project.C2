@@ -1,7 +1,9 @@
-scoreboard players set #110- counter_3 1060
+scoreboard players set #110- counter_3 1080
 scoreboard players set #110- counter_1 2
 execute positioned ^-1.5 ^ ^ run summon minecraft:area_effect_cloud ~ ~3.1 ~ {Tags:["this","110fireball"],Duration:200}
 execute positioned ^1.5 ^ ^ run summon minecraft:area_effect_cloud ~ ~3.1 ~ {Tags:["this","110fireball"],Duration:200}
+execute if entity @s[team=Red] run tag @e[tag=this] add 110fireballR
+execute if entity @s[team=Blue] run tag @e[tag=this] add 110fireballB
 tag @s add 110
 execute as @e[tag=110fireball_p_stand] if score @s playerNumber = @a[tag=110,limit=1,sort=nearest] playerNumber run tag @s add 110it
 execute if entity @e[tag=110it,limit=1] run scoreboard players operation #110- counter_3 += @e[tag=110it,limit=1] counter
