@@ -12,7 +12,7 @@ execute if score #110- subcounter matches 10.. as @e[tag=110_set_stone,limit=9,s
 execute if score #110- subcounter matches 10.. as @e[tag=110_set_stone,tag=!saved_110_set_stone] if score @s playerNumber = #110- playerNumber run kill @s
 tag @e[tag=saved_110_set_stone] remove saved_110_set_stone
 
-summon minecraft:shulker ~ ~ ~ {Color:0b,Silent:1b,NoAI:1b,Tags:["this2","110_set_stone","Battle"],Health:10f,Attributes:[{Name:"generic.max_health",Base:10d},{Name:"generic.armor",Base:20d},{Name:"generic.armor_toughness",Base:20d}],ActiveEffects:[{Id:13b,Amplifier:0b,Duration:2147483647,ShowParticles:0b}]}
+summon minecraft:shulker ~ ~ ~ {Color:0b,Silent:1b,NoAI:1b,Tags:["this2","110_set_stone","Battle"],Health:6f,Attributes:[{Name:"generic.max_health",Base:6d},{Name:"generic.armor",Base:20d},{Name:"generic.armor_toughness",Base:20d}],ActiveEffects:[{Id:13b,Amplifier:0b,Duration:2147483647,ShowParticles:0b}]}
 scoreboard players operation @e[tag=this2,limit=1] playerNumber = @s playerNumber
 execute if entity @s[team=Red] run team join Red @e[tag=this2]
 execute if entity @s[team=Blue] run team join Blue @e[tag=this2]
