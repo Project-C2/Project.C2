@@ -22,6 +22,7 @@ scoreboard players set @s drop 1
 
 #タグ
 tag @s add 088-S3-used
+tag @s remove 088-S3-ready
 
 #CTリセ
 scoreboard players set @s CT1 1200
