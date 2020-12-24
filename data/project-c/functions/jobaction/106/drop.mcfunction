@@ -4,6 +4,8 @@ execute if score @s drop2 matches 1 run tag @s[tag=SkillReady2] remove SkillRead
 execute if score @s drop2 matches 1 run tag @s[tag=SkillReady3] remove SkillReady3
 #function project-c:general/inventoryclear
 clear @s #project-c:neac/all{106_item:1}
+clear @s compass
+clear @s gray_stained_glass_pane
 tag @s add 106_drop
 #function ex3:general/inventory_changed/execution
 

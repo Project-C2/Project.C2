@@ -42,8 +42,8 @@ execute if entity @s[scores={CT3=1200..},tag=!106_drop,tag=!SkillReady3] run tag
 execute if entity @s[tag=106_skill_setup] run function project-c:jobaction/106/items/skill/setup
 
 #盾使用時
-execute if entity @p[scores={shieldBlock=300..}] as @a[scores={shieldBlock=300..}] run function project-c:jobaction/106/items/support/02/break
-execute if entity @p[scores={counter_8=1..}] as @a[scores={counter_8=1..}] run function project-c:jobaction/106/items/support/02/breaking
+execute if entity @s[scores={shieldBlock=300..}] run function project-c:jobaction/106/items/support/02/break
+execute if entity @s[scores={counter_8=1..}] run function project-c:jobaction/106/items/support/02/breaking
 
 
 
