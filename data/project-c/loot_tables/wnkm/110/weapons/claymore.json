@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "クレイモア","color": "white","bold": true,"italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"人々の抗争で長く使用された両手剣。","italic":false,"color":"gold"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.attackSpeed",
+                      "attribute": "generic.attack_speed",
+                      "operation": "addition",
+                      "amount": -2.6,
+                      "slot": "mainhand"
+                  },
+                  {
+                      "name": "generic.attackDamage",
+                      "attribute": "generic.attack_damage",
+                      "operation": "addition",
+                      "amount": 5.0,
+                      "slot": "mainhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110weapon:1b,110weaponID:1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

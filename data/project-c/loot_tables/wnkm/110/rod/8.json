@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "発動中:這い寄る疾風","color":"aqua","italic":false}
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "unstackable",
+                      "attribute": "generic.movement_speed",
+                      "operation": "multiply_base",
+                      "amount": 0.25,
+                      "slot": "offhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
