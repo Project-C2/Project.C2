@@ -22,5 +22,8 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"イリ�
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"魔法のほうき\",\"color\":\"green\",\"italic\":\"false\",\"underlined\":\"true\"}"}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/047/skill/1/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"光撃「シュート・ザ・ムーン」\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"true\"}"}}}},scores={CT2=1200..,useSnowball=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/047/skill/2/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"恋符「マスタースパーク」\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"true\",\"bold\":\"true\"}"}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator,tag=Battle] run function project-c:jobaction/047/skill/3/0
+
+replaceitem entity @s[scores={useSnowball=1..}] weapon.offhand minecraft:snowball{display:{Name:'{"text":"魔法球","color":"gray","italic":false,"underlined":true}'},HideFlags:1,Enchantments:[{id:"minecraft:sharpness",lvl:0}]} 1
+
 scoreboard players reset @s sneak
 scoreboard players reset @s useSnowball
