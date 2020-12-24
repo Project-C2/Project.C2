@@ -16,7 +16,7 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / -墜落の魔砲- CT:2","italic":false,"color":"aqua"},
+                  {"text":"右クリック / -墜落の魔砲- CT:3","italic":false,"color":"aqua"},
                   {"text":"小チャージ後、前方に対空砲を放つ。","italic":false,"color":"white"},
                   {"text":"地上へも攻撃可能だが、空中の敵に対して","italic":false,"color":"white"},
                   {"text":"高威力で攻撃し、一瞬動きを止める。","italic":false,"color":"white"},

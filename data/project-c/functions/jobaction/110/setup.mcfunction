@@ -51,3 +51,13 @@ setblock -54 64 -60 minecraft:repeating_command_block[facing=south,conditional=f
 setblock -54 64 -59 minecraft:chain_command_block[facing=up,conditional=false]{Command:"execute unless entity @e[tag=110creeperA_judge,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b,auto:1b} destroy
 
 
+setblock -48 64 -63 minecraft:obsidian
+setblock -48 64 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=110anti_aircraft,limit=1] as @e[tag=110anti_aircraft] at @s run function project-c:jobaction/110/skills/14/tick",TrackOutput:0b} destroy
+setblock -48 64 -61 minecraft:chain_command_block[facing=up,conditional=false]{Command:"execute unless entity @e[tag=110anti_aircraft,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b,auto:1b} destroy
+setblock -48 64 -60 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=110anti_aircraft_projectile,limit=1] as @e[tag=110anti_aircraft_projectile] at @s run function project-c:jobaction/110/skills/14/tick2",TrackOutput:0b} destroy
+setblock -48 64 -59 minecraft:chain_command_block[facing=up,conditional=false]{Command:"execute unless entity @e[tag=110anti_aircraft_projectile,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b,auto:1b} destroy
+
+setblock -48 67 -63 minecraft:obsidian
+setblock -48 67 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=110horming_missile,limit=1] as @e[tag=110horming_missile] at @s run function project-c:jobaction/110/skills/15/tick",TrackOutput:0b} destroy
+setblock -48 67 -61 minecraft:chain_command_block[facing=up,conditional=false]{Command:"execute unless entity @e[tag=110horming_missile,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b,auto:1b} destroy
+

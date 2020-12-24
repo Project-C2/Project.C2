@@ -18,6 +18,7 @@ scoreboard players reset @s usedSkill
 
 execute if score @s counter matches 1.. run function project-c:jobaction/110/ct_weapon
 execute unless score @s counter_5 matches 1..3 run function project-c:jobaction/110/first
+execute if entity @s[scores={drop2=1..},tag=!110drop] run function project-c:jobaction/110/skills/13/check
 execute if entity @s[scores={drop2=1..}] run tag @s add 110drop
 execute if entity @s[tag=!Battle,advancements={project-c:neac/inventory_changed=true}] run function project-c:jobaction/110/inventory_changed
 execute if entity @s[tag=110drop] unless entity @s[scores={drop2=1..}] run tag @s remove 110drop

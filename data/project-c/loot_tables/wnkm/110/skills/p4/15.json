@@ -19,7 +19,7 @@
                   {"text":"右クリック / -ミサイル発射- CT:10","italic":false,"color":"aqua"},
                   {"text":"自身の向いている方向に進むミサイルを発射する。","italic":false,"color":"white"},
                   {"text":"ブロックに当たると爆発する。","italic":false,"color":"white"},
-                  {"text":"ある程度の飛距離がないとダメージが低下する。","italic":false,"color":"white"},
+                  {"text":"発射から0.6秒以内は爆発力が低い。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
                 ]
             },
