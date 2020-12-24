@@ -14,7 +14,7 @@ execute if entity @s[team=RedDummy] as @e[distance=..4.5,tag=Battle,team=!Red,te
 execute if entity @s[team=BlueDummy] as @e[distance=..4.5,tag=Battle,team=!Blue,team=!BlueDummy,tag=!hit] run function project-c:jobaction/110/skills/14/eyes-check
 
 #ダメージ処理等
-execute if entity @e[tag=hit,limit=1] as @a[tag=anti_aircraft_using] if score @s playerNumber = @e[tag=110dummy,limit=1,sort=nearest] playerNumber run tag @s add user
+execute if entity @e[tag=hit,limit=1] as @a[tag=110anti_aircraft_using] if score @s playerNumber = @e[tag=110dummy,limit=1,sort=nearest] playerNumber run tag @s add user
 execute if entity @e[tag=hit,limit=1] as @e[tag=hit] at @s run function project-c:jobaction/110/skills/14/hit
 
 #ブロック判定でスコア増加
@@ -27,8 +27,8 @@ execute if score @s subcounter matches 18.. unless block ^ ^ ^3.6 #project-c:wan
 #前方tp
 tp @s ^ ^ ^4.0
 #後処理
-execute if score @s counter matches 16.. unless entity @a[tag=user,limit=1] as @a[tag=anti_aircraft_using] if score @s playerNumber = @e[tag=110dummy,limit=1,sort=nearest] playerNumber run tag @s add user
-execute if score @s counter matches 16.. run tag @a[tag=user] remove anti_aircraft_using
+execute if score @s counter matches 16.. unless entity @a[tag=user,limit=1] as @a[tag=110anti_aircraft_using] if score @s playerNumber = @e[tag=110dummy,limit=1,sort=nearest] playerNumber run tag @s add user
+execute if score @s counter matches 16.. run tag @a[tag=user] remove 110anti_aircraft_using
 execute if entity @a[tag=user,limit=1] run tag @a[tag=user] remove user
 tag @s remove 110dummy
 execute if score @s counter matches 16.. run kill @s
