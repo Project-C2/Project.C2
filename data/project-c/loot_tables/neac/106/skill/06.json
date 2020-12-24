@@ -21,12 +21,12 @@
                 {"text": "トリガ：スニーク","italic": false,"color": "yellow"},
                 {"text": "クールタイム：15秒","italic": false,"color": "aqua"},
                 {"text": "前方に破壊不能な5x5の壁を生成する","italic": false,"color": "dark_purple"},
-                {"text": "壁は設置後3秒で消滅する","italic": false,"color": "dark_purple"}
+                {"text": "壁は設置後5秒で消滅する","italic": false,"color": "dark_purple"}
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,106_skill:6,106_skill_slot:0}"
+              "tag": "{HideFlags:63,106_skill:6,106_item:0}"
             }
           ]
         }

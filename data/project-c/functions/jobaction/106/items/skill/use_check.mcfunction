@@ -55,7 +55,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{106_auxiliary_skill:4b}}},scores={u
 
 
 #偵察
-execute if entity @s[scores={jump=1..}] if score #106_has_skill counter matches 5 if score #106_has_skill_ct counter matches 1200.. run function project-c:jobaction/106/items/skill/05/use
+execute if entity @s[scores={jump=1..},tag=Battle] if score #106_has_skill counter matches 5 if score #106_has_skill_ct counter matches 1200.. run function project-c:jobaction/106/items/skill/05/use
 
 
 
@@ -93,7 +93,7 @@ execute if entity @s[scores={counter_5=9,CT3=1200..}] run function project-c:job
 
 
 #ショートテレポート
-execute if entity @s[scores={jump=1..}] if score #106_has_skill counter matches 10 if score #106_has_skill_ct counter matches 1200.. run function project-c:jobaction/106/items/skill/10/use
+execute if entity @s[scores={jump=1..},tag=Battle] if score #106_has_skill counter matches 10 if score #106_has_skill_ct counter matches 1200.. run function project-c:jobaction/106/items/skill/10/use
 #パーティクル
 execute if score #106_has_skill counter matches 10 if score #106_has_skill_ct counter matches 1200.. run function project-c:jobaction/106/items/skill/10/particle_call
 
@@ -101,6 +101,10 @@ execute if score #106_has_skill counter matches 10 if score #106_has_skill_ct co
 
 
 
+#ボム
+execute if entity @s[scores={sneak=1..}] if score #106_has_skill counter matches 11 if score #106_has_skill_ct counter matches 1200.. run function project-c:jobaction/106/items/skill/11/use
+#起爆装置
+execute if entity @s[nbt={SelectedItem:{tag:{106_auxiliary_skill:11b}}},scores={useCarrotStick=1..}] run function project-c:jobaction/106/items/skill/11/auxiliary/use
 
 
 

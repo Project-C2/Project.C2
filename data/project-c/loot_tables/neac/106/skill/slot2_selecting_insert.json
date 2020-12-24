@@ -13,7 +13,7 @@
               "name": [
                 {
                   "block": "0 0 0",
-                  "nbt": "Items[0].tag.display.Name",
+                  "nbt": "Items[{tag:{106_selecting:1}}].tag.display.Name",
                   "interpret": true
                 },
                 {"text": " "},{"text": "スロット2に選択中","italic": false,"color": "dark_aqua"}

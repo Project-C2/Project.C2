@@ -19,13 +19,13 @@
               "lore": [
                 {"text": "タイプ：パッシブ","italic": false,"color": "green"},
                 {"text": "トリガ：ドロップ","italic": false,"color": "yellow"},
-                {"text": "クールタイム：20秒","italic": false,"color": "aqua"},
+                {"text": "クールタイム：10秒","italic": false,"color": "aqua"},
                 {"text": "近距離の敵の視点を真上にする","italic": false,"color": "dark_purple"}
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,106_skill:2,106_skill_slot:0}"
+              "tag": "{HideFlags:63,106_skill:2,106_item:0}"
             }
           ]
         }

@@ -1,8 +1,6 @@
 
 scoreboard players set @s drop2 1
-tag @s add 106_gui_all_setup
 tag @s add 106_page_setup
-tag @s add 106_skill_page_setup
 tag @s add 106_skill_no_drop
 tag @s add 106_drop
 

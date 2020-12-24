@@ -5,7 +5,7 @@ execute if score @s counter_5 matches 2 run tag @s add skill3_use
 #===================================================================
 
 
-scoreboard players set #106_CT counter 400
+scoreboard players set #106_CT counter 200
 
 
 function project-c:jobaction/106/items/skill/bulk
@@ -18,11 +18,12 @@ playsound minecraft:entity.illusioner.cast_spell master @a ~ ~ ~ 1 1.4
 particle minecraft:witch ~ ~ ~ 1.8 1.8 1.8 0.1 40 force
 
 
-execute if entity @s[team=Red] if entity @e[tag=Battle,team=!Red,distance=..4,limit=1] as @e[tag=Battle,team=!Red,distance=..4] unless data entity @s {NoAI:1b} run tag @s add trick
-execute if entity @s[team=Blue] if entity @e[tag=Battle,team=!Blue,distance=..4,limit=1] as @e[tag=Battle,team=!Blue,distance=..4] unless data entity @s {NoAI:1b} run tag @s add trick
-execute if entity @e[tag=Battle,tag=trick,limit=1] as @e[tag=Battle,tag=trick] at @s run tp @s ~ ~ ~ ~ -90
+execute if entity @s[team=Red] if entity @e[tag=Battle,team=!Red,distance=..4,limit=1] as @e[tag=Battle,team=!Red,distance=..4] unless data entity @s {NoAI:1b} run tag @s add 106_trick
+execute if entity @s[team=Blue] if entity @e[tag=Battle,team=!Blue,distance=..4,limit=1] as @e[tag=Battle,team=!Blue,distance=..4] unless data entity @s {NoAI:1b} run tag @s add 106_trick
+execute if entity @e[tag=Battle,tag=106_trick,limit=1] as @e[tag=Battle,tag=106_trick] at @s run tp @s ~ ~ ~ ~ -90
+execute if entity @e[tag=Battle,tag=106_trick,type=!player,limit=1] as @e[tag=Battle,tag=106_trick,type=!player] run effect give @s slowness 1 1 true
 
 
-execute if entity @e[tag=Battle,tag=trick,limit=1] as @e[tag=Battle,tag=trick] run tag @s remove trick
+execute if entity @e[tag=Battle,tag=106_trick,limit=1] as @e[tag=Battle,tag=106_trick] run tag @s remove 106_trick
 
 
