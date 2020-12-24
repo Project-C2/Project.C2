@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tripwire_hook",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "彫刻刀","color": "gold","italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"芸術の創造に長けた彫刻刀。","italic":false,"color":"gold"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"-石生成- CT:5 / ストック:8","italic":false,"color":"aqua"},
+                  {"text":"視点先に動かないシュルカーを設置する。","italic":false,"color":"white"},
+                  {"text":"シュルカーは最大10体まで設置可能。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.attackSpeed",
+                      "attribute": "generic.attack_speed",
+                      "operation": "addition",
+                      "amount": 3.0,
+                      "slot": "mainhand"
+                  },
+                  {
+                      "name": "generic.attackDamage",
+                      "attribute": "generic.attack_damage",
+                      "operation": "addition",
+                      "amount": 1.5,
+                      "slot": "mainhand"
+                  }
+              ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 8
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110weapon:1b,110weaponID:3b,Unbreakable:1b,HideFlags:4,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "鋼鉄の矢","color": "white","bold": true,"italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔力を乱す呪術を受けた矢。","italic":false,"color":"gold"},
+                  {"text":"威力 +50%","italic":false,"color":"green"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110ArrowItem:1b,CustomPotionColor:11184810}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

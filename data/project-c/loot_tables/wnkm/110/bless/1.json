@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_powder",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "加護:脳味噌筋肉","color":"aqua","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"近接ダメージを20%増加させる。","italic":false,"color":"white"},
+                  {"text":"加護はホットバーに入れる事で自動発動。","italic":false,"color":"light_purple"},
+                  {"text":"加護を装備した場合、レリックが自動的に解除される。","italic":false,"color":"dark_purple"}
+                ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "unstackable",
+                      "attribute": "generic.follow_range",
+                      "operation": "addition",
+                      "amount": 0.1,
+                      "slot": "chest"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110blessID:1b,110blessItem:1b,Unbreakable:1b,HideFlags:6}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

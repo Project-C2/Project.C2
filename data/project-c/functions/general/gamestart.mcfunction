@@ -18,6 +18,7 @@ function project-c:general/relic/clocodire
 gamemode spectator @a[team=]
 #ゲーム開始時にカウンタースコアを保持したい場合はここに追記してください
 tag @a[scores={jobNumber=106}] add counter-keep
+tag @a[scores={jobNumber=110}] add counter-keep
 scoreboard players set @a[tag=!counter-keep] counter_1 0
 scoreboard players set @a[tag=!counter-keep] counter_2 0
 scoreboard players set @a[tag=!counter-keep] counter_3 0

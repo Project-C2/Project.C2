@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:green_dye",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "風迅","color":"green","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"右クリック / CT:12","italic":false,"color":"aqua"},
+                  {"text":"自身の背後に風の衝撃波を起こし、","italic":false,"color":"white"},
+                  {"text":"正面に高速で移動する。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110skillID:7b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

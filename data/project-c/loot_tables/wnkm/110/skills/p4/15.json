@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_ingot",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "誘導ミサイル","color":"dark_purple","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"右クリック / -ミサイル発射- CT:10","italic":false,"color":"aqua"},
+                  {"text":"自身の向いている方向に進むミサイルを発射する。","italic":false,"color":"white"},
+                  {"text":"ブロックに当たると爆発する。","italic":false,"color":"white"},
+                  {"text":"発射から0.6秒以内は爆発力が低い。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110skillID:15b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
