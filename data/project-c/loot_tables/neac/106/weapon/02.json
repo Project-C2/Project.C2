@@ -20,7 +20,7 @@
                 {
                   "name": "generic.movement_speed",
                   "attribute": "generic.movement_speed",
-                  "operation": "multiply",
+                  "operation": "multiply_base",
                   "amount": 0.1,
                   "slot": "mainhand"
                 },
