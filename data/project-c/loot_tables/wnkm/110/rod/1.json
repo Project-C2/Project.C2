@@ -19,7 +19,7 @@
                       "name": "unstackable",
                       "attribute": "generic.attack_damage",
                       "operation": "multiply_base",
-                      "amount": 0.15,
+                      "amount": 0.20,
                       "slot": "offhand"
                   }
               ]
