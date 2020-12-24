@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:beacon",
+          "name": "minecraft:twisting_vines",
           "functions": [
             {
                 "function": "minecraft:set_name",
@@ -24,7 +24,7 @@
             },
             {
                 "function": "minecraft:set_nbt",
-                "tag": "{110skillID:4b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+                "tag": "{110skillID:4b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4,Enchantments:[{}]}"
             }
           ]
         }
