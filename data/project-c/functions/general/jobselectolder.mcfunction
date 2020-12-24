@@ -32,6 +32,7 @@ scoreboard players set @a[tag=JobChanged] counter_6 0
 scoreboard players set @a[tag=JobChanged] counter_7 0
 scoreboard players set @a[tag=JobChanged] counter_8 0
 scoreboard players set @a[tag=JobChanged] counter_9 0
+xp add @a[tag=JobChanged] -2147483648 levels
 
 
 execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] as @a[scores={relic=..31},tag=JobChanged] at @s unless entity @s[scores={relic=30},tag=Battle] run scoreboard players set @s relicCount 0
