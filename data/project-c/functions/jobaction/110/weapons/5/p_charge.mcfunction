@@ -1,5 +1,5 @@
 execute if score @s sneak matches 1..60 run effect give @s slowness 1 6 true
-execute if score @s sneak matches 1 run title @s times 2 70 2
+execute if score @s sneak matches 1 run title @s times 0 20 0
 execute if score @s sneak matches 1 run title @s subtitle {"text":"reloading","color":"gold"}
 execute if score @s sneak matches 1 run title @s title ""
 execute if score @s sneak matches 1 run playsound minecraft:item.armor.equip_netherite master @a ~ ~ ~ 1.2 0.5

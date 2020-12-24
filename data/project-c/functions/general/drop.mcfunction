@@ -1,7 +1,6 @@
 
 #アイテムドロップ時、インベントリを保持したい場合はここに追記してください
 tag @s[scores={jobNumber=106}] add inventory-keep
-tag @s[scores={jobNumber=110}] add inventory-keep
 execute if entity @s[tag=!inventory-keep] run function project-c:general/inventoryclear
 tag @s[tag=inventory-keep] remove inventory-keep
 

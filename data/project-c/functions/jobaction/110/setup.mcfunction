@@ -32,3 +32,22 @@ setblock -52 70 -61 minecraft:chain_command_block[facing=up,conditional=false]{C
 
 setblock -50 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=110spectral_shot,limit=1] as @e[tag=110spectral_shot] at @s run function project-c:jobaction/110/skills/05/tick",TrackOutput:0b} destroy
 setblock -50 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{Command:"execute unless entity @e[tag=110spectral_shot,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b,auto:1b} destroy
+
+setblock -50 64 -63 minecraft:obsidian
+setblock -50 64 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=110shulkerPassenged,limit=1] run function project-c:jobaction/110/skills/06/tick",TrackOutput:0b} destroy
+setblock -50 64 -61 minecraft:chain_command_block[facing=up,conditional=false]{Command:"execute unless entity @e[tag=110shulkerPassenged,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b,auto:1b} destroy
+setblock -50 64 -60 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=110shulkerWall,limit=1] run function project-c:jobaction/110/skills/06/tick2",TrackOutput:0b} destroy
+setblock -50 64 -59 minecraft:chain_command_block[facing=up,conditional=false]{Command:"execute unless entity @e[tag=110shulkerWall,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b,auto:1b} destroy
+
+setblock -50 70 -63 minecraft:obsidian
+setblock -50 70 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=110meditation,limit=1] as @e[tag=110meditation] at @s run function project-c:jobaction/110/skills/08/tick",TrackOutput:0b} destroy
+setblock -50 70 -61 minecraft:chain_command_block[facing=up,conditional=false]{Command:"execute unless entity @e[tag=110meditation,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b,auto:1b} destroy
+
+
+setblock -54 64 -63 minecraft:obsidian
+setblock -54 64 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=110creeperArrow,limit=1] as @e[tag=110creeperArrow] at @s run function project-c:jobaction/110/arrows/12/tick",TrackOutput:0b} destroy
+setblock -54 64 -61 minecraft:chain_command_block[facing=up,conditional=false]{Command:"execute unless entity @e[tag=110creeperArrow,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b,auto:1b} destroy
+setblock -54 64 -60 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=110creeperA_judge,limit=1] as @e[tag=110creeperA_judge] at @s run function project-c:jobaction/110/arrows/12/tick2",TrackOutput:0b} destroy
+setblock -54 64 -59 minecraft:chain_command_block[facing=up,conditional=false]{Command:"execute unless entity @e[tag=110creeperA_judge,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b,auto:1b} destroy
+
+
