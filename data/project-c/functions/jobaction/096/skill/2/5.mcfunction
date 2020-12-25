@@ -1,10 +1,10 @@
 scoreboard players add @s counter 1
 
-execute if score @s counter matches 1 run playsound minecraft:entity.wither.death master @a ~ ~ ~ 0.5 0.5
-execute if score @s counter matches 3 run playsound minecraft:entity.wither.death master @a ~ ~ ~ 1.0 0.5
-execute if score @s counter matches 5 run playsound minecraft:entity.wither.death master @a ~ ~ ~ 1.5 0.5
-execute if score @s counter matches 7 run playsound minecraft:entity.wither.death master @a ~ ~ ~ 2.0 0.5
-execute if score @s counter matches 9 run playsound minecraft:entity.wither.death master @a ~ ~ ~ 2.5 0.5
+execute if score @s counter matches 1 run playsound minecraft:entity.wither.death master @a ~ ~ ~ 0.2 0.5
+execute if score @s counter matches 3 run playsound minecraft:entity.wither.death master @a ~ ~ ~ 0.4 0.5
+execute if score @s counter matches 5 run playsound minecraft:entity.wither.death master @a ~ ~ ~ 0.6 0.5
+execute if score @s counter matches 7 run playsound minecraft:entity.wither.death master @a ~ ~ ~ 0.8 0.5
+execute if score @s counter matches 9 run playsound minecraft:entity.wither.death master @a ~ ~ ~ 1.0 0.5
 execute if score @s counter matches 1 run particle minecraft:dust 0.2 0.0 0.1 1 ~ ~ ~ 0.30 0.30 0.30 1 25 force @a
 execute if score @s counter matches 2 run particle minecraft:dust 0.2 0.0 0.1 1 ~ ~ ~ 0.60 0.60 0.60 1 30 force @a
 execute if score @s counter matches 3 run particle minecraft:dust 0.2 0.0 0.1 1 ~ ~ ~ 0.90 0.90 0.90 1 35 force @a
