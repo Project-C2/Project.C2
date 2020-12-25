@@ -20,6 +20,7 @@ execute if entity @s[scores={counter_4=1}] run function project-c:jobaction/097/
 execute if entity @s[scores={counter_4=1..}] run scoreboard players remove @s counter_4 1
 
 
+execute if entity @s[scores={CT2=900..960},tag=SkillDelay2] run tag @s remove SkillDelay2
 execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-c:jobaction/097/replaceitem/1
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/097/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/097/replaceitem/3

@@ -19,8 +19,8 @@ execute if entity @s[scores={counter_4=32}] run playsound minecraft:block.end_po
 execute if entity @s[scores={counter_4=32}] run particle minecraft:firework ~ ~1 ~ 0 0 0 1 1000 normal @a
 execute if entity @s[scores={counter_4=32}] run particle minecraft:firework ~ ~1 ~ 0 0 0 1 250 force @a
 execute if entity @s[scores={counter_4=..12}] run effect give @s slowness 1 7 true
-execute if entity @s[scores={counter_4=32..191}] run effect give @s glowing 1 0 true
-execute if entity @s[scores={counter_4=32..191}] run effect give @s weakness 1 2 true
+execute if entity @s[scores={counter_4=32..187}] run effect give @s glowing 1 0 true
+execute if entity @s[scores={counter_4=32..187}] run effect give @s weakness 1 2 true
 execute if entity @s[scores={counter_4=52}] anchored eyes run summon minecraft:area_effect_cloud ^1 ^-0.4 ^3 {Tags:["109stream","109stream1"],Particle:"sweep_attack",Age:4,Duration:5,WaitTime:1,Radius:2f,Effects:[{Id:7b,Amplifier:0b,Duration:1}]}
 execute if entity @s[scores={counter_4=51}] anchored eyes run summon minecraft:area_effect_cloud ^3 ^-0.4 ^3 {Tags:["109stream","109stream1"],Particle:"sweep_attack",Age:4,Duration:5,WaitTime:1,Radius:2f,Effects:[{Id:7b,Amplifier:0b,Duration:1}]}
 execute if entity @s[scores={counter_4=58}] anchored eyes run summon minecraft:area_effect_cloud ^-1 ^-0.4 ^3 {Tags:["109stream","109stream1"],Particle:"sweep_attack",Age:4,Duration:5,WaitTime:1,Radius:2f,Effects:[{Id:7b,Amplifier:0b,Duration:1}]}
@@ -47,9 +47,9 @@ execute if entity @s[scores={counter_4=123}] anchored eyes rotated ~-26 ~ run su
 execute if entity @s[scores={counter_4=124}] anchored eyes rotated ~-7 ~ run summon minecraft:area_effect_cloud ^ ^-0.4 ^3.5 {Tags:["109stream","109stream4"],Particle:"sweep_attack",Age:4,Duration:5,WaitTime:1,Radius:2f,Effects:[{Id:7b,Amplifier:0b,Duration:1},{Id:25b,Amplifier:19b,Duration:4}]}
 execute if entity @s[scores={counter_4=125}] anchored eyes rotated ~12 ~ run summon minecraft:area_effect_cloud ^ ^-0.4 ^3.5 {Tags:["109stream","109stream4"],Particle:"sweep_attack",Age:4,Duration:5,WaitTime:1,Radius:2f,Effects:[{Id:7b,Amplifier:0b,Duration:1},{Id:25b,Amplifier:19b,Duration:4}]}
 execute if entity @s[scores={counter_4=133..134}] run tp @s @s
-execute if entity @s[scores={counter_4=133}] run effect give @s levitation 1 25 true
-execute if entity @s[scores={counter_4=139}] run effect clear @s levitation
-execute if entity @s[scores={counter_4=140}] run effect give @s levitation 1 128 true
+execute if entity @s[scores={counter_4=128}] run effect give @s levitation 1 25 true
+execute if entity @s[scores={counter_4=138}] run effect clear @s levitation
+execute if entity @s[scores={counter_4=139}] run effect give @s levitation 1 128 true
 execute if entity @s[scores={counter_4=141}] run effect clear @s levitation
 execute if entity @s[scores={counter_4=140..144}] anchored eyes run summon minecraft:area_effect_cloud ^ ^-0.4 ^3.0 {Tags:["109stream","109stream3"],Particle:"sweep_attack",Age:4,Duration:5,WaitTime:1,Radius:2.5f,Effects:[{Id:11b,Amplifier:0b,Duration:1},{Id:7b,Amplifier:2b,Duration:1}]}
 execute if entity @s[scores={counter_4=138}] run attribute @s minecraft:generic.knockback_resistance base set 1
@@ -75,9 +75,9 @@ execute if entity @s[scores={counter_4=186}] anchored eyes rotated ~-19 ~ run su
 execute if entity @s[scores={counter_4=186}] anchored eyes rotated ~ ~ run summon minecraft:area_effect_cloud ^ ^-0.4 ^3.0 {Tags:["109stream","109stream6"],Particle:"sweep_attack",Age:4,Duration:5,WaitTime:1,Radius:2.5f,Effects:[{Id:11b,Amplifier:0b,Duration:1},{Id:7b,Amplifier:1b,Duration:1}]}
 execute if entity @s[scores={counter_4=186}] anchored eyes rotated ~19 ~ run summon minecraft:area_effect_cloud ^ ^-0.4 ^3.2 {Tags:["109stream","109stream6"],Particle:"sweep_attack",Age:4,Duration:5,WaitTime:1,Radius:2.5f,Effects:[{Id:11b,Amplifier:0b,Duration:1},{Id:7b,Amplifier:1b,Duration:1}]}
 #ここまで15
-execute if entity @s[scores={counter_4=186..211}] run tp @s @s
-execute if entity @s[scores={counter_4=194..211}] run tp @s ~ ~ ~ ~-20 ~
-execute if entity @s[scores={counter_4=211}] at @s anchored eyes run summon minecraft:area_effect_cloud ^ ^-0.4 ^3.0 {Tags:["109stream","109stream7"],Particle:"sweep_attack",Age:4,Duration:5,WaitTime:1,Radius:4.5f,Effects:[{Id:7b,Amplifier:2b,Duration:1}]}
+execute if entity @s[scores={counter_4=186..206}] run tp @s @s
+execute if entity @s[scores={counter_4=194..205}] run tp @s ~ ~ ~ ~-30 ~
+execute if entity @s[scores={counter_4=207}] at @s anchored eyes run summon minecraft:area_effect_cloud ^ ^-0.4 ^3.0 {Tags:["109stream","109stream7"],Particle:"sweep_attack",Age:4,Duration:5,WaitTime:1,Radius:4.5f,Effects:[{Id:7b,Amplifier:2b,Duration:1}]}
 
 execute if entity @e[tag=109stream1,limit=1] at @e[tag=109stream1] run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1.2 0.7
 execute if entity @e[tag=109stream2,limit=1] at @e[tag=109stream2] run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1.2 0.5
@@ -120,4 +120,4 @@ execute if entity @e[tag=109stream4,limit=1] run tag @e[tag=109stream4] remove 1
 execute if entity @e[tag=109stream5,limit=1] run tag @e[tag=109stream5] remove 109stream5
 execute if entity @e[tag=109stream6,limit=1] run tag @e[tag=109stream6] remove 109stream6
 execute if entity @e[tag=109stream7,limit=1] run tag @e[tag=109stream7] remove 109stream7
-execute if entity @s[scores={counter_4=211..}] run scoreboard players reset @s counter_4
+execute if entity @s[scores={counter_4=207..}] run scoreboard players reset @s counter_4
