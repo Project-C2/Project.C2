@@ -1,6 +1,6 @@
 #判定
 #CT
-scoreboard players set @s counter_1 30
+scoreboard players set @s counter_1 50
 
 #スキル効果
 #共通
