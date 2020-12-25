@@ -15,6 +15,7 @@ scoreboard players operation @e[tag=this,limit=1] playerNumber = @s playerNumber
 execute if score #110- counter_2 matches 1 run scoreboard players set @e[tag=this] counter_5 1150
 execute if score #110- counter_2 matches 2 run scoreboard players set @e[tag=this] counter_6 1150
 execute if score #110- counter_2 matches 3 run scoreboard players set @e[tag=this] counter_7 1150
+
 tag @e[tag=this] remove this
 
 data merge block -52 61 -62 {auto:1b}

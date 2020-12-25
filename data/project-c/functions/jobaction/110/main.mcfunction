@@ -29,12 +29,15 @@ execute if entity @s[scores={counter_1=3}] run function project-c:jobaction/110/
 execute if entity @s[scores={counter_1=4,bow=1..}] run function project-c:jobaction/110/weapons/4/shot
 #自動ボウガンの発射処理
 execute if entity @s[scores={counter_1=5,crossbow=1..}] run function project-c:jobaction/110/weapons/5/shot
+#ネプチューンの発射処理
+execute if entity @s[scores={counter_1=6,useTrident=1..}] run function project-c:jobaction/110/weapons/6/0
 
 #加護
 execute if entity @s[scores={counter_9=2}] run function project-c:jobaction/110/bless/2
 execute if entity @s[scores={counter_9=4}] run function project-c:jobaction/110/bless/4
 execute if entity @s[scores={counter_9=5}] run function project-c:jobaction/110/bless/5
 execute if entity @s[scores={counter_9=7}] run function project-c:jobaction/110/bless/7
+execute if entity @s[scores={counter_9=9}] run effect give @s minecraft:jump_boost 3 1 true
 
 execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-c:jobaction/110/replaceitem/1
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/110/replaceitem/2

@@ -1,6 +1,7 @@
 execute if data entity @s[gamemode=!spectator] {SelectedItem:{tag:{110weapon:1b}}} store result score #110- counter_1 run data get entity @s SelectedItem.tag.110weaponID
 execute if score #110- counter_1 matches 2 unless score @s counter matches 1.. run function project-c:jobaction/110/weapons/2/0
 execute if score #110- counter_1 matches 3 if score @s stockcounter matches 1.. run function project-c:jobaction/110/weapons/3/0
+execute if score #110- counter_1 matches 7 unless score @s counter matches 1.. run function project-c:jobaction/110/weapons/7/0
 execute if score #110- counter_1 matches 1.. run scoreboard players set #110- counter_1 20
 
 execute if data entity @s[gamemode=!spectator] {SelectedItem:{tag:{110skill:1b}}} store result score #110- counter_1 run data get entity @s SelectedItem.tag.110skillID
@@ -17,6 +18,9 @@ execute if score #110- counter_1 matches 8 run function project-c:jobaction/110/
 execute if score #110- counter_1 matches 13 run function project-c:jobaction/110/skills/13/0
 execute if score #110- counter_1 matches 14 run function project-c:jobaction/110/skills/14/0
 execute if score #110- counter_1 matches 15 run function project-c:jobaction/110/skills/15/0
+execute if score #110- counter_1 matches 17 if entity @s[tag=110denkou_addable] run function project-c:jobaction/110/skills/17/2
+execute if score #110- counter_1 matches 17 unless entity @s[tag=110denkou_addable] run function project-c:jobaction/110/skills/17/0
+execute if score #110- counter_1 matches 18 run function project-c:jobaction/110/skills/18/0
 
 execute if score #110- counter_1 matches 1.. if score #110- counter_2 matches 1 run scoreboard players operation @s CT1 = #110- counter_3
 execute if score #110- counter_1 matches 1.. if score #110- counter_2 matches 1 if score #110- counter_3 matches ..1200 run clear @s #project-c:neac/all{110skillSlot:1b}
