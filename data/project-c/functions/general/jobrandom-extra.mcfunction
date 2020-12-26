@@ -18,6 +18,12 @@ execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 75 run scoreboard p
 
 execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 81 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
 
+execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 98 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
+execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 101 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
+execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 104 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
+execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 107 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
+execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 108 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
+
 execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 110 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
 
 execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 0 run function project-c:general/jobrandom-extra
