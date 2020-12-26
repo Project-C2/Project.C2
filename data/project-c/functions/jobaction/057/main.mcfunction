@@ -10,12 +10,12 @@ execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run weather clear
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/057/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/057/replaceitem/3
 
-execute if entity @s[scores={useTrident=1..},gamemode=!spectator] run clear @s minecraft:trident
-execute if entity @s[scores={counter_4=0,useTrident=1..},gamemode=!spectator] run scoreboard players set @s counter_4 10
+execute if entity @s[scores={useTrident=1..,damageDealt=0},gamemode=!spectator] run clear @s minecraft:trident
+execute if entity @s[scores={counter_4=0,useTrident=1..,damageDealt=0},gamemode=!spectator] run scoreboard players set @s counter_4 10
 execute if entity @s[scores={counter_4=1},gamemode=!spectator] run function project-c:jobaction/057/replaceitem/0
 execute if entity @s[scores={counter_4=1..},gamemode=!spectator] run scoreboard players remove @s counter_4 1
 
-execute if entity @s[tag=SkillReady1,scores={CT1=1200..,useTrident=1..},gamemode=!spectator] run function project-c:jobaction/057/replaceitem/1
+execute if entity @s[tag=SkillReady1,scores={CT1=1200..,useTrident=1..,damageDealt=0},gamemode=!spectator] run function project-c:jobaction/057/replaceitem/1
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"リップタイド\",\"color\":\"dark_blue\",\"italic\":\"false\",\"underlined\":\"true\"}"}}}},scores={CT1=1200..,useTrident=1..,damageDealt=0},tag=SkillReady1,gamemode=!spectator] unless entity @e[type=trident,distance=..6,limit=1] run function project-c:jobaction/057/skill/1/0
 

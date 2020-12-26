@@ -30,7 +30,7 @@ execute if entity @s[scores={counter_1=4,bow=1..}] run function project-c:jobact
 #自動ボウガンの発射処理
 execute if entity @s[scores={counter_1=5,crossbow=1..}] run function project-c:jobaction/110/weapons/5/shot
 #ネプチューンの発射処理
-execute if entity @s[scores={counter_1=6,useTrident=1..}] run function project-c:jobaction/110/weapons/6/0
+execute if entity @s[scores={counter_1=6,useTrident=1..}] unless score @s damageDealt matches 1.. run function project-c:jobaction/110/weapons/6/0
 
 #加護
 execute if entity @s[scores={counter_9=2}] run function project-c:jobaction/110/bless/2
@@ -48,9 +48,11 @@ execute if entity @s[nbt={SelectedItem:{tag:{110weapon:1b,110weaponID:5b}},Inven
 execute if score @s sneak matches 1.. unless entity @s[nbt={SelectedItem:{tag:{110weapon:1b,110weaponID:5b}},Inventory:[{tag:{110ArrowItem:1b}}]}] run scoreboard players reset @s sneak
 execute if entity @s[scores={useCarrotStick=1..}] run function project-c:jobaction/110/use_rod
 execute if entity @s[scores={useLinger=1..}] run function project-c:jobaction/110/use_linger
-scoreboard players set @s[scores={crossbow=1..}] crossbow 0
-scoreboard players set @s[scores={bow=1..}] bow 0
 execute if entity @s[scores={sneak=1..,counter=1..}] run scoreboard players reset @s sneak
 execute if entity @s[scores={sneak=1..},predicate=!project-c:wnkm_job/is_sneaking] if entity @s[nbt={SelectedItem:{tag:{110weapon:1b,110weaponID:5b}}}] run function project-c:jobaction/110/weapons/5/p_cancel
 execute if entity @s[scores={sneak=1..},predicate=!project-c:wnkm_job/is_sneaking] run scoreboard players reset @s sneak
-scoreboard players reset @s[scores={drop2=1..}] drop2
+execute if entity @s[scores={crossbow=1..}] run scoreboard players set @s crossbow 0
+execute if entity @s[scores={bow=1..}] run scoreboard players set @s bow 0
+execute if entity @s[scores={useTrident=1..}] run scoreboard players reset @s useTrident
+execute if entity @s[scores={damageDealt=1..}] run scoreboard players reset @s damageDealt
+execute if entity @s[scores={drop2=1..}] run scoreboard players reset @s drop2
