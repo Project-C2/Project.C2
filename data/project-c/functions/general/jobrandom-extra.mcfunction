@@ -8,8 +8,6 @@ execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 15 run scoreboard p
 
 execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 19 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
 
-execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 37 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
-execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 43 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
 execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 50 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
 
 execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 59 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
@@ -20,9 +18,9 @@ execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 75 run scoreboard p
 
 execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 81 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
 
-execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 97.. run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
+execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 110 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
 
-execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 0 run function project-c:general/jobrandom
+execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 0 run function project-c:general/jobrandom-extra
 
 scoreboard players operation @s jobNumber = @e[limit=1,tag=RandomAEC] counter_3
 
