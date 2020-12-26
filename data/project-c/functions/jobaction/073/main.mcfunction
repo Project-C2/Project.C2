@@ -12,7 +12,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"§5§lMa
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"§b§lEthereum Purification§r\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,sneak=1..,Mana=300..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/073/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"§e§lBinding§r\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,sneak=1..,Mana=100..,tag=!useBinding},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/073/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"§e§lBinding§r\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,sneak=1..,Mana=100..},tag=!useBinding,tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/073/skill/3/0
 
 
 
