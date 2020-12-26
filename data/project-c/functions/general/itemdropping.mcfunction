@@ -6,5 +6,9 @@ execute if entity @e[type=item,tag=!isItem,nbt={Item:{tag:{Tier:5b}}},limit=1] r
 
 execute if entity @e[type=item,tag=!isItem,nbt={Item:{tag:{isItem:1b}}},limit=1] run tag @e[type=item,tag=!isItem,nbt={Item:{tag:{isItem:1b}}}] add isItem
 
-execute as @p[scores={drop=1..}] at @s if entity @e[distance=..1.5,tag=isItem] run scoreboard players reset @p[scores={drop=1..}] drop
-execute if entity @a[scores={drop=1..},limit=1] run data merge block -75 17 -122 {auto:1b}
+execute if entity @a[scores={drop=1..},limit=1] as @a[scores={drop=1..}] at @s if entity @e[distance=..1.5,tag=isItem] run scoreboard players reset @s drop
+#execute if entity @a[scores={drop=1..},limit=1] run data merge block -75 17 -122 {auto:1b}
+
+
+execute if entity @a[scores={drop=1..},tag=project-c_drop,limit=1] as @a[scores={drop=1..},tag=project-c_drop] run function project-c:general/replaceitem
+execute if entity @a[scores={drop=1..},tag=!project-c_drop,limit=1] as @a[scores={drop=1..},tag=!project-c_drop] run function project-c:general/drop

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tube_coral",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "水牢","color":"blue","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"--------------------------------","italic":false,"color":"gray"},
+                  {"text":"右クリック / CT:15","italic":false,"color":"aqua"},
+                  {"text":"詠唱後、前方に水玉を発射する。","italic":false,"color":"white"},
+                  {"text":"命中した敵は少しの間だけ水牢に行動阻害を受ける。","italic":false,"color":"white"},
+                  {"text":"--------------------------------","italic":false,"color":"gray"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110skillID:18b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

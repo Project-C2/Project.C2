@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "制魔の矢","color": "dark_purple","italic": false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"魔力を乱す呪術を受けた矢。","italic":false,"color":"gold"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 6
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{110ArrowItem:1b,CustomPotionEffects:[{Id:27b,Amplifier:0b,Duration:40}],CustomPotionColor:11141290}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

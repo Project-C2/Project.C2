@@ -24,6 +24,7 @@ execute if entity @s[scores={OutCombat=..239}] run scoreboard players add @s cou
 execute if entity @s[scores={OutCombat=..239},tag=099-S2-in-area-own] run scoreboard players add @s counter_5 20
 execute if entity @s[scores={OutCombat=240..,counter_5=1..}] run scoreboard players remove @s counter_5 500
 execute if entity @s[scores={playerKills=1..}] run function project-c:jobaction/099/player_kill
+function project-c:jobaction/099/xp_bar/execution
 
 execute if entity @s[scores={counter_3=..3}] if score @s counter_5 > #job99_phase_shift counter run function project-c:jobaction/099/phase_shift
 execute if entity @s[scores={counter_3=4..,counter_5=1..}] run scoreboard players reset @s counter_5
@@ -85,8 +86,6 @@ execute if entity @s[nbt={SelectedItem:{tag:{job99_skill:3b}}},scores={CT3=1200.
 
 execute if entity @s[scores={counter_3=4..}] run effect give @s speed 1 0 true
 
-execute if entity @s[scores={deathCount=1..}] run function project-c:jobaction/099/death
-
 execute if entity @s[scores={useSnowball=1..}] run kill @e[type=snowball,distance=..5,limit=1,sort=nearest]
 execute if entity @s[scores={useSnowball=1..}] run replaceitem entity @s weapon.offhand minecraft:snowball 1
 scoreboard players reset @s[scores={useSnowball=1..}] useSnowball
@@ -95,3 +94,5 @@ scoreboard players reset @s[scores={damageDealt=1..}] damageDealt
 scoreboard players reset @s[scores={sneak=1..}] sneak
 #execute if entity @s[tag=099-S2-in-area-own] run say a
 execute if entity @s[tag=099-S2-in-area-own] run tag @s remove 099-S2-in-area-own
+execute if entity @s[tag=099_death] run scoreboard players set @s OutCombat 500
+execute if entity @s[tag=099_death] run tag @s remove 099_death

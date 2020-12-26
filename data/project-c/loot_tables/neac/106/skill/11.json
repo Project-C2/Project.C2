@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tnt",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "ボム","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "タイプ：アクティブ","italic": false,"color": "green"},
+                {"text": "トリガ：スニーク","italic": false,"color": "yellow"},
+                {"text": "クールタイム：10秒","italic": false,"color": "aqua"},
+                {"text": "ボムを設置する","italic": false,"color": "dark_purple"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,106_skill:11,106_item:0}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

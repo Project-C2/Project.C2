@@ -14,6 +14,10 @@ scoreboard players set @a[tag=JobChanged] stockcounter 0
 scoreboard players set @a[scores={relic=32}] relicCount2 10
 
 execute as @a[tag=JobChanged] at @s run attribute @s minecraft:generic.knockback_resistance base set 0
+execute as @a[tag=JobChanged] at @s run attribute @s minecraft:generic.armor base set 0
+execute as @a[tag=JobChanged] at @s run attribute @s minecraft:generic.attack_damage base set 1
+execute as @a[tag=JobChanged] at @s run attribute @s minecraft:generic.movement_speed base set 0.1
+execute as @a[tag=JobChanged] at @s run attribute @s minecraft:generic.attack_speed base set 4
 
 scoreboard players reset @a[tag=JobChanged] teleportCount
 scoreboard players set @a[tag=JobChanged] subcounter 0
@@ -24,6 +28,11 @@ scoreboard players set @a[tag=JobChanged] counter_2 0
 scoreboard players set @a[tag=JobChanged] counter_3 0
 scoreboard players set @a[tag=JobChanged] counter_4 0
 scoreboard players set @a[tag=JobChanged] counter_5 0
+scoreboard players set @a[tag=JobChanged] counter_6 0
+scoreboard players set @a[tag=JobChanged] counter_7 0
+scoreboard players set @a[tag=JobChanged] counter_8 0
+scoreboard players set @a[tag=JobChanged] counter_9 0
+xp add @a[tag=JobChanged] -2147483648 levels
 
 
 execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] as @a[scores={relic=..31},tag=JobChanged] at @s unless entity @s[scores={relic=30},tag=Battle] run scoreboard players set @s relicCount 0

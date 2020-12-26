@@ -172,7 +172,6 @@ execute if score @s counter matches 240.. positioned ^ ^5 ^ rotated as @s run pa
 execute if score @s counter matches 320.. positioned ^ ^5 ^ rotated as @s run particle minecraft:flame ^ ^-6.0 ^ 0.05 0.05 0.05 0 1 force @a
 
 execute store result entity @s Rotation[1] float 0.1 run scoreboard players operation @s CT1 += @s counter
-execute if score @s subcounter matches 1 run effect give @a[tag=035-3A,limit=1,sort=nearest] levitation 10 0
 execute if score @s subcounter matches 200 run tag @s add 035it
 execute if score @s subcounter matches 200 run execute if entity @a[tag=035-3A,limit=1] as @a[tag=035-3A] if score @s playerNumber = @e[tag=035it,limit=1,sort=nearest] playerNumber at @s run function project-c:jobaction/035/skill/3/end
 execute if score @s subcounter matches 200.. run kill @s

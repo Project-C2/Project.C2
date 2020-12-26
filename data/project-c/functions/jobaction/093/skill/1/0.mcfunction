@@ -1,5 +1,6 @@
 scoreboard players set @s CT1 900
-replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 15
+clear @s water_bucket
+clear @s heart_of_the_sea
 
 execute anchored eyes run summon trident ^ ^ ^0.1 {Tags:["093firstTrident","this","trident"],crit:1b,pickup:0b,life:1134s,DealtDamage:1b,Invulnerable:1b}
 scoreboard players set @e[tag=this] counter_2 -900

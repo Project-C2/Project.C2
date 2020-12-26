@@ -16,11 +16,20 @@ data merge block -45 41 -122 {auto:1b}
 effect clear @a minecraft:absorption
 function project-c:general/relic/clocodire
 gamemode spectator @a[team=]
-scoreboard players set @a counter_1 0
-scoreboard players set @a counter_2 0
-scoreboard players set @a counter_3 0
-scoreboard players set @a counter_4 0
-scoreboard players set @a counter_5 0
+#ゲーム開始時にカウンタースコアを保持したい場合はここに追記してください
+tag @a[scores={jobNumber=106}] add counter-keep
+tag @a[scores={jobNumber=110}] add counter-keep
+scoreboard players set @a[tag=!counter-keep] counter 0
+scoreboard players set @a[tag=!counter-keep] counter_1 0
+scoreboard players set @a[tag=!counter-keep] counter_2 0
+scoreboard players set @a[tag=!counter-keep] counter_3 0
+scoreboard players set @a[tag=!counter-keep] counter_4 0
+scoreboard players set @a[tag=!counter-keep] counter_5 0
+scoreboard players set @a[tag=!counter-keep] counter_6 0
+scoreboard players set @a[tag=!counter-keep] counter_7 0
+scoreboard players set @a[tag=!counter-keep] counter_8 0
+scoreboard players set @a[tag=!counter-keep] counter_9 0
+tag @a[tag=counter-keep] remove counter-keep
 
 kill @e[type=minecraft:area_effect_cloud,tag=VoidReturn]
 execute as @r[team=Red,limit=1,gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,RadiusPerTick:0.0f,Age:0,Duration:600000,Tags:["Stable","VoidReturnRed","VoidReturn"]}
@@ -35,10 +44,11 @@ advancement revoke @a[scores={jobNumber=73}] only project-c:radiochat/amchat
 
 function project-c:jobaction/099/initialize
 
+function project-c:jobaction/106/initialize
+
 execute as @a at @s run attribute @s minecraft:generic.max_health base set 40
 
 effect clear @a minecraft:health_boost
 
 tag @a[scores={jobNumber=88}] remove 088-S3-used
 scoreboard players reset @a[scores={jobNumber=88}] playerKills
-execute as @a[scores={jobNumber=88}] at @s run attribute @s minecraft:generic.max_health base set 30

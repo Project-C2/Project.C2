@@ -3,9 +3,9 @@ give @p oak_sign{display:{Name:'"093-ウンディーネ"'},BlockEntityTag:{Text1
 
 #動作必須コマブロ群
 #drop処理用
-setblock -57 25 -122 minecraft:command_block[facing=south,conditional=false]{Command:"data merge block ~ ~ ~ {auto:0b}",TrackOutput:0b} destroy
-setblock -57 25 -121 minecraft:chain_command_block[facing=south,conditional=false]{auto:1b,Command:"execute as @a[scores={jobNumber=93,drop=1..}] run function project-c:jobaction/093/replaceitem/0",TrackOutput:0b} destroy
-setblock -70 17 -102 minecraft:chain_command_block[facing=north,conditional=false]{auto:1b,Command:"execute if entity @p[scores={jobNumber=93,drop=1..}] run data merge block -57 25 -122 {auto:1b}",TrackOutput:0b} destroy
+#setblock -57 25 -122 minecraft:command_block[facing=south,conditional=false]{Command:"data merge block ~ ~ ~ {auto:0b}",TrackOutput:0b} destroy
+#setblock -57 25 -121 minecraft:chain_command_block[facing=south,conditional=false]{auto:1b,Command:"execute as @a[scores={jobNumber=93,drop=1..}] run function project-c:jobaction/093/replaceitem/0",TrackOutput:0b} destroy
+#setblock -70 17 -102 minecraft:chain_command_block[facing=north,conditional=false]{auto:1b,Command:"execute if entity @p[scores={jobNumber=93,drop=1..}] run data merge block -57 25 -122 {auto:1b}",TrackOutput:0b} destroy
 #スキル系処理用
 setblock 9 2 89 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute as @e[scores={jobNumber=93}] at @s run function project-c:jobaction/093/main",TrackOutput:0b} destroy
 setblock 9 2 91 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"function project-c:jobaction/093/skill/0/1",TrackOutput:0b} destroy

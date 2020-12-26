@@ -20,5 +20,6 @@ playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 3 0.5
 
 
 data merge block 61 2 89 {auto:1b}
+tag @s remove SkillDelay2
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2

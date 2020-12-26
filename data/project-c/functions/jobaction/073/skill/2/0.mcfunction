@@ -1,7 +1,7 @@
 #判定
 #CT
 scoreboard players set @s usedSkill 2
-scoreboard players set @s CT2 1180
+scoreboard players set @s CT2 1140
 scoreboard players remove @s Mana 150
 scoreboard players add @s MagicFatigue 50
 

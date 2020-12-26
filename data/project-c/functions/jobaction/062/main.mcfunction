@@ -14,7 +14,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"人符�
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"断命剣「冥想斬」\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,useCarrotStick=1..,sneak=0},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/062/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"人鬼「未来永劫斬」\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,useCarrotStick=1..,counter_1=..0,counter_3=280..,counter_2=30},tag=SkillReady3,gamemode=!spectator,tag=Battle] run function project-c:jobaction/062/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"人鬼「未来永劫斬」\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,useCarrotStick=1..,counter_3=280..,counter_2=30..},tag=SkillReady3,gamemode=!spectator,tag=Battle] run function project-c:jobaction/062/skill/3/0
 
 execute if entity @s[scores={counter_1=..0,useCarrotStick=1..,counter_2=..29},gamemode=!spectator] run function project-c:jobaction/062/skill/0/0
 execute if entity @s[scores={counter_1=..0,useCarrotStick=1..,counter_2=30},gamemode=!spectator] run function project-c:jobaction/062/skill/0/2

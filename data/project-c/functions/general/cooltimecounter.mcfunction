@@ -1,48 +1,10 @@
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=0..3}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 60
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=600..603}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 30
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=700..703}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 25
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=800..803}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 20
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=900..903}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 15
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=1000..1003}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 10
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=1020..1023}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 9
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=1040..1043}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 8
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=1060..1063}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 7
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=1080..1083}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 6
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=1100..1103}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 5
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=1120..1123}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 4
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=1140..1143}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 3
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=1160..1163}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 2
-execute as @a[tag=!SkillDelay1] at @s run replaceitem entity @a[scores={CT1=1180..1183}] hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 1
+execute if entity @s[tag=!SkillDelay1,scores={CT1=..1199},nbt=!{Inventory:[{tag:{CT:1}}]}] run scoreboard players set #CT counter 1
+execute if score #CT counter matches 1.. run function project-c:general/cooltime/loot_items
+execute if entity @s[tag=!SkillDelay2,scores={CT2=..1199},nbt=!{Inventory:[{tag:{CT:2}}]}] run scoreboard players set #CT counter 2
+execute if score #CT counter matches 1.. run function project-c:general/cooltime/loot_items
+execute if entity @s[tag=!SkillDelay3,scores={CT3=..1199},nbt=!{Inventory:[{tag:{CT:3}}]}] run scoreboard players set #CT counter 3
+execute if score #CT counter matches 1.. run function project-c:general/cooltime/loot_items
 
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=0..3}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 60
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=600..603}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 30
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=700..703}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 25
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=800..803}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 20
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=900..903}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 15
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=1000..1003}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 10
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=1020..1023}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 9
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=1040..1043}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 8
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=1060..1063}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 7
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=1080..1083}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 6
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=1100..1103}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 5
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=1120..1123}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 4
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=1140..1143}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 3
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=1160..1163}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 2
-execute as @a[tag=!SkillDelay2] at @s run replaceitem entity @a[scores={CT2=1180..1183}] hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 1
-
-
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=0..3}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 60
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=600..603}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 30
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=700..703}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 25
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=800..803}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 20
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=900..903}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 15
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=1000..1003}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 10
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=1020..1023}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 9
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=1040..1043}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 8
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=1060..1063}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 7
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=1080..1083}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 6
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=1100..1103}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 5
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=1120..1123}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 4
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=1140..1143}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 3
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=1160..1163}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 2
-execute as @a[tag=!SkillDelay3] at @s run replaceitem entity @a[scores={CT3=1180..1183}] hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 1
+execute if entity @s[tag=!SkillDelay1,scores={CT1=..1199},nbt={Inventory:[{tag:{CT:1}}]}] run function project-c:general/cooltime/ct1_remove
+execute if entity @s[tag=!SkillDelay2,scores={CT2=..1199},nbt={Inventory:[{tag:{CT:2}}]}] run function project-c:general/cooltime/ct2_remove
+execute if entity @s[tag=!SkillDelay3,scores={CT3=..1199},nbt={Inventory:[{tag:{CT:3}}]}] run function project-c:general/cooltime/ct3_remove

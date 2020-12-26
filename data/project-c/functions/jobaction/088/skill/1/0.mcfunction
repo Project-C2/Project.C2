@@ -18,14 +18,15 @@ execute if entity @e[tag=088-S1-stand] run function project-c:jobaction/088/skil
 #バフを付与する。
 #counterが-1な場合、移動に成功していないため、プレイヤーに通知しCTを短縮する
 effect give @s minecraft:resistance 1 10 true
-effect give @s minecraft:speed 1 3 true
-execute if entity @s[tag=!088-S3-used] run effect give @s invisibility 1 0 false
+effect give @s minecraft:speed 2 3 true
+execute if entity @s[tag=!088-S3-used] run effect give @s invisibility 2 0 false
 
 playsound minecraft:block.soul_soil.break master @a ~ ~ ~ 2 0.5
 playsound minecraft:entity.enderman.teleport master @a ~ ~ ~ 1 1.5
 
 execute if entity @s[tag=088-S3-used] run scoreboard players add @s CT1 30
 execute if score @s counter matches -1 run tellraw @s {"text":"\u79fb\u52d5\u5148\u304c\u898b\u3064\u304b\u3089\u306a\u3044\uff01","color":"#D5AA3A"}
+execute if score @s counter matches -1 run scoreboard players add @s CT1 30
 
 #パーティクル表示用
 effect give @s bad_omen 1 88 true
