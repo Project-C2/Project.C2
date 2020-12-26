@@ -31,6 +31,8 @@ scoreboard players set @a[tag=!counter-keep] counter_8 0
 scoreboard players set @a[tag=!counter-keep] counter_9 0
 tag @a[tag=counter-keep] remove counter-keep
 
+execute if score #MenuRandomjob counter matches 1 run execute as @a[gamemode=!spectator] at @s run function project-c:general/jobrandom-extra
+
 kill @e[type=minecraft:area_effect_cloud,tag=VoidReturn]
 execute as @r[team=Red,limit=1,gamemode=!spectator] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,RadiusPerTick:0.0f,Age:0,Duration:600000,Tags:["Stable","VoidReturnRed","VoidReturn"]}
 
