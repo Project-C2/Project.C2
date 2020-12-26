@@ -1,8 +1,8 @@
 kill @e[tag=RandomAEC]
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[RandomAEC]}
 execute as @e[tag=RandomAEC] at @s store result score @s counter_3 run data get entity @s UUID[1]
-execute as @e[tag=RandomAEC] at @s run scoreboard players set @s counter_2 110
-execute as @e[limit=1,tag=RandomAEC] at @s run scoreboard players operation @s counter_3 %= @s counter_2
+
+execute as @e[limit=1,tag=RandomAEC] at @s run scoreboard players operation @s counter_3 %= #100 counter
 
 execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 15 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
 

@@ -3,7 +3,6 @@ execute as @e[tag=096chainjump] if score @s playerNumber = @a[limit=1,sort=neare
 tag @s remove 096
 
 effect clear @s levitation
-effect clear @s slow_falling
 replaceitem entity @s armor.feet minecraft:air
 tag @s remove 096chainjump_p
 
