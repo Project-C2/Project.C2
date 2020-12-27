@@ -1,5 +1,6 @@
 #実行者     -> 108-Confuse = 1..
 #実行地点   -> 実行者
+execute unless score @s counter matches -2147483648..2147483647 run tag @s add ResetCounterScore
 scoreboard players operation #108-Counter counter = @s counter
 scoreboard players operation @s counter = #20 counter
 function project-c:general/generaterandom
@@ -16,7 +17,11 @@ execute if score #108-ConfuseMod counter matches 4 run particle minecraft:enchan
 execute if score #108-ConfuseMod counter matches 5 run particle minecraft:enchanted_hit ~-0.16 ~2 ~-0.16 0 0 0 0 1
 execute if score #108-ConfuseMod counter matches 6 run particle minecraft:enchanted_hit ~ ~2 ~-0.3 0 0 0 0 1 
 execute if score #108-ConfuseMod counter matches 7 run particle minecraft:enchanted_hit ~0.16 ~2 ~-0.16 0 0 0 0 1 
-scoreboard players reset #108-ConfuseMod counter
+
+
 scoreboard players operation @s counter = #108-Counter counter
+execute if entity @s[tag=ResetCounterScore] run scoreboard players reset @s counter
+tag @s[tag=ResetCounterScore] remove ResetCounterScore
+scoreboard players reset #108-ConfuseMod counter
 scoreboard players reset #108-Counter counter
 playsound minecraft:entity.chicken.death master @a ~ ~ ~ 1 2
