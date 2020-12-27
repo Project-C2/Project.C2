@@ -32,7 +32,6 @@ execute if entity @s[scores={counter_1=421..}] run effect give @s slowness 1 7
 
 execute if entity @s[scores={counter_2=1..}] run function project-c:jobaction/091/skill/0/2
 execute if entity @s[scores={counter_2=1..}] run function project-c:jobaction/091/skill/0/2
-execute if entity @s[scores={counter_2=1..,subcounter=1}] run function project-c:jobaction/091/skill/0/2
 
 execute if entity @s[scores={OutCombat=..240}] run scoreboard players remove @s CT2 1
 

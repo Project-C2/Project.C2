@@ -9,7 +9,7 @@ execute as @e[scores={eigou=20..59}] at @s run effect clear @s levitation
 execute as @e[scores={eigou=20..59}] at @s run particle sweep_attack ^ ^ ^ 3 3 3 0 2 force
 execute as @e[scores={eigou=20..59}] at @s run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 4 1
 execute as @e[scores={eigou=20..59}] at @s run teleport @s ~ ~ ~ ~ ~
-execute as @e[scores={eigou=41}] at @s run effect give @s instant_damage 1 1 true
+execute as @e[scores={eigou=41}] at @s run effect give @s instant_damage 1 0 true
 execute as @e[scores={eigou=31}] at @s run effect give @s instant_damage 1 0 true
 execute as @e[scores={eigou=21}] at @s run effect give @s instant_damage 1 1 true
 execute as @e[scores={eigou=21..51}] at @s run effect give @s slowness 2 4 true

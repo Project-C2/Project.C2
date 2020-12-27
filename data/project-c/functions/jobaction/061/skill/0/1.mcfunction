@@ -7,8 +7,8 @@ scoreboard players add @s counter 1
 
 
 
-execute as @s[tag=061-fireR] at @s run execute as @e[distance=..1.5,team=Blue] at @s run summon arrow ~ ~2.5 ~ {Motion:[0.0,-1.5,0.0],life:1200,color:-1b,Fire:40s}
-execute as @s[tag=061-fireB] at @s run execute as @e[distance=..1.5,team=Red] at @s run summon arrow ~ ~2.5 ~ {Motion:[0.0,-1.5,0.0],life:1200,color:-1b,Fire:40s}
+execute as @s[tag=061-fireR] at @s run execute as @e[distance=..1.5,team=Blue] at @s run summon arrow ~ ~2.5 ~ {Motion:[0.0,-1.5,0.0],life:1200,color:-1b,Fire:30s}
+execute as @s[tag=061-fireB] at @s run execute as @e[distance=..1.5,team=Red] at @s run summon arrow ~ ~2.5 ~ {Motion:[0.0,-1.5,0.0],life:1200,color:-1b,Fire:30s}
 
 execute as @s[tag=061-fireR] at @s if entity @e[distance=..1.5,team=Blue] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 1
 execute as @s[tag=061-fireB] at @s if entity @e[distance=..1.5,team=Red] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 1
