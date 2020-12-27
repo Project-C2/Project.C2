@@ -1,7 +1,7 @@
 function project-c:jobaction/091/skill/0/3
 
 #execute positioned 0.0 0.0 0.0 run summon minecraft:armor_stand ^ ^ ^3 {Tags:["091dummy"],Marker:1b,Invisible:1b,Marker:1b}
-execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["091fire","091fireF","Arrow"],damage:1.75d,life:1198s,pickup:2b,Color:-1,PierceLevel:4b,OwnerUUIDMost:1L,OwnerUUIDLeast:1L,CustomName:"{\"text\":\"アウトライダー\",\"color\":\"gold\"}"}
+execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["091fire","091fireF","Arrow"],damage:1.5d,life:1198s,pickup:2b,Color:-1,PierceLevel:4b,OwnerUUIDMost:1L,OwnerUUIDLeast:1L,CustomName:"{\"text\":\"アウトライダー\",\"color\":\"gold\"}"}
 data modify entity @e[tag=091fireF,limit=1] OwnerUUID set from entity @s UUID
 data modify entity @e[tag=091fireF,limit=1] Motion set from entity @e[tag=091dummy,limit=1] Pos
 execute store result score @e[tag=091fireF,limit=1] counter_1 run data get entity @s Rotation[0] 100

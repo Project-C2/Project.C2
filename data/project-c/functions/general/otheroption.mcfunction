@@ -1,12 +1,12 @@
-execute if entity @e[tag=Damage1,limit=1] as @e[tag=Damage1] run effect give @s minecraft:absorption 1 0 true
+execute if entity @e[tag=Damage1,limit=1] as @e[tag=Damage1] run effect give @s resistance 1 1 true
 execute if entity @e[tag=Damage1,limit=1] as @e[tag=Damage1] run effect give @s minecraft:instant_damage 1 0 true
 execute if entity @e[tag=Damage1,limit=1] as @e[tag=Damage1] run tag @s remove Damage1
 
-execute if entity @e[tag=Damage2,limit=1] as @e[tag=Damage2] run effect give @s minecraft:absorption 1 1 true
-execute if entity @e[tag=Damage2,limit=1] as @e[tag=Damage2] run effect give @s minecraft:instant_damage 1 1 true
+execute if entity @e[tag=Damage2,limit=1] as @e[tag=Damage2] run effect give @s resistance 1 0 true
+execute if entity @e[tag=Damage2,limit=1] as @e[tag=Damage2] run effect give @s minecraft:instant_damage 1 0 true
 execute if entity @e[tag=Damage2,limit=1] as @e[tag=Damage2] run tag @s remove Damage2
 
-execute if entity @e[tag=Damage4,limit=1] as @e[tag=Damage4] run effect give @s minecraft:absorption 1 0 true
+execute if entity @e[tag=Damage4,limit=1] as @e[tag=Damage2] run effect give @s resistance 1 0 true
 execute if entity @e[tag=Damage4,limit=1] as @e[tag=Damage4] run effect give @s minecraft:instant_damage 1 1 true
 execute if entity @e[tag=Damage4,limit=1] as @e[tag=Damage4] run tag @s remove Damage4
 
