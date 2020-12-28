@@ -14,7 +14,7 @@ scoreboard players reset @s usedSkill
 execute if entity @s[scores={OutCombat=241}] run effect clear @s regeneration
 execute if entity @s[scores={OutCombat=241}] run effect give @s regeneration 1000000 0 true
 execute if entity @s[scores={CT2=1200..,OutCombat=..240},tag=SkillReady2,gamemode=!spectator] run scoreboard players add @s counter_1 1
-execute if entity @s[scores={counter_1=44..}] run function project-c:jobaction/109/skill/2/0
+execute if entity @s[scores={counter_1=50..}] run function project-c:jobaction/109/skill/2/0
 execute if entity @s[scores={counter_2=1..}] run function project-c:jobaction/109/skill/1/1
 execute if entity @s[scores={counter_4=1..}] run function project-c:jobaction/109/skill/3/1
 
