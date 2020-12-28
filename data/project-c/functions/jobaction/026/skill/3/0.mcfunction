@@ -18,5 +18,6 @@ execute if entity @e[tag=026-axeSummon] at @e[tag=026-axeSummon,limit=1,sort=nea
 execute if entity @e[tag=026-axeSummon] at @e[tag=026-axeSummon,limit=1,sort=nearest] run particle minecraft:dust 1 0.6 0 5 ~ ~ ~ 2 2 2 1 100 force @a
 execute if entity @e[tag=026-axeSummon] run tag @e[tag=026-axeSummon] remove 026-axeSummon
 
+tag @s remove 026axe_drop
 tag @s remove SkillReady3
 scoreboard players set @s usedSkill 3
