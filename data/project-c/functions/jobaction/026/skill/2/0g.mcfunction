@@ -41,6 +41,7 @@ playsound minecraft:item.trident.return master @a ~ ~ ~ 2 0.5
 playsound minecraft:item.trident.return master @a ~ ~ ~ 2 2
 particle minecraft:poof ~ ~ ~ 0 0 0 1 200 normal @a
 
+tag @s remove 026axe_g
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2
 data merge block -59 2 -71 {auto:1b}
