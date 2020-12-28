@@ -1,4 +1,4 @@
-scoreboard players add @s relicCount 1
+scoreboard players add @s[scores={relicCount=1..}] relicCount 1
 execute if entity @s[scores={HP=1..6,relicCount=0},nbt={HurtTime:9s}] run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 2 0
 execute if entity @s[scores={HP=1..6,relicCount=0},nbt={HurtTime:9s}] run function project-c:general/relic/firincscircle
 execute if entity @s[scores={HP=1..6,relicCount=0},nbt={HurtTime:9s}] run particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.6 100 force @a
