@@ -1,7 +1,8 @@
 
 
 
-execute if entity @s[scores={counter_2=1}] run function project-c:jobaction/106/items/support/01_execution
+execute if entity @s[scores={counter_2=1},nbt={Inventory:[{Slot:-106b,tag:{106_support:1}}]}] run function project-c:jobaction/106/items/support/01_execution
+execute if entity @s[scores={counter_2=2},nbt={Inventory:[{Slot:-106b,tag:{106_support:2}}]}] run function project-c:jobaction/106/items/support/02_execution
 
 
 

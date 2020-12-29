@@ -5,11 +5,11 @@ execute unless data entity @s Inventory[{Slot:32b}].tag{106_gui_item:1} run scor
 execute unless data entity @s Inventory[{Slot:31b}].tag{106_gui_item:1} run scoreboard players set #106_skill counter_1 1
 
 execute if score @s counter_7 matches 2.. unless data entity @s Inventory[{Slot:30b}].tag{106_gui_item:1} run scoreboard players set #106_skill counter_1 10
-execute if score @s counter_7 matches ..2 unless data entity @s Inventory[{Slot:35b}].tag{106_gui_item:1} run scoreboard players set #106_skill counter_1 11
+execute if score @s counter_7 matches ..3 unless data entity @s Inventory[{Slot:35b}].tag{106_gui_item:1} run scoreboard players set #106_skill counter_1 11
 
 
 
-execute if score @s counter_7 matches 3 if score #106_skill counter_1 matches 4 run scoreboard players reset #106_skill counter_1
+execute if score @s counter_7 matches 4 if score #106_skill counter_1 matches 3..4 run scoreboard players reset #106_skill counter_1
 
 
 

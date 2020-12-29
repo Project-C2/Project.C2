@@ -1,4 +1,8 @@
-#スキル使用処理
+#スキル処理といろいろ
+execute if entity @a[scores={jobNumber=106,counter=1..},tag=Battle,gamemode=spectator,limit=1] as @a[scores={jobNumber=106,counter=1..},tag=Battle,gamemode=spectator] at @s run function project-c:jobaction/106/items/skill/12/check
+
+execute if entity @e[type=arrow,tag=106_weapon5--,limit=1] as @e[type=arrow,tag=106_weapon5--] at @s run particle cloud ~ ~ ~ 0 0 0 0.1 1 force @a
+
 
 
 execute if entity @e[tag=neac_fall_damage_nullification_execute_remove,limit=1] as @e[tag=neac_fall_damage_nullification_execute_remove] run effect clear @s slow_falling
@@ -50,5 +54,10 @@ execute if entity @p[scores={jobNumber=106,counter_9=1..}] as @a[scores={jobNumb
 execute if entity @e[type=minecraft:creeper,tag=106_bomb,limit=1] as @e[type=minecraft:creeper,tag=106_bomb] at @s run function project-c:jobaction/106/items/skill/11/fuse_timer
 
 
+#パーフォレイトショット
+execute if entity @e[type=minecraft:bat,tag=106_perforate_bullet,limit=1] as @e[type=minecraft:bat,tag=106_perforate_bullet] at @s run function project-c:jobaction/106/items/skill/13/proc
+
+
 
 execute if entity @p[tag=106_skill_no_drop] as @a[tag=106_skill_no_drop] run tag @s remove 106_skill_no_drop
+execute if entity @e[type=minecraft:arrow,tag=106-setup,limit=1] as @e[type=minecraft:arrow,tag=106-setup] run tag @s remove 106-setup

@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:comparator",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "ダッシュトリガーチェンジ","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "","italic": false},
+                {"translate": "item.modifiers.offhand","italic": false,"color": "gray"},
+                {"text": "ダッシュ状態のとき、効果を負数に変換する","italic": false,"color": "blue"},
+                [{"translate":"attribute.name.generic.movement_speed","italic": false,"color": "blue"},{"text":" +50%","italic": false,"color": "blue"}],
+                [{"translate":"attribute.name.generic.movement_speed","italic": false,"color": "red"},{"text":" -50%","italic": false,"color": "red"}]
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "name": "generic.movement_speed",
+                  "attribute": "generic.movement_speed",
+                  "operation": "multiply_total",
+                  "amount": 0,
+                  "slot": "offhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,106_support:4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

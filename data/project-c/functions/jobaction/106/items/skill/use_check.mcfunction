@@ -95,7 +95,7 @@ execute if entity @s[scores={counter_5=9,CT3=1200..}] run function project-c:job
 #ショートテレポート
 execute if entity @s[scores={jump=1..},tag=Battle] if score #106_has_skill counter matches 10 if score #106_has_skill_ct counter matches 1200.. run function project-c:jobaction/106/items/skill/10/use
 #パーティクル
-execute if score #106_has_skill counter matches 10 if score #106_has_skill_ct counter matches 1200.. run function project-c:jobaction/106/items/skill/10/particle_call
+execute if entity @s[nbt={OnGround:1b}] if score #106_has_skill counter matches 10 if score #106_has_skill_ct counter matches 1200.. run function project-c:jobaction/106/items/skill/10/particle_call
 
 
 
@@ -109,12 +109,25 @@ execute if entity @s[nbt={SelectedItem:{tag:{106_auxiliary_skill:11b}}},scores={
 
 
 
+#マーカー
+execute if entity @s[scores={damageDealt=1..,counter_3=12,CT1=1200..}] run function project-c:jobaction/106/items/skill/12/use
+execute if entity @s[scores={damageDealt=1..,counter_4=12,CT2=1200..}] run function project-c:jobaction/106/items/skill/12/use
+execute if entity @s[scores={damageDealt=1..,counter_5=12,CT3=1200..}] run function project-c:jobaction/106/items/skill/12/use
 
 
 
 
 
+#パーフォレイトショット
+execute if entity @s[scores={sneak=1..}] if score #106_has_skill counter matches 13 if score #106_has_skill_ct counter matches 1200.. run function project-c:jobaction/106/items/skill/13/use
 
+
+
+#クイックリロード
+
+execute if entity @s[scores={MagicFatigue=10..,counter_3=14,CT1=1200..}] run function project-c:jobaction/106/items/skill/14/use
+execute if entity @s[scores={MagicFatigue=10..,counter_4=14,CT2=1200..}] run function project-c:jobaction/106/items/skill/14/use
+execute if entity @s[scores={MagicFatigue=10..,counter_5=14,CT3=1200..}] run function project-c:jobaction/106/items/skill/14/use
 
 
 

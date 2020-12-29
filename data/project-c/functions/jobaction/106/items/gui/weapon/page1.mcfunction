@@ -9,6 +9,13 @@ data modify block 0 0 0 Items[{Slot:5b}].tag.106_gui_item set value 1
 loot replace block 0 0 0 container.6 loot project-c:neac/106/weapon/03
 data modify block 0 0 0 Items[{Slot:6b}].tag.106_gui_item set value 1
 
+loot replace block 0 0 0 container.7 loot project-c:neac/106/weapon/04
+data modify block 0 0 0 Items[{Slot:7b}].tag.106_gui_item set value 1
+
+loot replace block 0 0 0 container.8 loot project-c:neac/106/weapon/05
+data modify block 0 0 0 Items[{Slot:8b}].tag.106_gui_item set value 1
+data remove block 0 0 0 Items[{Slot:8b}].tag.Charged
+data remove block 0 0 0 Items[{Slot:8b}].tag.ChargedProjectiles
 
 
 data remove block 0 0 0 Items[{tag:{106_item:0}}].tag.106_weapon
