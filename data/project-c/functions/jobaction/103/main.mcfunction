@@ -12,14 +12,16 @@
 
 scoreboard players reset @s usedSkill
 scoreboard players add @s[gamemode=!spectator] counter_1 1
-execute if score @s counter_1 matches 20 run title @s actionbar {"text":"|| ■□□□ ||","color":"#c00000"}
-execute if score @s counter_1 matches 40 run title @s actionbar {"text":"|| ■■□□ ||","color":"#c00000"}
-execute if score @s counter_1 matches 60 run title @s actionbar {"text":"|| ■■■□ ||","color":"#c00000"}
-execute if score @s counter_1 matches 80 run title @s actionbar {"text":"|| ■■■■ ||","color":"#f40000"}
-execute if score @s counter_1 matches 80 run function project-c:jobaction/103/skill/0/0
-execute if score @s counter_1 matches 100 run title @s actionbar {"text":"|| □□□□ ||","color":"#c00000"}
-execute if score @s counter_1 matches 100 run function project-c:jobaction/103/replaceitem/0
-execute if score @s counter_1 matches 100.. run scoreboard players set @s counter_1 0
+execute if score @s counter_1 matches 20 run title @s actionbar {"text":"|| ■□□□□ ||","color":"#c00000"}
+execute if score @s counter_1 matches 40 run title @s actionbar {"text":"|| ■■□□□ ||","color":"#c00000"}
+execute if score @s counter_1 matches 60 run title @s actionbar {"text":"|| ■■■□□ ||","color":"#c00000"}
+execute if score @s counter_1 matches 80 run title @s actionbar {"text":"|| ■■■■□ ||","color":"#c00000"}
+execute if score @s counter_1 matches 100 run title @s actionbar {"text":"|| ■■■■■ ||","color":"#f40000"}
+execute if score @s counter_1 matches 100 run function project-c:jobaction/103/skill/0/0
+execute if score @s counter_1 matches 120 run title @s actionbar {"text":"|| □□□□□ ||","color":"#c00000"}
+execute if score @s counter_1 matches 120 run function project-c:jobaction/103/replaceitem/0
+execute if score @s counter_1 matches 101..120 if score @s damageDealt matches 1.. run function project-c:jobaction/103/skill/0/1
+execute if score @s counter_1 matches 120.. run scoreboard players set @s counter_1 0
 
 execute if score @s counter_2 matches 1.. run function project-c:jobaction/103/skill/2/1
 
@@ -33,4 +35,5 @@ execute if entity @s[scores={CT3=1200..},tag=SkillReady3,gamemode=!spectator] if
 
 
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
+scoreboard players reset @s[scores={damageDealt=1..}] damageDealt
 scoreboard players reset @s[scores={sneak=1..}] sneak

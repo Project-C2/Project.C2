@@ -1,7 +1,7 @@
-scoreboard players set @s CT1 1112
-replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 5
+scoreboard players set @s CT1 1092
 
-execute anchored eyes run summon fireball ^ ^-0.45 ^1.5 {ExplosionPower:2,Tags:["103enchanted","103fireball1","this"]}
+
+execute anchored eyes run summon fireball ^ ^-0.55 ^1.5 {ExplosionPower:2,Tags:["103enchanted","103fireball1","this"]}
 execute positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^0.11 {Tags:["103vector"],Duration:1}
 data modify entity @e[tag=this,limit=1] power set from entity @e[tag=103vector,limit=1] Pos
 data modify entity @e[tag=this,limit=1] Motion set from entity @e[tag=103vector,limit=1] Pos
