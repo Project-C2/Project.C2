@@ -1,12 +1,12 @@
 scoreboard players set @s CT1 1000
 
 execute positioned 0.0 0.0 0.0 run summon minecraft:armor_stand ^ ^ ^10 {Tags:["101dummy"],Marker:1b,Invisible:1b,NoGravity:1b}
-execute if entity @s[scores={counter_5=1..30}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:1.0d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b,crit:1b}
-execute if entity @s[scores={counter_5=31..60}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:1.4d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b,crit:1b}
-execute if entity @s[scores={counter_5=61..90}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:1.7d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b,crit:1b}
-execute if entity @s[scores={counter_5=91..120}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:2.0d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b,crit:1b}
-execute if entity @s[scores={counter_5=121..150}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:2.5d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b,crit:1b}
-execute if entity @s[scores={counter_5=151..}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:3.0d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b,crit:1b}
+execute if entity @s[scores={counter_5=1..30}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:1.0d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b}
+execute if entity @s[scores={counter_5=31..60}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:1.4d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b}
+execute if entity @s[scores={counter_5=61..90}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:1.7d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b}
+execute if entity @s[scores={counter_5=91..120}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:2.0d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b}
+execute if entity @s[scores={counter_5=121..150}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:2.5d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b}
+execute if entity @s[scores={counter_5=151..}] run execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:3.0d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b}
 
 tag @e[type=arrow,distance=..5,limit=1,sort=nearest,tag=!SniperArrow] add SniperArrowC
 tag @e[type=arrow,distance=..5,limit=1,sort=nearest,tag=!SniperArrow] add SniperArrow
