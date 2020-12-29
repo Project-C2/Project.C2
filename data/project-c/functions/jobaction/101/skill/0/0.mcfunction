@@ -1,5 +1,5 @@
 execute positioned 0.0 0.0 0.0 run summon minecraft:armor_stand ^ ^ ^10 {Tags:["101dummy"],Marker:1b,Invisible:1b,NoGravity:1b}
-execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:1d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b}
+execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:1d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b,crit:1b}
 
 tag @e[type=arrow,distance=..5,limit=1,sort=nearest,tag=!SniperArrow] add SniperArrowC
 tag @e[type=arrow,distance=..5,limit=1,sort=nearest,tag=!SniperArrow] add SniperArrow
