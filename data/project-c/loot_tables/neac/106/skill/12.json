@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lodestone",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "マーカー","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "タイプ：パッシブ","italic": false,"color": "green"},
+                {"text": "トリガ：アタック・スペクテイト","italic": false,"color": "yellow"},
+                {"text": "クールタイム：7秒 x 効果対象者数","italic": false,"color": "aqua"},
+                [{"text": "アタック: ","italic": false,"color": "yellow"},{"text": "対象を長時間発光させる","italic": false,"color": "dark_purple"}],
+                [{"text": "スペクテイト: ","italic": false,"color": "yellow"},{"text": "対象とその周囲の敵を長時間発光させる","italic": false,"color": "dark_purple"}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,106_skill:12}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

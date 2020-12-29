@@ -1,16 +1,22 @@
 
+execute if data entity @s[tag=!106_weapon5_charged] {Inventory:[{id:"minecraft:crossbow",tag:{106_weapon:5,Charged:1b}}]} run function project-c:jobaction/106/items/weapon/05/charge
 
 execute unless entity @s[tag=106_drop] run function project-c:jobaction/106/items/gui/main
 
 
-execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/weapon
+execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/weapon/setup
 
 execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/support/setup
 
 execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/skill/setup
 
-replaceitem entity @s[tag=106_drop] hotbar.4 minecraft:gray_stained_glass_pane{display:{Name:'{"text":"特殊枠","italic":false}',Lore:['{"text":"ここに特殊枠を追加します","italic":false}']}} 1
+execute if entity @s[tag=106_drop] run function project-c:jobaction/106/items/auxiliary/setup
 
+
+#execute if entity @s[tag=106_weapon5_replace] run function project-c:jobaction/106/items/weapon/05/set
+execute if entity @s[tag=106_weapon5_replace] run function project-c:jobaction/106/items/auxiliary/arrow/set
+
+tag @s[tag=106_weapon5_replace] remove 106_weapon5_replace
 #Tag削除
 tag @s[tag=106_page_setup] remove 106_page_setup
 

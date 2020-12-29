@@ -6,24 +6,38 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:shield",
+          "name": "minecraft:book",
           "functions": [
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "盾","italic": false,"color": "white"}
+                {"text": "魔導書[弐式]","italic": false,"color": "white"}
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"text": "一定量防御すると","italic": false,"color": "dark_purple"},
-                {"text": "5秒間使えなくなる","italic": false,"color": "dark_purple"}
+                {"text": "","italic": false},
+                {"translate": "item.modifiers.offhand","italic": false,"color": "gray"},
+                {"text": "スキル発動時、全スキルのクールタイムを1秒短縮する","italic": false,"color": "blue"},
+                [{"translate": "attribute.name.generic.max_health","italic": false,"color": "red"},{"text": " -4","italic": false,"color": "red"}]
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "name": "generic.max_health",
+                  "attribute": "generic.max_health",
+                  "operation": "addition",
+                  "amount": -4,
+                  "slot": "offhand"
+                }
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:61,Unbreakable:1b,106_support:2}"
+              "tag": "{HideFlags:63,106_support:2}"
             }
           ]
         }

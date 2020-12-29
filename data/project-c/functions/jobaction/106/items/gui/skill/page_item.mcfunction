@@ -27,6 +27,9 @@ execute unless score #106_SSP counter matches 1.. if score #106_skill counter ma
 execute unless score #106_SSP counter matches 1.. if score #106_skill counter matches 9 run loot replace block 0 0 0 container.9 loot project-c:neac/106/skill/09
 execute unless score #106_SSP counter matches 1.. if score #106_skill counter matches 10 run loot replace block 0 0 0 container.9 loot project-c:neac/106/skill/10
 execute unless score #106_SSP counter matches 1.. if score #106_skill counter matches 11 run loot replace block 0 0 0 container.9 loot project-c:neac/106/skill/11
+execute unless score #106_SSP counter matches 1.. if score #106_skill counter matches 12 run loot replace block 0 0 0 container.9 loot project-c:neac/106/skill/12
+execute unless score #106_SSP counter matches 1.. if score #106_skill counter matches 13 run loot replace block 0 0 0 container.9 loot project-c:neac/106/skill/13
+execute unless score #106_SSP counter matches 1.. if score #106_skill counter matches 14 run loot replace block 0 0 0 container.9 loot project-c:neac/106/skill/14
 
 execute run data modify block 0 0 0 Items[{Slot:9b}].tag.106_gui_item set value 1
 execute run data remove block 0 0 0 Items[{Slot:9b}].tag.106_skill

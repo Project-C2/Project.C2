@@ -1,5 +1,5 @@
 
-loot replace block 0 0 0 container.0 loot project-c:neac/106/support/03
+loot replace block 0 0 0 container.0 loot project-c:neac/106/support/04
 
 execute unless predicate project-c:neac/sprint run data modify block 0 0 0 Items[0].tag.106_mode set value walk
 execute unless predicate project-c:neac/sprint run data modify block 0 0 0 Items[0].tag.AttributeModifiers[0].Amount set value 0.50

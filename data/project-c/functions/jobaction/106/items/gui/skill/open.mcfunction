@@ -5,4 +5,4 @@ execute if score @s counter_7 matches 3 run function project-c:jobaction/106/ite
 execute if score @s counter_7 matches 4 run function project-c:jobaction/106/items/gui/skill/page4
 
 execute if score @s counter_7 matches 2.. run function project-c:jobaction/106/items/gui/skill/page_back
-execute if score @s counter_7 matches ..2 run function project-c:jobaction/106/items/gui/skill/page_next
+execute if score @s counter_7 matches ..3 run function project-c:jobaction/106/items/gui/skill/page_next

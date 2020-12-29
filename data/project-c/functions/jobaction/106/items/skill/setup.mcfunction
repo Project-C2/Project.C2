@@ -93,3 +93,24 @@ execute if score @s[tag=!SkillDelay2] counter_4 matches 11 if score @s CT2 match
 execute if score @s[tag=!SkillDelay3] counter_5 matches 11 if score @s CT3 matches 1200.. run tag @s add using
 execute if entity @s[tag=using] run function project-c:jobaction/106/items/skill/11/set
 tag @s[tag=using] remove using
+
+
+execute if score @s counter_3 matches 12 if score @s CT1 matches 1200.. run tag @s add using
+execute if score @s counter_4 matches 12 if score @s CT2 matches 1200.. run tag @s add using
+execute if score @s counter_5 matches 12 if score @s CT3 matches 1200.. run tag @s add using
+execute if entity @s[tag=using] run function project-c:jobaction/106/items/skill/12/set
+tag @s[tag=using] remove using
+
+
+execute if score @s counter_3 matches 13 if score @s CT1 matches 1200.. run tag @s add using
+execute if score @s counter_4 matches 13 if score @s CT2 matches 1200.. run tag @s add using
+execute if score @s counter_5 matches 13 if score @s CT3 matches 1200.. run tag @s add using
+execute if entity @s[tag=using] run function project-c:jobaction/106/items/skill/13/set
+tag @s[tag=using] remove using
+
+
+execute if score @s counter_3 matches 14 if score @s CT1 matches 1200.. run tag @s add using
+execute if score @s counter_4 matches 14 if score @s CT2 matches 1200.. run tag @s add using
+execute if score @s counter_5 matches 14 if score @s CT3 matches 1200.. run tag @s add using
+execute if entity @s[tag=using] run function project-c:jobaction/106/items/skill/14/set
+tag @s[tag=using] remove using
