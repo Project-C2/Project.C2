@@ -34,8 +34,8 @@ function project-c:jobaction/106/xp_bar/execution
 
 
 #ダッシュトリガーチェンジ
-execute if entity @s[scores={counter_2=3},nbt={Inventory:[{tag:{106_mode:walk}}]},predicate=project-c:neac/sprint,gamemode=!spectator] run function project-c:jobaction/106/items/support/04
-execute if entity @s[scores={counter_2=3},nbt={Inventory:[{tag:{106_mode:sprint}}]},predicate=!project-c:neac/sprint,gamemode=!spectator] run function project-c:jobaction/106/items/support/04
+execute if entity @s[scores={counter_2=4},nbt={Inventory:[{tag:{106_mode:walk}}]},predicate=project-c:neac/sprint,gamemode=!spectator] run function project-c:jobaction/106/items/support/04
+execute if entity @s[scores={counter_2=4},nbt={Inventory:[{tag:{106_mode:sprint}}]},predicate=!project-c:neac/sprint,gamemode=!spectator] run function project-c:jobaction/106/items/support/04
 
 
 execute if entity @s[scores={CT1=1200..},tag=!106_drop,tag=!SkillReady1] run tag @s add 106_skill_setup
