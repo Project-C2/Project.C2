@@ -16,7 +16,7 @@ execute if entity @s[scores={counter_3=1}] run playsound minecraft:entity.ender_
 execute if entity @s[scores={counter_3=1..}] run scoreboard players remove @s counter_3 1
 
 
-execute if entity @s[scores={counter_5=1..}] run effect give @s jump_boost 1 127 true
+execute if entity @s[scores={counter_5=1..}] run effect give @s jump_boost 1 128 true
 execute if entity @s[scores={counter_5=1..}] run effect give @s slowness 1 7 true
 execute if entity @s[scores={counter_5=1..}] run particle minecraft:dust 1 0 1 1 ~ ~1 ~ 0.5 0.5 0.5 1 1
 execute if entity @s[scores={counter_5=1..165}] run scoreboard players add @s counter_5 1
