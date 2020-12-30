@@ -1,5 +1,5 @@
-scoreboard players set @s CT1 600
-replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 30
+scoreboard players set @s CT1 800
+replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 20
 scoreboard players set @s counter_1 1
 effect give @s glowing 2 0
 effect give @s slowness 2 1

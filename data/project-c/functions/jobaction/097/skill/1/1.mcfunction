@@ -12,5 +12,5 @@ execute if score @s counter_1 matches ..10 run playsound minecraft:item.crossbow
 execute if score @s counter_1 matches ..10 run effect give @s glowing 2 0
 execute if score @s counter_1 matches ..10 run effect give @s slowness 2 1
 
-execute if score @s counter_1 matches 30.. run tp @s @s
+execute if score @s counter_1 matches 35.. run tp @s @s
 execute if score @s counter_1 matches 50.. run function project-c:jobaction/097/skill/1/2

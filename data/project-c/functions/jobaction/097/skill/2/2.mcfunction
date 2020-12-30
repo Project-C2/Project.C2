@@ -1,4 +1,4 @@
-scoreboard players set @s CT2 800
+scoreboard players set @s CT2 900
 scoreboard players reset @s counter_5
 clear @s spectral_arrow
 
