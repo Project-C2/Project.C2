@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fire_coral",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "ドッカン花火","color":"red","bold":true,"underlined":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:40","italic":false,"color":"green"}],
+                  {"text":"一定時間、ドッカン花火を召喚し続け、","italic":false,"color":"white"},
+                  {"text":"周囲の敵に自動的に攻撃する。","italic":false,"color":"white"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{wnkmSkillCT:400,104skillID:3b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

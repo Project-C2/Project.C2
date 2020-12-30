@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:weeping_vines",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "爆裂花火","color":"red","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {"text":"「爆弾投げ」または「ポンポン爆弾」が命中時、","italic":false,"color":"gold"},
+                  {"text":"50%の確率で爆裂花火を獲得する。","italic":false,"color":"gold"},
+                  "",
+                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:1","italic":false,"color":"green"}],
+                  {"text":"爆裂花火を獲得している時のみ発動可。","italic":false,"color":"white"},
+                  {"text":"短い詠唱の後、前方に爆炎を発射して攻撃する。","italic":false,"color":"white"}
+                ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{wnkmSkillCT:1180,104skillID:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
