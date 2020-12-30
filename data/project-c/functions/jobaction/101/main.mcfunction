@@ -46,7 +46,7 @@ execute if entity @s[scores={subcounter=1}] run effect clear @s levitation
 scoreboard players remove @s[scores={subcounter=1..}] subcounter 1
 execute if entity @s[scores={subcounter=1..}] run execute as @e[tag=101back,distance=..5,limit=1] at @s run teleport @a[scores={jobNumber=101,subcounter=1..},limit=1,sort=nearest] ~ ~ ~
 
-execute if entity @e[tag=101fire,type=arrow] run summon minecraft:area_effect_cloud ^ ^ ^ {Radius:1f,Duration:100,Tags:["101bulleteffect"]}
+execute if entity @e[tag=101fire,type=arrow] run summon minecraft:area_effect_cloud ^ ^ ^ {Radius:0.1f,Duration:1,Tags:["101bulleteffect"]}
 
 execute if entity @e[type=area_effect_cloud,tag=101bulleteffect] store result entity @e[type=area_effect_cloud,tag=101bulleteffect,limit=1] Rotation[0] float 0.01 run scoreboard players get @e[tag=101fire,limit=1] counter_1
 execute if entity @e[type=area_effect_cloud,tag=101bulleteffect] store result entity @e[type=area_effect_cloud,tag=101bulleteffect,limit=1] Rotation[1] float 0.01 run scoreboard players get @e[tag=101fire,limit=1] counter_2
@@ -59,6 +59,7 @@ execute if entity @e[type=area_effect_cloud,tag=101bulleteffect] run execute pos
 
 kill @e[type=area_effect_cloud,tag=101bulleteffect]
 
-
+execute if entity @e[type=arrow,tag=101fire,limit=1] run scoreboard players add @e[type=arrow,tag=101fire,limit=1] counter 1
+kill @e[type=arrow,tag=101fire,limit=1,scores={counter=41..}]
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
 scoreboard players reset @s[scores={sneak=1..}] sneak
