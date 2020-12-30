@@ -1,14 +1,14 @@
 execute positioned 0.0 0.0 0.0 run summon minecraft:armor_stand ^ ^ ^10 {Tags:["101dummy"],Marker:1b,Invisible:1b,NoGravity:1b}
-execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:1d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b,crit:1b}
+execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["101fire","101fireF","Arrow"],damage:1d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b}
 
 tag @e[type=arrow,distance=..5,limit=1,sort=nearest,tag=!SniperArrow] add SniperArrowC
 tag @e[type=arrow,distance=..5,limit=1,sort=nearest,tag=!SniperArrow] add SniperArrow
 execute if entity @e[tag=SniperArrowC,limit=1] as @e[tag=SniperArrowC] store result score @s counter_2 run data get entity @s damage
 
-execute if entity @s[scores={counter_4=0..5}] run execute if entity @e[tag=SniperArrowC,limit=1] as @e[tag=SniperArrowC] store result entity @s damage float 0.2 run scoreboard players get @s counter_2
-execute if entity @s[scores={counter_4=6..7}] run execute if entity @e[tag=SniperArrowC,limit=1] as @e[tag=SniperArrowC] store result entity @s damage float 0.51 run scoreboard players get @s counter_2
-execute if entity @s[scores={counter_4=8..10}] run execute if entity @e[tag=SniperArrowC,limit=1] as @e[tag=SniperArrowC] store result entity @s damage float 0.4 run scoreboard players get @s counter_2
-execute if entity @s[scores={counter_4=11..}] run execute if entity @e[tag=SniperArrowC,limit=1] as @e[tag=SniperArrowC] store result entity @s damage float 0.2 run scoreboard players get @s counter_2
+execute if entity @s[scores={counter_4=0..5}] run execute if entity @e[tag=SniperArrowC,limit=1] as @e[tag=SniperArrowC] store result entity @s damage float 0.4 run scoreboard players get @s counter_2
+execute if entity @s[scores={counter_4=6..7}] run execute if entity @e[tag=SniperArrowC,limit=1] as @e[tag=SniperArrowC] store result entity @s damage float 0.8 run scoreboard players get @s counter_2
+execute if entity @s[scores={counter_4=8..10}] run execute if entity @e[tag=SniperArrowC,limit=1] as @e[tag=SniperArrowC] store result entity @s damage float 0.6 run scoreboard players get @s counter_2
+execute if entity @s[scores={counter_4=11..}] run execute if entity @e[tag=SniperArrowC,limit=1] as @e[tag=SniperArrowC] store result entity @s damage float 0.4 run scoreboard players get @s counter_2
 execute if entity @e[tag=SniperArrowC,limit=1] as @e[tag=SniperArrowC] run tag @s remove SniperArrowC
 
 execute at @a[scores={relic=6}] if entity @e[type=arrow,distance=..5,limit=1,sort=nearest,tag=!DoubleArrow] run tag @e[type=arrow,distance=..5,limit=1,sort=nearest,tag=!DoubleArrow] add DoubleArrowC
