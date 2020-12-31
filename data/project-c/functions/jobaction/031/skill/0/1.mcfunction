@@ -9,7 +9,8 @@ execute if entity @s[team=BlueDummy] if entity @e[tag=Battle,team=!Blue,distance
 execute if entity @s[team=RedDummy] if entity @e[tag=Battle,team=!Red,distance=..3.0] as @e[tag=Battle,team=!Red,distance=..3.0] at @s anchored eyes positioned ^ ^ ^ if entity @e[tag=031-shot,team=RedDummy,distance=..1.2] run tag @s add 031-0hasHit
 execute if entity @s[team=BlueDummy] if entity @e[tag=Battle,team=!Blue,distance=..3.0] as @e[tag=Battle,team=!Blue,distance=..3.0] at @s anchored eyes positioned ^ ^ ^ if entity @e[tag=031-shot,team=BlueDummy,distance=..1.2] run tag @s add 031-0hasHit
 execute if entity @e[tag=031-0hasHit,limit=1] at @a[scores={jobNumber=31}] if score @a[scores={jobNumber=31},distance=..0.01,limit=1,sort=nearest] playerNumber = @s playerNumber as @a[tag=031-0hasHit] run scoreboard players operation @a[scores={jobNumber=31},distance=..0.01,limit=1,sort=nearest] counter_3 = @s playerNumber
-execute if entity @e[tag=031-0hasHit,limit=1] run tag @a[tag=031-0hasHit] add 031-0tDeath
+execute if entity @e[tag=031-0hasHit,limit=1] run summon area_effect_cloud ~ ~ ~ {Tags:["031blood_blade_check"],Duration:4,Age:2}
+execute if entity @e[tag=031-0hasHit,limit=1] run scoreboard players operation @e[tag=031blood_blade_check,limit=1,sort=nearest] playerNumber = @a[tag=031-0hasHit,limit=1] playerNumber
 execute if entity @e[tag=031-0hasHit,limit=1] run effect give @e[tag=031-0hasHit] instant_damage 1 0
 execute if entity @e[tag=031-0hasHit,limit=1] run scoreboard players set @s counter 100
 execute if entity @e[tag=031-0hasHit,limit=1] run particle dust 0.8 0 0 4 ^ ^ ^2 2.2 2.2 2.2 1 100 normal @a

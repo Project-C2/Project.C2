@@ -3,7 +3,7 @@ scoreboard players set @s drop 0
 clear @s iron_axe{display:{Name:"{\"text\":\"銀の斧\",\"color\":\"gray\",\"underlined\":true,\"italic\":false}"}}
 execute at @e[tag=026-water] if score @e[tag=026-water,distance=..0.01,sort=nearest,limit=1] playerNumber = @s playerNumber run clear @s golden_axe{display:{Name:"{\"text\":\"金の斧\",\"color\":\"gold\",\"underlined\":true,\"italic\":false}"}}
 
-replaceitem entity @s hotbar.0 minecraft:stone_axe{display:{Name:"\"古びた斧\"",Lore:["{\"text\":\"§5木こりの仕事用の斧。\"}","{\"text\":\"§d年季が入っている。\"}","{\"text\":\"\"}","{\"text\":\"§7利き手に持ったとき:\"}","{\"text\":\"§2 攻撃速度 0.8\"}","{\"text\":\"§2 攻撃力 8\"}"]},AttributeModifiers:[{Name:"HaruEditor",UUID:[I;-1637044811,653807115,-1588747286,325763061],Operation:0,AttributeName:"generic.attack_damage",Amount:7d,Slot:"mainhand"},{Name:"HaruEditor",UUID:[I;-1637044811,653807115,-1588747286,325763061],Operation:0,AttributeName:"generic.attack_speed",Amount:-3.2d,Slot:"mainhand"}],Enchantments:[{id:efficiency,lvl:2s}],Unbreakable:1b,HideFlags:2}
+function project-c:jobaction/026/replaceitem/0
 
 playsound minecraft:item.trident.thunder player @a ~ ~ ~ 1.5 2
 particle minecraft:explosion ~ ~ ~ 0.8 0.8 0.8 1 80 normal @a
