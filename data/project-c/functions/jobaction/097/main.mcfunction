@@ -41,3 +41,4 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"Sarbacane",
 
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
 scoreboard players set @s[scores={sneak=1..}] sneak 0
+        
