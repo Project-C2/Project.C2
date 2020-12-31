@@ -5,7 +5,9 @@ data modify entity @e[type=item,tag=this,limit=1,sort=nearest] Item.tag.Attribut
 execute store result entity @e[tag=104_2vector,limit=1] Pos[2] double 0.00025 run data get entity @e[type=item,nbt={Item:{tag:{wnkm.randomItem:1b}}},limit=1] Item.tag.AttributeModifiers[{Name:"wnkm.rand.2"}].Amount 20
 kill @e[type=item,nbt={Item:{tag:{wnkm.randomItem:1b}}}]
 data modify entity @e[type=item,tag=this,limit=1,sort=nearest] Motion set from entity @e[tag=104_2vector,limit=1] Pos
+execute store result entity @e[type=item,tag=this,limit=1,sort=nearest] Age short 1 run scoreboard players operation @e[type=item,tag=this,limit=1,sort=nearest] counter_1 = @s counter_1
+scoreboard players add @e[type=item,tag=this,limit=1,sort=nearest] counter_1 278
 tag @e[type=item,tag=this,limit=1,sort=nearest] remove this
 
 scoreboard players remove @s counter_1 1
-execute if score @s counter_1 matches 1.. run function project-c:jobaction/104/skill/2/spread_mine
+execute if score @s counter_1 matches 5701.. run function project-c:jobaction/104/skill/2/spread_mine

@@ -9,5 +9,9 @@ summon creeper ~ -10 ~ {Tags:["104"],Fuse:0,ExplosionRadius:2,CustomName:'{"text
 tp @e[tag=104,limit=1] ~ ~ ~
 tag @e[tag=104] remove 104
 
+execute if entity @s[tag=104powerbombR] if entity @e[tag=Battle,team=!Red,distance=..3.1,limit=1] run tag @s add 104flag
+execute if entity @s[tag=104powerbombB] if entity @e[tag=Battle,team=!Blue,distance=..3.1,limit=1] run tag @s add 104flag
+execute if entity @s[tag=104flag] run function project-c:jobaction/104/skill/3/charge
+
 
 scoreboard players set @s counter 50

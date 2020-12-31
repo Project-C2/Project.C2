@@ -19,8 +19,8 @@ particle flame ^ ^ ^1.8 0 0 0 0 1 normal @a
 particle flame ^ ^ ^1.9 0 0 0 0 1 normal @a
 particle flame ^ ^ ^2.0 0 0 0 0 1 normal @a
 tp @s ^ ^ ^2.0
-execute if score @s counter matches ..49 unless block ^ ^ ^-0.5 #project-c:wancomatter/like_air positioned ^ ^ ^-1.0 run function project-c:jobaction/104/skill/1/3
-execute if score @s counter matches ..49 unless block ^ ^ ^ #project-c:wancomatter/like_air positioned ^ ^ ^-0.5 run function project-c:jobaction/104/skill/1/3
-execute if score @s counter matches ..49 unless block ^ ^ ^0.5 #project-c:wancomatter/like_air positioned ^ ^ ^0.0 run function project-c:jobaction/104/skill/1/3
-execute if score @s counter matches ..49 unless block ^ ^ ^1.0 #project-c:wancomatter/like_air positioned ^ ^ ^0.5 run function project-c:jobaction/104/skill/1/3
-execute if score @s counter matches 50.. run kill @s
+execute if score @s counter matches ..29 unless block ^ ^ ^-0.5 #project-c:wancomatter/like_air positioned ^ ^ ^-1.0 run function project-c:jobaction/104/skill/1/3
+execute if score @s counter matches ..29 unless block ^ ^ ^ #project-c:wancomatter/like_air positioned ^ ^ ^-0.5 run function project-c:jobaction/104/skill/1/3
+execute if score @s counter matches ..29 unless block ^ ^ ^0.5 #project-c:wancomatter/like_air positioned ^ ^ ^0.0 run function project-c:jobaction/104/skill/1/3
+execute if score @s counter matches ..29 unless block ^ ^ ^1.0 #project-c:wancomatter/like_air positioned ^ ^ ^0.5 run function project-c:jobaction/104/skill/1/3
+execute if score @s counter matches 30.. run kill @s

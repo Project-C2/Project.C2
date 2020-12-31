@@ -13,4 +13,6 @@ setblock -122 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{
 setblock -122 61 -60 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=104mine,limit=1] as @e[tag=104mine] at @s run function project-c:jobaction/104/skill/2/8",TrackOutput:0b} destroy
 setblock -122 61 -59 minecraft:chain_command_block[facing=south,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=104mine,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
 setblock -122 61 -58 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute if entity @e[tag=104mineStand,limit=1] as @e[tag=104mineStand] at @s run function project-c:jobaction/104/skill/2/9",TrackOutput:0b} destroy
+setblock -120 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=104dokkan,limit=1] as @e[tag=104dokkan] at @s run function project-c:jobaction/104/skill/3/3",TrackOutput:0b} destroy
+setblock -120 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=104dokkan,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
 
