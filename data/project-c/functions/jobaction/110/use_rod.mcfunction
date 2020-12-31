@@ -18,6 +18,7 @@ execute if score #110- counter_1 matches 8 run function project-c:jobaction/110/
 execute if score #110- counter_1 matches 13 run function project-c:jobaction/110/skills/13/0
 execute if score #110- counter_1 matches 14 run function project-c:jobaction/110/skills/14/0
 execute if score #110- counter_1 matches 15 run function project-c:jobaction/110/skills/15/0
+execute if score #110- counter_1 matches 16 run function project-c:jobaction/110/skills/16/0
 execute if score #110- counter_1 matches 17 if entity @s[tag=110denkou_addable] run function project-c:jobaction/110/skills/17/2
 execute if score #110- counter_1 matches 17 unless entity @s[tag=110denkou_addable] run function project-c:jobaction/110/skills/17/0
 execute if score #110- counter_1 matches 18 run function project-c:jobaction/110/skills/18/0

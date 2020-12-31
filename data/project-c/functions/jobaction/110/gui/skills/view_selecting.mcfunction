@@ -17,6 +17,7 @@ execute if score #110- counter_5 matches 12 if score @s counter_8 matches 4 run 
 execute if score #110- counter_5 matches 13 if score @s counter_8 matches 5 run data modify block 0 0 0 Items[{Slot:4b}].tag.110selecting set value 1b
 execute if score #110- counter_5 matches 14 if score @s counter_8 matches 5 run data modify block 0 0 0 Items[{Slot:5b}].tag.110selecting set value 1b
 execute if score #110- counter_5 matches 15 if score @s counter_8 matches 5 run data modify block 0 0 0 Items[{Slot:6b}].tag.110selecting set value 1b
+execute if score #110- counter_5 matches 16 if score @s counter_8 matches 5 run data modify block 0 0 0 Items[{Slot:7b}].tag.110selecting set value 1b
 
 execute if data block 0 0 0 {Items:[{tag:{110selecting:1b}}]} run loot replace block 0 0 0 container.10 loot project-c:wnkm/110/selecting_insert
 execute if data block 0 0 0 {Items:[{tag:{110selecting:1b}}]} run data modify block 0 0 0 Items[{tag:{110selecting:1b}}].tag.Enchantments set value [{}]

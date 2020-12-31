@@ -9,7 +9,7 @@ scoreboard players operation #110-recoil subcounter *= #110-recoil counter_1
 scoreboard players operation #110-recoil counter += #110-recoil subcounter
 execute as @e[tag=this] positioned as @s run tp @s ~ ~ ~ ~ ~
 #110-recoil counter_2を設定する事で水平面のリコイル, counterを設定する事で水平面ランダムリコイル
-execute if score #110-recoil counter_2 matches 1.. run function wancomatter:skills/recoil-xz
+execute if score #110-recoil counter_2 matches 1.. run function project-c:jobaction/110/operation/recoil-xz
 execute store result entity @e[tag=this,limit=1] Rotation[1] float 0.0001 run scoreboard players get #110-recoil counter
 execute rotated as @e[tag=this] run tp @s ~ ~ ~ ~ ~
 kill @e[tag=this]

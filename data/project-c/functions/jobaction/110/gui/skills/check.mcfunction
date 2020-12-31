@@ -2,7 +2,7 @@
 execute unless data entity @s Inventory[{Slot:31b}].tag{110GUISlot:4b} run scoreboard players set #110- counter_2 5
 execute unless data entity @s Inventory[{Slot:32b}].tag{110GUISlot:5b} run scoreboard players set #110- counter_2 6
 execute unless score @s counter_8 matches 2 unless data entity @s Inventory[{Slot:33b}].tag{110GUISlot:6b} run scoreboard players set #110- counter_2 7
-execute unless score @s counter_8 matches 2 unless score @s counter_8 matches 5 unless data entity @s Inventory[{Slot:34b}].tag{110GUISlot:7b} run scoreboard players set #110- counter_2 8
+execute unless score @s counter_8 matches 2 unless data entity @s Inventory[{Slot:34b}].tag{110GUISlot:7b} run scoreboard players set #110- counter_2 8
 
 execute if score @s counter_8 matches 2.. unless data entity @s Inventory[{Slot:30b}].tag{110GUISlot:3b} run scoreboard players set #110- counter_2 10
 execute if score @s counter_8 matches ..4 unless data entity @s Inventory[{Slot:35b}].tag{110GUISlot:8b} run scoreboard players set #110- counter_2 11
@@ -31,6 +31,7 @@ execute if score #110- counter_2 matches 8 if score @s counter_8 matches 4 run s
 execute if score #110- counter_2 matches 5 if score @s counter_8 matches 5 run scoreboard players set #110- counter_3 13
 execute if score #110- counter_2 matches 6 if score @s counter_8 matches 5 run scoreboard players set #110- counter_3 14
 execute if score #110- counter_2 matches 7 if score @s counter_8 matches 5 run scoreboard players set #110- counter_3 15
+execute if score #110- counter_2 matches 8 if score @s counter_8 matches 5 run scoreboard players set #110- counter_3 16
 
 
 execute if score #110- counter_3 matches 1.. unless score @s counter_2 = #110- counter_3 unless score @s counter_3 = #110- counter_3 unless score @s counter_4 = #110- counter_3 run tag @s add 110

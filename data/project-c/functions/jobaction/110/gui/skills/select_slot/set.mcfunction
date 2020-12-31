@@ -16,9 +16,11 @@ execute if score #110- counter_3 matches 12 run loot replace block 0 0 0 contain
 execute if score #110- counter_3 matches 13 run loot replace block 0 0 0 container.0 loot project-c:wnkm/110/skills/p4/13
 execute if score #110- counter_3 matches 14 run loot replace block 0 0 0 container.0 loot project-c:wnkm/110/skills/p4/14
 execute if score #110- counter_3 matches 15 run loot replace block 0 0 0 container.0 loot project-c:wnkm/110/skills/p4/15
-
+execute if score #110- counter_3 matches 16 run loot replace block 0 0 0 container.0 loot project-c:wnkm/110/skills/p4/16
 execute if score #110- counter_3 matches 17 run loot replace block 0 0 0 container.0 loot project-c:wnkm/110/skills/p5/17
 execute if score #110- counter_3 matches 18 run loot replace block 0 0 0 container.0 loot project-c:wnkm/110/skills/p5/18
+execute if score #110- counter_3 matches 19 run loot replace block 0 0 0 container.0 loot project-c:wnkm/110/skills/p5/19
+execute if score #110- counter_3 matches 20 run loot replace block 0 0 0 container.0 loot project-c:wnkm/110/skills/p5/20
 
 data modify block 0 0 0 Items[{tag:{110skill:1b}}].tag.110GUI set value 1b
 data remove block 0 0 0 Items[{tag:{110skill:1b}}].tag.110skillSlot
