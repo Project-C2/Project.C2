@@ -1,4 +1,4 @@
-scoreboard players set @s CT2 1140
+scoreboard players set @s CT2 1190
 scoreboard players reset @s drop
 
 #三角関数周りの測定
