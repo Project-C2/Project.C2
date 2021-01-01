@@ -1,0 +1,1 @@
+replaceitem entity @s hotbar.0 minecraft:stick{Ramen:0b,display:{Name:'{"text":"割り箸","italic":"false"}'}}
