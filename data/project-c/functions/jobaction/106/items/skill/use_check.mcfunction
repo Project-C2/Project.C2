@@ -51,6 +51,11 @@ execute if entity @s[scores={useFungusStick=1..}] if score #106_has_skill counte
 #セルフ展開
 execute if entity @s[nbt={SelectedItem:{tag:{106_auxiliary_skill:4b}}},scores={useCarrotStick=1..}] run function project-c:jobaction/106/items/skill/04/auxiliary/use
 
+execute if entity @s[scores={counter_3=4}] run tag @s add 106_skill4_checker----
+execute if entity @s[scores={counter_4=4}] run tag @s add 106_skill4_checker----
+execute if entity @s[scores={counter_5=4}] run tag @s add 106_skill4_checker----
+execute if entity @s[tag=106_skill4_checker----] run function project-c:jobaction/106/items/skill/04/replace/check
+execute if entity @s[tag=106_skill4_checker----] run tag @s remove 106_skill4_checker----
 
 
 
@@ -106,6 +111,11 @@ execute if entity @s[scores={sneak=1..}] if score #106_has_skill counter matches
 #起爆装置
 execute if entity @s[nbt={SelectedItem:{tag:{106_auxiliary_skill:11b}}},scores={useCarrotStick=1..}] run function project-c:jobaction/106/items/skill/11/auxiliary/use
 
+execute if entity @s[scores={counter_3=11}] run tag @s add 106_skill11_checker----
+execute if entity @s[scores={counter_4=11}] run tag @s add 106_skill11_checker----
+execute if entity @s[scores={counter_5=11}] run tag @s add 106_skill11_checker----
+execute if entity @s[tag=106_skill11_checker----] run function project-c:jobaction/106/items/skill/11/replace/check
+execute if entity @s[tag=106_skill11_checker----] run tag @s remove 106_skill11_checker----
 
 
 

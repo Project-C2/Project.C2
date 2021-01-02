@@ -1,5 +1,5 @@
 #リロード処理
-scoreboard players set #106_max_arrow counter 7
+scoreboard players set #106_max_arrow counter 9
 execute if entity @s[scores={counter_2=6}] run scoreboard players add #106_max_arrow counter 3
 scoreboard players operation @s stockcounter = #106_max_arrow counter
 scoreboard players reset #106_max_arrow

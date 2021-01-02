@@ -6,5 +6,6 @@ execute if entity @s[tag=106_weapon5_change] run data remove block 0 0 0 Items[{
 execute if entity @s[tag=106_weapon5_change] run tag @s remove 106_weapon5_change
 execute unless score #106_slot_pos counter = #106_slot_pos counter run scoreboard players set #106_ac counter 1
 execute if score #106_ac counter matches 1 run scoreboard players set #106_slot_pos counter 0
+execute if score #106_ac counter matches 1 if entity @s[nbt={Inventory:[{Slot:-106b,tag:{106_weapon:5}}]}] run scoreboard players set #106_slot_pos counter -106
 execute if score #106_ac counter matches 1 run function project-c:jobaction/106/items/loot_items
 execute if score #106_ac counter matches 1 run scoreboard players reset #106_ac

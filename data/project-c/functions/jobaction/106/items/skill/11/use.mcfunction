@@ -23,7 +23,7 @@ execute as @e[tag=number_operation,limit=1] store result score @s counter_2 run 
 scoreboard players operation @e[tag=number_operation,limit=1] playerNumber = @s playerNumber
 execute if entity @s[team=Red] run team join Red @e[tag=number_operation,limit=1]
 execute if entity @s[team=Blue] run team join Blue @e[tag=number_operation,limit=1]
-data merge entity @e[tag=number_operation,limit=1] {Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+data merge entity @e[tag=number_operation,limit=1] {Health:20f,Attributes:[{Name:"generic.max_health",Base:20}]}
 tag @e[tag=number_operation,limit=1] remove number_operation
 
 

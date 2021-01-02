@@ -11,7 +11,7 @@ execute unless score @s counter_7 matches 1.. run scoreboard players set @s coun
 scoreboard players set @s counter_8 0
 scoreboard players set @s counter_9 0
 scoreboard players set @s shieldBlock 0
-scoreboard players set @s stockcounter 7
+scoreboard players set @s stockcounter 9
 scoreboard players set @s sdi_d_alifetime 1
 tag @s add 106_change_setup
 function project-c:jobaction/106/change_keep
