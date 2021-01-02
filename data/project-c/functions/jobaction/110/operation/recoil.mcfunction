@@ -1,8 +1,8 @@
 execute positioned 0.0 0.0 0.0 rotated 0 ~ run summon armor_stand ^ ^ ^1 {Tags:["this"],Marker:1b,Invisible:1b,NoGravity:1b}
 
 execute store result score #110-recoil counter run data get entity @s Rotation[1] 10000
-#execute if score @s sneak matches 1.. run scoreboard players operation #110-recoil counter_1 *= #2 counter
-#execute if score @s sneak matches 1.. run scoreboard players operation #110-recoil counter_1 /= #5 counter
+execute if predicate project-c:wnkm_job/is_sneaking run scoreboard players operation #110-recoil counter_1 *= #2 counter
+execute if predicate project-c:wnkm_job/is_sneaking run scoreboard players operation #110-recoil counter_1 /= #5 counter
 execute store result score #110-recoil subcounter run data get entity @e[tag=this,limit=1] Pos[2] 100
 execute if score #110-recoil subcounter matches ..-1 run scoreboard players operation #110-recoil subcounter *= #-1 counter
 scoreboard players operation #110-recoil subcounter *= #110-recoil counter_1

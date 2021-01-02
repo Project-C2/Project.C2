@@ -16,6 +16,8 @@
 
 scoreboard players reset @s usedSkill
 
+execute if score @s relic matches 2 if score @s counter matches 2.. run scoreboard players remove @s counter 1
+
 execute if score @s counter matches 1.. run function project-c:jobaction/110/ct_weapon
 execute unless score @s counter_5 matches 1..3 run function project-c:jobaction/110/first
 execute if entity @s[scores={drop2=1..},tag=!110drop] run function project-c:jobaction/110/skills/13/check
@@ -52,7 +54,7 @@ execute if entity @s[scores={useLinger=1..}] run function project-c:jobaction/11
 execute if entity @s[scores={sneak=1..,counter=1..}] run scoreboard players reset @s sneak
 execute if entity @s[scores={sneak=1..},predicate=!project-c:wnkm_job/is_sneaking] if entity @s[nbt={SelectedItem:{tag:{110weapon:1b,110weaponID:5b}}}] run function project-c:jobaction/110/weapons/5/p_cancel
 execute if entity @s[scores={sneak=1..},predicate=!project-c:wnkm_job/is_sneaking] run scoreboard players reset @s sneak
-execute if entity @s[tag=110aqua_gun_using,predicate=project-c:wnkm_job/is_sneaking] run function project-c:jobaction/110/skills/16/check
+execute if entity @s[tag=110aqua_gun_using] if data entity @s {SelectedItem:{tag:{110skillID:16b}}} run function project-c:jobaction/110/skills/16/check
 execute if entity @s[scores={crossbow=1..}] run scoreboard players set @s crossbow 0
 execute if entity @s[scores={bow=1..}] run scoreboard players set @s bow 0
 execute if entity @s[scores={useTrident=1..}] run scoreboard players reset @s useTrident

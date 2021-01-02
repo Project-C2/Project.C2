@@ -6,25 +6,25 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:warped_roots",
+          "name": "minecraft:blaze_powder",
           "functions": [
             {
                 "function": "minecraft:set_name",
-                "name": {"text": "水牢","color":"blue","bold":true,"italic":false}
+                "name": {"text": "陽炎","color":"red","italic":false}
             },
             {
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / CT:15","italic":false,"color":"aqua"},
-                  {"text":"詠唱後、前方に水玉を発射する。","italic":false,"color":"white"},
-                  {"text":"命中した敵は少しの間だけ水牢に行動阻害を受ける。","italic":false,"color":"white"},
+                  {"text":"右クリック / CT:9","italic":false,"color":"aqua"},
+                  {"text":"周囲に炎を撒いて攻撃すると同時に、","italic":false,"color":"white"},
+                  {"text":"一瞬だけ透明化して移動速度が大幅上昇。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
                 ]
             },
             {
                 "function": "minecraft:set_nbt",
-                "tag": "{110skillID:18b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4,Enchantments:[{}]}"
+                "tag": "{110skillID:20b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
             }
           ]
         }

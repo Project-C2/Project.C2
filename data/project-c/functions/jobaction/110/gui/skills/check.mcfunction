@@ -11,12 +11,12 @@ execute if score @s counter_8 matches ..4 unless data entity @s Inventory[{Slot:
 execute if score #110- counter_2 matches 5 if score @s counter_8 matches 1 run scoreboard players set #110- counter_3 1
 execute if score #110- counter_2 matches 6 if score @s counter_8 matches 1 run scoreboard players set #110- counter_3 2
 execute if score #110- counter_2 matches 7 if score @s counter_8 matches 1 run scoreboard players set #110- counter_3 3
-execute if score #110- counter_2 matches 8 if score @s counter_8 matches 1 run scoreboard players set #110- counter_3 4
+execute if score #110- counter_2 matches 8 if score @s counter_8 matches 1 run scoreboard players set #110- counter_3 17
 
-execute if score #110- counter_2 matches 5 if score @s counter_8 matches 2 run scoreboard players set #110- counter_3 17
-execute if score #110- counter_2 matches 6 if score @s counter_8 matches 2 run scoreboard players set #110- counter_3 18
-#execute if score #110- counter_2 matches 7 if score @s counter_8 matches 2 run scoreboard players set #110- counter_3 19
-#execute if score #110- counter_2 matches 8 if score @s counter_8 matches 2 run scoreboard players set #110- counter_3 20
+execute if score #110- counter_2 matches 5 if score @s counter_8 matches 2 run scoreboard players set #110- counter_3 20
+execute if score #110- counter_2 matches 6 if score @s counter_8 matches 2 run scoreboard players set #110- counter_3 19
+execute if score #110- counter_2 matches 7 if score @s counter_8 matches 2 run scoreboard players set #110- counter_3 18
+execute if score #110- counter_2 matches 8 if score @s counter_8 matches 2 run scoreboard players set #110- counter_3 4
 
 execute if score #110- counter_2 matches 5 if score @s counter_8 matches 3 run scoreboard players set #110- counter_3 5
 execute if score #110- counter_2 matches 6 if score @s counter_8 matches 3 run scoreboard players set #110- counter_3 6

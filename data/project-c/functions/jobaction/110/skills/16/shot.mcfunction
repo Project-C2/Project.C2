@@ -11,8 +11,8 @@ execute if entity @s[team=Red] run team join RedDummy @e[tag=this,limit=1]
 execute if entity @s[team=Blue] run team join BlueDummy @e[tag=this,limit=1]
 execute if entity @s[scores={counter_9=3}] run tag @e[tag=this] add 110geometric
 tag @e[tag=this] remove this
-scoreboard players set #110-recoil counter_1 -168
-scoreboard players set #110-recoil counter_2 12
+scoreboard players set #110-recoil counter_1 -420
+scoreboard players set #110-recoil counter_2 30
 scoreboard players set #110-recoil counter_3 6
 function project-c:jobaction/110/operation/recoil
 

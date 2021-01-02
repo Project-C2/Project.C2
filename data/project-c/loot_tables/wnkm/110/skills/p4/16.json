@@ -17,7 +17,7 @@
                 "lore": [
                   {"text":"魔力を水弾に変換して発射する魔導兵器。","italic":false,"color":"white"},
                   {"text":"敵の防御を貫通して魔法ダメージを与える。","italic":false,"color":"white"},
-                  {"text":"スニーク+右クリックで発射可能。","italic":false,"color":"white"},
+                  {"text":"スニークでリコイルを軽減可能。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"},
                   {"text":"-reload- 装填時間:7.0s or 8.5s","italic":false,"color":"aqua"},
                   {"translate":"ドロップ(%s)キーを押すか残弾が0になると発動。","with":[{"keybind":"key.drop"}],"italic":false,"color":"white"},

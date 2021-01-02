@@ -6,7 +6,7 @@ execute if score #110-recoil counter_3 matches 1.. run kill @e[type=item,nbt={It
 execute if score #110-recoil counter_3 matches 1.. run scoreboard players operation #110-recoil counter_4 *= #110-recoil counter_3
 execute unless score #110-recoil counter_3 matches 1.. run scoreboard players set #110-recoil counter_4 1000
 scoreboard players operation #110-recoil counter_2 *= #110-recoil counter_4
-#execute if score @s sneak matches 1.. run scoreboard players operation #110-recoil subcounter *= #2 counter
-#execute if score @s sneak matches 1.. run scoreboard players operation #110-recoil subcounter /= #5 counter
+execute if predicate project-c:wnkm_job/is_sneaking run scoreboard players operation #110-recoil counter_2 *= #2 counter
+execute if predicate project-c:wnkm_job/is_sneaking run scoreboard players operation #110-recoil counter_2 /= #5 counter
 execute store result score #110-recoil counter_3 run data get entity @s Rotation[0] 10000
 execute store result entity @e[tag=this,limit=1] Rotation[0] float 0.0001 run scoreboard players operation #110-recoil counter_3 -= #110-recoil counter_2

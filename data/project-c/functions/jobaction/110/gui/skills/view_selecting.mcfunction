@@ -1,11 +1,11 @@
 execute if score #110- counter_5 matches 1 if score @s counter_8 matches 1 run data modify block 0 0 0 Items[{Slot:4b}].tag.110selecting set value 1b
 execute if score #110- counter_5 matches 2 if score @s counter_8 matches 1 run data modify block 0 0 0 Items[{Slot:5b}].tag.110selecting set value 1b
 execute if score #110- counter_5 matches 3 if score @s counter_8 matches 1 run data modify block 0 0 0 Items[{Slot:6b}].tag.110selecting set value 1b
-execute if score #110- counter_5 matches 4 if score @s counter_8 matches 1 run data modify block 0 0 0 Items[{Slot:7b}].tag.110selecting set value 1b
-execute if score #110- counter_5 matches 17 if score @s counter_8 matches 2 run data modify block 0 0 0 Items[{Slot:4b}].tag.110selecting set value 1b
-execute if score #110- counter_5 matches 18 if score @s counter_8 matches 2 run data modify block 0 0 0 Items[{Slot:5b}].tag.110selecting set value 1b
-#execute if score #110- counter_5 matches 3 if score @s counter_8 matches 2 run data modify block 0 0 0 Items[{Slot:6b}].tag.110selecting set value 1b
-#execute if score #110- counter_5 matches 4 if score @s counter_8 matches 2 run data modify block 0 0 0 Items[{Slot:7b}].tag.110selecting set value 1b
+execute if score #110- counter_5 matches 17 if score @s counter_8 matches 1 run data modify block 0 0 0 Items[{Slot:7b}].tag.110selecting set value 1b
+execute if score #110- counter_5 matches 20 if score @s counter_8 matches 2 run data modify block 0 0 0 Items[{Slot:4b}].tag.110selecting set value 1b
+execute if score #110- counter_5 matches 19 if score @s counter_8 matches 2 run data modify block 0 0 0 Items[{Slot:5b}].tag.110selecting set value 1b
+execute if score #110- counter_5 matches 18 if score @s counter_8 matches 2 run data modify block 0 0 0 Items[{Slot:6b}].tag.110selecting set value 1b
+execute if score #110- counter_5 matches 4 if score @s counter_8 matches 2 run data modify block 0 0 0 Items[{Slot:7b}].tag.110selecting set value 1b
 execute if score #110- counter_5 matches 5 if score @s counter_8 matches 3 run data modify block 0 0 0 Items[{Slot:4b}].tag.110selecting set value 1b
 execute if score #110- counter_5 matches 6 if score @s counter_8 matches 3 run data modify block 0 0 0 Items[{Slot:5b}].tag.110selecting set value 1b
 execute if score #110- counter_5 matches 7 if score @s counter_8 matches 3 run data modify block 0 0 0 Items[{Slot:6b}].tag.110selecting set value 1b
