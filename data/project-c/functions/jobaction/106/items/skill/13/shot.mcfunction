@@ -7,7 +7,7 @@ execute unless score @s counter_4 matches 0.. run scoreboard players set @s coun
 
 execute if score @s counter_3 matches 1 unless score @s counter_4 matches 6.. run scoreboard players add @s counter_4 1
 #execute if score @s[tag=106_perforate_bullet_no_1] counter_3 matches 1 run tellraw @a ["",{"score":{"name": "@s","objective": "counter_4"}},{"text":"            "},{"score":{"name": "@s","objective": "counter_1"}}]
-execute if score @s counter_3 matches 10.. run scoreboard players set @s counter_3 0
+execute if score @s counter_3 matches 12.. run scoreboard players set @s counter_3 0
 
 scoreboard players operation #team_number value = @s team_number
 
