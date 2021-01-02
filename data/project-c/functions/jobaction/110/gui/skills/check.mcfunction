@@ -1,8 +1,8 @@
 #GUIクリック検知
 execute unless data entity @s Inventory[{Slot:31b}].tag{110GUISlot:4b} run scoreboard players set #110- counter_2 5
 execute unless data entity @s Inventory[{Slot:32b}].tag{110GUISlot:5b} run scoreboard players set #110- counter_2 6
-execute unless score @s counter_8 matches 2 unless data entity @s Inventory[{Slot:33b}].tag{110GUISlot:6b} run scoreboard players set #110- counter_2 7
-execute unless score @s counter_8 matches 2 unless data entity @s Inventory[{Slot:34b}].tag{110GUISlot:7b} run scoreboard players set #110- counter_2 8
+execute unless data entity @s Inventory[{Slot:33b}].tag{110GUISlot:6b} run scoreboard players set #110- counter_2 7
+execute unless data entity @s Inventory[{Slot:34b}].tag{110GUISlot:7b} run scoreboard players set #110- counter_2 8
 
 execute if score @s counter_8 matches 2.. unless data entity @s Inventory[{Slot:30b}].tag{110GUISlot:3b} run scoreboard players set #110- counter_2 10
 execute if score @s counter_8 matches ..4 unless data entity @s Inventory[{Slot:35b}].tag{110GUISlot:8b} run scoreboard players set #110- counter_2 11
