@@ -4,9 +4,18 @@
 # counter_1 -> RamenHeadRotation
 # counter_2 -> ラーメンの持ち主のPlayerNumber
 # counter_3 -> ラーメンの攻撃力
+# StoredRamenRotation counter
+# RamenRotation counter
+# BladerRotation counter
+# CurrentRamenRotation counter
+# RamenTurnRotation counter 
+# SushiAttackDamage counter
+# BladerAttackDamage counter
+
+
 tag @s add MovingRamen
 execute as @a if score @s playerNumber = @e[tag=MovingRamen,limit=1] counter_2 run tag @s add DarkSushiBlader
-
+execute unless block ^ ^ ^-0.5 #project-c:wancomatter/like_air if block ^ ^1 ^-0.5 #project-c:wancomatter/like_air run function project-c:jobaction/114/skill/0/schedule_loop/4
 
 tp @s ~ ~ ~ facing entity @a[tag=DarkSushiBlader,limit=1] eyes
 execute unless entity @s[tag=Inverted] rotated as @s rotated ~180 0 run tp @s ~ ~ ~ ~ ~
@@ -20,7 +29,7 @@ scoreboard players operation #RamenRotation counter -= #BladerRotation counter
 
 
 # ラーメンが曲がる処理
-execute unless score #RamenRotation counter matches -3..3 run function project-c:jobaction/113/skill/0/schedule_loop/2
+execute unless score #RamenRotation counter matches -3..3 run function project-c:jobaction/114/skill/0/schedule_loop/2
 
 
 scoreboard players operation #CurrentRamenRotation counter = #StoredRamenRotation counter
@@ -28,7 +37,7 @@ scoreboard players operation #CurrentRamenRotation counter += #RamenTurnRotation
 execute store result entity @s Rotation[0] float 0.0001 run scoreboard players get #CurrentRamenRotation counter
 
 scoreboard players set #RamenTurnRotation counter 0
-execute rotated as @s run function project-c:jobaction/113/skill/0/schedule_loop/1
+execute rotated as @s run function project-c:jobaction/114/skill/0/schedule_loop/1
 
 
 scoreboard players add @s counter_1 40
@@ -36,12 +45,13 @@ execute store result entity @s Pose.Head[1] float 1 run scoreboard players get @
 execute if score @s counter_1 matches 360.. run scoreboard players set @s counter_1 0
 
 # ダメージ判定
-execute if entity @s[team=Red] if entity @e[team=Blue,distance=..2,nbt={HurtTime:0s}] run function project-c:jobaction/113/skill/0/schedule_loop/3
-execute if entity @s[team=Blue] if entity @e[team=Red,distance=..2,nbt={HurtTime:0s}] run function project-c:jobaction/113/skill/0/schedule_loop/3
+execute if entity @s[team=RedDummy] if entity @e[team=Blue,distance=..2,nbt={HurtTime:0s}] run function project-c:jobaction/114/skill/0/schedule_loop/3
+execute if entity @s[team=BlueDummy] if entity @e[team=Red,distance=..2,nbt={HurtTime:0s}] run function project-c:jobaction/114/skill/0/schedule_loop/3
 
 
 tag @a[tag=DarkSushiBlader] remove DarkSushiBlader
 tag @s remove MovingRamen
+
 
 
 ###演出
