@@ -28,5 +28,5 @@ execute if entity @s[scores={counter=41..}] run teleport @s ^ ^ ^1.5
 
 
 scoreboard players add @s counter 1
-kill @s[scores={counter=60..}]
+kill @s[scores={counter=51..}]
 tag @s remove 112-2G
