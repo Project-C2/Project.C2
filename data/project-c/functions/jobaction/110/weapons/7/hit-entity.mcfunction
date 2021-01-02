@@ -1,6 +1,6 @@
 data merge entity @s {Marker:1b}
 execute as @e[tag=now] at @s at @e[tag=dagger-hit,limit=1,sort=nearest] run summon area_effect_cloud ~ ~0.7 ~ {Particle:"minecraft:crit",Duration:5,Age:4,WaitTime:1,Radius:1f,Effects:[{Id:11b,Amplifier:0b,Duration:2,ShowParticles:0b,ShowIcon:0b}]}
-execute as @e[tag=now] at @s rotated as @s rotated ~ 0 positioned as @e[tag=dagger-hit,limit=1,sort=nearest] positioned ^ ^ ^-2.5 run summon trident ~ ~0.7 ~ {life:1200s,damage:2.0d,Motion:[0.0d,0.0d,0.0d],Tags:["this","110trident_blood_dagger"],SoundEvent:"minecraft:ui.toast.out"}
+execute as @e[tag=now] at @s rotated as @s rotated ~ 0 positioned as @e[tag=dagger-hit,limit=1,sort=nearest] positioned ^ ^ ^-1.5 run summon trident ~ ~1 ~ {life:1200s,damage:2.0d,Motion:[0.0d,0.0d,0.0d],Tags:["this","110trident_blood_dagger"],SoundEvent:"minecraft:ui.toast.out"}
 execute as @a[tag=110_dagger_owner] if score @s playerNumber = @e[tag=now,limit=1] playerNumber run tag @s add 110dummy
 data modify entity @e[tag=this,limit=1] Owner set from entity @a[tag=110dummy,limit=1] UUID
 tag @a[tag=110dummy] remove 110dummy

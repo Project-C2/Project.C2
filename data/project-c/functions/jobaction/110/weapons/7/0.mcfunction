@@ -7,10 +7,11 @@ kill @e[tag=this]
 
 #pickup周りの処理用のスコア計算
 execute anchored eyes positioned ^ ^ ^ run summon armor_stand ~ ~-1.0 ~ {Tags:["this","110throweddagger","110dagger"],Invisible:1b,HandItems:[{id:"minecraft:netherite_sword",Count:1b,tag:{Enchantments:[{}]}},{}],Pose:{RightArm:[-90f,0f,0f]},DisabledSlots:2039583}
-scoreboard players set @e[tag=this,limit=1] counter_6 400
+scoreboard players set @e[tag=this,limit=1] counter_6 300
 execute if entity @s[scores={counter_9=4}] run scoreboard players operation @e[tag=this,limit=1] counter_6 *= #4 counter
 execute if entity @s[scores={counter_9=4}] run scoreboard players operation @e[tag=this,limit=1] counter_6 /= #5 counter
 execute if entity @s[scores={relic=2}] run scoreboard players operation @e[tag=this,limit=1] counter_6 /= #2 counter
+scoreboard players add @e[tag=this,limit=1] counter_6 95
 
 #コスト支払い
 scoreboard players set @s counter 300300

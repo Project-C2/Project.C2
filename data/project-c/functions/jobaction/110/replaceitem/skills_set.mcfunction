@@ -16,12 +16,12 @@ execute if score #110- counter matches 12 run loot insert 0 0 0 loot project-c:w
 execute if score #110- counter matches 13 run loot insert 0 0 0 loot project-c:wnkm/110/skills/p4/13
 execute if score #110- counter matches 14 run loot insert 0 0 0 loot project-c:wnkm/110/skills/p4/14
 execute if score #110- counter matches 15 run loot insert 0 0 0 loot project-c:wnkm/110/skills/p4/15
-
+execute if score #110- counter matches 16 run loot insert 0 0 0 loot project-c:wnkm/110/skills/p4/16
 
 execute if score #110- counter matches 17 run loot insert 0 0 0 loot project-c:wnkm/110/skills/p5/17
 execute if score #110- counter matches 18 run loot insert 0 0 0 loot project-c:wnkm/110/skills/p5/18
-
-
+execute if score #110- counter matches 19 run loot insert 0 0 0 loot project-c:wnkm/110/skills/p5/19
+execute if score #110- counter matches 20 run loot insert 0 0 0 loot project-c:wnkm/110/skills/p5/20
 
 
 execute store result block 0 0 0 Items[{tag:{110skillSlot:-1b}}].tag.110skillSlot byte 1 run scoreboard players get #110- subcounter
