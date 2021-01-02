@@ -3,4 +3,4 @@ give @p oak_sign{display:{Name:'"114-闇寿司"'},BlockEntityTag:{Text1:'{"text"
 
 #動作必須コマブロ群
 #スキル系処理用
-setblock -18 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute as @a[scores={jobNumber=114}] at @s run function project-c:jobaction/114/main",TrackOutput:0b,auto:1b} destroy
+setblock -6 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute as @a[scores={jobNumber=114}] at @s run function project-c:jobaction/114/main",TrackOutput:0b,auto:1b} destroy
