@@ -23,6 +23,8 @@
 
 scoreboard players reset @s usedSkill
 execute if entity @s[scores={counter_1=..0}] run function project-c:jobaction/106/change
+execute if entity @s[tag=106_respawn--gui_setup] run function project-c:jobaction/106/items/gui/set
+execute if entity @s[tag=106_respawn--gui_setup] run tag @s remove 106_respawn--gui_setup
 
 execute if entity @s[advancements={project-c:neac/inventory_changed=true}] run function project-c:jobaction/106/inventory_changed
 

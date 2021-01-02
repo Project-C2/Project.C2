@@ -3,9 +3,6 @@ tag @s remove 106_skill_setup
 execute if entity @s[tag=SkillDelay1] run tag @s remove SkillDelay1
 execute if entity @s[tag=SkillDelay2] run tag @s remove SkillDelay2
 execute if entity @s[tag=SkillDelay3] run tag @s remove SkillDelay3
-function project-c:jobaction/106/items/skill/04/auxiliary/check
-function project-c:jobaction/106/items/skill/11/auxiliary/check
-
 
 execute if entity @s[tag=!SkillReady1] at @s if score @s CT1 matches 1200.. run playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 execute if entity @s[tag=!SkillReady1] at @s if score @s CT1 matches 1200.. run tag @s add SkillReady1
