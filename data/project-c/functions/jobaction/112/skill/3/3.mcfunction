@@ -26,6 +26,7 @@ execute if entity @s[scores={counter=41}] run playsound minecraft:entity.wither.
 execute if entity @s[scores={counter=41}] run particle minecraft:explosion ~ ~1 ~ 0.5 0.5 0.5 0.25 1 force @a
 execute if entity @s[scores={counter=41..}] run teleport @s ^ ^ ^1.5
 
+execute unless block ^ ^ ^1 air run kill @s
 
 scoreboard players add @s counter 1
 kill @s[scores={counter=51..}]
