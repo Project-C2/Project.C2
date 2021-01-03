@@ -14,7 +14,7 @@
 scoreboard players reset @s usedSkill
 execute if entity @s[scores={relic=2,sneak=0}] if entity @s[scores={CT3=1201..1520}] run scoreboard players add @s CT3 1
 execute if entity @s[scores={relic=2,sneak=1..}] if entity @s[scores={CT3=1201..1520}] run scoreboard players add @s CT3 4
-execute if entity @s[scores={sneak=1..,stockcounter=..1}] run particle soul_fire_flame ~ ~1 ~ 1 1 1 0.1 4 normal @a
+execute if entity @s[scores={sneak=1..,stockcounter=..1},gamemode=!spectator] run particle soul_fire_flame ~ ~1 ~ 1 1 1 0.1 4 normal @a
 execute if entity @s[scores={sneak=1..,stockcounter=..1}] run scoreboard players add @s CT3 3
 execute if score @s counter_6 matches 1.. run scoreboard players remove @s counter_6 1
 
