@@ -14,7 +14,6 @@ scoreboard players operation @e[tag=035-first,limit=1] playerNumber = @s playerN
 scoreboard players set @e[tag=035-first] subcounter 9
 
 
-
 data merge block 47 2 -71 {auto:1b}
 tag @e[tag=035-first] remove 035-first
 tag @s remove SkillReady1
