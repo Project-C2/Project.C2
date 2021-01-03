@@ -25,7 +25,7 @@ execute if entity @s[tag=!106_go_tp] if score @s counter matches 40.. if entity 
 execute if entity @s[tag=106_go] run tag @s add 106_go_tp
 execute if entity @s[tag=106_go] at @s run function project-c:jobaction/106/items/skill/13/particle
 
-execute if entity @s[tag=106_go_tp] run function project-c:jobaction/106/items/skill/13/shot
+execute if entity @s[tag=106_go_tp] at @s run function project-c:jobaction/106/items/skill/13/shot
 
 execute if entity @s[tag=106_go] run tag @s remove 106_go
 execute as @e[tag=106_perforate_d-target] run tag @s remove 106_perforate_d-target
