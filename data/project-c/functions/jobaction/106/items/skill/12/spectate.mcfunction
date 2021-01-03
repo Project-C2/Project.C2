@@ -12,7 +12,7 @@ execute if entity @e[tag=hit,limit=1] if entity @s[tag=skill2_use] run scoreboar
 execute if entity @e[tag=hit,limit=1] if entity @s[tag=skill3_use] run scoreboard players operation #106_CT counter *= #106_player counter
 
 execute if entity @e[tag=hit,limit=1] as @e[tag=hit] at @s anchored eyes run particle minecraft:firework ~ ~1 ~ 0 0 0 0.2 20 force
-execute if entity @e[tag=hit,limit=1] as @e[tag=hit] run effect give @s minecraft:glowing 60 200
+execute if entity @e[tag=hit,limit=1] as @e[tag=hit] run effect give @s minecraft:glowing 20 200
 
 execute if entity @e[tag=hit,limit=1] as @e[tag=hit] run tag @s remove hit
 scoreboard players reset #106_player
