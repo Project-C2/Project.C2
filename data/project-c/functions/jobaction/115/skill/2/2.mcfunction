@@ -20,8 +20,8 @@ scoreboard players add @s counter_6 1
 #HPコスト
 execute store result score #115- counter run data get entity @s Health 100
 scoreboard players operation #115- subcounter = @s counter_6
-scoreboard players operation #115- subcounter *= #100 counter
-scoreboard players operation #115- subcounter *= #2 counter
+scoreboard players operation #115- subcounter *= #10 counter
+scoreboard players operation #115- subcounter *= #15 counter
 execute unless score #115- counter > #115- subcounter run effect clear @s resistance
 execute unless score #115- counter > #115- subcounter run effect give @s instant_damage 1 0
 execute if score #115- counter > #115- subcounter run scoreboard players operation @s ScoreToHealth = #115- counter
@@ -43,8 +43,8 @@ playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 1.5 0.5
 scoreboard players remove @s counter_8 1
 scoreboard players reset @s counter_7
 
-scoreboard players set @s CT1 1200
-scoreboard players set @s CT2 1160
+scoreboard players add @s CT1 20
+scoreboard players set @s CT2 1180
 tag @s remove SkillReady1
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2

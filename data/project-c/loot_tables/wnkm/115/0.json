@@ -13,12 +13,6 @@
                 "name": {"text": "無銘の斧","color":"white","italic":false}
             },
             {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {"text":"狩猟に使う普遍的な斧。","italic":false,"color":"gold"}
-              ]
-            },          
-            {
               "function": "minecraft:set_attributes",
               "modifiers": [
                   {
@@ -39,7 +33,7 @@
             },
             {
                 "function": "minecraft:set_nbt",
-                "tag": "{115skillID:0b,Unbreakable:1b}"
+                "tag": "{115skillID:0b,Unbreakable:1b,HideFlags:1}"
             }
           ]
         }

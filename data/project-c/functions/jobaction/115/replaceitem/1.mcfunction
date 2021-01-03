@@ -8,10 +8,11 @@ execute if score @s counter_6 matches 3 run data modify block 0 0 0 Items[0].id 
 execute if score @s counter_1 matches 1 run data modify block 0 0 0 Items[0].tag.Enchantments append value {id:"minecraft:sharpness",lvl:3s}
 execute if score @s counter_2 matches 1 run data modify block 0 0 0 Items[0].tag.Enchantments append value {id:"minecraft:fire_aspect",lvl:1s}
 execute if score @s counter_3 matches 1 run data modify block 0 0 0 Items[0].tag.Enchantments append value {id:"minecraft:quick_charge",lvl:1s}
-execute if score @s counter_4 matches 1 run data modify block 0 0 0 Items[0].tag.Enchantments append value {id:"minecraft:115stan",lvl:1s}
-execute if score @s counter_4 matches 1 run data modify block 0 0 0 Items[0].tag.display.Lore prepend value '{"text":"衝撃","color":"gray","italic":false}'
-execute if score @s counter_5 matches 1 run data modify block 0 0 0 Items[0].tag.Enchantments append value {id:"minecraft:115double",lvl:1s}
-execute if score @s counter_5 matches 1 run data modify block 0 0 0 Items[0].tag.display.Lore prepend value '{"text":"連射","color":"gray","italic":false}'
+execute if score @s counter_1 matches 1 run data modify block 0 0 0 Items[0].tag.display.Lore append value '[{"text":"Sharp","color":"gray","italic":false},{"text":"-","color":"dark_gray"},{"text":"ダメージ増加 Ⅲ","color":"gray","italic":false}]'
+execute if score @s counter_2 matches 1 run data modify block 0 0 0 Items[0].tag.display.Lore append value '[{"text":"Flame","color":"red","italic":false},{"text":"-","color":"dark_gray"},{"text":"火属性 Ⅰ","color":"gray","italic":false}]'
+execute if score @s counter_3 matches 1 run data modify block 0 0 0 Items[0].tag.display.Lore append value '[{"text":"Quick","color":"green","italic":false},{"text":"-","color":"dark_gray"},{"text":"斧を射出時CT回復、命中時CT回復","color":"gray","italic":false}]'
+execute if score @s counter_4 matches 1 run data modify block 0 0 0 Items[0].tag.display.Lore append value '[{"text":"Stan","color":"gold","italic":false},{"text":"-","color":"dark_gray"},{"text":"命中した敵にスタン","color":"gray","italic":false}]'
+execute if score @s counter_5 matches 1 run data modify block 0 0 0 Items[0].tag.display.Lore append value '[{"text":"Double","color":"aqua","italic":false},{"text":"-","color":"dark_gray"},{"text":"ダメージ後追撃または斧を2本射出","color":"gray","italic":false}]'
 
 
 loot replace entity @s container.0 1 mine 0 0 0 minecraft:air{inv_copy:1b}

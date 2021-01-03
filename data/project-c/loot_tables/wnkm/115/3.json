@@ -15,14 +15,14 @@
             {
                 "function": "minecraft:set_lore",
                 "lore": [
-                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:30","italic":false,"color":"green"}],
+                  [{"text":"スニーク","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:30","italic":false,"color":"green"}],
                   {"text":"ダイヤの鍬を3wayに投擲し、","italic":false,"color":"white"},
                   {"text":"自分について考え直させる。","italic":false,"color":"white"}
                 ]
             },
             {
                 "function": "minecraft:set_nbt",
-                "tag": "{104skillID:3b,Enchantments:[{}],AttributeModifiers:[{}]}"
+                "tag": "{115skillID:3b,Enchantments:[{}],AttributeModifiers:[{}]}"
             }
           ]
         }
