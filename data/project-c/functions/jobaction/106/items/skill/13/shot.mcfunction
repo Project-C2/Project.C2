@@ -7,7 +7,7 @@ execute unless score @s counter_4 matches 0.. run scoreboard players set @s coun
 
 execute if score @s counter_3 matches 1 unless score @s counter_4 matches 6.. run scoreboard players add @s counter_4 1
 #execute if score @s[tag=106_perforate_bullet_no_1] counter_3 matches 1 run tellraw @a ["",{"score":{"name": "@s","objective": "counter_4"}},{"text":"            "},{"score":{"name": "@s","objective": "counter_1"}}]
-execute if score @s counter_3 matches 12.. run scoreboard players set @s counter_3 0
+execute if score @s counter_3 matches 10.. run scoreboard players set @s counter_3 0
 
 scoreboard players operation #team_number value = @s team_number
 
@@ -40,8 +40,8 @@ execute if entity @s[tag=kill] run teleport @s ~ ~-512 ~
 execute if entity @s[tag=kill] run kill @s
 
 
-execute unless entity @s[tag=kill] if score @s counter_2 matches ..4 at @s run function project-c:jobaction/106/items/skill/13/shot
-execute unless entity @s[tag=kill] unless score @s counter_2 matches ..4 run playsound minecraft:entity.silverfish.ambient master @a ~ ~ ~ 1 1.4
-execute unless entity @s[tag=kill] unless score @s counter_2 matches ..4 run playsound minecraft:entity.silverfish.ambient master @a ~ ~ ~ 1 1.4
-execute unless entity @s[tag=kill] unless score @s counter_2 matches ..4 run playsound minecraft:entity.silverfish.ambient master @a ~ ~ ~ 1 1.4
-execute unless entity @s[tag=kill] unless score @s counter_2 matches ..4 run scoreboard players set @s counter_2 0
+execute unless entity @s[tag=kill] if score @s counter_2 matches ..2 at @s run function project-c:jobaction/106/items/skill/13/shot
+execute unless entity @s[tag=kill] unless score @s counter_2 matches ..2 run playsound minecraft:entity.silverfish.ambient master @a ~ ~ ~ 1 1.4
+execute unless entity @s[tag=kill] unless score @s counter_2 matches ..2 run playsound minecraft:entity.silverfish.ambient master @a ~ ~ ~ 1 1.4
+execute unless entity @s[tag=kill] unless score @s counter_2 matches ..2 run playsound minecraft:entity.silverfish.ambient master @a ~ ~ ~ 1 1.4
+execute unless entity @s[tag=kill] unless score @s counter_2 matches ..2 run scoreboard players set @s counter_2 0
