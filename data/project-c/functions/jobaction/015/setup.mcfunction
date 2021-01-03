@@ -3,3 +3,6 @@ give @p oak_sign{BlockEntityTag:{Text1:'{"text":"*********-15-*********","clickE
 
 # コマブロ設置
 setblock 57 2 -122 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute as @e[scores={jobNumber=15}] at @s run function project-c:jobaction/015/main",TrackOutput:0b} destroy
+
+
+setblock 63 2 -122 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[scores={jobNumber=15},limit=1] as @e[scores={jobNumber=15,counter=1..}] at @s run function project-c:jobaction/015/skill/3/1",TrackOutput:0b} destroy
