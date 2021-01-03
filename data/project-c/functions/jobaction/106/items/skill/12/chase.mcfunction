@@ -7,7 +7,7 @@ execute if entity @e[team=Red] anchored eyes positioned ^ ^ ^ as @e[team=!Red,ta
 execute if entity @e[team=Blue] anchored eyes positioned ^ ^ ^ as @e[team=!Blue,tag=Battle,distance=..7,tag=!this,nbt={HurtTime:10s}] run tag @s add hit
 
 execute if entity @e[tag=hit,limit=1] as @e[tag=hit] at @s anchored eyes run particle minecraft:firework ~ ~1 ~ 0 0 0 0.2 20 force
-execute if entity @e[tag=hit,limit=1] as @e[tag=hit] run effect give @s minecraft:glowing 60 200
+execute if entity @e[tag=hit,limit=1] as @e[tag=hit] run effect give @s minecraft:glowing 20 200
 
 scoreboard players reset #hurt_number value
 execute if entity @e[tag=hit,limit=1] as @e[tag=hit] run tag @s remove hit
