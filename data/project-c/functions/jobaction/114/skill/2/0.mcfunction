@@ -1,28 +1,24 @@
-scoreboard players set @s CT2 1000
+scoreboard players set @s CT2 600
+scoreboard players set @s counter_1 200
 
-particle end_rod ~ ~1 ~ 0 0 0 0.8 50
-playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 2 1
-playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 2 2
-playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 2 0.5
+tag @s add 114-StatusStealer
+execute if entity @s[team=Red] as @e[team=!Red,distance=..6,limit=1,nbt={HurtTime:10s},tag=Battle] run tag @s add 114-StatusStealTarget
+execute if entity @s[team=Blue] as @e[team=!Blue,distance=..6,limit=1,nbt={HurtTime:10s},tag=Battle] run tag @s add 114-StatusStealTarget
 
 
-summon minecraft:armor_stand ~ ~ ~ {Tags:[judgementCount],Invisible:1}
-scoreboard players set @s counter 0
+execute if entity @e[tag=114-StatusStealTarget,limit=1] as @e[tag=114-StatusStealTarget] at @s run function project-c:jobaction/114/skill/2/1
+execute as @e[tag=Ramen] if score @s counter_2 = @a[tag=RamenSummoner,limit=1] playerNumber run tag @s add MyRamen
 
-#発動対象がプレイヤーの場合
-execute store success score @s counter if entity @s[team=Red] run scoreboard players operation @e[sort=nearest,limit=1,tag=judgementCount] playerNumber = @a[team=Blue,distance=..5,limit=1,nbt={HurtTime:10s},tag=Battle] playerNumber
-execute store success score @s counter if entity @s[team=Blue] run scoreboard players operation @e[sort=nearest,limit=1,tag=judgementCount] playerNumber = @a[team=Red,distance=..5,limit=1,nbt={HurtTime:10s},tag=Battle] playerNumber
+scoreboard players operation @e[tag=MyRamen] counter_4 = @s counter_2
+scoreboard players set @e[tag=MyRamen] counter 6
 
-#発動対象がプレイヤー以外の場合
-execute if entity @s[scores={counter=0}] run scoreboard players set @e[sort=nearest,limit=1,tag=judgementCount] playerNumber 0
-execute if entity @s[scores={counter=0},team=Red] run tag @e[team=Blue,distance=..5,limit=1,nbt={HurtTime:10s},type=!player,tag=Battle] add judgementCountTarget
-execute if entity @s[scores={counter=0},team=Blue] run tag @e[team=Red,distance=..5,limit=1,nbt={HurtTime:10s},type=!player,tag=Battle] add judgementCountTarget
+tag @e[tag=MyRamen] remove MyRamen
+execute if entity @e[tag=114-StatusStealTarget,limit=1] as @e[tag=114-StatusStealTarget] run tag @s remove 114-StatusStealTarget
 
-#ループ処理開始
-execute if entity @s[scores={counter=1}] run data merge block -107 2 -122 {auto:1b}
-execute if entity @s[scores={counter=0}] run data merge block -107 2 -120 {auto:1b}
-
-scoreboard players reset @s counter
-
+tag @s remove 114-StatusStealer
+#playsound minecraft:entity.zombie_villager.cure master @a ~ ~ ~ 1 1.8
+playsound minecraft:entity.drowned.death master @a ~ ~ ~ 1 0
+playsound minecraft:entity.drowned.death master @a ~ ~ ~ 1 0
+playsound minecraft:entity.drowned.death master @a ~ ~ ~ 1 0
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2
