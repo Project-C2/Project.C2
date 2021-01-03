@@ -12,13 +12,9 @@ execute as @e[tag=Ramen] if score @s counter_2 = @a[tag=RamenSummoner,limit=1] p
 scoreboard players operation @e[tag=MyRamen] counter_4 = @s counter_2
 scoreboard players set @e[tag=MyRamen] counter 6
 
-tag @e[tag=MyRamen] remove MyRamen
-execute if entity @e[tag=114-StatusStealTarget,limit=1] as @e[tag=114-StatusStealTarget] run tag @s remove 114-StatusStealTarget
 
+execute if entity @e[tag=114-StatusStealTarget,limit=1] as @e[tag=114-StatusStealTarget] run tag @s remove 114-StatusStealTarget
+tag @e[tag=MyRamen] remove MyRamen
 tag @s remove 114-StatusStealer
-#playsound minecraft:entity.zombie_villager.cure master @a ~ ~ ~ 1 1.8
-playsound minecraft:entity.drowned.death master @a ~ ~ ~ 1 0
-playsound minecraft:entity.drowned.death master @a ~ ~ ~ 1 0
-playsound minecraft:entity.drowned.death master @a ~ ~ ~ 1 0
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2
