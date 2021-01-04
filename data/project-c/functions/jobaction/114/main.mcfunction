@@ -4,6 +4,7 @@
 #counter_1 -> 第二スキルの持続時間 
 #counter_2 -> 第二スキルの攻撃力上昇量
 #counter_3 -> 第一スキルの持続時間
+#counter_4 -> 第一スキルの追加入力でのCT増加量
 
 scoreboard players reset @s usedSkill
 
@@ -16,8 +17,8 @@ execute if entity @s[nbt={SelectedItem:{tag:{Ramen:1b}}},scores={useCarrotStick=
 execute if entity @s[nbt={SelectedItem:{tag:{Ramen:0b}}},scores={useCarrotStick=1..,counter=..0}] unless score @s sneak matches 1.. run function project-c:jobaction/114/skill/0/reverse_noodle_motion
 execute if entity @s[nbt={SelectedItem:{tag:{Ramen:0b}}},scores={useCarrotStick=1..,sneak=1..,counter=..0}] run function project-c:jobaction/114/skill/0/kill_noodle
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ダークハンバーグ展開","italic":false}'}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/114/skill/1/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ダークハンバーグ発射","italic":false}'}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/114/skill/1/1
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'[{"text":"ダークハンバーグ","italic":false,"color":"dark_purple"},{"text":"展開","italic":false,"color":"white"}]'}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/114/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'[{"text":"ダークハンバーグ","italic":false,"color":"dark_purple"},{"text":"発射","italic":false,"color":"white"}]'}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/114/skill/1/1
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'[{"text":"ステータス","italic":false,"bold":true,"color":"dark_red"},{"text":"の握り","italic":false,"bold":false,"color":"white"}]'}}}},scores={CT2=1200..,damageDealt=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/114/skill/2/0
 

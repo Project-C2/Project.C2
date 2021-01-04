@@ -13,6 +13,7 @@ execute if entity @s[team=Blue] run team join BlueDummy @e[tag=114-LaunchHamburg
 
 execute as @e[tag=114-LaunchHamburg,limit=1] positioned as @s rotated as @a[tag=DarkSushiBlader,limit=1] run tp @s ~ ~ ~ ~ ~
 
+scoreboard players add @s counter_4 60
 execute unless entity @e[tag=114-MyHamburg,tag=!114-Launched,limit=1] run function project-c:jobaction/114/skill/1/2
 
 
