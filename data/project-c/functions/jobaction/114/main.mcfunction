@@ -17,7 +17,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{Ramen:0b}}},scores={useCarrotStick=
 execute if entity @s[nbt={SelectedItem:{tag:{Ramen:0b}}},scores={useCarrotStick=1..,sneak=1..,counter=..0}] run function project-c:jobaction/114/skill/0/kill_noodle
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ダークハンバーグ展開","italic":false}'}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/114/skill/1/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ダークハンバーグ発射","italic":false}'}}}},scores={useCarrotStick=1..},gamemode=!spectator] run function project-c:jobaction/114/skill/1/1
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ダークハンバーグ発射","italic":false}'}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/114/skill/1/1
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'[{"text":"ステータス","italic":false,"bold":true,"color":"dark_red"},{"text":"の握り","italic":false,"bold":false,"color":"white"}]'}}}},scores={CT2=1200..,damageDealt=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/114/skill/2/0
 

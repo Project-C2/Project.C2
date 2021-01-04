@@ -12,7 +12,7 @@ tag @s add DarkSushiBlader
 execute as @e[tag=Initializing] at @s facing entity @a[tag=DarkSushiBlader,limit=1] feet run tp @s ~ ~ ~ ~ 0
 tag @s remove DarkSushiBlader
 
-function project-c:jobaction/114/replaceitem/1-1
+function project-c:jobaction/114/replaceitem/1
 schedule function project-c:jobaction/114/skill/1/schedule_loop/0 1t replace
 tag @e[tag=Initializing] remove Initializing
 
