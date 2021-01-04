@@ -46,8 +46,8 @@ execute store result entity @s Pose.Head[1] float 1 run scoreboard players get @
 execute if score @s counter_1 matches 360.. run scoreboard players set @s counter_1 0
 
 # ダメージ判定
-execute if entity @s[team=RedDummy] if entity @e[team=Blue,distance=..2,nbt={HurtTime:0s}] run function project-c:jobaction/114/skill/0/schedule_loop/3
-execute if entity @s[team=BlueDummy] if entity @e[team=Red,distance=..2,nbt={HurtTime:0s}] run function project-c:jobaction/114/skill/0/schedule_loop/3
+execute if entity @s[team=RedDummy] if entity @e[team=Blue,distance=..2,nbt={HurtTime:0s},tag=Battle] run function project-c:jobaction/114/skill/0/schedule_loop/3
+execute if entity @s[team=BlueDummy] if entity @e[team=Red,distance=..2,nbt={HurtTime:0s},tag=Battle] run function project-c:jobaction/114/skill/0/schedule_loop/3
 
 
 tag @a[tag=DarkSushiBlader] remove DarkSushiBlader

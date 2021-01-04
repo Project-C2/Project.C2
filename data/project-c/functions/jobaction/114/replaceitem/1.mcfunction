@@ -1,3 +1,2 @@
-replaceitem entity @s hotbar.1 minecraft:dark_oak_slab{display:{Name:'{"text":"ダークハンバーグ展開","italic":false}',Lore:["{\"text\":\"発動:スニーク\"}","{\"text\":\"周囲の敵をスタンさせる。\"}"]}} 1
-playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
-tag @s add SkillReady1
+execute unless score @s counter_3 matches 1.. run function project-c:jobaction/114/replaceitem/1-0
+execute if score @s counter_3 matches 1.. run function project-c:jobaction/114/replaceitem/1-1
