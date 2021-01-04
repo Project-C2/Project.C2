@@ -15,9 +15,9 @@
             {
                 "function": "minecraft:set_lore",
                 "lore": [
-                  [{"text":"武器を持ち弓を放つ","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:5","italic":false,"color":"green"}],
+                  [{"text":"斧を持ち弓を放つ","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:5","italic":false,"color":"green"}],
                   {"text":"弓で斧を撃ち出す。CT中は斧を使えない。","italic":false,"color":"white"},
-                  {"text":"命中時、CTを1秒短縮する。","italic":false,"color":"white"}
+                  {"text":"命中時、このスキルのCTを1秒回復する。","italic":false,"color":"white"}
                 ]
             },
             {

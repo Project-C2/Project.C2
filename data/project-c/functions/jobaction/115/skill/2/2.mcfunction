@@ -31,7 +31,7 @@ scoreboard players reset #115-
 #演出
 particle minecraft:enchant ~ ~ ~ 0.2 0.2 0.2 3 250 force @a
 particle minecraft:enchant ~ ~ ~ 0.2 0.2 0.2 3 1000 normal @a
-playsound minecraft:block.portal.trigger master @a ~ ~ ~ 1.5 2
+playsound minecraft:block.portal.trigger master @a ~ ~ ~ 0.5 2
 playsound minecraft:item.armor.equip_iron master @a ~ ~ ~ 1.5 1
 playsound minecraft:item.armor.equip_iron master @a ~ ~ ~ 1.5 1
 playsound minecraft:entity.evoker.prepare_attack master @a ~ ~ ~ 1.5 2

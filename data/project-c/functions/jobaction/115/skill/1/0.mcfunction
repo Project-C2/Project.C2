@@ -53,7 +53,7 @@ scoreboard players set @e[tag=first] subcounter -90
 tag @e[tag=first] remove first
 scoreboard players reset #115-
 
-playsound minecraft:entity.zombie.break_wooden_door master @a ~ ~ ~ 2 1
+playsound minecraft:entity.zombie.break_wooden_door master @a ~ ~ ~ 0.5 1
 playsound minecraft:entity.arrow.shoot master @a ~ ~ ~ 2 0.5
 playsound minecraft:entity.arrow.shoot master @a ~ ~ ~ 2 0.5
 particle minecraft:cloud ~ ~1 ~ 0 0 0 1 120 normal @a
