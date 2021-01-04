@@ -24,7 +24,7 @@ execute if entity @s[scores={counter_2=1..}] run function project-c:jobaction/11
 execute if entity @s[nbt={SelectedItem:{tag:{116skillID:1b}}},scores={CT1=1200..,useFishing=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/116/skill/1/0
 execute if entity @s[nbt={SelectedItem:{tag:{116skillID:0b}},OnGround:0b},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/116/skill/2/0
 execute if entity @s[nbt={SelectedItem:{tag:{116skillID:0b}}},scores={useFishing=1..},gamemode=!spectator] run function project-c:jobaction/116/skill/3/0
-execute if entity @s[nbt={HurtTime:9s},tag=!116knockback_resist] run function project-c:jobaction/116/skill/3/dmg
+execute if entity @s[nbt={HurtTime:9s},tag=!116knockback_resist,tag=!116knockback_resist2] run function project-c:jobaction/116/skill/3/dmg
 
 scoreboard players reset @s[scores={sneak=1..}] sneak
 scoreboard players reset @s[scores={useFishing=1..}] useFishing
