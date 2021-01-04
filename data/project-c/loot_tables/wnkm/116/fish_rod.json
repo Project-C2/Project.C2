@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "Grapple","color":"gold","italic":false}
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                  {
+                      "name": "generic.movementSpeed",
+                      "attribute": "generic.movement_speed",
+                      "operation": "multiply_base",
+                      "amount": 0.2,
+                      "slot": "offhand"
+                  }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{116skillID:-106b,Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
