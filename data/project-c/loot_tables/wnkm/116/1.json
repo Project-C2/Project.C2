@@ -15,7 +15,7 @@
             {
                 "function": "minecraft:set_lore",
                 "lore": [
-                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:6","italic":false,"color":"green"}],
+                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:6s","italic":false,"color":"green"}],
                   {"text":"糸を引いた際に周囲にダメージを与える。","italic":false,"color":"white"}
                 ]
             },

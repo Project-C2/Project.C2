@@ -15,7 +15,7 @@
             {
                 "function": "minecraft:set_lore",
                 "lore": [
-                  [{"text":"メイン武器を持ち空中でスニーク","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:10","italic":false,"color":"green"}],
+                  [{"text":"メイン武器を持ち空中でスニーク","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:10s","italic":false,"color":"green"}],
                   {"text":"落下ダメージを無効化しながら急降下する。","italic":false,"color":"white"},
                   {"text":"一定以上の高度から落下すると周囲にダメージを与える。","italic":false,"color":"white"}
                 ]

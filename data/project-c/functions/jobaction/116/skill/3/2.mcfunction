@@ -1,6 +1,11 @@
 scoreboard players operation #116- playerNumber = @s playerNumber
 execute as @a[scores={jobNumber=116},nbt={SelectedItem:{tag:{116skillID:0b}}}] if score @s playerNumber = #116- playerNumber at @s run tag @s add user
 
+#CT
+scoreboard players set @a[tag=user] CT3 1190
+tag @a[tag=user] remove SkillReady3
+scoreboard players set @a[tag=user] usedSkill 3
+
 #処理
 execute store result score @s counter_5 run data get entity @s Pos[1] 5
 execute store result score @s counter_6 run data get entity @a[tag=user,limit=1] Pos[1] 5
