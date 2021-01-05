@@ -1,2 +1,2 @@
-summon trident ~ ~3 ~ {Tags:["114-DarkHamburgTrident"],pickup:0b,player:1b,damage:2d,Motion:[0.0,-1.0,0.0],Silent:1b,CustomName:'{"text":"ダークハンバーグ","color":"dark_purple"}',Trident:{id:"minecraft:dark_oak_slab",Count:1b}}
-schedule function project-c:jobaction/114/skill/1/schedule_loop/6 1t replace
+summon minecraft:arrow ~ ~3 ~ {Tags:["114-DarkHamburgTrident"],pickup:0b,player:1b,damage:3d,crit:1b,Motion:[0.0,-1.0,0.0],Silent:1b,CustomName:'{"text":"ダークハンバーグ","color":"dark_purple"}'}
+#schedule function project-c:jobaction/114/skill/1/schedule_loop/6 1t replace
