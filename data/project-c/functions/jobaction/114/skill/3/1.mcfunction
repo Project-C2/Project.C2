@@ -12,3 +12,7 @@ tag @s remove DarkSushiBlader
 tag @e[tag=Initializing] remove Initializing
 
 schedule function project-c:jobaction/114/skill/3/schedule_loop/0 1t replace
+
+scoreboard players set @s CT3 0
+tag @s remove SkillReady3
+scoreboard players set @s usedSkill 3
