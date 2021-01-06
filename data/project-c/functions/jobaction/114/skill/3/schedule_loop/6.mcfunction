@@ -1,3 +1,3 @@
-execute if score @s counter matches 0 run summon creeper ~ ~100 ~ {NoGravity:1b,Invulnerable:1b,ExplosionRadius:4b,Fuse:0,CustomName:'{"text":"鉄火巻き"}',Tags:["114-ToheiRailGunBulletExplode"]}
-execute if score @s counter matches 1 run summon creeper ~ ~100 ~ {NoGravity:1b,Invulnerable:1b,ExplosionRadius:4b,Fuse:0,CustomName:'{"text":"かっぱ巻き"}',Tags:["114-ToheiRailGunBulletExplode"]}
-execute if score @s counter matches 2 run summon creeper ~ ~100 ~ {NoGravity:1b,Invulnerable:1b,ExplosionRadius:4b,Fuse:0,CustomName:'{"text":"納豆巻き"}',Tags:["114-ToheiRailGunBulletExplode"]}
+execute if score @s counter matches 0 run summon creeper ~ ~100 ~ {NoGravity:1b,Invulnerable:1b,ExplosionRadius:5b,Fuse:0,CustomName:'{"text":"鉄火巻き"}',Tags:["114-ToheiRailGunBulletExplode"]}
+execute if score @s counter matches 1 run summon creeper ~ ~100 ~ {NoGravity:1b,Invulnerable:1b,ExplosionRadius:5b,Fuse:0,CustomName:'{"text":"かっぱ巻き"}',Tags:["114-ToheiRailGunBulletExplode"]}
+execute if score @s counter matches 2 run summon creeper ~ ~100 ~ {NoGravity:1b,Invulnerable:1b,ExplosionRadius:5b,Fuse:0,CustomName:'{"text":"納豆巻き"}',Tags:["114-ToheiRailGunBulletExplode"]}
