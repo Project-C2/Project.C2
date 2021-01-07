@@ -28,7 +28,6 @@ execute if score #BladerRotation counter matches ..-1 run scoreboard players add
 scoreboard players operation #RamenRotation counter -= #BladerRotation counter
 execute if score #RamenRotation counter matches ..-181 run scoreboard players add #RamenRotation counter 360
 execute if score #RamenRotation counter matches 181.. run scoreboard players remove #RamenRotation counter 360
-tellraw @a [{"text":"RamenRotation : ","color":"white"},{"score":{"name":"#RamenRotation","objective":"counter"}}]
 
 # ラーメンが曲がる処理
 execute unless score #RamenRotation counter matches -3..3 run function project-c:jobaction/114/skill/0/schedule_loop/2
