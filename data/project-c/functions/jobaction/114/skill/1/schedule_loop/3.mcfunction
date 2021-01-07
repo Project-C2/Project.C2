@@ -6,8 +6,8 @@ execute if score @s counter matches 100.. run kill @s
 execute if entity @s[team=RedDummy] if entity @e[team=Blue,tag=Battle,distance=..1.5,nbt={HurtTime:0s},limit=1] as @e[team=Blue,tag=Battle,distance=..1.5,nbt={HurtTime:0s}] at @s run function project-c:jobaction/114/skill/1/schedule_loop/5
 execute if entity @s[team=BlueDummy] if entity @e[team=Red,tag=Battle,distance=..1.5,nbt={HurtTime:0s},limit=1] as @e[team=Red,tag=Battle,distance=..1.5,nbt={HurtTime:0s}] at @s run function project-c:jobaction/114/skill/1/schedule_loop/5
 
-execute if block ~ ~ ~ #project-c:wancomatter/like_air run tag @s add 114-DO_NOT_PIERCE_WALL
-execute if entity @s[tag=114-DO_NOT_PIERCE_WALL] unless block ^ ^ ^0.5 #project-c:wancomatter/like_air run kill @s
+execute if block ~ ~1 ~ #project-c:wancomatter/like_air run tag @s add 114-DO_NOT_PIERCE_WALL
+execute if entity @s[tag=114-DO_NOT_PIERCE_WALL] unless block ^ ^1 ^0.5 #project-c:wancomatter/like_air run kill @s
 
 ##演出
 particle minecraft:sweep_attack ~ ~1.3 ~ 0.5 0.5 0.5 0 1

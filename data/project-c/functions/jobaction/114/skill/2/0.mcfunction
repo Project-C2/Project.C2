@@ -7,7 +7,7 @@ execute if entity @s[team=Blue] as @e[team=!Blue,distance=..6,limit=1,nbt={HurtT
 
 
 execute if entity @e[tag=114-StatusStealTarget,limit=1] as @e[tag=114-StatusStealTarget] at @s run function project-c:jobaction/114/skill/2/1
-execute as @e[tag=Ramen] if score @s counter_2 = @a[tag=RamenSummoner,limit=1] playerNumber run tag @s add MyRamen
+execute as @e[tag=Ramen] if score @s counter_2 = @a[tag=114-StatusStealer,limit=1] playerNumber run tag @s add MyRamen
 
 scoreboard players operation @e[tag=MyRamen] counter_4 = @s counter_2
 scoreboard players set @e[tag=MyRamen] counter 6

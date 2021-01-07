@@ -7,6 +7,12 @@
 #counter_4 -> 第一スキルの追加入力でのCT増加量
 #counter_5 -> レールガンを設置できるかどうか
 #counter_6 -> ラーメンの発射時の演出
+#counter_7 -> 制空権の握り発動中かどうか
+
+# Author: bamboon
+# Title: SCP-1134-JP - 爆転ニギリ スシブレード
+# Source: http://scp-jp.wikidot.com/scp-1134-jp
+# CC-BY-SA 3.0
 
 scoreboard players reset @s usedSkill
 
@@ -24,7 +30,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'[{"text":"ダーク�
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'[{"text":"ステータス","italic":false,"bold":true,"color":"dark_red"},{"text":"の握り","italic":false,"bold":false,"color":"white"}]'}}}},scores={CT2=1200..,damageDealt=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/114/skill/2/0
 
-execute if entity @s[nbt={OnGround:1b,SelectedItem:{tag:{display:{Name:'{"text":"レールガン","italic":false,"color":"aqua"}'}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] unless score @s sneak matches 1.. run function project-c:jobaction/114/skill/3/0
+execute if entity @s[nbt={OnGround:1b,SelectedItem:{tag:{display:{Name:'{"text":"レールガン","italic":false,"color":"aqua"}'}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/114/skill/3/0
 
 execute unless score @s counter matches ..0 run scoreboard players remove @s counter 1
 execute unless score @s counter_1 matches ..0 run scoreboard players remove @s counter_1 1
