@@ -1,9 +1,9 @@
-execute positioned as @e[tag=hit,limit=1,sort=nearest] run summon arrow ~ ~0.5 ~ {Tags:["115arrow"],life:1200s,damage:2.0d,PierceLevel:127b}
+execute positioned as @e[tag=hit,limit=1,sort=nearest] run summon arrow ~ ~0.5 ~ {Tags:["115arrow"],life:1200s,damage:2.5d,PierceLevel:127b}
 tag @s add it
 execute as @a[scores={jobNumber=115}] if score @s playerNumber = @e[tag=it,limit=1,sort=nearest] playerNumber run tag @s add user
 tag @s remove it
 data modify entity @e[tag=115arrow,limit=1] Owner set from entity @a[tag=user,limit=1] UUID
-execute if entity @s[tag=115sharp] run data merge entity @e[tag=115arrow,limit=1,sort=nearest] {damage:2.6d}
+execute if entity @s[tag=115sharp] run data merge entity @e[tag=115arrow,limit=1,sort=nearest] {damage:3.2d}
 execute if entity @s[tag=115flame] run data merge entity @e[tag=115arrow,limit=1,sort=nearest] {Fire:32767s}
 execute if entity @s[tag=115quick] run scoreboard players add @a[tag=user,limit=1] CT1 20
 execute if entity @s[tag=115stan] run scoreboard players add @e[tag=hit,limit=1,sort=nearest] stanTime 31
