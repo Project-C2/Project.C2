@@ -24,9 +24,9 @@ particle minecraft:dust 0.4 0.4 0.4 1.5 ~ ~0.5 ~ 0.2 0.2 0.2 1 4 normal @a
 particle minecraft:dust 0.4 0.4 0.4 1.5 ~ ~0.5 ~ 0.1 0.1 0.1 1 1 force @a
 
 tag @s add now
-execute if entity @s[tag=115axeR] as @e[distance=..4,tag=Battle,team=!Red] at @s anchored eyes positioned ^ ^ ^ if entity @e[tag=now,distance=..1.2] run tag @s add hit
-execute if entity @s[tag=115axeR] as @e[distance=..4,tag=Battle,team=!Red] at @s anchored feet positioned ^ ^ ^ if entity @e[tag=now,distance=..1.2] run tag @s add hit
-execute if entity @s[tag=115axeB] as @e[distance=..4,tag=Battle,team=!Blue] at @s anchored eyes positioned ^ ^ ^ if entity @e[tag=now,distance=..1.2] run tag @s add hit
-execute if entity @s[tag=115axeB] as @e[distance=..4,tag=Battle,team=!Blue] at @s anchored feet positioned ^ ^ ^ if entity @e[tag=now,distance=..1.2] run tag @s add hit
+execute if entity @s[tag=115axeR] as @e[distance=..4,tag=Battle,team=!Red] at @s anchored eyes positioned ^ ^ ^ if entity @e[tag=now,distance=..1.4] run tag @s add hit
+execute if entity @s[tag=115axeR] as @e[distance=..4,tag=Battle,team=!Red] at @s anchored feet positioned ^ ^ ^ if entity @e[tag=now,distance=..1.4] run tag @s add hit
+execute if entity @s[tag=115axeB] as @e[distance=..4,tag=Battle,team=!Blue] at @s anchored eyes positioned ^ ^ ^ if entity @e[tag=now,distance=..1.4] run tag @s add hit
+execute if entity @s[tag=115axeB] as @e[distance=..4,tag=Battle,team=!Blue] at @s anchored feet positioned ^ ^ ^ if entity @e[tag=now,distance=..1.4] run tag @s add hit
 execute if entity @e[tag=hit,limit=1] run function project-c:jobaction/115/skill/1/hit
 tag @s remove now

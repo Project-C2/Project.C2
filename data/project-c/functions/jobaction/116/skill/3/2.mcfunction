@@ -19,6 +19,7 @@ scoreboard players operation @s counter_4 /= @s counter_5
 tp @s ~ ~1 ~
 execute if entity @a[tag=user,limit=1] run function project-c:jobaction/116/skill/3/summon
 execute at @a[tag=user,limit=1] facing entity @s feet as @a[tag=user,limit=1] anchored eyes positioned ^ ^ ^-0.3 run tp @e[tag=this] ~ ~ ~
+execute at @a[tag=user,limit=1] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 3 2
 execute if entity @a[tag=user,limit=1] run tag @e[tag=this] remove this
 
 execute if entity @a[tag=user,limit=1] as @a[tag=user] run attribute @s minecraft:generic.knockback_resistance modifier add 116-116-116-116-116 116_3 1 add

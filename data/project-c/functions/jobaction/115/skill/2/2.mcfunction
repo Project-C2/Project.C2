@@ -20,8 +20,7 @@ scoreboard players add @s counter_6 1
 #HPコスト
 execute store result score #115- counter run data get entity @s Health 100
 scoreboard players operation #115- subcounter = @s counter_6
-scoreboard players operation #115- subcounter *= #10 counter
-scoreboard players operation #115- subcounter *= #15 counter
+scoreboard players operation #115- subcounter *= #100 counter
 execute unless score #115- counter > #115- subcounter run effect clear @s resistance
 execute unless score #115- counter > #115- subcounter run effect give @s instant_damage 1 0
 execute if score #115- counter > #115- subcounter run scoreboard players operation @s ScoreToHealth = #115- counter

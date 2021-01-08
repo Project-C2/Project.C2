@@ -1,4 +1,4 @@
-scoreboard players set @s CT1 1100
+scoreboard players set @s CT1 1120
 
 #三角関数周りの測定と斧召喚
 execute if score @s counter_5 matches 11.. anchored eyes positioned ^ ^ ^ run summon arrow ~ ~ ~ {Tags:["this"],life:1200s}
@@ -6,7 +6,7 @@ execute if score @s counter_5 matches 11.. positioned 0.0 0.0 0.0 run summon are
 execute if score @s counter_5 matches 11.. run data modify entity @e[tag=this,limit=1] Motion set from entity @e[tag=115AECvector,limit=1] Pos
 execute if score @s counter_5 matches 11.. run tag @e[tag=this] remove this
 execute anchored eyes positioned ^ ^ ^ run tag @e[type=arrow,limit=1,sort=nearest,distance=..4] add vector
-execute anchored eyes positioned ^ ^ ^ run summon armor_stand ~ ~ ~ {Tags:["115shotaxe","first"],Invisible:1b,HandItems:[{},{}],Pose:{RightArm:[-90f,0f,0f]},DisabledSlots:2039583}
+execute anchored eyes positioned ^ ^ ^ run summon armor_stand ~ ~ ~ {Tags:["115shotaxe","first"],Invisible:1b,Small:1b,HandItems:[{},{}],Pose:{RightArm:[-90f,0f,0f]},DisabledSlots:2039583}
 execute as @e[tag=vector] store result score #115- counter_1 run data get entity @s Motion[0] 50
 execute as @e[tag=vector] store result score #115- counter_2 run data get entity @s Motion[1] 50
 execute as @e[tag=vector] store result score #115- counter_3 run data get entity @s Motion[2] 50
