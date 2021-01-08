@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,NoGravity:1b,DisabledSlots:2039583,Tags:["114-ToheiRailGun","Initializing"],Pose:{Head:[0f,0f,0.0000000001f]},ArmorItems:[{},{},{},{id:"redstone_block",Count:1b}]}

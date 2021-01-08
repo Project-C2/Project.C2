@@ -1,0 +1,2 @@
+summon minecraft:arrow ~ ~3 ~ {Tags:["114-DarkHamburgTrident"],pickup:0b,player:1b,damage:5d,crit:1b,Motion:[0.0,-1.0,0.0],Silent:1b,CustomName:'{"text":"ダークハンバーグ","color":"dark_purple"}'}
+#schedule function project-c:jobaction/114/skill/1/schedule_loop/6 1t replace
