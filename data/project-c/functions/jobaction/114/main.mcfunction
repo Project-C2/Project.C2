@@ -37,6 +37,7 @@ execute unless score @s counter_1 matches ..0 run scoreboard players remove @s c
 execute unless score @s counter_3 matches ..0 run scoreboard players remove @s counter_3 1
 execute if score @s counter_1 matches 0 run function project-c:jobaction/114/skill/2/2
 execute if score @s counter_3 matches 1 run function project-c:jobaction/114/skill/1/2
+execute if score @s deathCountExt matches 1.. run function project-c:jobaction/114/skill/0/kill_noodle
 scoreboard players reset @s useCarrotStick
 scoreboard players reset @s sneak
 scoreboard players reset @s damageDealt

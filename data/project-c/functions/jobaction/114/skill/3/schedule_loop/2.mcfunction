@@ -13,12 +13,8 @@ execute if score @s counter matches 520 run tellraw @a [{"text":"[Tohei-Railgun-
 execute if score @s counter matches 599 run function project-c:jobaction/114/skill/3/schedule_loop/3
 
 ##演出
-execute if score @s counter matches 0..500 run playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 3 0
-execute if score @s counter matches 0..500 run playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 3 0
-execute if score @s counter matches 0..500 run playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 3 1
-execute if score @s counter matches 0..500 run playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 3 1
-execute if score @s counter matches 0..500 run playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 3 2
-execute if score @s counter matches 0..500 run playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 3 2
+execute if score @s counter matches 0..500 as @a[distance=..32] at @s run playsound minecraft:block.enchantment_table.use master @s ~ ~ ~ 1 2
+execute if score @s counter matches 0..500 as @a[distance=..32] at @s run playsound minecraft:block.enchantment_table.use master @s ~ ~ ~ 1 2
 execute if score @s counter matches 0..500 run particle minecraft:crit ^ ^ ^1 2 2 2 0 100
 execute if score @s counter matches 0..500 run particle minecraft:crit ^ ^ ^3 2 2 2 0 100
 execute if score @s counter matches 0..500 run particle minecraft:crit ^ ^ ^5 2 2 2 0 100

@@ -1,7 +1,7 @@
 execute store result score @a[tag=114-StatusStealer,limit=1] counter_2 run attribute @s minecraft:generic.attack_damage get
 execute if score @a[tag=114-StatusStealer,limit=1] counter_2 matches 5.. run scoreboard players set @a[tag=114-StatusStealer,limit=1] counter_2 4
-effect give @s minecraft:weakness 10 4
-effect give @s minecraft:slowness 10 1
+effect give @s minecraft:weakness 5 4
+effect give @s minecraft:slowness 5 1
 
 
 ##演出

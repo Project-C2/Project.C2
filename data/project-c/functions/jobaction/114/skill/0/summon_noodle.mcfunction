@@ -10,7 +10,7 @@ scoreboard players set @e[tag=Initializing,limit=1] counter_3 2
 scoreboard players operation @e[tag=Initializing,limit=1] counter_2 = @s playerNumber
 scoreboard players operation @e[tag=Initializing,limit=1] counter_4 = @s counter_2
 tag @e[tag=Initializing] remove Initializing
-
+clear @s player_head{Ramen:1b}
 
 
 function project-c:jobaction/114/replaceitem/0-1
