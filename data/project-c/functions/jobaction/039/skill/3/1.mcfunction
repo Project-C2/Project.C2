@@ -1,7 +1,6 @@
 execute store result score #039-dummy counter run data get entity @s Health 100
 execute store result score #039-dummy counter_1 run data get entity @s AbsorptionAmount 100
 execute if score #039-dummy counter_1 matches 1.. run scoreboard players operation #039-dummy counter += #039-dummy counter_1
-execute if score #039-dummy counter matches 240..317 run summon area_effect_cloud ~ ~0.5 ~ {Tags:["039trast_AEC"],CustomName:'{"text":"トランス"}',Radius:1.1f,Duration:5,Age:4,WaitTime:1,Effects:[{Id:11b,Amplifier:1b,Duration:1,ShowParticles:0b},{Id:7b,Amplifier:3b,Duration:1,ShowParticles:0b}]}
 scoreboard players operation #039-dummy counter_2 = #039-dummy counter
 scoreboard players operation #039-dummy counter_2 /= #2 counter
 scoreboard players operation #039-dummy counter_1 = #039-dummy counter_2
