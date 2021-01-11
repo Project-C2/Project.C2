@@ -3,8 +3,8 @@ execute store result score #118-- counter run data get entity @s SelectedItem.ta
 scoreboard players operation #118-- counter *= #20 counter
 
 playsound minecraft:entity.enderman.death master @a ~ ~ ~ 10 0.86
-particle large_smoke ~ ~ ~ 0.3 0.3 0.3 0.7 20 force @s
-particle cloud ~ ~ ~ 0.3 0.3 0.3 0.7 20 force @s
+particle large_smoke ~ ~ ~ 0.3 0.3 0.3 0.7 20 force @a
+particle cloud ~ ~ ~ 0.3 0.3 0.3 0.7 20 force @a
 
 execute if entity @s[team=Red] run tag @a[tag=Battle,team=!Red] add 118-3---h
 execute if entity @s[team=Blue] run tag @a[tag=Battle,team=!Blue] add 118-3---h
@@ -16,6 +16,9 @@ execute unless score #118-- counter_2 matches 1.. run scoreboard players set #11
 scoreboard players operation #118-- counter *= #118-- counter_2
 
 execute as @a[tag=118-3---h] at @s run summon area_effect_cloud ~ ~1 ~ {CustomName:'{"text":"Evil Resonance","italic": false,"color": "dark_purple","bold":true}',Tags:["118-evil"],Particle:"",Radius:0.3f,WaitTime:1,Duration:5,Age:4,Effects:[{}]}
+execute as @a[tag=118-3---h] at @s run particle large_smoke ~ ~ ~ 0.3 0.3 0.3 0.7 20 force @a
+execute as @a[tag=118-3---h] at @s run particle cloud ~ ~ ~ 0.3 0.3 0.3 0.7 20 force @a
+execute as @a[tag=118-3---h] at @s run playsound minecraft:entity.enderman.death master @s ~ ~ ~ 1 0.86
 
 execute as @e[tag=118-evil] run data modify entity @s Effects set from entity @a[tag=118-3--,limit=1] ActiveEffects
 execute as @e[tag=118-evil,nbt={Effects:[{Id:1b}]}] run data remove entity @s Effects[{Id:1b}]
