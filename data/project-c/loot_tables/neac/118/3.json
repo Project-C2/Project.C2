@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blackstone",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "Evil Resonance","italic": false,"color": "dark_purple"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:6s * Enemy","italic":false,"color":"green"}],
+                {"text": "敵プレイヤー全員に自身と同じデバフを与える。","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,118--:3b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

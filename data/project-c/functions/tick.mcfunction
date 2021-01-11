@@ -14,6 +14,10 @@ execute if entity @a[scores={jobNumber=99,deathCount=1..},tag=!099_death,limit=1
 execute if entity @a[scores={099-S2-APN=1..,deathCount=1..},tag=099-S2-area-ed,limit=1] as @a[scores={099-S2-APN=1..,deathCount=1..},tag=099-S2-area-ed] run function project-c:jobaction/099/skill/2/end-0
 
 execute if entity @a[scores={jobNumber=106,deathCount=1..},tag=!106_death_skill,limit=1] as @a[scores={jobNumber=106,deathCount=1..},tag=!106_death_skill] run function project-c:jobaction/106/change_keep
+
+execute if entity @e[type=player,scores={jobNumber=118,deathCount=1..,counter=1..},limit=1] as @e[type=player,scores={jobNumber=118,deathCount=1..,counter=1..}] run function project-c:jobaction/118/skill/0/reset-me2
+execute if entity @a[scores={deathCount=1..},tag=118_0_selecting,limit=1] as @a[scores={deathCount=1..},tag=118_0_selecting] run function project-c:jobaction/118/skill/0/select-death
+
 execute if entity @e[tag=experience_orb,limit=1] run kill @e[tag=experience_orb]
 
 #dummyPK�̏���

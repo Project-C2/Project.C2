@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "レリーヴストーン","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:6s","italic":false,"color":"green"}],
+                {"text": "選択したプレイヤーと体力を共有する。","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,118--:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
