@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_pigstep",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "魑魅魍魎・パレード","color":"gold","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  [{"text":"スニーク","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:40s","italic":false,"color":"green"}],
+                  {"text":"魑魅魍魎の宴を開き、周囲の味方プレイヤーに","italic":false,"color":"white"},
+                  {"text":"10秒間の透明化、衝撃吸収、移動速度上昇を付与。","italic":false,"color":"white"},
+                  {"text":"この透明化は攻撃をする/されるか、","italic":false,"color":"white"},
+                  {"text":"スキルを使うと強制的に解除される。","italic":false,"color":"white"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{117skillID:3b,wnkmSkillCT:400,HideFlags:32}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
