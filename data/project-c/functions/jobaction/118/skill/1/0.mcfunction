@@ -10,11 +10,12 @@ scoreboard players operation @s counter_1 = #118-- counter
 playsound entity.player.levelup master @a ~ ~ ~ 1 0
 playsound entity.player.levelup master @a ~ ~ ~ 1 0
 tag @s add 118-
+scoreboard players operation @s counter_3 = @s counter
 
-execute as @e[tag=118_0_selecting] if score @s playerNumber = @a[tag=118-,limit=1] counter run tag @s add 118_1_selected--
-execute if entity @e[tag=118_1_selected--,limit=1] at @e[tag=118_1_selected--] facing entity @a[tag=118-,limit=1] feet run function project-c:jobaction/118/skill/1/particle
+execute as @a[tag=Battle] if score @s playerNumber = @a[tag=118-,limit=1] counter_3 run tag @s add 118_1_selected--
+execute if entity @a[tag=118_1_selected--,limit=1] at @a[tag=118_1_selected--] facing entity @a[tag=118-,limit=1] feet run function project-c:jobaction/118/skill/1/particle
 
-execute if entity @e[tag=118_1_selected--,limit=1] as @e[tag=118_1_selected--] run tag @s remove 118_1_selected--
+execute if entity @a[tag=118_1_selected--,limit=1] as @a[tag=118_1_selected--] run tag @s remove 118_1_selected--
 scoreboard players reset #118--
 
 tag @s remove 118-

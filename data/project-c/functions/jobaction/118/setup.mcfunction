@@ -3,11 +3,3 @@ give @p oak_sign{display:{Name:'"118-Resonance"'},BlockEntityTag:{Text1:'{"text"
 
 #スキル系処理用
 setblock 42 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute as @a[scores={jobNumber=118}] at @s run function project-c:jobaction/118/main",TrackOutput:0b} destroy
-
-setblock 20 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"function project-c:jobaction/116/skill/1/1",TrackOutput:0b} destroy
-setblock 20 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=116impact,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
-
-setblock 24 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"function project-c:jobaction/116/skill/3/1",TrackOutput:0b} destroy
-setblock 24 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=116grapple,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
-
-

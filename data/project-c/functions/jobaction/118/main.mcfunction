@@ -1,11 +1,12 @@
 #実行者     -> jobNumber = 118
 #実行地点   -> 実行者
 #counter    -> 選択プレイヤー保持用
-#subcounter -> スキル1の使用スパン
+#subcounter -> スキル1のスパン
 #counter_1    -> スキル1の使用時間
 #counter_2    -> スキル2の使用時間
-#counter_3    -> 
-#counter_4    -> 
+#counter_3    -> スキル1の選択プレイヤー保持
+#counter_4    -> スキル2の選択プレイヤー保持
+#counter_9    -> スキル2のスパン
 
 scoreboard players reset @s usedSkill
 
