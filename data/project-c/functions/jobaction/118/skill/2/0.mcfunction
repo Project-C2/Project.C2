@@ -17,5 +17,7 @@ scoreboard players reset #118--
 
 tag @s remove 118-
 
+playsound minecraft:entity.villager.death master @a ~ ~ ~ 1 0
+
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2

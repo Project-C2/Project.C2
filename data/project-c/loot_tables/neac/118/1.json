@@ -6,12 +6,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:prismarine",
+          "name": "minecraft:music_disc_pigstep",
           "functions": [
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "レリーヴストーン","italic": false,"color": "white"}
+                {"text": "Health Resonance","italic": false,"color": "#ff0000","bold":true}
               ]
             },
             {
@@ -23,7 +23,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,118--:1b,cooltime:30,e-time:20}"
+              "tag": "{HideFlags:63,118--:1b,cooltime:30,e-time:20,Enchantments:[{}]}"
             }
           ]
         }

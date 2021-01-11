@@ -18,6 +18,7 @@ execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-
 execute if entity @s[scores={counter=1..},gamemode=!spectator] run function project-c:jobaction/118/skill/0/1
 
 execute if entity @s[scores={counter_1=1..},gamemode=!spectator] run function project-c:jobaction/118/skill/1/1
+execute if entity @s[scores={counter_2=1..},gamemode=!spectator] run function project-c:jobaction/118/skill/2/1
 
 
 execute if entity @s[scores={useCarrotStick=1..},gamemode=!spectator] run function project-c:jobaction/118/skill/use
