@@ -1,7 +1,8 @@
-scoreboard players set @s CT3 1180
-scoreboard players add @s counter_3 1
-execute if score @s counter_3 matches 2.. run scoreboard players set @s counter_3 0
-execute if score @s counter_3 matches 0 run effect clear @s slow_falling
+scoreboard players set @s CT3 1200
+execute store result score #118-- counter run data get entity @s SelectedItem.tag.cooltime
+scoreboard players operation #118-- counter *= #20 counter
+scoreboard players operation @s CT3 -= #118-- counter
+
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1
 
 

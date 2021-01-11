@@ -17,13 +17,13 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:6s","italic":false,"color":"green"}],
-                {"text": "選択したプレイヤーと体力を共有する。","italic": false,"color": "white"}
+                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:30s","italic":false,"color":"green"}],
+                {"text": "選択したプレイヤーと20秒間体力を共有する。","italic": false,"color": "white"}
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,118--:1b}"
+              "tag": "{HideFlags:63,118--:1b,cooltime:30,e-time:20}"
             }
           ]
         }

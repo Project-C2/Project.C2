@@ -5,4 +5,7 @@ tellraw @s ["",{"text":"選択が解除された！","color":"red"}]
 execute at @s run playsound block.note_block.pling master @s ~ ~ ~ 1 0
 title @s actionbar [{"text":""}]
 scoreboard players reset @s counter
+scoreboard players reset @s subcounter
+scoreboard players reset @s counter_1
+scoreboard players reset @s counter_2
 tag @s remove 118_0_anchor--

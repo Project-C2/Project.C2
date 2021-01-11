@@ -23,7 +23,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,118--:3b}"
+              "tag": "{HideFlags:63,118--:3b,cooltime:6}"
             }
           ]
         }

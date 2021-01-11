@@ -18,12 +18,12 @@
               "function": "minecraft:set_lore",
               "lore": [
                 [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:6s","italic":false,"color":"green"}],
-                {"text": "選択したプレイヤーとCTを共有する。","italic": false,"color": "white"}
+                {"text": "選択したプレイヤーと20秒間CTを共有する。","italic": false,"color": "white"}
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,118--:2b,Enchantments:[{}]}"
+              "tag": "{HideFlags:63,118--:2b,cooltime:6,e-time:20,Enchantments:[{}]}"
             }
           ]
         }
