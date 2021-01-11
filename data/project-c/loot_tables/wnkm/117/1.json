@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:minecart",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "ゾンビホース・ジェットコースター","color":"dark_green","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  [{"text":"スニーク","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:20s","italic":false,"color":"green"}],
+                  {"text":"ゾンビホースのジェットコースターを展開する。","italic":false,"color":"white"},
+                  {"text":"乗馬可能だが乗馬すると減速する。","italic":false,"color":"white"},
+                  {"text":"着弾点に3体のゾンビを召喚する。","italic":false,"color":"white"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{117skillID:1b,wnkmSkillCT:800}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
