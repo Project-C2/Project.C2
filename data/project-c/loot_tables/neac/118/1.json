@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_pigstep",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "Health Resonance","italic": false,"color": "#ff0000","bold":true}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:30s","italic":false,"color":"green"}],
+                {"text": "選択したプレイヤーと10秒間体力を共有する。","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,118--:1b,cooltime:30,e-time:10,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
