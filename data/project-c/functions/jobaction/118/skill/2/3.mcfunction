@@ -4,6 +4,9 @@ scoreboard players set #118-- counter_2 1200
 scoreboard players operation #118-- counter_1 -= @s CT1
 scoreboard players operation #118-- counter_2 -= @a[tag=118-2--,limit=1] CT1
 
+execute if score #118-- counter_1 matches ..-1 run scoreboard players set #118-- counter_1 0
+execute if score #118-- counter_2 matches ..-1 run scoreboard players set #118-- counter_2 0
+
 scoreboard players operation #118-- counter_1 += #118-- counter_2
 scoreboard players operation #118-- counter_1 /= #2 counter
 scoreboard players set #118-- counter_2 1200
@@ -20,6 +23,9 @@ scoreboard players set #118-- counter_2 1200
 scoreboard players operation #118-- counter_1 -= @s CT2
 scoreboard players operation #118-- counter_2 -= @a[tag=118-2--,limit=1] CT2
 
+execute if score #118-- counter_1 matches ..-1 run scoreboard players set #118-- counter_1 0
+execute if score #118-- counter_2 matches ..-1 run scoreboard players set #118-- counter_2 0
+
 scoreboard players operation #118-- counter_1 += #118-- counter_2
 scoreboard players operation #118-- counter_1 /= #2 counter
 scoreboard players set #118-- counter_2 1200
@@ -35,6 +41,9 @@ scoreboard players set #118-- counter_2 1200
 
 scoreboard players operation #118-- counter_1 -= @s CT3
 scoreboard players operation #118-- counter_2 -= @a[tag=118-2--,limit=1] CT3
+
+execute if score #118-- counter_1 matches ..-1 run scoreboard players set #118-- counter_1 0
+execute if score #118-- counter_2 matches ..-1 run scoreboard players set #118-- counter_2 0
 
 scoreboard players operation #118-- counter_1 += #118-- counter_2
 scoreboard players operation #118-- counter_1 /= #2 counter
