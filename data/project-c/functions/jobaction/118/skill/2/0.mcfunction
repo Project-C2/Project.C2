@@ -1,7 +1,3 @@
-scoreboard players set @s CT2 1200
-execute store result score #118-- counter run data get entity @s SelectedItem.tag.cooltime
-scoreboard players operation #118-- counter *= #20 counter
-scoreboard players operation @s CT2 -= #118-- counter
 
 execute store result score #118-- counter run data get entity @s SelectedItem.tag.e-time
 scoreboard players operation #118-- counter *= #20 counter
@@ -25,6 +21,4 @@ scoreboard players reset #118--
 
 tag @s remove 118-
 
-
 tag @s remove SkillReady2
-scoreboard players set @s usedSkill 2
