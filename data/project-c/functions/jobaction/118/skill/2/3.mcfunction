@@ -70,4 +70,9 @@ execute if entity @a[tag=118-ct-change,scores={CT3=..1199},limit=1] as @a[tag=11
 execute if entity @a[tag=118-ct-change,limit=1] as @a[tag=118-ct-change] run function project-c:general/cooltimecounter
 execute if entity @a[tag=118-ct-change,limit=1] as @a[tag=118-ct-change] run tag @s remove 118-ct-change
 
+
+execute as @a[tag=118-1--] at @s run particle minecraft:firework ~ ~1 ~ 0 0 0 0.2 20 force @a
+execute at @s run particle minecraft:firework ~ ~1 ~ 0 0 0 0.2 20 force @a
+
+
 scoreboard players reset #118--
