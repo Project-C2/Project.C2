@@ -1,5 +1,6 @@
 clear @s #project-c:neac/all{110weapon:1b}
 
+execute if score @s counter_1 matches 0 run loot replace entity @s container.0 loot project-c:wnkm/110/weapons/default_sword
 execute if score @s counter_1 matches 1 run loot replace entity @s container.0 loot project-c:wnkm/110/weapons/claymore
 execute if score @s counter_1 matches 2 run loot replace entity @s container.0 loot project-c:wnkm/110/weapons/hinoki_blade
 execute if score @s counter_1 matches 4 run loot replace entity @s container.0 loot project-c:wnkm/110/weapons/composite
