@@ -15,7 +15,7 @@
             {
                 "function": "minecraft:set_lore",
                 "lore": [
-                  [{"text":"スニーク","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:20s","italic":false,"color":"green"}],
+                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:20s","italic":false,"color":"green"}],
                   {"text":"不可視の魔力弾を発射。","italic":false,"color":"white"},
                   {"text":"着弾するか再度右クリックする事で、","italic":false,"color":"white"},
                   {"text":"魔力弾から花びらを舞い散らせる。","italic":false,"color":"white"}

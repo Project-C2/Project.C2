@@ -15,7 +15,7 @@
             {
                 "function": "minecraft:set_lore",
                 "lore": [
-                  [{"text":"スニーク","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:25s","italic":false,"color":"green"}],
+                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:25s","italic":false,"color":"green"}],
                   {"text":"1秒のチャージ後、前方に治癒魔法を放ち、","italic":false,"color":"white"},
                   {"text":"視線先の味方を回復し、衝撃吸収Lv2を4秒間付与。","italic":false,"color":"white"},
                   {"text":"視線先に味方がいない場合は自身を小回復。","italic":false,"color":"white"},
