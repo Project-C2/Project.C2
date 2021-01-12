@@ -21,4 +21,4 @@ scoreboard players reset #118--
 
 tag @s remove 118-
 
-tag @s remove SkillReady2
+function project-c:jobaction/118/replaceitem/2
