@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pink_glazed_terracotta",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "The Flurry of Cherry Blossoms","color":"#ebd4e0","bold":true,"underlined":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  [{"text":"スニーク","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:20s","italic":false,"color":"green"}],
+                  {"text":"不可視の魔力弾を発射。","italic":false,"color":"white"},
+                  {"text":"着弾するか再度右クリックする事で、","italic":false,"color":"white"},
+                  {"text":"魔力弾から花びらを舞い散らせる。","italic":false,"color":"white"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{119skillID:2b,wnkmSkillCT:800,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
