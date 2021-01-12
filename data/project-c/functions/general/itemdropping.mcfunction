@@ -4,9 +4,11 @@ execute if entity @e[type=item,tag=!isItem,nbt={Item:{tag:{Tier:3b}}},limit=1] r
 execute if entity @e[type=item,tag=!isItem,nbt={Item:{tag:{Tier:4b}}},limit=1] run tag @e[type=item,tag=!isItem,nbt={Item:{tag:{Tier:4b}}}] add Item4
 execute if entity @e[type=item,tag=!isItem,nbt={Item:{tag:{Tier:5b}}},limit=1] run tag @e[type=item,tag=!isItem,nbt={Item:{tag:{Tier:5b}}}] add Item5
 
-execute if entity @e[type=item,tag=!isItem,nbt={Item:{tag:{isItem:1b}}},limit=1] run tag @e[type=item,tag=!isItem,nbt={Item:{tag:{isItem:1b}}}] add isItem
+execute if entity @e[type=item,tag=!isItem,nbt={Item:{tag:{isItem:1b}}},limit=1] run tag @e[type=item,tag=!isItem,nbt={Item:{tag:{isItem:1b}}}] add isItem_flag
 
-execute if entity @a[scores={drop=1..},limit=1] as @a[scores={drop=1..}] at @s if entity @e[distance=..1.5,tag=isItem] run scoreboard players reset @s drop
+execute if entity @a[scores={drop=1..},limit=1] as @a[scores={drop=1..}] at @s if entity @e[distance=..1.5,tag=isItem_flag] run scoreboard players reset @s drop
+execute if entity @e[type=item,tag=isItem_flag,limit=1] run tag @e[type=item,tag=isItem_flag] add isItem
+execute if entity @e[type=item,tag=isItem_flag,limit=1] run tag @e[type=item,tag=isItem_flag] remove isItem_flag
 #execute if entity @a[scores={drop=1..},limit=1] run data merge block -75 17 -122 {auto:1b}
 
 
