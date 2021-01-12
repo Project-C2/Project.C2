@@ -15,6 +15,7 @@ execute unless score #118-- counter_2 matches 1.. run scoreboard players set #11
 
 scoreboard players operation #118-- counter *= #118-- counter_2
 
+execute as @a[tag=118-3---h] run tellraw @s ["",{"text":"デバフ共有","color":"dark_purple"},{"text":" <- "},{"selector":"@a[tag=118-3--,limit=1]"}]
 execute as @a[tag=118-3---h] at @s run summon area_effect_cloud ~ ~1 ~ {CustomName:'{"text":"Evil Resonance","italic": false,"color": "dark_purple","bold":true}',Tags:["118-evil"],Particle:"",Radius:0.3f,WaitTime:1,Duration:5,Age:4,Effects:[{}]}
 execute as @a[tag=118-3---h] at @s run particle large_smoke ~ ~ ~ 0.3 0.3 0.3 0.7 20 force @a
 execute as @a[tag=118-3---h] at @s run particle cloud ~ ~ ~ 0.3 0.3 0.3 0.7 20 force @a
