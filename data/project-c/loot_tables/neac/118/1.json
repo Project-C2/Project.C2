@@ -18,12 +18,13 @@
               "function": "minecraft:set_lore",
               "lore": [
                 [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:30s","italic":false,"color":"green"}],
-                {"text": "選択したプレイヤーと10秒間体力を共有する。","italic": false,"color": "white"}
+                {"text": "選択したプレイヤーと5秒間体力を共有する。","italic": false,"color": "white"},
+                {"text": "発動すると選択が解除される。","italic": false,"color": "white"}
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,118--:1b,cooltime:30,e-time:10,Enchantments:[{}]}"
+              "tag": "{HideFlags:63,118--:1b,cooltime:30,e-time:5,Enchantments:[{}]}"
             }
           ]
         }
