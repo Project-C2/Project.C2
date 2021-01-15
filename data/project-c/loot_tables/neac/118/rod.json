@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,118--:-106b}"
+              "tag": "{HideFlags:63,Unbreakable:1b,118--:-106b}"
             }
           ]
         }

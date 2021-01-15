@@ -22,3 +22,7 @@ scoreboard players reset #118--
 tag @s remove 118-
 
 function project-c:jobaction/118/replaceitem/2
+
+title @s actionbar [{"text":""}]
+scoreboard players reset @s counter
+scoreboard players reset @s counter_9
