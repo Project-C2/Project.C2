@@ -3,6 +3,7 @@ execute as @a run function project-c:general/cooltimecounter
 function project-c:general/0-luckeffection
 function project-c:general/relic/reliceffect
 #function project-c:radiochat/general/inventorywatcher
+function project-c:general/effect/checkeffect
 
 scoreboard players add #Clock counter 1
 execute if score #Clock counter matches 2.. run scoreboard players set #Clock counter 0
