@@ -1,7 +1,6 @@
 execute as @a run function project-c:general/cooltimecounter
 #function project-c:general/delaycounter
 function project-c:general/0-luckeffection
-function project-c:general/item/shulkerwall
 function project-c:general/relic/reliceffect
 #function project-c:radiochat/general/inventorywatcher
 
@@ -17,7 +16,7 @@ execute if entity @a[scores={099-S2-APN=1..,deathCount=1..},tag=099-S2-area-ed,l
 execute if entity @a[scores={jobNumber=106,deathCount=1..},tag=!106_death_skill,limit=1] as @a[scores={jobNumber=106,deathCount=1..},tag=!106_death_skill] run function project-c:jobaction/106/change_keep
 execute if entity @e[tag=experience_orb,limit=1] run kill @e[tag=experience_orb]
 
-#dummyPK?????
+#dummyPK�̏���
 #tag @e[tag=dummyPig] add dummyPK {OnGround:1b}
 tp @e[tag=dummyPK] ~ ~-50 ~
 effect give @e[tag=dummyPig] minecraft:invisibility 1000000 0 true
