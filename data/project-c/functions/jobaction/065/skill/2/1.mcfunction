@@ -16,6 +16,8 @@ execute at @s[scores={counter_2=2..15}] run particle minecraft:dust 1 0 0.3 1.5 
 
 effect clear @s[scores={counter_2=13}] levitation
 effect give @s[scores={counter_2=2}] levitation 1 10
+effect give @s[scores={counter_2=2}] jump_boost 5 5 true
+tag @s[scores={counter_2=2}] add 065jump
 effect clear @s[scores={counter_2=1}] levitation
 
 execute at @s[team=Red,scores={counter_2=1}] positioned ^ ^ ^2 run effect give @e[team=Blue,distance=..3] instant_damage 1 0

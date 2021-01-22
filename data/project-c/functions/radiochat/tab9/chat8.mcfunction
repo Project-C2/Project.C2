@@ -1,4 +1,4 @@
-say ≪敵は戦闘モードだ≫
+say ≪それはできない！≫
 
 playsound minecraft:entity.experience_orb.pickup master @s 0 0 0 0.5 2 0.5
 

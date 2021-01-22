@@ -1,6 +1,6 @@
 #判定
 #CT
-scoreboard players remove @s stockcounter 60
+scoreboard players remove @s stockcounter 100
 scoreboard players set @s[scores={stockcounter=..140}] counter_3 0
 scoreboard players set @s CT1 1180
 scoreboard players set @s usedSkill 1
@@ -8,7 +8,9 @@ scoreboard players set @s counter_1 9
 
 #スキル効果
 #共通
-summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["064-strafe"]}
+tp @s @s
+summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["064-strafe"],Marker:1b}
+teleport @e[tag=064-strafe,limit=1] @s
 
 playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 1 0
 particle minecraft:explosion ^ ^1 ^ 0 0 0 1 3

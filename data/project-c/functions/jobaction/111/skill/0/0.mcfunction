@@ -1,5 +1,5 @@
 execute positioned 0.0 0.0 0.0 run summon minecraft:armor_stand ^ ^ ^5 {Tags:["111dummy"],Marker:1b,Invisible:1b,NoGravity:1b}
-execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["111fire","111fireF","Arrow"],damage:0.4d,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,NoGravity:1b}
+execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["111fire","111fireF","Arrow"],damage:0.4d,life:1198s,pickup:2b,Color:-1,NoGravity:1b}
 
 data modify entity @e[tag=111fireF,limit=1] Owner set from entity @s UUID
 data modify entity @e[tag=111fireF,limit=1] Motion set from entity @e[tag=111dummy,limit=1] Pos

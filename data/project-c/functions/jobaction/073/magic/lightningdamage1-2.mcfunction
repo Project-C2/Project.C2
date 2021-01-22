@@ -1,6 +1,6 @@
 scoreboard players add @s counter 1
 tp @s ^ ^ ^1
-
+execute if block ~ ~ ~ #project-c:wancomatter/like_air run kill @s
 #＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 #パーティクル表示
 particle angry_villager ~ ~-1 ~ 0 0 0 0.01 2

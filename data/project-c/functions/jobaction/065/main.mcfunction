@@ -18,5 +18,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ビジ�
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"エアスラッシュ\",\"color\":\"light_purple\",\"italic\":false,\"underlined\":true}"}}}},scores={CT2=1200..,useCarrotStick=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/065/skill/2/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"スリットエッジ\",\"color\":\"blue\",\"italic\":false,\"underlined\":true}"}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/065/skill/3/0
 
+effect clear @s[tag=065jump,nbt={OnGround:1b}] jump_boost
+tag @s[tag=065jump,nbt={OnGround:1b}] remove 065jump
 
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick

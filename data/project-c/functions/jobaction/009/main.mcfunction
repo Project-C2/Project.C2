@@ -16,8 +16,16 @@ scoreboard players add @s[scores={counter=1..}] counter 1
 scoreboard players set @s[scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator] counter 1
 execute if entity @s[scores={counter=2}] run function project-c:jobaction/009/skill/3/0
 effect clear @s[scores={counter=4}] minecraft:speed
-scoreboard players set @s[scores={counter=4}] CT3 1192
+scoreboard players set @s[scores={counter=4,counter_3=1..}] CT3 1192
+scoreboard players remove @s[scores={counter=4,counter_3=1..}] counter_3 1
+scoreboard players set @s[scores={counter=4,counter_3=-1}] CT3 1142
+tag @s[scores={counter=4}] remove SkillReady3
 scoreboard players reset @s[scores={counter=4}] counter
+
+execute if entity @s[scores={CT3=1261..,counter_3=..6}] run scoreboard players add @s counter_3 1
+execute if entity @s[scores={CT3=1261..,counter_3=..6}] run function project-c:jobaction/009/replaceitem/3
+execute if entity @s[scores={CT3=1261..,counter_3=..6}] run scoreboard players set @s CT3 1200
+
 
 
 scoreboard players reset @s jump

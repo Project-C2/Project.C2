@@ -14,8 +14,8 @@ clear @s minecraft:music_disc_strad{display:{Name:"{\"text\":\"勝てるのか�
 clear @s minecraft:music_disc_strad{display:{Name:"{\"text\":\"負けるのか？\"}"}}
 clear @s minecraft:music_disc_strad{display:{Name:"{\"text\":\"手ごわいので退却する\"}"}}
 clear @s minecraft:music_disc_strad{display:{Name:"{\"text\":\"楽勝だが退却する\"}"}}
-clear @s minecraft:music_disc_strad{display:{Name:"{\"text\":\"敵は警備モードだ\"}"}}
-clear @s minecraft:music_disc_strad{display:{Name:"{\"text\":\"敵は戦闘モードだ\"}"}}
+clear @s minecraft:music_disc_strad{display:{Name:"{\"text\":\"どう思う?\"}"}}
+clear @s minecraft:music_disc_strad{display:{Name:"{\"text\":\"それはできない!\"}"}}
 clear @s minecraft:music_disc_strad{display:{Name:"{\"text\":\"今のはMojangが悪い\"}"}}
 
 replaceitem entity @s inventory.9 minecraft:music_disc_strad{display:{Name:"{\"text\":\"ｵｫ\"}"}}
@@ -24,8 +24,8 @@ replaceitem entity @s inventory.11 minecraft:music_disc_strad{display:{Name:"{\"
 replaceitem entity @s inventory.12 minecraft:music_disc_strad{display:{Name:"{\"text\":\"負けるのか？\"}"}}
 replaceitem entity @s inventory.13 minecraft:music_disc_strad{display:{Name:"{\"text\":\"手ごわいので退却する\"}"}}
 replaceitem entity @s inventory.14 minecraft:music_disc_strad{display:{Name:"{\"text\":\"楽勝だが退却する\"}"}}
-replaceitem entity @s inventory.15 minecraft:music_disc_strad{display:{Name:"{\"text\":\"敵は警備モードだ\"}"}}
-replaceitem entity @s inventory.16 minecraft:music_disc_strad{display:{Name:"{\"text\":\"敵は戦闘モードだ\"}"}}
+replaceitem entity @s inventory.15 minecraft:music_disc_strad{display:{Name:"{\"text\":\"どう思う?\"}"}}
+replaceitem entity @s inventory.16 minecraft:music_disc_strad{display:{Name:"{\"text\":\"それはできない!\"}"}}
 replaceitem entity @s inventory.17 minecraft:music_disc_strad{display:{Name:"{\"text\":\"今のはMojangが悪い\"}"}}
 
 tag @s remove havingChat9-1Item

@@ -15,7 +15,6 @@ scoreboard players reset @s[scores={damageDealt=1..}] damageDealt
 
 title @s actionbar ["",{"text":"\u300a\u6012\u308a\u30b2\u30fc\u30b8:","bold":true,"color":"yellow"},{"score":{"name":"@s","objective":"Mana"},"bold":true,"underlined":true,"color":"red"},{"text":"%","bold":true,"color":"red"},{"text":"\u300b","bold":true,"color":"yellow"}]
 scoreboard players add @s[scores={Mana=..99}] subcounter 1
-execute as @s[tag=Battle,scores={OutCombat=..240}] at @s run scoreboard players add @s[scores={Mana=..99}] subcounter 1
 scoreboard players add @s[scores={subcounter=40..}] Mana 1
 scoreboard players set @s[scores={subcounter=40..}] subcounter 0
 scoreboard players add @s[nbt={HurtTime:9s}] Mana 5

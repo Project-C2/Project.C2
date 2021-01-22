@@ -35,6 +35,8 @@ execute if entity @s[scores={counter_2=1..}] run function project-c:jobaction/09
 
 execute if entity @s[scores={OutCombat=..240}] run scoreboard players remove @s CT2 1
 
+execute if entity @s[scores={counter_4=1}] run particle minecraft:crit ~ ~1 ~ 0.4 0.4 0.4 1 10
+execute if entity @s[scores={counter_4=1}] run playsound minecraft:block.iron_door.close master @a ~ ~ ~ 2 1
 execute if entity @s[scores={counter_4=1..}] run scoreboard players remove @s counter_4 1
 
 

@@ -1,4 +1,4 @@
-scoreboard players set @s CT1 1100
+scoreboard players set @s CT1 1060
 
 
 playsound minecraft:block.anvil.place master @a ~ ~ ~ 0.5 2
