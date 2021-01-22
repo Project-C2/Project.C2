@@ -48,8 +48,7 @@ execute if score @s counter matches 5 if entity @s[tag=099-Red] as @e[distance=.
 execute if score @s counter matches 5 if entity @s[tag=099-Blue] as @e[distance=..10,tag=!099-S2-area-ed,tag=Battle,team=!Blue] run function project-c:jobaction/099/skill/2/hit
 
 
-execute if entity @s[tag=099-Red] if entity @a[scores={jobNumber=99},team=Red,limit=1] as @a[scores={jobNumber=99},team=Red] run function project-c:jobaction/099/skill/2/own
-execute if entity @s[tag=099-Blue] if entity @a[scores={jobNumber=99},team=Blue,limit=1] as @a[scores={jobNumber=99},team=Blue] run function project-c:jobaction/099/skill/2/own
+execute if entity @a[limit=1] as @a run function project-c:jobaction/099/skill/2/own
 
 
 execute if entity @s[tag=099-Red] if entity @e[tag=Battle,tag=099-S2-area-ed,team=!Red,limit=1] as @e[tag=Battle,tag=099-S2-area-ed,team=!Red] at @s run function project-c:jobaction/099/skill/2/area-check

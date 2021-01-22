@@ -25,5 +25,17 @@ execute if entity @s[scores={counter_2=1..},gamemode=!spectator] run function pr
 
 
 
+execute if entity @s[scores={relic=4}] run tag @s add job118-usage-prohibited
+execute if entity @s[scores={relic=5}] run tag @s add job118-usage-prohibited
+execute if entity @s[scores={relic=14}] run tag @s add job118-usage-prohibited
+execute if entity @s[scores={relic=21}] run tag @s add job118-usage-prohibited
+execute if entity @s[scores={relic=23}] run tag @s add job118-usage-prohibited
+
+execute if entity @s[tag=job118-usage-prohibited] run tellraw @s {"text":"このレリックは使えない！","bold":true,"color":"red"}
+execute if entity @s[tag=job118-usage-prohibited] at @s run playsound block.note_block.pling master @s ~ ~ ~ 1 0
+execute if entity @s[tag=job118-usage-prohibited] run scoreboard players set @s relic 0
+execute if entity @s[tag=job118-usage-prohibited] run tag @s remove job118-usage-prohibited
+
+
 tag @s[tag=!job118] add job118
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick

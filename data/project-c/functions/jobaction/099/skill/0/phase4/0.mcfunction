@@ -1,7 +1,7 @@
 
 
-summon area_effect_cloud ~ ~ ~ {Duration:10000,Tags:["099-W-P4-position","this","Stable"]}
-summon area_effect_cloud ~ ~ ~ {Duration:10000,Tags:["099-W-P4-position2","this2","Stable"]}
+summon area_effect_cloud ~ ~ ~ {Duration:10000,Tags:["099-W-P4-position","this","Fixed"]}
+summon area_effect_cloud ~ ~ ~ {Duration:10000,Tags:["099-W-P4-position2","this2","Fixed"]}
 tp @e[tag=this] @s
 scoreboard players operation @e[tag=this,limit=1] playerNumber = @s playerNumber
 
