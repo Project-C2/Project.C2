@@ -1,6 +1,7 @@
 execute as @a run function project-c:general/cooltimecounter
 #function project-c:general/delaycounter
 function project-c:general/0-luckeffection
+function project-c:general/item/shulkerwall
 function project-c:general/relic/reliceffect
 #function project-c:radiochat/general/inventorywatcher
 function project-c:general/effect/checkeffect
@@ -29,7 +30,7 @@ execute if entity @a[tag=118_0_selecting,limit=1] as @a[tag=118_0_selecting] run
 
 execute if entity @e[tag=experience_orb,limit=1] run kill @e[tag=experience_orb]
 
-#dummyPK�̏���
+#dummyPK?????
 #tag @e[tag=dummyPig] add dummyPK {OnGround:1b}
 tp @e[tag=dummyPK] ~ ~-50 ~
 effect give @e[tag=dummyPig] minecraft:invisibility 1000000 0 true
