@@ -27,12 +27,13 @@ execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 108 run scoreboard 
 
 execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 110 run scoreboard players set @e[limit=1,tag=RandomAEC] counter_3 0
 
+execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 0 run kill @e[tag=RandomAEC]
 execute if score @e[limit=1,tag=RandomAEC] counter_3 matches 0 run function project-c:general/jobrandom-extra
 
 scoreboard players operation @s jobNumber = @e[limit=1,tag=RandomAEC] counter_3
-
-kill @e[tag=RandomAEC]
-
+scoreboard players operation #jobNumber counter = @s jobNumber
+function project-c:general/jobname
+tellraw @s [{"text":"[システム]","color":"white"},{"nbt":"name","storage": "project-c:job","interpret": true,"bold":true},{"text":"に変更されました。","color":"white"}]
 
 tag @s add JobChanged
 

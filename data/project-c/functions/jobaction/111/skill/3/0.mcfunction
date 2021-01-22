@@ -1,5 +1,5 @@
 scoreboard players set @s usedSkill 3
-scoreboard players set @s CT3 1060
+scoreboard players set @s CT3 1000
 
 playsound minecraft:block.iron_trapdoor.close master @a ~ ~ ~ 2 2
 playsound minecraft:block.iron_trapdoor.close master @a ~ ~ ~ 2 1

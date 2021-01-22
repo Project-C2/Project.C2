@@ -34,8 +34,8 @@ scoreboard players add @s[scores={counter_3=1..}] counter_3 1
 execute if entity @s[scores={counter_3=11..},gamemode=!spectator] run function project-c:jobaction/077/skill/3/1
 
 
-execute if entity @s[scores={subcounter=1..},team=Red] run effect give @e[team=Blue,distance=..2.2] instant_damage 1 0
-execute if entity @s[scores={subcounter=1..},team=Blue] run effect give @e[team=Red,distance=..2.2] instant_damage 1 0
+execute if entity @s[scores={subcounter=1..},team=Red] run effect give @e[team=Blue,distance=..2.6] instant_damage 1 0
+execute if entity @s[scores={subcounter=1..},team=Blue] run effect give @e[team=Red,distance=..2.6] instant_damage 1 0
 scoreboard players remove @s[scores={Mana=1..}] Mana 1
 scoreboard players remove @s[scores={subcounter=1..}] subcounter 1
 execute if entity @s[scores={Mana=1..}] run particle minecraft:explosion ~ ~1 ~ 0 0 0 0 3 force @a

@@ -1,4 +1,4 @@
-scoreboard players set @s CT3 1180
+scoreboard players set @s CT3 1140
 
 
 effect give @s speed 1 50 true

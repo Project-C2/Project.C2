@@ -1,6 +1,6 @@
 #CT
-scoreboard players remove @s stockcounter 40
-scoreboard players set @s[scores={stockcounter=..40}] stockcounter 0
+scoreboard players remove @s stockcounter 60
+scoreboard players set @s[scores={stockcounter=..60}] stockcounter 0
 scoreboard players set @s usedSkill 0
 
 #スキル効果

@@ -25,6 +25,9 @@ execute if entity @s[scores={useSnowball=1..,MagicFatigue=..300},gamemode=!spect
 
 execute if entity @s[tag=useBinding,gamemode=!spectator] run function project-c:jobaction/073/skill/3/1
 
+scoreboard players add @s[scores={Mana=..999,walk=0,sprint=0}] Mana 1
+scoreboard players remove @s[scores={MagicFatigue=1..,walk=0,sprint=0}] MagicFatigue 1
+
 scoreboard players add @s[scores={Mana=..999,MagicFatigue=0}] Mana 1
 scoreboard players add @s[scores={Mana=..999,MagicFatigue=0}] Mana 1
 scoreboard players add @s[scores={Mana=..999,MagicFatigue=0}] Mana 1
@@ -50,3 +53,5 @@ scoreboard players set @s useCarrotStick 0
 scoreboard players set @s useSnowball 0
 scoreboard players reset @s damageDealt
 scoreboard players reset @s jump
+scoreboard players set @s walk 0
+scoreboard players set @s sprint 0

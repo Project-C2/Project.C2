@@ -1,6 +1,6 @@
 scoreboard players set @s CT3 1220
 
-
+tag @s add aviate1
 playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 1
 particle cloud ~ ~ ~ 0 0 0 0.1 20
 

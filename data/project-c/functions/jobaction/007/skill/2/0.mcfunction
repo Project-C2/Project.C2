@@ -20,7 +20,7 @@ data merge block -35 2 -122 {auto:1b}
 
 scoreboard players set @s counter 0
 scoreboard players set @s counter_1 0
-replaceitem entity @s hotbar.4 minecraft:end_crystal{display:{Name:"{\"text\":\"チャージ\"}",Lore:["{\"text\":\"1~3段階までチャージできる。"]}} 1
+replaceitem entity @s hotbar.4 minecraft:end_crystal{display:{Name:"{\"text\":\"チャージ\"}",Lore:["{\"text\":\"1~3段階までチャージできる。\"}"]}} 1
 
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2

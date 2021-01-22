@@ -9,6 +9,8 @@ execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/007/replaceitem/3
 
 
+execute if entity @s[scores={counter_5=1..}] run function project-c:jobaction/007/skill/1/shoot
+
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"火のエレメント\"}"}}}},scores={CT1=1200..,useSnowball=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/007/skill/1/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"氷のエレメント\"}"}}}},scores={CT2=1200..,useSnowball=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/007/skill/2/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"雷のエレメント\"}"}}}},scores={CT3=1200..,useSnowball=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/007/skill/3/0

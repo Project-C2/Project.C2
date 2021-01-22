@@ -315,8 +315,8 @@ tag @s[nbt={Inventory:[{Slot:20b,id:"minecraft:music_disc_strad",Count:1b,tag:{d
 tag @s[nbt={Inventory:[{Slot:21b,id:"minecraft:music_disc_strad",Count:1b,tag:{display:{Name:"{\"text\":\"負けるのか？\"}"}}}]}] remove havingChat9-4Item
 tag @s[nbt={Inventory:[{Slot:22b,id:"minecraft:music_disc_strad",Count:1b,tag:{display:{Name:"{\"text\":\"手ごわいので退却する\"}"}}}]}] remove havingChat9-5Item
 tag @s[nbt={Inventory:[{Slot:23b,id:"minecraft:music_disc_strad",Count:1b,tag:{display:{Name:"{\"text\":\"楽勝だが退却する\"}"}}}]}] remove havingChat9-6Item
-tag @s[nbt={Inventory:[{Slot:24b,id:"minecraft:music_disc_strad",Count:1b,tag:{display:{Name:"{\"text\":\"敵は警備モードだ\"}"}}}]}] remove havingChat9-7Item
-tag @s[nbt={Inventory:[{Slot:25b,id:"minecraft:music_disc_strad",Count:1b,tag:{display:{Name:"{\"text\":\"敵は戦闘モードだ\"}"}}}]}] remove havingChat9-8Item
+tag @s[nbt={Inventory:[{Slot:24b,id:"minecraft:music_disc_strad",Count:1b,tag:{display:{Name:"{\"text\":\"どう思う?\"}"}}}]}] remove havingChat9-7Item
+tag @s[nbt={Inventory:[{Slot:25b,id:"minecraft:music_disc_strad",Count:1b,tag:{display:{Name:"{\"text\":\"それはできない!\"}"}}}]}] remove havingChat9-8Item
 tag @s[nbt={Inventory:[{Slot:26b,id:"minecraft:music_disc_strad",Count:1b,tag:{display:{Name:"{\"text\":\"今のはMojangが悪い\"}"}}}]}] remove havingChat9-9Item
 
 execute if entity @s[tag=havingChat9-1Item] run function project-c:radiochat/tab9/chat1

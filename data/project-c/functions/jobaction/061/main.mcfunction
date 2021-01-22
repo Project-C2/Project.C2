@@ -16,14 +16,14 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"氷の�
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"火炎放射\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/061/skill/3/0
 
 
-scoreboard players add @s[scores={stockcounter=..159},gamemode=!spectator] stockcounter 1
+scoreboard players add @s[scores={stockcounter=..239},gamemode=!spectator] stockcounter 1
 
-replaceitem entity @s[scores={stockcounter=..39}] hotbar.0 minecraft:compass
+replaceitem entity @s[scores={stockcounter=..59}] hotbar.0 minecraft:compass
 
-replaceitem entity @s[scores={stockcounter=40..79}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:2/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 1
-replaceitem entity @s[scores={stockcounter=80..119}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:2/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 2
-replaceitem entity @s[scores={stockcounter=120..159}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:2/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 3
-replaceitem entity @s[scores={stockcounter=160}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:2/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 4
+replaceitem entity @s[scores={stockcounter=60..119}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:3/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 1
+replaceitem entity @s[scores={stockcounter=120..179}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:3/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 2
+replaceitem entity @s[scores={stockcounter=180..239}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:3/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 3
+replaceitem entity @s[scores={stockcounter=240}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:3/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 4
 
 
 execute as @s[scores={counter_3=1..}] at @s run scoreboard players remove @s counter_3 1
