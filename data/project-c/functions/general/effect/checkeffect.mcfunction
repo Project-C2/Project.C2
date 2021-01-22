@@ -1,4 +1,4 @@
 execute if entity @e[nbt={ActiveEffects:[{Id:5b}]},limit=1] as @e[nbt={ActiveEffects:[{Id:5b}]}] if data entity @s Attributes[{Modifiers:[{UUID:[I; 1686990948, 1784696665, -1967209790, 980277161]}]}] run function project-c:general/effect/strengtheffection
 execute if entity @e[nbt={ActiveEffects:[{Id:18b}]},limit=1] as @e[nbt={ActiveEffects:[{Id:18b}]}] if data entity @s Attributes[{Modifiers:[{UUID:[I; 577059721, 292440540, -1687447183, 1218141157]}]}] run function project-c:general/effect/weaknesseffection
 execute if entity @e[tag=strengthEffect,limit=1] as @e[tag=strengthEffect] unless data entity @s ActiveEffects[{Id:5b}] run function project-c:general/effect/strengthclear
-execute if entity @e[tag=weaknessEffect,limit=1] as @e[tag=strengthEffect] unless data entity @s ActiveEffects[{Id:18b}] run function project-c:general/effect/weaknessclear
+execute if entity @e[tag=weaknessEffect,limit=1] as @e[tag=weaknessEffect] unless data entity @s ActiveEffects[{Id:18b}] run function project-c:general/effect/weaknessclear
