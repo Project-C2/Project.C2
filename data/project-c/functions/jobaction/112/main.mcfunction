@@ -13,7 +13,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"極龍ノ�
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"磁力操作","color":"gold","italic":false}'}}}},scores={useCarrotStick=1..,CT1=1200..},gamemode=!spectator,tag=SkillReady1] run function project-c:jobaction/112/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"岩石周回","color":"gold","italic":false}'}}}},scores={useCarrotStick=1..,CT2=1200..,counter_4=0},gamemode=!spectator,tag=SkillReady2,tag=Battle] run function project-c:jobaction/112/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"岩石周回","color":"gold","italic":false}'}}}},scores={useCarrotStick=1..,CT2=1200..},gamemode=!spectator,tag=SkillReady2,tag=Battle] run function project-c:jobaction/112/skill/2/0
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"砂鉄球","color":"gold","italic":false}'}}}},scores={useCarrotStick=1..,CT3=1200..},gamemode=!spectator,tag=SkillReady3] run function project-c:jobaction/112/skill/3/0
 
@@ -26,10 +26,19 @@ execute if entity @s[scores={counter_1=1..,subcounter=0},team=Red] as @e[distanc
 
 execute if entity @s[scores={counter_1=1..,subcounter=1},team=Red] as @e[distance=..8,team=Blue,tag=Battle] at @s facing entity @e[type=minecraft:area_effect_cloud,tag=112glaveffect,sort=nearest,limit=1] feet run summon silverfish ^ ^ ^0.1 {PersistenceRequired:1b,DeathTime:19s,Silent:1b,NoAI:1b,NoGravity:1b,DeathLootTable:"empty",Health:6f,Attributes:[{Name:"generic.max_health",Base:6d},{Name:"generic.attack_damage",Base:0d}],ActiveEffects:[{Id:8b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:18b,Amplifier:127b,Duration:100,ShowParticles:0b}],Team:["Red"]}
 
+execute if entity @s[scores={counter_1=1..,subcounter=1},team=Red] as @e[distance=..8,team=Blue,tag=Battle] at @s facing entity @e[type=minecraft:area_effect_cloud,tag=112glaveffect,sort=nearest,limit=1] feet run summon silverfish ^ ^ ^0.1 {PersistenceRequired:1b,DeathTime:19s,Silent:1b,NoAI:1b,NoGravity:1b,DeathLootTable:"empty",Health:6f,Attributes:[{Name:"generic.max_health",Base:6d},{Name:"generic.attack_damage",Base:0d}],ActiveEffects:[{Id:8b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:18b,Amplifier:127b,Duration:100,ShowParticles:0b}],Team:["Red"]}
+
+
 execute if entity @s[scores={counter_1=1..,subcounter=0},team=Blue] as @e[distance=..8,team=Red,tag=Battle] at @s facing entity @e[type=minecraft:area_effect_cloud,tag=112glaveffect,sort=nearest,limit=1] feet run summon silverfish ^ ^ ^-0.1 {PersistenceRequired:1b,DeathTime:19s,Silent:1b,NoAI:1b,NoGravity:1b,DeathLootTable:"empty",Health:6f,Attributes:[{Name:"generic.max_health",Base:6d},{Name:"generic.attack_damage",Base:0d}],ActiveEffects:[{Id:8b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:18b,Amplifier:127b,Duration:100,ShowParticles:0b}],Team:["Blue"]}
+
 
 execute if entity @s[scores={counter_1=1..,subcounter=1},team=Blue] as @e[distance=..8,team=Red,tag=Battle] at @s facing entity @e[type=minecraft:area_effect_cloud,tag=112glaveffect,sort=nearest,limit=1] feet run summon silverfish ^ ^ ^0.1 {PersistenceRequired:1b,DeathTime:19s,Silent:1b,NoAI:1b,NoGravity:1b,DeathLootTable:"empty",Health:6f,Attributes:[{Name:"generic.max_health",Base:6d},{Name:"generic.attack_damage",Base:0d}],ActiveEffects:[{Id:8b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:18b,Amplifier:127b,Duration:100,ShowParticles:0b}],Team:["Blue"]}
 
+execute if entity @s[scores={counter_1=1..,subcounter=1},team=Blue] as @e[distance=..8,team=Red,tag=Battle] at @s facing entity @e[type=minecraft:area_effect_cloud,tag=112glaveffect,sort=nearest,limit=1] feet run summon silverfish ^ ^ ^0.1 {PersistenceRequired:1b,DeathTime:19s,Silent:1b,NoAI:1b,NoGravity:1b,DeathLootTable:"empty",Health:6f,Attributes:[{Name:"generic.max_health",Base:6d},{Name:"generic.attack_damage",Base:0d}],ActiveEffects:[{Id:8b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:18b,Amplifier:127b,Duration:100,ShowParticles:0b}],Team:["Blue"]}
+
+
+execute if entity @s[scores={subcounter=0}] run title @s actionbar [{"text":"<<磁力状態 : 引き寄せ>>","bold":true,"color":"red"}]
+execute if entity @s[scores={subcounter=1}] run title @s actionbar [{"text":"<<磁力状態 : 押し出し>>","bold":true,"color":"blue"}]
 
 kill @e[type=area_effect_cloud,tag=112glaveffect]
 

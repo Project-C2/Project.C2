@@ -8,9 +8,11 @@ execute if entity @e[tag=085-swap1] run execute if entity @e[distance=0.1..2,typ
 
 execute if entity @s[tag=085-swap2] run execute if entity @a[distance=0.1..2,gamemode=!spectator,tag=Battle] run tag @a[distance=0.1..2,gamemode=!spectator,tag=Battle] add 85swaptarget
 
-execute if entity @s[tag=085-swap1] run execute if entity @e[distance=0.1..2,type=!armor_stand,type=!area_effect_cloud,type=!falling_block,tag=!Stable] run execute if entity @e[gamemode=!spectator,type=minecraft:player] run function project-c:jobaction/085/skill/2/2
+tag @a[distance=..2,gamemode=spectator,tag=!Battle] remove 85swaptarget
 
-execute if entity @s[tag=085-swap2] run execute if entity @a[distance=0.1..2,gamemode=!spectator,tag=Battle] run function project-c:jobaction/085/skill/2/2
+execute if entity @s[tag=085-swap1] run execute if entity @e[distance=0.1..2,type=!armor_stand,type=!area_effect_cloud,type=!falling_block,tag=!Stable] run execute if entity @e[tag=85swaptarget] run function project-c:jobaction/085/skill/2/2
+
+execute if entity @s[tag=085-swap2] run execute if entity @a[tag=85swaptarget] run function project-c:jobaction/085/skill/2/2
 
 execute unless block ^ ^ ^1 air run particle end_rod ~ ~ ~ 0 0 0 1 30 force @a
 execute unless block ^ ^ ^1 air run scoreboard players set @s counter 60
