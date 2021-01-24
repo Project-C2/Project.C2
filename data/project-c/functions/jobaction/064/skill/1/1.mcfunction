@@ -7,6 +7,7 @@ teleport @s[scores={counter=3..}] ^ ^ ^2 ~ 0
 
 execute if entity @s[scores={counter=3}] run tp @s ^ ^ ^ facing entity @a[scores={jobNumber=64,counter_1=1..},limit=1,sort=nearest]
 execute if entity @s[scores={counter=3}] run effect clear @a[scores={jobNumber=64,counter_1=1..},limit=1,sort=nearest] levitation
+execute if entity @s[scores={counter=3}] run effect clear @a[scores={jobNumber=64,counter_1=1..},limit=1,sort=nearest] speed
 
 execute if entity @s[scores={counter=3..}] run tp @a[scores={jobNumber=64,counter_1=1..},limit=1,sort=nearest,distance=..5] ^ ^ ^
 
