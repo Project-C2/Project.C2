@@ -8,7 +8,7 @@ execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/064/replaceitem/3
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ストレイフ\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..,stockcounter=60..},gamemode=!spectator] run function project-c:jobaction/064/skill/1/0
+execute if entity @s[nbt={OnGround:0b,SelectedItem:{tag:{display:{Name:"{\"text\":\"ストレイフ\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..,stockcounter=60..},gamemode=!spectator] run function project-c:jobaction/064/skill/1/0
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"リバーサー\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,useCarrotStick=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/064/skill/2/0
 
@@ -18,9 +18,9 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"死神�
 scoreboard players add @s[scores={stockcounter=..299},gamemode=!spectator] stockcounter 1
 
 replaceitem entity @s[scores={jobNumber=64,stockcounter=..99,CT1=1200..}] hotbar.1 minecraft:compass
-replaceitem entity @s[scores={jobNumber=64,stockcounter=100..199,CT1=1200..}] hotbar.1 minecraft:white_dye{display:{Name:"{\"text\":\"ストレイフ\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:自身の移動している方向に駆け抜け弓を放つ。\"}","{\"text\":\"§aCT:5/ストック:3\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 1
-replaceitem entity @s[scores={jobNumber=64,stockcounter=200..299,CT1=1200..}] hotbar.1 minecraft:white_dye{display:{Name:"{\"text\":\"ストレイフ\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:自身の移動している方向に駆け抜け弓を放つ。\"}","{\"text\":\"§aCT:5/ストック:3\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 2
-replaceitem entity @s[scores={jobNumber=64,stockcounter=300,CT1=1200..}] hotbar.1 minecraft:white_dye{display:{Name:"{\"text\":\"ストレイフ\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:自身の移動している方向に駆け抜け弓を放つ。\"}","{\"text\":\"§aCT:5/ストック:3\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 3
+replaceitem entity @s[scores={jobNumber=64,stockcounter=100..199,CT1=1200..}] hotbar.1 minecraft:white_dye{display:{Name:"{\"text\":\"ストレイフ\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:空中で右クリック\"}","{\"text\":\"§f効果:自身の移動している方向に駆け抜け弓を放つ。\"}","{\"text\":\"§aCT:5/ストック:3\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 1
+replaceitem entity @s[scores={jobNumber=64,stockcounter=200..299,CT1=1200..}] hotbar.1 minecraft:white_dye{display:{Name:"{\"text\":\"ストレイフ\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:空中で右クリック\"}","{\"text\":\"§f効果:自身の移動している方向に駆け抜け弓を放つ。\"}","{\"text\":\"§aCT:5/ストック:3\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 2
+replaceitem entity @s[scores={jobNumber=64,stockcounter=300,CT1=1200..}] hotbar.1 minecraft:white_dye{display:{Name:"{\"text\":\"ストレイフ\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:空中で右クリック\"}","{\"text\":\"§f効果:自身の移動している方向に駆け抜け弓を放つ。\"}","{\"text\":\"§aCT:5/ストック:3\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 3
 
 replaceitem entity @s[scores={crossbow=1..},gamemode=!spectator] hotbar.4 minecraft:arrow
 

@@ -1,8 +1,9 @@
 execute as @a run function project-c:general/cooltimecounter
 #function project-c:general/delaycounter
 function project-c:general/0-luckeffection
+
 function project-c:general/item/shulkerwall
-function project-c:general/relic/reliceffect
+execute if score #MenuRelic counter matches 1 run function project-c:general/relic/reliceffect
 #function project-c:radiochat/general/inventorywatcher
 function project-c:general/effect/checkeffect
 
