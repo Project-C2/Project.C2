@@ -5,7 +5,7 @@ scoreboard players set @s counter_1 100
 summon minecraft:creeper ~ -10 ~ {Tags:["this"],ExplosionRadius:1,Fuse:0,PersistenceRequired:1b,Invulnerable:1b}
 summon minecraft:creeper ~ -10 ~ {Tags:["this"],ExplosionRadius:1,Fuse:0,PersistenceRequired:1b,Invulnerable:1b}
 summon minecraft:creeper ~ -10 ~ {Tags:["this"],ExplosionRadius:1,Fuse:0,PersistenceRequired:1b,Invulnerable:1b}
-execute anchored eyes positioned ^ ^-0.05 ^0.3 run tp @e[tag=this] ~ ~ ~
+execute anchored eyes positioned ^ ^-0.02 ^0.17 run tp @e[tag=this] ~ ~ ~
 tag @e[tag=this] remove this
 tp @s @s
 
@@ -20,9 +20,9 @@ particle minecraft:witch ~ ~1 ~ 0 3 0 1 100 force @a
 particle minecraft:witch ~ ~0.1 ~ 4 0.05 4 1 400 normal @a
 particle minecraft:witch ~ ~0.1 ~ 2 0 2 1 100 force @a
 
-effect give @s minecraft:levitation 1 0
-replaceitem entity @s armor.feet minecraft:chainmail_boots{Enchantments:[{id:"binding_curse",lvl:1s},{id:"blast_protection",lvl:10s}],AttributeModifiers:[{}]}
+effect give @s minecraft:slow_falling 1 0
+replaceitem entity @s armor.feet minecraft:chainmail_boots{Enchantments:[{id:"binding_curse",lvl:1s},{id:"blast_protection",lvl:10s}],AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"096",Slot:"feet",UUID:[I;0,96,0,96],Amount:1d,Operation:0}]}
 tag @s add 096backstep
-schedule function project-c:jobaction/096/skill/2/0- 1t replace
+schedule function project-c:jobaction/096/skill/2/0- 2t replace
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2

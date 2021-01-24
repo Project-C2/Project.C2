@@ -22,6 +22,7 @@ scoreboard players operation @e[tag=this] playerNumber = @s playerNumber
 tag @s add user
 execute as @e[tag=this] at @s facing entity @a[tag=user,limit=1] feet run tp @s ~ ~ ~ ~ 0
 tag @s remove user
+tag @s add 051using
 execute if entity @s[team=Red] run team join RedDummy @e[tag=this]
 execute if entity @s[team=Blue] run team join BlueDummy @e[tag=this]
 #execute as @e[tag=this] store result score @s counter_1 run data get entity @s Rotation[0] 1

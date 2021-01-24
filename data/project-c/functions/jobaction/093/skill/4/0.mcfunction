@@ -1,4 +1,4 @@
-scoreboard players set @s CT1 400
+scoreboard players set @s CT1 600
 clear @s water_bucket
 clear @s heart_of_the_sea
 

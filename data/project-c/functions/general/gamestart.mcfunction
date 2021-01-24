@@ -48,6 +48,8 @@ function project-c:jobaction/099/initialize
 
 function project-c:jobaction/106/initialize
 
+function project-c:jobaction/118/initialize
+
 execute as @a at @s run attribute @s minecraft:generic.max_health base set 40
 
 effect clear @a minecraft:health_boost

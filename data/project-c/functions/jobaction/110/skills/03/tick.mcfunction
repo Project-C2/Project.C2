@@ -11,7 +11,7 @@ execute if entity @s[tag=110drainplantB] as @e[distance=..1.5,team=!Blue,tag=Bat
 execute if entity @e[tag=hit,limit=1] at @e[tag=hit,limit=1,sort=nearest] run function project-c:jobaction/110/skills/03/hit
 tag @s remove now
 
-execute if block ~ ~ ~ #project-c:wancomatter/like_air run kill @s
-execute if block ^ ^ ^0.6 #project-c:wancomatter/like_air run kill @s
+execute if block ~ ~ ~ #project-c:wancomatter/like_air run function project-c:jobaction/110/skills/03/end
+execute if block ^ ^ ^0.6 #project-c:wancomatter/like_air run function project-c:jobaction/110/skills/03/end
 tp @s ^ ^ ^1.2
-execute if score @s counter matches 80.. run kill @s
+execute if score @s counter matches 80.. run function project-c:jobaction/110/skills/03/end

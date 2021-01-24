@@ -47,22 +47,35 @@ execute if score @s counter_3 matches 128..255 run particle minecraft:enchanted_
 
 #tp処理
 execute if score @s counter_3 matches 256.. at @s run tp @s ^ ^ ^2.56
+execute if score @s counter_3 matches 256.. at @s unless block ^ ^ ^0.64 #project-c:wancomatter/like_air run kill @s
+execute if score @s counter_3 matches 256.. at @s unless block ^ ^ ^1.28 #project-c:wancomatter/like_air run kill @s
+execute if score @s counter_3 matches 256.. at @s unless block ^ ^ ^1.92 #project-c:wancomatter/like_air run kill @s
+execute if score @s counter_3 matches 256.. at @s unless block ^ ^ ^2.56 #project-c:wancomatter/like_air run kill @s
 execute if score @s counter_3 matches 256.. run scoreboard players remove @s counter_3 256
 execute if score @s counter_3 matches 128.. at @s run tp @s ^ ^ ^1.28
+execute if score @s counter_3 matches 128.. at @s unless block ^ ^ ^0.64 #project-c:wancomatter/like_air run kill @s
+execute if score @s counter_3 matches 128.. at @s unless block ^ ^ ^1.28 #project-c:wancomatter/like_air run kill @s
 execute if score @s counter_3 matches 128.. run scoreboard players remove @s counter_3 128
 execute if score @s counter_3 matches 64.. at @s run tp @s ^ ^ ^0.64
+execute if score @s counter_3 matches 64.. at @s unless block ^ ^ ^0.64 #project-c:wancomatter/like_air run kill @s
 execute if score @s counter_3 matches 64.. run scoreboard players remove @s counter_3 064
 execute if score @s counter_3 matches 32.. at @s run tp @s ^ ^ ^0.32
+execute if score @s counter_3 matches 32.. at @s unless block ^ ^ ^0.32 #project-c:wancomatter/like_air run kill @s
 execute if score @s counter_3 matches 32.. run scoreboard players remove @s counter_3 032
 execute if score @s counter_3 matches 16.. at @s run tp @s ^ ^ ^0.16
+execute if score @s counter_3 matches 16.. at @s unless block ^ ^ ^0.16 #project-c:wancomatter/like_air run kill @s
 execute if score @s counter_3 matches 16.. run scoreboard players remove @s counter_3 016
 execute if score @s counter_3 matches 8.. at @s run tp @s ^ ^ ^0.08
+execute if score @s counter_3 matches 8.. at @s unless block ^ ^ ^0.08 #project-c:wancomatter/like_air run kill @s
 execute if score @s counter_3 matches 8.. run scoreboard players remove @s counter_3 008
 execute if score @s counter_3 matches 4.. at @s run tp @s ^ ^ ^0.04
+execute if score @s counter_3 matches 4.. at @s unless block ^ ^ ^0.04 #project-c:wancomatter/like_air run kill @s
 execute if score @s counter_3 matches 4.. run scoreboard players remove @s counter_3 004
 execute if score @s counter_3 matches 2.. at @s run tp @s ^ ^ ^0.02
+execute if score @s counter_3 matches 2.. at @s unless block ^ ^ ^0.02 #project-c:wancomatter/like_air run kill @s
 execute if score @s counter_3 matches 2.. run scoreboard players remove @s counter_3 002
 execute if score @s counter_3 matches 1.. at @s run tp @s ^ ^ ^0.01
+execute if score @s counter_3 matches 1.. at @s unless block ^ ^ ^0.01 #project-c:wancomatter/like_air run kill @s
 execute if score @s counter_3 matches 1.. run scoreboard players remove @s counter_3 001
 scoreboard players add @s counter 1
 execute if score @s counter matches 35.. run kill @s

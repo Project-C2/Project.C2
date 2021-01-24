@@ -1,8 +1,11 @@
 execute as @a run function project-c:general/cooltimecounter
 #function project-c:general/delaycounter
 function project-c:general/0-luckeffection
+
+function project-c:general/item/shulkerwall
 execute if score #MenuRelic counter matches 1 run function project-c:general/relic/reliceffect
 #function project-c:radiochat/general/inventorywatcher
+function project-c:general/effect/checkeffect
 
 scoreboard players add #Clock counter 1
 execute if score #Clock counter matches 2.. run scoreboard players set #Clock counter 0
@@ -20,9 +23,15 @@ execute if entity @a[scores={jobNumber=99,deathCount=1..},tag=!099_death,limit=1
 execute if entity @a[scores={099-S2-APN=1..,deathCount=1..},tag=099-S2-area-ed,limit=1] as @a[scores={099-S2-APN=1..,deathCount=1..},tag=099-S2-area-ed] run function project-c:jobaction/099/skill/2/end-0
 
 execute if entity @a[scores={jobNumber=106,deathCount=1..},tag=!106_death_skill,limit=1] as @a[scores={jobNumber=106,deathCount=1..},tag=!106_death_skill] run function project-c:jobaction/106/change_keep
+
+execute if entity @e[type=player,scores={jobNumber=118,deathCount=1..,counter=1..},limit=1] as @e[type=player,scores={jobNumber=118,deathCount=1..,counter=1..}] run function project-c:jobaction/118/skill/0/reset-me2
+execute if entity @a[scores={jobNumber=118,deathCount=1..,counter=1..},limit=1] as @a[scores={jobNumber=118,deathCount=1..,counter=1..}] run function project-c:jobaction/118/skill/0/reset-me---
+execute if entity @a[scores={deathCount=1..},tag=118_0_selecting,limit=1] as @a[scores={deathCount=1..},tag=118_0_selecting] run function project-c:jobaction/118/skill/0/select-death
+execute if entity @a[tag=118_0_selecting,limit=1] as @a[tag=118_0_selecting] run function project-c:jobaction/118/skill/0/keeper-search
+
 execute if entity @e[tag=experience_orb,limit=1] run kill @e[tag=experience_orb]
 
-#dummyPK�̏���
+#dummyPK?????
 #tag @e[tag=dummyPig] add dummyPK {OnGround:1b}
 tp @e[tag=dummyPK] ~ ~-50 ~
 effect give @e[tag=dummyPig] minecraft:invisibility 1000000 0 true

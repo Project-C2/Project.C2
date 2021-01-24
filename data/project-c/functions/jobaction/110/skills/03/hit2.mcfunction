@@ -1,3 +1,4 @@
+tag @e[tag=hit] remove 110drainplant-hitting
 execute unless entity @s[tag=110geometric] at @e[tag=hit] run summon minecraft:area_effect_cloud ~ ~0.5 ~ {CustomName:'{"text": "吸根","color":"dark_green","italic":false}',Tags:["this"],Particle:"happy_villager",Duration:5,Age:4,WaitTime:1,Radius:1.0f,Effects:[{Id:11b,Amplifier:0b,Duration:1},{Id:7b,Amplifier:0b,Duration:1}]}
 execute if entity @s[tag=110geometric] at @e[tag=hit] run summon minecraft:area_effect_cloud ~ ~0.5 ~ {CustomName:'{"text": "吸根","color":"dark_green","italic":false}',Tags:["this"],Particle:"happy_villager",Duration:5,Age:4,WaitTime:1,Radius:1.0f,Effects:[{Id:7b,Amplifier:0b,Duration:1}]}
 tag @s add 110

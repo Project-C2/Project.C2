@@ -4,3 +4,4 @@ execute as @e[tag=035-2-now,limit=1] store result entity @e[tag=035-2second,limi
 execute as @e[tag=035-2-now,limit=1] store result entity @e[tag=035-2second,limit=1] Motion[2] double 0.002 run scoreboard players get @s CT3
 execute at @s run playsound minecraft:item.crossbow.shoot master @a ~ ~ ~ 1 1.5
 data merge block 49 2 -69 {auto:1b}
+tag @a[tag=035-2used] remove 035-2used
