@@ -22,9 +22,9 @@ scoreboard players set @s[scores={counter=4,counter_3=-1}] CT3 1142
 tag @s[scores={counter=4}] remove SkillReady3
 scoreboard players reset @s[scores={counter=4}] counter
 
-execute if entity @s[scores={CT3=1261..,counter_3=..6}] run scoreboard players add @s counter_3 1
-execute if entity @s[scores={CT3=1261..,counter_3=..6}] run function project-c:jobaction/009/replaceitem/3
-execute if entity @s[scores={CT3=1261..,counter_3=..6}] run scoreboard players set @s CT3 1200
+execute if entity @s[scores={CT3=1261..,counter_3=..7}] run scoreboard players add @s counter_3 1
+execute if entity @s[scores={CT3=1261..,counter_3=..7}] run function project-c:jobaction/009/replaceitem/3
+execute if entity @s[scores={CT3=1261..,counter_3=..7}] run scoreboard players set @s CT3 1200
 
 
 
