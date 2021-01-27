@@ -1,0 +1,8 @@
+execute positioned 4003 73 974 as @a[distance=..100,gamemode=adventure] at @s if block ~ ~ ~ minecraft:lava run scoreboard players add @s Nethercount 2
+execute positioned 4003 73 974 as @a[distance=..100,gamemode=adventure,team=Red] at @s if entity @s[scores={Nethercount=60..}] run tp @s 4044 63 932 45 0
+execute positioned 4003 73 974 as @a[distance=..100,gamemode=adventure,team=Blue] at @s if entity @s[scores={Nethercount=60..}] run tp @s 3964 63 1012 -135 0
+execute positioned 4003 73 974 as @a[distance=..100,gamemode=adventure] at @s if entity @s[scores={Nethercount=60..}] run effect give @s minecraft:fire_resistance 15 0 false
+execute positioned 4003 73 974 as @a[distance=..100,gamemode=adventure] at @s if entity @s[scores={Nethercount=60..}] run playsound minecraft:entity.zombie_villager.converted master @s ~ ~ ~ 1 0 1
+execute positioned 4003 73 974 as @a[distance=..100,gamemode=adventure] at @s if entity @s[scores={Nethercount=60..}] run tellraw @s {"text":"\u6eb6\u5ca9\u306b\u6d78\u304b\u308a\u3059\u304e\u305f\u305f\u3081\u30ea\u30b9\u30dd\u30fc\u30f3\u5730\u70b9\u306b\u623b\u3055\u308c\u307e\u3057\u305f"}
+execute positioned 4003 73 974 as @a[distance=..100,gamemode=adventure] at @s if entity @s[scores={Nethercount=60..}] run particle minecraft:end_rod ~ ~0.5 ~ 0.0 0.5 0.5 0.1 100 normal
+execute positioned 4003 73 974 as @a[scores={Nethercount=1..}] at @s unless block ~ ~ ~ minecraft:lava run scoreboard players remove @s Nethercount 1
