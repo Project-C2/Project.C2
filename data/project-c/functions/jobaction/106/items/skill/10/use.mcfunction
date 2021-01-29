@@ -2,7 +2,7 @@
 
 
 
-function project-c:jobaction/106/items/skill/10/check
+execute positioned ^ ^ ^7.5 run function project-c:jobaction/106/items/skill/10/check
 
 
 
