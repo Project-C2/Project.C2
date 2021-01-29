@@ -18,6 +18,7 @@ execute as @e[nbt={Marker:1b}] run tag @s add 106_perforate_d-target
 
 execute if entity @s[tag=!106_go_tp,team=Red] if score @s counter matches 40.. as @e[team=!Red,tag=Battle,tag=!106_perforate_d-target] run tag @s add 106_perforate_aim_target_candidacy
 execute if entity @s[tag=!106_go_tp,team=Blue] if score @s counter matches 40.. as @e[team=!Blue,tag=Battle,tag=!106_perforate_d-target] run tag @s add 106_perforate_aim_target_candidacy
+execute if entity @s[tag=!106_go_tp] if score @s counter matches 40.. if entity @a[tag=106_perforate_aim_target_candidacy,gamemode=spectator,limit=1] as @a[tag=106_perforate_aim_target_candidacy,gamemode=spectator] run tag @s remove 106_perforate_aim_target_candidacy
 execute if entity @s[tag=!106_go_tp] if score @s counter matches 40.. facing entity @e[tag=Battle,tag=106_perforate_aim_target_candidacy,sort=nearest,limit=1] eyes run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!106_go_tp] if score @s counter matches 40.. if entity @e[tag=106_perforate_aim_target_candidacy,limit=1] as @e[tag=106_perforate_aim_target_candidacy] run tag @s remove 106_perforate_aim_target_candidacy
 
