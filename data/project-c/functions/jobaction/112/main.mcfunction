@@ -22,6 +22,11 @@ execute if entity @s[scores={counter_1=1..}] run particle minecraft:falling_dust
 
 execute if entity @s[scores={counter_1=1..}] run summon minecraft:area_effect_cloud ^ ^ ^ {Radius:0.1f,Duration:1,Tags:["112glaveffect"]}
 
+execute if entity @s[scores={counter_1=1..},team=Red] as @e[distance=..8,team=Blue,tag=Battle,type=!player] at @s run effect give @s slowness 1 7 true
+
+execute if entity @s[scores={counter_1=1..},team=Blue] as @e[distance=..8,team=Red,tag=Battle,type=!player] at @s run effect give @s slowness 1 7 true
+
+
 execute if entity @s[scores={counter_1=1..,subcounter=0},team=Red] as @e[distance=..8,team=Blue,tag=Battle] at @s facing entity @e[type=minecraft:area_effect_cloud,tag=112glaveffect,sort=nearest,limit=1] feet run summon silverfish ^ ^ ^-0.1 {PersistenceRequired:1b,DeathTime:19s,Silent:1b,NoAI:1b,NoGravity:1b,DeathLootTable:"empty",Health:6f,Attributes:[{Name:"generic.max_health",Base:6d},{Name:"generic.attack_damage",Base:0d}],ActiveEffects:[{Id:8b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:18b,Amplifier:127b,Duration:100,ShowParticles:0b}],Team:["Red"]}
 
 execute if entity @s[scores={counter_1=1..,subcounter=1},team=Red] as @e[distance=..8,team=Blue,tag=Battle] at @s facing entity @e[type=minecraft:area_effect_cloud,tag=112glaveffect,sort=nearest,limit=1] feet run summon silverfish ^ ^ ^0.1 {PersistenceRequired:1b,DeathTime:19s,Silent:1b,NoAI:1b,NoGravity:1b,DeathLootTable:"empty",Health:6f,Attributes:[{Name:"generic.max_health",Base:6d},{Name:"generic.attack_damage",Base:0d}],ActiveEffects:[{Id:8b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:7b,Amplifier:0b,Duration:100,ShowParticles:0b},{Id:18b,Amplifier:127b,Duration:100,ShowParticles:0b}],Team:["Red"]}
