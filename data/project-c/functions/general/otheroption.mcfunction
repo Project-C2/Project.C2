@@ -31,6 +31,14 @@ execute if entity @a[tag=Battle,scores={OutCombat=400},gamemode=!spectator,limit
 execute if entity @a[tag=Battle,scores={OutCombat=400},limit=1] as @a[tag=Battle,scores={OutCombat=400}] run effect give @s regeneration 100000 2 true
 execute if entity @a[tag=Battle,scores={OutCombat=401..},limit=1] as @a[tag=Battle,scores={OutCombat=401..}] run effect give @s speed 1 0 true
 
+
+execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion] at @s run particle minecraft:block iron_block ~ ~1 ~ 0.5 0.5 0.5 0 3
+execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion] at @s run effect give @s resistance 1 4 true
+execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={HurtTime:9s}] at @s run effect clear @s resistance
+execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={HurtTime:9s}] at @s run playsound minecraft:entity.wither.hurt master @a ~ ~ ~ 1 0.5
+execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={HurtTime:9s}] at @s run particle minecraft:block iron_block ~ ~1 ~ 0 0 0 1 70
+execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={HurtTime:9s}] at @s run tag @s remove KoutetuPotion
+
 execute as @a at @s store result score @s Hight run data get entity @s Pos[1]
 
 execute if entity @a[gamemode=!spectator,tag=Battle,limit=1] as @a[gamemode=!spectator,tag=Battle] if score @s Hight matches ..4 unless score #GameTime counter matches ..0 run function project-c:general/void_return
