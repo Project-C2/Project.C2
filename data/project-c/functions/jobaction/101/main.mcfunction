@@ -39,7 +39,6 @@ execute if entity @s[scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spe
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"Spotter: SCAN","color":"light_purple","italic":false}'}}}},scores={useCarrotStick=1..,CT3=1200..},gamemode=!spectator] run function project-c:jobaction/101/skill/3/0
 
-
 execute if entity @s[scores={deathCountExt=1..}] run execute as @e[tag=101spotter] if score @s playerNumber = @a[limit=1,sort=nearest] playerNumber run kill @s
 
 execute if entity @s[scores={subcounter=1}] run effect clear @s levitation
