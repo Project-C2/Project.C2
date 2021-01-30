@@ -53,12 +53,6 @@ execute if entity @a[tag=Elixir,limit=1] as @a[tag=Elixir] at @s run particle fi
 execute if entity @a[tag=Elixir,limit=1] as @a[tag=Elixir] at @s run playsound minecraft:block.portal.trigger master @a ~ ~ ~ 3 2
 execute if entity @a[tag=Elixir,limit=1] run tag @a[tag=Elixir] remove Elixir
 
-#鋼鉄のポーション
-execute if entity @a[nbt={ActiveEffects:[{Id:26b,Amplifier:111b}]},limit=1] run tag @a[nbt={ActiveEffects:[{Id:26b,Amplifier:111b}]}] add KoutetuPotionF
-
-execute if entity @a[tag=KoutetuPotionF,limit=1] as @a[tag=KoutetuPotionF] at @s run function project-c:general/item/ironskin
-
-
 
 #メルク
 execute if entity @a[tag=!extra,nbt={ActiveEffects:[{Id:26b,Amplifier:120b}]},limit=1] run tag @a[tag=!extra,nbt={ActiveEffects:[{Id:26b,Amplifier:120b}]}] add extraready
