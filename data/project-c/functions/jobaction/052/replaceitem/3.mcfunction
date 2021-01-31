@@ -1,4 +1,5 @@
-replaceitem entity @s hotbar.3 minecraft:golden_sword{display:{Name:"{\"text\":\"烈刀一閃\",\"color\":\"yellow\",\"italic\":\"false\"}",Lore:["{\"text\":\"§e発動:ダッシュ切り\"}","{\"text\":\"§f剣閃を放ち、半径3m以内/剣閃から3m以内の敵にダメージ。\"}","{\"text\":\"§c※ジャンプダッシュ切りで発動時、\"}","{\"text\":\"§c奥義ゲージを60%消費して次の五輪剣のダメージを倍化\"}","{\"text\":\"§aCT:60\"}"]},HideFlags:63b} 1
+replaceitem entity @s hotbar.3 crimson_roots{display:{Name:'{"text":"剣禅一如","color":"white","italic":false}',Lore:['{"text":"発動:ダメージを受ける","color":"yellow","italic":false}','{"text":"発動するまで自身に力Ⅱ,俊敏Ⅰを付与し続ける","color":"white","italic":false}','{"text":"CT:30","color":"green","italic":false}']}} 1
 
 playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+
 tag @s add SkillReady3
