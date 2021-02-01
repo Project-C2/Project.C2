@@ -24,6 +24,7 @@ execute if entity @e[type=hopper_minecart,tag=!099-S1-P4-BkillO,tag=!Stable,limi
 execute if entity @e[type=chest_minecart,tag=!099-S1-P4-BkillO,tag=!Stable,limit=1] as @e[type=chest_minecart,tag=!099-S1-P4-BkillO,tag=!Stable] run tag @s add 099-S1-P4-BkillO
 execute if entity @e[type=furnace_minecart,tag=!099-S1-P4-BkillO,tag=!Stable,limit=1] as @e[type=furnace_minecart,tag=!099-S1-P4-BkillO,tag=!Stable] run tag @s add 099-S1-P4-BkillO
 execute if entity @e[type=command_block_minecart,tag=!099-S1-P4-BkillO,tag=!Stable,limit=1] as @e[type=command_block_minecart,tag=!099-S1-P4-BkillO,tag=!Stable] run tag @s add 099-S1-P4-BkillO
+execute if entity @e[type=firework_rocket,tag=!099-S1-P4-BkillO,tag=!Stable,limit=1] as @e[type=firework_rocket,tag=!099-S1-P4-BkillO,tag=!Stable] run tag @s add 099-S1-P4-BkillO
 
 execute if entity @e[type=experience_orb,tag=!099-S1-P4-BkillO,tag=!Stable,limit=1] as @e[type=experience_orb,tag=!099-S1-P4-BkillO,tag=!Stable] run tag @s add 099-S1-P4-BkillO
 execute if entity @e[type=shulker_bullet,tag=!099-S1-P4-BkillO,tag=!Stable,limit=1] as @e[type=shulker_bullet,tag=!099-S1-P4-BkillO,tag=!Stable] run tag @s add 099-S1-P4-BkillO
