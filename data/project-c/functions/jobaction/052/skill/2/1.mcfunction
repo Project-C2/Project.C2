@@ -1,3 +1,5 @@
-scoreboard players remove @s counter 1
-replaceitem entity @s[scores={counter=1}] hotbar.0 minecraft:iron_sword{display:{Name:"{\"text\":\"Katana\"}",Lore:["§7心空雲耀 Ⅴ§r","§f与えた/受けたダメージの2倍が§9奥義ゲージ§fとして加算される§r"]},AttributeModifiers:[{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:2,Operation:0,UUIDLeast:609494,UUIDMost:53612,Slot:"mainhand"}],Unbreakable:1b} 1
-replaceitem entity @s[scores={counter=1}] weapon.offhand minecraft:golden_sword{display:{Name:"{\"text\":\"Katana\"}"},AttributeModifiers:[{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:6,Operation:0,UUIDLeast:609494,UUIDMost:53612,Slot:"mainhand"},{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:-3.2,Operation:0,UUIDLeast:468796,UUIDMost:509833,Slot:"mainhand"}],Unbreakable:1b}
+execute as @e[tag=052-4] at @s run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1 0.75
+execute as @e[tag=052-5] at @s run particle minecraft:sweep_attack ~ ~1.25 ~ 0.125 0 0.125 1 10
+execute as @e[tag=052-5] at @s run summon arrow ~ ~2.5 ~ {damage:1.5d,Motion:[0.0,-2.0,0.0],life:1200,Color:-1}
+execute as @e[tag=052-5] run scoreboard players add @a[tag=052-4] counter 3
+execute if entity @e[tag=052-5] run schedule function project-c:jobaction/052/skill/2/2 10t
