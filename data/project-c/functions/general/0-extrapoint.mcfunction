@@ -17,7 +17,9 @@ execute as @a[tag=extrahelp] at @s run gamemode adventure @s
 execute as @a[tag=extrahelp] at @s run scoreboard players set @s relicCount 0
 execute as @a[tag=extrahelp] at @s run scoreboard players set @s relicCount2 0
 execute as @a[tag=extrahelp] at @s run scoreboard players set @s drop 1
+execute as @a[tag=extrahelp] at @s run scoreboard players set @s OutCombat 0
 execute as @a[tag=extrahelp] at @s run attribute @s minecraft:generic.max_health base set 40
+execute as @a[tag=extrahelp] at @s run scoreboard players set @s ScoreToHealth 6
 playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 3 0
 execute if entity @a[tag=extrahelp] run tellraw @a ["",{"selector":"@a[tag=extrahelp]"},{"text":"が復活しました！","bold":true}]
 

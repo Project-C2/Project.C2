@@ -39,8 +39,8 @@ scoreboard players set @s[scores={stockcounter=..3,CT2=1300..}] CT2 1200
 scoreboard players add @s[scores={CT1=..1200},nbt={OnGround:1b}] CT1 1
 
 scoreboard players add @s[scores={counter_2=1..}] counter_2 1
-
-execute if entity @s[scores={counter_2=5..}] run function project-c:jobaction/121/skill/2/1
+execute if entity @s[scores={counter_2=1..}] anchored eyes run particle firework ^ ^ ^2 0 0 0 0 3
+execute if entity @s[scores={counter_2=6..}] run function project-c:jobaction/121/skill/2/1
 
 scoreboard players set @s sneak 0
 scoreboard players reset @s damageDealt
