@@ -39,6 +39,32 @@ execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={Hur
 execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={HurtTime:9s}] at @s run particle minecraft:block iron_block ~ ~1 ~ 0 0 0 1 70
 execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={HurtTime:9s}] at @s run tag @s remove KoutetuPotion
 
+execute if entity @a[tag=OverPotion,limit=1] as @a[tag=OverPotion] at @s run particle minecraft:white_ash ~ ~1 ~ 0.5 0.5 0.5 0 3
+
+execute if entity @a[tag=OverPotion,limit=1,scores={usedSkill=1}] unless entity @s[scores={relic=27}] as @a[tag=OverPotion,scores={usedSkill=1}] at @s run tag @s add OverPotion1
+execute if entity @a[tag=OverPotion,limit=1,scores={usedSkill=2}] unless entity @s[scores={relic=27}] as @a[tag=OverPotion,scores={usedSkill=2}] at @s run tag @s add OverPotion2
+execute if entity @a[tag=OverPotion,limit=1,scores={usedSkill=3}] unless entity @s[scores={relic=27}] as @a[tag=OverPotion,scores={usedSkill=3}] at @s run tag @s add OverPotion3
+execute if entity @a[tag=OverPotion,limit=1,scores={usedSkill=1}] unless entity @s[scores={relic=27}] as @a[tag=OverPotion,scores={usedSkill=1}] at @s run tag @s add OverPotionUse
+execute if entity @a[tag=OverPotion,limit=1,scores={usedSkill=2}] unless entity @s[scores={relic=27}] as @a[tag=OverPotion,scores={usedSkill=2}] at @s run tag @s add OverPotionUse
+execute if entity @a[tag=OverPotion,limit=1,scores={usedSkill=3}] unless entity @s[scores={relic=27}] as @a[tag=OverPotion,scores={usedSkill=3}] at @s run tag @s add OverPotionUse
+
+execute if entity @a[tag=OverPotion,limit=1,scores={usedSkill=1,relic=27,CT1=..1180}] as @a[tag=OverPotion,scores={usedSkill=1,relic=27,CT1=..1180}] at @s run tag @s add OverPotion1
+execute if entity @a[tag=OverPotion,limit=1,scores={usedSkill=2,relic=27,CT2=..1180}] as @a[tag=OverPotion,scores={usedSkill=2,relic=27,CT2=..1180}] at @s run tag @s add OverPotion2
+execute if entity @a[tag=OverPotion,limit=1,scores={usedSkill=3,relic=27,CT3=..1180}] as @a[tag=OverPotion,scores={usedSkill=3,relic=27,CT3=..1180}] at @s run tag @s add OverPotion3
+
+execute if entity @a[tag=OverPotion1,limit=1] as @a[tag=OverPotion1] at @s run scoreboard players set @s CT1 1179
+execute if entity @a[tag=OverPotion2,limit=1] as @a[tag=OverPotion2] at @s run scoreboard players set @s CT2 1179
+execute if entity @a[tag=OverPotion3,limit=1] as @a[tag=OverPotion3] at @s run scoreboard players set @s CT3 1179
+
+execute if entity @a[tag=OverPotion1,limit=1] as @a[tag=OverPotion1] at @s run tag @s remove OverPotion1
+execute if entity @a[tag=OverPotion2,limit=1] as @a[tag=OverPotion2] at @s run tag @s remove OverPotion2
+execute if entity @a[tag=OverPotion3,limit=1] as @a[tag=OverPotion3] at @s run tag @s remove OverPotion3
+
+execute if entity @a[tag=OverPotionUse,limit=1] as @a[tag=OverPotionUse] at @s run particle minecraft:firework ~ ~1 ~ 0 0 0 1 30
+execute if entity @a[tag=OverPotionUse,limit=1] as @a[tag=OverPotionUse] at @s run playsound minecraft:block.portal.trigger master @a ~ ~ ~ 1 2
+execute if entity @a[tag=OverPotionUse,limit=1] as @a[tag=OverPotionUse] at @s run tag @s remove OverPotion
+execute if entity @a[tag=OverPotionUse,limit=1] as @a[tag=OverPotionUse] at @s run tag @s remove OverPotionUse
+
 execute as @a at @s store result score @s Hight run data get entity @s Pos[1]
 
 execute if entity @a[gamemode=!spectator,tag=Battle,limit=1] as @a[gamemode=!spectator,tag=Battle] if score @s Hight matches ..4 unless score #GameTime counter matches ..0 run function project-c:general/void_return

@@ -65,6 +65,12 @@ execute if entity @a[nbt={ActiveEffects:[{Id:26b,Amplifier:111b}]},limit=1] run 
 execute if entity @a[tag=KoutetuPotionF,limit=1] as @a[tag=KoutetuPotionF] at @s run function project-c:general/item/ironskin
 
 
+#オーバードーズ
+execute if entity @a[nbt={ActiveEffects:[{Id:26b,Amplifier:112b}]},limit=1] run tag @a[nbt={ActiveEffects:[{Id:26b,Amplifier:112b}]}] add OverPotionF
+
+execute if entity @a[tag=OverPotionF,limit=1] as @a[tag=OverPotionF] at @s run function project-c:general/item/overdoze
+
+
 #デバフ消去
 tag @a[nbt={ActiveEffects:[{Id:26b,Amplifier:109b}]}] add milkEffect
 
