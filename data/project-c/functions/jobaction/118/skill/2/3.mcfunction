@@ -80,7 +80,7 @@ execute if entity @a[tag=118-ct-change,limit=1] as @a[tag=118-ct-change] run fun
 execute if entity @a[tag=118-ct-change,limit=1] as @a[tag=118-ct-change] run tag @s remove 118-ct-change
 
 
-execute as @a[tag=118-1--] at @s run particle minecraft:firework ~ ~1 ~ 0 0 0 0.2 20 force @a
+execute as @a[tag=118-2--] at @s run particle minecraft:firework ~ ~1 ~ 0 0 0 0.2 20 force @a
 execute at @s run particle minecraft:firework ~ ~1 ~ 0 0 0 0.2 20 force @a
 
 

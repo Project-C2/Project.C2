@@ -19,6 +19,10 @@ execute if entity @s[tag=skill1_use] run tag @s remove SkillReady1
 execute if entity @s[tag=skill2_use] run tag @s remove SkillReady2
 execute if entity @s[tag=skill3_use] run tag @s remove SkillReady3
 
+execute if entity @s[tag=skill1_use] run scoreboard players set @s usedSkill 1
+execute if entity @s[tag=skill2_use] run scoreboard players set @s usedSkill 2
+execute if entity @s[tag=skill3_use] run scoreboard players set @s usedSkill 3
+
 execute if entity @s[tag=106-support2-use--] run scoreboard players add @s CT1 20
 execute if entity @s[tag=106-support2-use--] run scoreboard players add @s CT2 20
 execute if entity @s[tag=106-support2-use--] run scoreboard players add @s CT3 20
