@@ -1,4 +1,5 @@
 function project-c:general/playernum
+function project-c:general/jobselectolder
 scoreboard players set @a relicCount 0
 scoreboard players set @a CT1 1200
 scoreboard players set @a CT2 1200

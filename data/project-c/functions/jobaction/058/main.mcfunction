@@ -25,6 +25,8 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ボム�
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"フルパワーショット\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"true\",\"bold\":\"true\"}"}}}},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/058/skill/3/0
 
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:bow"}]},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/058/skill/3/0
+
 execute as @s[scores={adDealt=1..,counter_1=..9}] at @s run scoreboard players add @s counter_1 1
 
 execute if entity @s[scores={adDealt=1..,counter_1=..10}] run function project-c:jobaction/058/replaceitem/3

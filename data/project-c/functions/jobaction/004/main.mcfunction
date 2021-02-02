@@ -13,5 +13,6 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"スプ�
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"アローレイン\"}"}}}},scores={CT2=1200..,bow=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/004/skill/2/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"パワーショット\"}"}}}},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/004/skill/3/0
 
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:bow"}]},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/004/skill/3/0
 
 scoreboard players reset @s bow
