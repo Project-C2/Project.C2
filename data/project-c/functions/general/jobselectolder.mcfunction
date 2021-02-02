@@ -35,6 +35,13 @@ scoreboard players set @a[tag=JobChanged] counter_8 0
 scoreboard players set @a[tag=JobChanged] counter_9 0
 xp add @a[tag=JobChanged] -2147483648 levels
 
+scoreboard players reset @a[tag=JobChanged] Delay1
+scoreboard players reset @a[tag=JobChanged] Delay2
+scoreboard players reset @a[tag=JobChanged] Delay3
+
+tag @a[tag=JobChanged] remove SkillDelay1
+tag @a[tag=JobChanged] remove SkillDelay2
+tag @a[tag=JobChanged] remove SkillDelay3
 
 execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] as @a[scores={relic=..31},tag=JobChanged] at @s unless entity @s[scores={relic=30},tag=Battle] run scoreboard players set @s relicCount 0
 execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] run scoreboard players set @a[scores={relic=..31},tag=JobChanged] relicCount2 0
