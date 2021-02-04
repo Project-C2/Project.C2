@@ -3,8 +3,7 @@
 # counter_2 → 奥義待機
 # counter_3 → 欠番
 # counter_4 → 心空雲耀スタック
-# counter_5 → 計算用
-# counter_6 → 欠番
+# counter_5,6,9 → 奥義ゲージ計算用
 # counter_7 → 奥義終了カウント
 # counter_8 → 第四奥義補正反映
 
@@ -25,8 +24,17 @@ execute if entity @s[scores={CT3=1200..,damageTaken=1..},tag=SkillReady3,gamemod
 execute if entity @s[scores={counter=100..,useEnderPearl=1..},gamemode=!spectator] run function project-c:jobaction/052/skill/4/0
 
 #奥義計算
-scoreboard players set @s counter_5 5
-scoreboard players operation @s[scores={damageDealt=1..}] damageDealt /= @s[scores={damageDealt=1..}] counter_5
+##3倍
+scoreboard players set @s counter_9 3
+##2倍
+scoreboard players set @s counter_6 5
+##等倍
+scoreboard players set @s counter_5 10
+
+##計算
+scoreboard players operation @s[scores={damageDealt=1..,counter_4=0..1}] damageDealt /= @s[scores={damageDealt=1..}] counter_9
+scoreboard players operation @s[scores={damageDealt=1..,counter_4=2..3}] damageDealt /= @s[scores={damageDealt=1..}] counter_6
+scoreboard players operation @s[scores={damageDealt=1..,counter_4=4..}] damageDealt /= @s[scores={damageDealt=1..}] counter_5
 scoreboard players operation @s[scores={damageTaken=1..}] damageTaken /= @s[scores={damageTaken=1..}] counter_5
 scoreboard players operation @s[scores={damageDealt=1..}] counter += @s[scores={damageDealt=1..}] damageDealt
 scoreboard players operation @s[scores={damageTaken=1..}] counter += @s[scores={damageTaken=1..}] damageTaken
@@ -40,8 +48,8 @@ clear @s[scores={counter=..99}] ender_pearl{display:{Name:'{"text":"奥義 -五�
 tag @s[tag=052-EX-1,scores={counter=..99}] remove 052-EX-1
 
 #烈刀一閃の跳躍
-execute as @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"烈刀一閃","color":"white","italic":false}'}}}}] at @s run summon area_effect_cloud ~ ~ ~ {Particle:"dust",Duration:2,Age:-1,WaitTime:-1,Effects:[{Id:8b,Amplifier:4b,Duration:2,ShowParticles:0b}]}
-execute as @a[tag=052-1,nbt={OnGround:0b}] at @s run summon area_effect_cloud ~ ~ ~ {Particle:"dust",Duration:2,Age:-1,WaitTime:-1,Effects:[{Id:8b,Amplifier:4b,Duration:2,ShowParticles:0b}]}
+execute as @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"烈刀一閃","color":"white","italic":false}'}}}}] at @s run summon area_effect_cloud ~ ~ ~ {Particle:dust,Duration:2,Age:-1,WaitTime:-1,Effects:[{Id:8b,Amplifier:4b,Duration:2,ShowParticles:0b}]}
+execute as @a[tag=052-1,nbt={OnGround:0b}] at @s run summon area_effect_cloud ~ ~ ~ {Particle:dust,Duration:2,Age:-1,WaitTime:-1,Effects:[{Id:8b,Amplifier:4b,Duration:2,ShowParticles:0b}]}
 
 #奥義ゲージ表示
 title @s[scores={counter=..99}] actionbar ["",{"text":"\u5965\u7fa9:","bold":true,"underlined":true,"color":"gray"},{"score":{"name":"@s","objective":"counter"},"bold":true,"underlined":true,"color":"gray"},{"text":"%","bold":true,"underlined":true,"color":"gray"}]

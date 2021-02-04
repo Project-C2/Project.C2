@@ -16,7 +16,7 @@ execute if entity @a[tag=052-1,nbt={OnGround:1b}] as @s at @s positioned ^ ^1 ^8
 execute if entity @a[tag=052-1,nbt={OnGround:1b}] as @s at @s positioned ^ ^1 ^9 run particle minecraft:sweep_attack ~ ~ ~ 1.5 1 1.5 1 50 force
 execute if entity @a[tag=052-1,nbt={OnGround:1b}] as @s at @s positioned ^ ^1 ^10 run particle minecraft:sweep_attack ~ ~ ~ 1.5 1 1.5 1 50 force
 
-execute at @e[tag=052-2] run summon arrow ~ ~2.5 ~ {damage:6d,Motion:[0.0,-2.0,0.0],life:1200,Color:-1}
+execute at @e[tag=052-2] run summon arrow ~ ~2.5 ~ {damage:4.0d,Motion:[0.0,-2.0,0.0],life:1200,Color:-1}
 execute as @e[tag=052-2] run scoreboard players add @a[tag=052-1] counter 12
 scoreboard players set @s counter_1 100
 
