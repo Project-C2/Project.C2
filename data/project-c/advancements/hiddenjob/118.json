@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:cake"
+    },
+    "title": "No.-118 Granter",
+    "description": "ResonanceでEvil Resonanceを使用して一度に5種類以上のデバフを与える。",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "project-c:hiddenjob/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+    },
+      "rewards": {
+    "function": "project-c:hiddenjob/-078/jobunlocked"
+  }
+}

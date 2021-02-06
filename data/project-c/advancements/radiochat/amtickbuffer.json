@@ -1,18 +1,4 @@
 {
-	"parent":"project-c:radiochat/amchat",
-	"display":{
-		"icon":{
-			"item":"minecraft:beacon"
-		},
-		"title":{
-			"text":"1tick遅延用"
-		},
-		"description":{
-			"text":"表示用ダミー"
-		},
-		"show_toast":false,
-		"announce_to_chat":false
-		},
 	"criteria":{
 		"dummy":{
 			"trigger":"tick"
