@@ -16,14 +16,14 @@ execute if entity @s[scores={counter_3=4},tag=!SkillDelay1,tag=106_auxiliary_rep
 execute if entity @s[scores={counter_4=4},tag=!SkillDelay2,tag=106_auxiliary_replace] run tag @s add 106_auxiliary_replace-0
 execute if entity @s[scores={counter_5=4},tag=!SkillDelay3,tag=106_auxiliary_replace] run tag @s add 106_auxiliary_replace-0
 
-execute if entity @s[scores={counter_3=4},tag=SkillDelay1,tag=!106_auxiliary_replace] run tag @s remove SkillDelay1
 execute if entity @s[scores={counter_3=4},tag=SkillDelay1,tag=!106_auxiliary_replace] run tag @s add 106_auxiliary_replace-1
+execute if entity @s[scores={counter_3=4},tag=SkillDelay1,tag=!106_auxiliary_replace] run tag @s remove SkillDelay1
 
-execute if entity @s[scores={counter_4=4},tag=SkillDelay2,tag=!106_auxiliary_replace] run tag @s remove SkillDelay2
 execute if entity @s[scores={counter_4=4},tag=SkillDelay2,tag=!106_auxiliary_replace] run tag @s add 106_auxiliary_replace-1
+execute if entity @s[scores={counter_4=4},tag=SkillDelay2,tag=!106_auxiliary_replace] run tag @s remove SkillDelay2
 
-execute if entity @s[scores={counter_5=4},tag=SkillDelay3,tag=!106_auxiliary_replace] run tag @s remove SkillDelay3
 execute if entity @s[scores={counter_5=4},tag=SkillDelay3,tag=!106_auxiliary_replace] run tag @s add 106_auxiliary_replace-1
+execute if entity @s[scores={counter_5=4},tag=SkillDelay3,tag=!106_auxiliary_replace] run tag @s remove SkillDelay3
 
 
 execute if entity @s[tag=106_auxiliary_replace-0] run function project-c:jobaction/106/items/skill/04/auxiliary/set
