@@ -24,7 +24,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,-118:2b,cooltime:10,e-time:5,Enchantments:[{}]}"
+              "tag": "{HideFlags:63,-118:2b,cooltime:10,Enchantments:[{}]}"
             }
           ]
         }

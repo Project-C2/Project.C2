@@ -1,2 +1,2 @@
-tellraw @s ["",{"text":"[システム]","color":"yellow"},{"text":"NINJA","color":"yellow","bold":true,"underlined":true},{"text":" が解放されました。","color":"yellow","bold":false,"underlined":false}]
+tellraw @s ["",{"text":"[システム]","color":"yellow"},{"text":"Granter","color":"yellow","bold":true,"underlined":true},{"text":" が解放されました。","color":"yellow","bold":false,"underlined":false}]
 particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 1 40
