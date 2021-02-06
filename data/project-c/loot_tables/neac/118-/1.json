@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "Health Grant","italic": false,"color": "#ff0000","bold":true}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:30s","italic":false,"color":"green"}],
+                {"text": "自身の体力を現在の半分にし、","italic": false,"color": "white"},
+                {"text": "消費した分選択したプレイヤーを回復する。","italic": false,"color": "white"},
+                {"text": "発動すると選択が解除される。","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,-118:1b,cooltime:30,e-time:5,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

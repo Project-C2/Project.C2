@@ -4,7 +4,7 @@
       "item": "minecraft:cake"
     },
     "title": "No.-118 Granter",
-    "description": "ResonanceでEvil Resonanceを使用して一度に5種類以上のデバフを与える。",
+    "description": "Resonanceで一度に5種類以上のデバフを与える。",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

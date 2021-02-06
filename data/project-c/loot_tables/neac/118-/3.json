@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_block",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "Angel Grant","italic": false,"color": "gold","bold":true}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:6s * Player","italic":false,"color":"green"}],
+                {"text": "味方プレイヤー全員に自身と同じバフを与える。","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,-118:3b,cooltime:6}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
