@@ -39,6 +39,12 @@ scoreboard players reset @a[tag=JobChanged] Delay1
 scoreboard players reset @a[tag=JobChanged] Delay2
 scoreboard players reset @a[tag=JobChanged] Delay3
 
+scoreboard players reset @a[tag=JobChanged] advancement1
+scoreboard players reset @a[tag=JobChanged] advancement2
+scoreboard players reset @a[tag=JobChanged] advancement3
+scoreboard players reset @a[tag=JobChanged] advancement4
+scoreboard players reset @a[tag=JobChanged] advancement5
+
 tag @a[tag=JobChanged] remove SkillDelay1
 tag @a[tag=JobChanged] remove SkillDelay2
 tag @a[tag=JobChanged] remove SkillDelay3

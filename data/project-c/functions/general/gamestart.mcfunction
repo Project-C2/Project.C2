@@ -30,6 +30,13 @@ scoreboard players set @a[tag=!counter-keep] counter_6 0
 scoreboard players set @a[tag=!counter-keep] counter_7 0
 scoreboard players set @a[tag=!counter-keep] counter_8 0
 scoreboard players set @a[tag=!counter-keep] counter_9 0
+
+scoreboard players reset @a advancement1
+scoreboard players reset @a advancement2
+scoreboard players reset @a advancement3
+scoreboard players reset @a advancement4
+scoreboard players reset @a advancement5
+
 tag @a[tag=counter-keep] remove counter-keep
 
 execute if score #MenuRandomjob counter matches 1 run execute as @a[gamemode=!spectator] at @s run function project-c:general/jobrandom-extra

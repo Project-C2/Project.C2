@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:command_block"
+    },
+    "title": "隠し職",
+    "description": "既存の職で一定の条件を満たす事で派生職を使用可能になります。",
+    "background": "minecraft:textures/block/polished_blackstone_bricks.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

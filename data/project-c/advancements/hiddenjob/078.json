@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:furnace"
+    },
+    "title": "No.-78 NINJA",
+    "description": "CHEFとして、1試合中に強化された3つのスキルを当てる。",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "project-c:hiddenjob/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+    },
+      "rewards": {
+    "function": "project-c:hiddenjob/-078/jobunlocked"
+  }
+}

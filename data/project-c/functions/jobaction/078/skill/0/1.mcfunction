@@ -23,5 +23,9 @@ particle minecraft:sweep_attack ~ ~0.75 ~ 0 0 0 0 1 force @a
 execute if entity @s[tag=078-diceB] run tag @e[tag=Battle,team=Red,distance=..1] add Damage2
 execute if entity @s[tag=078-diceR] run tag @e[tag=Battle,team=Blue,distance=..1] add Damage2
 
+execute if entity @s[tag=078-diceB] run execute if entity @e[tag=Battle,team=Red,distance=..1] as @a[scores={jobNumber=78}] at @s as @e[tag=078-diceB] if score @s playerNumber = @a[limit=1,sort=nearest] playerNumber run tag @s add 078-dicehit
+
+execute if entity @s[tag=078-diceR] run execute if entity @e[tag=Battle,team=Blue,distance=..1] as @a[scores={jobNumber=78}] at @s as @e[tag=078-diceR] if score @s playerNumber = @a[limit=1,sort=nearest] playerNumber run tag @s add 078-dicehit
+execute if entity @s[tag=078-dicehit] as @a[distance=..1,scores={jobNumber=78}] run scoreboard players set @s[tag=Battle] advancement1 1
 execute if entity @a[distance=..1,scores={jobNumber=78}] run kill @s[scores={counter=51..}]
 kill @s[scores={counter=181..}]

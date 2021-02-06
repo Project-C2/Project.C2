@@ -6,6 +6,10 @@ execute if entity @s[tag=078-fireBlue] run scoreboard players set @e[tag=Battle,
 execute if entity @s[tag=078-fireRed2] run scoreboard players set @e[tag=Battle,distance=..5,team=Blue] 078-oil 80
 execute if entity @s[tag=078-fireBlue2] run scoreboard players set @e[tag=Battle,distance=..5,team=Red] 078-oil 80
 
+execute if entity @s[tag=078-fireRed2] if entity @e[tag=Battle,distance=..5,team=Blue] run scoreboard players set @a[distance=..5,scores={jobNumber=78},tag=Battle] advancement2 1
+execute if entity @s[tag=078-fireBlue2] if entity @e[tag=Battle,distance=..5,team=Red] run scoreboard players set @a[distance=..5,scores={jobNumber=78},tag=Battle] advancement2 1
+
+
 particle minecraft:dust 0 0 0 2 ~ ~ ~ 1 1 1 0 20
 
 kill @s[scores={counter=4..}]
