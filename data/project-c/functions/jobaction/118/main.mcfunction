@@ -28,6 +28,8 @@ execute if entity @s[scores={counter_1=1..},gamemode=!spectator] run function pr
 execute if entity @s[scores={counter_2=1..},gamemode=!spectator] run function project-c:jobaction/118/skill/2/1
 
 
+execute if entity @s[tag=job118-advancement2.trigger] run tag @s remove job118-advancement2.trigger
+
 
 execute if entity @s[scores={relic=4}] run tag @s add job118-usage-prohibited
 execute if entity @s[scores={relic=5}] run tag @s add job118-usage-prohibited
