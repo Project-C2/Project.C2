@@ -6,17 +6,19 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:structure_void",
+          "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": [
-                {"text": "使用中","italic": false,"color": "red","bold":true}
-              ]
+              "name": []
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": []
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63}"
+              "tag": "{HideFlags:63,Unbreakable:1b,-118:-106b}"
             }
           ]
         }
