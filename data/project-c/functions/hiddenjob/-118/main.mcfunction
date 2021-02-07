@@ -28,5 +28,5 @@ execute if entity @s[tag=job118-usage-prohibited] run scoreboard players set @s 
 execute if entity @s[tag=job118-usage-prohibited] run tag @s remove job118-usage-prohibited
 
 
-tag @s[tag=!job118] add job118
+#tag @s[tag=!job-118] add job-118
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
