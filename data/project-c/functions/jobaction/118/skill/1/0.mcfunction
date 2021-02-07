@@ -30,6 +30,7 @@ tag @s remove 118-
 title @s actionbar [{"text":""}]
 scoreboard players reset @s counter
 scoreboard players reset @s subcounter
+scoreboard players reset @s counter_5
 
 tag @s remove SkillReady1
 scoreboard players set @s usedSkill 1

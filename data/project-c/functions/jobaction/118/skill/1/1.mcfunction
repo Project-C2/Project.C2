@@ -1,4 +1,5 @@
 scoreboard players remove @s counter_1 1
+scoreboard players add @s counter_5 1
 scoreboard players add @s subcounter 1
 
 scoreboard players set @s OutCombat 0

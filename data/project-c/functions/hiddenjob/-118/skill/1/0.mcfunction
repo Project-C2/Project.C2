@@ -19,10 +19,12 @@ execute as @a[tag=-118-1-a] store result score #-118 counter_2 run data get enti
 scoreboard players operation #-118 counter_1 /= #2 counter
 
 scoreboard players operation @s ScoreToHealth = #-118 counter_1
-scoreboard players operation #-118 counter_1 += #-118 counter_2
-execute as @a[tag=-118-1-a] run scoreboard players operation @s ScoreToHealth = #-118 counter_1
+scoreboard players operation #-118 counter_2 += #-118 counter_1
+execute as @a[tag=-118-1-a] run scoreboard players operation @s ScoreToHealth = #-118 counter_2
 
 
+scoreboard players operation #-118 counter_1 /= #100 counter
+execute if entity @a[tag=-118-1-a,limit=1] as @a[tag=-118-1-a] run tellraw @s ["",{"score":{"name":"#-118","objective": "counter_1"},"color":"green"},{"text":"回復","color":"green"},{"text":" <- "},{"selector":"@a[tag=-118-,limit=1]"}]
 execute if entity @a[tag=-118-1-a,limit=1] at @a[tag=-118-1-a] run playsound entity.player.levelup master @a ~ ~ ~ 1 0
 execute if entity @a[tag=-118-1-a,limit=1] at @a[tag=-118-1-a] run playsound entity.player.levelup master @a ~ ~ ~ 1 0
 execute if entity @a[tag=-118-1-a,limit=1] at @a[tag=-118-1-a] run particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 0.5 20 force @a
