@@ -9,6 +9,8 @@ particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 0.5 20 force @a
 
 tag @s add -118-
 
+scoreboard players set @s OutCombat 0
+
 execute as @a[tag=Battle] if score @s playerNumber = @a[tag=-118-,limit=1] counter run tag @s add -118-1-a
 execute if entity @a[tag=-118-1-a,limit=1] at @a[tag=-118-1-a] facing entity @a[tag=-118-,limit=1] feet run function project-c:hiddenjob/-118/skill/1/particle
 
