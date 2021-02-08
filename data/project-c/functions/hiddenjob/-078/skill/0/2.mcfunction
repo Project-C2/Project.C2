@@ -8,8 +8,6 @@ execute if entity @s[team=Red] anchored eyes positioned ~ ~-0.0 ~ run summon arm
 execute if entity @s[team=Red] anchored eyes positioned ~ ~-0.0 ~ run summon armor_stand ^ ^0.5 ^ {Tags:["-078-dice","-078-diceSummoned","-078-diceR","-078-dice5"],Invisible:1b,HandItems:[{id:"minecraft:nether_star",Count:1b}],Pose:{RightArm:[0f,0f,0f]},DisabledSlots:2039583,NoGravity:1b}
 execute if entity @s[team=Red] anchored eyes positioned ~ ~-0.0 ~ run summon armor_stand ^ ^0.5 ^ {Tags:["-078-dice","-078-diceSummoned","-078-diceR","-078-dice6"],Invisible:1b,HandItems:[{id:"minecraft:nether_star",Count:1b}],Pose:{RightArm:[0f,0f,0f]},DisabledSlots:2039583,NoGravity:1b}
 execute if entity @s[team=Red] anchored eyes positioned ~ ~-0.0 ~ run summon armor_stand ^ ^0.5 ^ {Tags:["-078-dice","-078-diceSummoned","-078-diceR","-078-dice7"],Invisible:1b,HandItems:[{id:"minecraft:nether_star",Count:1b}],Pose:{RightArm:[0f,0f,0f]},DisabledSlots:2039583,NoGravity:1b}
-execute if entity @s[team=Red] anchored eyes positioned ~ ~-0.0 ~ run summon armor_stand ^ ^0.5 ^ {Tags:["-078-dice","-078-diceSummoned","-078-diceR","-078-dice8"],Invisible:1b,HandItems:[{id:"minecraft:nether_star",Count:1b}],Pose:{RightArm:[0f,0f,0f]},DisabledSlots:2039583,NoGravity:1b}
-
 
 
 execute if entity @s[team=Blue] anchored eyes positioned ~ ~-0.0 ~ run summon armor_stand ^ ^0.5 ^ {Tags:["-078-dice","-078-diceSummoned","-078-diceB","-078-dice1"],Invisible:1b,HandItems:[{id:"minecraft:nether_star",Count:1b}],Pose:{RightArm:[0f,0f,0f]},DisabledSlots:2039583,NoGravity:1b}
