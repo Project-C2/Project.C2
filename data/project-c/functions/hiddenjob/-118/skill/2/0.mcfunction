@@ -10,7 +10,7 @@ particle minecraft:firework ~ ~1 ~ 0 0 0 0.2 20 force @a
 tag @s add -118-
 
 execute as @a[tag=Battle] if score @s playerNumber = @a[tag=-118-,limit=1] counter run tag @s add -118-2-a
-execute if entity @a[tag=-118-2-a,limit=1] at @a[tag=-118-2-a] facing entity @a[tag=-118-,limit=1] feet run function project-c:jobaction/118/skill/2/particle
+execute if entity @a[tag=-118-2-a,limit=1] at @a[tag=-118-2-a] facing entity @a[tag=-118-,limit=1] feet run function project-c:hiddenjob/-118/skill/2/particle
 
 
 
@@ -84,6 +84,7 @@ execute if entity @s[tag=-118-ct-change] run function project-c:general/cooltime
 execute if entity @s[tag=-118-ct-change] run tag @s remove 118-ct-change
 
 
+execute if entity @a[tag=-118-2-a,limit=1] as @a[tag=-118-2-a] run tellraw @s ["",{"text":"CT吸収","color":"light_purple"},{"text":" <- "},{"selector":"@a[tag=-118-,limit=1]"}]
 execute if entity @a[tag=-118-2-a,limit=1] at @a[tag=-118-2-a] run playsound minecraft:entity.illusioner.cast_spell master @a ~ ~ ~ 1.3 2
 execute if entity @a[tag=-118-2-a,limit=1] at @a[tag=-118-2-a] run particle minecraft:firework ~ ~1 ~ 0 0 0 0.2 20 force @a
 

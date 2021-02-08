@@ -1,12 +1,16 @@
 #実行者     -> jobNumber = 118
 #実行地点   -> 実行者
 #counter    -> 選択プレイヤー保持用
-#subcounter -> スキル1のスパン
 #counter_1    -> スキル1の使用時間
 #counter_2    -> スキル2の使用時間
 #counter_3    -> スキル1の選択プレイヤー保持
+#subcounter   -> スキル1のスパン
 #counter_4    -> スキル2の選択プレイヤー保持
 #counter_9    -> スキル2のスパン
+
+
+#counter_5    -> スキル1のチェック用
+#counter_6    -> スキル2のチェック用
 
 scoreboard players reset @s usedSkill
 
@@ -24,6 +28,8 @@ execute if entity @s[scores={counter_1=1..},gamemode=!spectator] run function pr
 execute if entity @s[scores={counter_2=1..},gamemode=!spectator] run function project-c:jobaction/118/skill/2/1
 
 
+execute if entity @s[tag=job118-advancement2.trigger] run tag @s remove job118-advancement2.trigger
+
 
 execute if entity @s[scores={relic=4}] run tag @s add job118-usage-prohibited
 execute if entity @s[scores={relic=5}] run tag @s add job118-usage-prohibited
@@ -38,5 +44,12 @@ execute if entity @s[tag=job118-usage-prohibited] run scoreboard players set @s 
 execute if entity @s[tag=job118-usage-prohibited] run tag @s remove job118-usage-prohibited
 
 
-#tag @s[tag=!job118] add job118
+
+#進捗用処理
+execute if entity @s[scores={advancement1=1},advancements={project-c:hiddenjob/118={ad1.1=false}}] run advancement grant @s only project-c:hiddenjob/118 ad1.1
+execute if entity @s[scores={advancement1=2..},advancements={project-c:hiddenjob/118={ad1.2=false}}] run advancement grant @s only project-c:hiddenjob/118 ad1.2
+execute if entity @s[scores={advancement2=1},advancements={project-c:hiddenjob/118={ad2.1=false}}] run advancement grant @s only project-c:hiddenjob/118 ad2.1
+execute if entity @s[scores={advancement2=2..},advancements={project-c:hiddenjob/118={ad2.2=false}}] run advancement grant @s only project-c:hiddenjob/118 ad2.2
+
+
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick

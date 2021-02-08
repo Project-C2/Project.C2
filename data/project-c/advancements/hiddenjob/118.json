@@ -4,7 +4,7 @@
       "item": "minecraft:cake"
     },
     "title": "No.-118 Granter",
-    "description": "Resonanceで一度に5種類以上のデバフを与える。",
+    "description": "Resonanceで1試合中に味方のCTと体力をそれぞれ2回回復させる。",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
@@ -12,11 +12,18 @@
   },
   "parent": "project-c:hiddenjob/root",
   "criteria": {
-    "requirement": {
-      "trigger": "minecraft:impossible"
-    }
-    },
-      "rewards": {
+    "ad1.1": {"trigger": "minecraft:impossible"},
+    "ad1.2": {"trigger": "minecraft:impossible"},
+    "ad2.1": {"trigger": "minecraft:impossible"},
+    "ad2.2": {"trigger": "minecraft:impossible"}
+  },
+  "requirements": [
+    ["ad1.1"],
+    ["ad1.2"],
+    ["ad2.1"],
+    ["ad2.2"]
+  ],
+  "rewards": {
     "function": "project-c:hiddenjob/-118/jobunlocked"
   }
 }

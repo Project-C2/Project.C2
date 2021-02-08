@@ -6,6 +6,8 @@ scoreboard players operation @s counter_2 = #118-- counter
 playsound minecraft:entity.villager.death master @a ~ ~ ~ 1 0
 particle minecraft:firework ~ ~1 ~ 0 0 0 0.2 20 force @a
 
+execute if entity @s[scores={CT1=1200..,CT3=1200..}] run tag @s add job118-advancement2.trigger
+
 tag @s add 118-
 scoreboard players operation @s counter_4 = @s counter
 
@@ -26,3 +28,4 @@ function project-c:jobaction/118/replaceitem/2
 title @s actionbar [{"text":""}]
 scoreboard players reset @s counter
 scoreboard players reset @s counter_9
+scoreboard players reset @s counter_6

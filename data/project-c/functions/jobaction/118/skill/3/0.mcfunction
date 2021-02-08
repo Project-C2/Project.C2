@@ -41,8 +41,6 @@ execute as @e[tag=118-evil,nbt={Effects:[{Id:28b}]}] run data remove entity @s E
 execute as @e[tag=118-evil,nbt={Effects:[{Id:29b}]}] run data remove entity @s Effects[{Id:29b}]
 execute as @e[tag=118-evil,nbt={Effects:[{Id:30b}]}] run data remove entity @s Effects[{Id:30b}]
 execute as @e[tag=118-evil,nbt={Effects:[{Id:32b}]}] run data remove entity @s Effects[{Id:32b}]
-execute store result score @s advancement1 as @e[tag=118-evil,limit=1] run data get entity @s Effects
-execute if entity @s[advancements={project-c:hiddenjob/118=false},scores={advancement1=5..}] run advancement grant @s only project-c:hiddenjob/118
 execute as @e[tag=118-evil] run tag @s remove 118-evil
 
 execute as @a[tag=118-3---h] run tag @s remove 118-3---h
