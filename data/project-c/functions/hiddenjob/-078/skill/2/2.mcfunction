@@ -27,4 +27,4 @@ replaceitem entity @s weapon.offhand minecraft:snowball
 
 #リセット
 tag @s remove SkillReady2
-data merge block 85 2 31 {auto:1b}
+data merge block 87 26 31 {auto:1b}
