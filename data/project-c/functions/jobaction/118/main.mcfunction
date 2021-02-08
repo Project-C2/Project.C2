@@ -46,10 +46,15 @@ execute if entity @s[tag=job118-usage-prohibited] run tag @s remove job118-usage
 
 
 #進捗用処理
-execute if entity @s[scores={advancement1=1},advancements={project-c:hiddenjob/118={ad1.1=false}}] run advancement grant @s only project-c:hiddenjob/118 ad1.1
-execute if entity @s[scores={advancement1=2..},advancements={project-c:hiddenjob/118={ad1.2=false}}] run advancement grant @s only project-c:hiddenjob/118 ad1.2
-execute if entity @s[scores={advancement2=1},advancements={project-c:hiddenjob/118={ad2.1=false}}] run advancement grant @s only project-c:hiddenjob/118 ad2.1
-execute if entity @s[scores={advancement2=2..},advancements={project-c:hiddenjob/118={ad2.2=false}}] run advancement grant @s only project-c:hiddenjob/118 ad2.2
+scoreboard players reset @s advancement3
+execute if entity @s[scores={advancement1=1..}] run scoreboard players add @s advancement3 1
+execute if entity @s[scores={advancement1=2..}] run scoreboard players add @s advancement3 1
+execute if entity @s[scores={advancement2=1..}] run scoreboard players add @s advancement3 1
+execute if entity @s[scores={advancement2=2..}] run scoreboard players add @s advancement3 1
+execute if entity @s[scores={advancement3=1..},advancements={project-c:hiddenjob/118={1=false}}] run advancement grant @s only project-c:hiddenjob/118 1
+execute if entity @s[scores={advancement3=2..},advancements={project-c:hiddenjob/118={2=false}}] run advancement grant @s only project-c:hiddenjob/118 2
+execute if entity @s[scores={advancement3=3..},advancements={project-c:hiddenjob/118={3=false}}] run advancement grant @s only project-c:hiddenjob/118 3
+execute if entity @s[scores={advancement3=4..},advancements={project-c:hiddenjob/118={4=false}}] run advancement grant @s only project-c:hiddenjob/118 4
 
 
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
