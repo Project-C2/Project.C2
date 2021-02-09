@@ -3,7 +3,7 @@ scoreboard players remove @s subcounter 45
 scoreboard players set @s counter_2 200
 tag @s add 031-S3Force
 execute if entity @s[tag=031-S3Regen] run tag @s remove 031-S3Regen
-effect give @s minecraft:strength 10 1
+effect give @s minecraft:strength 10 9
 effect give @s minecraft:haste 10 1
 particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 1 2 normal @a
 particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 1 1 force @a

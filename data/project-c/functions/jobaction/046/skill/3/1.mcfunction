@@ -11,7 +11,7 @@ execute as @e[tag=046-RaSummoned] if entity @s[tag=046-RaSummoned] at @s at @e[l
 execute if entity @s[scores={counter_1=1}] run scoreboard players operation @e[tag=046-RaSummoned] counter_2 = @s playerNumber
 execute if entity @s[scores={counter_1=1}] as @e[tag=046-Ra] if score @s counter_2 = @a[limit=1,sort=nearest] playerNumber run scoreboard players add @s counter 1
 execute if entity @s[scores={counter_1=1}] as @e[tag=046-Ra,scores={counter=2}] at @s at @a[tag=046-RaHit,limit=1,sort=nearest] if score @s counter_1 = @e[limit=1,sort=nearest] playerNumber run effect give @e[limit=1,sort=nearest] minecraft:glowing 5 0
-execute if entity @s[scores={counter_1=1}] as @e[tag=046-Ra,scores={counter=2}] at @s at @a[tag=046-RaHit,sort=nearest,limit=1] if score @s counter_1 = @e[limit=1,sort=nearest] playerNumber run effect give @e[limit=1,sort=nearest] minecraft:weakness 5 0
+execute if entity @s[scores={counter_1=1}] as @e[tag=046-Ra,scores={counter=2}] at @s at @a[tag=046-RaHit,sort=nearest,limit=1] if score @s counter_1 = @e[limit=1,sort=nearest] playerNumber run effect give @e[limit=1,sort=nearest] minecraft:weakness 5 6
 execute if entity @s[scores={counter_1=1}] as @e[tag=046-Ra,scores={counter=2}] at @s at @a[tag=046-RaHit,sort=nearest,limit=1] if score @s counter_1 = @e[limit=1,sort=nearest] playerNumber run effect give @e[limit=1,sort=nearest] minecraft:instant_damage 1 0
 execute if entity @s[scores={counter_1=1}] run tag @e[tag=046-RaHit] remove 046-RaHit
 scoreboard players set @e[tag=046-RaSummoned] counter_3 100

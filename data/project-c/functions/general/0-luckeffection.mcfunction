@@ -15,7 +15,7 @@ execute if entity @e[team=Red,nbt={ActiveEffects:[{Id:26b,Amplifier:103b}]},limi
 execute if entity @e[team=Blue,nbt={ActiveEffects:[{Id:26b,Amplifier:102b}]},limit=1] run tag @e[team=Blue,nbt={ActiveEffects:[{Id:26b,Amplifier:102b}]}] add GoumonSpecial
 
 execute if entity @e[tag=GoumonSpecial,limit=1] run effect give @e[tag=GoumonSpecial] minecraft:slowness 5 10
-execute if entity @e[tag=GoumonSpecial,limit=1] run effect give @e[tag=GoumonSpecial] minecraft:weakness 5 1
+execute if entity @e[tag=GoumonSpecial,limit=1] run effect give @e[tag=GoumonSpecial] minecraft:weakness 5 4
 execute if entity @e[tag=GoumonSpecial,limit=1] run effect give @e[tag=GoumonSpecial] minecraft:wither 5 2
 execute if entity @e[tag=GoumonSpecial,limit=1] run effect give @e[tag=GoumonSpecial] minecraft:hunger 5 0
 execute if entity @e[tag=GoumonSpecial,limit=1] run effect give @e[tag=GoumonSpecial] minecraft:instant_damage 1 0

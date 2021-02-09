@@ -7,11 +7,11 @@ execute as @e[tag=RandomAEC] store result score @s counter_3 run data get entity
 execute as @e[limit=1,tag=RandomAEC] run scoreboard players operation @s counter_3 %= #12 counter
 
 execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=0}] run effect give @s slowness 5 1
-execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=1}] run effect give @s weakness 5 0
+execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=1}] run effect give @s weakness 5 9
 execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=2}] run effect give @s glowing 5 0
 execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=3}] run effect give @s poison 5 0
 execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=4}] run effect give @s wither 5 1 true
-execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=5}] run effect give @s strength 5 0
+execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=5}] run effect give @s strength 5 4
 execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=6}] run effect give @s resistance 5 1
 execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=7}] run effect give @s speed 5 1
 execute if entity @e[limit=1,tag=RandomAEC,scores={counter_3=8}] run effect give @s jump_boost 5 0
