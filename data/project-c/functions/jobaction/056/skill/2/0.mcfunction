@@ -6,7 +6,7 @@ playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 2 0
 particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 1 1 force @a
 #Red
 
-effect give @s strength 6 0 false
+effect give @s strength 6 2 false
 effect give @s speed 6 3 false
 effect give @s haste 6 3 false
 effect give @s glowing 6 0 false

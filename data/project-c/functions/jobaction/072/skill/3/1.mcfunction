@@ -8,7 +8,7 @@ particle spit ~ ~1 ~ 0 0 0 1 130
 
 playsound minecraft:item.totem.use master @a ~ ~ ~ 3 0
 playsound minecraft:item.totem.use master @a ~ ~ ~ 3 0.5
-effect give @s strength 7 0
+effect give @s strength 7 2
 #スキル効果
 #共通
 

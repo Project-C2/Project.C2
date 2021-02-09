@@ -4,7 +4,8 @@
 scoreboard players reset @s usedSkill
 
 
-effect give @s[scores={Mana=1}] minecraft:strength 1 0
+effect give @s[scores={Mana=1}] minecraft:strength 1 3
+execute if entity @s[scores={Mana=1}] run function project-c:general/effect/checkeffect
 effect give @s[scores={Mana=2}] minecraft:resistance 1 1
 effect give @s[scores={Mana=3}] minecraft:speed 1 1
 
