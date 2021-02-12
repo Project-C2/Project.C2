@@ -68,3 +68,7 @@ execute if entity @a[tag=OverPotionUse,limit=1] as @a[tag=OverPotionUse] at @s r
 execute as @a at @s store result score @s Hight run data get entity @s Pos[1]
 
 execute if entity @a[gamemode=!spectator,tag=Battle,limit=1] as @a[gamemode=!spectator,tag=Battle] if score @s Hight matches ..4 unless score #GameTime counter matches ..0 run function project-c:general/void_return
+
+function project-c:general/stagegimmick/base
+
+kill @e[type=area_effect_cloud,nbt={Effects:[{Id:30b,Amplifier:49b,ShowParticles:0b}]}]
