@@ -14,13 +14,13 @@
 #12 秩序の門
 #13 ショッピングモール
 
-#14 市街地1丁目
-#15 市街地2丁目
-#16 市街地3丁目
-#17 市街地4丁目
-#18 市街地5丁目
-#19 市街地6丁目
-#20 市街地7丁目
+#14 市街地E区1丁目
+#15 市街地E区2丁目
+#16 市街地E区3丁目
+#17 市街地E区4丁目(欠)
+#18 市街地W区1丁目(欠)
+#19 市街地W区2丁目(欠)
+#20 市街地W区3丁目(欠)
 
 #21 大樹
 #22 スカイルーイン
@@ -35,11 +35,13 @@
 #31 旧屋敷
 #32 支配領域
 #33 地下世界
-#34 要塞4ExC2
+#34 要塞-ExC2
 #35 神社
 #36 エルドラド
 #37 サンゴ礁
 #38 空中庭園
+#39 (欠)
+#40 (欠)
 
 #41  裏遺跡
 #42  裏4ブロックス
@@ -78,7 +80,7 @@ execute if score #MenuStageselect counter matches 12 run setblock 1005 64 58 oak
 execute if score #MenuStageselect counter matches 13 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"ショッピングモール"}',Text4:'{"text":"********************"}'} destroy
 
 ##市街地
-execute if score #MenuStageselect counter matches 14 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"市街地"}',Text4:'{"text":"********************"}'} destroy
+execute if score #MenuStageselect counter matches 14 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"市街地Ｅ区"}',Text4:'{"text":"********************"}'} destroy
 
 ##追加ステージ第一弾
 execute if score #MenuStageselect counter matches 21 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"大樹"}',Text4:'{"text":"********************"}'} destroy
