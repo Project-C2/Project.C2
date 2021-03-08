@@ -838,15 +838,15 @@ execute at @s run playsound minecraft:block.portal.travel master @a ~ ~ ~ 2 1.75
 data merge block -97 2 -20 {auto:1b}
 data merge block -97 2 -18 {auto:1b}
 #Red
-execute at @s[team=Red] run summon zombie ~-2 ~-2 ~-2 {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1"],CustomName:"{\"text\":\"\"}",Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:generic.max_health,Base:1000}]}
-execute at @s[team=Red] run summon zombie ~2 ~-2 ~2 {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1"],CustomName:"{\"text\":\"\"}",Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:generic.max_health,Base:1000}]}
-execute at @s[team=Red] run summon skeleton ~2 ~-2 ~-2 {Team:"Red",Tags:["045-Skeleton","045-SkeletonR","045-Necro1"],CustomName:"{\"text\":\"\"}",Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:generic.max_health,Base:1000}]}
-execute at @s[team=Red] run summon skeleton ~-2 ~-2 ~2 {Team:"Red",Tags:["045-Skeleton","045-SkeletonR","045-Necro1"],CustomName:"{\"text\":\"\"}",Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:generic.max_health,Base:1000}]}
+execute at @s[team=Red] run summon zombie ~-2 ~-2 ~-2 {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Red] run summon zombie ~2 ~-2 ~2 {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Red] run summon skeleton ~2 ~-2 ~-2 {Team:"Red",Tags:["045-Skeleton","045-SkeletonR","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Red] run summon skeleton ~-2 ~-2 ~2 {Team:"Red",Tags:["045-Skeleton","045-SkeletonR","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
 #Blue
-execute at @s[team=Blue] run summon zombie ~-2 ~-2 ~-2 {Team:"Blue",Tags:["045-Zombie","045-ZombieB","045-Necro1"],CustomName:"{\"text\":\"\"}",Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:generic.max_health,Base:1000}]}
-execute at @s[team=Blue] run summon zombie ~2 ~-2 ~2 {Team:"Blue",Tags:["045-Zombie","045-ZombieB","045-Necro1"],CustomName:"{\"text\":\"\"}",Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:generic.max_health,Base:1000}]}
-execute at @s[team=Blue] run summon skeleton ~2 ~-2 ~-2 {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1"],CustomName:"{\"text\":\"\"}",Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:generic.max_health,Base:1000}]}
-execute at @s[team=Blue] run summon skeleton ~-2 ~-2 ~2 {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1"],CustomName:"{\"text\":\"\"}",Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:generic.max_health,Base:1000}]}
+execute at @s[team=Blue] run summon zombie ~-2 ~-2 ~-2 {Team:"Blue",Tags:["045-Zombie","045-ZombieB","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Blue] run summon zombie ~2 ~-2 ~2 {Team:"Blue",Tags:["045-Zombie","045-ZombieB","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Blue] run summon skeleton ~2 ~-2 ~-2 {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Blue] run summon skeleton ~-2 ~-2 ~2 {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
 #スコアセット
 scoreboard players add @e[tag=045-Necro1,tag=!045-NecroEnd] counter 0
 scoreboard players add @e[tag=045-Necro1,tag=!045-NecroSummoned] counter_2 0

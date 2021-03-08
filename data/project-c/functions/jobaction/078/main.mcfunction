@@ -9,14 +9,14 @@ execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-
 
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"DICE\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={useSnowball=1..,counter_3=0,counter_1=0},gamemode=!spectator] run function project-c:jobaction/078/skill/0/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"DICE","color":"white","italic":"false","underlined":"false"}'}}}},scores={useSnowball=1..,counter_3=0,counter_1=0},gamemode=!spectator] run function project-c:jobaction/078/skill/0/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"MINCE\",\"color\":\"gold\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={useSnowball=1..,counter_3=1,counter_1=0},gamemode=!spectator] run function project-c:jobaction/078/skill/0/2
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"MINCE","color":"gold","italic":"false","underlined":"false"}'}}}},scores={useSnowball=1..,counter_3=1,counter_1=0},gamemode=!spectator] run function project-c:jobaction/078/skill/0/2
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"SEAR\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useSnowball=1..,counter_3=0},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/078/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"SEAR","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useSnowball=1..,counter_3=0},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/078/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"FLAMBE\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useSnowball=1..,counter_3=1},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/078/skill/1/1
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"FLAMBE","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useSnowball=1..,counter_3=1},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/078/skill/1/1
 
 
 execute if entity @s[scores={CT2=1200..,sneak=1..,counter_3=0},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/078/skill/2/0
@@ -25,7 +25,7 @@ execute if entity @s[scores={CT2=1200..,sneak=1..,counter_3=1},tag=SkillReady2,g
 
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"SECOND HELPING\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,useSnowball=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/078/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"SECOND HELPING","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,useSnowball=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/078/skill/3/0
 
 execute if entity @s[scores={counter_1=1}] run replaceitem entity @s weapon.offhand minecraft:snowball
 scoreboard players remove @s[scores={counter_1=1..}] counter_1 1
@@ -35,7 +35,7 @@ execute if entity @s[scores={counter_2=1..}] run execute as @e[tag=078fire,dista
 scoreboard players add @s[scores={subcounter=1..}] subcounter 1
 
 
-execute as @s[scores={subcounter=11..}] at @s anchored eyes run summon arrow ^ ^ ^1 {damage:0.5d,Tags:["078-Bullet","078-hassummoned"],CustomName:"{\"text\":\"SEAR\",\"color\":\"gold\"}",Color:-1,NoGravity:1b,crit:1,Fire:10s}
+execute as @s[scores={subcounter=11..}] at @s anchored eyes run summon arrow ^ ^ ^1 {damage:0.5d,Tags:["078-Bullet","078-hassummoned"],CustomName:'{"text":"SEAR","color":"gold"}',Color:-1,NoGravity:1b,crit:1,Fire:10s}
 execute as @e[tag=078-hassummoned] at @s run data modify entity @s Owner set from entity @a[scores={jobNumber=78,subcounter=11..},limit=1] UUID
 execute as @s[scores={subcounter=11..}] at @s run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 1 0
 
@@ -65,7 +65,7 @@ execute if entity @s[scores={subcounter=11..}] run scoreboard players set @s sub
 scoreboard players add @s[scores={Mana=1..}] Mana 1
 
 
-execute as @s[scores={Mana=11}] at @s anchored eyes run summon arrow ^ ^ ^1 {damage:1.2d,Tags:["078-Bullet2","078-hassummoned"],CustomName:"{\"text\":\"FLAMBE\",\"color\":\"gold\"}",Color:-1,NoGravity:1b,crit:1,Fire:10s}
+execute as @s[scores={Mana=11}] at @s anchored eyes run summon arrow ^ ^ ^1 {damage:1.2d,Tags:["078-Bullet2","078-hassummoned"],CustomName:'{"text":"FLAMBE","color":"gold"}',Color:-1,NoGravity:1b,crit:1,Fire:10s}
 execute as @e[tag=078-hassummoned] at @s run data modify entity @s Owner set from entity @a[scores={jobNumber=78,Mana=11..},limit=1] UUID
 execute as @s[scores={Mana=11}] at @s run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 1 0
 

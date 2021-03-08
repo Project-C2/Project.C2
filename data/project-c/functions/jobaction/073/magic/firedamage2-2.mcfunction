@@ -9,8 +9,8 @@ particle firework ~ ~ ~ 0 0 0 1 8
 #＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 #当たったときの処理
 
-execute if entity @s[tag=FireDamage2Red] run execute as @e[team=Blue,distance=..2,tag=Battle] at @s run summon arrow ~ ~3 ~ {CustomName:"{\"text\":\"§cFireDamage\"}",CustomNameVisible:1,Motion:[0.0,-1.0,0.0],pickup:0,damage:3,Fire:20}
-execute if entity @s[tag=FireDamage2Blue] run execute as @e[team=Red,distance=..2,tag=Battle] at @s run summon arrow ~ ~3 ~ {CustomName:"{\"text\":\"§cFireDamage\"}",CustomNameVisible:1,Motion:[0.0,-1.0,0.0],pickup:0,damage:3,Fire:20}
+execute if entity @s[tag=FireDamage2Red] run execute as @e[team=Blue,distance=..2,tag=Battle] at @s run summon arrow ~ ~3 ~ {CustomName:'{"text":"§cFireDamage"}',CustomNameVisible:1,Motion:[0.0,-1.0,0.0],pickup:0,damage:3,Fire:20}
+execute if entity @s[tag=FireDamage2Blue] run execute as @e[team=Red,distance=..2,tag=Battle] at @s run summon arrow ~ ~3 ~ {CustomName:'{"text":"§cFireDamage"}',CustomNameVisible:1,Motion:[0.0,-1.0,0.0],pickup:0,damage:3,Fire:20}
 
 execute if entity @s[tag=FireDamage2Red] run execute as @e[team=Blue,distance=..2,tag=Battle] at @s run kill @e[tag=FireDamage2Red,limit=1]
 execute if entity @s[tag=FireDamage2Blue] run execute as @e[team=Red,distance=..2,tag=Battle] at @s run kill @e[tag=FireDamage2Blue,limit=1]

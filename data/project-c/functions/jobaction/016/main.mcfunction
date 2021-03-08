@@ -9,13 +9,13 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/016/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/016/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"メラ\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..,counter_1=0},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/016/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"メラ","color":"red","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useCarrotStick=1..,counter_1=0},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/016/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"メラ\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..,counter_1=1,counter_2=1..19,Mana=6..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/016/skill/1/1
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"メラ","color":"red","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useCarrotStick=1..,counter_1=1,counter_2=1..19,Mana=6..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/016/skill/1/1
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"メラ\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..,counter_1=1,counter_2=20..59,Mana=16..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/016/skill/1/2
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"メラ","color":"red","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useCarrotStick=1..,counter_1=1,counter_2=20..59,Mana=16..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/016/skill/1/2
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"メラ\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..,counter_1=1,counter_2=60,Mana=36..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/016/skill/1/3
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"メラ","color":"red","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useCarrotStick=1..,counter_1=1,counter_2=60,Mana=36..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/016/skill/1/3
 
 
 execute if entity @s[scores={CT1=1200..,counter_1=1,counter_2=1..19,Mana=..5},tag=SkillReady1,gamemode=!spectator] run tag @s add 016MPlow
@@ -24,15 +24,15 @@ execute if entity @s[scores={CT1=1200..,counter_1=1,counter_2=20..59,Mana=..15},
 
 execute if entity @s[scores={CT1=1200..,counter_1=1,counter_2=60,Mana=..35},tag=SkillReady1,gamemode=!spectator] run tag @s add 016MPlow
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"メラ\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..,counter_1=1},tag=SkillReady1,tag=016MPlow,gamemode=!spectator] run function project-c:jobaction/016/skill/1/4
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"メラ","color":"red","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useCarrotStick=1..,counter_1=1},tag=SkillReady1,tag=016MPlow,gamemode=!spectator] run function project-c:jobaction/016/skill/1/4
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"デイン\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,useCarrotStick=1..,counter_1=0},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/016/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"デイン","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,useCarrotStick=1..,counter_1=0},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/016/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"デイン\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,useCarrotStick=1..,counter_1=1,counter_3=1..29,Mana=6..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/016/skill/2/1
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"デイン","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,useCarrotStick=1..,counter_1=1,counter_3=1..29,Mana=6..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/016/skill/2/1
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"デイン\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,useCarrotStick=1..,counter_1=1,counter_3=30..79,Mana=16..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/016/skill/2/2
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"デイン","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,useCarrotStick=1..,counter_1=1,counter_3=30..79,Mana=16..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/016/skill/2/2
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"デイン\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,useCarrotStick=1..,counter_1=1,counter_3=80,Mana=36..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/016/skill/2/3
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"デイン","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,useCarrotStick=1..,counter_1=1,counter_3=80,Mana=36..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/016/skill/2/3
 
 
 execute if entity @s[scores={CT2=1200..,counter_1=1,counter_3=1..29,Mana=..7},tag=SkillReady2,gamemode=!spectator] run tag @s add 016MPlow
@@ -41,9 +41,9 @@ execute if entity @s[scores={CT2=1200..,counter_1=1,counter_3=20..79,Mana=..17},
 
 execute if entity @s[scores={CT2=1200..,counter_1=1,counter_3=80,Mana=..47},tag=SkillReady2,gamemode=!spectator] run tag @s add 016MPlow
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"デイン\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,useCarrotStick=1..,counter_1=1},tag=SkillReady2,tag=016MPlow,gamemode=!spectator] run function project-c:jobaction/016/skill/2/4
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"デイン","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,useCarrotStick=1..,counter_1=1},tag=SkillReady2,tag=016MPlow,gamemode=!spectator] run function project-c:jobaction/016/skill/2/4
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"マダンテ\",\"color\":\"dark_purple\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/016/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"マダンテ","color":"dark_purple","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/016/skill/3/0
 
 execute if entity @s[scores={useSnowball=1..}] run replaceitem entity @s weapon.offhand minecraft:snowball
 execute if entity @s[scores={useSnowball=1..}] run kill @e[type=snowball,limit=1,sort=nearest]

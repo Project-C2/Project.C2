@@ -1,6 +1,6 @@
-replaceitem entity @s hotbar.0 minecraft:iron_sword{display:{Name:"{\"text\":\"Iron longsword\"}"},Unbreakable:1b} 1
-replaceitem entity @s hotbar.1 minecraft:feather{display:{Name:"{\"text\":\"ソニックウィング\"}",Lore:["{\"text\":\"発動:滑空\"}","{\"text\":\"周囲の敵にダメージを与える。\"}"]}} 1
-replaceitem entity @s hotbar.2 minecraft:cobweb{display:{Name:"{\"text\":\"バードストライク\"}",Lore:["{\"text\":\"発動:落下\"}","{\"text\":\"周囲の敵にダメージを与える\"}"]}} 1
+replaceitem entity @s hotbar.0 minecraft:iron_sword{display:{Name:'{"text":"Iron longsword"}'},Unbreakable:1b} 1
+replaceitem entity @s hotbar.1 minecraft:feather{display:{Name:'{"text":"ソニックウィング"}',Lore:['{"text":"発動:滑空"}','{"text":"周囲の敵にダメージを与える。"}']}} 1
+replaceitem entity @s hotbar.2 minecraft:cobweb{display:{Name:'{"text":"バードストライク"}',Lore:['{"text":"発動:落下"}','{"text":"周囲の敵にダメージを与える"}']}} 1
 
 function project-c:jobaction/008/setquartz
 

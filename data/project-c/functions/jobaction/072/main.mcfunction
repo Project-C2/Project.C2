@@ -8,15 +8,15 @@ execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/072/replaceitem/3
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"第五勢\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/072/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"第五勢","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/072/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"五輪真髄:空\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator,nbt={Inventory:[{Slot:-106b,id:"minecraft:golden_sword"}]}] run function project-c:jobaction/072/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"五輪真髄:空","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator,nbt={Inventory:[{Slot:-106b,id:"minecraft:golden_sword"}]}] run function project-c:jobaction/072/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"五輪真髄:空\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator,nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_sword"}]}] run function project-c:jobaction/072/skill/2/2
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"五輪真髄:空","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator,nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_sword"}]}] run function project-c:jobaction/072/skill/2/2
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"§c天眼§f/§a無空\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator,nbt={Inventory:[{Slot:-106b,id:"minecraft:golden_sword"}]}] run function project-c:jobaction/072/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"§c天眼§f/§a無空","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator,nbt={Inventory:[{Slot:-106b,id:"minecraft:golden_sword"}]}] run function project-c:jobaction/072/skill/3/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"§c天眼§f/§a無空\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator,nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_sword"}]}] run function project-c:jobaction/072/skill/3/1
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"§c天眼§f/§a無空","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator,nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_sword"}]}] run function project-c:jobaction/072/skill/3/1
 
 
 

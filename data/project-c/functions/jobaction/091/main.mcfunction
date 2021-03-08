@@ -7,15 +7,15 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/091/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/091/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"マークスマン\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={useCarrotStick=1..,counter_1=0,counter_2=0,counter_4=0},gamemode=!spectator] run function project-c:jobaction/091/skill/0/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"マークスマン","color":"white","italic":"false","underlined":"false"}'}}}},scores={useCarrotStick=1..,counter_1=0,counter_2=0,counter_4=0},gamemode=!spectator] run function project-c:jobaction/091/skill/0/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"マークスマン\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={useCarrotStick=1..,counter_1=21..,counter_4=0},gamemode=!spectator] run function project-c:jobaction/091/skill/0/1
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"マークスマン","color":"white","italic":"false","underlined":"false"}'}}}},scores={useCarrotStick=1..,counter_1=21..,counter_4=0},gamemode=!spectator] run function project-c:jobaction/091/skill/0/1
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"バリケード\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,tag=Battle,gamemode=!spectator] run function project-c:jobaction/091/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"バリケード","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,tag=Battle,gamemode=!spectator] run function project-c:jobaction/091/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ニューマティックサージ\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/091/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ニューマティックサージ","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/091/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"モービルフォートレス\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/091/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"モービルフォートレス","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/091/skill/3/0
 
 
 execute if entity @s[scores={counter_1=1..499}] run scoreboard players add @s counter_1 1

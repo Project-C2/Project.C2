@@ -1,4 +1,4 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {CustomName:"{\"text\":\"爆撃機フォボス\"}",Tags:[fovosAEC]}
+summon minecraft:area_effect_cloud ~ ~ ~ {CustomName:'{"text":"爆撃機フォボス"}',Tags:[fovosAEC]}
 execute as @e[tag=fovosAEC] at @s store result score @s counter_3 run data get entity @s UUID[1]
 
 execute as @e[limit=1,tag=fovosAEC] at @s run scoreboard players operation @s counter_3 %= #4 counter

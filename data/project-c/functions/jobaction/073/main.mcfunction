@@ -7,16 +7,16 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/073/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/073/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"§5§lMaking Magic§r\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/073/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"§5§lMaking Magic§r","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/073/skill/1/0
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"§b§lEthereum Purification§r\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,sneak=1..,Mana=300..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/073/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"§b§lEthereum Purification§r","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,sneak=1..,Mana=300..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/073/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"§e§lBinding§r\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,sneak=1..,Mana=100..},tag=!useBinding,tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/073/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"§e§lBinding§r","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,sneak=1..,Mana=100..},tag=!useBinding,tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/073/skill/3/0
 
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"§5§lMaking Magic§r\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/073/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"§5§lMaking Magic§r","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/073/skill/1/0
 
 execute if entity @s[scores={useCarrotStick=1..,MagicFatigue=..300},gamemode=!spectator] run function project-c:jobaction/073/magic/usemagiccarrot
 

@@ -2,7 +2,7 @@ scoreboard players add @s counter 1
 
 execute as @s[scores={counter=20..}] at @s anchored eyes run particle minecraft:explosion ^ ^ ^1 0 0 0 1 1
 
-execute as @s[scores={counter=20..}] at @s anchored eyes run summon fireball ^ ^-0.05 ^1 {ExplosionPower:1,direction:[0.0,0.0,0.0],CustomName:"{\"text\":\"タレット\",\"color\":\"red\",\"italic\":false}",Tags:["087-RPG","087-Bullet"]}
+execute as @s[scores={counter=20..}] at @s anchored eyes run summon fireball ^ ^-0.05 ^1 {ExplosionPower:1,direction:[0.0,0.0,0.0],CustomName:'{"text":"タレット","color":"red","italic":false}',Tags:["087-RPG","087-Bullet"]}
 execute as @s[scores={counter=20..}] at @s run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 1 0
 execute as @s[scores={counter=20..}] at @s store result score @e[limit=1,sort=nearest,tag=087-RPG] counter_3 run data get entity @s Pos[0] 100
 

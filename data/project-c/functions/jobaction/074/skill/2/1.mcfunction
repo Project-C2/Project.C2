@@ -30,8 +30,8 @@ execute at @s run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 normal @a
 function project-c:jobaction/074/skill/2/reflect
 execute at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,NoGravity:1b,Tags:["074dummy","074lavafire"]}
 
-execute if entity @e[tag=074damaged,limit=1] unless score @s counter_3 matches 1.. as @e[tag=074damaged] at @s run summon area_effect_cloud ~ ~0.3 ~ {CustomName:"{\"text\":\"ラヴァジャヴェリン\",\"color\":\"red\"}",Particle:"",Radius:0.4f,WaitTime:1,Duration:5,Age:4,Effects:[{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b,ShowIcon:0b}]}
-execute if entity @e[tag=074damaged,limit=1] if score @s counter_3 matches 1.. as @e[tag=074damaged] at @s run summon area_effect_cloud ~ ~0.3 ~ {CustomName:"{\"text\":\"ラヴァジャヴェリン\",\"color\":\"red\"}",Particle:"",Radius:0.4f,WaitTime:1,Duration:5,Age:4,Effects:[{Id:7b,Amplifier:1b,Duration:1,ShowParticles:0b,ShowIcon:0b}]}
+execute if entity @e[tag=074damaged,limit=1] unless score @s counter_3 matches 1.. as @e[tag=074damaged] at @s run summon area_effect_cloud ~ ~0.3 ~ {CustomName:'{"text":"ラヴァジャヴェリン","color":"red"}',Particle:"",Radius:0.4f,WaitTime:1,Duration:5,Age:4,Effects:[{Id:7b,Amplifier:0b,Duration:1,ShowParticles:0b,ShowIcon:0b}]}
+execute if entity @e[tag=074damaged,limit=1] if score @s counter_3 matches 1.. as @e[tag=074damaged] at @s run summon area_effect_cloud ~ ~0.3 ~ {CustomName:'{"text":"ラヴァジャヴェリン","color":"red"}',Particle:"",Radius:0.4f,WaitTime:1,Duration:5,Age:4,Effects:[{Id:7b,Amplifier:1b,Duration:1,ShowParticles:0b,ShowIcon:0b}]}
 execute if entity @e[tag=074damaged,limit=1] run tag @e[tag=074damaged] remove 074damaged
 scoreboard players operation @e[tag=074dummy] playerNumber = @s playerNumber
 execute if entity @s[team=RedDummy] run team join RedDummy @e[tag=074dummy]

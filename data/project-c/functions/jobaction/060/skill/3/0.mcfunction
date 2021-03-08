@@ -20,7 +20,7 @@ execute if entity @s[scores={counter_1=9}] run data merge entity @e[tag=ArrowFP,
 execute if entity @s[scores={counter_1=9}] run data merge entity @e[tag=ArrowFP,sort=nearest,limit=1] {damage:6.5d,Tag:["Arrow"],life:1200}
 execute if entity @s[scores={counter_1=10}] run data merge entity @e[tag=ArrowFP,sort=nearest,limit=1] {damage:7.0d,Tag:["Arrow"],life:1200}
 
-clear @s minecraft:bow{display:{Name:"{\"text\":\"フルパワーショット\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"true\",\"bold\":\"true\"}"}} 1
+clear @s minecraft:bow{display:{Name:'{"text":"フルパワーショット","color":"yellow","italic":"false","underlined":"true","bold":"true"}'}} 1
 
 scoreboard players set @s counter_1 0
 

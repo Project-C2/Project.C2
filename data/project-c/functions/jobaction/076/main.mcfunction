@@ -13,10 +13,10 @@ execute if entity @s[scores={subcounter=0,counter_2=1,CT1=1200..,sneak=1..},tag=
 execute if entity @s[scores={subcounter=1..,counter_2=1,sneak=0},gamemode=!spectator] run function project-c:jobaction/076/skill/1/3
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ホーリースタンス\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,jump=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/076/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ホーリースタンス","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,jump=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/076/skill/2/0
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ジャッジメントロア\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,jump=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/076/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ジャッジメントロア","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,jump=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/076/skill/3/0
 
 execute if entity @s[scores={counter_1=1}] at @s run attribute @s minecraft:generic.knockback_resistance base set 0
 execute if entity @s[scores={counter_1=1}] at @s run effect clear @a minecraft:resistance

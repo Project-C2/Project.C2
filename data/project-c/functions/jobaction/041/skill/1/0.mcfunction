@@ -11,7 +11,7 @@ execute as @e[tag=041-trapf] run tag @s add 041-trap
 execute if entity @s[team=Red] as @e[tag=041-trapf] run tag @s add 041-trap-r
 execute if entity @s[team=Blue] as @e[tag=041-trapf] run tag @s add 041-trap-b
 execute as @e[tag=041-trapf] run tag @s remove 041-trapf
-clear @s bow{display:{Name:"{\"text\":\"cardinal bow\"}"}}
+clear @s bow{display:{Name:'{"text":"cardinal bow"}'}}
 
 data merge block 119 2 -71 {auto:1b}
 tag @s remove SkillReady1

@@ -13,7 +13,7 @@ execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-
 
 execute if entity @s[scores={counter_1=0,useSnowball=1..},gamemode=!spectator] run function project-c:jobaction/056/skill/0/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"デストロイモード\",\"color\":\"dark_red\",\"italic\":\"false\",\"underlined\":\"true\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/056/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"デストロイモード","color":"dark_red","italic":"false","underlined":"true"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/056/skill/2/0
 
 execute if entity @s[nbt={HurtTime:9s}] run effect give @s instant_damage 1 0
 execute if entity @s[nbt={HurtTime:9s}] run playsound minecraft:item.trident.return master @a ~ ~ ~ 1 0
