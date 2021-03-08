@@ -3,7 +3,7 @@ execute if entity @s[team=RedDummy] if entity @e[tag=Battle,team=!Red,distance=.
 execute if entity @s[team=BlueDummy] if entity @e[tag=Battle,team=!Blue,distance=..1.2] run tag @s add 023-1dsummon
 execute if entity @s[team=RedDummy] if entity @e[tag=Battle,team=!Red,distance=..3.0] as @e[tag=Battle,team=!Red,distance=..3.0] at @s anchored eyes positioned ^ ^ ^ if entity @e[tag=023-14,team=RedDummy,distance=..1.2] run tag @e[tag=023-14,team=RedDummy,distance=..1.2] add 023-1dsummon
 execute if entity @s[team=BlueDummy] if entity @e[tag=Battle,team=!Blue,distance=..3.0] as @e[tag=Battle,team=!Blue,distance=..3.0] at @s anchored eyes positioned ^ ^ ^ if entity @e[tag=023-14,team=BlueDummy,distance=..1.2] run tag @e[tag=023-14,team=BlueDummy,distance=..1.2] add 023-1dsummon
-execute if entity @s[tag=023-1dsummon] run summon arrow ~ ~ ~ {CustomName:"{\"text\":\"Shot Wand\",\"color\":\"green\"}",Tags:["023-1d"],Motion:[0.0d,0.0d,0.0d],pickup:0,damage:7.0d,life:1200s}
+execute if entity @s[tag=023-1dsummon] run summon arrow ~ ~ ~ {CustomName:'{"text":"Shot Wand","color":"green"}',Tags:["023-1d"],Motion:[0.0d,0.0d,0.0d],pickup:0,damage:7.0d,life:1200s}
 execute if entity @s[team=RedDummy] if entity @e[tag=023-1d] as @e[tag=Battle,team=!Red,distance=..3.0,sort=nearest] positioned as @s anchored eyes run tp @e[tag=023-1d] ^ ^ ^
 execute if entity @s[team=RedDummy] if entity @e[tag=023-1d] positioned as @e[tag=023-1d] run tp @e[tag=023-1d,limit=1,sort=nearest] ^ ^ ^1
 execute if entity @s[team=BlueDummy] if entity @e[tag=023-1d] as @e[tag=Battle,team=!Blue,distance=..3.0,sort=nearest] positioned as @s anchored eyes run tp @e[tag=023-1d] ^ ^ ^

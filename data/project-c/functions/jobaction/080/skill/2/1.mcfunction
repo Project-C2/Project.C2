@@ -9,7 +9,7 @@ execute if entity @s[scores={HP=20..29}] run summon armor_stand ~ ~1.75 ~ {Tags:
 execute if entity @s[scores={HP=10..19}] run summon armor_stand ~ ~1.75 ~ {Tags:["080-explode3"],Invisible:1b}
 execute if entity @s[scores={HP=..9}] run summon armor_stand ~ ~1.75 ~ {Tags:["080-explode4"],Invisible:1b}
 
-summon creeper ~ ~ ~ {CustomName:"{\"text\":\"機甲部隊の超臨界\"}",ignited:1b,ExplosionRadius:3b,Fuse:0s,Invulnerable:0b,NoAI:1b,Silent:1b,powered:1b}
+summon creeper ~ ~ ~ {CustomName:'{"text":"機甲部隊の超臨界"}',ignited:1b,ExplosionRadius:3b,Fuse:0s,Invulnerable:0b,NoAI:1b,Silent:1b,powered:1b}
 
 execute if entity @s[scores={HP=30..},team=Red] run effect give @a[team=Red] speed 10 1
 execute if entity @s[scores={HP=30..},team=Blue] run effect give @a[team=Blue] speed 10 1

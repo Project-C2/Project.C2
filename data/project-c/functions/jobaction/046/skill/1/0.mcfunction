@@ -11,7 +11,7 @@ effect clear @s minecraft:jump_boost
 effect clear @s minecraft:absorption
 effect clear @s minecraft:resistance
 effect clear @s minecraft:speed
-replaceitem entity @s armor.chest minecraft:elytra{display:{Name:"{\"text\":\"Vex Wings\"}",Lore:["壊れている"]},Unbreakable:1b,Damage:1000,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
+replaceitem entity @s armor.chest minecraft:elytra{display:{Name:'{"text":"Vex Wings"}',Lore:["壊れている"]},Unbreakable:1b,Damage:1000,Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 #リセット
 tag @s remove SkillReady1
 scoreboard players set @s usedSkill 1

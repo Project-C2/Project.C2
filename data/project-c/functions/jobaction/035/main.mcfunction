@@ -28,10 +28,10 @@ execute if entity @e[tag=035-animaBowTP,limit=1] as @e[tag=035-animaBowTP] run t
 
 
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:spectral_arrow"}},scores={counter_2=1..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] unless entity @s[scores={counter=1..}] run function project-c:jobaction/035/skill/levitate
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"299792458[m/s]\"}"}}}},scores={counter_2=1..,CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] positioned ~ ~-0.4 ~ run function project-c:jobaction/035/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"299792458[m/s]"}'}}}},scores={counter_2=1..,CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] positioned ~ ~-0.4 ~ run function project-c:jobaction/035/skill/1/0
 execute if entity @s[scores={CT2=1200..,crossbow=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/035/skill/2/0
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:golden_sword",tag:{display:{Name:"{\"text\":\"アニマディヴァイン\",\"color\":\"gold\",\"underlined\":true}"}}}},scores={counter_2=8..,CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/035/skill/3/0
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:iron_sword",tag:{display:{Name:"{\"text\":\"アニマディヴァイン\",\"color\":\"gold\",\"underlined\":true}"}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/035/skill/3/0b
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:golden_sword",tag:{display:{Name:'{"text":"アニマディヴァイン","color":"gold","underlined":true}'}}}},scores={counter_2=8..,CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/035/skill/3/0
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:iron_sword",tag:{display:{Name:'{"text":"アニマディヴァイン","color":"gold","underlined":true}'}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/035/skill/3/0b
 
 execute if entity @s[scores={crossbow=1..}] anchored eyes positioned ^ ^ ^ run data merge entity @e[type=spectral_arrow,limit=1,distance=..5,tag=!Arrow] {Tags:["Arrow"],life:1200s}
 execute if entity @s[scores={crossbow=1..}] run scoreboard players reset @s[scores={crossbow=1..}] crossbow

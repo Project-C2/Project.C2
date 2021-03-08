@@ -7,28 +7,28 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/061/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/061/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={stockcounter=40..,useCarrotStick=1..},gamemode=!spectator] run function project-c:jobaction/061/skill/0/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}'}}}},scores={stockcounter=40..,useCarrotStick=1..},gamemode=!spectator] run function project-c:jobaction/061/skill/0/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"チャージ済みのナノ爆弾\",\"color\":\"blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/061/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"チャージ済みのナノ爆弾","color":"blue","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/061/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"氷の壁\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/061/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"氷の壁","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/061/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"火炎放射\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/061/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"火炎放射","color":"red","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/061/skill/3/0
 
 
 scoreboard players add @s[scores={stockcounter=..239},gamemode=!spectator] stockcounter 1
 
 replaceitem entity @s[scores={stockcounter=..59}] hotbar.0 minecraft:compass
 
-replaceitem entity @s[scores={stockcounter=60..119}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:3/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 1
-replaceitem entity @s[scores={stockcounter=120..179}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:3/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 2
-replaceitem entity @s[scores={stockcounter=180..239}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:3/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 3
-replaceitem entity @s[scores={stockcounter=240}] hotbar.0 minecraft:blaze_powder{display:{Name:"{\"text\":\"火の矢\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"false\"}",Lore:["{\"text\":\"§e発動:右クリック\"}","{\"text\":\"§f効果:前方に火の矢を放つ。\"}","{\"text\":\"§aCT:3/ストック:4\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63b} 4
+replaceitem entity @s[scores={stockcounter=60..119}] hotbar.0 minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 1
+replaceitem entity @s[scores={stockcounter=120..179}] hotbar.0 minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 2
+replaceitem entity @s[scores={stockcounter=180..239}] hotbar.0 minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 3
+replaceitem entity @s[scores={stockcounter=240}] hotbar.0 minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 4
 
 
 execute as @s[scores={counter_3=1..}] at @s run scoreboard players remove @s counter_3 1
 
-execute as @s[scores={counter_3=1..41}] at @s anchored eyes if score #Clock counter matches 1 run summon arrow ^ ^ ^1 {damage:0.5d,Tags:["061-Bullet","061-hassummoned"],CustomName:"{\"text\":\"火炎放射\",\"color\":\"gold\"}",Color:-1,NoGravity:1b,crit:1,Fire:10s}
+execute as @s[scores={counter_3=1..41}] at @s anchored eyes if score #Clock counter matches 1 run summon arrow ^ ^ ^1 {damage:0.5d,Tags:["061-Bullet","061-hassummoned"],CustomName:'{"text":"火炎放射","color":"gold"}',Color:-1,NoGravity:1b,crit:1,Fire:10s}
 
 execute as @s[scores={counter_3=1..41}] at @s run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 1 0
 

@@ -15,12 +15,12 @@ execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-
 
 
 execute if entity @s[scores={CT1=1200..,aviate=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/043/skill/1/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"盟約-ツキシタガウモノ\",\"color\":\"light_purple\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/043/skill/2/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"解脱-完全浮遊者\"}"}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/043/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"盟約-ツキシタガウモノ","color":"light_purple"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/043/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"解脱-完全浮遊者"}'}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/043/skill/3/0
 
 execute if entity @s[tag=043-3holding,scores={CT3=1200..,drop=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/043/skill/3/drop
 execute if entity @s[tag=043-3holding] run tag @s remove 043-3holding
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"解脱-完全浮遊者\"}"}}}},scores={CT3=1200..,counter_2=1..},tag=SkillReady3,gamemode=!spectator] run tag @s add 043-3holding
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"解脱-完全浮遊者"}'}}}},scores={CT3=1200..,counter_2=1..},tag=SkillReady3,gamemode=!spectator] run tag @s add 043-3holding
 
 execute if entity @s[scores={counter_1=1..}] at @s run function project-c:jobaction/043/skill/1/1
 

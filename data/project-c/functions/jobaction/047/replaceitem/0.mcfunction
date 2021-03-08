@@ -1,4 +1,4 @@
-replaceitem entity @s[scores={Mana=..0}] hotbar.0 minecraft:blaze_rod{display:{Name:"{\"text\":\"イリュージョンレーザー\",\"color\":\"gold\",\"italic\":\"false\",\"underlined\":\"true\"}",Lore:['{"text":"§e発動:右クリック"}','{"text":"§f前方を光線で攻撃する。"}','{"text":"§aCT:3"}']},HideFlags:1,Enchantments:[{id:"minecraft:sharpness",lvl:0}]} 1
+replaceitem entity @s[scores={Mana=..0}] hotbar.0 minecraft:blaze_rod{display:{Name:'{"text":"イリュージョンレーザー","color":"gold","italic":"false","underlined":"true"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f前方を光線で攻撃する。"}','{"text":"§aCT:3"}']},HideFlags:1,Enchantments:[{id:"minecraft:sharpness",lvl:0}]} 1
 replaceitem entity @s[scores={Mana=1..20}] hotbar.0 minecraft:compass{display:{Name:'{"text":"CoolTime"}'}} 1
 replaceitem entity @s[scores={Mana=21..40}] hotbar.0 minecraft:compass{display:{Name:'{"text":"CoolTime"}'}} 2
 replaceitem entity @s[scores={Mana=41..60}] hotbar.0 minecraft:compass{display:{Name:'{"text":"CoolTime"}'}} 3

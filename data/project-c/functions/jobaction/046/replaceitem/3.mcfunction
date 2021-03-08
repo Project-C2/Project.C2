@@ -1,3 +1,3 @@
-replaceitem entity @s hotbar.3 minecraft:gold_nugget{display:{Name:"{\"text\":\"アポカリプティックサウンド\",\"color\":\"light_purple\",\"italic\":\"false\",\"underlined\":\"true\"}",Lore:["{\"text\":\"§e発動:スニーク\"}","{\"text\":\"§f1.5秒後にラッパを吹き、\"}","{\"text\":\"§f16m以内の敵にCT回復停止を5秒間与える。\"}","{\"text\":\"§c※二度連続して効果を受けた敵は追加で、\"}","{\"text\":\"§c負傷,発光,弱化 Ⅰを5秒受ける。\"}","{\"text\":\"§cまた、対象はプレイヤーのみ。\"}","{\"text\":\"§aCT:15\"}"]}} 1
+replaceitem entity @s hotbar.3 minecraft:gold_nugget{display:{Name:'{"text":"アポカリプティックサウンド","color":"light_purple","italic":"false","underlined":"true"}',Lore:['{"text":"§e発動:スニーク"}','{"text":"§f1.5秒後にラッパを吹き、"}','{"text":"§f16m以内の敵にCT回復停止を5秒間与える。"}','{"text":"§c※二度連続して効果を受けた敵は追加で、"}','{"text":"§c負傷,発光,弱化 Ⅰを5秒受ける。"}','{"text":"§cまた、対象はプレイヤーのみ。"}','{"text":"§aCT:15"}']}} 1
 playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 tag @s add SkillReady3

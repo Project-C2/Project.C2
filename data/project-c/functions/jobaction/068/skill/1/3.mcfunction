@@ -7,7 +7,7 @@ execute if entity @s[tag=!068RiotCheckC,scores={counter=45..}] if entity @e[tag=
 tp @s ^ ^ ^1
 
 execute unless block ^ ^ ^1 air run particle end_rod ^ ^ ^ 0 0 0 0.5 10 force @a
-execute unless block ^ ^ ^1 air run summon creeper ~ ~ ~ {CustomName:"{\"text\":\"ライオニックUA45\"}",ignited:1b,ExplosionRadius:2b,Fuse:0s,Invulnerable:1b,NoAI:1b,Silent:1b}
+execute unless block ^ ^ ^1 air run summon creeper ~ ~ ~ {CustomName:'{"text":"ライオニックUA45"}',ignited:1b,ExplosionRadius:2b,Fuse:0s,Invulnerable:1b,NoAI:1b,Silent:1b}
 execute unless block ^ ^ ^1 air run kill @s
 
 

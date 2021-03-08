@@ -7,13 +7,13 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/066/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/066/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"幻世「ザ・ワールド」\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT3=1200..,useSnowball=1..},tag=SkillReady3,gamemode=!spectator,tag=Battle] run function project-c:jobaction/066/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"幻世「ザ・ワールド」","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,useSnowball=1..},tag=SkillReady3,gamemode=!spectator,tag=Battle] run function project-c:jobaction/066/skill/3/0
 
 execute if entity @s[scores={useSnowball=1..,stockcounter=0},gamemode=!spectator] run function project-c:jobaction/066/skill/0/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"バニシングエブリシング\",\"color\":\"gray\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,sneak=1..,Mana=0},gamemode=!spectator] run function project-c:jobaction/066/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"バニシングエブリシング","color":"gray","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,sneak=1..,Mana=0},gamemode=!spectator] run function project-c:jobaction/066/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"時符「プライベート・スクウェア」\",\"color\":\"light_blue\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/066/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"時符「プライベート・スクウェア」","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/066/skill/2/0
 
 replaceitem entity @s[scores={stockcounter=1},gamemode=!spectator] weapon.offhand minecraft:snowball
 scoreboard players remove @s[scores={stockcounter=1..},gamemode=!spectator] stockcounter 1

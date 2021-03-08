@@ -7,9 +7,9 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/080/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/080/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"機甲部隊の防衛圏\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/080/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"機甲部隊の防衛圏","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/080/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"機甲部隊の超臨界\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,tag=Battle,gamemode=!spectator] run function project-c:jobaction/080/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"機甲部隊の超臨界","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,tag=Battle,gamemode=!spectator] run function project-c:jobaction/080/skill/2/0
 
 replaceitem entity @s[scores={crossbow=1..}] hotbar.4 minecraft:arrow
 
@@ -30,7 +30,7 @@ execute if entity @s[team=Blue,gamemode=!spectator] run execute if entity @a[sco
 scoreboard players add @s[scores={counter_3=1..}] counter_3 1
 execute if entity @s[scores={counter_3=1..}] run particle minecraft:angry_villager ~ ~1 ~ 1 1 1 1 1 normal @a
 execute if entity @s[scores={counter_3=141}] run effect give @s resistance 1 4
-execute if entity @s[scores={counter_3=141}] run summon creeper ~ ~ ~ {CustomName:"{\"text\":\"機甲部隊の最前線\"}",ignited:1b,ExplosionRadius:1b,Fuse:0s,Invulnerable:0b,NoAI:1b,Silent:1b,powered:1b}
+execute if entity @s[scores={counter_3=141}] run summon creeper ~ ~ ~ {CustomName:'{"text":"機甲部隊の最前線"}',ignited:1b,ExplosionRadius:1b,Fuse:0s,Invulnerable:0b,NoAI:1b,Silent:1b,powered:1b}
 execute if entity @s[scores={counter_3=1..},gamemode=spectator] run scoreboard players set @s counter_3 0
 execute if entity @s[scores={counter_3=141..}] run scoreboard players set @s counter_3 0
 

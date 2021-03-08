@@ -1,3 +1,3 @@
-replaceitem entity @s hotbar.2 minecraft:sunflower{display:{Name:"{\"text\":\"パラス・ヘイロー\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"true\"}",Lore:["{\"text\":\"§e発動:スニーク\"}","{\"text\":\"§f治癒 Ⅱを受け、天使の輪を展開する。\"}","{\"text\":\"§f展開中はデバフを無効化し、\"}","{\"text\":\"§f効果終了時に光の矢を天使の輪から撃つ。\"}","{\"text\":\"§c※効果時間は体力に応じて変わる。(最大30秒)\"}","{\"text\":\"§aCT:30\"}"]}} 1
+replaceitem entity @s hotbar.2 minecraft:sunflower{display:{Name:'{"text":"パラス・ヘイロー","color":"yellow","italic":"false","underlined":"true"}',Lore:['{"text":"§e発動:スニーク"}','{"text":"§f治癒 Ⅱを受け、天使の輪を展開する。"}','{"text":"§f展開中はデバフを無効化し、"}','{"text":"§f効果終了時に光の矢を天使の輪から撃つ。"}','{"text":"§c※効果時間は体力に応じて変わる。(最大30秒)"}','{"text":"§aCT:30"}']}} 1
 playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 tag @s add SkillReady2

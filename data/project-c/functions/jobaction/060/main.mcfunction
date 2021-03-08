@@ -12,7 +12,7 @@ execute as @a[scores={jobNumber=60,subcounter=..0,Mana=30}] at @s run playsound 
 scoreboard players set @a[scores={jobNumber=60,subcounter=..0,Mana=30}] subcounter 3
 
 scoreboard players set @a[scores={jobNumber=60,Mana=30..}] Mana 0
-execute as @a[scores={jobNumber=60,useCarrotStick=1..,subcounter=1..,counter_2=0}] at @s anchored eyes run summon arrow ^ ^ ^1 {damage:0.5d,Tags:["060-Bullet","060-hassummoned"],CustomName:"{\"text\":\"オルフェンズ-Mk23\",\"color\":\"gold\"}",Color:-1,NoGravity:1b,crit:1}
+execute as @a[scores={jobNumber=60,useCarrotStick=1..,subcounter=1..,counter_2=0}] at @s anchored eyes run summon arrow ^ ^ ^1 {damage:0.5d,Tags:["060-Bullet","060-hassummoned"],CustomName:'{"text":"オルフェンズ-Mk23","color":"gold"}',Color:-1,NoGravity:1b,crit:1}
 
 execute as @e[tag=060-hassummoned] store result score @s CT1 run data get entity @s Pos[0] 100
 execute as @e[tag=060-hassummoned] at @s store result score @s counter_1 run data get entity @a[scores={jobNumber=60,useCarrotStick=1..},limit=1,sort=nearest,distance=..3] Pos[0] 100
@@ -41,11 +41,11 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/060/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/060/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"G-バルバトス\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"true\"}"}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/060/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"G-バルバトス","color":"white","italic":"false","underlined":"true"}'}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/060/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ボムチップ\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"true\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/060/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ボムチップ","color":"red","italic":"false","underlined":"true"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/060/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"フルパワーショット\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"true\",\"bold\":\"true\"}"}}}},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/060/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"フルパワーショット","color":"yellow","italic":"false","underlined":"true","bold":"true"}'}}}},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/060/skill/3/0
 
 scoreboard players reset @s bow
 scoreboard players reset @s adDealt

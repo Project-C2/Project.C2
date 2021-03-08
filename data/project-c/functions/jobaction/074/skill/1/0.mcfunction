@@ -1,5 +1,5 @@
 scoreboard players set @s CT1 940
-replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:"\"CoolTime\""}} 13
+replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 13
 
 execute positioned 0.0 0.0 0.0 run summon minecraft:armor_stand ^ ^ ^4 {Tags:["074dummy"],Marker:1b,Invisible:1b,NoGravity:1b}
 execute anchored eyes run summon minecraft:arrow ^ ^ ^0.5 {Tags:["074fire","074fireF","Arrow"],damage:0.1d,Fire:32767s,life:1198s,pickup:2b,Color:-1,PierceLevel:127b,Potion:"minecraft:harming"}

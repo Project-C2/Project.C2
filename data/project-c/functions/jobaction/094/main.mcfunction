@@ -7,9 +7,9 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/094/replaceitem/2
 execute if entity @s[scores={CT3=1200..}] run function project-c:jobaction/094/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ベクトルマニピュレーション\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..,sneak=0},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/094/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ベクトルマニピュレーション","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useCarrotStick=1..,sneak=0},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/094/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ベクトルマニピュレーション\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/094/skill/1/2
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ベクトルマニピュレーション","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useCarrotStick=1..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/094/skill/1/2
 
 execute if entity @s[scores={CT2=1200..,useSnowball=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/094/skill/2/0
 

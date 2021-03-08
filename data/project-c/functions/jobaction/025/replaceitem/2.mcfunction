@@ -1,3 +1,3 @@
-replaceitem entity @s hotbar.2 minecraft:player_head{SkullOwner:"koucyacyan",display:{Name:"{\"text\":\"伝説の増殖\",\"color\":\"dark_green\",\"bold\":true,\"italic\":false}",Lore:["{\"text\":\"発動:スニーク\"}","{\"text\":\"お茶を呼び出す\"}","{\"text\":\"怒りゲージ100%で. . .\"}","{\"text\":\"CT:60\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:5},{id:"minecraft:knockback",lvl:2}],HideFlags:1} 1
+replaceitem entity @s hotbar.2 minecraft:player_head{SkullOwner:"koucyacyan",display:{Name:'{"text":"伝説の増殖","color":"dark_green","bold":true,"italic":false}',Lore:['{"text":"発動:スニーク"}','{"text":"お茶を呼び出す"}','{"text":"怒りゲージ100%で. . ."}','{"text":"CT:60"}']},Enchantments:[{id:"minecraft:sharpness",lvl:5},{id:"minecraft:knockback",lvl:2}],HideFlags:1} 1
 playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 tag @s add SkillReady2
