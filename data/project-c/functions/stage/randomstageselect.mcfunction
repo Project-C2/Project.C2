@@ -65,8 +65,8 @@ execute as @e[tag=StageRandSelected,tag=StageRand11] run function project-c:stag
 execute as @e[tag=StageRandSelected,tag=StageRand12] run function project-c:stage/selectstageload/12
 execute as @e[tag=StageRandSelected,tag=StageRand13] run function project-c:stage/selectstageload/13
 execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/14
-#execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/15
-#execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/16
+execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/15
+execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/16
 #execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/17
 #execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/18
 #execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/19
@@ -101,3 +101,5 @@ execute as @e[tag=StageRandSelected,tag=StageRand47] run function project-c:stag
 execute as @e[tag=StageRandSelected,tag=StageRand48] run function project-c:stage/selectstageload/48
 execute as @e[tag=StageRandSelected,tag=StageRand49] run function project-c:stage/selectstageload/49
 execute as @e[tag=StageRandSelected,tag=StageRand50] run function project-c:stage/selectstageload/50
+
+kill @e[tag=StageRand]
