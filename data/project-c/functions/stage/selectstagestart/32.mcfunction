@@ -1,0 +1,2 @@
+fill 2044 106 6993 2045 107 6993 minecraft:air
+fill 1944 106 6999 1943 107 6999 minecraft:air
