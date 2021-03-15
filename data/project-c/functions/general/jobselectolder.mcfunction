@@ -11,6 +11,8 @@ scoreboard players set @a[tag=JobChanged] Mana 0
 scoreboard players set @a[tag=JobChanged] MagicFatigue 0
 scoreboard players set @a[tag=JobChanged] stockcounter 0
 
+tag @s remove nbs_phyco
+
 scoreboard players set @a[scores={relic=32}] relicCount2 10
 
 execute as @a[tag=JobChanged] at @s run attribute @s minecraft:generic.knockback_resistance base set 0
