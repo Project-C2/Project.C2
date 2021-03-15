@@ -8,7 +8,7 @@ execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/025/replaceitem/3
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ｶﾞｲｼﾞの極ー全能持越しー\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}"}}}},scores={CT1=1200..,damageDealt=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/025/skill/1/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"伝説の増殖\",\"color\":\"dark_green\",\"bold\":true,\"italic\":false}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/025/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"伝説の増殖\",\"color\":\"dark_green\",\"bold\":true,\"italic\":false}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator,tag=Battle] run function project-c:jobaction/025/skill/2/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"忘れた頃の復讐\",\"color\":\"dark_red\",\"bold\":true,\"italic\":false}"}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/025/skill/3/0
 scoreboard players reset @s[scores={sneak=1..}] sneak
 scoreboard players reset @s[scores={damageDealt=1..}] damageDealt
