@@ -1,5 +1,16 @@
-scoreboard players add @s counter 1
-particle minecraft:block blackstone ~ ~ ~ 4 0 4 1 40
-execute if entity @s[scores={counter=11..},tag=112_bulletRed] run function project-c:jobaction/112/skill/3/2r
-execute if entity @s[scores={counter=11..},tag=112_bulletBlue] run function project-c:jobaction/112/skill/3/2b
-kill @s[scores={counter=41..}]
+scoreboard players set @s usedSkill 3
+scoreboard players set @s CT3 700
+
+
+
+execute if entity @s[team=Red] run summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["122-phycobeamF","122-phycobeamFR"],Marker:1b}
+execute if entity @s[team=Blue] run summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["122-phycobeamF","122-phycobeamFB"],Marker:1b}
+
+teleport @e[limit=1,sort=nearest,tag=122-phycobeamF] ^ ^1.5 ^1 ~ ~
+
+scoreboard players operation @e[limit=1,sort=nearest,tag=122-phycobeamF] counter_1 = @s counter_5
+
+playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 3 0
+scoreboard players set @s counter_5 0
+tag @s remove SkillReady3
+data merge block 96 61 -62 {auto:1b}

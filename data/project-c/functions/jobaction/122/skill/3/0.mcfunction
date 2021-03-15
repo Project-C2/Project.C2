@@ -1,13 +1,7 @@
-scoreboard players set @s usedSkill 3
-scoreboard players set @s CT3 600
+scoreboard players set @s counter_5 1
 
-playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 2 0
-playsound minecraft:block.iron_trapdoor.close master @a ~ ~ ~ 2 1
-scoreboard players set @s counter_3 40
-effect give @s minecraft:slowness 1 8 true
+scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
 
-execute if entity @s[team=Red] run summon armor_stand ~ ~ ~ {Tags:["112_bullet","112_bulletRed"],Marker:1b,Invisible:1b,NoGravity:1b}
-execute if entity @s[team=Blue] run summon armor_stand ~ ~ ~ {Tags:["112_bullet","112_bulletBlue"],Marker:1b,Invisible:1b,NoGravity:1b}
-
-tag @s remove SkillReady3
-data merge block -24 61 -62 {auto:1b}
+particle minecraft:explosion ^ ^1.2 ^0.5 0 0 0 1 0 force @a
+playsound minecraft:block.iron_door.close master @a ~ ~ ~ 2 2
+playsound minecraft:block.portal.trigger master @a ~ ~ ~ 3 2

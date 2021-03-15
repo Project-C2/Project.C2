@@ -1,3 +1,3 @@
-replaceitem entity @s hotbar.3 minecraft:flint{display:{Name:'{"text":"砂鉄球","color":"gold","italic":false}',Lore:['{"text":"発動: 右クリック","color":"yellow","italic":false}','{"text":"周囲の土を巻き上げ、攻撃に利用する。","color":"white","italic":false}','{"text":"弾は最寄りの敵を狙う。","color":"white","italic":false}','{"text":"CT:30","color":"green","italic":false}']}} 1
+replaceitem entity @s hotbar.3 minecraft:nether_star{display:{Name:'{"text":"サイコビーム","color":"light_purple","italic":false}',Lore:['{"text":"発動: 右クリックでチャージ / もう一度右クリックで解放","color":"yellow","italic":false}','{"text":"サイコビームが輝き残し、","color":"white","italic":false}','{"text":"チャージ時間に応じて持続するビームを放つ。","color":"white","italic":false}','{"text":"CT:25","color":"green","italic":false}']}} 1
 playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 tag @s add SkillReady3

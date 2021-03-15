@@ -1,33 +1,29 @@
-execute if entity @s[scores={counter=1}] run particle minecraft:smoke ~ ~2.5 ~ 0 0 0 0.2 20
-execute if entity @s[scores={counter=1..41}] run teleport @s ^ ^0.3 ^
+particle minecraft:end_rod ~ ~ ~ 1 1 1 0 1 force @a
 
-tag @s add 112-2G
-execute as @s[tag=112-2R] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Blue] unless entity @s[gamemode=spectator] positioned ^100 ^ ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^-100 ^ ^ ~-5 ~
-execute as @s[tag=112-2R] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Blue] unless entity @s[gamemode=spectator] positioned ^-100 ^ ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^100 ^ ^ ~5 ~
-execute as @s[tag=112-2R] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Blue] unless entity @s[gamemode=spectator] positioned ^ ^100 ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^ ^-100 ^ ~ ~-5
-execute as @s[tag=112-2R] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Blue] unless entity @s[gamemode=spectator] positioned ^ ^-100 ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^ ^100 ^ ~ ~5
-tag @s add 112-2G
-execute as @s[tag=112-2B] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Red] unless entity @s[gamemode=spectator] positioned ^100 ^ ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^-100 ^ ^ ~-5 ~
-execute as @s[tag=112-2B] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Red] unless entity @s[gamemode=spectator] positioned ^-100 ^ ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^100 ^ ^ ~5 ~
-execute as @s[tag=112-2B] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Red] unless entity @s[gamemode=spectator] positioned ^ ^100 ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^ ^-100 ^ ~ ~-5
-execute as @s[tag=112-2B] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Red] unless entity @s[gamemode=spectator] positioned ^ ^-100 ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^ ^100 ^ ~ ~5
 
-execute as @s[tag=112-2R,scores={counter=41..}] run tag @e[tag=Battle,limit=1,sort=nearest,team=Blue,distance=..2] add Damage2
-execute as @s[tag=112-2R,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Blue,distance=..2] run particle minecraft:explosion ~ ~1 ~ 0.5 0.5 0.5 0.25 1 force @a
-execute as @s[tag=112-2R,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Blue,distance=..2] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 1
-execute as @s[tag=112-2R,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Blue,distance=..2] run kill @s
+execute if entity @s[x_rotation=-90..-55] store result entity @s Rotation[0] float 0.01 run scoreboard players add @s counter_1 1440
+execute if entity @s[x_rotation=-90..-55] store result entity @s Rotation[1] float 0.01 run scoreboard players get @s counter_2
+execute if entity @s[x_rotation=-90..-55] at @s rotated ~ ~90 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 force @a
+execute if entity @s[x_rotation=-90..-55] at @s rotated ~45 ~90 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute if entity @s[x_rotation=-90..-55] at @s rotated ~90 ~90 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute if entity @s[x_rotation=-90..-55] at @s rotated ~135 ~90 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute if entity @s[x_rotation=-90..-55] at @s rotated ~180 ~90 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 force @a
+execute if entity @s[x_rotation=-90..-55] at @s rotated ~225 ~90 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute if entity @s[x_rotation=-90..-55] at @s rotated ~270 ~90 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute if entity @s[x_rotation=-90..-55] at @s rotated ~315 ~90 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute unless entity @s[x_rotation=-90..-55] run tp @s ~ ~ ~ ~ ~12
+execute unless entity @s[x_rotation=-90..-55] if entity @s[x_rotation=78..90] run tp @s ~ ~ ~ ~ ~-168
+execute unless entity @s[x_rotation=-90..-55] rotated ~90 ~ run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 force @a
+execute unless entity @s[x_rotation=-90..-55] rotated ~90 ~45 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute unless entity @s[x_rotation=-90..-55] rotated ~90 ~90 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute unless entity @s[x_rotation=-90..-55] rotated ~90 ~135 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute unless entity @s[x_rotation=-90..-55] rotated ~90 ~180 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 force @a
+execute unless entity @s[x_rotation=-90..-55] rotated ~90 ~225 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute unless entity @s[x_rotation=-90..-55] rotated ~90 ~270 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
+execute unless entity @s[x_rotation=-90..-55] rotated ~90 ~315 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
 
-execute as @s[tag=112-2B,scores={counter=41..}] run tag @e[tag=Battle,limit=1,sort=nearest,team=Red,distance=..2] add Damage2
-execute as @s[tag=112-2B,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Red,distance=..2] run particle minecraft:explosion ~ ~1 ~ 0.5 0.5 0.5 0.25 1 force @a
-execute as @s[tag=112-2B,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Red,distance=..2] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 1
-execute as @s[tag=112-2B,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Red,distance=..2] run kill @s
+scoreboard players remove @s counter 1
 
-execute if entity @s[scores={counter=41}] run playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 1 1
-execute if entity @s[scores={counter=41}] run particle minecraft:explosion ~ ~1 ~ 0.5 0.5 0.5 0.25 1 force @a
-execute if entity @s[scores={counter=41..}] run teleport @s ^ ^ ^1.5
-
-execute unless block ^ ^ ^1 air run kill @s[scores={counter=41..}]
-
-scoreboard players add @s counter 1
-kill @s[scores={counter=51..}]
-tag @s remove 112-2G
+execute as @s[tag=122-phycoballR] at @s run effect give @e[team=Blue,distance=0..3] instant_damage 1 0
+execute as @s[tag=122-phycoballB] at @s run effect give @e[team=Red,distance=0..3] instant_damage 1 0
+kill @s[scores={counter=..0}]
