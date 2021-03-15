@@ -15,7 +15,7 @@ execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"サイコボール","color":"white","italic":false}'}}}},scores={useCarrotStick=1..,CT1=1200..},gamemode=!spectator,tag=SkillReady1] run function project-c:jobaction/122/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"サイコソード","color":"white","italic":false}'}}}},scores={useCarrotStick=1..,CT2=1200..},gamemode=!spectator,tag=SkillReady2,tag=Battle] run function project-c:jobaction/122/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"サイコソード","color":"white","italic":false}'}}}},scores={useCarrotStick=1..,CT2=1200..},gamemode=!spectator,tag=SkillReady2] run function project-c:jobaction/122/skill/2/0
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"サイコビーム","color":"light_purple","italic":false}'}}}},scores={useCarrotStick=1..,CT3=1200..,counter_5=0},gamemode=!spectator,tag=SkillReady3] run function project-c:jobaction/122/skill/3/0
 
