@@ -10,7 +10,7 @@ data merge entity @e[tag=ArrowP,sort=nearest,limit=1] {damage:5.5d,Tag:["Arrow"]
 
 data merge block -69 2 -122 {auto:1b}
 
-clear @s minecraft:bow{display:{Name:"{\"text\":\"パワーショット\"}"}} 1
+clear @s minecraft:bow{display:{Name:'{"text":"パワーショット"}'}} 1
 
 tag @s remove SkillReady3
 scoreboard players set @s usedSkill 3

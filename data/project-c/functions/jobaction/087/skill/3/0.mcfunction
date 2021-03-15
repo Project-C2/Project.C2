@@ -3,11 +3,11 @@ scoreboard players set @s usedSkill 3
 
 execute as @e[tag=Turlet] at @s if score @s playerNumber = @a[scores={jobNumber=87,usedSkill=3},limit=1,team=Red] playerNumber run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 0
 execute as @e[tag=Turlet] at @s if score @s playerNumber = @a[scores={jobNumber=87,usedSkill=3},limit=1,team=Red] playerNumber run particle minecraft:explosion_emitter ^ ^1 ^ 0 0 0 0 1
-execute as @e[tag=Turlet] at @s if score @s playerNumber = @a[scores={jobNumber=87,usedSkill=3},limit=1,team=Red] playerNumber anchored eyes run summon fireball ^ ^-0.05 ^1 {ExplosionPower:3,direction:[0.0,0.0,0.0],CustomName:"{\"text\":\"タレット\",\"color\":\"red\",\"italic\":false}",Tags:["087-RPG","087-Bullet"]}
+execute as @e[tag=Turlet] at @s if score @s playerNumber = @a[scores={jobNumber=87,usedSkill=3},limit=1,team=Red] playerNumber anchored eyes run summon fireball ^ ^-0.05 ^1 {ExplosionPower:3,direction:[0.0,0.0,0.0],CustomName:'{"text":"タレット","color":"red","italic":false}',Tags:["087-RPG","087-Bullet"]}
 
 execute as @e[tag=Turlet] at @s if score @s playerNumber = @a[scores={jobNumber=87,usedSkill=3},limit=1,team=Blue] playerNumber run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 0
 execute as @e[tag=Turlet] at @s if score @s playerNumber = @a[scores={jobNumber=87,usedSkill=3},limit=1,team=Blue] playerNumber run particle minecraft:explosion_emitter ^ ^1 ^ 0 0 0 0 1
-execute as @e[tag=Turlet] at @s if score @s playerNumber = @a[scores={jobNumber=87,usedSkill=3},limit=1,team=Blue] playerNumber anchored eyes run summon fireball ^ ^-0.05 ^1 {ExplosionPower:3,direction:[0.0,0.0,0.0],CustomName:"{\"text\":\"RPG\",\"color\":\"red\",\"italic\":false}",Tags:["087-RPG","087-Bullet"]}
+execute as @e[tag=Turlet] at @s if score @s playerNumber = @a[scores={jobNumber=87,usedSkill=3},limit=1,team=Blue] playerNumber anchored eyes run summon fireball ^ ^-0.05 ^1 {ExplosionPower:3,direction:[0.0,0.0,0.0],CustomName:'{"text":"RPG","color":"red","italic":false}',Tags:["087-RPG","087-Bullet"]}
 
 
 execute as @e[tag=Turlet] at @s if score @s playerNumber = @a[scores={jobNumber=87,usedSkill=3},limit=1] playerNumber run execute store result score @e[limit=1,sort=nearest,tag=087-RPG] counter_3 run data get entity @s Pos[0] 100

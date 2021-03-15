@@ -19,11 +19,11 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/058/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/058/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"トリックショット\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"true\"}"}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/058/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"トリックショット","color":"white","italic":"false","underlined":"true"}'}}}},scores={CT1=1200..,sneak=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/058/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ボムチップ\",\"color\":\"red\",\"italic\":\"false\",\"underlined\":\"true\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/058/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ボムチップ","color":"red","italic":"false","underlined":"true"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/058/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"フルパワーショット\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"true\",\"bold\":\"true\"}"}}}},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/058/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"フルパワーショット","color":"yellow","italic":"false","underlined":"true","bold":"true"}'}}}},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/058/skill/3/0
 
 execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:bow"}]},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/058/skill/3/0
 

@@ -7,9 +7,9 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/083/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/083/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ダークムーン\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/083/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ダークムーン","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/083/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ダークギャザリング\",\"color\":\"white\",\"italic\":\"false\",\"underlined\":\"false\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/083/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ダークギャザリング","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/083/skill/2/0
 
 execute as @s[scores={counter_1=1..},team=Red] at @s run summon armor_stand ~ ~ ~ {Radius:0.0f,RadiusPerTick:0.0f,Age:0,Duration:1200,Tags:["083-slash","083-hassummon","083-slashRed"],Marker:1b,NoGravity:1b,Invisible:1b}
 execute as @s[scores={counter_1=1..},team=Blue] at @s run summon armor_stand ~ ~ ~ {Radius:0.0f,RadiusPerTick:0.0f,Age:0,Duration:1200,Tags:["083-slash","083-hassummon","083-slashBlue"],Marker:1b,NoGravity:1b,Invisible:1b}

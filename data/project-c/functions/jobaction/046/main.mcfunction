@@ -20,8 +20,8 @@ execute unless entity @s[scores={Mana=1}] run effect give @s[scores={CT1=1200..}
 execute unless entity @s[scores={Mana=1}] run scoreboard players set @s Mana 1
 
 execute if entity @s[scores={CT1=1200..},tag=SkillReady1,gamemode=!spectator,nbt={AbsorptionAmount:0f}] run function project-c:jobaction/046/skill/1/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"パラス・ヘイロー\",\"color\":\"yellow\",\"italic\":\"false\",\"underlined\":\"true\"}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/046/skill/2/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"アポカリプティックサウンド\",\"color\":\"light_purple\",\"italic\":\"false\",\"underlined\":\"true\"}"}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator,tag=Battle] run function project-c:jobaction/046/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"パラス・ヘイロー","color":"yellow","italic":"false","underlined":"true"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/046/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"アポカリプティックサウンド","color":"light_purple","italic":"false","underlined":"true"}'}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator,tag=Battle] run function project-c:jobaction/046/skill/3/0
 
 
 scoreboard players reset @s sneak

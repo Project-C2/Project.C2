@@ -1,0 +1,1 @@
+execute if entity @a[x=-2024,y=64,z=0,distance=..150,gamemode=!spectator] as @a[x=-2024,y=64,z=0,distance=..150,gamemode=!spectator] at @s run effect give @s minecraft:dolphins_grace 1 0 true

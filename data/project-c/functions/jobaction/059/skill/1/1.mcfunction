@@ -17,11 +17,11 @@ execute if entity @s[tag=059-1] run execute as @s unless block ^ ^ ^1 minecraft:
 
 kill @s[scores={counter=8},tag=059-1]
 
-execute if entity @s[tag=059-1R] run execute as @e[distance=..1.4,team=!Red] at @s run summon arrow ~ ~2.5 ~ {CustomName:"{\"text\":\"炎の魔法\",\"color\":\"red\"}",Motion:[0.0,-2.0,0.0],life:1200,color:-1b}
+execute if entity @s[tag=059-1R] run execute as @e[distance=..1.4,team=!Red] at @s run summon arrow ~ ~2.5 ~ {CustomName:'{"text":"炎の魔法","color":"red"}',Motion:[0.0,-2.0,0.0],life:1200,color:-1b}
 execute if entity @s[tag=059-1R] run execute if entity @e[distance=..1.4,team=Blue] run particle minecraft:explosion ~ ~ ~ 0 0 0 0 3 force @a
 execute if entity @s[tag=059-1R] run execute if entity @e[distance=..1.4,team=Blue] run tag @s add 059-1Hit
 
-execute if entity @s[tag=059-1B] run execute as @e[distance=..1.4,team=!Blue] at @s run summon arrow ~ ~2.5 ~ {CustomName:"{\"text\":\"炎の魔法\",\"color\":\"red\"}",Motion:[0.0,-2.0,0.0],life:1200,color:-1b}
+execute if entity @s[tag=059-1B] run execute as @e[distance=..1.4,team=!Blue] at @s run summon arrow ~ ~2.5 ~ {CustomName:'{"text":"炎の魔法","color":"red"}',Motion:[0.0,-2.0,0.0],life:1200,color:-1b}
 
 execute if entity @s[tag=059-1B] run execute if entity @e[distance=..1.4,team=Red] run particle minecraft:explosion ~ ~ ~ 0 0 0 0 3 force @a
 

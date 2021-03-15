@@ -17,9 +17,9 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/077/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/077/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Drill Charge\",\"color\":\"yellow\",\"italic\":false}"}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/077/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"Drill Charge","color":"yellow","italic":false}'}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/077/skill/1/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Drill Charge-release\",\"color\":\"yellow\",\"italic\":false}"}}}},scores={useCarrotStick=1..,counter_1=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/077/skill/1/1
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"Drill Charge-release","color":"yellow","italic":false}'}}}},scores={useCarrotStick=1..,counter_1=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/077/skill/1/1
 execute if entity @s[scores={counter_1=41..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/077/skill/1/1
 
 

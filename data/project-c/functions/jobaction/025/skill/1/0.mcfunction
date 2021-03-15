@@ -9,4 +9,4 @@ execute at @s run tellraw @a[distance=..15] ["",{"text":"*","bold":true},{"selec
 tag @s remove SkillReady1
 scoreboard players set @s usedSkill 1
 #全能をclearする
-clear @s minecraft:diamond_pickaxe{display:{Name:"{\"text\":\"ｶﾞｲｼﾞの極ー全能持越しー\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}",Lore:["{\"text\":\"発動:攻撃\"}","{\"text\":\"全能ノ一のレプリカで殴りつける\"}","{\"text\":\"CT:30\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:9},{id:"minecraft:knockback",lvl:2}],HideFlags:1}
+clear @s minecraft:diamond_pickaxe{display:{Name:'{"text":"ｶﾞｲｼﾞの極ー全能持越しー","color":"dark_purple","bold":true,"italic":false}',Lore:['{"text":"発動:攻撃"}','{"text":"全能ノ一のレプリカで殴りつける"}','{"text":"CT:30"}']},Enchantments:[{id:"minecraft:sharpness",lvl:9},{id:"minecraft:knockback",lvl:2}],HideFlags:1}

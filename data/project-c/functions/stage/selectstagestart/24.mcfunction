@@ -1,0 +1,2 @@
+fill 2008 104 5160 2016 110 5164 minecraft:air
+fill 2017 99 4827 2007 105 4821 minecraft:air

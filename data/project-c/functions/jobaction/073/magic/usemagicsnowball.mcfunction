@@ -4,4 +4,4 @@ execute if entity @s[scores={Mana=..399,subcounter=22}] run kill @e[type=snowbal
 execute if entity @s[scores={Mana=600..,subcounter=21}] run function project-c:jobaction/073/magic/darknessoverload1
 execute if entity @s[scores={Mana=400..,subcounter=22}] run function project-c:jobaction/073/magic/darknessoverload2
 
-replaceitem entity @s[scores={subcounter=21..22},tag=!useDarknessOverload] weapon.offhand minecraft:snowball{display:{Name:"{\"text\":\"˜e˜l–‚—Í‚ÌŒ‹»˜r\",\"color\":\"white\",\"underlined\":false,\"italic\":\"false\"}",Lore:["{\"text\":\"˜f©g‚Ìƒ}ƒi‚ğâÄ‚ßAƒ}ƒi‚Ì‚Ü‚Ü•úo‚·‚é‚±‚Æ‚Ì‚Å‚«‚é\"}","{\"text\":\"˜f•sv‹c‚ÈŒ‹»\"}","{\"text\":\"˜f–‚–@”­“®‚É‚ÍŒ‡‚©‚¹‚È‚¢‚à‚Ì\"}"]}}
+replaceitem entity @s[scores={subcounter=21..22},tag=!useDarknessOverload] weapon.offhand minecraft:snowball{display:{Name:'{"text":"ï¿½ï¿½eï¿½ï¿½lï¿½ï¿½ï¿½Í‚ÌŒï¿½ï¿½ï¿½ï¿½ï¿½r","color":"white","underlined":false,"italic":"false"}',Lore:['{"text":"ï¿½ï¿½fï¿½ï¿½ï¿½gï¿½Ìƒ}ï¿½iï¿½ï¿½ï¿½Ä‚ßAï¿½}ï¿½iï¿½Ì‚Ü‚Ü•ï¿½ï¿½oï¿½ï¿½ï¿½é‚±ï¿½Æ‚Ì‚Å‚ï¿½ï¿½ï¿½"}','{"text":"ï¿½ï¿½fï¿½sï¿½vï¿½cï¿½ÈŒï¿½ï¿½ï¿½"}','{"text":"ï¿½ï¿½fï¿½ï¿½ï¿½@ï¿½ï¿½ï¿½ï¿½ï¿½É‚ÍŒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½ï¿½"}']}}

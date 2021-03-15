@@ -10,7 +10,7 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 
 
 #スキル発動
-execute if entity @s[scores={sneak=1..,CT1=1200..},nbt={OnGround:1b,SelectedItem:{tag:{display:{Name:"[\"\",{\"text\":\"x\",\"obfuscated\":true,\"color\":\"dark_purple\"},{\"text\":\"呪い\",\"italic\":true,\"color\":\"light_purple\",\"obfuscated\":false},{\"text\":\"の\",\"obfuscated\":false},{\"text\":\"デコイ人形\",\"color\":\"gray\",\"obfuscated\":false},{\"text\":\"x\",\"italic\":false,\"obfuscated\":true,\"color\":\"dark_purple\"}]"}}}}] run function project-c:jobaction/015/skill/1/0
+execute if entity @s[scores={sneak=1..,CT1=1200..},nbt={OnGround:1b,SelectedItem:{tag:{display:{Name:'["",{"text":"x","obfuscated":true,"color":"dark_purple"},{"text":"呪い","italic":true,"color":"light_purple","obfuscated":false},{"text":"の","obfuscated":false},{"text":"デコイ人形","color":"gray","obfuscated":false},{"text":"x","italic":false,"obfuscated":true,"color":"dark_purple"}]'}}}}] run function project-c:jobaction/015/skill/1/0
 
 
 scoreboard players reset @s sneak

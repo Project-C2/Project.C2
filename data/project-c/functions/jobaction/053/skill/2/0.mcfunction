@@ -18,5 +18,5 @@ tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2
 data merge block 37 2 -20 {auto:1b}
 scoreboard players add @s counter_2 1
-replaceitem entity @s[scores={counter_2=10}] armor.chest minecraft:elytra{display:{Name:"{\"text\":\"傲慢＝ルシファー\",\"color\":\"dark_gray\",\"italic\":\"false\",\"underline\":\"true\"}"},Unbreakable:1b,HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1}],053:1b,AttributeModifiers:[{AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:-16,Operation:0,UUIDLeast:303941,UUIDMost:460565,Slot:"chest"}]} 1
+replaceitem entity @s[scores={counter_2=10}] armor.chest minecraft:elytra{display:{Name:'{"text":"傲慢＝ルシファー","color":"dark_gray","italic":"false","underline":"true"}'},Unbreakable:1b,HideFlags:1,Enchantments:[{id:"minecraft:binding_curse",lvl:1}],053:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.maxHealth",Amount:-16,Operation:0,UUIDLeast:303941,UUIDMost:460565,Slot:"chest"}]} 1
 tellraw @s[scores={counter_2=10}] ["",{"text":"\u8cb4\u65b9\u306f","color":"dark_red"},{"text":"\u5fcd\u8010","bold":true,"underlined":true,"color":"dark_red"},{"text":"\u306e\u5fc3\u3092\u5931\u3063\u305f\u3002","color":"dark_red"},{"text":" "}]

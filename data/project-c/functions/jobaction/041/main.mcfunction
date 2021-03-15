@@ -19,13 +19,13 @@ execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-
 
 execute if entity @s[scores={bow=1..}] run function project-c:jobaction/041/shot
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"cardinal bow\"}"}}}},scores={CT1=1200..,bow=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/041/skill/1/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"blaze bow\"}"}}}},scores={CT2=1200..,bow=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/041/skill/2/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"viper\"}"}}}},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/041/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"cardinal bow"}'}}}},scores={CT1=1200..,bow=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/041/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"blaze bow"}'}}}},scores={CT2=1200..,bow=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/041/skill/2/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"viper"}'}}}},scores={CT3=1200..,bow=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/041/skill/3/0
 
 execute if entity @s[scores={sneak=1..}] unless entity @s[scores={counter_1=100..}] run scoreboard players add @s counter_1 1
 execute if entity @s[scores={sneak=1..}] unless entity @s[scores={counter_1=100..}] run particle dust 1 0 0 1 ~ ~1 ~ 1.3 1.0 1.3 0 10 normal
-execute if entity @s[scores={sneak=1..}] unless entity @s[scores={counter_1=100..}] run summon area_effect_cloud ~ ~1 ~ {Age:4,Duration:5,WaitTime:1,Radius:0.01,Particle:"",Effects:[{Id:2,Amplifier:3,Duration:2,ShowParticles:0b,ShowIcon:1b,Ambient:1b}]}
+execute if entity @s[scores={sneak=1..}] unless entity @s[scores={counter_1=100..}] run summon area_effect_cloud ~ ~1 ~ {Age:4,Duration:5,WaitTime:1,Radius:0.01f,Particle:"",Effects:[{Id:2,Amplifier:3,Duration:2,ShowParticles:0b,ShowIcon:1b,Ambient:1b}]}
 execute unless entity @s[scores={sneak=1..}] unless entity @s[scores={counter_1=..0}] run scoreboard players remove @s counter_1 1
 execute if entity @s[scores={useCarrotStick=1..}] if entity @s[scores={counter_1=0,subcounter=..20}] run function project-c:jobaction/041/replaceitem/4
 execute if entity @s[scores={useCarrotStick=1..}] if entity @s[scores={counter_1=1..49,subcounter=..19}] run function project-c:jobaction/041/replaceitem/4

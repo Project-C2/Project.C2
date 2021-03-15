@@ -9,7 +9,7 @@ execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/009/replaceitem/3
 
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"ブレイドダンス\"}"}}}},scores={CT1=1200..,jump=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/009/skill/1/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ブレイドダンス"}'}}}},scores={CT1=1200..,jump=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/009/skill/1/0
 execute if entity @s[scores={CT2=1200..,damageDealt=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/009/skill/2/0
 
 scoreboard players add @s[scores={counter=1..}] counter 1
