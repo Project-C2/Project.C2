@@ -69,9 +69,9 @@ execute as @a[tag=-118-2-a] run scoreboard players set @s CT3 1200
 
 
 
-execute if entity @s[scores={CT1=..1199}] run tag @s add 118-ct-change
-execute if entity @s[scores={CT2=..1199}] run tag @s add 118-ct-change
-execute if entity @s[scores={CT3=..1199}] run tag @s add 118-ct-change
+execute if entity @s[scores={CT1=..1199}] run tag @s add -118-ct-change
+execute if entity @s[scores={CT2=..1199}] run tag @s add -118-ct-change
+execute if entity @s[scores={CT3=..1199}] run tag @s add -118-ct-change
 
 execute if entity @s[scores={CT1=..1199},tag=SkillReady1] run tag @s remove SkillReady1
 execute if entity @s[scores={CT2=..1199},tag=SkillReady2] run tag @s remove SkillReady2
@@ -81,7 +81,7 @@ execute if entity @s[tag=-118-ct-change,scores={CT1=..1199}] run clear @s compas
 execute if entity @s[tag=-118-ct-change,scores={CT2=..1199}] run clear @s compass{CT:2}
 execute if entity @s[tag=-118-ct-change,scores={CT3=..1199}] run clear @s compass{CT:3}
 execute if entity @s[tag=-118-ct-change] run function project-c:general/cooltimecounter
-execute if entity @s[tag=-118-ct-change] run tag @s remove 118-ct-change
+execute if entity @s[tag=-118-ct-change] run tag @s remove -118-ct-change
 
 
 execute if entity @a[tag=-118-2-a,limit=1] as @a[tag=-118-2-a] run tellraw @s ["",{"text":"CT吸収","color":"light_purple"},{"text":" <- "},{"selector":"@a[tag=-118-,limit=1]"}]
@@ -91,9 +91,9 @@ execute if entity @a[tag=-118-2-a,limit=1] at @a[tag=-118-2-a] run particle mine
 execute if entity @a[tag=-118-2-a,limit=1] as @a[tag=-118-2-a] run tag @s remove -118-2-a
 scoreboard players reset #-118
 
-tag @s remove 118-
+tag @s remove -118-
 
-function project-c:jobaction/118/replaceitem/2
+function project-c:hiddenjob/-118/replaceitem/2
 
 title @s actionbar [{"text":""}]
 scoreboard players reset @s counter
