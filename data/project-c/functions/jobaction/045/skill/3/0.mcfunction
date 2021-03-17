@@ -1,5 +1,6 @@
 #CT
 scoreboard players set @s CT3 0
+scoreboard players set @s usedSkill 3
 #効果
 #共通
 particle dust 0.615 0.615 0.615 1 ~-3.9 ~0 ~-0.9 0 0 0 0 1
@@ -835,6 +836,10 @@ particle dust 0.615 0.615 0.615 1 ~3.97 ~0 ~0.72 0 0 0 0 1
 particle dust 0.615 0.615 0.615 1 ~3.97 ~0 ~0.85 0 0 0 0 1
 particle dust 0.615 0.615 0.615 1 ~3.97 ~0 ~0.97 0 0 0 0 1
 scoreboard players set @s Mana 0
+
+execute as @e[tag=045-Phantom] at @s if score @s playerNumber = @a[scores={jobNumber=45,usedSkill=3},limit=1] playerNumber run scoreboard players remove @s subcounter 1
+execute as @e[tag=045-Phantom,scores={subcounter=0}] at @s run kill @s
+
 execute as @e[distance=..7,tag=045-Necro1] run scoreboard players add @a[limit=1,sort=nearest] Mana 1
 kill @e[distance=..7,tag=045-Necro1]
 playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 2 0.75
@@ -844,13 +849,18 @@ execute as @s[team=Red] run summon phantom ~ ~5 ~ {Team:"Red",Size:0,Tags:["045-
 #Blue
 execute as @s[team=Blue] run summon phantom ~ ~5 ~ {Team:"Blue",Size:0,Tags:["045-PhantomR","045-Phantom"]}
 #スコア
-scoreboard players set @s[scores={Mana=21..}] 20
-execute as @e[tag=045-Phantom,tag=!045-PhantomSummoned] store result entity @s Size short 1 run scoreboard players get @a[limit=1,sort=nearest] Mana
-execute if entity @a[scores={Mana=5..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 0
-execute if entity @a[scores={Mana=10..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 1
-execute if entity @a[scores={Mana=15..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 2
-execute if entity @a[scores={Mana=20..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 3
+scoreboard players add @e[tag=045-Phantom,tag=!045-PhantomSummoned] subcounter 3
+scoreboard players operation @e[tag=045-Phantom,tag=!045-PhantomSummoned] playerNumber = @s playerNumber
+
+scoreboard players set @s[scores={Mana=9..}] 8
+execute as @e[tag=045-Phantom,tag=!045-PhantomSummoned] store result entity @s Size short 2 run scoreboard players get @a[limit=1,sort=nearest] Mana
+execute if entity @a[scores={Mana=2..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 0
+execute if entity @a[scores={Mana=4..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 1
+execute if entity @a[scores={Mana=6..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 2
+execute if entity @a[scores={Mana=8..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 3
+
+effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:fire_resistance 9999 1
+
 tag @e[tag=045-Phantom,tag=!045-PhantomSummoned] add 045-PhantomSummoned
 #リセット
 tag @s remove SkillReady3
-scoreboard players set @s usedSkill 3

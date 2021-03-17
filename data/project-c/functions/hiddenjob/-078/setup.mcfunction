@@ -14,3 +14,9 @@ setblock 81 29 32 minecraft:chain_command_block[conditional=false,facing=south]{
 setblock 87 26 31 minecraft:repeating_command_block[conditional=false,facing=south]{auto:0b,powered:0b,LastExecution:28844301L,SuccessCount:0,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute as @e[tag=-078fire] at @s run function project-c:hiddenjob/-078/skill/2/1",TrackOutput:0b}
 
 setblock 87 26 32 minecraft:chain_command_block[conditional=false,facing=south]{auto:1b,powered:0b,LastExecution:28844301L,SuccessCount:0,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute unless entity @e[tag=-078fire] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b}
+
+scoreboard objectives add advancement1 dummy
+scoreboard objectives add advancement2 dummy
+scoreboard objectives add advancement3 dummy
+scoreboard objectives add advancement4 dummy
+scoreboard objectives add advancement5 dummy

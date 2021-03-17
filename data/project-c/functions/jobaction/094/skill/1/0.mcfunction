@@ -48,16 +48,6 @@ kill @e[tag=94vector]
 
 execute as @e[tag=094vectorBlue] at @s run tag @s remove 094vectorBlue
 
-tag @e[distance=1..8,type=armor_stand,tag=!Stable,tag=!094-voidB] add 094vectorA
-tag @e[distance=1..8,type=armor_stand,tag=!Stable,tag=!094-voidB] add 094vectorAset
-execute as @e[tag=094vectorAset] at @s run scoreboard players set @s counter 0
-execute as @e[tag=094vectorAset] at @s run particle minecraft:flash ~ ~ ~ 0 0 0 0 1
-
-execute as @e[tag=094vectorAset,tag=094vectorARed] at @s run tp @s ^ ^1 ^ facing entity @e[team=Blue,limit=1,sort=nearest,tag=Battle]
-execute as @e[tag=094vectorAset,tag=094vectorABlue] at @s run tp @s ^ ^1 ^ facing entity @e[team=Red,limit=1,sort=nearest,tag=Battle]
-
-tag @e[tag=094vectorAset] remove 094vectorAset
-
 #リセット
 tag @s remove SkillReady1
 data merge block 23 2 89 {auto:1b}

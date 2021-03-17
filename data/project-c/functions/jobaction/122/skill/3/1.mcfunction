@@ -1,5 +1,5 @@
 scoreboard players set @s usedSkill 3
-scoreboard players set @s CT3 700
+scoreboard players set @s CT3 600
 
 
 
