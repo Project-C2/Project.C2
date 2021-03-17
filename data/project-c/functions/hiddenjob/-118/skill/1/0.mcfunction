@@ -32,7 +32,7 @@ execute if entity @a[tag=-118-1-a,limit=1] at @a[tag=-118-1-a] run playsound ent
 execute if entity @a[tag=-118-1-a,limit=1] at @a[tag=-118-1-a] run particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 0.5 20 force @a
 
 execute if entity @a[tag=-118-1-a,limit=1] as @a[tag=-118-1-a] run tag @s remove -118-1-a
-scoreboard players reset #-118--
+scoreboard players reset #-118
 
 tag @s remove -118-
 
