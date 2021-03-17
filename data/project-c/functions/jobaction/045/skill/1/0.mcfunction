@@ -1,5 +1,6 @@
 #CT
 scoreboard players set @s CT1 600
+scoreboard players set @s usedSkill 1
 #スキル効果
 #共通
 execute at @s run particle dust 0.47 0 0.949 2 ~-3.9 ~0 ~-0.9 0 0 0 0 1
@@ -837,6 +838,10 @@ execute at @s run particle dust 0.47 0 0.949 2 ~3.97 ~0 ~0.97 0 0 0 0 1
 execute at @s run playsound minecraft:block.portal.travel master @a ~ ~ ~ 2 1.75
 data merge block -97 2 -20 {auto:1b}
 data merge block -97 2 -18 {auto:1b}
+
+execute as @e[tag=045-Necro1] at @s if score @s playerNumber = @a[scores={jobNumber=45,usedSkill=1},limit=1] playerNumber run scoreboard players remove @s subcounter 1
+execute as @e[tag=045-Necro1,scores={subcounter=0}] at @s run kill @s
+
 #Red
 execute at @s[team=Red] run summon zombie ~-2 ~-2 ~-2 {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
 execute at @s[team=Red] run summon zombie ~2 ~-2 ~2 {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
@@ -848,6 +853,9 @@ execute at @s[team=Blue] run summon zombie ~2 ~-2 ~2 {Team:"Blue",Tags:["045-Zom
 execute at @s[team=Blue] run summon skeleton ~2 ~-2 ~-2 {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
 execute at @s[team=Blue] run summon skeleton ~-2 ~-2 ~2 {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
 #スコアセット
+scoreboard players add @e[tag=045-Necro1,tag=!045-NecroEnd] subcounter 2
+scoreboard players operation @e[tag=045-Necro1,tag=!045-NecroEnd] playerNumber = @s playerNumber
+
 scoreboard players add @e[tag=045-Necro1,tag=!045-NecroEnd] counter 0
 scoreboard players add @e[tag=045-Necro1,tag=!045-NecroSummoned] counter_2 0
 scoreboard players set @e[tag=045-Necro1,tag=!045-NecroSummoned] counter_1 1000
@@ -855,4 +863,3 @@ scoreboard players set @e[tag=045-Necro1,tag=!045-NecroSummoned] Mana 20
 tag @e[tag=054-Necro1,tag=!045-NecroSummoned] add 045-NecroSummoned
 #リセット
 tag @s remove SkillReady1
-scoreboard players set @s usedSkill 1

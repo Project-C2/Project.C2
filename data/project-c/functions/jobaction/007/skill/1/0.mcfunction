@@ -1,6 +1,6 @@
 scoreboard players set @s CT1 1000
 
-execute at @s positioned 0.0 0.0 0.0 run summon minecraft:armor_stand ^ ^ ^2 {Tags:["007dummy"],Marker:1b,Invisible:1b,NoGravity:1b}
+execute at @s positioned 0.0 0.0 0.0 run summon minecraft:armor_stand ^ ^ ^0.2 {Tags:["007dummy"],Marker:1b,Invisible:1b,NoGravity:1b}
 
 kill @e[type=snowball,limit=1,sort=nearest]
 
@@ -19,7 +19,7 @@ execute at @s if entity @s[scores={counter_1=2}] anchored eyes run summon fireba
 execute if entity @s[scores={counter_1=2}] run data merge block -37 2 -122 {auto:1b}
 
 data modify entity @e[tag=FEChargeF,limit=1] Owner set from entity @s UUID
-data modify entity @e[tag=FEChargeF,limit=1] Motion set from entity @e[tag=007dummy,limit=1] Pos
+data modify entity @e[tag=FEChargeF,limit=1] power set from entity @e[tag=007dummy,limit=1] Pos
 execute if entity @s[team=Red] run team join RedDummy @e[tag=FEChargeF]
 execute if entity @s[team=Blue] run team join BlueDummy @e[tag=FEChargeF]
 kill @e[tag=007dummy]

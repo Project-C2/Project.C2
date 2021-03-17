@@ -839,16 +839,16 @@ execute as @e[distance=..7,tag=045-Item] at @s run particle minecraft:explosion 
 playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1 1.75
 playsound minecraft:entity.wither.ambient master @a ~ ~ ~ 1 0.75
 #Red
-execute as @s[team=Red] as @e[distance=..7,tag=045-ZombieItem] at @s run summon zombie ~ ~ ~ {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1","045-NecroEnd"],CustomName:'{"text":""}',Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
-execute as @s[team=Red] as @e[distance=..7,tag=045-SkeletonItem] at @s run summon skeleton ~ ~ ~ {Team:"Red",Tags:["045-Skeleton","045-SkeletonR","045-Necro1","045-NecroEnd"],CustomName:'{"text":""}',Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute as @s[team=Red] as @e[distance=..7,tag=045-ZombieItem] at @s run summon zombie ~ ~ ~ {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1","045-Necro2","045-NecroEnd"],CustomName:'{"text":""}',Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute as @s[team=Red] as @e[distance=..7,tag=045-SkeletonItem] at @s run summon skeleton ~ ~ ~ {Team:"Red",Tags:["045-Skeleton","045-SkeletonR","045-Necro1","045-Necro2","045-NecroEnd"],CustomName:'{"text":""}',Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
 #Blue
-execute as @s[team=Blue] as @e[distance=..7,tag=045-ZombieItem] at @s run summon zombie ~ ~ ~ {Team:"Blue",Tags:["045-Zombie","045-ZombieB","045-Necro1","045-NecroEnd"],CustomName:'{"text":""}',Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
-execute as @s[team=Blue] as @e[distance=..7,tag=045-SkeletonItem] at @s run summon skeleton ~ ~ ~ {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1","045-NecroEnd"],CustomName:'{"text":""}',Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute as @s[team=Blue] as @e[distance=..7,tag=045-ZombieItem] at @s run summon zombie ~ ~ ~ {Team:"Blue",Tags:["045-Zombie","045-ZombieB","045-Necro1","045-Necro2","045-NecroEnd"],CustomName:'{"text":""}',Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute as @s[team=Blue] as @e[distance=..7,tag=045-SkeletonItem] at @s run summon skeleton ~ ~ ~ {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1","045-Necro2","045-NecroEnd"],CustomName:'{"text":""}',Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
 #スコアセット
 kill @e[distance=..7,tag=045-Item]
 scoreboard players add @e[tag=045-Necro1,tag=!045-NecroSummoned] counter_2 0
 scoreboard players set @e[tag=045-Necro1,tag=!045-NecroSummoned] counter_1 1000
-scoreboard players set @e[tag=045-Necro1,tag=!045-NecroSummoned] Mana 20
+scoreboard players set @e[tag=045-Necro1,tag=!045-NecroSummoned] Mana 15
 tag @e[tag=054-Necro1,tag=!045-NecroSummoned] add 045-NecroSummoned
 data merge block -97 2 -18 {auto:1b}
 #リセット

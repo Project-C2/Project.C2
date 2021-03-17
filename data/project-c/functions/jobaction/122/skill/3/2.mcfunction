@@ -19,6 +19,9 @@ teleport @e[limit=1,sort=nearest,tag=122-summon] ^ ^ ^ ~ ~
 
 scoreboard players operation @e[limit=1,sort=nearest,tag=122-summon] counter = @s counter_1
 
+scoreboard players add @e[limit=1,sort=nearest,tag=122-summon] counter 30
+scoreboard players add @e[limit=1,sort=nearest,tag=122-summon] subcounter 25
+
 execute as @e[tag=122-summon] at @s run tag @s remove 122-summon
 
 scoreboard players add @s counter 1
