@@ -19,7 +19,7 @@ execute if entity @e[tag=088-S1-stand] run function project-c:jobaction/088/skil
 #counterが-1な場合、移動に成功していないため、プレイヤーに通知しCTを短縮する
 effect give @s minecraft:resistance 1 10 true
 effect give @s minecraft:speed 2 3 true
-#execute if entity @s[tag=!088-S3-used] run effect give @s invisibility 2 0 false
+execute if entity @s[tag=!088-S3-used] run effect give @s invisibility 1 0 false
 
 playsound minecraft:block.soul_soil.break master @a ~ ~ ~ 2 0.5
 playsound minecraft:entity.enderman.teleport master @a ~ ~ ~ 1 1.5
