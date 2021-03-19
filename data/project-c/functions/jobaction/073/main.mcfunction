@@ -39,7 +39,8 @@ scoreboard players remove @s[scores={MagicFatigue=1..}] MagicFatigue 1
 
 
 effect give @s[scores={MagicFatigue=200..300}] slowness 1 0
-effect give @s[scores={MagicFatigue=250..}] weakness 1 0
+effect give @s[scores={MagicFatigue=250..}] weakness 1 9
+execute if entity @s[scores={MagicFatigue=250..}] run function project-c:general/effect/checkeffect
 effect give @s[scores={MagicFatigue=300..}] slowness 1 1
 
 scoreboard players set @s[scores={Mana=1000..}] Mana 1000
