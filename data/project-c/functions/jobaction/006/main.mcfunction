@@ -19,7 +19,7 @@ execute if entity @s[scores={useEnderPearl=1..,counter_2=1..}] run scoreboard pl
 execute if entity @s[scores={useEnderPearl=1..,counter_2=1}] run replaceitem entity @s weapon.offhand minecraft:ender_pearl 1
 execute if entity @s[scores={useEnderPearl=1..,counter_2=2}] run replaceitem entity @s weapon.offhand minecraft:ender_pearl 2
 
-scoreboard players add @s[scores={counter_2=..3}] counter_1 1
+scoreboard players add @s[scores={counter_2=..2}] counter_1 1
 
 scoreboard players add @s[scores={counter_1=120..}] counter_2 1
 execute if entity @s[scores={counter_1=120..,counter_2=1}] run replaceitem entity @s weapon.offhand minecraft:ender_pearl 1
