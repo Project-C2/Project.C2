@@ -5,7 +5,7 @@ tag @s remove it
 data modify entity @e[tag=115arrow,limit=1] Owner set from entity @a[tag=user,limit=1] UUID
 execute if entity @s[tag=115sharp] run data merge entity @e[tag=115arrow,limit=1,sort=nearest] {damage:3.2d}
 execute if entity @s[tag=115flame] run data merge entity @e[tag=115arrow,limit=1,sort=nearest] {Fire:32767s}
-execute if entity @s[tag=115quick] run scoreboard players add @a[tag=user,limit=1] CT1 20
+execute if entity @s[tag=115quick] run scoreboard players add @a[tag=user,limit=1] CT1 2000
 execute if entity @s[tag=115stan] run scoreboard players add @e[tag=hit,limit=1,sort=nearest] stanTime 31
 execute if entity @s[tag=115stan] run data merge block -113 2 -122 {auto:1b}
 scoreboard players add @a[tag=user,limit=1] CT1 20

@@ -13,6 +13,9 @@
 #counter_9    -> 
 #stockcounter -> 
 
+execute unless entity @s[scores={counter_8=1}] unless data entity @s {Health:0f} run scoreboard players set @s counter_8 1
+execute if entity @s[nbt={Health:0f},scores={counter_8=1}] run function project-c:jobaction/117/death
+
 scoreboard players reset @s usedSkill
 
 execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-c:jobaction/117/replaceitem/1

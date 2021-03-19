@@ -16,7 +16,7 @@ kill @e[tag=vector]
 data modify entity @e[tag=first,limit=1] HandItems[0] set from entity @s SelectedItem
 execute if score @s counter_1 matches 1 run tag @e[tag=first,limit=1,sort=nearest] add 115sharp
 execute if score @s counter_2 matches 1 run tag @e[tag=first,limit=1,sort=nearest] add 115flame
-execute if score @s counter_3 matches 1 run scoreboard players set @s CT1 1140
+execute if score @s counter_3 matches 1 run scoreboard players set @s CT1 1180
 execute if score @s counter_3 matches 1 run tag @e[tag=first,limit=1,sort=nearest] add 115quick
 execute if score @s counter_4 matches 1 run tag @e[tag=first,limit=1,sort=nearest] add 115stan
 execute if score @s counter_5 matches 11.. run scoreboard players reset @s counter_5
