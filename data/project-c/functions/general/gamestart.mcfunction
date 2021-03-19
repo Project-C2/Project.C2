@@ -30,6 +30,8 @@ scoreboard players set @a[tag=!counter-keep] counter_6 0
 scoreboard players set @a[tag=!counter-keep] counter_7 0
 scoreboard players set @a[tag=!counter-keep] counter_8 0
 scoreboard players set @a[tag=!counter-keep] counter_9 0
+scoreboard players set @a[tag=!counter-keep] stockcounter
+
 
 scoreboard players reset @a advancement1
 scoreboard players reset @a advancement2

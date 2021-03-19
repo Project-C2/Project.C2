@@ -47,9 +47,9 @@ execute if entity @s[scores={counter_3=1..}] at @s run scoreboard players remove
 execute if entity @s[scores={counter_3=1..}] at @s run particle minecraft:crit ~ ~1 ~ 1 1 1 1 1
 execute if entity @s[scores={counter_3=1..}] at @s run effect give @s absorption 1 0
 
-execute if entity @s[scores={counter_3=1..},gamemode=!spectator,team=Red] run execute as @a[team=Blue,gamemode=!spectator,tag=Battle,distance=..10] at @s run tp @s ^ ^ ^ facing entity @a[scores={jobNumber=76,counter_3=1..},team=Red,limit=1]
+execute if entity @s[scores={counter_3=1..},gamemode=!spectator,team=Red] run execute as @a[team=Blue,gamemode=!spectator,tag=Battle,distance=..10] at @s facing entity @a[scores={jobNumber=76,counter_3=1..},team=Red,limit=1] eyes run teleport ~ ~ ~
 
-execute if entity @s[scores={counter_3=1..},gamemode=!spectator,team=Blue] run execute as @a[team=Red,gamemode=!spectator,tag=Battle,distance=..10] at @s run tp @s ^ ^ ^ facing entity @a[scores={jobNumber=76,counter_3=1..},team=Blue,limit=1]
+execute if entity @s[scores={counter_3=1..},gamemode=!spectator,team=Blue] run execute as @a[team=Red,gamemode=!spectator,tag=Battle,distance=..10] at @s facing entity @a[scores={jobNumber=76,counter_3=1..},team=Blue,limit=1] eyes run teleport ~ ~ ~
 
 scoreboard players set @s sneak 0
 scoreboard players reset @s damageDealt

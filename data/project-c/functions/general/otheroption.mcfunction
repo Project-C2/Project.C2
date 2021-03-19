@@ -16,12 +16,12 @@ clear @a minecraft:elytra{Damage:431} 1
 scoreboard players add @e[type=shulker_bullet] counter 1
 kill @e[type=shulker_bullet,scores={counter=80}]
 
-execute if entity @a[tag=Battle,nbt={HurtTime:9s},gamemode=!spectator,scores={OutCombat=240..},limit=1] as @a[tag=Battle,nbt={HurtTime:9s},gamemode=!spectator,scores={OutCombat=240..}] run effect clear @s regeneration
-execute if entity @a[tag=Battle,nbt={HurtTime:9s},gamemode=!spectator,scores={OutCombat=240..},limit=1] as @a[tag=Battle,nbt={HurtTime:9s},gamemode=!spectator,scores={OutCombat=240..}] run tag @s remove Regene
+execute if entity @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..},limit=1] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..}] run effect clear @s regeneration
+execute if entity @a[tag=Battle,gamemode=!spectator,scores={OutCombat=240..,damageTaken=31..},limit=1] as @a[tag=Battle,gamemode=!spectator,scores={OutCombat=240..,damageTaken=31..}] run tag @s remove Regene
 
-execute if entity @a[tag=Battle,nbt={HurtTime:9s},gamemode=!spectator,limit=1] as @a[tag=Battle,nbt={HurtTime:9s},gamemode=!spectator] run scoreboard players set @s OutCombat 0
-execute if entity @a[tag=Battle,team=Blue,limit=1] as @a[tag=Battle,team=Blue] unless entity @a[tag=Battle,team=Red,distance=..16,gamemode=!spectator] run scoreboard players add @s OutCombat 1
-execute if entity @a[tag=Battle,team=Red,limit=1] as @a[tag=Battle,team=Red] unless entity @a[tag=Battle,team=Blue,distance=..16,gamemode=!spectator] run scoreboard players add @s OutCombat 1
+execute if entity @a[tag=Battle,scores={damageTaken=31..},gamemode=!spectator,limit=1] as @a[tag=Battle,scores={damageTaken=31..},gamemode=!spectator] run scoreboard players set @s OutCombat 0
+execute if entity @a[tag=Battle,team=Blue,limit=1] as @a[tag=Battle,team=Blue] at @s unless entity @a[tag=Battle,team=Red,distance=..10,gamemode=!spectator] run scoreboard players add @s OutCombat 1
+execute if entity @a[tag=Battle,team=Red,limit=1] as @a[tag=Battle,team=Red] at @s unless entity @a[tag=Battle,team=Blue,distance=..10,gamemode=!spectator] run scoreboard players add @s OutCombat 1
 
 execute if entity @a[tag=Battle,scores={OutCombat=240},gamemode=!spectator,limit=1] as @a[tag=Battle,scores={OutCombat=240},gamemode=!spectator] at @s run playsound minecraft:block.note_block.bit master @a ~ ~ ~ 1 0.75
 execute if entity @a[tag=Battle,scores={OutCombat=240},limit=1] as @a[tag=Battle,scores={OutCombat=240}] run effect give @s regeneration 100000 1 true
@@ -38,6 +38,8 @@ execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={Hur
 execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={HurtTime:9s}] at @s run playsound minecraft:entity.wither.hurt master @a ~ ~ ~ 1 0.5
 execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={HurtTime:9s}] at @s run particle minecraft:block iron_block ~ ~1 ~ 0 0 0 1 70
 execute if entity @a[tag=KoutetuPotion,limit=1] as @a[tag=KoutetuPotion,nbt={HurtTime:9s}] at @s run tag @s remove KoutetuPotion
+
+execute if entity @a[scores={damageTaken=1..},nbt={HurtTime:9s}] run scoreboard players reset @a[scores={damageTaken=1..},nbt={HurtTime:9s}] damageTaken
 
 execute if entity @a[tag=OverPotion,limit=1] as @a[tag=OverPotion] at @s run particle minecraft:white_ash ~ ~1 ~ 0.5 0.5 0.5 0 3
 

@@ -1,6 +1,6 @@
 #判定
 #CT
-scoreboard players set @s CT1 1160
+scoreboard players set @s CT1 1100
 scoreboard players set @s usedSkill 1
 scoreboard players set @s counter_1 1
 

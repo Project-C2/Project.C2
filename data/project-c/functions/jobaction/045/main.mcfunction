@@ -13,5 +13,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"不死霊�
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"蘇生ノ呪術＝ネクロマンシー","color":"dark_red","italic":"false","underlined":"true"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/045/skill/2/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"幻影＝ファントムー","color":"dark_gray","italic":"false","underlined":"true"}'}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/045/skill/3/0
 
+execute if entity @s[scores={deathCountExt=1..}] run execute as @e[tag=045-NecroMinion] if score @s playerNumber = @a[limit=1,sort=nearest] playerNumber run kill @s
+execute if entity @s[scores={HP=..1}] run execute as @e[tag=045-NecroMinion] if score @s playerNumber = @a[limit=1,sort=nearest] playerNumber run kill @s
 
 scoreboard players reset @s sneak
