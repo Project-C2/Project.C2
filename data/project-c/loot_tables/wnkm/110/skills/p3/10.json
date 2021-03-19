@@ -17,7 +17,7 @@
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
                   {"text":"右クリック / CT:15","italic":false,"color":"aqua"},
-                  {"text":"制魔の矢を6本取り出す。","italic":false,"color":"white"},
+                  {"text":"制魔の矢を5本取り出す。","italic":false,"color":"white"},
                   {"text":"効果:スキルCTの回復を2秒間停止させる。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
                 ]

@@ -1,4 +1,4 @@
-scoreboard players set #110- counter_3 1080
+scoreboard players set #110- counter_3 1060
 scoreboard players set #110- counter_1 2
 execute positioned ^-1.5 ^ ^ run summon minecraft:area_effect_cloud ~ ~3.1 ~ {Tags:["this","110fireball"],Duration:200}
 execute positioned ^1.5 ^ ^ run summon minecraft:area_effect_cloud ~ ~3.1 ~ {Tags:["this","110fireball"],Duration:200}
