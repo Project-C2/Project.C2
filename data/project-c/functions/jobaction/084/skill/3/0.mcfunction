@@ -1,7 +1,7 @@
 #判定
 #CT
 scoreboard players set @s usedSkill 3
-scoreboard players set @s CT3 0
+scoreboard players set @s CT3 -1200
 
 #スキル効果
 #共通
