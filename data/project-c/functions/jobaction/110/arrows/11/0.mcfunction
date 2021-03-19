@@ -1,5 +1,5 @@
 #コスト支払い
-scoreboard players set #110- counter_3 800
+scoreboard players set #110- counter_3 900
 
 clear @s minecraft:arrow{110ArrowItem:1b}
 clear @s minecraft:tipped_arrow{110ArrowItem:1b}

@@ -1,11 +1,10 @@
 scoreboard players set @s CT3 0
 replaceitem entity @s hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 40
 
-effect give @s minecraft:resistance 1 4 true
-
 summon armor_stand ~ ~ ~ {Tags:["089fire","this"],Marker:1b,Invisible:1b}
 tp @e[tag=this] ~ ~ ~ ~ ~
 scoreboard players operation @e[tag=this] playerNumber = @s playerNUmber
+execute as @e[tag=this] at @s run function project-c:jobaction/089/skill/3/line
 tag @e[tag=this] remove this
 playsound minecraft:entity.ender_dragon.ambient master @a ~ ~ ~ 3 1.5
 playsound minecraft:entity.wither.death master @a ~ ~ ~ 3 1.6

@@ -16,8 +16,8 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / CT:20","italic":false,"color":"aqua"},
-                  {"text":"榴弾の矢を2本取り出す。","italic":false,"color":"white"},
+                  {"text":"右クリック / CT:15","italic":false,"color":"aqua"},
+                  {"text":"榴弾の矢を1本取り出す。","italic":false,"color":"white"},
                   {"text":"効果:着弾地点を爆破する。","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
                 ]

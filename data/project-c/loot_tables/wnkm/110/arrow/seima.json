@@ -20,7 +20,7 @@
             },
             {
               "function": "minecraft:set_count",
-              "count": 6
+              "count": 5
             },
             {
                 "function": "minecraft:set_nbt",

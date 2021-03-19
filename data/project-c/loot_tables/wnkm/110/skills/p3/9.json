@@ -16,8 +16,8 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / CT:20","italic":false,"color":"aqua"},
-                  {"text":"石の矢を10本取り出す。","italic":false,"color":"white"},
+                  {"text":"右クリック / CT:15","italic":false,"color":"aqua"},
+                  {"text":"石の矢を8本取り出す。","italic":false,"color":"white"},
                   {"text":"効果:無","italic":false,"color":"white"},
                   {"text":"--------------------------------","italic":false,"color":"gray"}
                 ]
