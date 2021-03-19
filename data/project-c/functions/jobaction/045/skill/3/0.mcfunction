@@ -845,11 +845,11 @@ kill @e[distance=..7,tag=045-Necro1]
 playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 2 0.75
 particle minecraft:witch ~ ~1 ~ 2 2 2 0.1 100 force @a
 #Red
-execute as @s[team=Red] run summon phantom ~ ~5 ~ {Team:"Red",Size:0,Tags:["045-PhantomR","045-Phantom"]}
+execute as @s[team=Red] run summon phantom ~ ~5 ~ {Team:"Red",Size:0,Tags:["045-PhantomR","045-Phantom","045-NecroMinion"]}
 #Blue
-execute as @s[team=Blue] run summon phantom ~ ~5 ~ {Team:"Blue",Size:0,Tags:["045-PhantomR","045-Phantom"]}
+execute as @s[team=Blue] run summon phantom ~ ~5 ~ {Team:"Blue",Size:0,Tags:["045-PhantomR","045-Phantom","045-NecroMinion"]}
 #スコア
-scoreboard players add @e[tag=045-Phantom,tag=!045-PhantomSummoned] subcounter 3
+scoreboard players add @e[tag=045-Phantom,tag=!045-PhantomSummoned] subcounter 2
 scoreboard players operation @e[tag=045-Phantom,tag=!045-PhantomSummoned] playerNumber = @s playerNumber
 
 scoreboard players set @s[scores={Mana=9..}] 8

@@ -14,7 +14,22 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"帰還の�
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ビーコン"}'}}}},scores={CT3=1200..,sneak=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/006/skill/3/0
 
 execute if entity @s[scores={useEnderPearl=1..}] run effect give @s minecraft:absorption 10 0 true
-execute if entity @s[scores={useEnderPearl=1..}] run replaceitem entity @s weapon.offhand minecraft:ender_pearl 1
+execute if entity @s[scores={useEnderPearl=1..}] run scoreboard players set @s[scores={counter_1=1..}] counter_1 0
+execute if entity @s[scores={useEnderPearl=1..,counter_2=1..}] run scoreboard players remove @s counter_2 1
+execute if entity @s[scores={useEnderPearl=1..,counter_2=1}] run replaceitem entity @s weapon.offhand minecraft:ender_pearl 1
+execute if entity @s[scores={useEnderPearl=1..,counter_2=2}] run replaceitem entity @s weapon.offhand minecraft:ender_pearl 2
+
+scoreboard players add @s[scores={counter_2=..3}] counter_1 1
+
+scoreboard players add @s[scores={counter_1=120..}] counter_2 1
+execute if entity @s[scores={counter_1=120..,counter_2=1}] run replaceitem entity @s weapon.offhand minecraft:ender_pearl 1
+execute if entity @s[scores={counter_1=120..,counter_2=2}] run replaceitem entity @s weapon.offhand minecraft:ender_pearl 2
+execute if entity @s[scores={counter_1=120..,counter_2=3}] run replaceitem entity @s weapon.offhand minecraft:ender_pearl 3
+
+
+
+scoreboard players set @s[scores={counter_1=120..}] counter_1 0
+
 
 scoreboard players reset @s jump
 scoreboard players reset @s sneak

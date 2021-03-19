@@ -843,15 +843,15 @@ execute as @e[tag=045-Necro1] at @s if score @s playerNumber = @a[scores={jobNum
 execute as @e[tag=045-Necro1,scores={subcounter=0}] at @s run kill @s
 
 #Red
-execute at @s[team=Red] run summon zombie ~-2 ~-2 ~-2 {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
-execute at @s[team=Red] run summon zombie ~2 ~-2 ~2 {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
-execute at @s[team=Red] run summon skeleton ~2 ~-2 ~-2 {Team:"Red",Tags:["045-Skeleton","045-SkeletonR","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
-execute at @s[team=Red] run summon skeleton ~-2 ~-2 ~2 {Team:"Red",Tags:["045-Skeleton","045-SkeletonR","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Red] run summon zombie ~-2 ~-2 ~-2 {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1","045-NecroMinion"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Red] run summon zombie ~2 ~-2 ~2 {Team:"Red",Tags:["045-Zombie","045-ZombieR","045-Necro1","045-NecroMinion"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Red] run summon skeleton ~2 ~-2 ~-2 {Team:"Red",Tags:["045-Skeleton","045-SkeletonR","045-Necro1","045-NecroMinion"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Red] run summon skeleton ~-2 ~-2 ~2 {Team:"Red",Tags:["045-Skeleton","045-SkeletonR","045-Necro1","045-NecroMinion"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
 #Blue
-execute at @s[team=Blue] run summon zombie ~-2 ~-2 ~-2 {Team:"Blue",Tags:["045-Zombie","045-ZombieB","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
-execute at @s[team=Blue] run summon zombie ~2 ~-2 ~2 {Team:"Blue",Tags:["045-Zombie","045-ZombieB","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
-execute at @s[team=Blue] run summon skeleton ~2 ~-2 ~-2 {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
-execute at @s[team=Blue] run summon skeleton ~-2 ~-2 ~2 {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Blue] run summon zombie ~-2 ~-2 ~-2 {Team:"Blue",Tags:["045-Zombie","045-ZombieB","045-Necro1","045-NecroMinion"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Blue] run summon zombie ~2 ~-2 ~2 {Team:"Blue",Tags:["045-Zombie","045-ZombieB","045-Necro1","045-NecroMinion"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Blue] run summon skeleton ~2 ~-2 ~-2 {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1","045-NecroMinion"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute at @s[team=Blue] run summon skeleton ~-2 ~-2 ~2 {Team:"Blue",Tags:["045-Skeleton","045-SkeletonB","045-Necro1","045-NecroMinion"],CustomName:'{"text":""}',Invulnerable:1b,NoAI:1b,Health:1000f,Attributes:[{Name:"generic.max_health",Base:1000}]}
 #スコアセット
 scoreboard players add @e[tag=045-Necro1,tag=!045-NecroEnd] subcounter 2
 scoreboard players operation @e[tag=045-Necro1,tag=!045-NecroEnd] playerNumber = @s playerNumber
