@@ -17,6 +17,11 @@ data merge block -45 41 -122 {auto:1b}
 effect clear @a minecraft:absorption
 function project-c:general/relic/clocodire
 gamemode spectator @a[team=]
+
+tag @a remove nbs_phyco
+scoreboard players reset @a nbs_phyco
+scoreboard players reset @a nbs_phyco_t
+
 #ゲーム開始時にカウンタースコアを保持したい場合はここに追記してください
 tag @a[scores={jobNumber=106}] add counter-keep
 tag @a[scores={jobNumber=110}] add counter-keep
