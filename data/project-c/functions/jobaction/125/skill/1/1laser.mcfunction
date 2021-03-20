@@ -1,7 +1,7 @@
 scoreboard players add @s[nbt={OnGround:0b}] counter 1
 kill @s[scores={counter=60..}]
 
-particle lava ~ ~ ~ 0 0 0 1 1 force @a
+particle end_rod ~ ~ ~ 0 0 0 0.1 1 force @a
 
 teleport @s ^ ^ ^1 ~ ~
 execute if entity @a[distance=..1.5] run summon armor_stand ~ ~1 ~ {Invisible:1b,Tags:["125-rspawn"],NoGravity:1b,Marker:1b}
