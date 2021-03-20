@@ -1,7 +1,6 @@
 execute store result score #123- counter run data get entity @s Health 100
 execute if score @s ScoreToHealth matches 1.. run scoreboard players operation #123- counter = @s ScoreToHealth
 
-execute store result score #123- counter run data get entity @s Health 100
 execute unless score #123- counter > #123- subcounter run summon area_effect_cloud ~ ~0.3 ~ {Tags:["first"],CustomName:'{"text":"CrossFire-十字砲火","color":"dark_gray"}',Particle:"dust 0 0 0 0",Radius:0.5f,WaitTime:1,Duration:5,Age:4,Effects:[{Id:7b,Amplifier:2b,Duration:1,ShowParticles:0b,ShowIcon:0b}]}
 execute if score #123- counter > #123- subcounter run scoreboard players operation @s ScoreToHealth = #123- counter
 execute if score #123- counter > #123- subcounter run scoreboard players operation @s ScoreToHealth -= #123- subcounter

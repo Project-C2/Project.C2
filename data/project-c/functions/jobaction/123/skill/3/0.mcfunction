@@ -1,5 +1,5 @@
 execute if score @s CT1 matches 1201.. run scoreboard players set @s CT1 1200
-scoreboard players remove @s CT1 140
+scoreboard players remove @s CT1 80
 tag @s remove SkillReady1
 clear @s compass{CT:1}
 
