@@ -853,7 +853,7 @@ scoreboard players add @e[tag=045-Phantom,tag=!045-PhantomSummoned] subcounter 2
 scoreboard players operation @e[tag=045-Phantom,tag=!045-PhantomSummoned] playerNumber = @s playerNumber
 
 scoreboard players set @s[scores={Mana=9..}] 8
-execute as @e[tag=045-Phantom,tag=!045-PhantomSummoned] store result entity @s Size short 2 run scoreboard players get @a[limit=1,sort=nearest] Mana
+execute as @e[tag=045-Phantom,tag=!045-PhantomSummoned] store result entity @s Size short 1 run scoreboard players get @a[limit=1,sort=nearest] Mana
 execute if entity @a[scores={Mana=2..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 0
 execute if entity @a[scores={Mana=4..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 1
 execute if entity @a[scores={Mana=6..}] run effect give @e[tag=045-Phantom,tag=!045-PhantomSummoned] minecraft:resistance 9999 2
