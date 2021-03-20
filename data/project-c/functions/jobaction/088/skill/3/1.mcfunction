@@ -2,9 +2,9 @@
 #実行者 -> @a[tag=088-S3-used]
 
 #buff
-execute if entity @s[scores={playerKills=1}] run effect give @s strength 1 0
-execute if entity @s[scores={playerKills=2}] run effect give @s strength 1 1
-execute if entity @s[scores={playerKills=3..}] run effect give @s strength 1 2
+execute if entity @s[scores={playerKills=1}] run effect give @s strength 1 9
+execute if entity @s[scores={playerKills=2}] run effect give @s strength 1 19
+execute if entity @s[scores={playerKills=3..}] run effect give @s strength 1 29
 
 #count
 scoreboard players remove @s counter_4 1
