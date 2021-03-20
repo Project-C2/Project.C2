@@ -24,8 +24,8 @@ execute if entity @s[scores={counter_2=1..},gamemode=spectator] run scoreboard p
 
 execute if entity @s[scores={counter_2=1..,deathCountExt=1..}] run scoreboard players set @s counter_2 0
 
-execute if entity @s[team=Red,gamemode=!spectator] run execute if entity @a[scores={deathCount=1..},team=Red,distance=1..] run function project-c:jobaction/080/skill/3/0
-execute if entity @s[team=Blue,gamemode=!spectator] run execute if entity @a[scores={deathCount=1..},team=Blue,distance=1..] run function project-c:jobaction/080/skill/3/0
+execute if entity @s[team=Red,scores={CT3=1200..},tag=SkillReady3,gamemode=!spectator] run execute if entity @a[scores={deathCountExt=1..},team=Red,distance=1..] run function project-c:jobaction/080/skill/3/0
+execute if entity @s[team=Blue,scores={CT3=1200..},tag=SkillReady3,gamemode=!spectator] run execute if entity @a[scores={deathCountExt=1..},team=Blue,distance=1..] run function project-c:jobaction/080/skill/3/0
 
 scoreboard players add @s[scores={counter_3=1..}] counter_3 1
 execute if entity @s[scores={counter_3=1..}] run particle minecraft:angry_villager ~ ~1 ~ 1 1 1 1 1 normal @a
