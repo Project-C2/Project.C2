@@ -20,6 +20,17 @@ tag @e[tag=088-1-position,tag=INI,sort=nearest,limit=1] remove INI
 #アイテムを拾えなくする
 execute if entity @s[gamemode=adventure] run kill @e[type=item,distance=..6]
 
+#コンボ
+execute if entity @s[scores={counter_6=1}] run scoreboard players set @s counter_7 0
+execute if entity @s[scores={counter_6=1..}] run scoreboard players remove @s counter_6 1
+
+execute if entity @s[scores={damageDealt=1..}] run scoreboard players set @s counter_6 60
+execute if entity @s[scores={damageDealt=1..}] run scoreboard players add @s counter_7 1
+execute if entity @s[scores={counter_7=5..}] run effect give @s strength 1 4
+execute if entity @s[scores={counter_7=5..}] run function project-c:general/effect/checkeffect
+execute if entity @s[scores={counter_7=5..}] run particle minecraft:witch ~ ~ ~ 0.5 0 0.5 2 2 force
+
+
 scoreboard players set @s sneak 0
 scoreboard players reset @s[tag=!088-S3-used] damageDealt
 scoreboard players reset @s damageTaken
