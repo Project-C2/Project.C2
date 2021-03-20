@@ -3,6 +3,8 @@
 scoreboard players set @s usedSkill 3
 scoreboard players set @s CT3 -1200
 
+scoreboard players add @s counter_4 1
+
 #スキル効果
 #共通
 

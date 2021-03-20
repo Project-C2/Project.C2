@@ -11,7 +11,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ホーミ�
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"陰陽玉","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,useSnowball=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/084/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"霊符「夢想封印」","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,useSnowball=1..},tag=SkillReady3,gamemode=!spectator,tag=Battle] run function project-c:jobaction/084/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"霊符「夢想封印」","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,useSnowball=1..,counter_4=..2},tag=SkillReady3,gamemode=!spectator,tag=Battle] run function project-c:jobaction/084/skill/3/0
 
 execute if entity @s[scores={useSnowball=1..}] run replaceitem entity @s weapon.offhand minecraft:snowball
 execute if entity @s[scores={useSnowball=1..}] run kill @e[type=snowball,limit=1,sort=nearest]
