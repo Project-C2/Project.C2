@@ -12,7 +12,7 @@
 
 scoreboard players reset @s usedSkill
 effect give @s weakness 1 0 true
-execute if entity @s[scores={relic=2}] if entity @s[scores={CT2=1201..1600}] run scoreboard players add @s CT3 1
+execute if entity @s[scores={relic=2}] if entity @s[scores={CT2=1201..1600}] run scoreboard players add @s CT2 1
 
 execute if entity @s[scores={CT2=1600..,counter_6=0}] unless score @s stockcounter matches 2.. run function project-c:jobaction/104/charge
 execute unless score @s stockcounter matches 1.. if entity @s[scores={CT2=1200..,counter_6=0}] run function project-c:jobaction/104/charge
