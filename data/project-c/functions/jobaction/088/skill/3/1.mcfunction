@@ -5,6 +5,7 @@
 execute if entity @s[scores={playerKills=1}] run effect give @s strength 1 9
 execute if entity @s[scores={playerKills=2}] run effect give @s strength 1 19
 execute if entity @s[scores={playerKills=3..}] run effect give @s strength 1 29
+execute if entity @s[scores={playerKills=1..}] run function project-c:general/effect/checkeffect
 
 #count
 scoreboard players remove @s counter_4 1
