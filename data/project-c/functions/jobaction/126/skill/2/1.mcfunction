@@ -1,4 +1,4 @@
-execute as @a[scores={jobNumber=126}] at @s as @e[tag=126-graif] if score @s playerNumber = @a[limit=1,sort=nearest] playerNumber rotated as @a[limit=1,sort=nearest] positioned as @s if block ^ ^ ^0.7 minecraft:air run teleport @s ^ ^ ^1 ~ ~
+execute as @a[scores={jobNumber=126}] at @s as @e[tag=126-graif] if score @s playerNumber = @a[limit=1,sort=nearest] playerNumber rotated as @a[limit=1,sort=nearest] positioned as @s if block ^ ^ ^1 minecraft:air run teleport @s ^ ^ ^1 ~ ~
 
 scoreboard players add @s counter 1
 
