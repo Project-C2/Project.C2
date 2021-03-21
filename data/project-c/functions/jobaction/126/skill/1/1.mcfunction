@@ -32,5 +32,5 @@ execute if entity @s[scores={counter=12..}] run particle minecraft:sweep_attack 
 execute if entity @s[tag=126-windR,scores={counter=60..}] run kill @e[tag=126-windTR,limit=1,sort=nearest]
 execute if entity @s[tag=126-windB,scores={counter=60..}] run kill @e[tag=126-windTB,limit=1,sort=nearest]
 
-kill @s[scores={counter=30..}]
+kill @s[scores={counter=50..}]
 tag @s remove 126-windG
