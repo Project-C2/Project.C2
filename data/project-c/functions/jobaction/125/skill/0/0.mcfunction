@@ -11,7 +11,7 @@ kill @e[tag=125dummy]
 tag @e[tag=125fireF] remove 125fireF
 
 teleport @s ~ ~ ~ ~ ~
-scoreboard players set @s counter 11
+scoreboard players set @s counter 15
 
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
 effect give @s minecraft:slowness 1 0 true
