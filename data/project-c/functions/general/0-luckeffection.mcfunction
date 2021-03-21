@@ -69,7 +69,6 @@ execute if entity @a[nbt={ActiveEffects:[{Id:26b,Amplifier:110b}]},limit=1] run 
 execute if entity @a[tag=Elixir,limit=1] run scoreboard players set @a[tag=Elixir] CT1 1200
 execute if entity @a[tag=Elixir,limit=1] run scoreboard players set @a[tag=Elixir] CT2 1200
 execute if entity @a[tag=Elixir,limit=1] run scoreboard players set @a[tag=Elixir] CT3 1200
-execute if entity @a[tag=Elixir,limit=1] run scoreboard players set @a[tag=Elixir] Mana 300
 execute if entity @a[tag=Elixir,limit=1] run effect give @a[tag=Elixir] minecraft:instant_health 1 100
 execute if entity @a[tag=Elixir,limit=1] as @a[tag=Elixir] at @s run particle firework ~ ~1.2 ~ 0 0 0 0.5 160
 execute if entity @a[tag=Elixir,limit=1] as @a[tag=Elixir] at @s run playsound minecraft:block.portal.trigger master @a ~ ~ ~ 3 2
