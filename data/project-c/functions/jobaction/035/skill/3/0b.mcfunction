@@ -1,5 +1,5 @@
 tag @s remove 035-3A
-scoreboard players set @s CT3 900
+scoreboard players set @s CT3 700
 scoreboard players reset @s useCarrotStick
 tag @s remove SkillReady3
 scoreboard players set @s usedSkill 3

@@ -1,7 +1,7 @@
 tag @s add 035-3A
 scoreboard players set @s CT3 1200
 scoreboard players reset @s useCarrotStick
-scoreboard players remove @s counter_2 8
+scoreboard players remove @s counter_2 9
 function project-c:jobaction/035/setarrow
 
 
