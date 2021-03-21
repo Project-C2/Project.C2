@@ -8,7 +8,7 @@ execute as @s[tag=126-windB,scores={counter=12..}] at @s as @e[tag=126-windTB,li
 execute as @s[tag=126-windB,scores={counter=12..}] at @s as @e[tag=126-windTB,limit=1,sort=nearest] unless entity @s[gamemode=spectator] positioned ^-100 ^ ^ if entity @s[distance=..99] run teleport @e[tag=126-windG] ^100 ^ ^ ~7 ~
 execute as @s[tag=126-windB,scores={counter=12..}] at @s as @e[tag=126-windTB,limit=1,sort=nearest] unless entity @s[gamemode=spectator] positioned ^ ^100 ^ if entity @s[distance=..99] run teleport @e[tag=126-windG] ^ ^-100 ^ ~ ~-7
 execute as @s[tag=126-windB,scores={counter=12..}] at @s as @e[tag=126-windTB,limit=1,sort=nearest] unless entity @s[gamemode=spectator] positioned ^ ^-100 ^ if entity @s[distance=..99] run teleport @e[tag=126-windG] ^ ^100 ^ ~ ~7
-teleport @s[scores={counter=12..}] ^ ^ ^0.6
+teleport @s[scores={counter=12..}] ^ ^ ^1
 
 execute if entity @s[tag=126-windR,scores={counter=12..}] run kill @e[tag=126-windTR,limit=1,sort=nearest,distance=..2]
 execute if entity @s[tag=126-windB,scores={counter=12..}] run kill @e[tag=126-windTB,limit=1,sort=nearest,distance=..2]
@@ -32,5 +32,5 @@ execute if entity @s[scores={counter=12..}] run particle minecraft:sweep_attack 
 execute if entity @s[tag=126-windR,scores={counter=60..}] run kill @e[tag=126-windTR,limit=1,sort=nearest]
 execute if entity @s[tag=126-windB,scores={counter=60..}] run kill @e[tag=126-windTB,limit=1,sort=nearest]
 
-kill @s[scores={counter=60..}]
+kill @s[scores={counter=30..}]
 tag @s remove 126-windG
