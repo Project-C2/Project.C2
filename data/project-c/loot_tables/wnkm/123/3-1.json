@@ -16,8 +16,7 @@
                 "function": "minecraft:set_lore",
                 "lore": [
                   [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:6s","italic":false,"color":"green"},{"text":" / ","color":"gray"},{"text":"ストック:2","italic":false,"color":"aqua"}],
-                  {"text":"十字に放つショットガン。1hitにつき♡0.4で13発放つ。","italic":false,"color":"white"},
-                  {"translate":"発射時に「%s」のCTを4秒増加する。","italic":false,"color":"white","with":[{"text":"放牧-ヒツジカイ","color":"white","bold":true}]}
+                  {"text":"十字に放つショットガン。1hitにつき♡0.5で13発放つ。","italic":false,"color":"white"}
                 ]
             },
             {

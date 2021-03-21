@@ -8,4 +8,6 @@ scoreboard players reset #123-
 
 execute unless block ^ ^ ^1 #project-c:wancomatter/like_air run kill @s
 execute unless block ^ ^ ^2 #project-c:wancomatter/like_air run kill @s
-tp @s ^ ^ ^3.2
+execute unless block ^ ^ ^3 #project-c:wancomatter/like_air run kill @s
+execute unless block ^ ^ ^4 #project-c:wancomatter/like_air run kill @s
+tp @s ^ ^ ^4.0

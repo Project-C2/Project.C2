@@ -7,6 +7,8 @@ setblock 104 61 -62 minecraft:repeating_command_block[facing=south,conditional=f
 setblock 104 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=123sheep,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
 setblock 106 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=123gamingStand,limit=1] as @e[tag=123gamingStand] at @s run function project-c:jobaction/123/skill/2/1",TrackOutput:0b} destroy
 setblock 106 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=123gamingStand,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
+setblock 106 61 -60 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=123gamingSheep,limit=1] as @e[tag=123gamingSheep] at @s run function project-c:jobaction/123/skill/2/4",TrackOutput:0b} destroy
+setblock 106 61 -59 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=123gamingSheep,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
 setblock 108 61 -62 minecraft:repeating_command_block[facing=south,conditional=false]{Command:"execute if entity @e[tag=123crossFire,limit=1] as @e[tag=123crossFire] at @s run function project-c:jobaction/123/skill/3/1",TrackOutput:0b} destroy
 setblock 108 61 -61 minecraft:chain_command_block[facing=up,conditional=false]{auto:1b,Command:"execute unless entity @e[tag=123crossFire,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
 

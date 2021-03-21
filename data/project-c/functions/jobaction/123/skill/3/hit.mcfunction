@@ -1,4 +1,4 @@
-scoreboard players set #123- subcounter 80
+scoreboard players set #123- subcounter 100
 tag @s add 123-3
 execute as @e[tag=hit,type=player] at @s run function project-c:jobaction/123/skill/3/hit-player
 execute as @e[tag=hit,type=!player] at @s run function project-c:jobaction/123/skill/3/hit-entity
