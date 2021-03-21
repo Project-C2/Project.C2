@@ -39,6 +39,8 @@ tag @e[tag=052-EX-6,tag=!052-EX-9] add 052-EX-9
 
 #演出
 execute as @a[tag=052-EX-2,scores={counter_2=1..35}] at @s run particle minecraft:enchant ~ ~1.5 ~ 0 0 0 1 100 force
+execute as @a[tag=052-EX-2,scores={counter_2=1}] at @s run me 「奥義……」
+execute as @a[tag=052-EX-2,scores={counter_2=40}] at @s run me 「五輪剣！」
 
 #次へ
 data merge block 21 8 -20 {auto:1b}

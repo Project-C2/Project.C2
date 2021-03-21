@@ -42,7 +42,7 @@ scoreboard players set @s[scores={counter=..-1}] counter 0
 scoreboard players set @s[scores={counter=201..}] counter 200
 
 #奥義処理
-replaceitem entity @s[scores={counter=100..}] weapon.offhand ender_pearl{display:{Name:'{"text":"奥義 -五輪剣-","color":"white","bold":true,"italic":false}',Lore:['{"text":"発動:メイン武器を持って右クリック ","color":"yellow","italic":false}','{"text":"力をため、前方に飛ぶ斬撃を放つ","color":"white","italic":false}','{"text":"発動すると奥義ゲージを100%する","color":"white","italic":false}','{"text":"奥義ゲージが200%の時に発動すると","color":"white","italic":false}','{"text":"全消費してさらにもう一撃放つ","color":"white","italic":false}']},HideFlags:1,Enchantments:[{id:"minecraft:efficiency",lvl:1s}]} 1
+replaceitem entity @s[scores={counter=100..},tag=!052-EX-1] weapon.offhand ender_pearl{display:{Name:'{"text":"奥義 -五輪剣-","color":"white","bold":true,"italic":false}',Lore:['{"text":"発動:メイン武器を持って右クリック ","color":"yellow","italic":false}','{"text":"力をため、前方に飛ぶ斬撃を放つ","color":"white","italic":false}','{"text":"発動すると奥義ゲージを100%する","color":"white","italic":false}','{"text":"奥義ゲージが200%の時に発動すると","color":"white","italic":false}','{"text":"全消費してさらにもう一撃放つ","color":"white","italic":false}']},HideFlags:1,Enchantments:[{id:"minecraft:efficiency",lvl:1s}]} 1
 tag @s[scores={counter=100..},tag=!052-EX-1] add 052-EX-1
 clear @s[scores={counter=..99}] ender_pearl{display:{Name:'{"text":"奥義 -五輪剣-","color":"white","bold":true,"italic":false}',Lore:['{"text":"発動:メイン武器を持って右クリック ","color":"yellow","italic":false}','{"text":"力をため、前方に飛ぶ斬撃を放つ","color":"white","italic":false}','{"text":"発動すると奥義ゲージを100%する","color":"white","italic":false}','{"text":"奥義ゲージが200%の時に発動すると","color":"white","italic":false}','{"text":"全消費してさらにもう一撃放つ","color":"white","italic":false}']}} 1
 tag @s[tag=052-EX-1,scores={counter=..99}] remove 052-EX-1
