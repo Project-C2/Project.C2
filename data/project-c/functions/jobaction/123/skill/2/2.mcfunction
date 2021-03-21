@@ -1,5 +1,4 @@
-execute rotated ~ 0 run summon sheep ^ ^ ^-1.2 {Tags:["123sheep","first","Battle"],NoAI:1b,Color:0b,Silent:1b,Health:1f,ActiveEffects:[{Id:12b,Amplifier:0b,Duration:20000,ShowParticles:0b}]}
-execute store result entity @e[tag=first,limit=1] Pos[1] double 0.1 run scoreboard players get @s counter_2
+execute rotated ~ 0 run summon sheep ^ ^ ^-1.2 {Tags:["123gamingSheep","first","Battle"],NoAI:1b,Color:0b,Silent:1b,Health:1f,ActiveEffects:[{Id:12b,Amplifier:0b,Duration:20000,ShowParticles:0b}]}
 execute as @e[tag=first] positioned as @s run tp @s ~ ~ ~ ~ 0
 
 execute as @e[tag=first] store result score @s counter_1 run data get entity @s UUID[1] 1
@@ -17,8 +16,8 @@ execute as @e[tag=first] at @s run function project-c:jobaction/123/skill/2/2-po
 
 scoreboard players operation @e[tag=first] playerNumber = @s playerNumber
 scoreboard players operation @e[tag=first] teamNumber = @s teamNumber
-execute if score @s teamNumber matches 1 run team join Red @e[tag=first]
-execute if score @s teamNumber matches 2 run team join Blue @e[tag=first]
+execute if score @s teamNumber matches 1 run team join RedDummy @e[tag=first]
+execute if score @s teamNumber matches 2 run team join BlueDummy @e[tag=first]
 tag @e[tag=first] remove first
 
-data merge block 104 61 -62 {auto:1b}
+data merge block 106 61 -60 {auto:1b}

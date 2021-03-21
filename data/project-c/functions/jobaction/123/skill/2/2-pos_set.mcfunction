@@ -13,6 +13,22 @@ execute if score @s counter_1 matches 02.. at @s run tp @s ^0.4 ^ ^
 execute if score @s counter_1 matches 02.. run scoreboard players remove @s counter_1 02
 execute if score @s counter_1 matches 01.. at @s run tp @s ^0.2 ^ ^
 
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-1 ~
+execute at @s if block ~ ~-0.8 ~ #project-c:wancomatter/like_air run tp @s ~ ~-0.8 ~
+execute at @s if block ~ ~-0.4 ~ #project-c:wancomatter/like_air run tp @s ~ ~-0.4 ~
+execute at @s if block ~ ~-0.2 ~ #project-c:wancomatter/like_air run tp @s ~ ~-0.2 ~
+execute at @s if block ~ ~-0.1 ~ #project-c:wancomatter/like_air run tp @s ~ ~-0.1 ~
+
 execute at @s run particle explosion ~ ~0.4 ~ 0 0 0 1 1 force @a
 execute at @s run playsound minecraft:entity.sheep.death master @a ~ ~ ~ 4 1
 execute at @s run playsound minecraft:entity.sheep.death master @a ~ ~ ~ 3 1
