@@ -17,7 +17,6 @@ execute if entity @e[tag=034-wolf,tag=!034-Sitting,nbt={Sitting:1b}] as @e[tag=0
 execute if entity @e[tag=034-Sitting] as @e[tag=034-Sitting] run function project-c:jobaction/034/skill/0/0
 
 execute if entity @e[tag=034-wolf,nbt=!{Fire:-1s}] as @e[tag=034-wolf,nbt=!{Fire:-1s}] run data merge entity @s {Fire:-1s}
-execute if entity @e[tag=034-wolf,tag=!034-tamed,nbt=!{OwnerUUID: ""}] as @e[tag=034-wolf,tag=!034-tamed,nbt=!{OwnerUUID: ""}] run data merge entity @s {Attributes:[{Base:0.3d,Name:"generic.knockback_resistance"},{Base:0.45d,Name:"generic.movement_speed"}],Tags:["034-tamed","Battle","034-wolf"]}
 
 tag @s remove 034-playerNumber
 

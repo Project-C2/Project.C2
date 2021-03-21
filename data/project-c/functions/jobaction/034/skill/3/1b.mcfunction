@@ -16,3 +16,6 @@ particle minecraft:block dirt ~ ~ ~ 5.5 5.5 5.5 0 250 force @a
 playsound minecraft:entity.wolf.howl master @a ~ ~ ~ 1.6 1.29
 playsound minecraft:entity.wolf.howl master @a ~ ~ ~ 1.6 1.30
 playsound minecraft:entity.wolf.howl master @a ~ ~ ~ 1.6 1.31
+playsound minecraft:entity.wolf.howl master @a ~ ~ ~ 1.6 0.94
+playsound minecraft:entity.wolf.howl master @a ~ ~ ~ 1.6 0.95
+playsound minecraft:entity.wolf.howl master @a ~ ~ ~ 1.6 0.96

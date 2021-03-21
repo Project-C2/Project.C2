@@ -1,5 +1,5 @@
 scoreboard players add @s counter 1
-execute at @s unless block ^ ^ ^1 air positioned ~ ~-1 ~ run function project-c:jobaction/034/skill/3/0b
+execute at @s unless block ^ ^ ^1 #project-c:wancomatter/like_air positioned ~ ~-1 ~ run function project-c:jobaction/034/skill/3/0b
 execute if entity @s[team=RedDummy,tag=034-houndF] at @s positioned ~ ~-1 ~ if entity @e[team=!Red,tag=Battle,distance=..2.8] run function project-c:jobaction/034/skill/3/0b
 execute if entity @s[team=BlueDummy,tag=034-houndF] at @s positioned ~ ~-1 ~ if entity @e[team=!Blue,tag=Battle,distance=..2.8] run function project-c:jobaction/034/skill/3/0b
 execute at @s run tp @s ^ ^ ^1
