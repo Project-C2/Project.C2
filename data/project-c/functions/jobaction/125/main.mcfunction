@@ -11,8 +11,8 @@ execute if entity @s[scores={counter_5=1..}] run particle minecraft:end_rod ~ ~1
 execute if entity @s[scores={counter_5=1..9}] run scoreboard players add @s counter_4 1
 
 
-execute if entity @s[scores={counter_4=16..}] run scoreboard players add @s counter_5 1
-execute if entity @s[scores={counter_4=16..}] run scoreboard players set @s counter_4 1
+execute if entity @s[scores={counter_4=8..}] run scoreboard players add @s counter_5 1
+execute if entity @s[scores={counter_4=8..}] run scoreboard players set @s counter_4 1
 
 execute if entity @s[scores={counter=1}] run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 2 2
 execute if entity @s[scores={counter=1..}] run scoreboard players remove @s counter 1
@@ -26,7 +26,7 @@ scoreboard players add @e[tag=125bulletStand] counter 1
 execute if entity @e[tag=125bulletStand,scores={counter=2..}] as @e[tag=125bulletStand,scores={counter=2..}] positioned as @s run effect clear @e[distance=..3,tag=Battle] levitation
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"フィンガーキャノン","color":"white","italic":false}'}}}},scores={useCarrotStick=1..,counter=0,counter_5=0},gamemode=!spectator,nbt={OnGround:1b}] run function project-c:jobaction/125/skill/0/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"フィンガーキャノン","color":"white","italic":false}'}}}},scores={useCarrotStick=1..,counter=0,counter_5=0},gamemode=!spectator,nbt={OnGround:0b}] run function project-c:jobaction/125/skill/0/2
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"フィンガーキャノン","color":"white","italic":false}'}}}},scores={useCarrotStick=1..,counter=0,counter_5=0,sneak=1..},gamemode=!spectator,nbt={OnGround:0b}] run function project-c:jobaction/125/skill/0/2
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"レインボーブラスト","color":"white","italic":false}'}}}},scores={useCarrotStick=1..,CT1=1200..,counter_5=0},gamemode=!spectator,tag=SkillReady1] run function project-c:jobaction/125/skill/1/0
 
