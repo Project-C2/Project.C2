@@ -1,8 +1,8 @@
 scoreboard players add @s counter 1
 scoreboard players add @s counter_1 1
 
-execute if entity @s[tag=126-virvelR,scores={counter_1=11..}] run summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["126-typhoon","126-typhoonR"],Marker:1b}
-execute if entity @s[tag=126-virvelB,scores={counter_1=11..}] run summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["126-typhoon","126-typhoonB"],Marker:1b}
+execute if entity @s[tag=126-virvelR,scores={counter_1=11..}] run summon armor_stand ~ ~ ~ {NoGravity:0b,Invisible:1b,Tags:["126-typhoon","126-typhoonR"],Marker:1b}
+execute if entity @s[tag=126-virvelB,scores={counter_1=11..}] run summon armor_stand ~ ~ ~ {NoGravity:0b,Invisible:1b,Tags:["126-typhoon","126-typhoonB"],Marker:1b}
 
 execute if entity @s[scores={counter_1=11..}] run scoreboard players set @s counter_1 0
 
