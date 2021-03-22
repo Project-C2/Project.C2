@@ -1,5 +1,5 @@
 execute positioned 0.0 0.0 0.0 run summon minecraft:armor_stand ^ ^ ^0.5 {Tags:["125dummy"],Marker:1b,Invisible:1b,NoGravity:1b}
-execute anchored eyes run summon fireball ^ ^ ^1 {ExplosionPower:0,Tags:["125fireF"]}
+execute anchored eyes run summon fireball ^ ^ ^1 {ExplosionPower:1,Tags:["125fireF"]}
 
 playsound minecraft:entity.ghast.shoot master @a ~ ~ ~ 1 0
 particle flame ~ ~1 ~ 0 0 0 0.2 10
