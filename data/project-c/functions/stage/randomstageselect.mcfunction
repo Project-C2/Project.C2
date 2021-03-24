@@ -1,5 +1,4 @@
 kill @e[tag=StageRand]
-say a
 execute if score #StageRandomSwitch01 counter matches 1 run summon area_effect_cloud 0 0 0 {Radius:0f,Duration:2,Tags:["StageRand","StageRand01"]}
 execute if score #StageRandomSwitch02 counter matches 1 run summon area_effect_cloud 0 0 0 {Radius:0f,Duration:2,Tags:["StageRand","StageRand02"]}
 execute if score #StageRandomSwitch03 counter matches 1 run summon area_effect_cloud 0 0 0 {Radius:0f,Duration:2,Tags:["StageRand","StageRand03"]}
