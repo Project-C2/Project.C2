@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "Rubber Mallet","italic": false,"color": "white"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"","italic":false,"color":"yellow"}],
+                [{"text": "","italic": false,"color": "white"}]
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "name": "generic.attack_speed",
+                  "attribute": "generic.attack_speed",
+                  "operation": "addition",
+                  "amount": -2.4,
+                  "slot": "mainhand"
+                },
+                {
+                  "name": "generic.attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "amount": 3,
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:61,Unbreakable:1b,118--:0b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
