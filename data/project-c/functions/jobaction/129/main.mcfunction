@@ -22,7 +22,10 @@ execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-
 
 execute if entity @s[scores={useFungusStick=1..},gamemode=!spectator] run function project-c:jobaction/129/skill/use
 
-execute if entity @s[scores={sneak=1..},gamemode=!spectator] run function project-c:jobaction/129/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{129--:2b}}},scores={CT2=1200..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/129/skill/2/highlight
+
+
+execute if entity @s[scores={sneak=1..,CT3=1200..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/129/skill/3/0
 
 
 execute if entity @s[scores={counter=1..},gamemode=!spectator] run function project-c:jobaction/129/skill/0/1

@@ -1,9 +1,8 @@
-scoreboard players remove @s counter_2 1
-scoreboard players add @s counter_6 1
-scoreboard players add @s counter_9 1
 
-execute if score @s counter_9 matches 1 run function project-c:jobaction/118/skill/2/2
+scoreboard players remove @s counter 1
 
-execute if score @s counter_9 matches 10.. run scoreboard players reset @s counter_9
+particle dust 0.7 0 0 1 ~ ~1 ~ 0.2 0.4 0.2 0 3 force
 
-execute if score @s counter_2 matches 0 run function project-c:jobaction/118/skill/2/end
+execute unless data entity @s Passengers run function project-c:jobaction/129/skill/2/totem/break
+
+execute unless score @s counter matches 1.. run function project-c:jobaction/129/skill/2/totem/end-check

@@ -36,6 +36,9 @@ execute if entity @a[scores={deathCount=1..},tag=-118-selecting,limit=1] as @a[s
 execute if entity @a[tag=-118-selecting,limit=1] as @a[tag=-118-selecting] run function project-c:hiddenjob/-118/skill/0/keeper-search
 
 
+execute if entity @a[scores={talkVillager=1..},limit=1] as @a[scores={talkVillager=1..}] at @s run function project-c:general/talk-villager/main
+
+
 execute if entity @e[tag=experience_orb,limit=1] run kill @e[tag=experience_orb]
 
 #dummyPK?????

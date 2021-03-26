@@ -6,19 +6,17 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:warped_fungus_on_a_stick",
+          "name": "minecraft:structure_void",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": []
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": []
+              "name": [
+                {"text": "使用中","italic": false,"color": "red","bold":true}
+              ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,Unbreakable:1b,129--:-106b}"
+              "tag": "{HideFlags:63}"
             }
           ]
         }

@@ -15,13 +15,6 @@
               ]
             },
             {
-              "function": "minecraft:set_lore",
-              "lore": [
-                [{"text":"","italic":false,"color":"yellow"}],
-                [{"text": "","italic": false,"color": "white"}]
-              ]
-            },
-            {
               "function": "minecraft:set_attributes",
               "modifiers": [
                 {
