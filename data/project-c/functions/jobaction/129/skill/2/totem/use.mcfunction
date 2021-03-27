@@ -7,9 +7,12 @@ scoreboard players operation @e[tag=this] teamNumber = @s teamNumber
 scoreboard players operation @e[tag=this] stockcounter = #129- stockcounter
 scoreboard players operation @e[tag=this] counter = #129- counter
 execute store result score @e[tag=this] subcounter run data get entity @s Health 100
-execute store result score @e[tag=this] HarfHP run data get entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base 50
+execute store result score @e[tag=this] HarfHP run attribute @s minecraft:generic.max_health get
+execute as @e[tag=this] run scoreboard players operation @s HarfHP *= #100 counter
+execute as @e[tag=this] run scoreboard players operation @s HarfHP /= #2 counter
 execute as @e[tag=this] run scoreboard players operation @s subcounter -= @s HarfHP
-execute store result score @e[tag=this] counter_9 run data get entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base 25
+execute as @e[tag=this] run scoreboard players operation @s counter_9 = @s HarfHP
+execute as @e[tag=this] run scoreboard players operation @s counter_9 /= #2 counter
 
 execute at @s run playsound minecraft:entity.zombie_villager.cure master @s ~ ~ ~ 1 1.4
 execute at @s run particle minecraft:large_smoke ~ ~1 ~ 0 0 0 0.1 20 force

@@ -11,7 +11,9 @@ execute as @e[tag=129-totem-using,tag=129-2-my-tu,tag=129-2-used] if score @s co
 execute as @e[tag=129-totem-using,tag=129-2-my-tu,tag=!129-2-used] if score @s counter matches 1.. run tag @s add 129-2-using-other
 
 execute store result score #129- subcounter run data get entity @s Health 100
-execute store result score #129- HarfHP run data get entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base 50
+execute store result score #129- HarfHP run attribute @s minecraft:generic.max_health get
+scoreboard players operation #129- HarfHP *= #100 counter
+scoreboard players operation #129- HarfHP /= #2 counter
 
 execute if score #129- subcounter > #129- HarfHP unless entity @e[tag=129-2-used] unless entity @e[tag=129-2-using-other] run function project-c:jobaction/129/skill/2/totem/use
 execute unless score #129- subcounter > #129- HarfHP unless entity @e[tag=129-2-used] unless entity @e[tag=129-2-using-other] run tellraw @s [{"text":"トーテム使用不可： "},{"text":"体力が足りません","color":"#dd0000"}]

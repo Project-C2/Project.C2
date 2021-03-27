@@ -1,6 +1,6 @@
 playsound minecraft:entity.iron_golem.death master @a ~ ~ ~ 1 0.7
 playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 1 0.65
-particle minecraft:block redstone_block ~ ~ ~ 0.8 0.8 0.8 1 50 force @a
+particle minecraft:block redstone_block ~ ~1 ~ 0.2 0.4 0.2 1.5 50 force @a
 
 
 scoreboard players operation #129- stockcounter = @s stockcounter
