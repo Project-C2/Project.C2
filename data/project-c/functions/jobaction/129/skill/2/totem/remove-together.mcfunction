@@ -17,9 +17,8 @@ execute as @a[tag=129-2-end-owner] run tag @s remove SkillReady2
 execute as @a[tag=129-2-end-owner] run scoreboard players set @s usedSkill 2
 execute as @a[tag=129-2-end-owner] run tag @s remove 129-2-end-owner
 
-
-
 execute as @e[tag=kill] run kill @s
 
+scoreboard players set @s counter 1000000
 
 scoreboard players reset #129-
