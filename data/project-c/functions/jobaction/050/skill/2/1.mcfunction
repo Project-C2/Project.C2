@@ -7,10 +7,10 @@ effect give @a[scores={jobNumber=50,CT2=..1199},limit=1,sort=nearest,distance=0.
 effect give @a[scores={jobNumber=50,CT2=..1199},limit=1,sort=nearest,distance=0..3] levitation 1 0 true
 execute unless block ^ ^ ^1 air run kill @s
 
-execute as @s[tag=050-Charge,scores={counter_1=1}] at @s run summon slime ^ ^ ^ {CustomName:'"チャージドガントレット"',Size:3,Invulnerable:1,Silent:1,ActiveEffects:[{Id:14,Amplifier:0,Duration:999999}],Attributes:[{Name:"generic.attackDamage",Base:4}],Tags:["50Slime"]}
-execute as @s[tag=050-Charge,scores={counter_1=2}] at @s run summon slime ^ ^ ^ {CustomName:'"チャージドガントレット"',Size:3,Invulnerable:1,Silent:1,ActiveEffects:[{Id:14,Amplifier:0,Duration:999999}],Attributes:[{Name:"generic.attackDamage",Base:8}],Tags:["50Slime"]}
-execute as @s[tag=050-Charge,scores={counter_1=3}] at @s run summon slime ^ ^ ^ {CustomName:'"チャージドガントレット"',Size:3,Invulnerable:1,Silent:1,ActiveEffects:[{Id:14,Amplifier:0,Duration:999999}],Attributes:[{Name:"generic.attackDamage",Base:12}],Tags:["50Slime"]}
-execute as @s[tag=050-Charge,scores={counter_1=4}] at @s run summon slime ^ ^ ^ {CustomName:'"チャージドガントレット"',Size:3,Invulnerable:1,Silent:1,ActiveEffects:[{Id:14,Amplifier:0,Duration:999999}],Attributes:[{Name:"generic.attackDamage",Base:17}],Tags:["50Slime"]}
+execute as @s[tag=050-Charge,scores={counter_1=1}] at @s run summon slime ^ ^50 ^-1 {CustomName:'"チャージドガントレット"',Size:3,Invulnerable:1,Silent:1,ActiveEffects:[{Id:14,Amplifier:0,Duration:999999}],Attributes:[{Name:"generic.attackDamage",Base:4}],Tags:["50Slime"],Invisible:1b}
+execute as @s[tag=050-Charge,scores={counter_1=2}] at @s run summon slime ^ ^50 ^-1 {CustomName:'"チャージドガントレット"',Size:3,Invulnerable:1,Silent:1,ActiveEffects:[{Id:14,Amplifier:0,Duration:999999}],Attributes:[{Name:"generic.attackDamage",Base:8}],Tags:["50Slime"],Invisible:1b}
+execute as @s[tag=050-Charge,scores={counter_1=3}] at @s run summon slime ^ ^50 ^-1 {CustomName:'"チャージドガントレット"',Size:3,Invulnerable:1,Silent:1,ActiveEffects:[{Id:14,Amplifier:0,Duration:999999}],Attributes:[{Name:"generic.attackDamage",Base:12}],Tags:["50Slime"],Invisible:1b}
+execute as @s[tag=050-Charge,scores={counter_1=4}] at @s run summon slime ^ ^50 ^-1 {CustomName:'"チャージドガントレット"',Size:3,Invulnerable:1,Silent:1,ActiveEffects:[{Id:14,Amplifier:0,Duration:999999}],Attributes:[{Name:"generic.attackDamage",Base:17}],Tags:["50Slime"],Invisible:1b}
 
 teleport @e[tag=50Slime,limit=1,sort=nearest] ^ ^ ^-3.55 ~ ~
 
