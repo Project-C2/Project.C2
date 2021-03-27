@@ -16,5 +16,9 @@ scoreboard players set @a[tag=129-2-owner] OutCombat 0
 effect clear @a[tag=129-2-owner] minecraft:regeneration
 effect clear @a[tag=129-2-owner] minecraft:absorption
 execute as @a[tag=129-2-owner] at @s run particle minecraft:large_smoke ~ ~1 ~ 0 0 0 0.1 20 force
+execute as @a[tag=129-2-owner] at @s run playsound minecraft:entity.generic.burn master @a ~ ~ ~ 1 1.3
+
+execute if entity @s[tag=129-totem-using] run scoreboard players set @s counter -1
+
 
 execute as @a[tag=129-2-owner] run tag @s remove 129-2-owner

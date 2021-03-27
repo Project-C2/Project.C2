@@ -4,12 +4,12 @@ scoreboard players remove @s counter 1
 particle dust 0.2 0 0 1 ~ ~1 ~ 0.2 0.4 0.2 0 3 force
 summon minecraft:area_effect_cloud ~ ~ ~ {Duration:1,Tags:["this"]}
 execute anchored feet run tp @e[tag=this,limit=1] ^ ^ ^ ~ ~
-execute as @e[tag=this,limit=1] at @s rotated 45 -65 run function project-c:jobaction/129/skill/2/totem/particle
-execute as @e[tag=this,limit=1] at @s rotated 135 -65 run function project-c:jobaction/129/skill/2/totem/particle
-execute as @e[tag=this,limit=1] at @s rotated 225 -65 run function project-c:jobaction/129/skill/2/totem/particle
-execute as @e[tag=this,limit=1] at @s rotated 315 -65 run function project-c:jobaction/129/skill/2/totem/particle
+execute as @e[tag=this,limit=1] at @s rotated ~45 -65 run function project-c:jobaction/129/skill/2/totem/particle
+execute as @e[tag=this,limit=1] at @s rotated ~135 -65 run function project-c:jobaction/129/skill/2/totem/particle
+execute as @e[tag=this,limit=1] at @s rotated ~225 -65 run function project-c:jobaction/129/skill/2/totem/particle
+execute as @e[tag=this,limit=1] at @s rotated ~315 -65 run function project-c:jobaction/129/skill/2/totem/particle
 
-execute at @s run tp @s ~ ~ ~ ~3 0
+execute at @s run tp @s ~ ~ ~ ~1 0
 
 scoreboard players operation #129- stockcounter = @s stockcounter
 
@@ -24,10 +24,33 @@ execute as @e[tag=129-totem-set] run tag @s remove 129-totem-set
 
 
 
-particle dust 0.7 0 0 0.3 ~ ~1 ~0.3 0.2 0 0 0 2 force
-particle dust 0.7 0 0 0.3 ~ ~1 ~-0.3 0.2 0 0 0 2 force
-particle dust 0.7 0 0 0.3 ~0.3 ~1 ~ 0 0 0.2 0 2 force
-particle dust 0.7 0 0 0.3 ~-0.3 ~1 ~ 0 0 0.2 0 2 force
+execute at @s rotated ~ 0 positioned ^ ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~ 0 positioned ^0.1 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~ 0 positioned ^-0.1 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~ 0 positioned ^0.2 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~ 0 positioned ^-0.2 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+
+
+execute at @s rotated ~90 0 positioned ^ ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~90 0 positioned ^0.1 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~90 0 positioned ^-0.1 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~90 0 positioned ^0.2 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~90 0 positioned ^-0.2 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+
+
+execute at @s rotated ~180 0 positioned ^ ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~180 0 positioned ^0.1 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~180 0 positioned ^-0.1 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~180 0 positioned ^0.2 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~180 0 positioned ^-0.2 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+
+
+execute at @s rotated ~270 0 positioned ^ ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~270 0 positioned ^0.1 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~270 0 positioned ^-0.1 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~270 0 positioned ^0.2 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+execute at @s rotated ~270 0 positioned ^-0.2 ^ ^0.35 run particle dust 0.7 0 0 0.3 ~ ~1 ~ 0 0 0 0 1 force
+
 kill @e[tag=this]
 
 

@@ -22,7 +22,7 @@ scoreboard players operation @e[tag=this2-] playerNumber = @s playerNumber
 execute if entity @s[team=Red] run team join RedDummy @e[tag=this2]
 execute if entity @s[team=Blue] run team join BlueDummy @e[tag=this2]
 scoreboard players operation @e[tag=this2-] teamNumber = @s teamNumber
-scoreboard players set @e[tag=this2] Damage 10000
+scoreboard players set @e[tag=this2] HarfHP 10000
 scoreboard players operation @e[tag=this2] counter = #129- counter
 execute as @e[tag=this2] run function project-c:jobaction/129/skill/2/totem/number-set
 
