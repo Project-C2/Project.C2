@@ -17,6 +17,9 @@ execute if score @s CT3 matches 1200.. run scoreboard players set @s CT3 1200
 scoreboard players operation @s CT1 -= #129- counter
 scoreboard players operation @s CT2 -= #129- counter
 scoreboard players operation @s CT3 -= #129- counter
+tag @s remove SkillReady1
+tag @s remove SkillReady2
+tag @s remove SkillReady3
 clear @s compass{CT:1}
 clear @s compass{CT:2}
 clear @s compass{CT:3}
