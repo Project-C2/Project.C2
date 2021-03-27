@@ -4,9 +4,10 @@ scoreboard players operation #129- playerNumber = @s playerNumber
 execute as @a[tag=Battle] if score @s playerNumber = #129- playerNumber run tag @s add 129-2-owner
 
 execute as @a[tag=129-2-owner] store result score #129- counter_1 run data get entity @s AbsorptionAmount 100
-scoreboard players set #129- counter_2 1900
+scoreboard players set #129- counter_2 2100
 scoreboard players operation #129- counter_2 -= #129- counter_1
-scoreboard players operation #129- counter_3 = @s HP
+scoreboard players operation #129- counter_3 = @s subcounter
+scoreboard players operation #129- counter_3 += @s HarfHP
 scoreboard players operation #129- counter_3 -= #129- counter_2
 
 

@@ -1,5 +1,6 @@
 execute unless block ^ ^ ^0.00625 #project-c:wancomatter/like_air run tag @s add end
 execute unless block ~ ~-0.01 ~ #project-c:wancomatter/like_air run tag @s add 129-hit-block
+execute align xyz unless block ~ ~1 ~ #project-c:wancomatter/like_air run tag @s remove 129-hit-block
 execute positioned ^ ^ ^0.1 align xyz if entity @e[type=shulker,dx=0,dy=0,dz=0] run tag @s add end
 execute if entity @s[tag=129-hit-block] run tp @s ~ ~ ~
 execute if entity @s[tag=129-hit-block] run tag @s add end
