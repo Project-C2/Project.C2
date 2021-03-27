@@ -1,5 +1,5 @@
 #CT
-scoreboard players set @s CT1 1000
+scoreboard players set @s CT1 1100
 #スキル効果
 #共通
 playsound minecraft:item.totem.use master @a ~ ~ ~ 1 1.75

@@ -1,5 +1,5 @@
 #CT
-scoreboard players set @s CT2 800
+scoreboard players set @s CT2 1040
 #スキル効果
 #共通
 playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 1 0
