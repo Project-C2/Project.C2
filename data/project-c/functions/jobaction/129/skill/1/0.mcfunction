@@ -14,7 +14,6 @@ execute anchored eyes positioned ^ ^ ^ run summon item ~ ~ ~ {Owner:[I;0,0,0,0],
 tag @s add 129-anchor
 loot replace block 0 0 0 container.0 loot project-c:neac/129/silenth
 data modify entity @e[tag=this,limit=1] Item set from block 0 0 0 Items[{Slot:0b}]
-team join DarkGray @e[tag=this]
 execute store result score #129-- counter run data get entity @s SelectedItem.tag.e-time
 scoreboard players operation #129-- counter *= #20 counter
 scoreboard players operation @e[tag=this] counter = #129-- counter

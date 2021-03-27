@@ -28,6 +28,9 @@ clear @s compass{CT:3}
 
 execute at @s run playsound minecraft:entity.zombie_villager.cure master @s ~ ~ ~ 1 1.4
 execute at @s run particle smoke ~ ~1 ~ 0 0 0 0.1 30 force
+scoreboard players set @s OutCombat 0
+effect clear @s minecraft:regeneration
+execute at @s run summon arrow ~ ~2.5 ~ {damage:1.2d,Motion:[0.0,-2.0,0.0],life:1200,Color:-1}
 
 
 execute as @e[tag=this] run tag @s remove this
