@@ -36,8 +36,8 @@ tag @s[scores={sneak=1..}] add 050-sneaking
 
 function project-c:jobaction/050/skill/hook/tick
 
-execute if entity @s[scores={subcounter=0},tag=Battle] run function project-c:jobaction/050/skill/hook/load
-execute if entity @s[scores={subcounter=0},tag=Battle] run scoreboard players set @s subcounter 1
+execute if entity @s[scores={subcounter=0}] run function project-c:jobaction/050/skill/hook/load
+execute if entity @s[scores={subcounter=0}] run scoreboard players set @s subcounter 1
 
 
 # スコアボードリセット、タグ消去(最後の行)

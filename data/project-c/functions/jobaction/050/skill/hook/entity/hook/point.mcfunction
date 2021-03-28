@@ -1,9 +1,9 @@
 
 # スニーク中のみ引き寄せ
-    execute at @a if score @s H.Hook_ID.Entity = @p H.Hook_ID.Player run function project-c:jobaction/050/skill/hook/entity/hook_point/pull
+    execute at @a[scores={jobNumber=50}] if score @s H.Hook_ID.Entity = @p H.Hook_ID.Player run function project-c:jobaction/050/skill/hook/entity/hook_point/pull
 
 # 現在のブロックがなくなったら外れる
-    execute at @s[tag=!H.Hook_HookHeavy] anchored eyes if block ^ ^ ^0.25 #hyper_hook:no_collision run function project-c:jobaction/050/skill/hook/entity/hook/break
+    execute at @s[tag=!H.Hook_HookHeavy] anchored eyes if block ^ ^ ^0.25 #project-c:no_collision run function project-c:jobaction/050/skill/hook/entity/hook/break
 
 # 持ち主が遠くに行ったら外れる
     execute at @a[distance=80..] if score @s H.Hook_ID.Entity = @p H.Hook_ID.Player run function project-c:jobaction/050/skill/hook/entity/hook/break
