@@ -1,16 +1,5 @@
 #実行者     -> jobNumber = 129
 #実行地点   -> 実行者
-#counter    -> 選択プレイヤー保持用
-#counter_1    -> スキル1の使用時間
-#counter_2    -> スキル2の使用時間
-#counter_3    -> スキル1の選択プレイヤー保持
-#subcounter   -> スキル1のスパン
-#counter_4    -> スキル2の選択プレイヤー保持
-#counter_9    -> スキル2のスパン
-
-
-#counter_5    -> スキル1のチェック用
-#counter_6    -> スキル2のチェック用
 
 scoreboard players reset @s usedSkill
 
@@ -24,15 +13,7 @@ execute if entity @s[scores={useFungusStick=1..},gamemode=!spectator] run functi
 
 execute if entity @s[nbt={SelectedItem:{tag:{129--:2b}}},scores={CT2=1200..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/129/skill/2/highlight
 
-
 execute if entity @s[scores={sneak=1..,CT3=1200..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/129/skill/3/0
-
-
-execute if entity @s[scores={counter=1..},gamemode=!spectator] run function project-c:jobaction/129/skill/0/1
-
-execute if entity @s[scores={counter_1=1..},gamemode=!spectator] run function project-c:jobaction/129/skill/1/1
-execute if entity @s[scores={counter_2=1..},gamemode=!spectator] run function project-c:jobaction/129/skill/2/1
-
 
 
 #execute if entity @s[scores={relic=4}] run tag @s add job129-usage-prohibited
