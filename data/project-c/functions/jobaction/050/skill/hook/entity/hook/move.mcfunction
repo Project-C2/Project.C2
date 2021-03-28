@@ -20,7 +20,7 @@
     tag @a[tag=H.Hook_NoHit] remove H.Hook_NoHit
 
 # 壁の衝突判定
-    execute at @s anchored eyes unless block ^ ^ ^0.25 #hyper_hook:no_collision run function project-c:jobaction/050/skill/hook/entity/hook/hit
+    execute at @s anchored eyes unless block ^ ^ ^0.25 #project-c:no_collision run function project-c:jobaction/050/skill/hook/entity/hook/hit
     
 # 再帰
     execute at @s if entity @s[scores={H.Hook_Recursion=1..,H.Hook_Range=1..}] run function project-c:jobaction/050/skill/hook/entity/hook/move

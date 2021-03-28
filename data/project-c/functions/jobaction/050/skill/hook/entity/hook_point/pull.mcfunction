@@ -2,8 +2,8 @@
 # 引き寄せ
     playsound minecraft:entity.fishing_bobber.retrieve player @a ~ ~ ~ 1 0.5
     execute positioned ~3 ~ ~3 unless entity @s[dx=-6,dy=200,dz=-6] unless entity @s[dx=-6,dy=-200,dz=-6] positioned ~-3 ~0 ~-3 facing entity @s eyes run summon area_effect_cloud ^ ^ ^-0.35 {Tags:["H.Hook_Slime","H.Hook_SlimeInit"],Passengers:[{id:"minecraft:slime",Silent:1b,Invulnerable:1b,DeathTime:19,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["H.Hook_Slime","H.Hook_SlimeInit"]},{id:"minecraft:slime",Silent:1b,Invulnerable:1b,DeathTime:19,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["H.Hook_Slime","H.Hook_SlimeInit"]},{id:"minecraft:slime",Silent:1b,Invulnerable:1b,DeathTime:19,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["H.Hook_Slime","H.Hook_SlimeInit"]},{id:"minecraft:slime",Silent:1b,Invulnerable:1b,DeathTime:19,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["H.Hook_Slime","H.Hook_SlimeInit"]},{id:"minecraft:slime",Silent:1b,Invulnerable:1b,DeathTime:19,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["H.Hook_Slime","H.Hook_SlimeInit"]},{id:"minecraft:slime",Silent:1b,Invulnerable:1b,DeathTime:19,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["H.Hook_Slime","H.Hook_SlimeInit"]},{id:"minecraft:slime",Silent:1b,Invulnerable:1b,DeathTime:19,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["H.Hook_Slime","H.Hook_SlimeInit"]},{id:"minecraft:slime",Silent:1b,Invulnerable:1b,DeathTime:19,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["H.Hook_Slime","H.Hook_SlimeInit"]},{id:"minecraft:slime",Silent:1b,Invulnerable:1b,DeathTime:19,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["H.Hook_Slime","H.Hook_SlimeInit"]},{id:"minecraft:slime",Silent:1b,Invulnerable:1b,DeathTime:19,DeathLootTable:"minecraft:empty",NoAI:1b,Tags:["H.Hook_Slime","H.Hook_SlimeInit"]}]}
-    execute as @e[type=#hyper_hook:hookmover,tag=H.Hook_Slime] at @s run function project-c:jobaction/050/skill/hook/entity/mover/init
-    #kill @e[type=#hyper_hook:hookmover,tag=H.Hook_Slime]
+    execute as @e[type=#project-c:hookmover,tag=H.Hook_Slime] at @s run function project-c:jobaction/050/skill/hook/entity/mover/init
+    #kill @e[type=#project-c:hookmover,tag=H.Hook_Slime]
 
 # パーティクル
     particle minecraft:crit ~ ~ ~ 0.15 0.15 0.15 0 1
@@ -21,7 +21,7 @@
 
 # 自分のほうが低いところにいる
 # 距離によって浮遊の強弱が変わる
-    execute if score @s H.Hook_ID.Entity = @p H.Hook_ID.Player at @p[scores={H.Hook_Y.Check=..-2}] if block ~ ~2 ~ #hyper_hook:no_collision run function project-c:jobaction/050/skill/hook/entity/hook_point/float
+    execute if score @s H.Hook_ID.Entity = @p H.Hook_ID.Player at @p[scores={H.Hook_Y.Check=..-2}] if block ~ ~2 ~ #project-c:no_collision run function project-c:jobaction/050/skill/hook/entity/hook_point/float
 
 # Yスコアリセット
     scoreboard players reset @a H.Hook_Y.Check
