@@ -8,7 +8,7 @@ playsound minecraft:entity.ghast.warn master @s ~ ~ ~ 0.3 1.7
 playsound minecraft:block.piston.contract master @s ~ ~ ~ 1 0.7
 particle minecraft:smoke ~ ~1 ~ 0 0 0 0.5 20 force @a
 
-execute anchored eyes positioned ^ ^ ^ run summon item ~ ~ ~ {Owner:[I;0,0,0,0],Tags:["isItem","129-silenth","this"],Item:{id:"minecraft:stone",Count:1b},NoGravity:1b}
+execute anchored eyes positioned ^ ^ ^ run summon item ~ ~ ~ {Owner:[I;0,0,0,0],Tags:["isItem","129-silenth","this"],Item:{id:"minecraft:stone",Count:1b},NoGravity:1b,Invulnerable:1b}
 
 
 tag @s add 129-anchor
