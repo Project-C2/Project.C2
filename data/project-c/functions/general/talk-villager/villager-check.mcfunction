@@ -6,7 +6,7 @@ tag @s add talkV-anchor
 #テスト用村人のやつなので消したかったら消してくれ(?)
 execute if entity @e[tag=hit,tag=cclemon,limit=1] as @e[tag=hit,tag=cclemon] run say C C LEMON 夢ならば
 
-execute if entity @e[tag=hit,tag=129-totem,limit=1] run function project-c:jobaction/129/skill/2/totem/use-check
+execute if entity @e[tag=hit,tag=129-totemV,limit=1] run function project-c:jobaction/129/skill/2/totem/use-check
 
 
 
