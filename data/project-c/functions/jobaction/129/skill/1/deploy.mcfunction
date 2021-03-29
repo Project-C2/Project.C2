@@ -3,8 +3,7 @@ particle minecraft:dust 1 0 0 1 ~ ~ ~ 1 1 1 0 20 force
 particle minecraft:dust 0 0 0 1 ~ ~ ~ 1 1 1 0 20 force
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 1.8
 
-#summon armor_stand ~ ~-0.1 ~ {Small:1b,NoBasePlate:1b,Marker:1b,Invisible:1b,Tags:["129-silenth-pos","this"]}
-summon armor_stand ~ ~-0.3 ~ {Tags:["129-silenth-pos","this"],Invisible:1b,NoBasePlate:1b,Small:1b,Marker:1b,Passengers:[{id:"minecraft:item",Tags:["isItem","this","129-silenth","129-silenth-deploying"],Owner:[I;0,0,0,0],Glowing:1b,Invulnerable:1b,Item:{id:"minecraft:stone",Count:1b}}]}
+summon armor_stand ~ ~-0.3 ~ {Tags:["129-silenth-Am","this"],Invisible:1b,NoBasePlate:1b,Small:1b,Marker:1b,Passengers:[{id:"minecraft:item",Tags:["isItem","this","129-silenth","129-silenth-deploying"],Owner:[I;0,0,0,0],Glowing:1b,Invulnerable:1b,Item:{id:"minecraft:stone",Count:1b}}]}
 data modify entity @e[type=item,tag=this,limit=1] Item set from entity @s Item
 team join DarkGray @e[type=item,tag=this]
 scoreboard players operation @e[tag=this] playerNumber = @s playerNumber
