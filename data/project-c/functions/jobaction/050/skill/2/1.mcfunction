@@ -12,16 +12,16 @@ execute as @s[tag=050-ChargeR,scores={counter_1=1}] at @s run effect give @e[tag
 execute as @s[tag=050-ChargeR,scores={counter_1=2}] at @s run effect give @e[tag=Battle,team=Blue,distance=..3] resistance 1 1 true
 execute as @s[tag=050-ChargeR,scores={counter_1=2}] at @s run effect give @e[tag=Battle,team=Blue,distance=..3] instant_damage 1 1 true
 execute as @s[tag=050-ChargeR,scores={counter_1=3}] at @s run effect give @e[tag=Battle,team=Blue,distance=..3] instant_damage 1 1 true
-execute as @s[tag=050-ChargeR,scores={counter_1=4}] at @s run effect give @e[tag=Battle,team=Blue,distance=..4] resistance 1 0 true
-execute as @s[tag=050-ChargeR,scores={counter_1=4}] at @s run effect give @e[tag=Battle,team=Blue,distance=..4] instant_damage 1 2 true
+execute as @s[tag=050-ChargeR,scores={counter_1=4}] at @s run effect give @e[tag=Battle,team=Blue,distance=..3] resistance 1 1 true
+execute as @s[tag=050-ChargeR,scores={counter_1=4}] at @s run effect give @e[tag=Battle,team=Blue,distance=..3] instant_damage 1 2 true
 
 execute as @s[tag=050-ChargeB,scores={counter_1=1}] at @s run effect give @e[tag=Battle,team=Red,distance=..2] resistance 1 2 true
 execute as @s[tag=050-ChargeB,scores={counter_1=1}] at @s run effect give @e[tag=Battle,team=Red,distance=..2] instant_damage 1 0 true
 execute as @s[tag=050-ChargeB,scores={counter_1=2}] at @s run effect give @e[tag=Battle,team=Red,distance=..3] resistance 1 1 true
 execute as @s[tag=050-ChargeB,scores={counter_1=2}] at @s run effect give @e[tag=Battle,team=Red,distance=..3] instant_damage 1 1 true
 execute as @s[tag=050-ChargeB,scores={counter_1=3}] at @s run effect give @e[tag=Battle,team=Red,distance=..3] instant_damage 1 1 true
-execute as @s[tag=050-ChargeB,scores={counter_1=4}] at @s run effect give @e[tag=Battle,team=Red,distance=..4] resistance 1 0 true
-execute as @s[tag=050-ChargeB,scores={counter_1=4}] at @s run effect give @e[tag=Battle,team=Red,distance=..4] instant_damage 1 2 true
+execute as @s[tag=050-ChargeB,scores={counter_1=4}] at @s run effect give @e[tag=Battle,team=Red,distance=..3] resistance 1 1 true
+execute as @s[tag=050-ChargeB,scores={counter_1=4}] at @s run effect give @e[tag=Battle,team=Red,distance=..3] instant_damage 1 2 true
 
 execute unless block ^ ^ ^1 #project-c:wancomatter/like_air run kill @s
 kill @s[scores={counter=..0}]
