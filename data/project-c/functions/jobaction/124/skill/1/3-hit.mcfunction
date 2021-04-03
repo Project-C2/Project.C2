@@ -1,0 +1,4 @@
+execute if entity @s[type=!#project-c:neac/undead] run summon minecraft:area_effect_cloud ~ ~0.5 ~ {CustomName:'{"text":"高天の歌","color":"#7de0b1"}',Tags:["124dmgAEC"],Particle:"dust 0 0 0 0",Duration:5,Age:4,WaitTime:1,Radius:0.5f,Effects:[{Id:7b,Amplifier:1b,Duration:1},{Id:25b,Amplifier:9b,Duration:24},{Id:25b,Amplifier:0b,Duration:36}]}
+execute unless entity @s[type=!#project-c:neac/undead] run summon minecraft:area_effect_cloud ~ ~0.5 ~ {CustomName:'{"text":"高天の歌","color":"#7de0b1"}',Tags:["124dmgAEC"],Particle:"dust 0 0 0 0",Duration:5,Age:4,WaitTime:1,Radius:0.5f,Effects:[{Id:6b,Amplifier:1b,Duration:1},{Id:25b,Amplifier:9b,Duration:24},{Id:25b,Amplifier:0b,Duration:36}]}
+data modify entity @e[tag=124dmgAEC,limit=1,sort=nearest] Owner set from entity @e[tag=it,limit=1] Owner
+tag @e[tag=124dmgAEC] remove 124dmgAEC
