@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:scute",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "風神の詩","color":"#47bb6e","bold":true,"underlined":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:30s","italic":false,"color":"green"}],
+                  {"text":"前方に巨大な暴風の目を作る。","italic":false,"color":"white"},
+                  {"text":"周囲の敵を巻き込んで吸い込む。","italic":false,"color":"white"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{124skillID:2b,wnkmSkillCT:600,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

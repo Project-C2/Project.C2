@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "神代の射術","color":"#37998e","italic":false}
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  [{"text":"パッシブスキル","italic":false,"color":"yellow"}],
+                  {"text":"弓を引き絞らない攻撃は矢を加速させる。","italic":false,"color":"white"},
+                  {"text":"弓を引き絞る攻撃は矢の本数を追加する。","italic":false,"color":"white"},
+                  {"text":"追加で放たれる矢は威力が低い。","italic":false,"color":"white"}
+                ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{124skillID:3b,CustomPotionColor:3643790,HideFlags:32}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
