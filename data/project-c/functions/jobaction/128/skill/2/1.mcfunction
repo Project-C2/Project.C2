@@ -13,8 +13,8 @@ execute unless block ^ ^1 ^1 #project-c:wancomatter/like_air run scoreboard play
 
 execute if entity @s[scores={counter=4..}] run effect clear @a[scores={jobNumber=128,CT2=..1199},limit=1,sort=nearest,distance=0..3] slowness
 
-execute if entity @s[tag=128-ChargeR,scores={counter=4..,counter_1=0}] positioned ~ ~-0.5 ~ run effect give @e[tag=Battle,distance=..2.5,team=Blue] resistance 1 0 true
-execute if entity @s[tag=128-ChargeB,scores={counter=4..,counter_1=0}] positioned ~ ~-0.5 ~ run effect give @e[tag=Battle,distance=..2.5,team=Red] resistance 1 0 true
+execute if entity @s[tag=128-ChargeR,scores={counter=4..,counter_1=0}] positioned ~ ~-0.5 ~ run effect give @e[tag=Battle,distance=..2.5,team=Blue] resistance 1 1 true
+execute if entity @s[tag=128-ChargeB,scores={counter=4..,counter_1=0}] positioned ~ ~-0.5 ~ run effect give @e[tag=Battle,distance=..2.5,team=Red] resistance 1 1 true
 
 execute if entity @s[tag=128-ChargeR,scores={counter=4..,counter_1=0}] positioned ~ ~-0.5 ~ run effect give @e[tag=Battle,distance=..2.5,team=Blue] instant_damage 1 0 true
 execute if entity @s[tag=128-ChargeB,scores={counter=4..,counter_1=0}] positioned ~ ~-0.5 ~ run effect give @e[tag=Battle,distance=..2.5,team=Red] instant_damage 1 0 true
