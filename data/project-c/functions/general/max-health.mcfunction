@@ -12,3 +12,4 @@ execute if entity @s[scores={jobNumber=92}] run attribute @s minecraft:generic.m
 execute if entity @s[scores={jobNumber=93}] run attribute @s minecraft:generic.max_health base set 30
 execute if entity @s[scores={jobNumber=121}] run attribute @s minecraft:generic.max_health base set 32
 execute if entity @s[scores={jobNumber=125}] run attribute @s minecraft:generic.max_health base set 28
+execute if entity @s[scores={jobNumber=128}] run attribute @s minecraft:generic.max_health base set 28
