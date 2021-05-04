@@ -6,7 +6,8 @@ effect clear @s minecraft:poison
 effect clear @s minecraft:nausea
 effect clear @s minecraft:blindness
 effect clear @s minecraft:wither
-effect clear @s minecraft:regeneration
+effect clear @s[scores={OutCombat=..239}] minecraft:regeneration
 effect give @s minecraft:fire_resistance 1 2 true
-execute if entity @s[tag=!Regene] run tag @s add Regene
+
+execute if entity @s[tag=!Regene,scores={OutCombat=..239}] run tag @s add Regene
 

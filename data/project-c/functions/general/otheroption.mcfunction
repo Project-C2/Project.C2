@@ -16,8 +16,16 @@ clear @a minecraft:elytra{Damage:431} 1
 scoreboard players add @e[type=shulker_bullet] counter 1
 kill @e[type=shulker_bullet,scores={counter=80}]
 
-execute if entity @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..},limit=1] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..}] run effect clear @s regeneration
-execute if entity @a[tag=Battle,gamemode=!spectator,scores={OutCombat=240..,damageTaken=31..},limit=1] as @a[tag=Battle,gamemode=!spectator,scores={OutCombat=240..,damageTaken=31..}] run tag @s remove Regene
+execute if entity @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..},limit=1,team=Blue] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..}] at @s unless entity @a[tag=Battle,team=Red,distance=..10,gamemode=!spectator] run effect clear @s regeneration
+execute if entity @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..},limit=1,team=Blue] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..}] at @s unless entity @a[tag=Battle,team=Red,distance=..10,gamemode=!spectator] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..}] run tag @s remove Regene
+execute if entity @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..},limit=1,team=Red] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..}] at @s unless entity @a[tag=Battle,team=Blue,distance=..10,gamemode=!spectator] run effect clear @s regeneration
+execute if entity @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..},limit=1,team=Red] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..}] at @s unless entity @a[tag=Battle,team=Blue,distance=..10,gamemode=!spectator] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=31..,OutCombat=240..}] run tag @s remove Regene
+
+execute if entity @a[tag=Battle,gamemode=!spectator,scores={damageTaken=1..,OutCombat=240..},limit=1,team=Blue] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=1..,OutCombat=240..}] at @s if entity @a[tag=Battle,team=Red,distance=..10,gamemode=!spectator] run effect clear @s regeneration
+execute if entity @a[tag=Battle,gamemode=!spectator,scores={damageTaken=1..,OutCombat=240..},limit=1,team=Blue] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=1..,OutCombat=240..}] at @s if entity @a[tag=Battle,team=Red,distance=..10,gamemode=!spectator] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=1..,OutCombat=240..}] run tag @s remove Regene
+execute if entity @a[tag=Battle,gamemode=!spectator,scores={damageTaken=1..,OutCombat=240..},limit=1,team=Red] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=1..,OutCombat=240..}] at @s if entity @a[tag=Battle,team=Blue,distance=..10,gamemode=!spectator] run effect clear @s regeneration
+execute if entity @a[tag=Battle,gamemode=!spectator,scores={damageTaken=1..,OutCombat=240..},limit=1,team=Red] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=1..,OutCombat=240..}] at @s if entity @a[tag=Battle,team=Blue,distance=..10,gamemode=!spectator] as @a[tag=Battle,gamemode=!spectator,scores={damageTaken=1..,OutCombat=240..}] run tag @s remove Regene
+
 
 execute if entity @a[tag=Battle,scores={damageTaken=31..},gamemode=!spectator,limit=1] as @a[tag=Battle,scores={damageTaken=31..},gamemode=!spectator] run scoreboard players set @s OutCombat 0
 execute if entity @a[tag=Battle,team=Blue,limit=1] as @a[tag=Battle,team=Blue] at @s unless entity @a[tag=Battle,team=Red,distance=..10,gamemode=!spectator] run scoreboard players add @s OutCombat 1

@@ -21,3 +21,6 @@ execute if entity @a[scores={relic=29},limit=1,gamemode=!spectator] as @a[scores
 execute if entity @a[scores={relic=30},limit=1,gamemode=!spectator] as @a[scores={relic=30},gamemode=!spectator] at @s run function project-c:general/relic/action/30
 execute if entity @a[scores={relic=31},limit=1,gamemode=!spectator] as @a[scores={relic=31},gamemode=!spectator] at @s run function project-c:general/relic/action/31
 execute if entity @a[scores={relic=32},limit=1,gamemode=!spectator] as @a[scores={relic=32},gamemode=!spectator] at @s run function project-c:general/relic/action/32
+execute if entity @a[scores={relic=33},limit=1,gamemode=!spectator] as @a[scores={relic=33},gamemode=!spectator] at @s run function project-c:general/relic/action/33
+execute if entity @a[scores={relic=34},limit=1,gamemode=!spectator] as @a[scores={relic=34},gamemode=!spectator] at @s run function project-c:general/relic/action/34
+execute if entity @a[scores={relic=35},limit=1,gamemode=!spectator] as @a[scores={relic=35},gamemode=!spectator] at @s run function project-c:general/relic/action/35
