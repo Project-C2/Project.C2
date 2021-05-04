@@ -7,7 +7,7 @@ function project-c:jobaction/111/reloadactbar
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"Blast","color":"dark_purple","italic":false}'}}}},scores={useCarrotStick=1..,counter_1=1..,counter_3=0},gamemode=!spectator] run function project-c:jobaction/111/skill/0/0
 
-execute if entity @s[scores={counter=99}] run scoreboard players set @s counter_1 8
+execute if entity @s[scores={counter=99}] run scoreboard players set @s counter_1 6
 
 execute if entity @s[scores={counter=99}] run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 2 2
 execute if entity @s[scores={counter=99}] run particle crit ~ ~1 ~ 0 0 0 0.3 30

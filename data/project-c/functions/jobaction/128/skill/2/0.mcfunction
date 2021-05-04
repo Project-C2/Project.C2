@@ -14,8 +14,10 @@ particle explosion ~ ~1 ~ 0 0 0 0 3
 
 effect give @s slowness 1 2 true
 
-execute as @s[team=Red] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["128-Charge","128-ChargeR"],Marker:1b}
-execute as @s[team=Blue] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["128-Charge","128-ChargeB"],Marker:1b}
+execute as @s[team=Red] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["128-Charge","128-ChargeR"]}
+execute as @s[team=Blue] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["128-Charge","128-ChargeB"]}
+
+scoreboard players add @e[tag=128-Charge,limit=1,sort=nearest] counter_4 0
 
 execute as @s at @s run teleport @e[limit=1,sort=nearest,tag=128-Charge] ^ ^0.5 ^ ~ ~
 
