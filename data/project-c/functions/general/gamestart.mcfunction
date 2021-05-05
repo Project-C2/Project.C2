@@ -70,6 +70,9 @@ function project-c:hiddenjob/-118/initialize
 execute as @a run function project-c:general/max-health
 
 effect clear @a minecraft:health_boost
+execute as @a run scoreboard players operation @s MaxHP = @s HP
+execute as @a run scoreboard players operation @s HarfHP = @s HP
+execute as @a run scoreboard players operation @s HarfHP /= #2 counter
 
 tag @a[scores={jobNumber=88}] remove 088-S3-used
 scoreboard players reset @a[scores={jobNumber=88}] playerKills
