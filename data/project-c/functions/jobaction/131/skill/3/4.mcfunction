@@ -27,8 +27,8 @@ execute as @s[tag=131-GateR,scores={counter=41}] at @s run tag @e[tag=131-GateLS
 
 execute as @s[tag=131-GateB,scores={counter=41}] at @s run summon armor_stand ~ ~0.3 ~ {Marker:1b,Invisible:1b,NoGravity:1b,Tags:["131-GateLaser","131-GateLaserB","131-GateLSummon"]}
 execute as @s[tag=131-GateB,scores={counter=41}] at @s run teleport @e[tag=131-GateLSummon,limit=1,sort=nearest] ^ ^ ^ ~ ~20
-execute as @s[tag=131-GateB,scores={counter=41}] at @s run tag @e[tag=131-GateLSummon,tag=131-GateLSummon] remove 131-GateLSummon
+execute as @s[tag=131-GateB,scores={counter=41}] at @s run tag @e[tag=131-GateLSummon] remove 131-GateLSummon
 execute as @s[scores={counter=41}] at @s run particle minecraft:end_rod ^ ^ ^ 0 0 0 0.5 30 force @a
-execute as @s[scores={counter=41}] at @s run playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1 1.3
-execute as @s[scores={counter=41}] at @s run function project-c:jobaction/131/skill/3/5
+execute as @s[scores={counter=41}] at @s run playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 0.3 1.3
+execute if entity @s[scores={counter=41}] as @e[tag=131-GateLaser] at @s run function project-c:jobaction/131/skill/3/5
 kill @s[scores={counter=61..}]

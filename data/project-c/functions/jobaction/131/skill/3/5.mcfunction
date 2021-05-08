@@ -28,6 +28,6 @@ execute as @s[tag=122-phycoballHit,tag=122-phycoballB] at @s run effect give @e[
 
 execute as @s[tag=122-phycoballHit] at @s run kill @s
 
-kill @s[scores={counter=20..}]
+kill @s[scores={counter=14..}]
 
 execute if entity @e[tag=131-GateLaser,limit=1] as @e[tag=131-GateLaser] at @s run function project-c:jobaction/131/skill/3/5
