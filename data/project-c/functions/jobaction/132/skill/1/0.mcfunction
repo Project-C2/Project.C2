@@ -1,4 +1,4 @@
-scoreboard players set @s CT1 940
+scoreboard players set @s CT1 1000
 replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 13
 
 tp @s @s
