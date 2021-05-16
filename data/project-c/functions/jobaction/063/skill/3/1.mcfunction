@@ -1,49 +1,67 @@
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:1}}]}] run effect give @s instant_health 1 1
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{isItem:1b,Tier:1b,Potion:"minecraft:strong_healing"}}]}] run effect give @e[team=Red,distance=..5] instant_health 1 1
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{isItem:1b,Tier:1b,Potion:"minecraft:strong_healing"}}]}] run effect give @e[team=Blue,distance=..5] instant_health 1 1
 
-execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:2}}]}] run effect give @a[team=Red,distance=..7] instant_damage 1 0
-execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:2}}]}] run effect give @a[team=Blue,distance=..7] instant_damage 1 0
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{isItem:1b,Tier:1b,Potion:"minecraft:strong_harming"}}]}] run effect give @e[team=Red,distance=..7] instant_damage 1 1
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{isItem:1b,Tier:1b,Potion:"minecraft:strong_harming"}}]}] run effect give @e[team=Blue,distance=..7] instant_damage 1 1
 
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:3}}]}] run effect give @s strength 25 0
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"加速のスプラッシュポーション","color":"white","italic":false}'}}}]}] run effect give @e[team=Red,distance=..5] haste 30 0
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"加速のスプラッシュポーション","color":"white","italic":false}'}}}]}] run effect give @e[team=Blue,distance=..5] haste 30 0
 
-execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:4}}]}] run effect give @a[team=Red,distance=..7] mining_fatigue 15 2
-execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:4}}]}] run effect give @a[team=Blue,distance=..7] mining_fatigue 15 2
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"疲労のスプラッシュポーション","color":"white","italic":false}'}}}]}] run effect give @e[team=Blue,distance=..7] mining_fatigue 15 0
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"疲労のスプラッシュポーション","color":"white","italic":false}'}}}]}] run effect give @e[team=Red,distance=..7] mining_fatigue 15 0
 
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:5}}]}] run effect give @s regeneration 10 2
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:5}}]}] run effect give @s absorption 30 2
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"輪廻の秘薬","color":"white","italic":false,"underlined":true}'}}}]}] run effect give @s regeneration 10 2
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"輪廻の秘薬","color":"white","italic":false,"underlined":true}'}}}]}] run effect give @s absorption 30 2
 
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:6}}]}] run effect give @s speed 15 4
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"転禍の秘薬","color":"dark_red","italic":false,"underlined":true}'}}}]}] run effect give @s speed 15 4
 
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:7}}]}] run effect give @s night_vision 30 0
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:7}}]}] run effect give @s jump_boost 30 1
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:7}}]}] run effect give @s haste 30 1
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:7}}]}] run effect give @s fire_resistance 30 0
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:7}}]}] run effect give @s slow_falling 30 0
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"万象の秘薬","color":"dark_green","italic":false,"underlined":true}'}}}]}] run effect give @s resistance 30 1
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"万象の秘薬","color":"dark_green","italic":false,"underlined":true}'}}}]}] run effect give @s fire_resistance 30 0
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"万象の秘薬","color":"dark_green","italic":false,"underlined":true}'}}}]}] run effect give @s water_breathing 30 0
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"万象の秘薬","color":"dark_green","italic":false,"underlined":true}'}}}]}] run effect give @s night_vision 30 0
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"万象の秘薬","color":"dark_green","italic":false,"underlined":true}'}}}]}] run effect give @s dolphins_grace 30 0
 
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:8}}]}] run effect give @s minecraft:conduit_power 30 0
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:8}}]}] run effect give @s minecraft:water_breathing 30 0
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:8}}]}] run effect give @s minecraft:dolphins_grace 30 0
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"無双の秘薬","color":"#5900BF","italic":false,"underlined":true}'}}}]}] run effect give @s haste 15 2
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"無双の秘薬","color":"#5900BF","italic":false,"underlined":true}'}}}]}] run effect give @s strength 10 4
 
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:9}}]}] run effect give @s minecraft:absorption 120 0
-execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:9}}]}] run effect give @s minecraft:regeneration 5 1
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"お節介ポーション","color":"gray","bold":true,"italic":true,"underlined":true}'}}}]}] run effect give @e[team=Blue,distance=..7] jump_boost 30 1
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"お節介ポーション","color":"gray","bold":true,"italic":true,"underlined":true}'}}}]}] run effect give @e[team=Red,distance=..7] jump_boost 30 1
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"お節介ポーション","color":"gray","bold":true,"italic":true,"underlined":true}'}}}]}] run effect give @e[team=Blue,distance=..7] slow_falling 30 0
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"お節介ポーション","color":"gray","bold":true,"italic":true,"underlined":true}'}}}]}] run effect give @e[team=Red,distance=..7] slow_falling 30 0
 
-execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:10}}]}] run effect give @a[team=Red,distance=..7] unluck 30 0
-execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:10}}]}] run effect give @a[team=Blue,distance=..7] unluck 30 0
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"メッサヒカル","color":"#FFFF00","bold":true,"italic":false}'}}}]}] run effect give @e[team=Blue,distance=..20] glowing 45 0
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"メッサヒカル","color":"#FFFF00","bold":true,"italic":false}'}}}]}] run effect give @e[team=Red,distance=..20] glowing 45 0
 
-execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:11}}]}] run effect give @a[team=Red,distance=..7] instant_damage 1 1
-execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:11}}]}] run effect give @a[team=Blue,distance=..7] instant_damage 1 1
+execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'[{"text":"は","color":"green","bold":true,"italic":false},{"text":"て","color":"aqua"},{"text":"な","color":"red"},{"text":"ポーション","color":"gold"}]'}}}]}] run effect give @e[distance=..15,tag=!Stable] luck 1 108 true
 
-execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:12}}]}] run effect give @a[team=Red,distance=..7] glowing 30 0
-execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:12}}]}] run effect give @a[team=Blue,distance=..7] glowing 30 0
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"クリーピー","color":"dark_green","bold":true,"italic":false},{"text":"ボム","color":"#FF0000"}'}}}]}] as @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"クリーピー","color":"dark_green","bold":true,"italic":false},{"text":"ボム","color":"#FF0000"}'}}}]}] at @e[team=Blue,distance=..7,limit=1] run summon creeper ~ ~2.5 ~ {CustomNameVisible:1b,powered:1b,ExplosionRadius:1b,Fuse:35,ignited:1b,CustomName:'[{"text":"クリーピー","color":"dark_green","bold":true},{"text":"ボム","color":"#FF0000","bold":true}]',ArmorItems:[{},{},{},{id:"minecraft:creeper_head",Count:1b,tag:{AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:-100,Operation:1,UUID:[1705743174,835142992,-1581982728,-784202802],Slot:'head'}]}}],ArmorDropChances:[0.085F,0.085F,0.085F,0.085F],ActiveEffects:[{Id:11b,Amplifier:4b,Duration:1000000,ShowParticles:0b},{Id:30b,Amplifier:49b,Duration:1000000,ShowParticles:0b}],Attributes:[{Name:"generic.max_health",Base:100}]}
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"クリーピー","color":"dark_green","bold":true,"italic":false},{"text":"ボム","color":"#FF0000"}'}}}]}] as @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"クリーピー","color":"dark_green","bold":true,"italic":false},{"text":"ボム","color":"#FF0000"}'}}}]}] at @e[team=Red,distance=..7,limit=1] run summon creeper ~ ~2.5 ~ {CustomNameVisible:1b,powered:1b,ExplosionRadius:1b,Fuse:35,ignited:1b,CustomName:'[{"text":"クリーピー","color":"dark_green","bold":true},{"text":"ボム","color":"#FF0000","bold":true}]',ArmorItems:[{},{},{},{id:"minecraft:creeper_head",Count:1b,tag:{AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:-100,Operation:1,UUID:[1705743174,835142992,-1581982728,-784202802],Slot:'head'}]}}],ArmorDropChances:[0.085F,0.085F,0.085F,0.085F],ActiveEffects:[{Id:11b,Amplifier:4b,Duration:1000000,ShowParticles:0b},{Id:30b,Amplifier:49b,Duration:1000000,ShowParticles:0b}],Attributes:[{Name:"generic.max_health",Base:100}]}
+
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"禁忌・冥界落とし","color":"dark_gray","italic":false}'}}}]}] run effect give @e[team=Blue,distance=..7] instant_damage 1 1
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"禁忌・冥界落とし","color":"dark_gray","italic":false}'}}}]}] run effect give @e[team=Blue,distance=..7] weakness 10 4
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"禁忌・冥界落とし","color":"dark_gray","italic":false}'}}}]}] run effect give @e[team=Blue,distance=..7] wither 5 1
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"禁忌・冥界落とし","color":"dark_gray","italic":false}'}}}]}] run effect give @e[team=Red,distance=..7] instant_damage 1 1
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"禁忌・冥界落とし","color":"dark_gray","italic":false}'}}}]}] run effect give @e[team=Red,distance=..7] weakness 10 4
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"禁忌・冥界落とし","color":"dark_gray","italic":false}'}}}]}] run effect give @e[team=Red,distance=..7] wither 5 1
+
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:10}}]}] run effect give @e[team=Red,distance=..7] unluck 30 0
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:10}}]}] run effect give @e[team=Blue,distance=..7] unluck 30 0
+
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:11}}]}] run effect give @e[team=Red,distance=..7] instant_damage 1 1
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:11}}]}] run effect give @e[team=Blue,distance=..7] instant_damage 1 1
+
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:12}}]}] run effect give @e[team=Red,distance=..7] glowing 30 0
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:12}}]}] run effect give @e[team=Blue,distance=..7] glowing 30 0
 
 execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:13}}]}] run effect give @s minecraft:jump_boost 1 12
 
-execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @a[team=Blue,distance=..7] CT1 200
-execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @a[team=Blue,distance=..7] CT2 200
-execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @a[team=Blue,distance=..7] CT3 200
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @e[team=Blue,distance=..7] CT1 200
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @e[team=Blue,distance=..7] CT2 200
+execute if entity @s[team=Blue,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @e[team=Blue,distance=..7] CT3 200
 
-execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @a[team=Red,distance=..7] CT1 200
-execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @a[team=Red,distance=..7] CT2 200
-execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @a[team=Red,distance=..7] CT3 200
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @e[team=Red,distance=..7] CT1 200
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @e[team=Red,distance=..7] CT2 200
+execute if entity @s[team=Red,nbt={Inventory:[{Slot:5b,tag:{ItemID:14}}]}] run scoreboard players add @e[team=Red,distance=..7] CT3 200
 
 execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:15}}]}] run effect clear @s minecraft:unluck
 execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{ItemID:15}}]}] run effect clear @s minecraft:poison
