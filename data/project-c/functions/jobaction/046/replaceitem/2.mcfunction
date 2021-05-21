@@ -1,3 +1,3 @@
-replaceitem entity @s hotbar.2 minecraft:sunflower{display:{Name:'{"text":"パラス・ヘイロー","color":"yellow","italic":"false","underlined":"true"}',Lore:['{"text":"§e発動:スニーク"}','{"text":"§f治癒 Ⅱを受け、天使の輪を展開する。"}','{"text":"§f展開中はデバフを無効化し、"}','{"text":"§f効果終了時に光の矢を天使の輪から撃つ。"}','{"text":"§c※効果時間は体力に応じて変わる。(最大30秒)"}','{"text":"§aCT:30"}']}} 1
+replaceitem entity @s hotbar.2 nautilus_shell{display:{Name:'{"text":"アポカリプティックサウンド","color":"white","italic":false}',Lore:['{"text":"発動:スニーク","color":"yellow","italic":false}','{"text":"その場で飛び上がり、広範囲に連続ダメージを与える","color":"white","italic":false}','{"text":"ダメージ範囲内の飛び道具を敵味方関係なく破壊する","color":"white","italic":false}','{"text":"CT:20","color":"green","italic":false}']}} 1
 playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 tag @s add SkillReady2

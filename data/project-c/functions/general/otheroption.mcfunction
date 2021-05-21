@@ -81,7 +81,7 @@ execute if entity @a[gamemode=!spectator,tag=Battle,limit=1] as @a[gamemode=!spe
 
 function project-c:general/stagegimmick/base
 
-kill @e[type=area_effect_cloud,nbt={Effects:[{Id:30b,Amplifier:49b,ShowParticles:0b}]}]
+kill @e[type=area_effect_cloud,nbt={Effects:[{Id:26b,Amplifier:127b,ShowParticles:0b}]}]
 
 kill @e[tag=ItemVillager]
 

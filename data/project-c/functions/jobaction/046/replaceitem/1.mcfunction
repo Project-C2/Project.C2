@@ -1,3 +1,3 @@
-replaceitem entity @s hotbar.1 minecraft:diamond{display:{Name:'{"text":"イージスマージ","color":"aqua","italic":"false","underlined":"true"}',Lore:['{"text":"§e発動:8ダメージ受ける"}','{"text":"§f最大体力が8減少するが、"}','{"text":"§f発動するまで追加体力が12増加し強力なバフを受ける。"}','{"text":"§aCT:60"}']}} 1
+replaceitem entity @s hotbar.1 horn_coral{display:{Name:'{"text":"バニッシュメント","color":"white","italic":false}',Lore:['{"text":"発動:スニーク","color":"yellow","italic":false}','{"text":"周囲の敵の位置に光の柱を生み出し、","color":"white","italic":false}','{"text":"1秒後にその場に落雷を落とす","color":"white","italic":false}','{"text":"直撃した敵に発光を付与する","color":"white","italic":false}','{"text":"CT:10","color":"green","italic":false}']}} 1
 playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 tag @s add SkillReady1

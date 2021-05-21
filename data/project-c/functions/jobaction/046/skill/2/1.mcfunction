@@ -1,27 +1,30 @@
-scoreboard players remove @s counter 1
-teleport @s ~ ~ ~ ~37 ~
-particle dust 1 1 0 1 ^ ^ ^7 0.5 0.5 0.5 0 10 force @a
-particle dust 1 1 0 1 ^ ^ ^-7 0.5 0.5 0.5 0 10 force @a
-particle dust 1 1 0 1 ^7 ^ ^ 0.5 0.5 0.5 0 10 force @a
-particle dust 1 1 0 1 ^-7 ^ ^ 0.5 0.5 0.5 0 10 force @a
-kill @s[scores={counter=..0}]
-particle minecraft:firework ~ ~ ~ 7 7 7 0.1 5 force @a
-playsound minecraft:entity.blaze.ambient master @a ~ ~ ~ 0.5 1
-#Red
-execute if entity @s[tag=046-ParR] run effect clear @a[distance=..15,team=Red] minecraft:slowness
-execute if entity @s[tag=046-ParR] run effect clear @a[distance=..15,team=Red] minecraft:weakness
-execute if entity @s[tag=046-ParR] run effect clear @a[distance=..15,team=Red] minecraft:wither
-execute if entity @s[tag=046-ParR] run effect clear @a[distance=..15,team=Red] minecraft:poison
-execute if entity @s[tag=046-ParR] run effect clear @a[distance=..15,team=Red] minecraft:blindness
-#青
-execute if entity @s[tag=046-ParB] run effect clear @a[distance=..15,team=Blue] minecraft:slowness
-execute if entity @s[tag=046-ParB] run effect clear @a[distance=..15,team=Blue] minecraft:weakness
-execute if entity @s[tag=046-ParB] run effect clear @a[distance=..15,team=Blue] minecraft:wither
-execute if entity @s[tag=046-ParB] run effect clear @a[distance=..15,team=Blue] minecraft:poison
-execute if entity @s[tag=046-ParB] run effect clear @a[distance=..15,team=Blue] minecraft:blindness
-execute if entity @s[scores={counter=60}] run particle minecraft:enchant ~ ~ ~ 2 2 2 5 1000 force @a
-execute if entity @s[scores={counter=60}] run playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 5 1
-execute if entity @s[scores={counter=60}] run playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 5 1
-execute if entity @s[scores={counter=20}] run summon spectral_arrow ~ ~ ~ {NoGravity:1b,life:1200,Motion:[0.0,-0.25,0.0],Tags:["046-Arrow"],Damage:-10,Glowing:1b}
-execute if entity @s[scores={counter=20}] run playsound minecraft:entity.arrow.hit_player master @a ~ ~ ~ 2 0.45
-data merge block -71 2 -18 {auto:1b}
+scoreboard players add @a[tag=046-2] counter_2 1
+
+execute if entity @a[tag=046-2,scores={counter_2=10..45},limit=1] as @a[tag=046-2,scores={counter_2=10..45}] at @s run tp @s @s
+execute if entity @a[tag=046-2,scores={counter_2=15..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run playsound minecraft:entity.ghast.scream master @a ~ ~ ~ 1 0.75
+execute if entity @a[tag=046-2,scores={counter_2=15..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run playsound minecraft:entity.ghast.scream master @a ~ ~ ~ 1 0.5
+execute if entity @a[tag=046-2,scores={counter_2=15..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run particle minecraft:note ~ ~5 ~ 6 6 6 1 150
+execute if entity @a[tag=046-2,scores={counter_2=15..45},team=Red,limit=1] as @a[tag=046-2,team=Red,scores={counter_2=15..45}] at @s run effect give @e[distance=..10,team=Blue] wither 1 3 false
+execute if entity @a[tag=046-2,scores={counter_2=15..45},team=Blue,limit=1] as @a[tag=046-2,team=Blue,scores={counter_2=15..45}] at @s run effect give @e[distance=..10,team=Red] wither 1 3 false
+
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=potion] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=arrow] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=ender_pearl] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,tag=!sdi_d,type=armor_stand] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=fireball] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=area_effect_cloud] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=dragon_fireball] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=firework_rocket] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=spectral_arrow] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=wither_skull] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=snowball] add 046-anti_projectile
+execute if entity @a[tag=046-2,scores={counter_2=17..45},limit=1] as @a[tag=046-2,scores={counter_2=15..45}] at @s run tag @e[distance=..10,tag=!Stable,type=trident] add 046-anti_projectile
+
+execute if entity @e[tag=046-anti_projectile,limit=1] as @e[tag=046-anti_projectile] at @s run playsound minecraft:block.glass.break master @a ~ ~ ~ 0.25 1
+execute if entity @e[tag=046-anti_projectile,limit=1] as @e[tag=046-anti_projectile] at @s run particle minecraft:explosion ~ ~ ~ 0 0 0 0 0
+execute if entity @e[tag=046-anti_projectile,limit=1] as @e[tag=046-anti_projectile] at @s run kill @s
+
+execute if entity @a[tag=046-2,scores={counter_2=45},limit=1] as @a[tag=046-2,scores={counter_2=45}] at @s run tag @s add 046-2-a
+execute if entity @a[tag=046-2-a,limit=1] as @a[tag=046-2-a] at @s run scoreboard players set @s counter_2 0
+execute if entity @a[tag=046-2-a,limit=1] as @a[tag=046-2-a] at @s run tag @s remove 046-2
+execute if entity @a[tag=046-2-a,limit=1] as @a[tag=046-2-a] at @s run tag @s remove 046-2-a
