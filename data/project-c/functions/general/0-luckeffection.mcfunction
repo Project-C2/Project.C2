@@ -76,7 +76,7 @@ execute if entity @a[tag=Elixir,limit=1] run tag @a[tag=Elixir] remove Elixir
 
 
 #メルク
-execute if entity @a[tag=!extra,nbt={ActiveEffects:[{Id:26b,Amplifier:120b}]},limit=1] run tag @a[tag=!extra,nbt={ActiveEffects:[{Id:26b,Amplifier:120b}]}] add extraready
+execute if score #MerckCount counter matches 0..1 if entity @a[tag=!extra,nbt={ActiveEffects:[{Id:26b,Amplifier:120b}]},limit=1] run tag @a[tag=!extra,nbt={ActiveEffects:[{Id:26b,Amplifier:120b}]}] add extraready
 
 execute if entity @a[tag=extraready,limit=1] as @a[tag=extraready] at @s run function project-c:general/0-extrapoint
 

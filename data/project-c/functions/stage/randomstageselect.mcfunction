@@ -1,3 +1,4 @@
+kill @e[tag=StageRand]
 execute if score #StageRandomSwitch01 counter matches 1 run summon area_effect_cloud 0 0 0 {Radius:0f,Duration:2,Tags:["StageRand","StageRand01"]}
 execute if score #StageRandomSwitch02 counter matches 1 run summon area_effect_cloud 0 0 0 {Radius:0f,Duration:2,Tags:["StageRand","StageRand02"]}
 execute if score #StageRandomSwitch03 counter matches 1 run summon area_effect_cloud 0 0 0 {Radius:0f,Duration:2,Tags:["StageRand","StageRand03"]}
@@ -49,57 +50,57 @@ execute if score #StageRandomSwitch48 counter matches 1 run summon area_effect_c
 execute if score #StageRandomSwitch49 counter matches 1 run summon area_effect_cloud 0 0 0 {Radius:0f,Duration:2,Tags:["StageRand","StageRand49"]}
 execute if score #StageRandomSwitch50 counter matches 1 run summon area_effect_cloud 0 0 0 {Radius:0f,Duration:2,Tags:["StageRand","StageRand50"]}
 
+execute if score #StageRandomSwitch01 counter matches 1 run scoreboard players set @e[tag=StageRand01,limit=1] counter 1
+execute if score #StageRandomSwitch02 counter matches 1 run scoreboard players set @e[tag=StageRand02,limit=1] counter 2
+execute if score #StageRandomSwitch03 counter matches 1 run scoreboard players set @e[tag=StageRand03,limit=1] counter 3
+execute if score #StageRandomSwitch04 counter matches 1 run scoreboard players set @e[tag=StageRand04,limit=1] counter 4
+execute if score #StageRandomSwitch05 counter matches 1 run scoreboard players set @e[tag=StageRand05,limit=1] counter 5
+execute if score #StageRandomSwitch06 counter matches 1 run scoreboard players set @e[tag=StageRand06,limit=1] counter 6
+execute if score #StageRandomSwitch07 counter matches 1 run scoreboard players set @e[tag=StageRand07,limit=1] counter 7
+execute if score #StageRandomSwitch08 counter matches 1 run scoreboard players set @e[tag=StageRand08,limit=1] counter 8
+execute if score #StageRandomSwitch09 counter matches 1 run scoreboard players set @e[tag=StageRand09,limit=1] counter 9
+execute if score #StageRandomSwitch10 counter matches 1 run scoreboard players set @e[tag=StageRand10,limit=1] counter 10
+execute if score #StageRandomSwitch11 counter matches 1 run scoreboard players set @e[tag=StageRand11,limit=1] counter 11
+execute if score #StageRandomSwitch12 counter matches 1 run scoreboard players set @e[tag=StageRand12,limit=1] counter 12
+execute if score #StageRandomSwitch13 counter matches 1 run scoreboard players set @e[tag=StageRand13,limit=1] counter 13
+execute if score #StageRandomSwitch14 counter matches 1 run scoreboard players set @e[tag=StageRand14,limit=1] counter 14
+execute if score #StageRandomSwitch15 counter matches 1 run scoreboard players set @e[tag=StageRand15,limit=1] counter 15
+execute if score #StageRandomSwitch16 counter matches 1 run scoreboard players set @e[tag=StageRand16,limit=1] counter 16
+execute if score #StageRandomSwitch17 counter matches 1 run scoreboard players set @e[tag=StageRand17,limit=1] counter 17
+execute if score #StageRandomSwitch18 counter matches 1 run scoreboard players set @e[tag=StageRand18,limit=1] counter 18
+execute if score #StageRandomSwitch19 counter matches 1 run scoreboard players set @e[tag=StageRand19,limit=1] counter 19
+execute if score #StageRandomSwitch20 counter matches 1 run scoreboard players set @e[tag=StageRand20,limit=1] counter 20
+execute if score #StageRandomSwitch21 counter matches 1 run scoreboard players set @e[tag=StageRand21,limit=1] counter 21
+execute if score #StageRandomSwitch22 counter matches 1 run scoreboard players set @e[tag=StageRand22,limit=1] counter 22
+execute if score #StageRandomSwitch23 counter matches 1 run scoreboard players set @e[tag=StageRand23,limit=1] counter 23
+execute if score #StageRandomSwitch24 counter matches 1 run scoreboard players set @e[tag=StageRand24,limit=1] counter 24
+execute if score #StageRandomSwitch25 counter matches 1 run scoreboard players set @e[tag=StageRand25,limit=1] counter 25
+execute if score #StageRandomSwitch26 counter matches 1 run scoreboard players set @e[tag=StageRand26,limit=1] counter 26
+execute if score #StageRandomSwitch27 counter matches 1 run scoreboard players set @e[tag=StageRand27,limit=1] counter 27
+execute if score #StageRandomSwitch28 counter matches 1 run scoreboard players set @e[tag=StageRand28,limit=1] counter 28
+execute if score #StageRandomSwitch29 counter matches 1 run scoreboard players set @e[tag=StageRand29,limit=1] counter 29
+execute if score #StageRandomSwitch30 counter matches 1 run scoreboard players set @e[tag=StageRand30,limit=1] counter 30
+execute if score #StageRandomSwitch31 counter matches 1 run scoreboard players set @e[tag=StageRand31,limit=1] counter 31
+execute if score #StageRandomSwitch32 counter matches 1 run scoreboard players set @e[tag=StageRand32,limit=1] counter 32
+execute if score #StageRandomSwitch33 counter matches 1 run scoreboard players set @e[tag=StageRand33,limit=1] counter 33
+execute if score #StageRandomSwitch34 counter matches 1 run scoreboard players set @e[tag=StageRand34,limit=1] counter 34
+execute if score #StageRandomSwitch35 counter matches 1 run scoreboard players set @e[tag=StageRand35,limit=1] counter 35
+execute if score #StageRandomSwitch36 counter matches 1 run scoreboard players set @e[tag=StageRand36,limit=1] counter 36
+execute if score #StageRandomSwitch37 counter matches 1 run scoreboard players set @e[tag=StageRand37,limit=1] counter 37
+execute if score #StageRandomSwitch38 counter matches 1 run scoreboard players set @e[tag=StageRand38,limit=1] counter 38
+execute if score #StageRandomSwitch39 counter matches 1 run scoreboard players set @e[tag=StageRand39,limit=1] counter 39
+execute if score #StageRandomSwitch40 counter matches 1 run scoreboard players set @e[tag=StageRand40,limit=1] counter 40
+execute if score #StageRandomSwitch41 counter matches 1 run scoreboard players set @e[tag=StageRand41,limit=1] counter 41
+execute if score #StageRandomSwitch42 counter matches 1 run scoreboard players set @e[tag=StageRand42,limit=1] counter 42
+execute if score #StageRandomSwitch43 counter matches 1 run scoreboard players set @e[tag=StageRand43,limit=1] counter 43
+execute if score #StageRandomSwitch44 counter matches 1 run scoreboard players set @e[tag=StageRand44,limit=1] counter 44
+execute if score #StageRandomSwitch45 counter matches 1 run scoreboard players set @e[tag=StageRand45,limit=1] counter 45
+execute if score #StageRandomSwitch46 counter matches 1 run scoreboard players set @e[tag=StageRand46,limit=1] counter 46
+execute if score #StageRandomSwitch47 counter matches 1 run scoreboard players set @e[tag=StageRand47,limit=1] counter 47
+execute if score #StageRandomSwitch48 counter matches 1 run scoreboard players set @e[tag=StageRand48,limit=1] counter 48
+execute if score #StageRandomSwitch49 counter matches 1 run scoreboard players set @e[tag=StageRand49,limit=1] counter 49
+execute if score #StageRandomSwitch50 counter matches 1 run scoreboard players set @e[tag=StageRand50,limit=1] counter 50
+
 execute as @e[sort=random,limit=1,tag=StageRand,type=area_effect_cloud] run tag @s add StageRandSelected
-
-execute as @e[tag=StageRandSelected,tag=StageRand01] run function project-c:stage/selectstageload/01
-execute as @e[tag=StageRandSelected,tag=StageRand02] run function project-c:stage/selectstageload/02
-execute as @e[tag=StageRandSelected,tag=StageRand03] run function project-c:stage/selectstageload/03
-execute as @e[tag=StageRandSelected,tag=StageRand04] run function project-c:stage/selectstageload/04
-execute as @e[tag=StageRandSelected,tag=StageRand05] run function project-c:stage/selectstageload/05
-execute as @e[tag=StageRandSelected,tag=StageRand06] run function project-c:stage/selectstageload/06
-execute as @e[tag=StageRandSelected,tag=StageRand07] run function project-c:stage/selectstageload/07
-execute as @e[tag=StageRandSelected,tag=StageRand08] run function project-c:stage/selectstageload/08
-execute as @e[tag=StageRandSelected,tag=StageRand09] run function project-c:stage/selectstageload/09
-execute as @e[tag=StageRandSelected,tag=StageRand10] run function project-c:stage/selectstageload/10
-execute as @e[tag=StageRandSelected,tag=StageRand11] run function project-c:stage/selectstageload/11
-execute as @e[tag=StageRandSelected,tag=StageRand12] run function project-c:stage/selectstageload/12
-execute as @e[tag=StageRandSelected,tag=StageRand13] run function project-c:stage/selectstageload/13
-execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/14
-execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/15
-execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/16
-#execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/17
-#execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/18
-#execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/19
-#execute as @e[tag=StageRandSelected,tag=StageRand14] run function project-c:stage/selectstageload/20
-execute as @e[tag=StageRandSelected,tag=StageRand21] run function project-c:stage/selectstageload/21
-execute as @e[tag=StageRandSelected,tag=StageRand22] run function project-c:stage/selectstageload/22
-execute as @e[tag=StageRandSelected,tag=StageRand23] run function project-c:stage/selectstageload/23
-execute as @e[tag=StageRandSelected,tag=StageRand24] run function project-c:stage/selectstageload/24
-execute as @e[tag=StageRandSelected,tag=StageRand25] run function project-c:stage/selectstageload/25
-execute as @e[tag=StageRandSelected,tag=StageRand26] run function project-c:stage/selectstageload/26
-execute as @e[tag=StageRandSelected,tag=StageRand27] run function project-c:stage/selectstageload/27
-execute as @e[tag=StageRandSelected,tag=StageRand28] run function project-c:stage/selectstageload/28
-execute as @e[tag=StageRandSelected,tag=StageRand29] run function project-c:stage/selectstageload/29
-execute as @e[tag=StageRandSelected,tag=StageRand30] run function project-c:stage/selectstageload/30
-execute as @e[tag=StageRandSelected,tag=StageRand31] run function project-c:stage/selectstageload/31
-execute as @e[tag=StageRandSelected,tag=StageRand32] run function project-c:stage/selectstageload/32
-execute as @e[tag=StageRandSelected,tag=StageRand33] run function project-c:stage/selectstageload/33
-execute as @e[tag=StageRandSelected,tag=StageRand34] run function project-c:stage/selectstageload/34
-execute as @e[tag=StageRandSelected,tag=StageRand35] run function project-c:stage/selectstageload/35
-execute as @e[tag=StageRandSelected,tag=StageRand36] run function project-c:stage/selectstageload/36
-execute as @e[tag=StageRandSelected,tag=StageRand37] run function project-c:stage/selectstageload/37
-execute as @e[tag=StageRandSelected,tag=StageRand38] run function project-c:stage/selectstageload/38
-execute as @e[tag=StageRandSelected,tag=StageRand39] run function project-c:stage/selectstageload/39
-execute as @e[tag=StageRandSelected,tag=StageRand40] run function project-c:stage/selectstageload/40
-execute as @e[tag=StageRandSelected,tag=StageRand41] run function project-c:stage/selectstageload/41
-execute as @e[tag=StageRandSelected,tag=StageRand42] run function project-c:stage/selectstageload/42
-execute as @e[tag=StageRandSelected,tag=StageRand43] run function project-c:stage/selectstageload/43
-execute as @e[tag=StageRandSelected,tag=StageRand44] run function project-c:stage/selectstageload/44
-execute as @e[tag=StageRandSelected,tag=StageRand45] run function project-c:stage/selectstageload/45
-execute as @e[tag=StageRandSelected,tag=StageRand46] run function project-c:stage/selectstageload/46
-execute as @e[tag=StageRandSelected,tag=StageRand47] run function project-c:stage/selectstageload/47
-execute as @e[tag=StageRandSelected,tag=StageRand48] run function project-c:stage/selectstageload/48
-execute as @e[tag=StageRandSelected,tag=StageRand49] run function project-c:stage/selectstageload/49
-execute as @e[tag=StageRandSelected,tag=StageRand50] run function project-c:stage/selectstageload/50
-
-kill @e[tag=StageRand]
+execute if score #StageRandomSwitchOld counter = @e[tag=StageRandSelected,limit=1] counter run function project-c:stage/randomstageselect
+execute unless score #StageRandomSwitchOld counter = @e[tag=StageRandSelected,limit=1] counter run function project-c:stage/randomstagecheck

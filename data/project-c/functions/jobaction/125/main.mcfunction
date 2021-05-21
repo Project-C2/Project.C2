@@ -46,9 +46,6 @@ execute if entity @s[scores={subcounter=1}] run effect clear @s levitation
 scoreboard players remove @s[scores={subcounter=1..}] subcounter 1
 execute if entity @s[scores={subcounter=1..}] run execute as @e[tag=125back,distance=..5,limit=1] at @s run teleport @a[scores={jobNumber=125,subcounter=1..},limit=1,sort=nearest] ~ ~ ~
 
-execute if entity @s[scores={counter_3=0},tag=Battle] run attribute @s minecraft:generic.max_health base set 28
-execute if entity @s[scores={counter_3=0},tag=Battle] run scoreboard players set @s counter_3 1
-
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
 scoreboard players reset @s[scores={sneak=1..}] sneak
 scoreboard players reset @s[scores={aviate=1..}] aviate

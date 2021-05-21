@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": {"text": "終焉を嘆く詩","color":"#37998e","bold":true,"italic":false}
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{124skillID:0b,Unbreakable:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

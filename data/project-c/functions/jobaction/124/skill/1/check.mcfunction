@@ -1,0 +1,2 @@
+execute unless predicate project-c:wnkm_job/is_sneaking run function project-c:jobaction/124/skill/1/0
+execute if predicate project-c:wnkm_job/is_sneaking run function project-c:jobaction/124/skill/1/2

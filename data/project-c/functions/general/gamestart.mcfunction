@@ -66,10 +66,13 @@ function project-c:jobaction/106/initialize
 function project-c:jobaction/118/initialize
 function project-c:hiddenjob/-118/initialize
 
-execute as @a at @s run attribute @s minecraft:generic.max_health base set 40
+#最大体力変更(これを呼び出すだけで一括変換できます)
+execute as @a run function project-c:general/max-health
 
 effect clear @a minecraft:health_boost
+execute as @a run scoreboard players operation @s MaxHP = @s HP
+execute as @a run scoreboard players operation @s HarfHP = @s HP
+execute as @a run scoreboard players operation @s HarfHP /= #2 counter
 
 tag @a[scores={jobNumber=88}] remove 088-S3-used
 scoreboard players reset @a[scores={jobNumber=88}] playerKills
-execute as @a[scores={jobNumber=88}] at @s run attribute @s minecraft:generic.max_health base set 30

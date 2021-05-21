@@ -1,12 +1,14 @@
+execute if entity @a[scores={relic=29..32},tag=JobChanged,limit=1] run tag @a[scores={relic=29..32},tag=JobChanged] add changerelic
+
 execute as @a[tag=JobChanged] at @s run particle firework ~ ~1 ~ 0 0 0 0.3 50
 execute as @a[tag=JobChanged] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
 scoreboard players reset @a[tag=JobChanged] usedSkill
 replaceitem entity @a[tag=JobChanged] armor.chest minecraft:air
-execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] run effect clear @a[scores={relic=..31},tag=JobChanged] minecraft:regeneration
-execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] run effect clear @a[scores={relic=..31},tag=JobChanged] minecraft:invisibility
-execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] run effect clear @a[scores={relic=..31},tag=JobChanged] minecraft:jump_boost
-execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] run effect clear @a[scores={relic=..31},tag=JobChanged] minecraft:mining_fatigue
-execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] run effect clear @a[scores={relic=..31},tag=JobChanged] minecraft:speed
+execute if entity @a[tag=JobChanged,limit=1] run effect clear @a[tag=JobChanged,tag=!changerelic] minecraft:regeneration
+execute if entity @a[tag=JobChanged,limit=1] run effect clear @a[tag=JobChanged,tag=!changerelic] minecraft:invisibility
+execute if entity @a[tag=JobChanged,limit=1] run effect clear @a[tag=JobChanged,tag=!changerelic] minecraft:jump_boost
+execute if entity @a[tag=JobChanged,limit=1] run effect clear @a[tag=JobChanged,tag=!changerelic] minecraft:mining_fatigue
+execute if entity @a[tag=JobChanged,limit=1] run effect clear @a[tag=JobChanged,tag=!changerelic] minecraft:speed
 scoreboard players set @a[tag=JobChanged] Mana 0
 scoreboard players set @a[tag=JobChanged] MagicFatigue 0
 scoreboard players set @a[tag=JobChanged] stockcounter 0
@@ -50,10 +52,10 @@ tag @a[tag=JobChanged] remove SkillDelay1
 tag @a[tag=JobChanged] remove SkillDelay2
 tag @a[tag=JobChanged] remove SkillDelay3
 
-execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] as @a[scores={relic=..31},tag=JobChanged] at @s unless entity @s[scores={relic=30},tag=Battle] run scoreboard players set @s relicCount 0
-execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] run scoreboard players set @a[scores={relic=..31},tag=JobChanged] relicCount2 0
+execute if entity @a[tag=JobChanged,limit=1] as @a[tag=JobChanged] at @s unless entity @s[scores={relic=30},tag=Battle] run scoreboard players set @s relicCount 0
+execute if entity @a[tag=JobChanged,limit=1] run scoreboard players set @a[tag=!changerelic,tag=JobChanged] relicCount2 0
 scoreboard players set @a[tag=JobChanged] damageTaken 0
-execute if entity @a[scores={relic=..31},tag=JobChanged,limit=1] run effect clear @a[scores={relic=..31},tag=JobChanged] minecraft:absorption
+execute if entity @a[tag=JobChanged,limit=1] run effect clear @a[scores={relic=..31},tag=JobChanged] minecraft:absorption
 execute unless entity @a[scores={jobNumber=57},limit=1] run weather clear
 execute if entity @a[tag=JobChanged,gamemode=spectator,limit=1] run gamemode adventure @a[tag=JobChanged,gamemode=spectator]
 
