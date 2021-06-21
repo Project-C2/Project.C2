@@ -36,6 +36,8 @@ scoreboard players set @a[tag=JobChanged] counter_6 0
 scoreboard players set @a[tag=JobChanged] counter_7 0
 scoreboard players set @a[tag=JobChanged] counter_8 0
 scoreboard players set @a[tag=JobChanged] counter_9 0
+scoreboard players set @a[tag=JobChanged] 131-GateCT 0
+
 xp add @a[tag=JobChanged] -2147483648 levels
 
 scoreboard players reset @a[tag=JobChanged] Delay1

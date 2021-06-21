@@ -18,6 +18,7 @@ scoreboard players set @a[tag=!Joined] counter_3 0
 scoreboard players set @a[tag=!Joined] subcounter 0
 scoreboard players set @a[tag=!Joined] stockcounter 0
 scoreboard players set @a[tag=!Joined] Mana 0
+scoreboard players set @a[tag=!Joined] 131-GateCT 0
 
 scoreboard players set @a[tag=!Joined] recordDeathTotal 0
 scoreboard players set @a[tag=!Joined] recordElimiTotal 0

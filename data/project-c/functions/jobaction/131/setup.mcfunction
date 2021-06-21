@@ -1,0 +1,36 @@
+#職看板
+give @p oak_sign{display:{Name:'"131-輝門の守護者"'},BlockEntityTag:{Text1:'{"text":"********-131-*********","clickEvent":{"action":"run_command","value":"/scoreboard players set @s jobNumber 131"}}',Text2:'{"text":"【輝門の守護者】","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/tag @s add JobChanged"}}',Text3:'{"text":"右クリックで転職!!","clickEvent":{"action":"run_command","value":"/tellraw @s [\\"\\",{\\"text\\":\\"[システム]\\",\\"color\\":\\"white\\"},{\\"text\\":\\"輝門の守護者\\",\\"color\\":\\"white\\",\\"bold\\":true,\\"underlined\\":true},{\\"text\\":\\" に転職しました。\\",\\"color\\":\\"white\\",\\"bold\\":false,\\"underlined\\":false}]"}}',Text4:'{"text":"**********************","clickEvent":{"action":"run_command","value":"/data merge block -75 49 -123 {auto:1b}"}}'}}
+
+
+#動作必須コマブロ群
+setblock -66 61 -11 minecraft:repeating_command_block[conditional=false,facing=south]{auto:1b,powered:0b,LastExecution:35711534L,SuccessCount:5,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute as @a[scores={jobNumber=131}] at @s run function project-c:jobaction/131/main",TrackOutput:0b} destroy
+
+setblock -66 64 -11 minecraft:repeating_command_block[conditional=false,facing=south]{auto:0b,powered:0b,LastExecution:35710651L,SuccessCount:48,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute if entity @e[tag=131-Gate,limit=1] as @e[tag=131-Gate] at @s run function project-c:jobaction/131/skill/3/4",TrackOutput:0b} destroy
+
+setblock -66 64 -10 minecraft:chain_command_block[conditional=false,facing=south]{auto:1b,powered:0b,LastExecution:35710651L,SuccessCount:1,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute unless entity @e[tag=131-Gate,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
+
+setblock -64 61 -11 minecraft:repeating_command_block[conditional=false,facing=south]{auto:0b,powered:0b,LastExecution:35710386L,SuccessCount:5,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute if entity @e[tag=131-GateP,limit=1] as @e[tag=131-GateP] at @s run function project-c:jobaction/131/skill/1/4",TrackOutput:0b} destroy
+
+setblock -64 61 -10 minecraft:chain_command_block[conditional=false,facing=south]{auto:1b,powered:0b,LastExecution:35710386L,SuccessCount:1,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute unless entity @e[tag=131-GateP,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
+
+setblock -64 64 -11 minecraft:repeating_command_block[conditional=false,facing=south]{auto:0b,powered:0b,LastExecution:35710392L,SuccessCount:14,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute if entity @e[tag=131-GatePLaser,limit=1] as @e[tag=131-GatePLaser] at @s run function project-c:jobaction/131/skill/1/5",TrackOutput:0b} destroy
+
+setblock -64 64 -10 minecraft:chain_command_block[conditional=false,facing=south]{auto:1b,powered:0b,LastExecution:35710392L,SuccessCount:1,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute unless entity @e[tag=131-GatePLaser,limit=1] run data merge block ~ ~ ~-1 {auto:0b}",TrackOutput:0b} destroy
+
+setblock -62 61 -11 minecraft:repeating_command_block[conditional=false,facing=south]{auto:0b,powered:0b,LastExecution:35710673L,SuccessCount:29,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute if entity @e[tag=131-necroB] as @e[tag=131-necroB] at @s run function project-c:jobaction/131/skill/2/1",LastOutput:'{"extra":[{"translate":"commands.function.success.single","with":["56","project-c:jobaction/131/skill/2/1"]}],"text":"[23:25:53] "}',TrackOutput:1b} destroy
+
+setblock -62 61 -10 minecraft:chain_command_block[conditional=false,facing=south]{auto:1b,powered:0b,LastExecution:35710673L,SuccessCount:1,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute unless entity @e[tag=131-necroB] run data merge block ~ ~ ~-1 {auto:0b}",LastOutput:'{"extra":[{"translate":"commands.data.block.modified","with":["-62","61","-11"]}],"text":"[23:25:53] "}',TrackOutput:1b} destroy
+
+setblock -62 64 -11 minecraft:repeating_command_block[conditional=false,facing=south]{auto:0b,powered:0b,LastExecution:35710943L,SuccessCount:111,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute if entity @e[tag=131-necroC] as @e[tag=131-necroC] at @s run function project-c:jobaction/131/skill/2/2",LastOutput:'{"extra":[{"translate":"commands.function.success.single","with":["123","project-c:jobaction/131/skill/2/2"]}],"text":"[23:26:10] "}',TrackOutput:1b} destroy
+
+setblock -62 64 -10 minecraft:chain_command_block[conditional=false,facing=up]{auto:1b,powered:0b,LastExecution:35710943L,SuccessCount:1,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute unless entity @e[tag=131-necroC] run data merge block ~ ~ ~-1 {auto:0b}",LastOutput:'{"extra":[{"translate":"commands.data.block.modified","with":["-62","64","-11"]}],"text":"[23:26:10] "}',TrackOutput:1b} destroy
+
+setblock -60 61 -11 minecraft:repeating_command_block[conditional=false,facing=south]{auto:0b,powered:0b,LastExecution:35710712L,SuccessCount:37,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute if entity @e[tag=131-necroB1] as @e[tag=131-necroB1] at @s run function project-c:jobaction/131/skill/2-1/1",LastOutput:'{"extra":[{"translate":"commands.function.success.single","with":["72","project-c:jobaction/131/skill/2-1/1"]}],"text":"[23:25:55] "}',TrackOutput:1b} destroy
+
+setblock -60 61 -10 minecraft:chain_command_block[conditional=false,facing=south]{auto:1b,powered:0b,LastExecution:35710712L,SuccessCount:1,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute unless entity @e[tag=131-necroB1] run data merge block ~ ~ ~-1 {auto:0b}",LastOutput:'{"extra":[{"translate":"commands.data.block.modified","with":["-60","61","-11"]}],"text":"[23:25:55] "}',TrackOutput:1b} destroy
+
+setblock -60 64 -11 minecraft:repeating_command_block[conditional=false,facing=south]{auto:0b,powered:0b,LastExecution:35710882L,SuccessCount:112,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute if entity @e[tag=131-necroC1] as @e[tag=131-necroC1] at @s run function project-c:jobaction/131/skill/2-1/2",LastOutput:'{"extra":[{"translate":"commands.function.success.single","with":["123","project-c:jobaction/131/skill/2-1/2"]}],"text":"[23:26:04] "}',TrackOutput:1b} destroy
+
+setblock -60 64 -10 minecraft:chain_command_block[conditional=false,facing=up]{auto:1b,powered:0b,LastExecution:35710882L,SuccessCount:1,UpdateLastExecution:1b,conditionMet:1b,CustomName:'{"text":"@"}',Command:"execute unless entity @e[tag=131-necroC1] run data merge block ~ ~ ~-1 {auto:0b}",LastOutput:'{"extra":[{"translate":"commands.data.block.modified","with":["-60","64","-11"]}],"text":"[23:26:04] "}',TrackOutput:1b} destroy
+
+scoreboard objectives add 131-GateCT dummy

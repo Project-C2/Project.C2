@@ -4,4 +4,6 @@ execute if entity @s run function project-c:general/effect/checkeffect
 
 tag @s[scores={adDealt=1..}] remove 132-Buffed
 execute if entity @s[scores={adDealt=1..}] run playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 2 1
+execute if entity @s[scores={adDealt=1..}] run effect clear @s minecraft:strength
+execute if entity @s[tag=!Battle] run tag @s remove 132-Buffed
 scoreboard players reset @s[scores={adDealt=1..}] adDealt
