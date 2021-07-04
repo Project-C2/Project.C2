@@ -11,15 +11,30 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "魔導書[壱式]","italic": false,"color": "white"}
+                {
+                  "text": "魔導書[壱式]",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"text": "","italic": false},
-                {"translate": "item.modifiers.offhand","italic": false,"color": "gray"},
-                {"text": "スキル発動時、発動スキルのクールタイムを15%短縮する","italic": false,"color": "blue"}
+                {
+                  "text": "",
+                  "italic": false
+                },
+                {
+                  "translate": "item.modifiers.offhand",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "スキル発動時、発動スキルのクールタイムを15%短縮する",
+                  "italic": false,
+                  "color": "blue"
+                }
               ]
             },
             {

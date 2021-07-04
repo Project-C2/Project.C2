@@ -1,6 +1,6 @@
 {
-	"replace":false,
-	"values":[
+	"replace": false,
+	"values": [
 		"minecraft:air",
 		"minecraft:cave_air",
 		"minecraft:void_air",
@@ -96,7 +96,7 @@
 		"minecraft:green_carpet",
 		"minecraft:red_carpet",
 		"minecraft:black_carpet",
-		"minecraft:grass_path",
+		"minecraft:dirt_path",
 		"minecraft:sunflower",
 		"minecraft:lilac",
 		"minecraft:rose_bush",
@@ -104,5 +104,5 @@
 		"minecraft:tall_grass",
 		"minecraft:large_fern",
 		"minecraft:snow"
-		]
+	]
 }

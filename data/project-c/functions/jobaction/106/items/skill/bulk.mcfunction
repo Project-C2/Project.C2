@@ -11,9 +11,9 @@ execute if entity @s[tag=skill3_use] run scoreboard players operation @s CT3 = #
 scoreboard players reset #106_CT-M counter
 scoreboard players reset #106_CT counter
 
-execute if entity @s[tag=skill1_use] run replaceitem entity @s hotbar.1 air
-execute if entity @s[tag=skill2_use] run replaceitem entity @s hotbar.2 air
-execute if entity @s[tag=skill3_use] run replaceitem entity @s hotbar.3 air
+execute if entity @s[tag=skill1_use] run item replace entity @s hotbar.1 with air
+execute if entity @s[tag=skill2_use] run item replace entity @s hotbar.2 with air
+execute if entity @s[tag=skill3_use] run item replace entity @s hotbar.3 with air
 
 execute if entity @s[tag=skill1_use] run tag @s remove SkillReady1
 execute if entity @s[tag=skill2_use] run tag @s remove SkillReady2

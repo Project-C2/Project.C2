@@ -9,21 +9,52 @@
           "name": "minecraft:string",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "Grappling","color":"white","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Grappling",
+                "color": "white",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"メイン武器を持ち右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:0.5s","italic":false,"color":"green"}],
-                  {"text":"釣り針を飛ばして引っ掛け、再び右クリックで引っ張ると、","italic":false,"color":"white"},
-                  {"text":"その引っ掛けた場所方向への引っ張る力が発生し移動する。","italic":false,"color":"white"},
-                  {"text":"ダメージを受けた時、このスキルに3秒のCTが発生する。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "メイン武器を持ち右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:0.5s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "釣り針を飛ばして引っ掛け、再び右クリックで引っ張ると、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "その引っ掛けた場所方向への引っ張る力が発生し移動する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "ダメージを受けた時、このスキルに3秒のCTが発生する。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{116skillID:3b}"
+              "function": "minecraft:set_nbt",
+              "tag": "{116skillID:3b}"
             }
           ]
         }

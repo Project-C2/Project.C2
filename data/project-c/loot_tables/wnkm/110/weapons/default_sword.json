@@ -1,52 +1,73 @@
 {
-  "type": "minecraft:entity",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "type": "minecraft:entity",
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:stone_sword",
-          "functions": [
-            {
-                "function": "minecraft:set_name",
-                "name": {"text": "初期装備","color": "gray","bold": true,"italic": false}
-            },
-            {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"初期装備の石の剣。","italic":false,"color":"gold"},
-                  {"text":"これで殺されれば何らかの屈辱を味わうのかもしれない。","italic":false,"color":"gold"},
-                  {"text":"インベントリのアイテムをクリックすると装備を変更出来る。","italic":false,"color":"gold"},
-                  {"text":"※試合が始まると装備の変更が出来なくなる","italic":false,"color":"#ff0000"}
-                ]
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                  {
-                      "name": "generic.attackSpeed",
-                      "attribute": "generic.attack_speed",
-                      "operation": "addition",
-                      "amount": -2.4,
-                      "slot": "mainhand"
-                  },
-                  {
-                      "name": "generic.attackDamage",
-                      "attribute": "generic.attack_damage",
-                      "operation": "addition",
-                      "amount": 3.0,
-                      "slot": "mainhand"
-                  }
-              ]
-            },
-            {
-                "function": "minecraft:set_nbt",
-                "tag": "{110weapon:1b,110weaponID:0b,Unbreakable:1b,HideFlags:4}"
-            }
-          ]
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "初期装備",
+                                "color": "gray",
+                                "bold": true,
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "初期装備の石の剣。",
+                                    "italic": false,
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "これで殺されれば何らかの屈辱を味わうのかもしれない。",
+                                    "italic": false,
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "インベントリのアイテムをクリックすると装備を変更出来る。",
+                                    "italic": false,
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "※試合が始まると装備の変更が出来なくなる",
+                                    "italic": false,
+                                    "color": "#ff0000"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "name": "generic.attackSpeed",
+                                    "attribute": "generic.attack_speed",
+                                    "operation": "addition",
+                                    "amount": -2.4,
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "name": "generic.attackDamage",
+                                    "attribute": "generic.attack_damage",
+                                    "operation": "addition",
+                                    "amount": 3,
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{110weapon:1b,110weaponID:0b,Unbreakable:1b,HideFlags:4}"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

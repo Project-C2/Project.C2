@@ -1,6 +1,6 @@
 {
   "condition": "time_check",
-  "value":{
+  "value": {
     "min": 12500,
     "max": 23500
   }

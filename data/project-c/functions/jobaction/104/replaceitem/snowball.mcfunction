@@ -1,3 +1,3 @@
 clear @s snowball
-replaceitem entity @s weapon.offhand minecraft:snowball 2
+item replace entity @s weapon.offhand with minecraft:snowball 2
 scoreboard players set @s counter_2 0

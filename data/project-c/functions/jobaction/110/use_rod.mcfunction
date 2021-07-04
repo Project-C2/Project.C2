@@ -35,9 +35,9 @@ execute if score #110- counter_1 matches 1.. if score #110- counter_2 matches 3 
 execute if score #110- counter_1 matches 1.. if score #110- counter_2 matches 3 if score #110- counter_3 matches ..1200 run clear @s #project-c:neac/all{110skillSlot:3b}
 execute if score #110- counter_1 matches 1.. if score #110- counter_2 matches 3 if score #110- counter_3 matches ..1200 run tag @s remove SkillReady3
 
-execute if score #110- counter_2 matches 1 if score #110- counter_3 matches 960 run replaceitem entity @s container.1 compass{display:{Name:'{"text":"CoolTime"}'}} 12
-execute if score #110- counter_2 matches 2 if score #110- counter_3 matches 960 run replaceitem entity @s container.2 compass{display:{Name:'{"text":"CoolTime"}'}} 12
-execute if score #110- counter_2 matches 3 if score #110- counter_3 matches 960 run replaceitem entity @s container.3 compass{display:{Name:'{"text":"CoolTime"}'}} 12
+execute if score #110- counter_2 matches 1 if score #110- counter_3 matches 960 run item replace entity @s container.1 with compass{display:{Name:'{"text":"CoolTime"}'}} 12
+execute if score #110- counter_2 matches 2 if score #110- counter_3 matches 960 run item replace entity @s container.2 with compass{display:{Name:'{"text":"CoolTime"}'}} 12
+execute if score #110- counter_2 matches 3 if score #110- counter_3 matches 960 run item replace entity @s container.3 with compass{display:{Name:'{"text":"CoolTime"}'}} 12
 
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
 scoreboard players reset #110-

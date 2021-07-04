@@ -9,19 +9,43 @@
           "name": "minecraft:blue_concrete_powder",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"translate": "ゲーミングシープ-Type:MPK","color":"#3C44AA","bold":true,"italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "ゲーミングシープ-Type:MPK",
+                "color": "#3C44AA",
+                "bold": true,
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:50s","italic":false,"color":"green"}],
-                  {"text":"スペクテイター化し、虹色の羊を大量に発射する。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:50s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "スペクテイター化し、虹色の羊を大量に発射する。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{123skillID:2b,wnkmSkillCT:200}"
+              "function": "minecraft:set_nbt",
+              "tag": "{123skillID:2b,wnkmSkillCT:200}"
             }
           ]
         }

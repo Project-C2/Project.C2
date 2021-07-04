@@ -11,7 +11,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"機甲部�
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"機甲部隊の超臨界","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,tag=Battle,gamemode=!spectator] run function project-c:jobaction/080/skill/2/0
 
-replaceitem entity @s[scores={crossbow=1..}] hotbar.4 minecraft:arrow
+item replace entity @s[scores={crossbow=1..}] hotbar.4 with minecraft:arrow
 
 scoreboard players add @s[scores={counter_2=1..}] counter_2 1
 execute if entity @s[scores={counter_2=1..}] run tp @s @s

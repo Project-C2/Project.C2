@@ -9,22 +9,46 @@
           "name": "minecraft:blaze_powder",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "陽炎","color":"red","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "陽炎",
+                "color": "red",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / CT:9","italic":false,"color":"aqua"},
-                  {"text":"周囲に炎を撒いて攻撃すると同時に、","italic":false,"color":"white"},
-                  {"text":"一瞬だけ透明化して移動速度が大幅上昇。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "右クリック / CT:9",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "周囲に炎を撒いて攻撃すると同時に、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "一瞬だけ透明化して移動速度が大幅上昇。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110skillID:20b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110skillID:20b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
             }
           ]
         }

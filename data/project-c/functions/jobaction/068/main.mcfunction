@@ -16,8 +16,8 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"バルジ�
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"重爆撃機フォボスZ プラン4","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,useSnowball=1..,counter_4=100..},tag=SkillReady3,gamemode=!spectator,tag=Battle] run function project-c:jobaction/068/skill/3/0
 
-replaceitem entity @s[scores={useSnowball=1..,counter_1=0}] weapon.offhand minecraft:snowball
-replaceitem entity @s[scores={counter_1=1}] weapon.offhand minecraft:snowball
+item replace entity @s[scores={useSnowball=1..,counter_1=0}] weapon.offhand with minecraft:snowball
+item replace entity @s[scores={counter_1=1}] weapon.offhand with minecraft:snowball
 scoreboard players remove @s[scores={counter_1=1..}] counter_1 1
 
 scoreboard players add @s[scores={counter_4=..99},tag=Battle] counter_4 1

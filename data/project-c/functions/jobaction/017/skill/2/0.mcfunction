@@ -1,5 +1,5 @@
 scoreboard players set @s CT2 1000
-replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 2
+item replace entity @s hotbar.2 with minecraft:compass{display:{Name:'"CoolTime"'}} 2
 
 scoreboard players set @s counter_2 1
 scoreboard players set @s counter_4 1

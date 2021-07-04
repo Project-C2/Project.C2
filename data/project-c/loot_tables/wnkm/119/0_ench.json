@@ -9,42 +9,77 @@
           "name": "minecraft:iron_sword",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "Katana","color":"#feeeed","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Katana",
+                "color": "#feeeed",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"text":"戦闘外判定時、ダメージ増加5のエンチャントが付与される。","italic":false,"color":"gray"},
+                {
+                  "text": "戦闘外判定時、ダメージ増加5のエンチャントが付与される。",
+                  "italic": false,
+                  "color": "gray"
+                },
                 "",
-                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:1s","italic":false,"color":"green"}],
-                {"text":"視線先の自身の花びらを爆発させて攻撃。","italic":false,"color":"white"},
-                {"text":"失敗時は自身の花びらを発光させる。","italic":false,"color":"white"},
-                {"text":"花びらは召喚後から20秒で消滅する。","italic":false,"color":"white"}
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:1s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "視線先の自身の花びらを爆発させて攻撃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "失敗時は自身の花びらを発光させる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "花びらは召喚後から20秒で消滅する。",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                  {
-                      "name": "generic.attackSpeed",
-                      "attribute": "generic.attack_speed",
-                      "operation": "addition",
-                      "amount": -2.0,
-                      "slot": "mainhand"
-                  },
-                  {
-                      "name": "generic.attackDamage",
-                      "attribute": "generic.attack_damage",
-                      "operation": "addition",
-                      "amount": 3.0,
-                      "slot": "mainhand"
-                  }
+                {
+                  "name": "generic.attackSpeed",
+                  "attribute": "generic.attack_speed",
+                  "operation": "addition",
+                  "amount": -2,
+                  "slot": "mainhand"
+                },
+                {
+                  "name": "generic.attackDamage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "amount": 3,
+                  "slot": "mainhand"
+                }
               ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:5s}],119skillID:0b,Unbreakable:1b}"
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:5s}],119skillID:0b,Unbreakable:1b}"
             }
           ]
         }

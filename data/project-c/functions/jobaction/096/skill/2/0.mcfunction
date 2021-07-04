@@ -1,5 +1,5 @@
 scoreboard players set @s CT2 900
-replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 15
+item replace entity @s hotbar.2 with minecraft:compass{display:{Name:'"CoolTime"'}} 15
 scoreboard players set @s counter_1 100
 
 summon minecraft:creeper ~ -10 ~ {Tags:["this"],ExplosionRadius:1,Fuse:0,PersistenceRequired:1b,Invulnerable:1b}
@@ -21,7 +21,7 @@ particle minecraft:witch ~ ~0.1 ~ 4 0.05 4 1 400 normal @a
 particle minecraft:witch ~ ~0.1 ~ 2 0 2 1 100 force @a
 
 effect give @s minecraft:slow_falling 1 0
-replaceitem entity @s armor.feet minecraft:chainmail_boots{Enchantments:[{id:"binding_curse",lvl:1s},{id:"blast_protection",lvl:10s}],AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"096",Slot:"feet",UUID:[I;0,96,0,96],Amount:1d,Operation:0}]}
+item replace entity @s armor.feet with minecraft:chainmail_boots{Enchantments:[{id:"binding_curse",lvl:1s},{id:"blast_protection",lvl:10s}],AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"096",Slot:"feet",UUID:[I;0,96,0,96],Amount:1d,Operation:0}]}
 tag @s add 096backstep
 schedule function project-c:jobaction/096/skill/2/0- 2t replace
 tag @s remove SkillReady2

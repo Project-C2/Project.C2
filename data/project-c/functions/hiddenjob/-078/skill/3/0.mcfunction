@@ -17,7 +17,7 @@ title @s title ["",{"text":"忍","bold":true,"color":"white"}]
 function project-c:hiddenjob/-078/replaceitem/0
 execute if entity @s[scores={CT1=1200..}] run function project-c:hiddenjob/-078/replaceitem/1
 execute if entity @s[scores={CT2=1200..}] run function project-c:hiddenjob/-078/replaceitem/2
-replaceitem entity @s weapon.offhand minecraft:snowball
+item replace entity @s weapon.offhand with minecraft:snowball
 
 #リセット
 tag @s remove SkillReady3

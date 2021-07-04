@@ -6,6 +6,6 @@ execute at @s anchored eyes run tp @e[tag=034-houndF] ^ ^ ^ ~ ~
 execute as @e[tag=034-houndF] run function project-c:jobaction/034/skill/3/0a
 kill @e[tag=034-houndF]
 
-replaceitem entity @s hotbar.3 compass{display:{Name:'"CoolTime"'}} 40
+item replace entity @s hotbar.3 with compass{display:{Name:'"CoolTime"'}} 40
 tag @s remove SkillReady3
 scoreboard players set @s usedSkill 3

@@ -11,16 +11,36 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "ボム","italic": false,"color": "white"}
+                {
+                  "text": "ボム",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"text": "タイプ：アクティブ","italic": false,"color": "green"},
-                {"text": "トリガ：スニーク","italic": false,"color": "yellow"},
-                {"text": "クールタイム：10秒","italic": false,"color": "aqua"},
-                {"text": "ボムを設置する","italic": false,"color": "dark_purple"}
+                {
+                  "text": "タイプ：アクティブ",
+                  "italic": false,
+                  "color": "green"
+                },
+                {
+                  "text": "トリガ：スニーク",
+                  "italic": false,
+                  "color": "yellow"
+                },
+                {
+                  "text": "クールタイム：10秒",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "ボムを設置する",
+                  "italic": false,
+                  "color": "dark_purple"
+                }
               ]
             },
             {

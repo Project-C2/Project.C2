@@ -87,7 +87,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{job99_skill:3b}}},scores={CT3=1200.
 execute if entity @s[scores={counter_3=4..}] run effect give @s speed 1 0 true
 
 execute if entity @s[scores={useSnowball=1..}] run kill @e[type=snowball,distance=..5,limit=1,sort=nearest]
-execute if entity @s[scores={useSnowball=1..}] run replaceitem entity @s weapon.offhand minecraft:snowball 1
+execute if entity @s[scores={useSnowball=1..}] run item replace entity @s weapon.offhand with minecraft:snowball 1
 scoreboard players reset @s[scores={useSnowball=1..}] useSnowball
 scoreboard players reset @s[scores={playerKills=1..}] playerKills
 scoreboard players reset @s[scores={damageDealt=1..}] damageDealt

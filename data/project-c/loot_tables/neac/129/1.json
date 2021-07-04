@@ -11,16 +11,48 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "サイレンス","italic": false,"color": "#990000","bold":true}
+                {
+                  "text": "サイレンス",
+                  "italic": false,
+                  "color": "#990000",
+                  "bold": true
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:13s","italic":false,"color":"green"}],
-                {"text": "サイレンスを飛ばす。","italic": false,"color": "white"},
-                {"text": "接地と同時に展開し、5秒間展開を継続する。","italic": false,"color": "white"},
-                {"text": "一度だけ敵に2ダメージとCT増加を与える。","italic": false,"color": "white"}
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:13s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "サイレンスを飛ばす。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "接地と同時に展開し、5秒間展開を継続する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "一度だけ敵に2ダメージとCT増加を与える。",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {

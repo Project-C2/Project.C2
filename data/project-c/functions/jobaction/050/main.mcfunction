@@ -30,7 +30,7 @@ execute if entity @s[scores={sneak=..0}] run scoreboard players set @s counter_3
 execute if entity @s[scores={sneak=..0}] run scoreboard players set @s counter_2 0
 execute if entity @s[scores={sneak=..0}] run scoreboard players set @s Mana 0
 tag @s[scores={sneak=..0}] remove 050-sneaking
-execute if entity @s[scores={sneak=..0}] run replaceitem entity @s[scores={CT2=1200..}] hotbar.2 minecraft:cyan_dye{display:{Name:'{"text":"チャージドガントレット","color":"gray","italic":"false"}',Lore:['{"text":"§e発動:スニーク長押し"}','{"text":"§f前方に放たれ、通りかかった敵に大ダメージを与える。"}','{"text":"§fチャージした時間に応じて威力と距離が増す。"}','{"text":"§aCT:8"}']}} 1
+execute if entity @s[scores={sneak=..0}] run item replace entity @s[scores={CT2=1200..}] hotbar.2 with minecraft:cyan_dye{display:{Name:'{"text":"チャージドガントレット","color":"gray","italic":"false"}',Lore:['{"text":"§e発動:スニーク長押し"}','{"text":"§f前方に放たれ、通りかかった敵に大ダメージを与える。"}','{"text":"§fチャージした時間に応じて威力と距離が増す。"}','{"text":"§aCT:8"}']}} 1
 
 tag @s[scores={sneak=1..}] add 050-sneaking
 

@@ -9,7 +9,7 @@ data merge block -37 2 91 {auto:1b}
 
 execute positioned ~ ~0.3 ~ rotated ~ 0 positioned ^ ^ ^0.3 run function project-c:jobaction/089/skill/1/slash_tp
 scoreboard players remove @s CT1 200
-replaceitem entity @s container.1 minecraft:air
+item replace entity @s container.1 with minecraft:air
 
 playsound minecraft:entity.lightning_bolt.impact master @a ^ ^ ^2.5 1 1.6
 playsound minecraft:entity.lightning_bolt.thunder master @a ^ ^ ^2.5 1 1.6

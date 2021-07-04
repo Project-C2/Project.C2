@@ -10,7 +10,7 @@ scoreboard players set @s counter_3 0
 scoreboard players set @s subcounter 0
 scoreboard players set @s Mana
 
-replaceitem entity @s hotbar.4 minecraft:gray_stained_glass_pane 1
+item replace entity @s hotbar.4 with minecraft:gray_stained_glass_pane 1
 
 #リセット
 tag @s remove SkillReady1

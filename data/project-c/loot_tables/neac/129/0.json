@@ -11,7 +11,11 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "皮剥ぎ","italic": false,"color": "white"}
+                {
+                  "text": "皮剥ぎ",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {

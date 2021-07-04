@@ -11,7 +11,11 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "(スロット1)","italic": false,"color": "blue"}
+                {
+                  "text": "(スロット1)",
+                  "italic": false,
+                  "color": "blue"
+                }
               ]
             }
           ]

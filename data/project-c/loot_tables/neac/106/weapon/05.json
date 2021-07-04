@@ -11,14 +11,26 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "クロスボウ","italic": false,"color": "white"}
+                {
+                  "text": "クロスボウ",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"text": "矢を追加で1本消費して、","italic": false,"color": "dark_purple"},
-                {"text": "発射速度上昇と貫通の効果を付与する","italic": false,"color": "dark_purple"}
+                {
+                  "text": "矢を追加で1本消費して、",
+                  "italic": false,
+                  "color": "dark_purple"
+                },
+                {
+                  "text": "発射速度上昇と貫通の効果を付与する",
+                  "italic": false,
+                  "color": "dark_purple"
+                }
               ]
             },
             {

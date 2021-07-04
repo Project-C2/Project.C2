@@ -1,10 +1,10 @@
 {
-	"criteria":{
-		"dummy":{
-			"trigger":"inventory_changed"
+	"criteria": {
+		"dummy": {
+			"trigger": "inventory_changed"
 		}
 	},
-	"rewards":{
-		"function":"project-c:jobaction/073/general/tickbuffer"
+	"rewards": {
+		"function": "project-c:jobaction/073/general/tickbuffer"
 	}
 }

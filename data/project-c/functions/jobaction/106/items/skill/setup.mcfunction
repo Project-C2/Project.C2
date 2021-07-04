@@ -6,12 +6,15 @@ execute if entity @s[tag=SkillDelay3] run tag @s remove SkillDelay3
 
 execute if entity @s[tag=!SkillReady1] at @s if score @s CT1 matches 1200.. run playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 execute if entity @s[tag=!SkillReady1] at @s if score @s CT1 matches 1200.. run tag @s add SkillReady1
+item replace entity @s enderchest.1 from entity @s container.1
 
 execute if entity @s[tag=!SkillReady2] at @s if score @s CT2 matches 1200.. run playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 execute if entity @s[tag=!SkillReady2] at @s if score @s CT2 matches 1200.. run tag @s add SkillReady2
+item replace entity @s enderchest.2 from entity @s container.2
 
 execute if entity @s[tag=!SkillReady3] at @s if score @s CT3 matches 1200.. run playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 execute if entity @s[tag=!SkillReady3] at @s if score @s CT3 matches 1200.. run tag @s add SkillReady3
+item replace entity @s enderchest.3 from entity @s container.3
 
 
 

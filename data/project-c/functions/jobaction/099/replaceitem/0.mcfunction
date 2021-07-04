@@ -9,9 +9,10 @@ function project-c:jobaction/099/replaceitem/0-1
 
 
 
-replaceitem entity @s weapon.offhand minecraft:snowball 1
+item replace entity @s weapon.offhand with minecraft:snowball 1
 function project-c:jobaction/099/replaceitem/4
 
 
 
 scoreboard players reset @s drop
+item replace entity @s enderchest.0 from entity @s container.0

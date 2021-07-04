@@ -11,14 +11,38 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "ストーカー","italic": false,"color": "#dd0000","bold":true}
+                {
+                  "text": "ストーカー",
+                  "italic": false,
+                  "color": "#dd0000",
+                  "bold": true
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"text":"パッシブ","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:-","italic":false,"color":"green"}],
-                {"text": "スニーク時、移動速度上昇と跳躍力上昇を得る。","italic": false,"color": "white"}
+                [
+                  {
+                    "text": "パッシブ",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:-",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "スニーク時、移動速度上昇と跳躍力上昇を得る。",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {

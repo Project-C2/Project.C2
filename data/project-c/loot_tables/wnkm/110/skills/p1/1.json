@@ -9,26 +9,66 @@
           "name": "minecraft:blaze_rod",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "火炎弾","color":"red","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "火炎弾",
+                "color": "red",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / CT:2.5 / 追加入力可能:1回(1.2秒)","italic":false,"color":"aqua"},
-                  {"text":"燃え盛る火の玉を放って攻撃。","italic":false,"color":"white"},
-                  {"text":"ブロックに着弾し小爆破を起こす。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"追加入力効果 / 右クリック / CT:3.5","italic":false,"color":"aqua"},
-                  {"text":"左右から敵を自動的に狙う火の玉を発射。","italic":false,"color":"white"},
-                  {"text":"","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "右クリック / CT:2.5 / 追加入力可能:1回(1.2秒)",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "燃え盛る火の玉を放って攻撃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "ブロックに着弾し小爆破を起こす。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "追加入力効果 / 右クリック / CT:3.5",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "左右から敵を自動的に狙う火の玉を発射。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110skillID:1b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110skillID:1b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
             }
           ]
         }

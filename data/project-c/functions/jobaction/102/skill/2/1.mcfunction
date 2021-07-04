@@ -1,5 +1,5 @@
 scoreboard players set @s CT2 1000
-replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 10
+item replace entity @s hotbar.2 with minecraft:compass{display:{Name:'"CoolTime"'}} 10
 
 effect give @e[tag=102skeleton_mine] instant_damage 3 0
 execute at @e[tag=102skeleton_mine] run tp @s ~ ~ ~

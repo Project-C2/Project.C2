@@ -14,7 +14,7 @@ clear @s minecraft:elytra
 
 effect give @s minecraft:levitation 4 0 true
 
-replaceitem entity @s armor.chest minecraft:air
+item replace entity @s armor.chest with minecraft:air
 
 execute anchored eyes run summon minecraft:armor_stand ^ ^ ^0.5 {Tags:["094fire","094fireF"],Invisible:1b,NoGravity:1b}
 

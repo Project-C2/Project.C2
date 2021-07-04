@@ -11,24 +11,86 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "デストーテム","italic": false,"color": "#550000","bold":true}
+                {
+                  "text": "デストーテム",
+                  "italic": false,
+                  "color": "#550000",
+                  "bold": true
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"展開終了時CT:30s","italic":false,"color":"green"}],
-                {"text": "視点先に破壊可能なデストーテムを設置する。","italic": false,"color": "white"},
-                {"text": "トーテムを右クリックでデスプロテクション状態になる。","italic": false,"color": "white"},
-                {"text": "トーテムは一定時間後、使用者がいなければ破壊される。","italic": false,"color": "white"},
-                {"text": ""},
-                {"text": "-- デスプロテクション --","italic": false,"color": "yellow"},
-                {"text": "体力が半分より多い時に使用可能。","italic": false,"color": "white"},
-                {"text": "25秒の間、金ハート10個状態になる。","italic": false,"color": "white"},
-                {"text": "金ハート消失時、使用開始時の体力が75%以上であれば75%、","italic": false,"color": "white"},
-                {"text": "それ以下であればその体力で使用開始位置に戻る。","italic": false,"color": "white"},
-                {"text": "効果時間が終了すると、","italic": false,"color": "white"},
-                {"text": "使用開始時の体力から受けた分を差し引いた体力になる。","italic": false,"color": "white"}
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "展開終了時CT:30s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "視点先に破壊可能なデストーテムを設置する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "トーテムを右クリックでデスプロテクション状態になる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "トーテムは一定時間後、使用者がいなければ破壊される。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "-- デスプロテクション --",
+                  "italic": false,
+                  "color": "yellow"
+                },
+                {
+                  "text": "体力が半分より多い時に使用可能。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "25秒の間、金ハート10個状態になる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "金ハート消失時、使用開始時の体力が75%以上であれば75%、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "それ以下であればその体力で使用開始位置に戻る。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "効果時間が終了すると、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "使用開始時の体力から受けた分を差し引いた体力になる。",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {

@@ -14,8 +14,10 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "item": "minecraft:air",
-                    "nbt": "{inv_copy:1b}"
+                    "nbt": "{inv_copy:1b}",
+                    "items": [
+                      "minecraft:air"
+                    ]
                   }
                 }
               ]

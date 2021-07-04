@@ -11,7 +11,12 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "使用中","italic": false,"color": "red","bold":true}
+                {
+                  "text": "使用中",
+                  "italic": false,
+                  "color": "red",
+                  "bold": true
+                }
               ]
             },
             {

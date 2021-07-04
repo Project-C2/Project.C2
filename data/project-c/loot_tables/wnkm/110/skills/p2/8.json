@@ -9,24 +9,56 @@
           "name": "minecraft:heart_of_the_sea",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "瞑想","color":"light_purple","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "瞑想",
+                "color": "light_purple",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / CT:30","italic":false,"color":"aqua"},
-                  {"text":"その場で瞑想し、盲目になるが、動かない限り","italic":false,"color":"white"},
-                  {"text":"2秒毎にHPを4, CTを2回復する。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"瞑想中に攻撃を受けるとダメージが2倍になり、","italic":false,"color":"white"},
-                  {"text":"瞑想が強制解除され一定時間の移動阻害が発生する。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "右クリック / CT:30",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "その場で瞑想し、盲目になるが、動かない限り",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "2秒毎にHPを4, CTを2回復する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "瞑想中に攻撃を受けるとダメージが2倍になり、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "瞑想が強制解除され一定時間の移動阻害が発生する。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110skillID:8b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110skillID:8b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
             }
           ]
         }

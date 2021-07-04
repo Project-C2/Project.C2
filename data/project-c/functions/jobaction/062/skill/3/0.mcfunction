@@ -1,6 +1,6 @@
 #CT
 scoreboard players set @s CT3 -1200
-replaceitem entity @s hotbar.3 minecraft:air
+item replace entity @s hotbar.3 with minecraft:air
 tellraw @a ["",{"text":"<"},{"selector":"@s"},{"text":"> "},{"text":"人符「未来永劫斬」","bold":true}]
 particle minecraft:firework ~ ~1 ~ 0.1 0.1 0.1 1 100 force
 playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 2 0

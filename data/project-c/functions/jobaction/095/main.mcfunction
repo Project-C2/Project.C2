@@ -27,7 +27,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"この世�
 execute if entity @s[nbt={SelectedItem:{tag:{095weapon:1b}}},scores={useSnowball=1..},gamemode=!spectator] if entity @s[nbt={RootVehicle:{Entity:{Passengers:[{id:"minecraft:horse",Tags:["095Hippoglyphe"]}]}}}] run function project-c:jobaction/095/skill/3/inv
 
 execute if entity @s[scores={useSnowball=1..}] run kill @e[type=snowball,distance=..5,limit=1,sort=nearest]
-execute if entity @s[scores={useSnowball=1..}] run replaceitem entity @s weapon.offhand minecraft:snowball 1
+execute if entity @s[scores={useSnowball=1..}] run item replace entity @s weapon.offhand with minecraft:snowball 1
 scoreboard players reset @s[scores={useSnowball=1..}] useSnowball
 scoreboard players reset @s[scores={sneak=1..}] sneak
 advancement revoke @s[advancements={project-c:wanco_job/095/instant_damage=true}] only project-c:wanco_job/095/instant_damage

@@ -18,12 +18,12 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"火炎放�
 
 scoreboard players add @s[scores={stockcounter=..239},gamemode=!spectator] stockcounter 1
 
-replaceitem entity @s[scores={stockcounter=..59}] hotbar.0 minecraft:compass
+item replace entity @s[scores={stockcounter=..59}] hotbar.0 with minecraft:compass
 
-replaceitem entity @s[scores={stockcounter=60..119}] hotbar.0 minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 1
-replaceitem entity @s[scores={stockcounter=120..179}] hotbar.0 minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 2
-replaceitem entity @s[scores={stockcounter=180..239}] hotbar.0 minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 3
-replaceitem entity @s[scores={stockcounter=240}] hotbar.0 minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 4
+item replace entity @s[scores={stockcounter=60..119}] hotbar.0 with minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 1
+item replace entity @s[scores={stockcounter=120..179}] hotbar.0 with minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 2
+item replace entity @s[scores={stockcounter=180..239}] hotbar.0 with minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 3
+item replace entity @s[scores={stockcounter=240}] hotbar.0 with minecraft:blaze_powder{display:{Name:'{"text":"火の矢","color":"red","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に火の矢を放つ。"}','{"text":"§aCT:3/ストック:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 4
 
 
 execute as @s[scores={counter_3=1..}] at @s run scoreboard players remove @s counter_3 1

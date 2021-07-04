@@ -9,12 +9,17 @@
           "name": "minecraft:paper",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "次へ","color": "white","underlined":true,"italic": false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "次へ",
+                "color": "white",
+                "underlined": true,
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110GUI:1b,110GUISlot:8b}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110GUI:1b,110GUISlot:8b}"
             }
           ]
         }

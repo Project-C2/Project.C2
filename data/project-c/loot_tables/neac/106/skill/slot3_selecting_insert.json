@@ -16,7 +16,14 @@
                   "nbt": "Items[{tag:{106_selecting:1}}].tag.display.Name",
                   "interpret": true
                 },
-                {"text": " "},{"text": "スロット3に選択中","italic": false,"color": "dark_aqua"}
+                {
+                  "text": " "
+                },
+                {
+                  "text": "スロット3に選択中",
+                  "italic": false,
+                  "color": "dark_aqua"
+                }
               ],
               "entity": "this"
             }

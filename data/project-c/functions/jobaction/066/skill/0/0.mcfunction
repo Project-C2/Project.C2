@@ -1,6 +1,6 @@
 #CT
 scoreboard players set @s stockcounter 20
-replaceitem entity @s weapon.offhand minecraft:air
+item replace entity @s weapon.offhand with minecraft:air
 #スキル効果
 #共通
 playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 0.5 2

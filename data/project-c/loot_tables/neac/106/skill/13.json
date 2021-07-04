@@ -11,17 +11,41 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "パーフォレイトショット","italic": false,"color": "white"}
+                {
+                  "text": "パーフォレイトショット",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"text": "タイプ：アクティブ","italic": false,"color": "green"},
-                {"text": "トリガ：スニーク","italic": false,"color": "yellow"},
-                {"text": "クールタイム：20秒","italic": false,"color": "aqua"},
-                {"text": "近くの敵に向かって一直線に飛ぶ弾を3つ出す","italic": false,"color": "dark_purple"},
-                {"text": "弾は壁を貫通する","italic": false,"color": "dark_purple"}
+                {
+                  "text": "タイプ：アクティブ",
+                  "italic": false,
+                  "color": "green"
+                },
+                {
+                  "text": "トリガ：スニーク",
+                  "italic": false,
+                  "color": "yellow"
+                },
+                {
+                  "text": "クールタイム：20秒",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "近くの敵に向かって一直線に飛ぶ弾を3つ出す",
+                  "italic": false,
+                  "color": "dark_purple"
+                },
+                {
+                  "text": "弾は壁を貫通する",
+                  "italic": false,
+                  "color": "dark_purple"
+                }
               ]
             },
             {

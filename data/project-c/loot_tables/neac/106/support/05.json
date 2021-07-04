@@ -11,7 +11,11 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "ドラドブレイド","italic": false,"color": "white"}
+                {
+                  "text": "ドラドブレイド",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {

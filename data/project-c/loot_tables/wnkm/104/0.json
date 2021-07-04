@@ -9,19 +9,42 @@
           "name": "minecraft:enchanted_book",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "爆弾投げ","color":"red","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "爆弾投げ",
+                "color": "red",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:1","italic":false,"color":"green"}],
-                  {"text":"前方に爆弾を投擲する。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:1",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "前方に爆弾を投擲する。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{wnkmCT:20,104skillID:0b,Enchantments:[{}]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{wnkmCT:20,104skillID:0b,Enchantments:[{}]}"
             }
           ]
         }

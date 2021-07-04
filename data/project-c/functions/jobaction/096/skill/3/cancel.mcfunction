@@ -4,6 +4,6 @@ tag @s remove 096
 
 effect clear @s levitation
 effect clear @s slow_falling
-replaceitem entity @s armor.feet minecraft:air
+item replace entity @s armor.feet with minecraft:air
 tag @s remove 096chainjump_p
 

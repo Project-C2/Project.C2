@@ -9,22 +9,31 @@
           "name": "minecraft:tipped_arrow",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "榴弾の矢","color": "white","bold": true,"italic": false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "榴弾の矢",
+                "color": "white",
+                "bold": true,
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"着弾地点を爆破させる矢。","italic":false,"color":"gold"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "着弾地点を爆破させる矢。",
+                  "italic": false,
+                  "color": "gold"
+                }
+              ]
             },
             {
               "function": "minecraft:set_count",
               "count": 1
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110ArrowItem:1b,CustomPotionColor:43520}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110ArrowItem:1b,CustomPotionColor:43520}"
             }
           ]
         }

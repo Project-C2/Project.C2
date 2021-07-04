@@ -15,7 +15,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"バニシ�
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"時符「プライベート・スクウェア」","color":"light_blue","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/066/skill/2/0
 
-replaceitem entity @s[scores={stockcounter=1},gamemode=!spectator] weapon.offhand minecraft:snowball
+item replace entity @s[scores={stockcounter=1},gamemode=!spectator] weapon.offhand with minecraft:snowball
 scoreboard players remove @s[scores={stockcounter=1..},gamemode=!spectator] stockcounter 1
 
 execute if entity @s[scores={CT1=1200..,sneak=1..,Mana=1..},gamemode=!spectator] run scoreboard players add @s Mana 1

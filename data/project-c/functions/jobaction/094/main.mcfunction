@@ -15,7 +15,7 @@ execute if entity @s[scores={CT2=1200..,useSnowball=1..},tag=SkillReady2,gamemod
 
 execute if entity @s[scores={stockcounter=1..,aviate=1..,Mana=0},gamemode=!spectator] run function project-c:jobaction/094/skill/3/0
 
-execute if entity @s[scores={crossbow=1..}] run replaceitem entity @s hotbar.4 minecraft:arrow 1
+execute if entity @s[scores={crossbow=1..}] run item replace entity @s hotbar.4 with minecraft:arrow 1
 
 
 execute if entity @s[nbt={OnGround:1b},scores={stockcounter=..2,counter_3=..79}] run scoreboard players add @s counter_3 1

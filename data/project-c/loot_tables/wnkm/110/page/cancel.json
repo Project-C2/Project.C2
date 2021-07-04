@@ -9,12 +9,16 @@
           "name": "minecraft:barrier",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "キャンセル","color": "red","italic": false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "キャンセル",
+                "color": "red",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110GUI:1b,110GUISlot:8b}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110GUI:1b,110GUISlot:8b}"
             }
           ]
         }

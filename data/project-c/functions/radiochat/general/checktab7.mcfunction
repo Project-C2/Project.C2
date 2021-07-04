@@ -8,15 +8,15 @@ tag @s add havingChat7-7Item
 tag @s add havingChat7-8Item
 tag @s add havingChat7-9Item
 
-tag @s[nbt={Inventory:[{Slot:18b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"UŒ‚‚É‰ñ‚é\"}"}}}]}] remove havingChat7-1Item
-tag @s[nbt={Inventory:[{Slot:19b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"‰‡Œì‚É‰ñ‚é\"}"}}}]}] remove havingChat7-2Item
-tag @s[nbt={Inventory:[{Slot:20b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"x‰‡‚É‰ñ‚é\"}"}}}]}] remove havingChat7-3Item
-tag @s[nbt={Inventory:[{Slot:21b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"‰‡Œì‚ğ—Š‚Ş\"}"}}}]}] remove havingChat7-4Item
-tag @s[nbt={Inventory:[{Slot:22b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"—lq‚ğŒ©‚é\"}"}}}]}] remove havingChat7-5Item
-tag @s[nbt={Inventory:[{Slot:23b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"‰ñ•œ—Š‚Ş\"}"}}}]}] remove havingChat7-6Item
-tag @s[nbt={Inventory:[{Slot:24b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"ƒoƒt‚ğ‚©‚¯‚Ä‚­‚ê\"}"}}}]}] remove havingChat7-7Item
-tag @s[nbt={Inventory:[{Slot:25b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"ƒfƒoƒt‚ğ‚©‚¯‚Ä‚­‚ê\"}"}}}]}] remove havingChat7-8Item
-tag @s[nbt={Inventory:[{Slot:26b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"©”š“ÁU‚·‚é‚¼\"}"}}}]}] remove havingChat7-9Item
+tag @s[nbt={Inventory:[{Slot:18b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"UÉ‰ñ‚©œ"}"}}}]}] remove havingChat7-1Item
+tag @s[nbt={Inventory:[{Slot:19b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"ì‚‰ñ‚©œ"}"}}}]}] remove havingChat7-2Item
+tag @s[nbt={Inventory:[{Slot:20b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"xÉ‰ñ‚©œ"}"}}}]}] remove havingChat7-3Item
+tag @s[nbt={Inventory:[{Slot:21b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"ì‚°Şœ"}"}}}]}] remove havingChat7-4Item
+tag @s[nbt={Inventory:[{Slot:22b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"lqì©‚éœ¢}"}}}]}] remove havingChat7-5Item
+tag @s[nbt={Inventory:[{Slot:23b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"ñ•œ—Şœ"}"}}}]}] remove havingChat7-6Item
+tag @s[nbt={Inventory:[{Slot:24b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"otâ©‚Ä‚êœ¢}"}}}]}] remove havingChat7-7Item
+tag @s[nbt={Inventory:[{Slot:25b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"fotâ©‚Ä‚êœ¢}"}}}]}] remove havingChat7-8Item
+tag @s[nbt={Inventory:[{Slot:26b,id:"minecraft:record_mellohi",Count:1b,tag:{display:{Name:"{\"text\":\"MUé‚¼\"}"}}}]}] remove havingChat7-9Item
 
 execute if entity @s[tag=havingChat7-1Item] run function project-c:radiochat/tab7/chat1
 execute if entity @s[tag=havingChat7-2Item] run function project-c:radiochat/tab7/chat2

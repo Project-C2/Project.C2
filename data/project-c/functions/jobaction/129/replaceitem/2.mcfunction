@@ -12,3 +12,4 @@ tag @s remove me
 
 
 tag @s add SkillReady2
+item replace entity @s enderchest.2 from entity @s container.2

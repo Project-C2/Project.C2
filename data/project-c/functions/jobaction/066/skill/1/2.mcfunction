@@ -19,7 +19,7 @@ scoreboard players set @s Mana 0
 
 particle minecraft:firework ~ ~1 ~ 0 0 0 0.3 30 force @a
 
-replaceitem entity @s hotbar.1 minecraft:air
+item replace entity @s hotbar.1 with minecraft:air
 
 #リセット
 tag @s remove SkillReady1

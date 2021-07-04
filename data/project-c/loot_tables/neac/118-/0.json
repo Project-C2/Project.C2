@@ -11,14 +11,30 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "Celebration Cake","italic": false,"color": "light_purple"}
+                {
+                  "text": "Celebration Cake",
+                  "italic": false,
+                  "color": "light_purple"
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"text":"右クリック","italic":false,"color":"yellow"}],
-                [{"text": "20m以内の視点先の味方プレイヤーを選択する。","italic": false,"color": "white"}]
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  }
+                ],
+                [
+                  {
+                    "text": "20m以内の視点先の味方プレイヤーを選択する。",
+                    "italic": false,
+                    "color": "white"
+                  }
+                ]
               ]
             },
             {

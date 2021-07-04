@@ -1,5 +1,5 @@
 scoreboard players set @s CT1 840
-replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 18
+item replace entity @s hotbar.1 with minecraft:compass{display:{Name:'"CoolTime"'}} 18
 scoreboard players set @s counter_1 1
 
 playsound minecraft:entity.zombie.attack_iron_door master @a ~ ~ ~ 1 1.4

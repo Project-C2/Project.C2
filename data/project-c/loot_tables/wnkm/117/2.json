@@ -9,20 +9,47 @@
           "name": "minecraft:iron_horse_armor",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "スケルトンホース・メリーゴーランド","color":"dark_gray","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "スケルトンホース・メリーゴーランド",
+                "color": "dark_gray",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"スニーク","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:30s","italic":false,"color":"green"}],
-                  {"text":"スケルトンホースのメリーゴーランドを展開する。","italic":false,"color":"white"},
-                  {"text":"15秒経つとスケルトンホースが全方位に突撃する。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "スニーク",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:30s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "スケルトンホースのメリーゴーランドを展開する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "15秒経つとスケルトンホースが全方位に突撃する。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{117skillID:2b,wnkmSkillCT:600}"
+              "function": "minecraft:set_nbt",
+              "tag": "{117skillID:2b,wnkmSkillCT:600}"
             }
           ]
         }

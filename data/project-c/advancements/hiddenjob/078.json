@@ -15,8 +15,8 @@
     "requirement": {
       "trigger": "minecraft:impossible"
     }
-    },
-      "rewards": {
+  },
+  "rewards": {
     "function": "project-c:hiddenjob/-078/jobunlocked"
   }
 }

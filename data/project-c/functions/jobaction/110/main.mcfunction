@@ -59,4 +59,5 @@ execute if entity @s[scores={crossbow=1..}] run scoreboard players set @s crossb
 execute if entity @s[scores={bow=1..}] run scoreboard players set @s bow 0
 execute if entity @s[scores={useTrident=1..}] run scoreboard players reset @s useTrident
 execute if entity @s[scores={damageDealt=1..}] run scoreboard players reset @s damageDealt
-execute if entity @s[scores={drop2=1..}] run scoreboard players reset @s drop2
+execute if entity @s[scores={drop2=1..}] run scoreboard players reset @s drop
+item replace entity @s enderchest.0 from entity @s container.02

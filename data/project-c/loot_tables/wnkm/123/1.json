@@ -9,19 +9,52 @@
           "name": "minecraft:white_wool",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "放牧-ヒツジカイ","color":"white","bold":true,"italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "放牧-ヒツジカイ",
+                "color": "white",
+                "bold": true,
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:3s","italic":false,"color":"green"},{"text":" / ","color":"gray"},{"text":"追加入力可能:1回(1.0秒以内)","italic":false,"color":"aqua"}],
-                  {"text":"3頭の羊を発射する。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:3s",
+                    "italic": false,
+                    "color": "green"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "追加入力可能:1回(1.0秒以内)",
+                    "italic": false,
+                    "color": "aqua"
+                  }
+                ],
+                {
+                  "text": "3頭の羊を発射する。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{123skillID:1b}"
+              "function": "minecraft:set_nbt",
+              "tag": "{123skillID:1b}"
             }
           ]
         }

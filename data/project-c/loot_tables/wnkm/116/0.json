@@ -1,43 +1,47 @@
 {
-  "type": "minecraft:entity",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "type": "minecraft:entity",
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:golden_sword",
-          "functions": [
-            {
-                "function": "minecraft:set_name",
-                "name": {"text": "Lucky Horseshoe","color":"gold","italic":false}
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                  {
-                      "name": "generic.attackSpeed",
-                      "attribute": "generic.attack_speed",
-                      "operation": "addition",
-                      "amount": -2.0,
-                      "slot": "mainhand"
-                  },
-                  {
-                      "name": "generic.attackDamage",
-                      "attribute": "generic.attack_damage",
-                      "operation": "addition",
-                      "amount": 3.0,
-                      "slot": "mainhand"
-                  }
-              ]
-            },
-            {
-                "function": "minecraft:set_nbt",
-                "tag": "{116skillID:0b,Unbreakable:1b}"
-            }
-          ]
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "Lucky Horseshoe",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "name": "generic.attackSpeed",
+                                    "attribute": "generic.attack_speed",
+                                    "operation": "addition",
+                                    "amount": -2,
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "name": "generic.attackDamage",
+                                    "attribute": "generic.attack_damage",
+                                    "operation": "addition",
+                                    "amount": 3,
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{116skillID:0b,Unbreakable:1b}"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

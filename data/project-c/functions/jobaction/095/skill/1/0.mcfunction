@@ -1,5 +1,5 @@
 scoreboard players set @s CT1 1000
-replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 10
+item replace entity @s hotbar.1 with minecraft:compass{display:{Name:'"CoolTime"'}} 10
 scoreboard players set @s counter_1 1
 
 playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 1.2 0.5
