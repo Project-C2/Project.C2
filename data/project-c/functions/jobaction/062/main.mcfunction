@@ -35,13 +35,13 @@ execute if entity @s[scores={Mana=..0}] run function project-c:jobaction/062/ski
 
 scoreboard players add @s[scores={counter_3=..419},gamemode=!spectator] counter_3 1
 
-replaceitem entity @s[scores={jobNumber=62,counter_3=..139}] hotbar.1 minecraft:compass
+item replace entity @s[scores={jobNumber=62,counter_3=..139}] hotbar.1 with minecraft:compass
 
-replaceitem entity @s[scores={jobNumber=62,counter_3=140..279}] hotbar.1 minecraft:lily_of_the_valley{display:{Name:'{"text":"人符「現世斬」","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に踏み込み相手を切り抜ける。"}','{"text":"§aCT:7/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 1
+item replace entity @s[scores={jobNumber=62,counter_3=140..279}] hotbar.1 with minecraft:lily_of_the_valley{display:{Name:'{"text":"人符「現世斬」","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に踏み込み相手を切り抜ける。"}','{"text":"§aCT:7/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 1
 
-replaceitem entity @s[scores={jobNumber=62,counter_3=280..419}] hotbar.1 minecraft:lily_of_the_valley{display:{Name:'{"text":"人符「現世斬」","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に踏み込み相手を切り抜ける。"}','{"text":"§aCT:7/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 2
+item replace entity @s[scores={jobNumber=62,counter_3=280..419}] hotbar.1 with minecraft:lily_of_the_valley{display:{Name:'{"text":"人符「現世斬」","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に踏み込み相手を切り抜ける。"}','{"text":"§aCT:7/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 2
 
-replaceitem entity @s[scores={jobNumber=62,counter_3=420}] hotbar.1 minecraft:lily_of_the_valley{display:{Name:'{"text":"人符「現世斬」","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に踏み込み相手を切り抜ける。"}','{"text":"§aCT:7/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 3
+item replace entity @s[scores={jobNumber=62,counter_3=420}] hotbar.1 with minecraft:lily_of_the_valley{display:{Name:'{"text":"人符「現世斬」","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:右クリック"}','{"text":"§f効果:前方に踏み込み相手を切り抜ける。"}','{"text":"§aCT:7/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 3
 
 execute if entity @s[scores={subcounter=1..}] run execute as @e[tag=062fire,distance=..5,limit=1] at @s run teleport @a[scores={jobNumber=62,subcounter=1..},limit=1,sort=nearest] ~ ~ ~
 

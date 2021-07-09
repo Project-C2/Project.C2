@@ -1,5 +1,5 @@
-replaceitem entity @s inventory.24 minecraft:air 1
-replaceitem entity @s inventory.25 minecraft:air 1
+item replace entity @s inventory.24 with minecraft:air 1
+item replace entity @s inventory.25 with minecraft:air 1
 
 clear @s minecraft:splash_potion{display:{Name:'{"text":"§1Slow Ⅰ"}'}}
 clear @s minecraft:splash_potion{display:{Name:'{"text":"§5darkDamage Ⅰ"}'}}

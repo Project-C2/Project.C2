@@ -17,12 +17,12 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"死神の�
 
 scoreboard players add @s[scores={stockcounter=..299},gamemode=!spectator] stockcounter 1
 
-replaceitem entity @s[scores={jobNumber=64,stockcounter=..99,CT1=1200..}] hotbar.1 minecraft:compass
-replaceitem entity @s[scores={jobNumber=64,stockcounter=100..199,CT1=1200..}] hotbar.1 minecraft:white_dye{display:{Name:'{"text":"ストレイフ","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:空中で右クリック"}','{"text":"§f効果:自身の移動している方向に駆け抜け弓を放つ。"}','{"text":"§aCT:5/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 1
-replaceitem entity @s[scores={jobNumber=64,stockcounter=200..299,CT1=1200..}] hotbar.1 minecraft:white_dye{display:{Name:'{"text":"ストレイフ","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:空中で右クリック"}','{"text":"§f効果:自身の移動している方向に駆け抜け弓を放つ。"}','{"text":"§aCT:5/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 2
-replaceitem entity @s[scores={jobNumber=64,stockcounter=300,CT1=1200..}] hotbar.1 minecraft:white_dye{display:{Name:'{"text":"ストレイフ","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:空中で右クリック"}','{"text":"§f効果:自身の移動している方向に駆け抜け弓を放つ。"}','{"text":"§aCT:5/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 3
+item replace entity @s[scores={jobNumber=64,stockcounter=..99,CT1=1200..}] hotbar.1 with minecraft:compass
+item replace entity @s[scores={jobNumber=64,stockcounter=100..199,CT1=1200..}] hotbar.1 with minecraft:white_dye{display:{Name:'{"text":"ストレイフ","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:空中で右クリック"}','{"text":"§f効果:自身の移動している方向に駆け抜け弓を放つ。"}','{"text":"§aCT:5/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 1
+item replace entity @s[scores={jobNumber=64,stockcounter=200..299,CT1=1200..}] hotbar.1 with minecraft:white_dye{display:{Name:'{"text":"ストレイフ","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:空中で右クリック"}','{"text":"§f効果:自身の移動している方向に駆け抜け弓を放つ。"}','{"text":"§aCT:5/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 2
+item replace entity @s[scores={jobNumber=64,stockcounter=300,CT1=1200..}] hotbar.1 with minecraft:white_dye{display:{Name:'{"text":"ストレイフ","color":"light_blue","italic":"false","underlined":"false"}',Lore:['{"text":"§e発動:空中で右クリック"}','{"text":"§f効果:自身の移動している方向に駆け抜け弓を放つ。"}','{"text":"§aCT:5/ストック:3"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 3
 
-replaceitem entity @s[scores={crossbow=1..},gamemode=!spectator] hotbar.4 minecraft:arrow
+item replace entity @s[scores={crossbow=1..},gamemode=!spectator] hotbar.4 with minecraft:arrow
 
 execute as @s[scores={counter_1=1..}] at @s run scoreboard players remove @s counter_1 1
 

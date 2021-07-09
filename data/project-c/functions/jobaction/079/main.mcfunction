@@ -12,7 +12,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"星遺物�
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"星遺物に眠る深層","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT2=1200..,useSnowball=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/079/skill/2/0
 
 execute if entity @s[scores={useSnowball=1..}] run kill @e[type=snowball,limit=1,distance=..5]
-replaceitem entity @s[scores={useSnowball=1..}] weapon.offhand minecraft:snowball
+item replace entity @s[scores={useSnowball=1..}] weapon.offhand with minecraft:snowball
 
 
 scoreboard players add @s subcounter 1

@@ -1,5 +1,5 @@
 scoreboard players set @s CT2 400
-replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 40
+item replace entity @s hotbar.2 with minecraft:compass{display:{Name:'"CoolTime"'}} 40
 
 execute align y run summon armor_stand ~ ~ ~ {Invisible:1b,Small:1b,Invulnerable:1b,Tags:["092towerstand","this"]}
 execute if entity @s[team=Red] run tag @e[tag=this,limit=1] add 092Red

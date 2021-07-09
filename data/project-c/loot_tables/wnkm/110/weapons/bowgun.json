@@ -9,26 +9,66 @@
           "name": "minecraft:crossbow",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "自動ボウガン","color": "gold","italic": false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "自動ボウガン",
+                "color": "gold",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"装填速度を犠牲に連射性能を手に入れた。","italic":false,"color":"gold"},
-                  {"text":"発射時に独特のリコイルが発生する。","italic":false,"color":"gold"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"-自動装填- CT:10","italic":false,"color":"aqua"},
-                  {"text":"3.5秒間スニークする事で発動。","italic":false,"color":"white"},
-                  {"text":"一度の装填で同種の矢を全て装填する。","italic":false,"color":"white"},
-                  {"text":"装填した矢が尽きるまで自動的にリロードする。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":" 威力 0.8","italic":false,"color":"green"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "装填速度を犠牲に連射性能を手に入れた。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "発射時に独特のリコイルが発生する。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "-自動装填- CT:10",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "3.5秒間スニークする事で発動。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "一度の装填で同種の矢を全て装填する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "装填した矢が尽きるまで自動的にリロードする。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": " 威力 0.8",
+                  "italic": false,
+                  "color": "green"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110weapon:1b,110weaponID:5b,bowgunCharged:0b,Unbreakable:1b,HideFlags:4}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110weapon:1b,110weaponID:5b,bowgunCharged:0b,Unbreakable:1b,HideFlags:4}"
             }
           ]
         }

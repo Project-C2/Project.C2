@@ -1,16 +1,15 @@
 {
-    "criteria": {
-      "deflected_projectile": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "damage": {
-            "type": {
-              "direct_entity": {
-                "type": "minecraft:player",
-                "equipment": {
-                    "mainhand": {
-                        "nbt": "{115skillID:0b}"
-                    }
+  "criteria": {
+    "deflected_projectile": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{115skillID:0b}"
                 }
               }
             }
@@ -19,3 +18,4 @@
       }
     }
   }
+}

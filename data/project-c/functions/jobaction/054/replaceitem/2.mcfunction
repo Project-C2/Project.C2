@@ -1,3 +1,4 @@
-replaceitem entity @s hotbar.2 minecraft:quartz{display:{Name:'{"text":"ミステリアスウィンド","color":"white","bold":true,"italic":false}',Lore:['{"text":"発動:右クリック","color":"yellow","italic":false}','{"text":"4回だけ突風を引き起こして前方に飛び、","color":"white","italic":false}','{"text":"軌跡の周囲の敵に浮遊3を6秒間付与。","color":"white","italic":false}','{"text":"CT:30","color":"green","italic":false}']},CustomPotionEffects:[{Id:31b,Amplifier:67b,Duration:1}],CustomPotionColor:5636095,HideFlags:32} 1
+item replace entity @s hotbar.2 with minecraft:quartz{display:{Name:'{"text":"ミステリアスウィンド","color":"white","bold":true,"italic":false}',Lore:['{"text":"発動:右クリック","color":"yellow","italic":false}','{"text":"4回だけ突風を引き起こして前方に飛び、","color":"white","italic":false}','{"text":"軌跡の周囲の敵に浮遊3を6秒間付与。","color":"white","italic":false}','{"text":"CT:30","color":"green","italic":false}']},CustomPotionEffects:[{Id:31b,Amplifier:67b,Duration:1}],CustomPotionColor:5636095,HideFlags:32} 1
 playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 tag @s add SkillReady2
+item replace entity @s enderchest.2 from entity @s container.2

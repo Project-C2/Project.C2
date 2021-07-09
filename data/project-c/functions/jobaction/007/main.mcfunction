@@ -16,7 +16,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"氷のエ�
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"雷のエレメント"}'}}}},scores={CT3=1200..,useSnowball=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/007/skill/3/0
 
 
-replaceitem entity @s[scores={useSnowball=1..}] weapon.offhand minecraft:snowball 1
+item replace entity @s[scores={useSnowball=1..}] weapon.offhand with minecraft:snowball 1
 
 
 scoreboard players add @s[scores={sneak=1..,counter_1=..1},gamemode=!spectator] counter 1
@@ -28,7 +28,7 @@ execute if entity @s[scores={counter=40..}] run scoreboard players reset @s coun
 
 execute if entity @s[scores={sneak=..0}] run scoreboard players set @s counter 0
 execute if entity @s[scores={sneak=..0}] run scoreboard players set @s counter_1 0
-execute if entity @s[scores={sneak=..0}] run replaceitem entity @s hotbar.4 minecraft:end_crystal{display:{Name:'{"text":"チャージ"}',Lore:['{"text":"1~3段階までチャージできる。"}']}} 1
+execute if entity @s[scores={sneak=..0}] run item replace entity @s hotbar.4 with minecraft:end_crystal{display:{Name:'{"text":"チャージ"}',Lore:['{"text":"1~3段階までチャージできる。"}']}} 1
 
 scoreboard players set @s sneak 0
 

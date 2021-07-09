@@ -5,5 +5,6 @@ playsound minecraft:entity.wither_skeleton.death master @s ~ ~ ~ 2 0.5
 scoreboard players reset @s counter_2
 scoreboard players set @s CT3 1199
 scoreboard players reset @s drop
+item replace entity @s enderchest.0 from entity @s container.0
 tag @s remove SkillReady3
 scoreboard players set @s usedSkill 3

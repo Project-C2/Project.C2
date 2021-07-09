@@ -1,3 +1,4 @@
-replaceitem entity @s hotbar.1 minecraft:nether_star{display:{Name:'{"text":"光輝裂玉","color":"yellow","underlined":true,"italic":false}',Lore:['{"text":"--------------------------------","italic":false,"color":"gray"}','{"text":"右クリック / CT:8","color":"aqua","italic":false}','{"text":"前方に光魔力を封じた弾を放つ。","color":"white","italic":false}','{"text":"敵に反応して炸裂し、ダメージを与え発光させる。","color":"white","italic":false}','{"text":"--------------------------------","italic":false,"color":"gray"}']},Enchantments:[{}]} 1
+item replace entity @s hotbar.1 with minecraft:nether_star{display:{Name:'{"text":"光輝裂玉","color":"yellow","underlined":true,"italic":false}',Lore:['{"text":"--------------------------------","italic":false,"color":"gray"}','{"text":"右クリック / CT:8","color":"aqua","italic":false}','{"text":"前方に光魔力を封じた弾を放つ。","color":"white","italic":false}','{"text":"敵に反応して炸裂し、ダメージを与え発光させる。","color":"white","italic":false}','{"text":"--------------------------------","italic":false,"color":"gray"}']},Enchantments:[{}]} 1
 playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
 tag @s add SkillReady1
+item replace entity @s enderchest.1 from entity @s container.1

@@ -3,7 +3,7 @@ execute if entity @a[scores={relic=29..32},tag=JobChanged,limit=1] run tag @a[sc
 execute as @a[tag=JobChanged] at @s run particle firework ~ ~1 ~ 0 0 0 0.3 50
 execute as @a[tag=JobChanged] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
 scoreboard players reset @a[tag=JobChanged] usedSkill
-replaceitem entity @a[tag=JobChanged] armor.chest minecraft:air
+item replace entity @a[tag=JobChanged] armor.chest with minecraft:air
 execute if entity @a[tag=JobChanged,limit=1] run effect clear @a[tag=JobChanged,tag=!changerelic] minecraft:regeneration
 execute if entity @a[tag=JobChanged,limit=1] run effect clear @a[tag=JobChanged,tag=!changerelic] minecraft:invisibility
 execute if entity @a[tag=JobChanged,limit=1] run effect clear @a[tag=JobChanged,tag=!changerelic] minecraft:jump_boost

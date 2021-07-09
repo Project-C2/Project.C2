@@ -1,5 +1,5 @@
 scoreboard players set @s CT1 1000
-replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 13
+item replace entity @s hotbar.1 with minecraft:compass{display:{Name:'"CoolTime"'}} 13
 
 tp @s @s
 summon minecraft:creeper ~ -10 ~ {Tags:["this"],ExplosionRadius:2,Fuse:0,PersistenceRequired:1b,Invulnerable:1b}

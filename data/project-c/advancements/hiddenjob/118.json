@@ -12,16 +12,32 @@
   },
   "parent": "project-c:hiddenjob/root",
   "criteria": {
-    "1": {"trigger": "minecraft:impossible"},
-    "2": {"trigger": "minecraft:impossible"},
-    "3": {"trigger": "minecraft:impossible"},
-    "4": {"trigger": "minecraft:impossible"}
+    "1": {
+      "trigger": "minecraft:impossible"
+    },
+    "2": {
+      "trigger": "minecraft:impossible"
+    },
+    "3": {
+      "trigger": "minecraft:impossible"
+    },
+    "4": {
+      "trigger": "minecraft:impossible"
+    }
   },
   "requirements": [
-    ["1"],
-    ["2"],
-    ["3"],
-    ["4"]
+    [
+      "1"
+    ],
+    [
+      "2"
+    ],
+    [
+      "3"
+    ],
+    [
+      "4"
+    ]
   ],
   "rewards": {
     "function": "project-c:hiddenjob/-118/jobunlocked"

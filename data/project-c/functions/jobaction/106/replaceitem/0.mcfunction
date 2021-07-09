@@ -7,3 +7,4 @@ execute if score #106_item_check counter matches 999998..1000000 run function pr
 scoreboard players reset #106_item_check
 
 scoreboard players reset @s drop
+item replace entity @s enderchest.0 from entity @s container.0

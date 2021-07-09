@@ -16,7 +16,14 @@
                   "nbt": "Items[{tag:{110selecting:1b}}].tag.display.Name",
                   "interpret": true
                 },
-                {"text": " "},{"text": "選択中","italic": false,"color": "dark_aqua"}
+                {
+                  "text": " "
+                },
+                {
+                  "text": "選択中",
+                  "italic": false,
+                  "color": "dark_aqua"
+                }
               ],
               "entity": "this"
             }

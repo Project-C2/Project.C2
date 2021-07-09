@@ -1,54 +1,82 @@
 {
-  "type": "minecraft:entity",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "type": "minecraft:entity",
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_sword",
-          "functions": [
-            {
-                "function": "minecraft:set_name",
-                "name": {"text": "錆びたダガー","color": "gray","italic": false}
-            },
-            {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"血に濡れる運命を辿るはずだった短剣。","italic":false,"color":"dark_red"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"-投擲- CT:15","italic":false,"color":"aqua"},
-                  {"text":"前方にダガーを投擲する。","italic":false,"color":"white"},
-                  {"text":"投げたダガーを回収する事でCTを66%短縮する。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"}
-                ]
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                  {
-                      "name": "generic.attackSpeed",
-                      "attribute": "generic.attack_speed",
-                      "operation": "addition",
-                      "amount": -2.0,
-                      "slot": "mainhand"
-                  },
-                  {
-                      "name": "generic.attackDamage",
-                      "attribute": "generic.attack_damage",
-                      "operation": "addition",
-                      "amount": 3.0,
-                      "slot": "mainhand"
-                  }
-              ]
-            },
-            {
-                "function": "minecraft:set_nbt",
-                "tag": "{110weapon:1b,110weaponID:7b,Unbreakable:1b,HideFlags:4}"
-            }
-          ]
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "錆びたダガー",
+                                "color": "gray",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "血に濡れる運命を辿るはずだった短剣。",
+                                    "italic": false,
+                                    "color": "dark_red"
+                                },
+                                {
+                                    "text": "--------------------------------",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "-投擲- CT:15",
+                                    "italic": false,
+                                    "color": "aqua"
+                                },
+                                {
+                                    "text": "前方にダガーを投擲する。",
+                                    "italic": false,
+                                    "color": "white"
+                                },
+                                {
+                                    "text": "投げたダガーを回収する事でCTを66%短縮する。",
+                                    "italic": false,
+                                    "color": "white"
+                                },
+                                {
+                                    "text": "--------------------------------",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "name": "generic.attackSpeed",
+                                    "attribute": "generic.attack_speed",
+                                    "operation": "addition",
+                                    "amount": -2,
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "name": "generic.attackDamage",
+                                    "attribute": "generic.attack_damage",
+                                    "operation": "addition",
+                                    "amount": 3,
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{110weapon:1b,110weaponID:7b,Unbreakable:1b,HideFlags:4}"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

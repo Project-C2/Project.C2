@@ -9,19 +9,52 @@
           "name": "minecraft:leather_horse_armor",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "CrossFire-十字砲火 1/2","color":"dark_gray","bold":true,"italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "CrossFire-十字砲火 1/2",
+                "color": "dark_gray",
+                "bold": true,
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:6s","italic":false,"color":"green"},{"text":" / ","color":"gray"},{"text":"ストック:2","italic":false,"color":"aqua"}],
-                  {"text":"十字に放つショットガン。1hitにつき♡0.5で13発放つ。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:6s",
+                    "italic": false,
+                    "color": "green"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "ストック:2",
+                    "italic": false,
+                    "color": "aqua"
+                  }
+                ],
+                {
+                  "text": "十字に放つショットガン。1hitにつき♡0.5で13発放つ。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{123skillID:3b,wnkmSkillStock:1,wnkmCT:120}"
+              "function": "minecraft:set_nbt",
+              "tag": "{123skillID:3b,wnkmSkillStock:1,wnkmCT:120}"
             }
           ]
         }

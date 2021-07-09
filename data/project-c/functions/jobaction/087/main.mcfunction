@@ -28,7 +28,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"タレッ�
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"タレット","color":"white","italic":"false","underlined":"false"}'}}}},scores={CT1=1200..,counter_1=11..},tag=SkillReady1,gamemode=!spectator] run scoreboard players set @s counter_1 0
 
 
-execute if entity @s[scores={crossbow=1..},gamemode=!spectator] run replaceitem entity @s hotbar.4 minecraft:arrow
+execute if entity @s[scores={crossbow=1..},gamemode=!spectator] run item replace entity @s hotbar.4 with minecraft:arrow
 
 execute if entity @e[type=fireball,tag=087-Bullet] run data merge block -63 5 89 {auto:1b}
 

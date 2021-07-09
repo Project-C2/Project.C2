@@ -1,10 +1,10 @@
 {
-	"criteria":{
-		"dummy":{
-			"trigger":"tick"
+	"criteria": {
+		"dummy": {
+			"trigger": "tick"
 		}
 	},
-	"rewards":{
-		"function":"project-c:jobaction/073/general/inventorywatcher"
+	"rewards": {
+		"function": "project-c:jobaction/073/general/inventorywatcher"
 	}
 }

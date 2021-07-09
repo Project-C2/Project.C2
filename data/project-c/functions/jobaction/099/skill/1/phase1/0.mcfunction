@@ -1,5 +1,5 @@
 scoreboard players set @s CT1 800
-replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 20
+item replace entity @s hotbar.1 with minecraft:compass{display:{Name:'"CoolTime"'}} 20
 
 playsound minecraft:entity.guardian.flop master @a ~ ~ ~ 1 0.8
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 1.8

@@ -1,5 +1,5 @@
 scoreboard players set @s CT1 1060
-replaceitem entity @s hotbar.1 minecraft:compass{display:{Name:'"CoolTime"'}} 7
+item replace entity @s hotbar.1 with minecraft:compass{display:{Name:'"CoolTime"'}} 7
 particle minecraft:poof ~ ~0.1 ~ 0.15 0.15 0.15 0.1 100 normal @a
 particle minecraft:poof ~ ~ ~ 0 0 0 0.1 25 force @a
 playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1.2 0.9

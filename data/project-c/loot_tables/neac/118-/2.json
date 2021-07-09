@@ -11,15 +11,43 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "Cooltime Grant","italic": false,"color": "#0000ff","bold":true}
+                {
+                  "text": "Cooltime Grant",
+                  "italic": false,
+                  "color": "#0000ff",
+                  "bold": true
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:10s","italic":false,"color":"green"}],
-                {"text": "選択したプレイヤーのCTをすべて自身に吸収する。","italic": false,"color": "white"},
-                {"text": "発動すると選択が解除される。","italic": false,"color": "white"}
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:10s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "選択したプレイヤーのCTをすべて自身に吸収する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "発動すると選択が解除される。",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {

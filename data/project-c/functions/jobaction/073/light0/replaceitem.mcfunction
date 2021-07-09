@@ -1,6 +1,6 @@
-replaceitem entity @s inventory.21 minecraft:air 1
-replaceitem entity @s inventory.22 minecraft:air 1
-replaceitem entity @s inventory.23 minecraft:air 1
+item replace entity @s inventory.21 with minecraft:air 1
+item replace entity @s inventory.22 with minecraft:air 1
+item replace entity @s inventory.23 with minecraft:air 1
 
 clear @s minecraft:splash_potion{display:{Name:'{"text":"§2Haste Ⅰ"}'}}
 clear @s minecraft:splash_potion{display:{Name:'{"text":"§bJump Ⅰ"}'}}

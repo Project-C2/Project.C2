@@ -1,4 +1,4 @@
-replaceitem entity @s inventory.26 minecraft:air 1
+item replace entity @s inventory.26 with minecraft:air 1
 
 clear @s minecraft:splash_potion{display:{Name:'{"text":"§e§k1§r§0§lDarknessOverload§r§e§k1§r Ⅰ"}'}}
 

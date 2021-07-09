@@ -10,7 +10,10 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                  {"selector":"@s","italic": false}
+                {
+                  "selector": "@s",
+                  "italic": false
+                }
               ],
               "entity": "this"
             }

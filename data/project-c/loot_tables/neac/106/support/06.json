@@ -11,13 +11,21 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "矢筒","italic": false,"color": "white"}
+                {
+                  "text": "矢筒",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"text": "矢の最大ストックを+3する","italic": false,"color": "dark_purple"}
+                {
+                  "text": "矢の最大ストックを+3する",
+                  "italic": false,
+                  "color": "dark_purple"
+                }
               ]
             },
             {

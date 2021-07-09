@@ -27,7 +27,7 @@ execute if entity @s[scores={CT2=1200..,sneak=1..,counter_3=1},tag=SkillReady2,g
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"SECOND HELPING","color":"yellow","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,useSnowball=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:hiddenjob/-078/skill/3/0
 
-execute if entity @s[scores={counter_1=1}] run replaceitem entity @s weapon.offhand minecraft:snowball
+execute if entity @s[scores={counter_1=1}] run item replace entity @s weapon.offhand with minecraft:snowball
 scoreboard players remove @s[scores={counter_1=1..}] counter_1 1
 
 scoreboard players remove @s[scores={counter_2=1..}] counter_2 1
@@ -91,7 +91,7 @@ kill @e[tag=-078-Bullet2,scores={counter_2=5..}]
 
 execute if entity @s[scores={Mana=11..}] run scoreboard players set @s Mana 0
 
-execute if entity @s[scores={useSnowball=1..}] run replaceitem entity @s weapon.offhand minecraft:snowball
+execute if entity @s[scores={useSnowball=1..}] run item replace entity @s weapon.offhand with minecraft:snowball
 
 execute if entity @s[scores={useSnowball=1..}] run kill @e[type=snowball,limit=1,sort=nearest]
 

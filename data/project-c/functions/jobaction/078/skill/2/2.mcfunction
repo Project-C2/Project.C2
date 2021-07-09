@@ -23,7 +23,7 @@ scoreboard players set @s counter_3 0
 
 function project-c:jobaction/078/replaceitem/0
 execute if entity @s[scores={CT1=1200..}] run function project-c:jobaction/078/replaceitem/1
-replaceitem entity @s weapon.offhand minecraft:snowball
+item replace entity @s weapon.offhand with minecraft:snowball
 
 #リセット
 tag @s remove SkillReady2

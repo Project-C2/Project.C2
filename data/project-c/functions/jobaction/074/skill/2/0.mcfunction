@@ -1,5 +1,5 @@
 scoreboard players set @s CT2 940
-replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 13
+item replace entity @s hotbar.2 with minecraft:compass{display:{Name:'"CoolTime"'}} 13
 
 execute anchored eyes run summon minecraft:armor_stand ^ ^ ^ {Tags:["074dummy","074lavajav"],Marker:1b,Invisible:1b,NoGravity:1b}
 execute anchored eyes run tp @e[tag=074dummy] ^ ^ ^ ~ ~

@@ -16,7 +16,7 @@ execute as @e[tag=082-Arrow] at @s if score @s playerNumber = @a[scores={jobNumb
 
 execute as @e[tag=082-Arrow] at @s if score @s playerNumber = @a[scores={jobNumber=82,usedSkill=1},limit=1] playerNumber run kill @s
 
-replaceitem entity @s hotbar.4 minecraft:arrow 5
+item replace entity @s hotbar.4 with minecraft:arrow 5
 
 #リセット
 tag @s remove SkillReady1

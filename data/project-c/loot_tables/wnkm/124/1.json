@@ -9,25 +9,82 @@
           "name": "minecraft:feather",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "高天の歌","color":"#7de0b1","bold":true,"italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "高天の歌",
+                "color": "#7de0b1",
+                "bold": true,
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"右クリック","italic":false,"color":"yellow"}],
-                  {"text":"スニークの有無で効果が分岐する。","italic":false,"color":"white"},
-                  "",
-                  [{"text":"非スニーク時","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:8s","italic":false,"color":"green"}],
-                  {"text":"20m以内の視点先に風の陣を展開し、敵を攻撃してノックバックする。","italic":false,"color":"white"},
-                  [{"text":"スニーク時","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:15s","italic":false,"color":"green"}],
-                  {"text":"その場を中心に広範囲に展開し、自身と周囲の敵を上空に飛ばす。","italic":false,"color":"white"},
-                  {"text":"自身は着地するまでエリトラを得る。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  }
+                ],
+                {
+                  "text": "スニークの有無で効果が分岐する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                "",
+                [
+                  {
+                    "text": "非スニーク時",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:8s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "20m以内の視点先に風の陣を展開し、敵を攻撃してノックバックする。",
+                  "italic": false,
+                  "color": "white"
+                },
+                [
+                  {
+                    "text": "スニーク時",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:15s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "その場を中心に広範囲に展開し、自身と周囲の敵を上空に飛ばす。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "自身は着地するまでエリトラを得る。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{124skillID:1b,Enchantments:[{}]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{124skillID:1b,Enchantments:[{}]}"
             }
           ]
         }

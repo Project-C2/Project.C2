@@ -1,5 +1,5 @@
 scoreboard players set @s counter_2 120
-replaceitem entity @s hotbar.2 minecraft:light_weighted_pressure_plate{display:{Name:'{"text":"スターソーサー","color":"white","italic":false}',Lore:['{"text":"発動: 右クリック","color":"yellow","italic":false}','{"text":"壁反射する弾を放ち、もう一度右クリックで起動。","color":"white","italic":false}','{"text":"真芯で当てると威力が上昇する。","color":"white","italic":false}','{"text":"CT:8","color":"green","italic":false}']},HideFlags:63,Enchantments:[{id:"minecraft:infinity",lvl:1}]} 1
+item replace entity @s hotbar.2 with minecraft:light_weighted_pressure_plate{display:{Name:'{"text":"スターソーサー","color":"white","italic":false}',Lore:['{"text":"発動: 右クリック","color":"yellow","italic":false}','{"text":"壁反射する弾を放ち、もう一度右クリックで起動。","color":"white","italic":false}','{"text":"真芯で当てると威力が上昇する。","color":"white","italic":false}','{"text":"CT:8","color":"green","italic":false}']},HideFlags:63,Enchantments:[{id:"minecraft:infinity",lvl:1}]} 1
 
 playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 1 1
 

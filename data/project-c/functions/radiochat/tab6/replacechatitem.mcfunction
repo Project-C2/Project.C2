@@ -1,12 +1,12 @@
-replaceitem entity @s inventory.9 minecraft:air
-replaceitem entity @s inventory.10 minecraft:air
-replaceitem entity @s inventory.11 minecraft:air
-replaceitem entity @s inventory.12 minecraft:air
-replaceitem entity @s inventory.13 minecraft:air
-replaceitem entity @s inventory.14 minecraft:air
-replaceitem entity @s inventory.15 minecraft:air
-replaceitem entity @s inventory.16 minecraft:air
-replaceitem entity @s inventory.17 minecraft:air
+item replace entity @s inventory.9 with minecraft:air
+item replace entity @s inventory.10 with minecraft:air
+item replace entity @s inventory.11 with minecraft:air
+item replace entity @s inventory.12 with minecraft:air
+item replace entity @s inventory.13 with minecraft:air
+item replace entity @s inventory.14 with minecraft:air
+item replace entity @s inventory.15 with minecraft:air
+item replace entity @s inventory.16 with minecraft:air
+item replace entity @s inventory.17 with minecraft:air
 
 clear @s minecraft:music_disc_mall{display:{Name:"{\"text\":\"近距離職で行く\"}"}}
 clear @s minecraft:music_disc_mall{display:{Name:"{\"text\":\"遠距離職で行く\"}"}}
@@ -18,15 +18,15 @@ clear @s minecraft:music_disc_mall{display:{Name:"{\"text\":\"中央から行く
 clear @s minecraft:music_disc_mall{display:{Name:"{\"text\":\"誰か支援職になってくれ\"}"}}
 clear @s minecraft:music_disc_mall{display:{Name:"{\"text\":\"誰かにくっついていく\"}"}}
 
-replaceitem entity @s inventory.9 minecraft:music_disc_mall{display:{Name:"{\"text\":\"近距離職で行く\"}"}}
-replaceitem entity @s inventory.10 minecraft:music_disc_mall{display:{Name:"{\"text\":\"遠距離職で行く\"}"}}
-replaceitem entity @s inventory.11 minecraft:music_disc_mall{display:{Name:"{\"text\":\"支援職で行く\"}"}}
-replaceitem entity @s inventory.12 minecraft:music_disc_mall{display:{Name:"{\"text\":\"慣れない職を使う\"}"}}
-replaceitem entity @s inventory.13 minecraft:music_disc_mall{display:{Name:"{\"text\":\"右から行く\"}"}}
-replaceitem entity @s inventory.14 minecraft:music_disc_mall{display:{Name:"{\"text\":\"左から行く\"}"}}
-replaceitem entity @s inventory.15 minecraft:music_disc_mall{display:{Name:"{\"text\":\"中央から行く\"}"}}
-replaceitem entity @s inventory.16 minecraft:music_disc_mall{display:{Name:"{\"text\":\"誰か支援職になってくれ\"}"}}
-replaceitem entity @s inventory.17 minecraft:music_disc_mall{display:{Name:"{\"text\":\"誰かにくっついていく\"}"}}
+item replace entity @s inventory.9 with minecraft:music_disc_mall{display:{Name:"{\"text\":\"近距離職で行く\"}"}}
+item replace entity @s inventory.10 with minecraft:music_disc_mall{display:{Name:"{\"text\":\"遠距離職で行く\"}"}}
+item replace entity @s inventory.11 with minecraft:music_disc_mall{display:{Name:"{\"text\":\"支援職で行く\"}"}}
+item replace entity @s inventory.12 with minecraft:music_disc_mall{display:{Name:"{\"text\":\"慣れない職を使う\"}"}}
+item replace entity @s inventory.13 with minecraft:music_disc_mall{display:{Name:"{\"text\":\"右から行く\"}"}}
+item replace entity @s inventory.14 with minecraft:music_disc_mall{display:{Name:"{\"text\":\"左から行く\"}"}}
+item replace entity @s inventory.15 with minecraft:music_disc_mall{display:{Name:"{\"text\":\"中央から行く\"}"}}
+item replace entity @s inventory.16 with minecraft:music_disc_mall{display:{Name:"{\"text\":\"誰か支援職になってくれ\"}"}}
+item replace entity @s inventory.17 with minecraft:music_disc_mall{display:{Name:"{\"text\":\"誰かにくっついていく\"}"}}
 
 tag @s remove havingChat6-1Item
 tag @s remove havingChat6-2Item

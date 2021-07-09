@@ -1,12 +1,12 @@
-replaceitem entity @s inventory.9 minecraft:air
-replaceitem entity @s inventory.10 minecraft:air
-replaceitem entity @s inventory.11 minecraft:air
-replaceitem entity @s inventory.12 minecraft:air
-replaceitem entity @s inventory.13 minecraft:air
-replaceitem entity @s inventory.14 minecraft:air
-replaceitem entity @s inventory.15 minecraft:air
-replaceitem entity @s inventory.16 minecraft:air
-replaceitem entity @s inventory.17 minecraft:air
+item replace entity @s inventory.9 with minecraft:air
+item replace entity @s inventory.10 with minecraft:air
+item replace entity @s inventory.11 with minecraft:air
+item replace entity @s inventory.12 with minecraft:air
+item replace entity @s inventory.13 with minecraft:air
+item replace entity @s inventory.14 with minecraft:air
+item replace entity @s inventory.15 with minecraft:air
+item replace entity @s inventory.16 with minecraft:air
+item replace entity @s inventory.17 with minecraft:air
 
 clear @s minecraft:music_disc_blocks{display:{Name:"{\"text\":\"離席します\"}"}}
 clear @s minecraft:music_disc_blocks{display:{Name:"{\"text\":\"ジョブの使い方がわからん\"}"}}
@@ -18,15 +18,15 @@ clear @s minecraft:music_disc_blocks{display:{Name:"{\"text\":\"負ける気が�
 clear @s minecraft:music_disc_blocks{display:{Name:"{\"text\":\"死に過ぎた...\"}"}}
 clear @s minecraft:music_disc_blocks{display:{Name:"{\"text\":\"今回は相性が良くないな\"}"}}
 
-replaceitem entity @s inventory.9 minecraft:music_disc_blocks{display:{Name:"{\"text\":\"離席します\"}"}}
-replaceitem entity @s inventory.10 minecraft:music_disc_blocks{display:{Name:"{\"text\":\"ジョブの使い方がわからん\"}"}}
-replaceitem entity @s inventory.11 minecraft:music_disc_blocks{display:{Name:"{\"text\":\"バグった\"}"}}
-replaceitem entity @s inventory.12 minecraft:music_disc_blocks{display:{Name:"{\"text\":\"ラグがひどい\"}"}}
-replaceitem entity @s inventory.13 minecraft:music_disc_blocks{display:{Name:"{\"text\":\"迷った\"}"}}
-replaceitem entity @s inventory.14 minecraft:music_disc_blocks{display:{Name:"{\"text\":\"勝てる気がせん\"}"}}
-replaceitem entity @s inventory.15 minecraft:music_disc_blocks{display:{Name:"{\"text\":\"負ける気がせん\"}"}}
-replaceitem entity @s inventory.16 minecraft:music_disc_blocks{display:{Name:"{\"text\":\"死に過ぎた...\"}"}}
-replaceitem entity @s inventory.17 minecraft:music_disc_blocks{display:{Name:"{\"text\":\"今回は相性が良くないな\"}"}}
+item replace entity @s inventory.9 with minecraft:music_disc_blocks{display:{Name:"{\"text\":\"離席します\"}"}}
+item replace entity @s inventory.10 with minecraft:music_disc_blocks{display:{Name:"{\"text\":\"ジョブの使い方がわからん\"}"}}
+item replace entity @s inventory.11 with minecraft:music_disc_blocks{display:{Name:"{\"text\":\"バグった\"}"}}
+item replace entity @s inventory.12 with minecraft:music_disc_blocks{display:{Name:"{\"text\":\"ラグがひどい\"}"}}
+item replace entity @s inventory.13 with minecraft:music_disc_blocks{display:{Name:"{\"text\":\"迷った\"}"}}
+item replace entity @s inventory.14 with minecraft:music_disc_blocks{display:{Name:"{\"text\":\"勝てる気がせん\"}"}}
+item replace entity @s inventory.15 with minecraft:music_disc_blocks{display:{Name:"{\"text\":\"負ける気がせん\"}"}}
+item replace entity @s inventory.16 with minecraft:music_disc_blocks{display:{Name:"{\"text\":\"死に過ぎた...\"}"}}
+item replace entity @s inventory.17 with minecraft:music_disc_blocks{display:{Name:"{\"text\":\"今回は相性が良くないな\"}"}}
 
 tag @s remove havingChat3-1Item
 tag @s remove havingChat3-2Item

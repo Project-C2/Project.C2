@@ -3,7 +3,7 @@ execute as @e[tag=097_2arrow] if score @s playerNumber = @a[tag=user,limit=1] pl
 tag @s remove user
 
 execute unless entity @e[tag=097flying,limit=1] run scoreboard players set @s CT2 1100
-execute unless entity @e[tag=097flying,limit=1] run replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 5
+execute unless entity @e[tag=097flying,limit=1] run item replace entity @s hotbar.2 with minecraft:compass{display:{Name:'"CoolTime"'}} 5
 execute unless entity @e[tag=097flying,limit=1] run tag @s remove SkillReady2
 execute unless entity @e[tag=097flying,limit=1] run scoreboard players set @s usedSkill 2
 execute unless entity @e[tag=097flying,limit=1] run scoreboard players reset @s counter_2

@@ -5,3 +5,4 @@ execute if entity @s[tag=Battle,scores={OutCombat=240..}] run tag @s add 119_Out
 function project-c:jobaction/119/snowball
 
 scoreboard players reset @s drop
+item replace entity @s enderchest.0 from entity @s container.0

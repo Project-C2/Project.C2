@@ -9,22 +9,46 @@
           "name": "minecraft:bamboo",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "風吹矢","color":"green","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "風吹矢",
+                "color": "green",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / CT:7","italic":false,"color":"aqua"},
-                  {"text":"風の魔力で矢を飛ばして攻撃。","italic":false,"color":"white"},
-                  {"text":"命中した敵を少しだけ上に飛ばす効果がある。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "右クリック / CT:7",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "風の魔力で矢を飛ばして攻撃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "命中した敵を少しだけ上に飛ばす効果がある。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110skillID:2b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110skillID:2b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
             }
           ]
         }

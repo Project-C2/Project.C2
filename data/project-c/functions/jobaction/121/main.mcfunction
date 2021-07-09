@@ -28,10 +28,10 @@ execute if entity @s[scores={counter_3=1..}] run execute as @e[tag=121fire,dista
 execute as @s[tag=121clean,scores={aviate=1..}] at @s run tag @s remove 121clean
 
 execute if entity @e[tag=121-S1-AEC,distance=..10] run tag @s add 121clean
-execute if entity @e[tag=121-S1-AEC,distance=..10] run replaceitem entity @s armor.chest minecraft:elytra{display:{Name:'{"text":"Celestial Feather","color":"aqua","italic":false}',Lore:['{"text":" "}','{"text":"[Passive: Fall Resist,Jump Boost]","color":"white","italic":false}','{"text":"[Jump: Double Jump]","color":"white","italic":false}','{"text":" "}','{"text":"\\"大丈夫、きっとやりとげられる\\"","color":"white","italic":false}']},HideFlags:5,RepairCost:-1000,AttributeModifiers:[{AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:-0.3,Operation:1,UUIDLeast:605430,UUIDMost:320978,Slot:"chest"}],Unbreakable:1b,ItemName:Celestial_Feather,Enchantments:[{id:"minecraft:unbreaking",lvl:1s},{id:"minecraft:binding_curse",lvl:1}],CustomModelData:1} 1
+execute if entity @e[tag=121-S1-AEC,distance=..10] run item replace entity @s armor.chest with minecraft:elytra{display:{Name:'{"text":"Celestial Feather","color":"aqua","italic":false}',Lore:['{"text":" "}','{"text":"[Passive: Fall Resist,Jump Boost]","color":"white","italic":false}','{"text":"[Jump: Double Jump]","color":"white","italic":false}','{"text":" "}','{"text":"\\"大丈夫、きっとやりとげられる\\"","color":"white","italic":false}']},HideFlags:5,RepairCost:-1000,AttributeModifiers:[{AttributeName:"generic.maxHealth",Name:"generic.maxHealth",Amount:-0.3,Operation:1,UUIDLeast:605430,UUIDMost:320978,Slot:"chest"}],Unbreakable:1b,ItemName:Celestial_Feather,Enchantments:[{id:"minecraft:unbreaking",lvl:1s},{id:"minecraft:binding_curse",lvl:1}],CustomModelData:1} 1
 
 
-execute as @s[tag=121clean,scores={aviate=1..}] at @s run execute unless entity @e[tag=121-S1-AEC,distance=..10] run replaceitem entity @s armor.chest minecraft:air
+execute as @s[tag=121clean,scores={aviate=1..}] at @s run execute unless entity @e[tag=121-S1-AEC,distance=..10] run item replace entity @s armor.chest with minecraft:air
 
 scoreboard players add @s[scores={stockcounter=..2,CT2=1300..}] stockcounter 1
 execute if entity @s[scores={stockcounter=..3,CT2=1300..}] run function project-c:jobaction/121/replaceitem/2

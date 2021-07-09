@@ -1,31 +1,33 @@
 {
-    "criteria": {
-      "deflected_projectile": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "damage": {
-            "dealt": {
-                "min": 5.6
-            },
-            "type": {
-              "direct_entity": {
-                "type": "minecraft:player",
-                "flags":{
-                  "is_sneaking": true
-                },
-                "equipment": {
-                    "mainhand": {
-                        "item": "minecraft:netherite_sword",
-                        "nbt": "{092_crafted:1b}"
-                    }
+  "criteria": {
+    "deflected_projectile": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 5.6
+          },
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:player",
+              "flags": {
+                "is_sneaking": true
+              },
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{092_crafted:1b}",
+                  "items": [
+                    "minecraft:netherite_sword"
+                  ]
                 }
               }
             }
           }
         }
       }
-    },
-    "rewards": {
-        "function": "project-c:jobaction/092/sword"
     }
+  },
+  "rewards": {
+    "function": "project-c:jobaction/092/sword"
   }
+}

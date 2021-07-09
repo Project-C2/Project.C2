@@ -16,7 +16,7 @@ execute store result score @e[tag=090fireF,limit=1] counter_1 run data get entit
 execute store result score @e[tag=090fireF,limit=1] counter_2 run data get entity @s Rotation[1] 200
 kill @e[tag=090dummy]
 tag @e[tag=090fireF] remove 090fireF
-replaceitem entity @s weapon.offhand minecraft:snowball
+item replace entity @s weapon.offhand with minecraft:snowball
 #リセット
 tag @s remove SkillReady1
 data merge block -25 2 89 {auto:1b}

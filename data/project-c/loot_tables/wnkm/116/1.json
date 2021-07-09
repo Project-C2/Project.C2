@@ -9,19 +9,42 @@
           "name": "minecraft:flint",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "Hook Impact","color":"white","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Hook Impact",
+                "color": "white",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:6s","italic":false,"color":"green"}],
-                  {"text":"糸を引いた際に周囲にダメージを与える。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:6s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "糸を引いた際に周囲にダメージを与える。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{116skillID:1b}"
+              "function": "minecraft:set_nbt",
+              "tag": "{116skillID:1b}"
             }
           ]
         }

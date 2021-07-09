@@ -1,7 +1,7 @@
 {
-    "criteria": {
-      "root": {
-        "trigger": "minecraft:inventory_changed"
-      }
+  "criteria": {
+    "root": {
+      "trigger": "minecraft:inventory_changed"
     }
   }
+}

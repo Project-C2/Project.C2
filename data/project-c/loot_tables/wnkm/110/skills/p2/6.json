@@ -9,22 +9,46 @@
           "name": "minecraft:brown_shulker_box",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "土壁","color":"gold","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "土壁",
+                "color": "gold",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / CT:12","italic":false,"color":"aqua"},
-                  {"text":"正面に物理攻撃に強い壁を生成する。","italic":false,"color":"white"},
-                  {"text":"壁は20秒間持続する。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "右クリック / CT:12",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "正面に物理攻撃に強い壁を生成する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "壁は20秒間持続する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110skillID:6b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110skillID:6b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
             }
           ]
         }

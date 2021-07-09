@@ -1,8 +1,8 @@
 scoreboard players add @s Mana 1
 scoreboard players set @s[scores={Mana=4..}] Mana 1
-replaceitem entity @s[scores={Mana=1}] hotbar.4 minecraft:purple_glazed_terracotta{display:{Name:'{"text":"斬＝バスター","color":"dark_purple","italic":false,"underlined":true}',Lore:['{"text":"攻撃力が上昇する","color":"white","italic":false}']}} 1
-replaceitem entity @s[scores={Mana=2}] hotbar.4 minecraft:gray_glazed_terracotta{display:{Name:'{"text":"鎧＝アーマー","color":"dark_gray","italic":false,"underlined":true}',Lore:['{"text":"防御力が上昇する","color":"white","italic":false}']}} 1
-replaceitem entity @s[scores={Mana=3}] hotbar.4 minecraft:light_blue_glazed_terracotta{display:{Name:'{"text":"疾＝スピード","color":"aqua","italic":false,"underlined":true}',Lore:['{"text":"機動力が上昇する","color":"white","italic":false}']}} 1
+item replace entity @s[scores={Mana=1}] hotbar.4 with minecraft:purple_glazed_terracotta{display:{Name:'{"text":"斬＝バスター","color":"dark_purple","italic":false,"underlined":true}',Lore:['{"text":"攻撃力が上昇する","color":"white","italic":false}']}} 1
+item replace entity @s[scores={Mana=2}] hotbar.4 with minecraft:gray_glazed_terracotta{display:{Name:'{"text":"鎧＝アーマー","color":"dark_gray","italic":false,"underlined":true}',Lore:['{"text":"防御力が上昇する","color":"white","italic":false}']}} 1
+item replace entity @s[scores={Mana=3}] hotbar.4 with minecraft:light_blue_glazed_terracotta{display:{Name:'{"text":"疾＝スピード","color":"aqua","italic":false,"underlined":true}',Lore:['{"text":"機動力が上昇する","color":"white","italic":false}']}} 1
 execute at @s run playsound minecraft:entity.wither.hurt master @a ~ ~ ~ 0.5 1.45
 effect clear @s minecraft:strength
 effect clear @s minecraft:speed

@@ -5,9 +5,9 @@ scoreboard players set @s CT2 960
 execute unless score @s counter_5 matches 1 run scoreboard players operation @s counter_1 *= #3 counter
 execute unless score @s counter_5 matches 1 run scoreboard players operation @s counter_1 /= #2 counter
 scoreboard players operation @s CT2 += @s counter_1
-execute if score @s CT2 matches 960..979 run replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 12
-execute if score @s CT2 matches 980..999 run replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 11
-execute if score @s CT2 matches 1000..1019 run replaceitem entity @s hotbar.2 minecraft:compass{display:{Name:'"CoolTime"'}} 10
+execute if score @s CT2 matches 960..979 run item replace entity @s hotbar.2 with minecraft:compass{display:{Name:'"CoolTime"'}} 12
+execute if score @s CT2 matches 980..999 run item replace entity @s hotbar.2 with minecraft:compass{display:{Name:'"CoolTime"'}} 11
+execute if score @s CT2 matches 1000..1019 run item replace entity @s hotbar.2 with minecraft:compass{display:{Name:'"CoolTime"'}} 10
 
 #myチームに他プレイヤーがいる時にセリフ吐くやつ
 tag @s add 105_3

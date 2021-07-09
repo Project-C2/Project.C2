@@ -9,12 +9,16 @@
           "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "魔法付与の杖","color":"aqua","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "魔法付与の杖",
+                "color": "aqua",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{Unbreakable:1b,Enchantments:[{}]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{Unbreakable:1b,Enchantments:[{}]}"
             }
           ]
         }

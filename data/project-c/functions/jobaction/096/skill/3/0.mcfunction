@@ -1,5 +1,5 @@
 scoreboard players set @s CT3 1140
-replaceitem entity @s hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 3
+item replace entity @s hotbar.3 with minecraft:compass{display:{Name:'"CoolTime"'}} 3
 
 summon armor_stand ~ ~ ~ {Tags:["096_3operate","096first"],NoGravity:1b,Marker:1b,Invisible:1b}
 execute if entity @s[team=Red] run team join RedDummy @e[tag=096first]

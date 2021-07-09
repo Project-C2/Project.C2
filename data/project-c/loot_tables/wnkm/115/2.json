@@ -9,30 +9,81 @@
           "name": "minecraft:feather",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "魔法付与","color":"aqua","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "魔法付与",
+                "color": "aqua",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"スニーク","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:1","italic":false,"color":"green"}],
-                  {"text":"自身のHPを消費し、斧をエンチャントする。","italic":false,"color":"white"},
-                  {"text":"発動時、ショットアックスのCTを1秒回復する。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"発動後、エンチャントの種類をスロットで指定し、","italic":false,"color":"white"},
-                  {"text":"任意のタイミングで右クリックすると魔法を付与。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"斧へのエンチャントは最大3重まで付与出来る。","italic":false,"color":"gray"},
-                  {"text":"斧を一度使用すると付与した魔法は消滅する。","italic":false,"color":"gray"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "スニーク",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:1",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "自身のHPを消費し、斧をエンチャントする。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "発動時、ショットアックスのCTを1秒回復する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "発動後、エンチャントの種類をスロットで指定し、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "任意のタイミングで右クリックすると魔法を付与。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "斧へのエンチャントは最大3重まで付与出来る。",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "斧を一度使用すると付与した魔法は消滅する。",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_count",
-                "count": 1
+              "function": "minecraft:set_count",
+              "count": 1
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{115skillID:2b,Enchantments:[{}]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{115skillID:2b,Enchantments:[{}]}"
             }
           ]
         }

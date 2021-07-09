@@ -1,5 +1,5 @@
 scoreboard players set @s CT3 1160
-replaceitem entity @s hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 2
+item replace entity @s hotbar.3 with minecraft:compass{display:{Name:'"CoolTime"'}} 2
 scoreboard players add @s counter_5 1
 execute if score @s counter_5 matches 2.. run scoreboard players set @s counter_5 0
 

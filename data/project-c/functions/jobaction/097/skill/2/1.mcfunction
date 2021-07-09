@@ -16,7 +16,7 @@ execute at @s run particle minecraft:reverse_portal ~ ~ ~ 0.5 1 0.5 1 200 force 
 scoreboard players set @s CT2 803
 tag @s add SkillDelay2
 scoreboard players operation @s counter_5 = @s subcounter
-replaceitem entity @s hotbar.2 minecraft:spectral_arrow{display:{Name:'{"text":"La Troisième flèche","color":"gold","bold":true,"italic":true}',Lore:['{"text":"--------------------------------","italic":false,"color":"gray"}','{"text":"右クリック / CT:20","color":"aqua","italic":false}','{"text":"1回目:前方に無威力の矢を放つ。","color":"white","italic":false}','{"text":"2回目:放った矢が消滅していなければ、矢をキルして矢にtpする。","color":"white","italic":false}','{"text":"3回目:蒼星の矢を放ち、命中した敵をノックバックさせて追撃する。","color":"white","italic":false}','{"text":"--------------------------------","italic":false,"color":"gray"}',]},Enchantments:[{}],HideFlags:32} 1
+item replace entity @s hotbar.2 with minecraft:spectral_arrow{display:{Name:'{"text":"La Troisième flèche","color":"gold","bold":true,"italic":true}',Lore:['{"text":"--------------------------------","italic":false,"color":"gray"}','{"text":"右クリック / CT:20","color":"aqua","italic":false}','{"text":"1回目:前方に無威力の矢を放つ。","color":"white","italic":false}','{"text":"2回目:放った矢が消滅していなければ、矢をキルして矢にtpする。","color":"white","italic":false}','{"text":"3回目:蒼星の矢を放ち、命中した敵をノックバックさせて追撃する。","color":"white","italic":false}','{"text":"--------------------------------","italic":false,"color":"gray"}',]},Enchantments:[{}],HideFlags:32} 1
 scoreboard players reset @s counter_2
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2

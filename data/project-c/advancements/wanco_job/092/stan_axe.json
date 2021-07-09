@@ -1,28 +1,30 @@
 {
-    "criteria": {
-      "deflected_projectile": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "damage": {
-            "dealt": {
-                "min": 9.0
-            },
-            "type": {
-              "direct_entity": {
-                "type": "minecraft:player",
-                "equipment": {
-                    "mainhand": {
-                        "item": "minecraft:netherite_axe",
-                        "nbt": "{092_stan_axe:1b}"
-                    }
+  "criteria": {
+    "deflected_projectile": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 9
+          },
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{092_stan_axe:1b}",
+                  "items": [
+                    "minecraft:netherite_axe"
+                  ]
                 }
               }
             }
           }
         }
       }
-    },
-    "rewards": {
-        "function": "project-c:jobaction/092/stan_axe"
     }
+  },
+  "rewards": {
+    "function": "project-c:jobaction/092/stan_axe"
   }
+}

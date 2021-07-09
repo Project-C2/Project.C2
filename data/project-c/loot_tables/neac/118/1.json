@@ -11,15 +11,43 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "Health Resonance","italic": false,"color": "#ff0000","bold":true}
+                {
+                  "text": "Health Resonance",
+                  "italic": false,
+                  "color": "#ff0000",
+                  "bold": true
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:30s","italic":false,"color":"green"}],
-                {"text": "選択したプレイヤーと5秒間体力を共有する。","italic": false,"color": "white"},
-                {"text": "発動すると選択が解除される。","italic": false,"color": "white"}
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:30s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "選択したプレイヤーと5秒間体力を共有する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "発動すると選択が解除される。",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {

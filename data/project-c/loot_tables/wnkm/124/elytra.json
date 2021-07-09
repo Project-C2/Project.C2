@@ -9,12 +9,16 @@
           "name": "minecraft:elytra",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "風の翼","color":"#37998e","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "風の翼",
+                "color": "#37998e",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{124skillID:5b,Unbreakable:1b,Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s}]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{124skillID:5b,Unbreakable:1b,Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s}]}"
             }
           ]
         }

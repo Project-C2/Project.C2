@@ -24,7 +24,7 @@ execute if entity @s[scores={sneak=1..,CT3=1200..},tag=SkillReady3,gamemode=!spe
 
 execute if entity @s[tag=job129-usage-prohibited] run tellraw @s {"text":"このレリックは使えない！","bold":true,"color":"red"}
 execute if entity @s[tag=job129-usage-prohibited] at @s run playsound block.note_block.pling master @s ~ ~ ~ 1 0
-execute if entity @s[tag=job129-usage-prohibited] run replaceitem entity @s container.8 air
+execute if entity @s[tag=job129-usage-prohibited] run item replace entity @s container.8 with air
 execute if entity @s[tag=job129-usage-prohibited] run scoreboard players set @s relic 0
 execute if entity @s[tag=job129-usage-prohibited] run tag @s remove job129-usage-prohibited
 

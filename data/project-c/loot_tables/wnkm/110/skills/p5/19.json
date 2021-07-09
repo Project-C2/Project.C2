@@ -9,22 +9,46 @@
           "name": "minecraft:prismarine_crystals",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "吹雪","color":"aqua","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "吹雪",
+                "color": "aqua",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / CT:15","italic":false,"color":"aqua"},
-                  {"text":"魔法陣から吹雪を引き起こし、敵を凍らせる。","italic":false,"color":"white"},
-                  {"text":"","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "右クリック / CT:15",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "魔法陣から吹雪を引き起こし、敵を凍らせる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110skillID:19b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110skillID:19b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
             }
           ]
         }

@@ -1,5 +1,5 @@
 scoreboard players set @s CT3 0
-replaceitem entity @s hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 40
+item replace entity @s hotbar.3 with minecraft:compass{display:{Name:'"CoolTime"'}} 40
 
 summon armor_stand ~ ~ ~ {Tags:["089fire","this"],Marker:1b,Invisible:1b}
 tp @e[tag=this] ~ ~ ~ ~ ~

@@ -1,5 +1,5 @@
 scoreboard players set @s CT3 1000
-replaceitem entity @s armor.chest air
+item replace entity @s armor.chest with air
 clear @s elytra
 
 tp @s @s

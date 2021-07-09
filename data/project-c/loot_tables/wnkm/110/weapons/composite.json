@@ -9,20 +9,36 @@
           "name": "minecraft:bow",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "コンポジットボウ","color": "gray","italic": false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "コンポジットボウ",
+                "color": "gray",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"様々な素材で作られ、威力が上がった弓。","italic":false,"color":"gold"},
-                  {"text":"複合弓とも呼ばれる。","italic":false,"color":"gold"},
-                  {"text":" 威力 2.0","italic":false,"color":"green"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "様々な素材で作られ、威力が上がった弓。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": "複合弓とも呼ばれる。",
+                  "italic": false,
+                  "color": "gold"
+                },
+                {
+                  "text": " 威力 2.0",
+                  "italic": false,
+                  "color": "green"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110weapon:1b,110weaponID:4b,Unbreakable:1b,HideFlags:4}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110weapon:1b,110weaponID:4b,Unbreakable:1b,HideFlags:4}"
             }
           ]
         }

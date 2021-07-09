@@ -11,19 +11,72 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "レリーヴストーン","italic": false,"color": "white"}
+                {
+                  "text": "レリーヴストーン",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"text": "タイプ：アクティブ","italic": false,"color": "green"},
-                {"text": "トリガ：アタック・スニーク・ジャンプ","italic": false,"color": "yellow"},
-                {"text": "クールタイム：20秒","italic": false,"color": "aqua"},
-                {"text": "満たしたトリガによって効果が変動する","italic": false,"color": "dark_purple"},
-                [{"text": "アタック: ","italic": false,"color": "yellow"},{"text": "対象に追撃を行う","italic": false,"color": "dark_purple"}],
-                [{"text": "スニーク: ","italic": false,"color": "yellow"},{"text": "ダメージを一度だけ80%軽減する","italic": false,"color": "dark_purple"}],
-                [{"text": "ジャンプ: ","italic": false,"color": "yellow"},{"text": "自身を除く周囲4mの味方2人を回復させる","italic": false,"color": "dark_purple"}]
+                {
+                  "text": "タイプ：アクティブ",
+                  "italic": false,
+                  "color": "green"
+                },
+                {
+                  "text": "トリガ：アタック・スニーク・ジャンプ",
+                  "italic": false,
+                  "color": "yellow"
+                },
+                {
+                  "text": "クールタイム：20秒",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "満たしたトリガによって効果が変動する",
+                  "italic": false,
+                  "color": "dark_purple"
+                },
+                [
+                  {
+                    "text": "アタック: ",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": "対象に追撃を行う",
+                    "italic": false,
+                    "color": "dark_purple"
+                  }
+                ],
+                [
+                  {
+                    "text": "スニーク: ",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": "ダメージを一度だけ80%軽減する",
+                    "italic": false,
+                    "color": "dark_purple"
+                  }
+                ],
+                [
+                  {
+                    "text": "ジャンプ: ",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": "自身を除く周囲4mの味方2人を回復させる",
+                    "italic": false,
+                    "color": "dark_purple"
+                  }
+                ]
               ]
             },
             {

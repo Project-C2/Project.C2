@@ -86,5 +86,5 @@ execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"Ｔ�
 
 execute if entity @s[nbt={Inventory:[{Slot:5b,tag:{display:{Name:'{"text":"Ｔｈｅ Ｆｒｕｉｔ ｏｆ Ｇｒｉｓａｉａ","color":"#FFF700","bold":true,"italic":false,"underlined":true}'}}}]}] run effect give @s minecraft:luck 1 120
 
-replaceitem entity @s hotbar.5 minecraft:air
+item replace entity @s hotbar.5 with minecraft:air
 function project-c:general/0-luckeffection

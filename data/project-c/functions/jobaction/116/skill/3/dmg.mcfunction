@@ -1,5 +1,5 @@
 scoreboard players set @s CT3 1140
-replaceitem entity @s container.3 minecraft:compass{CT:3,display:{Name:'"CoolTime"'}} 3
+item replace entity @s container.3 with minecraft:compass{CT:3,display:{Name:'"CoolTime"'}} 3
 
 scoreboard players operation #116- playerNumber = @s playerNumber
 execute if entity @e[tag=116grapple,limit=1] as @e[tag=116grapple] if score @s playerNumber = #116- playerNumber run kill @s

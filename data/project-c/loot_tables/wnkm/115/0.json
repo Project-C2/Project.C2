@@ -1,43 +1,47 @@
 {
-  "type": "minecraft:entity",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "type": "minecraft:entity",
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:stone_axe",
-          "functions": [
-            {
-                "function": "minecraft:set_name",
-                "name": {"text": "無銘の斧","color":"white","italic":false}
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                  {
-                      "name": "generic.attackSpeed",
-                      "attribute": "generic.attack_speed",
-                      "operation": "addition",
-                      "amount": -3.0,
-                      "slot": "mainhand"
-                  },
-                  {
-                      "name": "generic.attackDamage",
-                      "attribute": "generic.attack_damage",
-                      "operation": "addition",
-                      "amount": 6.0,
-                      "slot": "mainhand"
-                  }
-              ]
-            },
-            {
-                "function": "minecraft:set_nbt",
-                "tag": "{115skillID:0b,Unbreakable:1b,HideFlags:1}"
-            }
-          ]
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone_axe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "無銘の斧",
+                                "color": "white",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "name": "generic.attackSpeed",
+                                    "attribute": "generic.attack_speed",
+                                    "operation": "addition",
+                                    "amount": -3,
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "name": "generic.attackDamage",
+                                    "attribute": "generic.attack_damage",
+                                    "operation": "addition",
+                                    "amount": 6,
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{115skillID:0b,Unbreakable:1b,HideFlags:1}"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

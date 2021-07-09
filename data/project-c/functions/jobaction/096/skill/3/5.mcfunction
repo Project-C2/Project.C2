@@ -1,6 +1,6 @@
 #条件を満たしている時のジャンプ後の処理、1回
 scoreboard players remove @s CT3 60
-replaceitem entity @s hotbar.3 minecraft:compass{display:{Name:'"CoolTime"'}} 6
+item replace entity @s hotbar.3 with minecraft:compass{display:{Name:'"CoolTime"'}} 6
 execute as @e[tag=flag,tag=096chainFirst,limit=1] rotated as @s positioned as @s run tp @s ~ ~ ~ ~ ~
 execute store result score @s counter_6 run data get entity @e[tag=flag,tag=096chainFirst,limit=1] Rotation[1] 1
 execute if score @s counter_6 matches 1.. run scoreboard players operation @s counter_6 *= #3 counter
@@ -10,7 +10,7 @@ execute if score @s counter_6 matches 1.. run summon area_effect_cloud ~ ~0.5 ~ 
 execute if score @s counter_6 matches 1.. store result entity @e[tag=this,limit=1,sort=nearest] Effects[0].Duration int 0.2 run scoreboard players get @s counter_6
 tag @e[tag=this,limit=1,sort=nearest] remove this
 effect give @s minecraft:slow_falling 1 0
-replaceitem entity @s armor.feet minecraft:chainmail_boots{Enchantments:[{id:"binding_curse",lvl:1s},{id:"blast_protection",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"096",Slot:"feet",UUID:[I;0,96,0,96],Amount:1d,Operation:0}],Unbreakable:1b}
+item replace entity @s armor.feet with minecraft:chainmail_boots{Enchantments:[{id:"binding_curse",lvl:1s},{id:"blast_protection",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.knockback_resistance",Name:"096",Slot:"feet",UUID:[I;0,96,0,96],Amount:1d,Operation:0}],Unbreakable:1b}
 
 tag @s add 096chainjump_p
 tag @s add 096_jumped

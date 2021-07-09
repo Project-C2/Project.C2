@@ -1,5 +1,6 @@
 scoreboard players set @s CT2 1190
 scoreboard players reset @s drop
+item replace entity @s enderchest.0 from entity @s container.0
 
 #三角関数周りの測定
 execute positioned 0.0 0.15 0.0 rotated as @s run summon armor_stand ^ ^ ^1.2 {Tags:["026-dummy"],Invisible:1b,Marker:1b,NoGravity:1b}

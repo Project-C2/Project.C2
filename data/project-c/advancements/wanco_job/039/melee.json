@@ -1,28 +1,30 @@
 {
-    "criteria": {
-      "deflected_projectile": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "damage": {
-            "dealt": {
-                "max": 6.6
-            },
-            "type": {
-              "direct_entity": {
-                "type": "minecraft:player",
-                "equipment": {
-                    "mainhand": {
-                        "item": "minecraft:packed_ice",
-                        "nbt": "{039cryo:1b}"
-                    }
+  "criteria": {
+    "deflected_projectile": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "max": 6.6
+          },
+          "type": {
+            "direct_entity": {
+              "type": "minecraft:player",
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{039cryo:1b}",
+                  "items": [
+                    "minecraft:packed_ice"
+                  ]
                 }
               }
             }
           }
         }
+      }
     }
   },
   "rewards": {
-      "function": "project-c:jobaction/039/melee"
+    "function": "project-c:jobaction/039/melee"
   }
 }

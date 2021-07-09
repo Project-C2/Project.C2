@@ -11,7 +11,11 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                {"text": "ナイフ","italic": false,"color": "white"}
+                {
+                  "text": "ナイフ",
+                  "italic": false,
+                  "color": "white"
+                }
               ]
             },
             {

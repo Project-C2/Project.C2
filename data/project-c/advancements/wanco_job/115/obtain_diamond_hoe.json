@@ -22,5 +22,5 @@
   },
   "rewards": {
     "function": "project-c:jobaction/115/skill/3/advancement"
-}
+  }
 }

@@ -45,7 +45,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"デイン",
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"マダンテ","color":"dark_purple","italic":"false","underlined":"false"}'}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/016/skill/3/0
 
-execute if entity @s[scores={useSnowball=1..}] run replaceitem entity @s weapon.offhand minecraft:snowball
+execute if entity @s[scores={useSnowball=1..}] run item replace entity @s weapon.offhand with minecraft:snowball
 execute if entity @s[scores={useSnowball=1..}] run kill @e[type=snowball,limit=1,sort=nearest]
 
 

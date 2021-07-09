@@ -9,20 +9,47 @@
           "name": "minecraft:pink_carpet",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "Mine Bloom","color":"#ffc9d2","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Mine Bloom",
+                "color": "#ffc9d2",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"右クリック","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:7s","italic":false,"color":"green"}],
-                  {"text":"視点先に花びらを召喚する。","italic":false,"color":"white"},
-                  {"text":"7m以内の敵に付着させて召喚する事も可能。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "右クリック",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:7s",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "視点先に花びらを召喚する。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "7m以内の敵に付着させて召喚する事も可能。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{119skillID:1b,wnkmSkillCT:1060,Enchantments:[{}]}"
+              "function": "minecraft:set_nbt",
+              "tag": "{119skillID:1b,wnkmSkillCT:1060,Enchantments:[{}]}"
             }
           ]
         }

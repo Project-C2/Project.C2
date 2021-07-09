@@ -36,9 +36,9 @@ execute if entity @e[tag=GoumonSpecial,limit=1,scores={CT3=1201..}] run scoreboa
 execute if entity @e[tag=GoumonSpecial,limit=1] run scoreboard players remove @e[tag=GoumonSpecial] CT1 100
 execute if entity @e[tag=GoumonSpecial,limit=1] run scoreboard players remove @e[tag=GoumonSpecial] CT2 100
 execute if entity @e[tag=GoumonSpecial,limit=1] run scoreboard players remove @e[tag=GoumonSpecial] CT3 100
-execute if entity @e[tag=GoumonSpecial,limit=1] run replaceitem entity @e[tag=GoumonSpecial] inventory.1 compass{display:{Name:'{"text":"CoolTime"}'}} 5
-execute if entity @e[tag=GoumonSpecial,limit=1] run replaceitem entity @e[tag=GoumonSpecial] inventory.2 compass{display:{Name:'{"text":"CoolTime"}'}} 5
-execute if entity @e[tag=GoumonSpecial,limit=1] run replaceitem entity @e[tag=GoumonSpecial] inventory.3 compass{display:{Name:'{"text":"CoolTime"}'}} 5
+execute if entity @e[tag=GoumonSpecial,limit=1] run item replace entity @e[tag=GoumonSpecial] inventory.1 with compass{display:{Name:'{"text":"CoolTime"}'}} 5
+execute if entity @e[tag=GoumonSpecial,limit=1] run item replace entity @e[tag=GoumonSpecial] inventory.2 with compass{display:{Name:'{"text":"CoolTime"}'}} 5
+execute if entity @e[tag=GoumonSpecial,limit=1] run item replace entity @e[tag=GoumonSpecial] inventory.3 with compass{display:{Name:'{"text":"CoolTime"}'}} 5
 execute if entity @e[tag=GoumonSpecial,limit=1] run tag @e[tag=GoumonSpecial] remove SkillReady1
 execute if entity @e[tag=GoumonSpecial,limit=1] run tag @e[tag=GoumonSpecial] remove SkillReady2
 execute if entity @e[tag=GoumonSpecial,limit=1] run tag @e[tag=GoumonSpecial] remove SkillReady3

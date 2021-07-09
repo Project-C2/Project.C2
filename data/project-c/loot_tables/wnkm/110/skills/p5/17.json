@@ -9,26 +9,66 @@
           "name": "minecraft:horn_coral",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "電光","color":"yellow","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "電光",
+                "color": "yellow",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"右クリック / CT:6 / 追加入力可能:1回(4.0秒)","italic":false,"color":"aqua"},
-                  {"text":"小規模の電光を放ち、敵を攻撃。","italic":false,"color":"white"},
-                  {"text":"放った電光は威力を失い4秒間留まる。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"},
-                  {"text":"追加入力効果 / 右クリック / CT:4","italic":false,"color":"aqua"},
-                  {"text":"放った電光の位置に瞬間移動し、","italic":false,"color":"white"},
-                  {"text":"周囲の敵を雷の斬撃で斬る。","italic":false,"color":"white"},
-                  {"text":"--------------------------------","italic":false,"color":"gray"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "右クリック / CT:6 / 追加入力可能:1回(4.0秒)",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "小規模の電光を放ち、敵を攻撃。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "放った電光は威力を失い4秒間留まる。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                },
+                {
+                  "text": "追加入力効果 / 右クリック / CT:4",
+                  "italic": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": "放った電光の位置に瞬間移動し、",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "周囲の敵を雷の斬撃で斬る。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "--------------------------------",
+                  "italic": false,
+                  "color": "gray"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{110skillID:17b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
+              "function": "minecraft:set_nbt",
+              "tag": "{110skillID:17b,110skill:1b,110skillSlot:-1b,Unbreakable:1b,HideFlags:4}"
             }
           ]
         }

@@ -1,7 +1,7 @@
 clear @s #project-c:neac/all{110blessItem:1b}
 clear @s minecraft:carrot_on_a_stick
 
-execute unless score @s counter_9 matches 1..9 run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1b,HideFlags:4}
+execute unless score @s counter_9 matches 1..9 run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{Unbreakable:1b,HideFlags:4}
 execute if score @s relic matches 1.. if score @s counter_9 matches 1..9 run scoreboard players set @s relic 0
 execute if score @s counter_9 matches 1 run loot replace entity @s container.8 loot project-c:wnkm/110/bless/1
 execute if score @s counter_9 matches 1 run loot replace entity @s weapon.offhand loot project-c:wnkm/110/rod/1

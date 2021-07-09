@@ -24,8 +24,8 @@
               ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{wnkm.randomItem:1b}"
+              "function": "minecraft:set_nbt",
+              "tag": "{wnkm.randomItem:1b}"
             }
           ]
         }

@@ -9,20 +9,47 @@
           "name": "minecraft:arrow",
           "functions": [
             {
-                "function": "minecraft:set_name",
-                "name": {"text": "ショットアックス","color":"gray","italic":false}
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "ショットアックス",
+                "color": "gray",
+                "italic": false
+              }
             },
             {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  [{"text":"斧を持ち弓を放つ","italic":false,"color":"yellow"},{"text":" / ","color":"gray"},{"text":"CT:4","italic":false,"color":"green"}],
-                  {"text":"弓で斧を撃ち出す。CT中は斧を使えない。","italic":false,"color":"white"},
-                  {"text":"命中時、このスキルのCTを1秒回復する。","italic":false,"color":"white"}
-                ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "斧を持ち弓を放つ",
+                    "italic": false,
+                    "color": "yellow"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "CT:4",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ],
+                {
+                  "text": "弓で斧を撃ち出す。CT中は斧を使えない。",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "命中時、このスキルのCTを1秒回復する。",
+                  "italic": false,
+                  "color": "white"
+                }
+              ]
             },
             {
-                "function": "minecraft:set_nbt",
-                "tag": "{115skillID:1b}"
+              "function": "minecraft:set_nbt",
+              "tag": "{115skillID:1b}"
             }
           ]
         }

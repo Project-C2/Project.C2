@@ -32,7 +32,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"レイン�
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"レインボーブラスト","color":"white","italic":false}'}}}},scores={useCarrotStick=1..,CT1=1200..,counter_5=1..},gamemode=!spectator,tag=SkillReady1] run function project-c:jobaction/125/skill/1/1
 
-replaceitem entity @s[scores={counter_2=1..}] hotbar.2 minecraft:light_weighted_pressure_plate{display:{Name:'{"text":"スターソーサー","color":"white","italic":false}',Lore:['{"text":"発動: 右クリック","color":"yellow","italic":false}','{"text":"壁反射する弾を放ち、もう一度右クリックで起動。","color":"white","italic":false}','{"text":"真芯で当てると威力が上昇する。","color":"white","italic":false}','{"text":"CT:8","color":"green","italic":false}']},HideFlags:63,Enchantments:[{id:"minecraft:infinity",lvl:1}]} 1
+item replace entity @s[scores={counter_2=1..}] hotbar.2 with minecraft:light_weighted_pressure_plate{display:{Name:'{"text":"スターソーサー","color":"white","italic":false}',Lore:['{"text":"発動: 右クリック","color":"yellow","italic":false}','{"text":"壁反射する弾を放ち、もう一度右クリックで起動。","color":"white","italic":false}','{"text":"真芯で当てると威力が上昇する。","color":"white","italic":false}','{"text":"CT:8","color":"green","italic":false}']},HideFlags:63,Enchantments:[{id:"minecraft:infinity",lvl:1}]} 1
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"スターソーサー","color":"white","italic":false}'}}}},scores={useCarrotStick=1..,CT2=1200..,counter_2=0,counter_5=0},gamemode=!spectator,tag=SkillReady2] run function project-c:jobaction/125/skill/2/0
 
