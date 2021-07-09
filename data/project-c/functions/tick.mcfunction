@@ -41,7 +41,13 @@ execute if entity @a[scores={talkVillager=1..},limit=1] as @a[scores={talkVillag
 
 execute if entity @e[tag=experience_orb,limit=1] run kill @e[tag=experience_orb]
 
-#dummyPK?????
-#tag @e[tag=dummyPig] add dummyPK {OnGround:1b}
-tp @e[tag=dummyPK] ~ ~-50 ~
-effect give @e[tag=dummyPig] minecraft:invisibility 1000000 0 true
+#装備での2段ジャンプ
+execute as @a[nbt={Inventory:[{Slot:102b,tag:{ItemName:Celestial_Feather}}]}] at @s run function project-c:general/item/jump/c.cape
+
+#スライム処理
+execute as @e[tag=Re_D.Jump_Slime] at @s run tp @s ~ ~-1000 ~
+kill @e[tag=Re_D.Jump_Slime]
+
+#スコアリセット
+scoreboard players reset @a[scores={C.Cape_Elytra=0..}] C.Cape_Elytra
+scoreboard players reset @a[scores={C.Cape_Sneak=0..}] C.Cape_Sneak

@@ -21,7 +21,7 @@ item replace entity @s[scores={crossbow=1..},gamemode=!spectator] hotbar.4 with 
 execute if entity @s[scores={crossbow=1..},gamemode=!spectator] run data merge entity @e[sort=nearest,limit=1,type=arrow] {NoGravity:1b}
 execute if entity @s[scores={crossbow=1..},gamemode=!spectator] run tag @e[sort=nearest,limit=1,type=arrow] add 069-arrow
 execute as @e[tag=069-arrow] at @s run scoreboard players add @s counter 1
-kill @e[tag=069-arrow,scores={counter=5..}]
+kill @e[tag=069-arrow,scores={counter=6..}]
 
 execute as @s[scores={counter_3=1..}] at @s run effect clear @s levitation
 execute as @s[scores={counter_3=1..}] at @s run effect give @s slowness 1 8
@@ -48,8 +48,10 @@ execute as @s[scores={counter_3=31}] at @s run scoreboard players add @s subcoun
 execute as @s[scores={counter_3=31}] at @s run scoreboard players set @s counter_3 29
 
 execute as @s[scores={jump=1..},nbt={OnGround:0b}] at @s run tag @s add 069useElytra
+execute as @s[tag=069useElytra,nbt={OnGround:0b}] at @s run effect give @s jump_boost 5 4 true
 
 execute as @s[tag=069useElytra,nbt={OnGround:1b}] at @s run item replace entity @s armor.chest with minecraft:elytra{display:{Name:'{"text":"Celestial Feather","color":"aqua","italic":false}',Lore:['{"text":" "}','{"text":"[Passive: Fall Resist,Jump Boost]","color":"white","italic":false}','{"text":"[Jump: Double Jump]","color":"white","italic":false}','{"text":" "}','{"text":"\\"大丈夫、きっとやりとげられる\\"","color":"white","italic":false}']},HideFlags:5,RepairCost:-1000,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.maxHealth",Amount:-0.3,Operation:1,UUIDLeast:605430,UUIDMost:320978,Slot:"chest"}],Unbreakable:1b,ItemName:Celestial_Feather,Enchantments:[{id:"minecraft:unbreaking",lvl:1s},{id:"minecraft:binding_curse",lvl:1}],CustomModelData:1} 1
+execute as @s[tag=069useElytra,nbt={OnGround:1b}] at @s run effect clear @s jump_boost
 execute as @s[tag=069useElytra,nbt={OnGround:1b}] at @s run tag @s remove 069useElytra
 
 
