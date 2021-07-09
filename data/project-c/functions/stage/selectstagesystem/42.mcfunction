@@ -1,8 +1,8 @@
-tp @a[team=Red] -2 67 3917 -45 ~
-tp @a[team=Blue] 120 67 4039 135 ~
-tp @a[team=] 59 127 3978 0 90
+tp @a[team=Red] 939 69 439 -45 0
+tp @a[team=Blue] 1061 69 561 135 0
+tp @a[team=] 1000 127 500 0 90
 execute as @a at @s run spawnpoint @s
-fill -4 65 3915 0 70 3919 minecraft:red_stained_glass hollow
-fill 118 65 4037 122 70 4041 minecraft:blue_stained_glass hollow
+fill 937 67 437 941 73 441 minecraft:red_stained_glass hollow
+fill 1063 67 563 1059 73 559 minecraft:blue_stained_glass hollow
 data merge block -111 47 -122 {auto:1b}
-execute if score #MenuSpawnItem counter matches 1 run summon minecraft:armor_stand 59 47 3978 {NoGravity:1b,Silent:1b,Invisible:1b,Invulnerable:1b,Small:1b,Tags:["ItemSpawnerPosition","Stable"],Marker:1b,NoBasePlate:1b,DisabledSlots:2039583}
+execute if score #MenuSpawnItem counter matches 1 run summon minecraft:armor_stand 1000 32 500 {NoGravity:1b,Silent:1b,Invisible:1b,Invulnerable:1b,Small:1b,Tags:["ItemSpawnerPosition","Stable"],Marker:1b,NoBasePlate:1b,DisabledSlots:2039583}

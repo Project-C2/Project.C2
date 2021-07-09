@@ -1,3 +1,3 @@
-fill 4013 22 1992 4011 23 1992 minecraft:air
-fill 4003 41 2020 4005 44 2020 minecraft:air replace minecraft:blue_stained_glass
+fill 3008 69 494 3014 63 494 minecraft:air replace red_stained_glass
+fill 3005 82 521 3001 85 521 minecraft:air replace minecraft:blue_stained_glass
 data merge entity @e[tag=ItemSpawnerCart,limit=1] {SpawnRange:20}

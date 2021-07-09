@@ -1,3 +1,4 @@
+######幸運
 #CT加速
 tag @a[team=Red,nbt={ActiveEffects:[{Id:26b,Amplifier:100b}]}] add ct_haste
 tag @a[team=Blue,nbt={ActiveEffects:[{Id:26b,Amplifier:101b}]}] add ct_haste
@@ -150,33 +151,51 @@ execute if entity @a[tag=clearbuffEffect,limit=1] as @a[tag=clearbuffEffect] at 
 
 tag @a[tag=clearbuffEffect] remove clearbuffEffect
 
-#####
+#####不運
 
 #CT回復停止
-tag @a[nbt={ActiveEffects:[{Id:27b,Amplifier:100b}]}] add ct_stop
+execute if entity @a[nbt={ActiveEffects:[{Id:27b,Amplifier:100b}]},limit=1] as @a[nbt={ActiveEffects:[{Id:27b,Amplifier:100b}]}] at @s store result score @s unluck-100 run data get entity @s ActiveEffects.[{Id:27b,Amplifier:100b}].Duration
 
-scoreboard players remove @a[tag=ct_stop] CT1 1
-scoreboard players remove @a[tag=ct_stop] CT2 1
-scoreboard players remove @a[tag=ct_stop] CT3 1
+execute if entity @a[scores={unluck-100=1..},limit=1] as @a[scores={unluck-100=1..}] at @s run scoreboard players remove @s CT1 1
+execute if entity @a[scores={unluck-100=1..},limit=1] as @a[scores={unluck-100=1..}] at @s run scoreboard players remove @s CT2 1
+execute if entity @a[scores={unluck-100=1..},limit=1] as @a[scores={unluck-100=1..}] at @s run scoreboard players remove @s CT3 1
 
-tag @a[tag=ct_stop] remove ct_stop
+execute if entity @a[scores={unluck-100=1..},tag=!ct_stop,limit=1] as @a[scores={unluck-100=1..},tag=!ct_stop] at @s run tellraw @s ["",{"text":"[システム]","bold":true,"color":"yellow"},{"text":" CT回復停止効果が付与されました"}]
+execute if entity @a[scores={unluck-100=0},tag=ct_stop,limit=1] as @a[scores={unluck-100=0},tag=ct_stop] at @s run tellraw @s ["",{"text":"[システム]","bold":true,"color":"yellow"},{"text":" CT回復停止効果が解除されました"}]
+execute if entity @a[scores={unluck-100=1..},tag=!ct_stop,limit=1] as @a[scores={unluck-100=1..},tag=!ct_stop] at @s run playsound minecraft:entity.zombie_villager.converted master @s ~ ~ ~ 2 0 1
+
+execute if entity @a[scores={unluck-100=1..},tag=!ct_stop,limit=1] as @a[scores={unluck-100=1..},tag=!ct_stop] at @s run tag @s add ct_stop
+execute if entity @a[scores={unluck-100=..0},tag=ct_stop,limit=1] as @a[scores={unluck-100=..0},tag=ct_stop] at @s run tag @s remove ct_stop
+
+execute if entity @a[scores={unluck-100=0..},limit=1] as @a[scores={unluck-100=0..}] at @s run scoreboard players remove @s unluck-100 1
+execute if entity @a[scores={unluck-100=1..},limit=1] as @a[scores={unluck-100=1..}] at @s run effect clear @s unluck
 
 #スタンポーション
-scoreboard players set @e[nbt={ActiveEffects:[{Id:27b,Amplifier:101b}]}] stanTime 21
+execute if entity @a[nbt={ActiveEffects:[{Id:27b,Amplifier:101b}]},limit=1] as @a[nbt={ActiveEffects:[{Id:27b,Amplifier:101b}]}] at @s store result score @s stanTime run data get entity @s ActiveEffects.[{Id:27b,Amplifier:101b}].Duration
 execute if entity @e[nbt={ActiveEffects:[{Id:27b,Amplifier:101b}]},limit=1] as @e[nbt={ActiveEffects:[{Id:27b,Amplifier:101b}]}] run data merge block -113 2 -122 {auto:1b}
+execute if entity @e[nbt={ActiveEffects:[{Id:27b,Amplifier:101b}]},limit=1] as @e[nbt={ActiveEffects:[{Id:27b,Amplifier:101b}]}] run effect clear @s unluck
 
 #被弾時追撃
-execute if entity @e[nbt={ActiveEffects:[{Id:27b,Amplifier:102b}]},limit=1,tag=!pursuit-ready] as @e[nbt={ActiveEffects:[{Id:27b,Amplifier:102b}]},tag=!pursuit-ready] at @s run playsound minecraft:entity.item.break master @a ~ ~ ~ 1 0.5
-execute if entity @e[nbt={ActiveEffects:[{Id:27b,Amplifier:102b}]},limit=1,tag=!pursuit-ready] as @e[nbt={ActiveEffects:[{Id:27b,Amplifier:102b}]},tag=!pursuit-ready] at @s run tag @s add pursuit-ready
-execute if entity @e[nbt=!{ActiveEffects:[{Id:27b,Amplifier:102b}]},tag=pursuit-ready,limit=1] as @e[nbt=!{ActiveEffects:[{Id:27b,Amplifier:102b}]},tag=pursuit-ready] at @s run tag @s remove pursuit-ready
+execute if entity @e[nbt={ActiveEffects:[{Id:27b,Amplifier:102b}]},limit=1] as @e[nbt={ActiveEffects:[{Id:27b,Amplifier:102b}]}] at @s store result score @s unluck-102 run data get entity @s ActiveEffects.[{Id:27b,Amplifier:102b}].Duration
 
-execute if entity @e[nbt={HurtTime:9s,ActiveEffects:[{Id:27b,Amplifier:102b}]},limit=1] as @e[nbt={HurtTime:9s,ActiveEffects:[{Id:27b,Amplifier:102b}]}] run tag @s add pursuit
+execute if entity @e[nbt={HurtTime:9s},scores={unluck-102=1..},limit=1] as @e[nbt={HurtTime:9s},scores={unluck-102=1..}] run tag @s add pursuit
 
 execute if entity @e[tag=pursuit,limit=1] as @e[tag=pursuit] at @s run playsound minecraft:entity.player.hurt_on_fire master @a ~ ~ ~ 1 0.75
 execute if entity @e[tag=pursuit,limit=1] as @e[tag=pursuit] at @s run particle minecraft:explosion ~ ~1 ~ 0 0 0 0 5 force
 execute if entity @e[tag=pursuit,limit=1] as @e[tag=pursuit] at @s run effect give @s minecraft:instant_damage 1 0
 
 tag @e[tag=pursuit] remove pursuit
+
+execute if entity @e[scores={unluck-102=1..},tag=!pursuit-ready,limit=1] as @e[scores={unluck-102=1..},tag=!pursuit-ready] at @s run tellraw @s ["",{"text":"[システム]","bold":true,"color":"yellow"},{"text":" 被追撃効果が付与されました"}]
+execute if entity @e[scores={unluck-102=0},tag=pursuit-ready,limit=1] as @e[scores={unluck-102=0},tag=pursuit-ready] at @s run tellraw @s ["",{"text":"[システム]","bold":true,"color":"yellow"},{"text":" 被追撃効果が解除されました"}]
+execute if entity @e[scores={unluck-102=1..},tag=!pursuit-ready,limit=1] as @e[scores={unluck-102=1..},tag=!pursuit-ready] at @s run playsound minecraft:entity.item.break master @s ~ ~ ~ 1 0.5
+
+execute if entity @e[scores={unluck-102=1..},tag=!pursuit-ready,limit=1] as @e[scores={unluck-102=1..},tag=!pursuit-ready] at @s run tag @s add pursuit-ready
+execute if entity @e[scores={unluck-102=..0},tag=pursuit-ready,limit=1] as @e[scores={unluck-102=..0},tag=pursuit-ready] at @s run tag @s remove pursuit-ready
+
+execute if entity @e[scores={unluck-102=0..},limit=1] as @e[scores={unluck-102=0..}] at @s run scoreboard players remove @s unluck-102 1
+execute if entity @e[scores={unluck-102=1..},limit=1] as @e[scores={unluck-102=1..}] at @s run effect clear @s unluck
+
 
 #回復停止
 tag @a[nbt={ActiveEffects:[{Id:27b,Amplifier:103b}]}] add heal_stop

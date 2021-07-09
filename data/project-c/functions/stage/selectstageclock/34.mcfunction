@@ -1,3 +1,3 @@
-tellraw @a [{"text":"========================================\nステージ ： 要塞-ExC2"}]
-tp @a 7 58 5974 0 0
+tellraw @a [{"text":"========================================\nステージ ： 要塞-ExC3"}]
+tp @a 976 81 -456 -135 -25
 schedule function project-c:stage/selectstagesystem/34 6s

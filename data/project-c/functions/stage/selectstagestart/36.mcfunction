@@ -1,2 +1,2 @@
-fill 3003 71 3023 2997 78 3023 minecraft:air
-fill 3003 71 2977 2997 79 2977 minecraft:air
+fill -501 76 439 -507 82 445 minecraft:air
+fill -501 82 537 -507 76 543 minecraft:air
