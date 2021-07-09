@@ -1,4 +1,4 @@
-#ステージナンバー
+# region ステージナンバー
 #0  ランダム
 #1  遺跡
 #2  4ブロックス
@@ -43,16 +43,17 @@
 #39 村
 #40 ネザー-魔導の箱庭
 
-#41  裏遺跡
-#42  裏4ブロックス
-#43  裏大聖堂
-#44  裏中華街
-#45  裏図書館
-#46  妖精円卓領域
-#47  裏枯山水
-#48  裏ウェスタン
-#49  裏渓流
-#50  裏橋
+#41 裏遺跡
+#42 裏4ブロックス
+#43 裏大聖堂
+#44 裏中華街
+#45 裏図書館
+#46 妖精円卓領域
+#47 裏枯山水
+#48 裏ウェスタン
+#49 裏渓流
+#50 裏橋
+# endregion
 
 #オーバーフローを止めたり欠番を埋めたりする
 execute if score #MenuStageselect counter matches ..-1 run scoreboard players set #MenuStageselect counter 50
@@ -94,7 +95,7 @@ execute if score #MenuStageselect counter matches 30 run setblock 1005 64 58 oak
 execute if score #MenuStageselect counter matches 31 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"旧屋敷"}',Text4:'{"text":"********************"}'} destroy
 execute if score #MenuStageselect counter matches 32 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"支配領域"}',Text4:'{"text":"********************"}'} destroy
 execute if score #MenuStageselect counter matches 33 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"地下世界"}',Text4:'{"text":"********************"}'} destroy
-execute if score #MenuStageselect counter matches 34 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"要塞-ExC2"}',Text4:'{"text":"********************"}'} destroy
+execute if score #MenuStageselect counter matches 34 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"要塞-ExC3"}',Text4:'{"text":"********************"}'} destroy
 execute if score #MenuStageselect counter matches 35 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"神社"}',Text4:'{"text":"********************"}'} destroy
 execute if score #MenuStageselect counter matches 36 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"エルドラド"}',Text4:'{"text":"********************"}'} destroy
 execute if score #MenuStageselect counter matches 37 run setblock 1005 64 58 oak_wall_sign[facing=north]{Text1:'{"text":"********************"}',Text2:'{"text":"選択中のステージ"}',Text3:'{"text":"サンゴ礁"}',Text4:'{"text":"********************"}'} destroy

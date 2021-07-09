@@ -1,2 +1,2 @@
-fill 963 55 4160 957 64 4154 minecraft:air
-fill 925 49 4264 931 57 4270 minecraft:air
+fill 1563 93 510 1557 99 516 minecraft:air
+fill 1557 85 633 1563 91 627 minecraft:air

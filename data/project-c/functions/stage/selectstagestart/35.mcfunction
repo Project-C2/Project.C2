@@ -1,2 +1,2 @@
-fill -16 52 2048 -5 57 2054 minecraft:air
-fill -13 37 1926 -6 44 1933 minecraft:air hollow
+fill -449 46 953 -456 53 960 minecraft:air
+fill -459 61 1075 -448 66 1081 minecraft:air hollow

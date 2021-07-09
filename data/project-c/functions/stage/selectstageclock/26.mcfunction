@@ -1,3 +1,3 @@
 tellraw @a [{"text":"========================================\nステージ ： 洋館"}]
-tp @a 4004 33 2033 -145 0
+tp @a 3003 72 534 -135 0
 schedule function project-c:stage/selectstagesystem/26 6s

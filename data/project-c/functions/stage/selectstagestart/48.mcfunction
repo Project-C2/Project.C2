@@ -1,3 +1,3 @@
-fill 33 64 -4020 30 68 -4020 minecraft:air
-fill 75 64 -3864 78 68 -3864 minecraft:air
+fill 1972 75 414 1975 79 414 minecraft:air
+fill 2020 75 570 2017 79 570 minecraft:air
 data merge entity @e[tag=ItemSpawnerCart,limit=1] {SpawnRange:120}
