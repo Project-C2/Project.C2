@@ -1,21 +1,25 @@
-scoreboard players set @s CT2 1000
+scoreboard players set @s CT2 1120
+execute if entity @s[scores={counter_2=1..}] run scoreboard players set @s CT2 1198
+scoreboard players remove @s counter_2 1
+scoreboard players set @s[scores={counter_1=0}] counter_1 40
+
 item replace entity @s hotbar.2 with minecraft:compass{display:{Name:'"CoolTime"'}} 2
 
-scoreboard players set @s counter_2 1
-scoreboard players set @s counter_4 1
-effect give @s minecraft:resistance 1 4
-effect give @s slowness 1 9 true
-playsound minecraft:block.portal.trigger master @a ~ ~ ~ 3 2
-playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1.5 1.6
-playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1.5 1.6
-playsound minecraft:block.glass.break master @a ~ ~ ~ 1.5 1.4
-playsound minecraft:block.glass.break master @a ~ ~ ~ 1.5 1.4
+summon marker ~ ~ ~ {Tags:["017-Infelno","017-InfelnoSummon"]}
+scoreboard players operation @e[tag=017-InfelnoSummon,limit=1] playerNumber = @s playerNumber
+teleport @e[limit=1,sort=nearest,tag=017-InfelnoSummon] ^ ^1.5 ^1 ~ ~
 
-kill @e[tag=112_eternal,sort=nearest,limit=3]
-kill @e[tag=112_circle,sort=nearest,limit=1]
+scoreboard players operation #skillCheck teamNumber = @s teamNumber
+scoreboard players operation @e[tag=017-InfelnoSummon] teamNumber = #skillCheck teamNumber
+scoreboard players reset #skillCheck teamNumber
 
-particle minecraft:smoke ~ ~ ~ 0 0 0 1 400 normal @a
+tag @s[tag=017-InfelnoSummon] remove 017-InfelnoSummon
 
-data merge block -11 2 -20 {auto:1b}
+playsound minecraft:block.portal.trigger master @a ~ ~ ~ 1 2
+particle minecraft:flame ~ ~ ~ 0 0 0 0.4 50
+particle minecraft:enchant ~ ~2.3 ~ 0 0 0 3 200
+
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2
+
+data merge block 85 2 -122 {auto:1b}

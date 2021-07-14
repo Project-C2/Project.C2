@@ -1,28 +1,16 @@
-scoreboard players reset @s counter_2
-effect clear @s slowness
-playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 1.5 0.55
-playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1.5 0.8
-playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1.5 0.8
-playsound minecraft:block.glass.break master @a ~ ~ ~ 1.5 0.7
-playsound minecraft:block.glass.break master @a ~ ~ ~ 1.5 0.7
+scoreboard players add @s counter 1
 
-particle minecraft:cloud ~ ~ ~ 0 0 0 1 800 normal @a
-particle minecraft:cloud ~ ~ ~ 0 0 0 1 200 force @a
+execute if entity @s[tag=017-InfelnoActive] as @e[distance=..2.2,tag=Battle] unless score @s teamNumber = @a[limit=1,sort=nearest,gamemode=!spectator] teamNumber run effect give @s instant_damage 1 0
+execute if entity @s[tag=017-InfelnoActive] positioned ^ ^ ^-1 as @e[distance=..2.2,tag=Battle] unless score @s teamNumber = @a[limit=1,sort=nearest,gamemode=!spectator] teamNumber run effect give @s instant_damage 1 0
 
-execute rotated ~060 0 run summon minecraft:armor_stand ^ ^-0.3 ^3 {Tags:["this","112_eternal","112_eternal_big"],Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b,tag:{}}],Pose:{Head:[180f,0f,0f]}}
-execute rotated ~050 0 run summon minecraft:armor_stand ^ ^ ^3 {Tags:["this","112_eternal"],Small:1b,Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b,tag:{}}]}
-execute rotated ~070 0 run summon minecraft:armor_stand ^ ^ ^3 {Tags:["this","112_eternal"],Small:1b,Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:gilded_blackstone",Count:1b,tag:{}}]}
 
-summon armor_stand ~ ~ ~ {Tags:["this","112_circle"],Marker:1b,Invisible:1b,NoGravity:1b}
+particle flame ~ ~ ~ 0.1 0.1 0.1 0.1 5 force
+execute as @e[tag=017-InfelnoActive] at @s run particle minecraft:explosion ~ ~ ~ 0 0 0 0 2 force
+execute as @e[tag=017-InfelnoActive] at @s run particle flame ^ ^ ^-1 0.1 0.1 0.1 0.05 10
+execute as @e[tag=017-InfelnoActive] at @s run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 0.3 0
 
-scoreboard players operation @e[tag=this] playerNumber = @s playerNumber
-tag @s add user
-execute as @e[tag=this] at @s facing entity @a[tag=user,limit=1] feet run tp @s ~ ~ ~ ~ 0
-tag @s remove user
-execute if entity @s[team=Red] run team join RedDummy @e[tag=this]
-execute if entity @s[team=Blue] run team join BlueDummy @e[tag=this]
-#execute as @e[tag=this] store result score @s counter_1 run data get entity @s Rotation[0] 1
-tag @e[tag=this] remove this
-data merge block -26 61 -62 {auto:1b}
-data merge block -26 64 -62 {auto:1b}
+execute as @e[tag=017-InfelnoActive] at @s run teleport @s ^ ^ ^2 ~ ~
 
+execute as @s[tag=017-InfelnoActive] unless block ^ ^ ^1 #project-c:wancomatter/like_air at @s run summon creeper ~ ~ ~ {CustomName:"{\"text\":\"イノセントインフェルノ\"}",ignited:1b,ExplosionRadius:1b,Fuse:0s,Invulnerable:1b,NoAI:1b,Silent:1b}
+execute as @s[tag=017-InfelnoActive] unless block ^ ^ ^1 #project-c:wancomatter/like_air at @s run kill @s
+kill @s[scores={counter=55..}]

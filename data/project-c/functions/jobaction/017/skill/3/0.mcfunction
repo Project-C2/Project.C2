@@ -1,13 +1,24 @@
-scoreboard players set @s usedSkill 3
-scoreboard players set @s CT3 600
+scoreboard players set @s CT3 -1200
 
-playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 2 0
-playsound minecraft:block.iron_trapdoor.close master @a ~ ~ ~ 2 1
-scoreboard players set @s counter_3 40
-effect give @s minecraft:slowness 1 8 true
+#(実行者のteamNumberを仮想プレイヤーに保存)
+scoreboard players operation #skillCheck teamNumber = @s teamNumber
 
-execute if entity @s[team=Red] run summon armor_stand ~ ~ ~ {Tags:["112_bullet","112_bulletRed"],Marker:1b,Invisible:1b,NoGravity:1b}
-execute if entity @s[team=Blue] run summon armor_stand ~ ~ ~ {Tags:["112_bullet","112_bulletBlue"],Marker:1b,Invisible:1b,NoGravity:1b}
+summon marker ~ ~1 ~ {Tags:["017-Starfall","017-StarfallSummon"]}
+
+scoreboard players operation @e[tag=017-StarfallSummon] teamNumber = #skillCheck teamNumber
+
+scoreboard players reset #skillCheck teamNumber
+
+
+particle minecraft:flame ~ ~ ~ 0 0 0 0.4 100
+playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 3 0
+
+playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 2 1
+
+effect give @s minecraft:slowness 3 7 true
+effect give @s minecraft:resistance 3 4 true
 
 tag @s remove SkillReady3
-data merge block -24 61 -62 {auto:1b}
+tag @s[tag=017-StarfallSummon] remove 017-StarfallSummon
+scoreboard players set @s usedSkill 3
+data merge block 87 2 -122 {auto:1b}
