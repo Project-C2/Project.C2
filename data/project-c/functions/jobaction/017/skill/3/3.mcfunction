@@ -3,17 +3,17 @@ particle minecraft:explosion ~ ~ ~ 3 3 3 0 40 force
 #(実行者のteamNumberを仮想プレイヤーに保存)
 scoreboard players operation #skillCheck teamNumber = @s teamNumber
 summon marker ^ ^ ^ {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~30 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~60 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~90 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~120 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~150 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~180 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~210 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~240 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~270 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~300 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
-execute rotated ~330 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
+execute rotated ~30 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~60 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~90 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~120 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~150 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~180 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~210 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~240 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~270 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~300 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~330 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
 
 scoreboard players operation @e[tag=017-StarMeteorSummon] teamNumber = #skillCheck teamNumber
 
