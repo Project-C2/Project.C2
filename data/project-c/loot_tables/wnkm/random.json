@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "name": "random",
+                  "attribute": "generic.luck",
+                  "operation": "addition",
+                  "amount": {
+                    "min": {
+                      "type": "minecraft:score",
+                      "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#wnkm_random"
+                      },
+                      "score": "counter_1"
+                    },
+                    "max": {
+                      "type": "minecraft:score",
+                      "target": {
+                        "type": "minecraft:fixed",
+                        "name": "#wnkm_random"
+                      },
+                      "score": "counter_2"
+                    }
+                  },
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{randomItem:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

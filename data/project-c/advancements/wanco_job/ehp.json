@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "ehp": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage":{
+          "source_entity": {
+            "type": "player"
+          }
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function": "project-c:ehp"
+  }
+}
