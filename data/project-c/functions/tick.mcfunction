@@ -48,6 +48,25 @@ execute as @a[nbt={Inventory:[{Slot:102b,tag:{ItemName:Celestial_Feather}}]}] at
 execute as @e[tag=Re_D.Jump_Slime] at @s run tp @s ~ ~-1000 ~
 kill @e[tag=Re_D.Jump_Slime]
 
+#huryByNumberの保存時間とか
+execute if entity @a[scores={hurtByTime=1..},limit=1] run scoreboard players add @a[scores={hurtByTime=1..}] hurtByTime 1
+execute if entity @a[scores={hurtByTime=100..},limit=1] run scoreboard players reset @a[scores={hurtByTime=100..}] hurtSkillNumber
+execute if entity @a[scores={hurtByTime=100..},limit=1] run scoreboard players reset @a[scores={hurtByTime=100..}] lastHurtByNumber
+execute if entity @a[scores={hurtByTime=100..},limit=1] run scoreboard players reset @a[scores={hurtByTime=100..}] hurtByTime
+#hurtByNumber設定時の処理
+#lastHurtByNumber = hurtByNumber
+#hurtByTimeリセット
+execute if entity @a[scores={hurtByNumber=1..},limit=1] as @a[scores={hurtByNumber=1..}] run scoreboard players operation @s lastHurtByNumber = @s hurtByNumber
+execute if entity @a[scores={hurtByNumber=1..},limit=1] run scoreboard players set @a[scores={hurtByNumber=1..}] hurtByTime 1
+execute if entity @a[scores={hurtByNumber=1..},limit=1] run scoreboard players reset @a[scores={hurtByNumber=1..}] hurtByNumber
+#死亡処理
+execute if entity @a[scores={deathCount=1..}] as @a[scores={deathCount=1..}] at @s run function project-c:general/deathlog
+#ScoreDamageの無敵時間関連の処理
+execute if entity @e[scores={ScoreDamageCore=1..},limit=1] as @e[scores={ScoreDamageCore=1..}] if data entity @s {HurtTime:1s} run scoreboard players reset @s ScoreDamageCore
+execute if entity @e[scores={ScoreDamageCore=1..},tag=!ScoreDamaged,limit=1] as @e[scores={ScoreDamageCore=1..},tag=!ScoreDamaged] if data entity @s {HurtTime:0s} run scoreboard players reset @s ScoreDamageCore
+execute if entity @e[tag=ScoreDamaged,limit=1] run tag @e[tag=ScoreDamaged] remove ScoreDamaged
+
 #スコアリセット
 scoreboard players reset @a[scores={C.Cape_Elytra=0..}] C.Cape_Elytra
 scoreboard players reset @a[scores={C.Cape_Sneak=0..}] C.Cape_Sneak
+execute if entity @a[tag=ehp2,limit=1] run tag @a[tag=ehp2] remove ehp2

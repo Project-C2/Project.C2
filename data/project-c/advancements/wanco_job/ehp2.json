@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "ehp": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage":{
+          "source_entity": {
+            "type": "player"
+          },
+          "type":{
+            "direct_entity": {
+              "type": "area_effect_cloud",
+              "nbt":"{Tags:[\"ScoreDamageKnockbackAEC2\"]}"
+            }  
+          }
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function": "project-c:ehp2"
+  }
+}
