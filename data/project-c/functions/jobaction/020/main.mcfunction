@@ -11,7 +11,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"スター�
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"コック","color":"white","italic":"false","underlined":"false"}'}}}},scores={sneak=1..,CT2=1200..},gamemode=!spectator,tag=SkillReady2] run function project-c:jobaction/020/skill/2/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ウェイクアップ","color":"white","italic":"false","underlined":"false"}'}}}},scores={useCarrotStick=1..,CT3=1200..},gamemode=!spectator,tag=SkillReady3] run function project-c:jobaction/020/skill/3/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"ドラゴストーム","color":"white","italic":"false","underlined":"false"}'}}}},scores={useCarrotStick=1..,CT3=1200..},gamemode=!spectator,tag=SkillReady3] run function project-c:jobaction/020/skill/3/0
 
 execute if entity @e[tag=020-spawner,limit=1] as @e[tag=020-spawner] at @s run function project-c:jobaction/020/skill/2/4
 

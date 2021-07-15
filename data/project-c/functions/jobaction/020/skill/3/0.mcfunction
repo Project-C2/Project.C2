@@ -1,24 +1,17 @@
-scoreboard players set @s CT3 -1200
+#CT
+scoreboard players set @s CT3 0
+scoreboard players add @s counter_2 1
+#スキル効果
+#共通
+gamemode spectator @s
+playsound minecraft:entity.evoker.prepare_summon master @a ~ ~ ~ 2 2
+summon area_effect_cloud ~ ~ ~ {Radius:0.0f,RadiusPerTick:0.0f,Age:0,Duration:1200,Tags:["dragoAEC"]}
+scoreboard players operation @e[limit=1,sort=nearest,tag=dragoAEC] playerNumber = @s playerNumber
 
-#(実行者のteamNumberを仮想プレイヤーに保存)
-scoreboard players operation #skillCheck teamNumber = @s teamNumber
-
-summon marker ~ ~1 ~ {Tags:["017-Starfall","017-StarfallSummon"]}
-
-scoreboard players operation @e[tag=017-StarfallSummon] teamNumber = #skillCheck teamNumber
-
-scoreboard players reset #skillCheck teamNumber
-
-
-particle minecraft:flame ~ ~ ~ 0 0 0 0.4 100
-playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 3 0
-
-playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 2 1
-
-effect give @s minecraft:slowness 3 7 true
-effect give @s minecraft:resistance 3 4 true
-
+particle end_rod ~ ~1 ~ 0 0 0 0.2 30
+kill @e[limit=1,sort=nearest,type=snowball]
+#リセット
 tag @s remove SkillReady3
-tag @s[tag=017-StarfallSummon] remove 017-StarfallSummon
 scoreboard players set @s usedSkill 3
-data merge block 87 2 -122 {auto:1b}
+
+data merge block 123 2 -122 {auto:1b}

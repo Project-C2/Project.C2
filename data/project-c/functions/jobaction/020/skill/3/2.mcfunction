@@ -1,66 +1,21 @@
-execute rotated ~ -1.1 run particle minecraft:flash ^ ^ ^ 0.1 0.1 0.1 1 1
-execute rotated ~ -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^ 0.1 0.1 0.1 3 4
-execute rotated ~ -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^1 0.1 0.1 0.1 3 4
-execute rotated ~ -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^2 0.1 0.1 0.1 3 4
-execute rotated ~ -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^3 0.1 0.1 0.1 3 4
-execute rotated ~ -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^4 0.1 0.1 0.1 3 4
-execute rotated ~ -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^5 0.1 0.1 0.1 3 4
-execute rotated ~ -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^6 0.1 0.1 0.1 3 4
-execute rotated ~72 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^1 0.1 0.1 0.1 3 4
-execute rotated ~72 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^2 0.1 0.1 0.1 3 4
-execute rotated ~72 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^3 0.1 0.1 0.1 3 4
-execute rotated ~72 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^4 0.1 0.1 0.1 3 4
-execute rotated ~72 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^5 0.1 0.1 0.1 3 4
-execute rotated ~72 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^6 0.1 0.1 0.1 3 4
-execute rotated ~144 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^1 0.1 0.1 0.1 3 4
-execute rotated ~144 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^2 0.1 0.1 0.1 3 4
-execute rotated ~144 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^3 0.1 0.1 0.1 3 4
-execute rotated ~144 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^4 0.1 0.1 0.1 3 4
-execute rotated ~144 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^5 0.1 0.1 0.1 3 4
-execute rotated ~144 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^6 0.1 0.1 0.1 3 4
-execute rotated ~216 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^1 0.1 0.1 0.1 3 4
-execute rotated ~216 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^2 0.1 0.1 0.1 3 4
-execute rotated ~216 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^3 0.1 0.1 0.1 3 4
-execute rotated ~216 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^4 0.1 0.1 0.1 3 4
-execute rotated ~216 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^5 0.1 0.1 0.1 3 4
-execute rotated ~216 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^6 0.1 0.1 0.1 3 4
-execute rotated ~288 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^1 0.1 0.1 0.1 3 4
-execute rotated ~288 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^2 0.1 0.1 0.1 3 4
-execute rotated ~288 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^3 0.1 0.1 0.1 3 4
-execute rotated ~288 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^4 0.1 0.1 0.1 3 4
-execute rotated ~288 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^5 0.1 0.1 0.1 3 4
-execute rotated ~288 -1.1 run particle minecraft:dust_color_transition 1 0.2 0.2 1.5 1 0 0 ^ ^ ^6 0.1 0.1 0.1 3 4
+scoreboard players add @s[nbt={OnGround:0b}] counter 1
+kill @s[scores={counter=60..}]
+tag @s[nbt={OnGround:1b}] add 020-dragoStandong
 
-execute rotated ~ -1.1 run particle minecraft:end_rod ^ ^ ^0.5 0 0 0 0 2
-execute rotated ~ -1.1 run particle minecraft:end_rod ^ ^ ^1.5 0 0 0 0 2
-execute rotated ~ -1.1 run particle minecraft:end_rod ^ ^ ^2.5 0 0 0 0 2
-execute rotated ~ -1.1 run particle minecraft:end_rod ^ ^ ^3.5 0 0 0 0 2
-execute rotated ~ -1.1 run particle minecraft:end_rod ^ ^ ^4.5 0 0 0 0 2
-execute rotated ~ -1.1 run particle minecraft:end_rod ^ ^ ^5.5 0 0 0 0 2
-execute rotated ~72 -1.1 run particle minecraft:end_rod ^ ^ ^0.5 0 0 0 0 2
-execute rotated ~72 -1.1 run particle minecraft:end_rod ^ ^ ^1.5 0 0 0 0 2
-execute rotated ~72 -1.1 run particle minecraft:end_rod ^ ^ ^2.5 0 0 0 0 2
-execute rotated ~72 -1.1 run particle minecraft:end_rod ^ ^ ^3.5 0 0 0 0 2
-execute rotated ~72 -1.1 run particle minecraft:end_rod ^ ^ ^4.5 0 0 0 0 2
-execute rotated ~72 -1.1 run particle minecraft:end_rod ^ ^ ^5.5 0 0 0 0 2
-execute rotated ~144 -1.1 run particle minecraft:end_rod ^ ^ ^0.5 0 0 0 0 2
-execute rotated ~144 -1.1 run particle minecraft:end_rod ^ ^ ^1.5 0 0 0 0 2
-execute rotated ~144 -1.1 run particle minecraft:end_rod ^ ^ ^2.5 0 0 0 0 2
-execute rotated ~144 -1.1 run particle minecraft:end_rod ^ ^ ^3.5 0 0 0 0 2
-execute rotated ~144 -1.1 run particle minecraft:end_rod ^ ^ ^4.5 0 0 0 0 2
-execute rotated ~144 -1.1 run particle minecraft:end_rod ^ ^ ^5.5 0 0 0 0 2
-execute rotated ~216 -1.1 run particle minecraft:end_rod ^ ^ ^0.5 0 0 0 0 2
-execute rotated ~216 -1.1 run particle minecraft:end_rod ^ ^ ^1.5 0 0 0 0 2
-execute rotated ~216 -1.1 run particle minecraft:end_rod ^ ^ ^2.5 0 0 0 0 2
-execute rotated ~216 -1.1 run particle minecraft:end_rod ^ ^ ^3.5 0 0 0 0 2
-execute rotated ~216 -1.1 run particle minecraft:end_rod ^ ^ ^4.5 0 0 0 0 2
-execute rotated ~216 -1.1 run particle minecraft:end_rod ^ ^ ^5.5 0 0 0 0 2
-execute rotated ~288 -1.1 run particle minecraft:end_rod ^ ^ ^0.5 0 0 0 0 2
-execute rotated ~288 -1.1 run particle minecraft:end_rod ^ ^ ^1.5 0 0 0 0 2
-execute rotated ~288 -1.1 run particle minecraft:end_rod ^ ^ ^2.5 0 0 0 0 2
-execute rotated ~288 -1.1 run particle minecraft:end_rod ^ ^ ^3.5 0 0 0 0 2
-execute rotated ~288 -1.1 run particle minecraft:end_rod ^ ^ ^4.5 0 0 0 0 2
-execute rotated ~288 -1.1 run particle minecraft:end_rod ^ ^ ^5.5 0 0 0 0 2
+particle lava ~ ~ ~ 0 0 0 1 1 force @a
 
-particle minecraft:end_rod ^ ^ ^ 0 4 0 0 70
-particle minecraft:flame ^ ^ ^ 0 0 0 1 40
+execute if entity @s[tag=020-dragoStandong] run tp @s ^ ^ ^ ~ 0
+
+execute if entity @s[tag=020-dragoStandong] at @s run summon minecraft:marker ^ ^ ^-50 {Tags:["020-dragoline","020-dragolineSummon","Projectile"]}
+scoreboard players operation @e[tag=020-dragolineSummon,limit=1] playerNumber = @s playerNumber
+scoreboard players operation #skillCheck teamNumber = @s teamNumber
+scoreboard players operation @e[tag=020-dragolineSummon] teamNumber = #skillCheck teamNumber
+scoreboard players reset #skillCheck teamNumber
+
+execute as @e[tag=020-dragolineSummon] at @s run tp @s ^ ^ ^1 facing entity @e[tag=020-dragoStandong,limit=1]
+execute as @e[tag=020-dragolineSummon] at @s run tp @s ^ ^ ^ ~ 0
+
+tag @e[tag=020-dragolineSummon] remove 020-dragolineSummon
+
+execute if entity @s[tag=020-dragoStandong] run data merge block 121 5 -122 {auto:1b}
+kill @s[tag=020-dragoStandong]
