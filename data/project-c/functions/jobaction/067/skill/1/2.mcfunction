@@ -37,7 +37,7 @@ execute rotated ~340 0 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
 execute rotated ~350 0 run particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @a
 clear @s minecraft:golden_sword
 scoreboard players reset @s counter_1
-effect give @s minecraft:haste 3 29
+effect give @s minecraft:strength 4 4
 
 #視線判定法を用いたターゲット指定
 tag @s add 067dummy
