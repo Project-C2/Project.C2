@@ -15,6 +15,6 @@ playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 3 0
 playsound minecraft:block.portal.trigger master @a ~ ~ ~ 3 1.75
 
 tag @s remove SkillReady1
-tag @s[tag=017-SetCircleSummon] remove 017-SetCircleSummon
+tag @e[tag=017-SetCircleSummon] remove 017-SetCircleSummon
 scoreboard players set @s usedSkill 1
 data merge block 83 2 -122 {auto:1b}

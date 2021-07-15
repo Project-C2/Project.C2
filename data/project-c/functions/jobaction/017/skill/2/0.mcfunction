@@ -13,7 +13,7 @@ scoreboard players operation #skillCheck teamNumber = @s teamNumber
 scoreboard players operation @e[tag=017-InfelnoSummon] teamNumber = #skillCheck teamNumber
 scoreboard players reset #skillCheck teamNumber
 
-tag @s[tag=017-InfelnoSummon] remove 017-InfelnoSummon
+tag @e[tag=017-InfelnoSummon] remove 017-InfelnoSummon
 
 playsound minecraft:block.portal.trigger master @a ~ ~ ~ 1 2
 particle minecraft:flame ~ ~ ~ 0 0 0 0.4 50

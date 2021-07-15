@@ -1,4 +1,4 @@
 item replace entity @s hotbar.0 with minecraft:golden_sword{display:{Name:'{"text":"マスターソード"}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3.0,Operation:0,UUID:[I;-1232871500,471944429,-1413470274,-1053727389],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.2,Operation:0,UUID:[I;-1232871500,471944429,-1413470274,-1053727389],Slot:"mainhand"}],Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:1} 1
-
+item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{Unbreakable:1b} 1
 scoreboard players reset @s drop
 item replace entity @s enderchest.0 from entity @s container.0

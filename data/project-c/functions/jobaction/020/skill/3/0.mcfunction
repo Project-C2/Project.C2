@@ -19,6 +19,6 @@ effect give @s minecraft:slowness 3 7 true
 effect give @s minecraft:resistance 3 4 true
 
 tag @s remove SkillReady3
-tag @e[tag=017-StarfallSummon] remove 017-StarfallSummon
+tag @s[tag=017-StarfallSummon] remove 017-StarfallSummon
 scoreboard players set @s usedSkill 3
 data merge block 87 2 -122 {auto:1b}
