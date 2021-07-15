@@ -6,7 +6,7 @@ particle lava ~ ~ ~ 0 0 0 1 1 force @a
 
 execute if entity @s[tag=020-dragoStandong] run tp @s ^ ^ ^ ~ 0
 
-execute if entity @s[tag=020-dragoStandong] at @s run summon minecraft:marker ^ ^ ^-50 {Tags:["020-dragoline","020-dragolineSummon","Projectile"]}
+execute if entity @s[tag=020-dragoStandong] at @s run summon minecraft:marker ^ ^ ^-70 {Tags:["020-dragoline","020-dragolineSummon","Projectile"]}
 scoreboard players operation @e[tag=020-dragolineSummon,limit=1] playerNumber = @s playerNumber
 scoreboard players operation #skillCheck teamNumber = @s teamNumber
 scoreboard players operation @e[tag=020-dragolineSummon] teamNumber = #skillCheck teamNumber
