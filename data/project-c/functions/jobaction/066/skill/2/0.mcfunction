@@ -1,7 +1,7 @@
 #判定
 #CT
 scoreboard players set @s usedSkill 2
-scoreboard players set @s CT2 800
+scoreboard players set @s CT2 700
 scoreboard players set @s counter_2 100
 
 #スキル効果
