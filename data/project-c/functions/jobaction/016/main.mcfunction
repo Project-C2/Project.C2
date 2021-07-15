@@ -80,9 +80,16 @@ execute if entity @s[scores={counter_3=79}] run playsound minecraft:block.note_b
 scoreboard players add @s counter_5 1
 execute if entity @s[scores={counter_5=20..}] run scoreboard players add @s Mana 1
 execute if entity @s[scores={counter_5=20..}] run scoreboard players set @s counter_5 0
+
+execute if entity @s[scores={damageDealt=1..}] run scoreboard players operation @s counter_6 = @s damageDealt
+execute if entity @s[scores={damageDealt=1..}] run scoreboard players operation @s counter_6 /= #10 counter
+execute if entity @s[scores={damageDealt=1..}] run scoreboard players operation @s Mana += @s counter_6
+execute if entity @s[scores={damageDealt=1..}] run scoreboard players set @s counter_6 0
+
 execute if entity @s[scores={Mana=..0}] run scoreboard players set @s Mana 0
 execute if entity @s[scores={Mana=101..}] run scoreboard players set @s Mana 100
 
 scoreboard players set @s sneak 0
 scoreboard players reset @s useCarrotStick
 scoreboard players reset @s useSnowball
+scoreboard players reset @s damageDealt
