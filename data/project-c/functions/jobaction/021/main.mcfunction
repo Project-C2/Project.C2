@@ -3,13 +3,21 @@
 
 scoreboard players reset @s usedSkill
 
+function project-c:jobaction/021/reloadactbar
+
 execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-c:jobaction/021/replaceitem/1
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/021/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/021/replaceitem/3
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"レッドナイン","color":"white","italic":"false","underlined":"false"}'}}}},scores={useCarrotStick=1..,counter_1=..6},gamemode=!spectator] run function project-c:jobaction/021/skill/0/0
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"レッドナイン","color":"white","italic":"false","underlined":"false"}'}}}},scores={useCarrotStick=1..,counter_1=..5},gamemode=!spectator] run function project-c:jobaction/021/skill/0/0
 
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"スターロッド","color":"white","italic":"false","underlined":"false"}'}}}},scores={useCarrotStick=1..,CT1=1210..},gamemode=!spectator,tag=SkillReady1] run function project-c:jobaction/021/skill/1/0
+execute if score @s usingItem matches 1.. run scoreboard players add @s counter_5 1
+
+execute if score @s counter_5 matches 1 run playsound minecraft:block.note_block.bit master @a ~ ~ ~ 2 0.5
+execute if score @s counter_5 matches 20 run playsound minecraft:block.note_block.bit master @a ~ ~ ~ 2 0.75
+execute if score @s counter_5 matches 40 run playsound minecraft:block.note_block.bit master @a ~ ~ ~ 2 1
+
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"バルカンショットガン","color":"white","italic":"false","underlined":"false"}'}}}},scores={counter_5=1..,usingItem=0},gamemode=!spectator,tag=SkillReady1] run function project-c:jobaction/021/skill/1/0
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"コック","color":"white","italic":"false","underlined":"false"}'}}}},scores={sneak=1..,CT2=1210..},tag=Battle,gamemode=!spectator,tag=SkillReady2] run function project-c:jobaction/021/skill/2/0
 
@@ -27,7 +35,17 @@ execute if score @s counter_3 matches 3 run playsound minecraft:block.shulker_bo
 execute if score @s counter_3 matches 1.. run scoreboard players remove @s counter_3 1
 execute if score @s counter_3 matches ..0 run scoreboard players reset @s counter_3
 
+execute if score @s counter_6 matches 1 run scoreboard players set @s counter_1 0
+
+execute if score @s counter_6 matches 1 run particle minecraft:crit ~ ~1 ~ 0.4 0.4 0.4 1 10
+execute if score @s counter_6 matches 1 run playsound minecraft:block.iron_door.close master @a ~ ~ ~ 2 1
+execute if score @s counter_6 matches 1.. run scoreboard players remove @s counter_6 1
+
+
+
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
+scoreboard players reset @s[scores={useSnowball=1..}] useSnowball
 scoreboard players reset @s[scores={sneak=1..}] sneak
 scoreboard players reset @s[scores={jump=1..}] jump
 scoreboard players reset @s[scores={adDealt=1..}] adDealt
+scoreboard players set @s[scores={usingItem=1..}] usingItem 0

@@ -11,8 +11,8 @@ kill @e[tag=021dummy]
 tag @e[tag=021fireF] remove 021fireF
 
 teleport @s ~ ~ ~ ~ ~-3
-scoreboard players set @s counter 0
-scoreboard players remove @s counter_1 1
+scoreboard players add @s counter_1 1
+scoreboard players set @s counter_6 80
 
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
 

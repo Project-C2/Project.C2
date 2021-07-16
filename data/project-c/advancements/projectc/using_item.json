@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "project-c:addealt"
+        "function": "project-c:using_item"
     }
 }
