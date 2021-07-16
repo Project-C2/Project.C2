@@ -24,9 +24,9 @@ particle minecraft:dust 0.4 0.4 0.4 1.5 ~ ~0.5 ~ 0.2 0.2 0.2 1 4 normal @a
 particle minecraft:dust 0.4 0.4 0.4 1.5 ~ ~0.5 ~ 0.1 0.1 0.1 1 1 force @a
 
 tag @s add now
-execute if entity @s[tag=115axeR] positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,tag=Battle,team=!Red] run tag @s add hit
-execute if entity @s[tag=115axeR] positioned ^ ^ ^1 positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,tag=Battle,team=!Red] run tag @s add hit
-execute if entity @s[tag=115axeB] positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,tag=Battle,team=!Blue] run tag @s add hit
-execute if entity @s[tag=115axeB] positioned ^ ^ ^1 positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,tag=Battle,team=!Blue] run tag @s add hit
+execute if entity @s[tag=115axeR] positioned ~-0.5 ~0.5 ~-0.5 as @e[distance=..1.5,tag=Battle,team=!Red] run tag @s add hit
+execute if entity @s[tag=115axeR] positioned ^ ^ ^1 positioned ~-0.5 ~-0.5 ~-0.5 as @e[distance=..1.5,tag=Battle,team=!Red] run tag @s add hit
+execute if entity @s[tag=115axeB] positioned ~-0.5 ~0.5 ~-0.5 as @e[distance=..1.5,tag=Battle,team=!Blue] run tag @s add hit
+execute if entity @s[tag=115axeB] positioned ^ ^ ^1 positioned ~-0.5 ~-0.5 ~-0.5 as @e[distance=..1.5,tag=Battle,team=!Blue] run tag @s add hit
 execute if entity @e[tag=hit,limit=1] run function project-c:jobaction/115/skill/1/hit
 tag @s remove now
