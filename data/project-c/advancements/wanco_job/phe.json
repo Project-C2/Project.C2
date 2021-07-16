@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "phe": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity":{
+          "type": "player"
+        }
+      }
+    }
+  },
+  "rewards":{
+    "function": "project-c:phe"
+  }
+}
