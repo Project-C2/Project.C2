@@ -1,0 +1,6 @@
+item replace entity @s[scores={stockcounter=1}] hotbar.1 with minecraft:yellow_concrete_powder{display:{Name:'{"text":"ボルトアンカー"}',Lore:['{"text":"発動:右クリック"}','{"text":"効果:少しの間持続するアンカーを放つ。"}','{"text":"CT:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 1
+item replace entity @s[scores={stockcounter=2}] hotbar.1 with minecraft:yellow_concrete_powder{display:{Name:'{"text":"ボルトアンカー"}',Lore:['{"text":"発動:右クリック"}','{"text":"効果:少しの間持続するアンカーを放つ。"}','{"text":"CT:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 2
+item replace entity @s[scores={stockcounter=3}] hotbar.1 with minecraft:yellow_concrete_powder{display:{Name:'{"text":"ボルトアンカー"}',Lore:['{"text":"発動:右クリック"}','{"text":"効果:少しの間持続するアンカーを放つ。"}','{"text":"CT:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 3
+item replace entity @s[scores={stockcounter=4..}] hotbar.1 with minecraft:yellow_concrete_powder{display:{Name:'{"text":"ボルトアンカー"}',Lore:['{"text":"発動:右クリック"}','{"text":"効果:少しの間持続するアンカーを放つ。"}','{"text":"CT:4"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:63} 4
+tag @s add SkillReady1
+item replace entity @s enderchest.1 from entity @s container.1
