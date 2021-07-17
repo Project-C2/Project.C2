@@ -47,9 +47,9 @@ execute if entity @s[scores={counter_3=1..}] at @s run scoreboard players remove
 execute if entity @s[scores={counter_3=1..}] at @s run particle minecraft:crit ~ ~1 ~ 1 1 1 1 1
 execute if entity @s[scores={counter_3=1..}] at @s run effect give @s absorption 1 0
 
-execute if entity @s[scores={counter_3=1..},gamemode=!spectator,team=Red] as @a[team=Blue,gamemode=!spectator,tag=Battle,distance=..10] at @s anchored eyes facing entity @a[scores={jobNumber=76,counter_3=1..},team=Red,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+execute if score #Clock counter matches 1 if entity @s[scores={counter_3=1..},gamemode=!spectator,team=Red] as @a[team=Blue,gamemode=!spectator,tag=Battle,distance=..10] at @s anchored eyes facing entity @a[scores={jobNumber=76,counter_3=1..},team=Red,limit=1] eyes run tp @s ~ ~ ~ ~ ~2
 
-execute if entity @s[scores={counter_3=1..},gamemode=!spectator,team=Blue] as @a[team=Red,gamemode=!spectator,tag=Battle,distance=..10] at @s anchored eyes facing entity @a[scores={jobNumber=76,counter_3=1..},team=Blue,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+execute if score #Clock counter matches 1 if entity @s[scores={counter_3=1..},gamemode=!spectator,team=Blue] as @a[team=Red,gamemode=!spectator,tag=Battle,distance=..10] at @s anchored eyes facing entity @a[scores={jobNumber=76,counter_3=1..},team=Blue,limit=1] eyes run tp @s ~ ~ ~ ~ ~2
 
 scoreboard players set @s sneak 0
 scoreboard players reset @s damageDealt

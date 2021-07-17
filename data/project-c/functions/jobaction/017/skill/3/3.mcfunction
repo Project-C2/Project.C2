@@ -1,33 +1,35 @@
-execute if entity @s[scores={counter=1}] run particle minecraft:smoke ~ ~2.5 ~ 0 0 0 0.2 20
-execute if entity @s[scores={counter=1..41}] run teleport @s ^ ^0.3 ^
+particle minecraft:explosion ~ ~ ~ 3 3 3 0 40 force
 
-tag @s add 112-2G
-execute as @s[tag=112-2R] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Blue] unless entity @s[gamemode=spectator] positioned ^100 ^ ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^-100 ^ ^ ~-5 ~
-execute as @s[tag=112-2R] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Blue] unless entity @s[gamemode=spectator] positioned ^-100 ^ ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^100 ^ ^ ~5 ~
-execute as @s[tag=112-2R] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Blue] unless entity @s[gamemode=spectator] positioned ^ ^100 ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^ ^-100 ^ ~ ~-5
-execute as @s[tag=112-2R] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Blue] unless entity @s[gamemode=spectator] positioned ^ ^-100 ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^ ^100 ^ ~ ~5
-tag @s add 112-2G
-execute as @s[tag=112-2B] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Red] unless entity @s[gamemode=spectator] positioned ^100 ^ ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^-100 ^ ^ ~-5 ~
-execute as @s[tag=112-2B] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Red] unless entity @s[gamemode=spectator] positioned ^-100 ^ ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^100 ^ ^ ~5 ~
-execute as @s[tag=112-2B] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Red] unless entity @s[gamemode=spectator] positioned ^ ^100 ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^ ^-100 ^ ~ ~-5
-execute as @s[tag=112-2B] at @s as @e[tag=Battle,limit=1,sort=nearest,team=Red] unless entity @s[gamemode=spectator] positioned ^ ^-100 ^ if entity @s[distance=..99] run teleport @e[tag=112-2G] ^ ^100 ^ ~ ~5
+#(実行者のteamNumberを仮想プレイヤーに保存)
+scoreboard players operation #skillCheck teamNumber = @s teamNumber
+summon marker ^ ^ ^ {Tags:["017-StarMeteor","017-StarMeteorSummon"]}
+execute rotated ~30 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~60 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~90 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~120 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~150 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~180 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~210 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~240 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~270 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~300 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
+execute rotated ~330 -1.1 run summon marker ^ ^ ^10 {Tags:["017-StarMeteor","017-StarMeteorSummon","Projectile"]}
 
-execute as @s[tag=112-2R,scores={counter=41..}] run tag @e[tag=Battle,limit=1,sort=nearest,team=Blue,distance=..2] add Damage2
-execute as @s[tag=112-2R,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Blue,distance=..2] run particle minecraft:explosion ~ ~1 ~ 0.5 0.5 0.5 0.25 1 force @a
-execute as @s[tag=112-2R,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Blue,distance=..2] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 1
-execute as @s[tag=112-2R,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Blue,distance=..2] run kill @s
+scoreboard players operation @e[tag=017-StarMeteorSummon] teamNumber = #skillCheck teamNumber
 
-execute as @s[tag=112-2B,scores={counter=41..}] run tag @e[tag=Battle,limit=1,sort=nearest,team=Red,distance=..2] add Damage2
-execute as @s[tag=112-2B,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Red,distance=..2] run particle minecraft:explosion ~ ~1 ~ 0.5 0.5 0.5 0.25 1 force @a
-execute as @s[tag=112-2B,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Red,distance=..2] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 1
-execute as @s[tag=112-2B,scores={counter=41..}] if entity @e[tag=Battle,limit=1,sort=nearest,team=Red,distance=..2] run kill @s
+execute as @e[tag=Battle] unless score @s teamNumber = #skillCheck teamNumber run tag @s add 017-target
+execute as @e[tag=017-StarMeteorSummon] at @s run teleport @s ^ ^ ^ facing entity @e[limit=1,sort=random,tag=017-target]
 
-execute if entity @s[scores={counter=41}] run playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 1 1
-execute if entity @s[scores={counter=41}] run particle minecraft:explosion ~ ~1 ~ 0.5 0.5 0.5 0.25 1 force @a
-execute if entity @s[scores={counter=41..}] run teleport @s ^ ^ ^1.5
+tag @e[tag=017-target] remove 017-target
 
-execute unless block ^ ^ ^1 air run kill @s[scores={counter=41..}]
+execute as @a[tag=Battle] if score @s teamNumber = #skillCheck teamNumber run effect give @s strength 10 2
+execute as @a[tag=Battle] if score @s teamNumber = #skillCheck teamNumber run effect give @s speed 10 0
+execute as @a[tag=Battle] if score @s teamNumber = #skillCheck teamNumber at @s run particle minecraft:flash ~ ~0.5 ~ 0 0 0 0 3 force
+execute as @a[tag=Battle] if score @s teamNumber = #skillCheck teamNumber at @s run playsound minecraft:entity.evoker.prepare_summon master @a ~ ~1 ~ 2 0
 
-scoreboard players add @s counter 1
-kill @s[scores={counter=51..}]
-tag @s remove 112-2G
+execute as @a[tag=Battle] if score @s teamNumber = #skillCheck teamNumber run tellraw @s [{"text":"アンタレス","color":"red","bold":true},{"text":"による支援を受けた","color":"gray"}]
+scoreboard players reset #skillCheck teamNumber
+
+tag @s[tag=017-StarMeteorSummon] remove 017-StarMeteorSummon
+
+data merge block 87 5 -122 {auto:1b}

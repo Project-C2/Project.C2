@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "hurt": {
+            "trigger": "minecraft:using_item"
+        }
+    },
+    "rewards": {
+        "function": "project-c:using_item"
+    }
+}
