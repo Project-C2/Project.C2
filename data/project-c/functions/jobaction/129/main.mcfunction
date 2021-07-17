@@ -3,6 +3,8 @@
 
 scoreboard players reset @s usedSkill
 
+execute if score @s counter_1 matches 0.. run scoreboard players remove @s counter_1 1
+execute if score @s[scores={CT1=1200..}] counter_1 matches 0 run tag @s remove SkillReady1
 
 execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-c:jobaction/129/replaceitem/1
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/129/replaceitem/2

@@ -8,6 +8,9 @@ scoreboard players operation @e[tag=this] stockcounter = #129- stockcounter
 scoreboard players operation @e[tag=this] counter = #129- counter
 execute store result score @e[tag=this] subcounter run data get entity @s Health 100
 execute store result score @e[tag=this] HarfHP run attribute @s minecraft:generic.max_health get
+execute as @e[tag=this] run scoreboard players operation @s counter_2 = @s HarfHP
+execute as @e[tag=this] run scoreboard players add @s counter_2 2000
+execute as @e[tag=this] run scoreboard players operation @s counter_8 = @s HarfHP
 execute as @e[tag=this] run scoreboard players operation @s HarfHP *= #100 counter
 execute as @e[tag=this] run scoreboard players operation @s HarfHP /= #2 counter
 execute as @e[tag=this] run scoreboard players operation @s subcounter -= @s HarfHP
@@ -20,10 +23,14 @@ tag @s add 129-2-T-U
 execute at @s run playsound minecraft:entity.generic.burn master @a[tag=!129-2-T-U] ~ ~ ~ 1 0.9
 tag @s remove 129-2-T-U
 
+effect clear @s regeneration
+tag @s add Regene
+
 
 execute as @e[tag=this] run tag @s remove this
 
-effect give @s minecraft:absorption 30 4 true
+attribute @s generic.max_health modifier add 0-0-129-2-0 "129-totem" 20 add
+effect give @s instant_health 1 19 true
 
 
 data merge block -86 64 -11 {auto:1b}

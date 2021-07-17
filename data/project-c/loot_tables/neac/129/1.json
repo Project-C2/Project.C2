@@ -36,6 +36,15 @@
                     "text": "CT:13s",
                     "italic": false,
                     "color": "green"
+                  },
+                  {
+                    "text": " / ",
+                    "color": "gray"
+                  },
+                  {
+                    "text": "ストック:2",
+                    "italic": false,
+                    "color": "aqua"
                   }
                 ],
                 {
