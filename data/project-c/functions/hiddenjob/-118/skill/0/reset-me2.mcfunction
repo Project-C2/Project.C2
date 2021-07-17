@@ -6,3 +6,5 @@ execute at @s run playsound block.note_block.pling master @s ~ ~ ~ 1 0
 title @s actionbar [{"text":""}]
 scoreboard players reset @s counter
 tag @s remove -118-this
+
+tag @s remove -118-0-death

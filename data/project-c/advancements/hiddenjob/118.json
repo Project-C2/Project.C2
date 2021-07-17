@@ -4,7 +4,7 @@
       "item": "minecraft:cake"
     },
     "title": "No.-118 Granter",
-    "description": "Resonanceで1試合中に味方のCTと体力をそれぞれ2回回復させる。",
+    "description": "Resonanceで1試合中に味方のCT回復と総合ダメージ軽減をそれぞれ2回行う。",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,

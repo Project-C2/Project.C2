@@ -1,8 +1,10 @@
 #スキル5
-scoreboard players operation #106_playerNumber counter = @s playerNumber
-execute as @e[tag=106_reconnaissance_stand] if score @s playerNumber = #106_playerNumber counter run tag @s add hit
-scoreboard players reset #106_playerNumber
+scoreboard players operation #106-- playerNumber = @s playerNumber
+execute as @e[tag=106-skill05-stand] if score @s playerNumber = #106-- playerNumber run tag @s add hit
+scoreboard players reset #106--
 
+#scoreboard players operation @s damage_resist = @e[tag=hit] damage_resist
+#execute if score @s damage_resist matches 1.. run tag @s add magic
 gamemode adventure @s
 execute at @s run teleport @s @s
 execute at @e[tag=hit] run teleport @s ~ ~ ~ ~ ~

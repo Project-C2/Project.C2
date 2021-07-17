@@ -1,5 +1,6 @@
 loot replace entity @s container.2 loot project-c:neac/129/2-1
 scoreboard players operation #129- playerNumber = @s playerNumber
+scoreboard players reset @s MagicFatigue
 particle minecraft:block redstone_block ~ ~1 ~ 0.2 0.4 0.2 1.5 50 force @a
 playsound minecraft:entity.illusioner.prepare_blindness master @s ~ ~ ~ 1 1.1
 

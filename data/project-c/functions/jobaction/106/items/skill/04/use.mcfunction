@@ -13,12 +13,11 @@ function project-c:jobaction/106/items/skill/bulk
 
 
 
-summon minecraft:armor_stand ~ ~ ~ {Small:1b,NoGravity:1b,Invisible:1b,Tags:["106_sprink_arrow","number_operation"]}
-scoreboard players operation @e[type=minecraft:armor_stand,tag=106_sprink_arrow,tag=number_operation] playerNumber = @s playerNumber
-execute if entity @s[team=Red] run tag @e[tag=106_sprink_arrow,tag=number_operation,limit=1] add 106-SA-Red
-execute if entity @s[team=Blue] run tag @e[tag=106_sprink_arrow,tag=number_operation,limit=1] add 106-SA-Blue
-execute at @s anchored eyes positioned ^ ^ ^ as @e[type=minecraft:armor_stand,tag=106_sprink_arrow,tag=number_operation] run tp @s ~ ~ ~ ~ ~
-tag @e[type=minecraft:armor_stand,tag=106_sprink_arrow,tag=number_operation] remove number_operation
+summon marker ~ ~ ~ {Tags:["106_sprink_arrow_m","this"]}
+scoreboard players operation @e[tag=this] playerNumber = @s playerNumber
+scoreboard players operation @e[tag=this] teamNumber = @s teamNumber
+execute at @s anchored eyes positioned ^ ^ ^ as @e[tag=this] run tp @s ~ ~ ~ ~ ~
+tag @e[tag=this] remove this
 
 
 playsound minecraft:item.bucket.empty master @a ~ ~ ~ 1 1

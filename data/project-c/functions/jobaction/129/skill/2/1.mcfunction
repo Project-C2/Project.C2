@@ -93,8 +93,11 @@ execute if entity @e[tag=129-totemV-check,limit=1] as @e[tag=129-totemV-check] r
 
 scoreboard players operation @s Damage = @s HarfHP
 scoreboard players operation @s HarfHP = #129- HarfHP
-execute unless score @s Damage = @s HarfHP if score @s HarfHP matches 9800.. run playsound minecraft:entity.zombie.attack_iron_door master @a ~ ~ ~ 0.6 1.2
-execute unless score @s HarfHP matches 9800.. run function project-c:jobaction/129/skill/2/totem/break
+#10000-nを値にします　nは体力のx10
+scoreboard players set #129- counter_6 10001
+scoreboard players remove #129- counter_6 250
+execute unless score @s Damage = @s HarfHP if score @s HarfHP > #129- counter_6 run playsound minecraft:entity.zombie.attack_iron_door master @a ~ ~ ~ 0.6 1.2
+execute unless score @s HarfHP > #129- counter_6 run function project-c:jobaction/129/skill/2/totem/break
 
 execute unless score @s counter matches 1.. run function project-c:jobaction/129/skill/2/totem/end-check
 

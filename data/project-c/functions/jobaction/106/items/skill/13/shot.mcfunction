@@ -2,14 +2,13 @@
 
 scoreboard players add @s counter_1 1
 scoreboard players add @s counter_2 1
-scoreboard players add @s counter_3 1
-execute unless score @s counter_4 matches 0.. run scoreboard players set @s counter_4 0
+execute unless score @s counter_3 matches 1.. run scoreboard players set @s counter_3 1000
+execute if score @s counter_4 matches 1 run scoreboard players add @s counter_3 24
+execute if score @s counter_4 matches 1.. run scoreboard players set @s counter_4 0
 
-execute if score @s counter_3 matches 1 unless score @s counter_4 matches 6.. run scoreboard players add @s counter_4 1
-#execute if score @s[tag=106_perforate_bullet_no_1] counter_3 matches 1 run tellraw @a ["",{"score":{"name": "@s","objective": "counter_4"}},{"text":"            "},{"score":{"name": "@s","objective": "counter_1"}}]
-execute if score @s counter_3 matches 10.. run scoreboard players set @s counter_3 0
+scoreboard players add @s counter_4 1
 
-scoreboard players operation #team_number value = @s team_number
+scoreboard players operation #106- teamNumber = @s teamNumber
 
 
 execute if entity @s[team=Red] run particle dust 1 0 0 1 ~ ~ ~ 0.05 0.05 0.05 0 2 force @a
@@ -32,7 +31,7 @@ execute if entity @e[tag=106_perforate_hit,limit=1] run tag @s add kill
 execute if entity @e[tag=106_perforate_hit,limit=1] run function project-c:jobaction/106/items/skill/13/hit
 tag @s remove 106_perforate_anchor
 
-scoreboard players reset #team_number
+scoreboard players reset #106-
 
 execute if score @s counter_1 matches 200.. run tag @s add kill
 

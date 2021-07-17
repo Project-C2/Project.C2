@@ -7,3 +7,5 @@ title @s actionbar [{"text":""}]
 scoreboard players reset @s counter
 function project-c:jobaction/118/skill/0/reset-me---
 tag @s remove 118_0_anchor--
+
+tag @s remove 118-0-death

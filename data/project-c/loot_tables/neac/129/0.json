@@ -6,15 +6,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_sword",
+          "name": "minecraft:netherite_hoe",
           "functions": [
             {
               "function": "minecraft:set_name",
               "name": [
                 {
-                  "text": "皮剥ぎ",
+                  "text": "Dead man's curve",
                   "italic": false,
-                  "color": "white"
+                  "color": "#770000"
                 }
               ]
             },
