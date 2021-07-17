@@ -2,7 +2,7 @@
 
 #tag @s[tag=fire_arrow_hit] add fire_arrow_anchor
 execute facing entity @s feet positioned 0.0 0.4 0.0 positioned ^ ^ ^3 run summon area_effect_cloud ~ ~ ~ {Duration:1,Tags:["fire_arrow_aec"]}
-summon minecraft:arrow ~ ~ ~ {pickup:0b,Owner:[I;0,0,0,0],CustomName:'{"text":"灯火矢"}',Tags:["fire_arrow","number_operation"],Color:-1,Fire:4000s,Motion:[0.0d,0.0d,0.0d]}
+summon minecraft:arrow ~ ~ ~ {pickup:0b,Owner:[I;0,0,0,0],CustomName:'{"text":"灯火矢"}',Tags:["fire_arrow","number_operation"],Color:-1,Fire:4000s,Motion:[0.0d,0.0d,0.0d],damage:1}
 
 execute if entity @e[tag=number_operation,limit=1] as @e[tag=number_operation] run data modify entity @s Motion set from entity @e[tag=fire_arrow_aec,limit=1] Pos
 execute if entity @e[tag=number_operation,limit=1] run kill @e[tag=fire_arrow_aec,limit=1]

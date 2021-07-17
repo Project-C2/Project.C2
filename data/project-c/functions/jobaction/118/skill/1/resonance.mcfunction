@@ -14,6 +14,7 @@ execute if score #118-- counter_4 matches 1.. run tag @a[tag=118-1--,limit=1] ad
 execute if entity @e[tag=118-1-selector-damage,limit=1] run scoreboard players operation #118-- damageTaken = #118-- counter_3
 execute if entity @e[tag=118-1-own-damage,limit=1] run scoreboard players operation #118-- damageTaken = #118-- counter_4
 
+scoreboard players set @s OutCombat 0
 
 execute if score #118-- damageTaken matches 1.. run function project-c:jobaction/118/skill/1/damage
 

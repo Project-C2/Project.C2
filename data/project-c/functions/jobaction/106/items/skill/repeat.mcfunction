@@ -12,9 +12,9 @@ execute if entity @e[tag=neac_fall_damage_nullification_execute_remove,limit=1] 
 
 
 #レリーヴストーン
-execute if entity @e[scores={106-relieveD=1..},limit=1] as @e[scores={106-relieveD=1..}] at @s run function project-c:jobaction/106/items/skill/01/proc1
-execute if entity @p[gamemode=!spectator,scores={jobNumber=106,subcounter=1..}] as @a[gamemode=!spectator,scores={jobNumber=106,subcounter=1..}] at @s run function project-c:jobaction/106/items/skill/01/proc2
-
+#execute if entity @e[scores={106-relieveD=1..},limit=1] as @e[scores={106-relieveD=1..}] at @s run function project-c:jobaction/106/items/skill/01/chase/proc
+execute if entity @e[tag=106-skill01-C-time,limit=1] as @e[tag=106-skill01-C-time] at @s run function project-c:jobaction/106/items/skill/01/chase/proc
+execute if entity @e[tag=106-skill01-R-time,limit=1] as @e[tag=106-skill01-R-time] run function project-c:jobaction/106/items/skill/01/resistance/proc
 
 
 
@@ -24,14 +24,14 @@ execute if entity @e[type=minecraft:blaze,tag=106_fire,limit=1] as @e[type=minec
 
 
 #アロースプリンクラー
-execute if entity @e[type=minecraft:armor_stand,tag=106_sprink_arrow,limit=1] as @e[type=minecraft:armor_stand,tag=106_sprink_arrow] at @s run function project-c:jobaction/106/items/skill/04/shot
+execute if entity @e[tag=106_sprink_arrow_m,limit=1] as @e[tag=106_sprink_arrow_m] at @s run function project-c:jobaction/106/items/skill/04/shot
 execute if entity @e[tag=106_sprink_arrow_aec,type=minecraft:area_effect_cloud,limit=1] as @e[tag=106_sprink_arrow_aec,type=minecraft:area_effect_cloud] at @s run function project-c:jobaction/106/items/skill/04/deployed
 
 
 
 #偵察
-execute if entity @e[tag=106_reconnaissance_stand,limit=1] as @e[tag=106_reconnaissance_stand] at @s run function project-c:jobaction/106/items/skill/05/stand
-execute if entity @p[scores={jobNumber=106,counter=1..}] as @a[scores={jobNumber=106,counter=1..}] at @s run function project-c:jobaction/106/items/skill/05/timer
+execute if entity @e[tag=106-skill05-stand,limit=1] as @e[tag=106-skill05-stand] at @s run function project-c:jobaction/106/items/skill/05/stand
+#execute if entity @p[scores={jobNumber=106,counter=1..}] as @a[scores={jobNumber=106,counter=1..}] at @s run function project-c:jobaction/106/items/skill/05/timer
 
 
 

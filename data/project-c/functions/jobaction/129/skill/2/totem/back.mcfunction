@@ -3,7 +3,8 @@ scoreboard players operation #129- playerNumber = @s playerNumber
 
 execute as @a[tag=Battle] if score @s playerNumber = #129- playerNumber run tag @s add 129-2-owner
 
-particle dust 0.7 0 0 1 ~ ~1 ~ 0 0 0 0 1 force @a
+particle dust .7 0 0 1 ~ ~1 ~ 0 0 0 0 1 force @a
+particle dust 0 0 0 1 ~ ~1 ~ .3 .3 .3 0 1 force
 execute as @a[tag=129-2-owner] at @s run particle smoke ~ ~1 ~ 0.3 0.4 0.3 0.01 3 force
 execute as @a[tag=129-2-owner] run effect clear @s regeneration
 execute as @a[tag=129-2-owner] run tag @s add Regene
@@ -32,6 +33,7 @@ execute if entity @s[tag=129-2-back] as @a[tag=129-2-owner] run attribute @s gen
 execute if entity @s[tag=129-2-back] run effect give @a[tag=129-2-owner] minecraft:blindness 1 0 true
 execute if entity @s[tag=129-2-back] run particle flash ~ ~1 ~ 0 0 0 0 1 force
 execute if entity @s[tag=129-2-back] as @a[tag=129-2-owner] run tp @s @s
+execute if entity @s[tag=129-2-back] at @a[tag=129-2-owner] facing entity @s feet run function project-c:jobaction/129/skill/2/totem/back-particle
 execute if entity @s[tag=129-2-back] run tp @a[tag=129-2-owner] ~ ~ ~ ~ ~
 
 

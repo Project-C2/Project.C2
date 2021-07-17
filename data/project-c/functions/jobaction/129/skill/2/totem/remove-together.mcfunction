@@ -14,6 +14,7 @@ execute store result score #129- counter run data get block 0 0 0 Items[{Slot:0b
 scoreboard players operation #129- counter *= #20 counter
 execute as @a[tag=129-2-end-owner] if score @s CT2 matches 1200.. run scoreboard players set @s CT2 1200
 execute as @a[tag=129-2-end-owner] run scoreboard players operation @s CT2 -= #129- counter
+execute as @a[tag=129-2-end-owner] run scoreboard players operation @s CT2 -= @s MagicFatigue
 execute as @a[tag=129-2-end-owner] run tag @s remove SkillReady2
 execute as @a[tag=129-2-end-owner] run scoreboard players set @s usedSkill 2
 execute as @a[tag=129-2-end-owner] run tag @s remove 129-2-end-owner

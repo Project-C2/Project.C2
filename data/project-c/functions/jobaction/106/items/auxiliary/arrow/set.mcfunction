@@ -8,4 +8,4 @@ scoreboard players set #106_slot_pos counter 4
 
 execute unless score @s stockcounter matches 1.. run scoreboard players reset #106_slot_pos
 
-function project-c:jobaction/106/items/loot_items
+function project-c:jobaction/106/items/loot/end

@@ -7,6 +7,7 @@ execute store result score #118-- counter run data get entity @s SelectedItem.ta
 scoreboard players operation #118-- counter *= #20 counter
 scoreboard players operation @s counter_1 = #118-- counter
 
+effect clear @s regeneration
 playsound entity.player.levelup master @a ~ ~ ~ 1 0
 playsound entity.player.levelup master @a ~ ~ ~ 1 0
 particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 0.5 20 force @a
@@ -21,6 +22,7 @@ execute if entity @a[tag=118_1_selected--,limit=1] as @a[tag=118_1_selected--] r
 execute if entity @a[tag=118_1_selected--,limit=1] at @a[tag=118_1_selected--] run playsound entity.player.levelup master @a ~ ~ ~ 1 0
 execute if entity @a[tag=118_1_selected--,limit=1] at @a[tag=118_1_selected--] run playsound entity.player.levelup master @a ~ ~ ~ 1 0
 execute if entity @a[tag=118_1_selected--,limit=1] at @a[tag=118_1_selected--] run particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 0.5 20 force @a
+execute if entity @a[tag=118_1_selected--,limit=1] as @a[tag=118_1_selected--] run effect clear @s regeneration
 
 execute if entity @a[tag=118_1_selected--,limit=1] as @a[tag=118_1_selected--] run tag @s remove 118_1_selected--
 scoreboard players reset #118--

@@ -29,3 +29,4 @@ title @s actionbar [{"text":""}]
 scoreboard players reset @s counter
 scoreboard players reset @s counter_9
 scoreboard players reset @s counter_6
+scoreboard players reset @s MagicFatigue

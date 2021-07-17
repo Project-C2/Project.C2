@@ -10,6 +10,8 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/129/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/129/replaceitem/3
 
+function project-c:jobaction/129/skill/2/ct-keep0
+
 
 execute if entity @s[scores={useFungusStick=1..},gamemode=!spectator] run function project-c:jobaction/129/skill/use
 
