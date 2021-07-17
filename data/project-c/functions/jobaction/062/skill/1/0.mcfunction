@@ -2,8 +2,9 @@
 scoreboard players set @s counter_1 15
 scoreboard players set @s subcounter 3
 
-scoreboard players remove @s counter_3 140
-scoreboard players remove @s[scores={counter_3=..100}] counter_3 40
+execute if entity @s[scores={stockcounter=1..}] run scoreboard players set @s CT1 1190
+scoreboard players remove @s stockcounter 1
+
 scoreboard players set @s usedSkill 1
 
 particle minecraft:end_rod ^ ^1 ^ 0 0 0 0 3 force @a

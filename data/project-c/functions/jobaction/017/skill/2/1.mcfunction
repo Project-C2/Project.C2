@@ -1,7 +1,7 @@
 scoreboard players add @s counter 1
 
-execute if entity @s[tag=017-InfelnoActive] as @e[distance=..2.2,tag=Battle] unless score @s teamNumber = @a[limit=1,sort=nearest,gamemode=!spectator] teamNumber run effect give @s instant_damage 1 0
-execute if entity @s[tag=017-InfelnoActive] positioned ^ ^ ^-1 as @e[distance=..2.2,tag=Battle] unless score @s teamNumber = @a[limit=1,sort=nearest,gamemode=!spectator] teamNumber run effect give @s instant_damage 1 0
+execute if entity @s[tag=017-InfelnoActive] as @e[distance=..2.2,tag=Battle] unless score @s teamNumber = @e[limit=1,sort=nearest,tag=017-Infelno] teamNumber run effect give @s instant_damage 1 0
+execute if entity @s[tag=017-InfelnoActive] positioned ^ ^ ^-1 as @e[distance=..2.2,tag=Battle] unless score @s teamNumber = @e[limit=1,sort=nearest,tag=017-Infelno] teamNumber run effect give @s instant_damage 1 0
 
 
 particle flame ~ ~ ~ 0.1 0.1 0.1 0.1 5 force

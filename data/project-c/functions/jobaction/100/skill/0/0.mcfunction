@@ -8,8 +8,6 @@ playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 2 0
 particle flash ~ ~1.52 ~ 0 0 0 0 3 force @a
 particle end_rod ~ ~1.52 ~ 0 0 0 0.4 50 force @a
 
-effect give @s minecraft:slowness 1 8 true
-
 execute if entity @s[scores={counter=1,counter_1=..2}] run scoreboard players add @s counter_1 1
 execute if entity @s[scores={counter=2,counter_2=..2}] run scoreboard players add @s counter_2 1
 execute if entity @s[scores={counter=3,counter_3=..2}] run scoreboard players add @s counter_3 1

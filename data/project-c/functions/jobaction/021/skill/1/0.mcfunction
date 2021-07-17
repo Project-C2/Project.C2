@@ -1,4 +1,4 @@
-scoreboard players set @s CT1 1000
+scoreboard players set @s CT1 1040
 
 scoreboard players set @s counter_7 14
 scoreboard players set @s[scores={counter_5=40..}] counter_5 40
@@ -11,7 +11,7 @@ execute as @e[tag=first] run data modify entity @s Owner set from entity @a[scor
 scoreboard players operation @e[tag=first] teamNumber = @s teamNumber
 scoreboard players operation @e[tag=first] counter_5 = @s counter_5
 
-execute anchored eyes positioned ^ ^ ^0.4 run summon marker ^ ^ ^ {Tags:["021-target"]}
+execute anchored eyes positioned ^ ^ ^0.45 run summon marker ^ ^ ^ {Tags:["021-target"]}
 scoreboard players operation @e[tag=first] counter_5 = @s counter_5
 scoreboard players operation @e[tag=021-target] counter_5 = @s counter_5
 execute anchored eyes positioned ^ ^ ^ as @e[tag=021-target] facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~

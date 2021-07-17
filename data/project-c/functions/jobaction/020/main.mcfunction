@@ -7,6 +7,8 @@ execute if entity @s[scores={CT1=1200..},tag=!SkillReady1] run function project-
 execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-c:jobaction/020/replaceitem/2
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:jobaction/020/replaceitem/3
 
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"マスターソード"}'}}}},scores={useCarrotStick=1..,CT1=1200..},gamemode=!spectator,tag=SkillReady1] run function project-c:jobaction/020/skill/1/0
+
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"スターロッド","color":"white","italic":"false","underlined":"false"}'}}}},scores={useCarrotStick=1..,CT1=1200..},gamemode=!spectator,tag=SkillReady1] run function project-c:jobaction/020/skill/1/0
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"コック","color":"white","italic":"false","underlined":"false"}'}}}},scores={sneak=1..,CT2=1200..},tag=Battle,gamemode=!spectator,tag=SkillReady2] run function project-c:jobaction/020/skill/2/0

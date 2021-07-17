@@ -1,5 +1,5 @@
 #乱数幅min.0～max.0で出力
-data merge storage random: {min:0,max:42}
+data merge storage random: {min:0,max:41}
 execute store result score #deathLog subcounter run function project-c:general/random
 
 execute if score #deathLog subcounter matches 0 run data modify storage deathlog: Text set value '[{"text":"にしばかれた"}]'

@@ -1,2 +1,2 @@
 scoreboard players add @s counter 1
-kill @s[scores={counter=6..}]
+kill @s[scores={counter=11..}]
