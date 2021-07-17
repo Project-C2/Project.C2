@@ -4,7 +4,10 @@
 #counter_1    -> スキル1の使用時間
 #counter_2    -> スキル2の使用時間
 #counter_3    -> スキル1の選択プレイヤー保持
-#subcounter   -> スキル1のスパン
+#counter_7   -> スキル1の体力保持1
+#counter_8   -> スキル1の体力保持2
+#stockcounter -> スキル1の総合軽減量1
+#subcounter -> スキル1の総合軽減量2
 #counter_4    -> スキル2の選択プレイヤー保持
 #counter_9    -> スキル2のスパン
 

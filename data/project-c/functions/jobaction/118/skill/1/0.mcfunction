@@ -29,8 +29,11 @@ tag @s remove 118-
 
 title @s actionbar [{"text":""}]
 scoreboard players reset @s counter
-scoreboard players reset @s subcounter
+scoreboard players set @s stockcounter 0
+scoreboard players set @s subcounter 0
 scoreboard players reset @s counter_5
+scoreboard players set @s counter_7 0
+scoreboard players set @s counter_8 0
 
 tag @s remove SkillReady1
 scoreboard players set @s usedSkill 1
