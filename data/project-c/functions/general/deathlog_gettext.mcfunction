@@ -1,5 +1,5 @@
 #乱数幅min.0～max.0で出力
-data merge storage random: {min:0,max:19}
+data merge storage random: {min:0,max:42}
 execute store result score #deathLog subcounter run function project-c:general/random
 
 execute if score #deathLog subcounter matches 0 run data modify storage deathlog: Text set value '[{"text":"にしばかれた"}]'
@@ -20,4 +20,29 @@ execute if score #deathLog subcounter matches 14 run data modify storage deathlo
 execute if score #deathLog subcounter matches 15 run data modify storage deathlog: Text set value '[{"text":"で木っ端微塵にされた"}]'
 execute if score #deathLog subcounter matches 16 run data modify storage deathlog: Text set value '[{"text":"で潰された"}]'
 execute if score #deathLog subcounter matches 17 run data modify storage deathlog: Text set value '[{"text":"にぺしゃんこにされた"}]'
+execute if score #deathLog subcounter matches 18 run data modify storage deathlog: Text set value '[{"text":"にもちもちにされた}]'
+execute if score #deathLog subcounter matches 19 run data modify storage deathlog: Text set value '[{"text":"に消し炭にされた"}]'
+execute if score #deathLog subcounter matches 20 run data modify storage deathlog: Text set value '[{"text":"に暴虐の限りを尽くされた"}]'
+execute if score #deathLog subcounter matches 21 run data modify storage deathlog: Text set value '[{"text":"の魔の手に沈んだ"}]'
+execute if score #deathLog subcounter matches 22 run data modify storage deathlog: Text set value '[{"text":"から溢れ出る力にやられた"}]'
+execute if score #deathLog subcounter matches 23 run data modify storage deathlog: Text set value '[{"text":"に為す術もなく死んだ"}]'
+execute if score #deathLog subcounter matches 24 run data modify storage deathlog: Text set value '[{"text":"の怒りを買った"}]'
+execute if score #deathLog subcounter matches 25 run data modify storage deathlog: Text set value '[{"text":"により帰らぬ人となった"}]'
+execute if score #deathLog subcounter matches 26 run data modify storage deathlog: Text set value '[{"text":"を見せつけられた"}]'
+execute if score #deathLog subcounter matches 27 run data modify storage deathlog: Text set value '[{"text":"で天界に接続した"}]'
+execute if score #deathLog subcounter matches 28 run data modify storage deathlog: Text set value '[{"text":"が痛かった"}]'
+execute if score #deathLog subcounter matches 29 run data modify storage deathlog: Text set value '[{"text":"の抱擁を受けた"}]'
+execute if score #deathLog subcounter matches 30 run data modify storage deathlog: Text set value '[{"text":"でやられた"}]'
+execute if score #deathLog subcounter matches 31 run data modify storage deathlog: Text set value '[{"text":"で倒された"}]'
+execute if score #deathLog subcounter matches 32 run data modify storage deathlog: Text set value '[{"text":"で死んだ"}]'
+execute if score #deathLog subcounter matches 33 run data modify storage deathlog: Text set value '[{"text":"で消された"}]'
+execute if score #deathLog subcounter matches 34 run data modify storage deathlog: Text set value '[{"text":"でOPGGされた"}]'
+execute if score #deathLog subcounter matches 35 run data modify storage deathlog: Text set value '[{"text":"によって倒れた"}]'
+execute if score #deathLog subcounter matches 36 run data modify storage deathlog: Text set value '[{"text":"によって倒された"}]'
+execute if score #deathLog subcounter matches 37 run data modify storage deathlog: Text set value '[{"text":"で地面とひとつになった"}]'
+execute if score #deathLog subcounter matches 38 run data modify storage deathlog: Text set value '[{"text":"がトラウマになった"}]'
+execute if score #deathLog subcounter matches 39 run data modify storage deathlog: Text set value '[{"text":"の伝説の一つになった"}]'
+execute if score #deathLog subcounter matches 40 run data modify storage deathlog: Text set value '[{"text":"で殴られた"}]'
+
+
 execute unless data storage deathlog: Text run data modify storage deathlog: Text set value '[{"text":"に殺害された"}]'
