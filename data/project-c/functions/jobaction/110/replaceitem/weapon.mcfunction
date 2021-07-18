@@ -18,3 +18,4 @@ execute if score @s counter_1 matches 3 if score @s stockcounter matches 6 run l
 execute if score @s counter_1 matches 3 if score @s stockcounter matches 7 run loot replace entity @s container.0 loot project-c:wnkm/110/weapons/chisel_7
 execute if score @s counter_1 matches 3 if score @s stockcounter matches 8.. run loot replace entity @s container.0 loot project-c:wnkm/110/weapons/chisel_8
 
+item replace entity @s enderchest.0 from entity @s container.0
