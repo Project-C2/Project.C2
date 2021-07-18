@@ -27,17 +27,19 @@ execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"エーテ�
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:'{"text":"アストラルハーツ","color":"white","italic":"false","underlined":"false"}'}}}},scores={useCarrotStick=1..},gamemode=!spectator] run function project-c:jobaction/048/skill/4/0
 
 
-execute if entity @s[scores={subcounter=1}] unless block ~ ~-1 ~ #project-c:wancomatter/like_air run effect give @s minecraft:levitation 1 0 true
-execute if entity @s[scores={subcounter=1}] if block ~ ~-1 ~ #project-c:wancomatter/like_air run effect clear @s minecraft:levitation
-execute if entity @s[scores={subcounter=1}] if block ~ ~-1 ~ #project-c:wancomatter/like_air run effect give @s minecraft:slow_falling 1 0 true
+execute if entity @s[scores={subcounter=1,sneak=0}] unless block ~ ~-1 ~ #project-c:wancomatter/like_air run effect give @s minecraft:levitation 1 0 true
+execute if entity @s[scores={subcounter=1,sneak=0}] if block ~ ~-1 ~ #project-c:wancomatter/like_air run effect clear @s minecraft:levitation
+execute if entity @s[scores={subcounter=1,sneak=0}] if block ~ ~-1 ~ #project-c:wancomatter/like_air run effect give @s minecraft:slow_falling 1 0 true
 
-execute if entity @s[scores={subcounter=1}] unless block ~ ~-1.5 ~ #project-c:wancomatter/like_air run effect give @s minecraft:levitation 1 0 true
-execute if entity @s[scores={subcounter=1}] if block ~ ~-1.5 ~ #project-c:wancomatter/like_air run effect clear @s minecraft:levitation
-execute if entity @s[scores={subcounter=1}] if block ~ ~-1.5 ~ #project-c:wancomatter/like_air run effect give @s minecraft:slow_falling 1 0 true
+execute if entity @s[scores={subcounter=1,sneak=0}] unless block ~ ~-1.5 ~ #project-c:wancomatter/like_air run effect give @s minecraft:levitation 1 0 true
+execute if entity @s[scores={subcounter=1,sneak=0}] if block ~ ~-1.5 ~ #project-c:wancomatter/like_air run effect clear @s minecraft:levitation
+execute if entity @s[scores={subcounter=1,sneak=0}] if block ~ ~-1.5 ~ #project-c:wancomatter/like_air run effect give @s minecraft:slow_falling 1 0 true
+
+execute if entity @s[scores={subcounter=1,sneak=1..}] run effect clear @s minecraft:levitation
 
 execute if entity @s[scores={counter_7=0}] run scoreboard players set @s Mana 1000
 execute if entity @s[scores={counter_7=0}] run scoreboard players set @s counter_7 1
 
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
-scoreboard players reset @s[scores={sneak=1..}] sneak
+scoreboard players set @s[scores={sneak=1..}] sneak 0
 scoreboard players reset @s[scores={adDealt=1..}] adDealt
