@@ -3,7 +3,9 @@ execute if entity @s[scores={counter_1=1}] run data merge storage score_damage: 
 execute if entity @s[scores={counter_1=2}] run data merge storage score_damage: {Damage:5.00f,SkillNumber:0b,EPF:0,BypassArmor:0b,BypassResistance:0b,DisableParticle:0b,KnockbackDamage:1b,MultiDamage:0b,byUUID:[]}
 execute if entity @s[scores={counter_1=5}] run data merge storage score_damage: {Damage:9.00f,SkillNumber:0b,EPF:0,BypassArmor:0b,BypassResistance:0b,DisableParticle:0b,KnockbackDamage:1b,MultiDamage:0b,byUUID:[]}
 
-execute if entity @s[scores={counter_1=1}] as @e[tag=hit] at @s run summon arrow ~ ~2.5 ~ {CustomName:'{"text":"§c炎のフェアリー"}',CustomNameVisible:1,Motion:[0.0,-1.0,0.0],pickup:0,damage:4,Fire:20}
+execute if entity @s[scores={counter_1=1}] as @e[tag=hit] at @s run summon arrow ~ ~2.5 ~ {CustomNameVisible:1,Motion:[0.0,-1.0,0.0],pickup:0,damage:4,Fire:20,Tags:["arrow","this"]}
+data modify entity @e[tag=this,limit=1] Owner set from entity @s Owner
+tag @e[tag=this] remove this
 
 execute if entity @s[scores={counter_1=2}] run effect give @e[tag=hit] slowness 2 1
 

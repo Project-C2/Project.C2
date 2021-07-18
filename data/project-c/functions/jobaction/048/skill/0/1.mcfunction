@@ -45,4 +45,6 @@ execute if entity @s[scores={counter_2=0}] run scoreboard players set @e[tag=048
 execute if entity @s[scores={counter_2=1}] run scoreboard players set @e[tag=048-BulletSummon] counter_2 1
 execute if entity @s[scores={counter_2=2}] run scoreboard players set @e[tag=048-BulletSummon] counter_2 2
 
+data modify entity @e[tag=048-BulletSummon,limit=1] Owner set from entity @s UUID
+
 tag @e[tag=048-BulletSummon] remove 048-BulletSummon
