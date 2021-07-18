@@ -62,7 +62,6 @@ execute if entity @a[scores={hurtByNumber=1..},limit=1] run scoreboard players r
 #死亡処理
 execute if entity @a[scores={deathCount=1..}] as @a[scores={deathCount=1..}] at @s run function project-c:general/deathlog
 #ScoreDamageの無敵時間関連の処理
-execute if entity @e[scores={ScoreDamageCore=1..},limit=1] as @e[scores={ScoreDamageCore=1..}] if data entity @s {HurtTime:1s} run scoreboard players reset @s ScoreDamageCore
 execute if entity @e[scores={ScoreDamageCore=1..},tag=!ScoreDamaged,limit=1] as @e[scores={ScoreDamageCore=1..},tag=!ScoreDamaged] if data entity @s {HurtTime:0s} run scoreboard players reset @s ScoreDamageCore
 execute if entity @e[tag=ScoreDamaged,limit=1] run tag @e[tag=ScoreDamaged] remove ScoreDamaged
 

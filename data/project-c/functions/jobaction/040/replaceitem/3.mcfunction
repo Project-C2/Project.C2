@@ -1,0 +1,5 @@
+execute unless entity @s[scores={counter_2=3600..}] run item replace entity @s hotbar.3 with minecraft:nether_star{display:{Name:'{"text":"天地乖離す開闢の星"}',Lore:['{"text":"発動:スニーク/戦闘開始から180秒経過"}','{"text":"効果:急上昇し、全てを無に還す大技を放つ。"}','{"text":"発動中および発動後は大きな隙が生まれてしまう。"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:1} 1
+execute if entity @s[scores={counter_2=3600..}] run item replace entity @s hotbar.3 with minecraft:end_crystal{display:{Name:'{"text":"天地乖離す開闢の星"}',Lore:['{"text":"発動:スニーク/戦闘開始から180秒経過"}','{"text":"効果:急上昇し、全てを無に還す大技を放つ。"}','{"text":"発動中および発動後は大きな隙が生まれてしまう。"}']},Enchantments:[{id:"minecraft:sharpness",lvl:0}],HideFlags:1} 1
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady3
+item replace entity @s enderchest.3 from entity @s container.3
