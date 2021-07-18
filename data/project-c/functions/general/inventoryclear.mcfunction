@@ -24,6 +24,6 @@ item replace entity @s[scores={jobNumber=..72,jobNumber=74..}] inventory.20 with
 item replace entity @s[scores={jobNumber=..72,jobNumber=74..}] inventory.21 with minecraft:air 1
 item replace entity @s[scores={jobNumber=..72,jobNumber=74..}] inventory.22 with minecraft:air 1
 item replace entity @s[scores={jobNumber=..72,jobNumber=74..}] inventory.23 with minecraft:air 1
-item replace entity @s[scores={jobNumber=..72,jobNumber=74..}] inventory.24 minecraft:air 1 with 
+item replace entity @s[scores={jobNumber=..72,jobNumber=74..}] inventory.24 with minecraft:air 1
 item replace entity @s[scores={jobNumber=..72,jobNumber=74..}] inventory.25 with minecraft:air 1
 item replace entity @s[scores={jobNumber=..72,jobNumber=74..}] inventory.26 with minecraft:air 1
