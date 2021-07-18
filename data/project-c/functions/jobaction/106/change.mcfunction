@@ -13,6 +13,12 @@ scoreboard players set @s counter_9 0
 scoreboard players set @s shieldBlock 0
 scoreboard players set @s stockcounter 9
 scoreboard players set @s sdi_d_alifetime 1
+
+loot replace entity @s enderchest.0 loot project-c:neac/106/weapon/01
+loot replace entity @s enderchest.1 loot project-c:neac/106/skill/04
+loot replace entity @s enderchest.2 loot project-c:neac/106/skill/10
+loot replace entity @s enderchest.3 loot project-c:neac/106/skill/09
+
 tag @s add 106_change_setup
 function project-c:jobaction/106/change_keep
 

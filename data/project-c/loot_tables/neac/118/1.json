@@ -12,7 +12,7 @@
               "function": "minecraft:set_name",
               "name": [
                 {
-                  "text": "Health Resonance",
+                  "text": "Damage Resonance",
                   "italic": false,
                   "color": "#ff0000",
                   "bold": true
@@ -39,7 +39,7 @@
                   }
                 ],
                 {
-                  "text": "選択したプレイヤーと5秒間体力を共有する。",
+                  "text": "選択したプレイヤーと7秒間ダメージを半減して共有する。",
                   "italic": false,
                   "color": "white"
                 },
@@ -52,7 +52,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{HideFlags:63,118--:1b,cooltime:30,e-time:5,Enchantments:[{}]}"
+              "tag": "{HideFlags:63,118--:1b,cooltime:30,e-time:7,Enchantments:[{}]}"
             }
           ]
         }

@@ -4,9 +4,14 @@
 #counter_1    -> スキル1の使用時間
 #counter_2    -> スキル2の使用時間
 #counter_3    -> スキル1の選択プレイヤー保持
-#subcounter   -> スキル1のスパン
+#counter_7   -> スキル1の体力保持1
+#counter_8   -> スキル1の体力保持2
+#stockcounter -> スキル1の総合軽減量1
+#subcounter -> スキル1の総合軽減量2
 #counter_4    -> スキル2の選択プレイヤー保持
 #counter_9    -> スキル2のスパン
+#Mana    -> スキル1のパーティクルスパン
+#MagicFatigue -> CT増加を受けたときの保持
 
 
 #counter_5    -> スキル1のチェック用
@@ -27,6 +32,11 @@ execute if entity @s[scores={counter=1..},gamemode=!spectator] run function proj
 execute if entity @s[scores={counter_1=1..},gamemode=!spectator] run function project-c:jobaction/118/skill/1/1
 execute if entity @s[scores={counter_2=1..},gamemode=!spectator] run function project-c:jobaction/118/skill/2/1
 
+tag @s add me
+
+execute if entity @e[tag=me,tag=118-0-death,limit=1] run function project-c:jobaction/118/skill/0/reset-me2
+
+tag @s remove me
 
 execute if entity @s[tag=job118-advancement2.trigger] run tag @s remove job118-advancement2.trigger
 

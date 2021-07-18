@@ -4,6 +4,9 @@ execute store result score #118-- counter run data get block 0 0 0 Items[0].tag.
 scoreboard players operation #118-- counter *= #20 counter
 scoreboard players operation @s CT2 -= #118-- counter
 
+
+scoreboard players operation @s CT2 -= @s MagicFatigue
+
 data remove block 0 0 0 Items[]
 
 scoreboard players reset #118--
@@ -13,3 +16,5 @@ function project-c:general/cooltimecounter
 
 tag @s remove SkillReady2
 scoreboard players set @s usedSkill 2
+
+

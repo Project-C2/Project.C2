@@ -30,7 +30,11 @@ execute at @s run playsound minecraft:entity.zombie_villager.cure master @s ~ ~ 
 execute at @s run particle smoke ~ ~1 ~ 0 0 0 0.1 30 force
 scoreboard players set @s OutCombat 0
 effect clear @s minecraft:regeneration
-execute at @s run summon arrow ~ ~2.5 ~ {CustomName:'{"text":"サイレンス","color":"#990000","bold":true}',damage:1.2d,Motion:[0.0,-2.0,0.0],life:1200,Color:-1}
+
+scoreboard players operation #skill_dmg playerNumber = @e[tag=129-now,limit=1] playerNumber
+data merge storage score_damage: {Damage:3.0f,SkillNumber:1b,EPF:0,BypassArmor:0b,BypassResistance:0b,DisableParticle:0b,KnockbackDamage:0b,MultiDamage:0b,byUUID:[]}
+execute at @s run function project-c:general/damage
+scoreboard players reset #skill_dmg
 
 
 execute as @e[tag=this] run tag @s remove this

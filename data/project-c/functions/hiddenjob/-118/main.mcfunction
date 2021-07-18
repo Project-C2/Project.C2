@@ -10,6 +10,12 @@ execute if entity @s[scores={CT2=1200..},tag=!SkillReady2] run function project-
 execute if entity @s[scores={CT3=1200..},tag=!SkillReady3] run function project-c:hiddenjob/-118/replaceitem/3
 
 
+tag @s add me
+
+execute if entity @e[tag=me,tag=-118-0-death,limit=1] run function project-c:hiddenjob/-118/skill/0/reset-me2
+
+tag @s remove me
+
 execute if entity @s[scores={useCarrotStick=1..},gamemode=!spectator] run function project-c:hiddenjob/-118/skill/use
 
 execute if entity @s[scores={counter=1..},gamemode=!spectator] run function project-c:hiddenjob/-118/skill/0/1

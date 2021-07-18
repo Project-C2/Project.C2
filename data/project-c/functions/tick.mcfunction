@@ -26,12 +26,12 @@ execute if entity @a[scores={099-S2-APN=1..,deathCount=1..},tag=099-S2-area-ed,l
 
 execute if entity @a[scores={jobNumber=106,deathCount=1..},tag=!106_death_skill,limit=1] as @a[scores={jobNumber=106,deathCount=1..},tag=!106_death_skill] run function project-c:jobaction/106/change_keep
 
-execute if entity @e[type=player,scores={jobNumber=118,deathCount=1..,counter=1..},limit=1] as @e[type=player,scores={jobNumber=118,deathCount=1..,counter=1..}] run function project-c:jobaction/118/skill/0/reset-me2
+execute if entity @a[scores={jobNumber=118,deathCount=1..,counter=1..},limit=1] as @a[scores={jobNumber=118,deathCount=1..,counter=1..}] run tag @s add 118-0-death
 execute if entity @a[scores={jobNumber=118,deathCount=1..,counter=1..},limit=1] as @a[scores={jobNumber=118,deathCount=1..,counter=1..}] run function project-c:jobaction/118/skill/0/reset-me---
 execute if entity @a[scores={deathCount=1..},tag=118_0_selecting,limit=1] as @a[scores={deathCount=1..},tag=118_0_selecting] run function project-c:jobaction/118/skill/0/select-death
 execute if entity @a[tag=118_0_selecting,limit=1] as @a[tag=118_0_selecting] run function project-c:jobaction/118/skill/0/keeper-search
 
-execute if entity @e[type=player,scores={jobNumber=-118,deathCount=1..,counter=1..},limit=1] as @e[type=player,scores={jobNumber=-118,deathCount=1..,counter=1..}] run function project-c:hiddenjob/-118/skill/0/reset-me2
+execute if entity @a[scores={jobNumber=-118,deathCount=1..,counter=1..},limit=1] as @a[scores={jobNumber=-118,deathCount=1..,counter=1..}] run tag @s add -118-0-death
 execute if entity @a[scores={deathCount=1..},tag=-118-selecting,limit=1] as @a[scores={deathCount=1..},tag=-118-selecting] run function project-c:hiddenjob/-118/skill/0/select-death
 execute if entity @a[tag=-118-selecting,limit=1] as @a[tag=-118-selecting] run function project-c:hiddenjob/-118/skill/0/keeper-search
 
@@ -60,7 +60,10 @@ execute if entity @a[scores={hurtByNumber=1..},limit=1] as @a[scores={hurtByNumb
 execute if entity @a[scores={hurtByNumber=1..},limit=1] run scoreboard players set @a[scores={hurtByNumber=1..}] hurtByTime 1
 execute if entity @a[scores={hurtByNumber=1..},limit=1] run scoreboard players reset @a[scores={hurtByNumber=1..}] hurtByNumber
 #死亡処理
-execute if entity @a[scores={deathCount=1..}] as @a[scores={deathCount=1..}] at @s run function project-c:general/deathlog
+execute if entity @a[scores={deathCount=1..},limit=1] as @a[scores={deathCount=1..}] at @s run function project-c:general/deathlog
+#死亡後、リスポーン時に処理される処理
+execute if entity @e[type=player,tag=Respawn.Reset.PCFB,limit=1] as @e[type=player,tag=Respawn.Reset.PCFB] at @s run function project-c:general/respawn
+
 #ScoreDamageの無敵時間関連の処理
 execute if entity @e[scores={ScoreDamageCore=1..},limit=1] as @e[scores={ScoreDamageCore=1..}] if data entity @s {HurtTime:1s} run scoreboard players reset @s ScoreDamageCore
 execute if entity @e[scores={ScoreDamageCore=1..},tag=!ScoreDamaged,limit=1] as @e[scores={ScoreDamageCore=1..},tag=!ScoreDamaged] if data entity @s {HurtTime:0s} run scoreboard players reset @s ScoreDamageCore

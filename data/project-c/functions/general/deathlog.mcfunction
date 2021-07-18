@@ -17,3 +17,5 @@ scoreboard players reset #deathLog
 tag @a[tag=killedBy] remove killedBy
 scoreboard players reset @s deathCount
 tag @s add deadPlayer
+
+tag @s add Respawn.Reset.PCFB
